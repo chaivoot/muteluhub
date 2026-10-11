@@ -1,15 +1,25 @@
 import type { Metadata } from 'next';
-import { ComingSoon, PageHeader } from '@/components/ComingSoon';
+import { Suspense } from 'react';
+import { PageHeader } from '@/components/ComingSoon';
+import { ColorToday } from '@/components/ColorToday';
+import { bangkokDay, formatThaiFullDate } from '@/lib/thai-date';
 
-export const metadata: Metadata = { title: 'สีเสื้อมงคลวันนี้', description: 'สีเสื้อมงคลประจำวันตามเรื่องที่อยากเสริม พร้อมสีที่ควรเลี่ยง' };
+export const metadata: Metadata = {
+  title: 'สีเสื้อมงคลวันนี้',
+  description: 'สีเสื้อมงคลประจำวันตามหลักทักษา แยกตามเรื่องที่อยากเสริม การเงิน ความรัก การงาน พร้อมสีที่ควรเลี่ยง',
+};
 
-export default function Page() {
+// เปลี่ยนตามวัน สร้างหน้าใหม่ทุก 10 นาที
+export const revalidate = 600;
+
+export default function ColorTodayPage() {
+  const today = bangkokDay();
   return (
     <main>
       <PageHeader title="สีเสื้อมงคลวันนี้" />
-      <ComingSoon>
-        <p>สีเสื้อมงคลทุกเป้าหมายของวันนี้ สีที่ควรเลี่ยง และการ์ดสำหรับแชร์</p>
-      </ComingSoon>
+      <Suspense>
+        <ColorToday weekday={today.weekday} dateLabel={formatThaiFullDate(today)} />
+      </Suspense>
     </main>
   );
 }

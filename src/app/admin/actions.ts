@@ -8,6 +8,7 @@ import type { ImportItemResult } from '@/lib/import/common';
 import { parsePlaceImport } from '@/lib/import/place-schema';
 import { parseTellerImport } from '@/lib/import/teller-schema';
 import { placesRepo } from '@/lib/places-repo';
+import { getSeedBatch } from '@/lib/seed-batches';
 import { tellersRepo } from '@/lib/tellers-repo';
 
 export async function loginAction(_: unknown, form: FormData): Promise<{ error?: string }> {
@@ -103,4 +104,42 @@ export async function togglePublishedAction(form: FormData): Promise<void> {
 export async function deleteAction(form: FormData): Promise<void> {
   await requireAdmin();
   await forKind(kindFrom(form)).repo.remove(String(form.get('slug')));
+}
+
+export interface SeedResult {
+  error?: string;
+  created?: string[];
+  skipped?: string[];
+}
+
+/** นำเข้าชุดเริ่มต้นจาก repo เฉพาะ slug ที่ยังไม่มี (ไม่เขียนทับสถานะเผยแพร่ที่ตั้งไว้แล้ว) */
+export async function seedAction(_: unknown, form: FormData): Promise<SeedResult> {
+  await requireAdmin();
+  const batch = getSeedBatch(String(form.get('batch')));
+  if (!batch) return { error: 'ไม่พบชุดข้อมูล' };
+  const text = JSON.stringify(batch.data);
+  try {
+    if (batch.kind === 'places') return await seedWith(parsePlaceImport(text), placesRepo, batch.data);
+    return await seedWith(parseTellerImport(text), tellersRepo, batch.data);
+  } catch (err) {
+    return { error: `บันทึกไม่สำเร็จ: ${(err as Error).message}` };
+  }
+}
+
+async function seedWith<T extends { slug: string }>(
+  parsed: { error?: string; items: ImportItemResult<T>[] },
+  repo: { existingSlugs: (s: string[]) => Promise<Set<string>>; upsert: (items: T[], raw: unknown) => Promise<{ created: string[] }> },
+  raw: unknown[],
+): Promise<SeedResult> {
+  if (parsed.error) return { error: parsed.error };
+  const bad = parsed.items.filter((i) => !i.ok);
+  if (bad.length) return { error: `ชุดข้อมูลมี ${bad.length} รายการที่ผิด` };
+  const items = parsed.items.map((i) => i.item!);
+  const existing = await repo.existingSlugs(items.map((i) => i.slug));
+  const fresh = items.filter((i) => !existing.has(i.slug));
+  if (fresh.length === 0) return { created: [], skipped: [...existing] };
+  const freshSlugs = new Set(fresh.map((i) => i.slug));
+  const rawFresh = raw.filter((r) => freshSlugs.has((r as { slug?: string }).slug ?? ''));
+  const { created } = await repo.upsert(fresh, rawFresh);
+  return { created, skipped: [...existing] };
 }

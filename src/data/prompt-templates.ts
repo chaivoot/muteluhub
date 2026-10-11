@@ -90,6 +90,46 @@ function luckyNumberTemplates(): PromptTemplate[] {
   });
 }
 
+/**
+ * color-today-[goal]: ปุ่ม ถาม AI ต่อ ในหน้าสีเสื้อส่งผลมาที่นี่ (addendum 01 ข้อ 8)
+ * ข้อความของการงานตรงกับ seed ใน addendum ส่วนเป้าหมายอื่นเปลี่ยนเฉพาะหัวข้อและตัวอย่าง
+ */
+const COLOR_TODAY_TOPICS: Record<GoalSlug, { short: string; matter: string; example: string; advice: string }> = {
+  love: { short: 'ความรัก', matter: 'เรื่องความรัก', example: 'เช่น มีนัดเดตครั้งแรก', advice: 'การแต่งตัวและการวางตัว' },
+  career: { short: 'การงาน', matter: 'เรื่องงาน', example: 'เช่น ประชุมนำเสนองานกับลูกค้า', advice: 'การแต่งตัวและการวางตัว' },
+  money: { short: 'การเงิน', matter: 'เรื่องเงิน', example: 'เช่น ไปคุยขอสินเชื่อ', advice: 'การแต่งตัวและการวางตัว' },
+  business: { short: 'ค้าขาย', matter: 'เรื่องค้าขาย', example: 'เช่น เปิดบูธขายของ', advice: 'การแต่งตัวและการจัดร้าน' },
+  health: { short: 'สุขภาพ', matter: 'เรื่องสุขภาพ', example: 'เช่น เริ่มออกกำลังกาย', advice: 'การแต่งตัวและการดูแลตัวเอง' },
+  study: { short: 'การเรียน', matter: 'เรื่องเรียน', example: 'เช่น สอบกลางภาค', advice: 'การแต่งตัวและการเตรียมตัว' },
+  family: { short: 'ครอบครัว', matter: 'เรื่องครอบครัว', example: 'เช่น ไปเยี่ยมพ่อแม่แฟน', advice: 'การแต่งตัวและการวางตัว' },
+  protection: { short: 'แคล้วคลาด', matter: 'เรื่องที่อยากให้ราบรื่นปลอดภัย', example: 'เช่น เดินทางไกล', advice: 'การแต่งตัวและการเตรียมตัว' },
+};
+
+function colorTodayTemplates(): PromptTemplate[] {
+  return ALL_GOALS.map((goal, i) => {
+    const { short, matter, example, advice } = COLOR_TODAY_TOPICS[goal];
+    return {
+      slug: `color-today-${goal}`,
+      title: `แต่งตัวตามสีมงคลวันนี้ ด้าน${short}`,
+      description: `ใช้สีเสื้อมงคลด้าน${short}ของวันนี้ ให้ AI ช่วยแนะนำ${advice}`,
+      discipline: 'lek-7-tua',
+      goals: [goal],
+      template: `วันนี้วัน{{weekday}} สีมงคลด้าน${short}ของฉันคือ {{color}} และสีที่ควรเลี่ยงคือ {{avoid_color}}
+วันนี้ฉันมี${matter}คือ: {{question}}
+ช่วยแนะนำ${advice}สำหรับวันนี้ให้เหมาะกับเรื่องนี้`,
+      requiredFields: [
+        { key: 'weekday', label: 'วัน', type: 'text', defaultFrom: 'today-weekday' },
+        { key: 'color', label: 'สีมงคล', type: 'text', placeholder: 'ได้จากหน้าสีเสื้อวันนี้' },
+        { key: 'avoid_color', label: 'สีที่ควรเลี่ยง', type: 'text' },
+        { ...QUESTION, label: `${matter}วันนี้`, placeholder: example },
+      ],
+      followUps: [],
+      isFeatured: false,
+      sortOrder: goal === 'career' ? 3 : 30 + i,
+    };
+  });
+}
+
 export const PROMPT_TEMPLATES: PromptTemplate[] = [
   {
     slug: 'tarot-love',
@@ -117,25 +157,7 @@ export const PROMPT_TEMPLATES: PromptTemplate[] = [
     sortOrder: 1,
   },
   ...luckyNumberTemplates(),
-  {
-    slug: 'color-today-career',
-    title: 'แต่งตัวไปทำงานตามสีมงคลวันนี้',
-    description: 'ใช้สีเสื้อมงคลด้านการงานของวันนี้ ให้ AI ช่วยแนะนำการแต่งตัวและการวางตัว',
-    discipline: 'lek-7-tua',
-    goals: ['career'],
-    template: `วันนี้วัน{{weekday}} สีมงคลด้านการงานของฉันคือ {{color}} และสีที่ควรเลี่ยงคือ {{avoid_color}}
-วันนี้ฉันมีเรื่องงานคือ: {{question}}
-ช่วยแนะนำการแต่งตัวและการวางตัวสำหรับวันนี้ให้เหมาะกับเรื่องนี้`,
-    requiredFields: [
-      { key: 'weekday', label: 'วัน', type: 'text', defaultFrom: 'today-weekday' },
-      { key: 'color', label: 'สีมงคล', type: 'text', placeholder: 'ได้จากหน้าสีเสื้อวันนี้' },
-      { key: 'avoid_color', label: 'สีที่ควรเลี่ยง', type: 'text' },
-      { ...QUESTION, label: 'เรื่องงานวันนี้', placeholder: 'เช่น ประชุมนำเสนองานกับลูกค้า' },
-    ],
-    followUps: [],
-    isFeatured: false,
-    sortOrder: 3,
-  },
+  ...colorTodayTemplates(),
   {
     slug: 'chart-reading-general',
     title: 'ตีความผังดวงที่มีอยู่แล้ว',

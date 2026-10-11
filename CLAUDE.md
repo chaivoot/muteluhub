@@ -21,7 +21,7 @@
 - **ภาพใน `design/mockups/images/` เป็นภาพ AI ความละเอียดต่ำ (~200px) ใช้เป็นตัวอย่างเท่านั้น** ห้ามนำภาพวัด/ศาลเจ้า/เทศกาล/โทริอิไปใช้เป็นภาพสถานที่จริง ภาพสถานที่ต้องเป็นภาพจริงพร้อมเครดิต ส่วนภาพสินค้าเป็นแค่ตัวอย่าง
 - ภาพหมอดู 4 ภาพ (ลายมือ ไพ่ทาโรต์ โหงวเฮ้ง ฮวงจุ้ย) เป็นตัวอย่างสไตล์ ต้องทำชุดจริงความละเอียดสูง ศาสตร์ละ 2 ถึง 3 แบบ (ภาพโหงวเฮ้งตัวอย่างดูคล้ายเทพ ควรทำใหม่)
 - ห้ามใช้ชื่อหมอดูหรือแบรนด์จริงในข้อมูลตัวอย่าง (seed) ใช้ชื่อสมมติที่ดูออกว่าสมมติ
-- สีเสื้อในม็อกอัป (อาทิตย์: เขียว = การเงิน, เลี่ยงฟ้า/น้ำเงิน) เป็นข้อมูลตัวอย่าง ยังไม่ได้ตรวจกับตำรา ห้าม seed เป็นข้อมูลจริงจนกว่าเจ้าของจะยืนยันหลักทักษาที่ใช้
+- สีเสื้อ: เจ้าของยืนยันแล้ว (2026-10-11) ใช้ **ทักษา ตารางคงที่ตามวัน** และจับคู่เป้าหมาย: การเงิน/ความรัก = ศรี, การงาน = เดช, สุขภาพ = อายุ, ค้าขาย = มูละ, การเรียน = อุตสาหะ, ครอบครัว = บริวาร, แคล้วคลาด = มนตรี, สีที่ควรเลี่ยง = กาลกิณี (ข้อมูลอยู่ที่ `src/data/daily-colors.ts`) ห้ามเปลี่ยนหลักโดยไม่ถามเจ้าของ
 - ไม่มีแบนเนอร์ ไม่มี pop-up
 - ห้ามดึงรูปจาก Google Maps
 - CID ของ Agoda อยู่ใน env var เท่านั้น ห้าม hardcode
@@ -58,19 +58,20 @@ spec ไม่ได้กำหนด framework ระบุแค่ว่า 
 - ข้อมูล: taxonomy/เทศกาล/prompt อยู่ในไฟล์ (`data/*.json`, `src/data/*.ts`) ส่วน **สถานที่และหมอดูอยู่ใน Neon Postgres (สิงคโปร์)** นำเข้าผ่าน `/admin/import` (รูปแบบ: `docs/import-format.md`) ฟังก์ชัน Vercel ตั้ง region `sin1` ใน `vercel.json` ให้ตรงกับฐานข้อมูล
 - env: `DATABASE_URL` (Neon), `ADMIN_PASSWORD` (หลังบ้าน), `NEXT_PUBLIC_SITE_URL`, `AGODA_CID`
 - ข้อควรระวัง: route ที่อ่านข้อมูลจาก DB ห้ามตั้ง `dynamicParams = false` (หลัง revalidateTag Next 15 จะตอบ 404) ให้ใช้ notFound() แทน
-- เสร็จแล้ว: ข้อ 1 ในลำดับการทำ (ระบบดีไซน์ layout มือถือ หน้าแรก) + addendum 01 AI prompt (คลัง, หน้า prompt เดี่ยว, generator) + เครื่องคำนวณเลขมงคล `/tools/lucky-number` + สถานที่ในไทย + หมอดู (รายการ ตัวกรอง bottom sheet โปรไฟล์ หน้าตามศาสตร์ OG image) หน้าอื่นเป็นโครงรอ
+- เสร็จแล้ว: ข้อ 1 ในลำดับการทำ (ระบบดีไซน์ layout มือถือ หน้าแรก) + addendum 01 AI prompt (คลัง, หน้า prompt เดี่ยว, generator) + เครื่องคำนวณเลขมงคล `/tools/lucky-number` + สถานที่ในไทย + หมอดู (รายการ ตัวกรอง bottom sheet โปรไฟล์ หน้าตามศาสตร์ OG image) + สีเสื้อมงคลวันนี้ `/color-today` (การ์ดแชร์ 1080x1350 / 1080x1920) หน้าอื่นเป็นโครงรอ
 - ภาพหมอดู: ภาพ SVG ตามศาสตร์ 3 แบบ (`src/lib/art/discipline-art.ts`, เสิร์ฟที่ `/art/[slug]-[n].svg`) เป็นชุดชั่วคราวจนกว่าจะมีภาพวาดจริงความละเอียดสูง
 - หลักคำนวณเลขมงคล: **Numerology แบบพีทาโกรัส** (เจ้าของเลือกแล้ว) โค้ดอยู่ที่ `src/lib/lucky-number/` ที่เดียว การจับคู่เลขกับเป้าหมายอยู่ใน `meanings.ts` (เป็นการตีความของเว็บ แก้ได้)
-- addendum 01 ที่ยังไม่ทำ: ปุ่ม ถาม AI ต่อ ใน /color-today (รอหลักทักษา) ส่วนเลขมงคลทำแล้ว ส่งค่าผ่าน sessionStorage (`src/lib/prompt-handoff.ts`) ไม่ใส่วันเกิดใน URL; ปุ่มเปิดใน ChatGPT/Claude ยังไม่ทำเพราะยังไม่ได้ทดสอบว่า URL parameter ใช้ได้จริง
+- ปุ่ม ถาม AI ต่อ ทำแล้วทั้งเลขมงคลและสีเสื้อ ส่งค่าผ่าน sessionStorage (`src/lib/prompt-handoff.ts`) ไม่ใส่วันเกิดใน URL; addendum 01 ที่ยังไม่ทำ: ปุ่มเปิดใน ChatGPT/Claude ยังไม่ทำเพราะยังไม่ได้ทดสอบว่า URL parameter ใช้ได้จริง
 - คำสั่ง: `npm run dev`, `npm test`, `npm run typecheck`, `npm run build`
 
 ## โครงโค้ด
 - `src/lib/goals.ts` อ่าน `data/goals.json` (แหล่งเดียวของเป้าหมาย)
 - `src/lib/thai-date.ts` วันที่ไทย พ.ศ. ตามเวลา Asia/Bangkok
 - `src/data/festivals.ts` + `src/lib/festivals.ts` เทศกาลและวันที่รายปี
-- `src/data/daily-colors.ts` สีเสื้อ (ตอนนี้เป็นข้อมูลตัวอย่างเท่านั้น `DAILY_COLORS_STATUS = 'sample'`)
+- `src/data/daily-colors.ts` + `src/lib/daily-colors.ts` สีเสื้อตามหลักทักษา (คำนวณจากลำดับทักษา + สีประจำดาว), การ์ดแชร์ `src/lib/og/color-card.tsx` เสิร์ฟที่ `/color-today/card?goal=&size=portrait|story`
 - `src/components/goal-context.tsx` จำเป้าหมายที่เลือกใน localStorage + cookie `mh_goal`
 - `src/data/prompt-templates.ts` + `src/lib/prompts.ts` คลัง prompt, `GUARD_BLOCK` (ต่อท้ายทุก prompt ตอน render), ประกอบ prompt ฝั่ง client เท่านั้น
 - `src/lib/analytics.ts` event copy_prompt / open_followup / click_to_fortune_teller รับเฉพาะ slug goal discipline (ยังไม่ได้เลือกผู้ให้บริการ push เข้า window.dataLayer)
 - `src/lib/db.ts` (postgres.js, สร้างตารางอัตโนมัติใต้ advisory lock), `src/lib/directory-repo.ts` (อ่าน/เขียนตาราง directory + cache tag ตามประเภท) ใช้โดย `places-repo.ts` และ `tellers-repo.ts`, `src/lib/import/*-schema.ts` (ตรวจ JSON นำเข้า), `src/lib/admin-auth.ts` (รหัสผ่านเดียว)
 - OG image หมอดู: `src/app/fortune-tellers/[slug]/opengraph-image.tsx` ใช้ฟอนต์ TTF ใน `src/assets/og` (ต้องอยู่ใน outputFileTracingIncludes ของ next.config)
+- ชุดข้อมูลเริ่มต้น: `data/import/*.json` ลงทะเบียนใน `src/lib/seed-batches.ts` แล้วเจ้าของกดนำเข้าได้ที่ `/admin` (ข้าม slug ที่มีอยู่แล้ว ไม่เขียนทับ) Claude เข้าถึงฐานข้อมูล production ไม่ได้ ให้ส่งข้อมูลผ่านทางนี้

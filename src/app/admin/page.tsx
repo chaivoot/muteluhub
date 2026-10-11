@@ -13,6 +13,8 @@ import { tellersRepo } from '@/lib/tellers-repo';
 import { deleteAction, logoutAction, togglePublishedAction } from './actions';
 import { DeleteButton } from './DeleteButton';
 import { LoginForm } from './LoginForm';
+import { SeedButton } from './SeedButton';
+import { SEED_BATCHES } from '@/lib/seed-batches';
 
 const dateTime = (d: Date) =>
   d.toLocaleString('th-TH', { timeZone: 'Asia/Bangkok', dateStyle: 'medium', timeStyle: 'short' });
@@ -108,6 +110,16 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
           นำเข้า JSON ({kindLabel(kind)})
         </Link>
       </div>
+
+      {SEED_BATCHES.some((b) => b.kind === kind) && (
+        <section className="seed-box">
+          <div className="field__label">ชุดข้อมูลเริ่มต้น (จาก repo)</div>
+          {SEED_BATCHES.filter((b) => b.kind === kind).map((b) => (
+            <SeedButton key={b.id} batch={b.id} label={`${b.label} (${b.data.length} รายการ)`} />
+          ))}
+          <p className="note">นำเข้าเฉพาะรายการที่ยังไม่มี ไม่เขียนทับของเดิม ทุกรายการเข้ามาแบบซ่อนไว้ก่อน</p>
+        </section>
+      )}
 
       <ul className="admin-list">
         {rows.map((r) => (

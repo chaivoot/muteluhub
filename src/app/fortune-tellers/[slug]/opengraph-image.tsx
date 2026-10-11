@@ -3,7 +3,7 @@ import { CHANNEL_LABEL } from '@/data/fortune-tellers';
 import { provinceShortName } from '@/data/provinces';
 import { artVariantFor, disciplineArtSvg } from '@/lib/art/discipline-art';
 import { getDiscipline } from '@/lib/disciplines';
-import { ogFonts } from '@/lib/og/fonts';
+import { OG_BODY, OG_DISPLAY, ogFonts } from '@/lib/og/fonts';
 import { listPublishedTellers } from '@/lib/tellers-repo';
 
 // OG image อัตโนมัติ: ภาพ default ตามศาสตร์ + ชื่อหมอดู + ศาสตร์ (spec ข้อ 3.1)
@@ -45,14 +45,14 @@ export default async function OgImage({ params }: { params: Promise<{ slug: stri
             borderLeft: '3px solid #D6B064',
           }}
         >
-          <div style={{ fontFamily: 'Noto Sans Thai', fontSize: 28, color: '#D6B064' }}>MuteluHub · หมอดู</div>
-          <div style={{ fontFamily: 'Trirong', fontSize: title.length > 18 ? 52 : 64, lineHeight: 1.45 }}>{title}</div>
+          <div style={{ fontFamily: OG_BODY, fontSize: 28, color: '#D6B064' }}>MuteluHub · หมอดู</div>
+          <div style={{ fontFamily: OG_DISPLAY, fontSize: title.length > 18 ? 52 : 64, lineHeight: 1.45 }}>{title}</div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12 }}>
             {tags.slice(0, 3).map((t) => (
               <div
                 key={t}
                 style={{
-                  fontFamily: 'Noto Sans Thai',
+                  fontFamily: OG_BODY,
                   fontSize: 28,
                   background: '#D6B064',
                   color: '#172038',
@@ -64,7 +64,7 @@ export default async function OgImage({ params }: { params: Promise<{ slug: stri
               </div>
             ))}
           </div>
-          <div style={{ fontFamily: 'Noto Sans Thai', fontSize: 28, color: '#B9B2A3' }}>{meta}</div>
+          <div style={{ fontFamily: OG_BODY, fontSize: 28, color: '#B9B2A3' }}>{meta}</div>
         </div>
       </div>
     ),
