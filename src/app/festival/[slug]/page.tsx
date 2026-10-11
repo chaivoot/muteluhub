@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ComingSoon } from '@/components/ComingSoon';
+import { CreditBadge } from '@/components/CreditBadge';
 import { GoalTag } from '@/components/GoalTag';
 import { UiIcon } from '@/components/icons';
 import { FESTIVALS, type Festival, type FestivalDate } from '@/data/festivals';
@@ -59,8 +60,13 @@ export default async function FestivalPage({ params }: { params: Params }) {
     <main>
       <FestivalJsonLd festival={festival} date={date} />
       <div className="fest-hero">
-        <span className="festival-card__art" aria-hidden="true" />
+        {festival.image ? (
+          <img src={festival.image.src} alt={festival.image.alt} className="festival-card__img" />
+        ) : (
+          <span className="festival-card__art" aria-hidden="true" />
+        )}
         <span className="fest-hero__scrim" aria-hidden="true" />
+        {festival.image && <CreditBadge credit={festival.image.credit} position="top-right" />}
         <div className="place-hero__top">
           <Link href="/" className="icon-btn icon-btn--glass" aria-label="ย้อนกลับ">
             <UiIcon name="back" size={22} strokeWidth={2} />
@@ -191,6 +197,13 @@ export default async function FestivalPage({ params }: { params: Params }) {
                     </a>
                   </li>
                 ))}
+                {festival.image?.sourceUrl && (
+                  <li>
+                    <a href={festival.image.sourceUrl} target="_blank" rel="noopener noreferrer">
+                      ภาพประกอบ: {festival.image.credit}
+                    </a>
+                  </li>
+                )}
               </ul>
             </details>
           </section>

@@ -56,7 +56,8 @@ export interface Festival {
   tagline: string;
   goals: GoalSlug[];
   dates: FestivalDate[];
-  image?: { src: string; alt: string; credit: string };
+  /** ภาพจริงพร้อมเครดิต (ห้ามใช้ภาพ AI จาก mockup) sourceUrl = หน้าไฟล์ต้นทางสำหรับแสดงที่มาและสัญญาอนุญาต */
+  image?: { src: string; alt: string; credit: string; sourceUrl?: string };
   content?: FestivalContent;
 }
 
@@ -66,6 +67,12 @@ export const FESTIVALS: Festival[] = [
     name: 'เทศกาลกินเจ',
     tagline: 'ข้อควรรู้ ของไหว้ สถานที่จัดงาน ที่พัก',
     goals: ['health', 'protection'],
+    image: {
+      src: '/images/festivals/kinje-cherngtalay-phuket.jpg',
+      alt: 'ศาลเจ้าจีนที่เชิงทะเล ภูเก็ต ประดับธงเหลืองช่วงเทศกาลกินเจ ผู้คนแต่งชุดขาวมารวมตัว',
+      credit: 'Kirill Kay / CC BY-SA 3.0',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Ahm_(Chinese_Temple)_in_Cherngtalay,_the_Vegetarian_Festival_in_Phuket_07.JPG',
+    },
     dates: [
       // อ้างอิง spec: กินเจ 2569 = 10-18 ต.ค. 2569 (ล้างท้อง 9 ต.ค.)
       { year: 2026, start: '2026-10-10', end: '2026-10-18', prep: '2026-10-09', notes: 'ล้างท้อง 9 ต.ค.' },
