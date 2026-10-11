@@ -28,6 +28,15 @@ const valid = {
 };
 
 describe('parsePlaceImport', () => {
+  it('requires coordinates', () => {
+    const { coords, ...rest } = valid;
+    void coords;
+    expect(parsePlaceImport(JSON.stringify(rest)).items[0].ok).toBe(false);
+    const r = parsePlaceImport(JSON.stringify({ ...rest, lat: 13.7, lng: 100.5 }));
+    expect(r.items[0].item).toMatchObject({ lat: 13.7, lng: 100.5 });
+    expect(parsePlaceImport(JSON.stringify({ ...rest, lat: 200, lng: 100.5 })).items[0].ok).toBe(false);
+  });
+
   it('converts the owner format into a Place', () => {
     const r = parsePlaceImport(JSON.stringify([valid]));
     expect(r.error).toBeUndefined();

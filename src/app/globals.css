@@ -603,3 +603,12 @@ ul { list-style: none; margin: 0; padding: 0; }
 .abroad-card__sub { font-size: var(--text-sm); color: var(--color-text-muted); }
 .abroad-note { padding-top: 16px; }
 .home-abroad { margin-top: 22px; }
+
+/* ---------- near me ---------- */
+.chip--near { display: inline-flex; align-items: center; gap: 6px; min-height: var(--tap-min); }
+.chip--near:disabled { opacity: 0.6; cursor: progress; }
+.place-card__dist { color: var(--color-gold-bright); font-weight: 600; }
+.filter-bar__top { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; }
+.filter-bar--wrap .filter-bar__selects { width: 100%; flex-wrap: nowrap; }
+.filter-bar--wrap .select-wrap { flex: 1 1 0; min-width: 0; }
+.filter-bar--wrap .select-wrap .select { width: 100%; }

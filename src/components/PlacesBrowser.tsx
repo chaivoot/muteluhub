@@ -3,12 +3,16 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Place } from '@/data/places';
 import type { GoalSlug } from '@/lib/goals';
+import { formatDistance, sortByDistance, type LatLng } from '@/lib/geo';
 import { deitiesOf, filterPlaces, provincesWithPlaces } from '@/lib/places';
 import { GoalChips } from './GoalChips';
+import { UiIcon } from './icons';
 import { PlaceCard } from './PlaceCard';
 import { useGoal } from './goal-context';
 
-/** รายการสถานที่ + filter: เป้าหมาย (บนสุด) องค์เทพ จังหวัด */
+type GeoState = 'idle' | 'locating' | 'denied' | 'unavailable';
+
+/** รายการสถานที่ + filter: เป้าหมาย (บนสุด) องค์เทพ จังหวัด + ใกล้ฉัน (ตำแหน่งใช้ในเบราว์เซอร์เท่านั้น ไม่ส่งขึ้น server ไม่เก็บ) */
 export function PlacesBrowser({
   places,
   fixedProvince,
@@ -24,6 +28,36 @@ export function PlacesBrowser({
   const [touched, setTouched] = useState(false);
   const [deity, setDeity] = useState('');
   const [province, setProvince] = useState('');
+  const [here, setHere] = useState<LatLng | null>(null);
+  const [geo, setGeo] = useState<GeoState>('idle');
+  const nearMe = groupBy === 'province';
+
+  const toggleNearMe = () => {
+    if (here) {
+      setHere(null);
+      return;
+    }
+    if (!('geolocation' in navigator)) {
+      setGeo('unavailable');
+      return;
+    }
+    setGeo('locating');
+    // บางเบราว์เซอร์ไม่เรียก callback เลยถ้าผู้ใช้ปิดหน้าต่างขอสิทธิ์ ไม่ให้ปุ่มค้าง
+    const giveUp = window.setTimeout(() => setGeo((g) => (g === 'locating' ? 'unavailable' : g)), 20000);
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        window.clearTimeout(giveUp);
+        setHere({ lat: pos.coords.latitude, lng: pos.coords.longitude });
+        setGeo('idle');
+        setProvince('');
+      },
+      (err) => {
+        window.clearTimeout(giveUp);
+        setGeo(err.code === err.PERMISSION_DENIED ? 'denied' : 'unavailable');
+      },
+      { enableHighAccuracy: false, timeout: 15000, maximumAge: 5 * 60 * 1000 },
+    );
+  };
 
   useEffect(() => {
     if (!touched && remembered) setGoal(remembered);
@@ -33,9 +67,14 @@ export function PlacesBrowser({
   const provinces = useMemo(() => provincesWithPlaces(places), [places]);
   const cities = useMemo(() => [...new Set(places.map((p) => p.city).filter((c): c is string => !!c))], [places]);
   const results = filterPlaces(
-    { goal, deity: deity || null, province: groupBy === 'province' ? (fixedProvince ?? (province || null)) : null },
+    {
+      goal,
+      deity: deity || null,
+      province: groupBy === 'province' ? (fixedProvince ?? (province || null)) : null,
+    },
     places,
   ).filter((p) => groupBy !== 'city' || !province || p.city === province);
+  const rows = here ? sortByDistance(results, here) : results.map((item) => ({ item, km: null }));
 
   return (
     <>
@@ -47,7 +86,21 @@ export function PlacesBrowser({
         }}
       />
       <div className="filter-bar filter-bar--wrap container">
-        <span className="filter-bar__count">{results.length} แห่ง</span>
+        <div className="filter-bar__top">
+          <span className="filter-bar__count">{results.length} แห่ง</span>
+          {nearMe && (
+            <button
+              type="button"
+              className="chip chip--near"
+              aria-pressed={here != null}
+              onClick={toggleNearMe}
+              disabled={geo === 'locating'}
+            >
+              <UiIcon name="locate" size={16} strokeWidth={2} />
+              {geo === 'locating' ? 'กำลังหาตำแหน่ง' : 'ใกล้ฉัน'}
+            </button>
+          )}
+        </div>
         <div className="filter-bar__selects">
           <label className="select-wrap">
             <span className="visually-hidden">องค์เทพ / สิ่งศักดิ์สิทธิ์</span>
@@ -88,9 +141,17 @@ export function PlacesBrowser({
           )}
         </div>
       </div>
+      {(geo === 'denied' || geo === 'unavailable') && (
+        <p className="container note" role="status">
+          {geo === 'denied'
+            ? 'เบราว์เซอร์ไม่ได้อนุญาตให้ใช้ตำแหน่ง เปิดสิทธิ์ตำแหน่งในการตั้งค่า หรือเลือกจังหวัดแทนได้'
+            : 'หาตำแหน่งไม่ได้ตอนนี้ ลองใหม่อีกครั้ง หรือเลือกจังหวัดแทน'}
+        </p>
+      )}
+      {here && <p className="container note">เรียงจากใกล้ไปไกล ระยะเป็นเส้นตรง ไม่ใช่ระยะทางขับรถ</p>}
       <div className="place-grid container">
-        {results.map((p) => (
-          <PlaceCard key={p.slug} place={p} />
+        {rows.map(({ item, km }) => (
+          <PlaceCard key={item.slug} place={item} distance={km == null ? undefined : formatDistance(km)} />
         ))}
       </div>
       {results.length === 0 && (
