@@ -542,3 +542,48 @@ ul { list-style: none; margin: 0; padding: 0; }
 .faq__item summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; font-weight: 600; }
 .faq__item p { color: var(--color-text-soft); padding-bottom: 10px; }
 @media (min-width: 768px) { .fest-hero { height: 380px; } }
+
+/* ---------- auspicious calendar ---------- */
+.cal { padding-top: 14px; }
+.cal__head { display: flex; align-items: center; justify-content: space-between; }
+.cal__head .icon-btn { font-size: 26px; color: var(--color-gold); }
+.cal__head .icon-btn:disabled { opacity: 0.3; }
+.cal__title { font-family: var(--font-display); font-size: var(--text-xl); font-weight: 600; }
+.cal__grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; margin-top: 6px; }
+.cal__wd { text-align: center; font-size: var(--text-sm); color: var(--color-text-muted); padding: 2px 0; }
+.cal__day {
+  position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  min-height: 48px; border-radius: 10px; border: 1px solid transparent; background: var(--color-surface);
+  cursor: pointer; padding: 2px 0; line-height: 1.2;
+}
+.cal__num { font-weight: 600; font-size: var(--text-md); }
+.cal__lunar { font-size: 10px; color: var(--color-text-muted); }
+.cal__day--good { background: rgba(214, 176, 100, 0.22); border-color: rgba(214, 176, 100, 0.55); }
+.cal__day--caution { background: rgba(132, 180, 232, 0.10); }
+.cal__day--avoid { background: rgba(232, 132, 106, 0.16); }
+.cal__day--avoid .cal__num { color: #F2A894; }
+.cal__day--unknown { opacity: 0.55; }
+.cal__day--past { opacity: 0.45; }
+.cal__day--today { box-shadow: inset 0 0 0 2px var(--color-text); }
+.cal__day[aria-pressed='true'] { outline: 2px solid var(--color-gold-bright); outline-offset: 1px; }
+.cal__holy { position: absolute; top: 4px; right: 4px; width: 6px; height: 6px; border-radius: 50%; background: var(--color-gold-bright); }
+.cal__holy--legend { position: static; display: inline-block; }
+.cal__legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; font-size: var(--text-sm); color: var(--color-text-soft); }
+.cal__legend li { display: inline-flex; align-items: center; gap: 6px; }
+.cal__swatch { width: 14px; height: 14px; border-radius: 4px; display: inline-block; border: 1px solid var(--color-border); }
+.day-detail { margin-top: 12px; padding: 14px; border-radius: var(--radius-md); background: var(--color-surface); border: 1px solid var(--color-border); display: flex; flex-direction: column; gap: 6px; }
+.day-detail--good { border-color: var(--color-gold); }
+.day-detail--avoid { border-color: rgba(232, 132, 106, 0.6); }
+.day-detail__date { font-family: var(--font-display); font-weight: 600; font-size: var(--text-lg); }
+.day-detail__lunar { color: var(--color-gold); }
+.day-tag--good { background: var(--color-gold); border-color: var(--color-gold); color: var(--color-on-gold); font-weight: 600; }
+.day-tag--avoid { border-color: var(--color-vermilion); color: #F2A894; }
+.good-days { display: flex; flex-direction: column; gap: 8px; }
+.good-day {
+  width: 100%; display: grid; grid-template-columns: auto 1fr; gap: 0 12px; text-align: left; cursor: pointer;
+  padding: 10px 14px; border-radius: var(--radius-md); background: var(--color-surface); border: 1px solid var(--color-border);
+}
+.good-day__date { font-weight: 600; }
+.good-day__why { font-size: var(--text-sm); color: var(--color-gold); justify-self: end; }
+.good-day__lunar { grid-column: 1 / -1; font-size: var(--text-sm); color: var(--color-text-muted); }
+.cal__cta { margin-top: 16px; }

@@ -1,15 +1,14 @@
 import type { Metadata } from 'next';
-import { ComingSoon, PageHeader } from '@/components/ComingSoon';
+import { CalendarPage } from './CalendarPage';
 
-export const metadata: Metadata = { title: 'ปฏิทินมงคล', description: 'ฤกษ์ดีตามประเภทงาน แต่งงาน ขึ้นบ้านใหม่ เปิดร้าน ออกรถ' };
+export const metadata: Metadata = {
+  title: 'ปฏิทินมงคล วันดี วันธงชัย',
+  description: 'ปฏิทินวันดีตามวันธงชัย อธิบดี อุบาทว์ โลกาวินาศ สำหรับแต่งงาน ขึ้นบ้านใหม่ เปิดร้าน ออกรถ พร้อมวันจันทรคติ',
+};
+
+// วันนี้เปลี่ยนทุกวัน
+export const revalidate = 3600;
 
 export default function Page() {
-  return (
-    <main>
-      <PageHeader title="ปฏิทินมงคล" />
-      <ComingSoon>
-        <p>ฤกษ์ดีตามประเภทงาน เช่น แต่งงาน ขึ้นบ้านใหม่ เปิดร้าน ออกรถ</p>
-      </ComingSoon>
-    </main>
-  );
+  return <CalendarPage event="wedding" title="ปฏิทินมงคล" />;
 }
