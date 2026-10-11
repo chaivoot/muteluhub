@@ -10,7 +10,8 @@ import { getDiscipline } from '@/lib/disciplines';
 import { getGoal } from '@/lib/goals';
 import { placesRepo } from '@/lib/places-repo';
 import { tellersRepo } from '@/lib/tellers-repo';
-import { deleteAction, logoutAction, togglePublishedAction } from './actions';
+import { deleteAction, logoutAction, publishAllAction, togglePublishedAction } from './actions';
+import { ConfirmButton } from './ConfirmButton';
 import { DeleteButton } from './DeleteButton';
 import { LoginForm } from './LoginForm';
 import { SeedButton } from './SeedButton';
@@ -105,10 +106,21 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
       <p className="note">
         {kindLabel(kind)} {rows.length} · เผยแพร่แล้ว {publishedCount} · ซ่อนอยู่ {rows.length - publishedCount}
       </p>
-      <div className="actions">
+      <div className="actions actions--wrap">
         <Link href={`/admin/import?kind=${kind}`} className="btn btn--gold">
           นำเข้า JSON ({kindLabel(kind)})
         </Link>
+        {rows.length - publishedCount > 0 && (
+          <form action={publishAllAction}>
+            <input type="hidden" name="kind" value={kind} />
+            <ConfirmButton
+              className="btn btn--outline"
+              message={`เผยแพร่${kindLabel(kind)}ที่ซ่อนอยู่ทั้งหมด ${rows.length - publishedCount} รายการ? ตรวจบันทึกของแต่ละรายการแล้วหรือยัง`}
+            >
+              เผยแพร่ทั้งหมด ({rows.length - publishedCount})
+            </ConfirmButton>
+          </form>
+        )}
       </div>
 
       {SEED_BATCHES.some((b) => b.kind === kind) && (

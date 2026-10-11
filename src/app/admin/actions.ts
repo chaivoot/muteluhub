@@ -101,6 +101,11 @@ export async function togglePublishedAction(form: FormData): Promise<void> {
   await forKind(kindFrom(form)).repo.setPublished(String(form.get('slug')), form.get('published') === 'true');
 }
 
+export async function publishAllAction(form: FormData): Promise<void> {
+  await requireAdmin();
+  await forKind(kindFrom(form)).repo.publishAll();
+}
+
 export async function deleteAction(form: FormData): Promise<void> {
   await requireAdmin();
   await forKind(kindFrom(form)).repo.remove(String(form.get('slug')));

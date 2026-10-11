@@ -104,6 +104,15 @@ export function createDirectoryRepo<T extends Entry>(kind: DirectoryKind) {
       revalidateTag(tag);
     },
 
+    /** เผยแพร่ทุกรายการที่ยังซ่อนอยู่ คืนจำนวนที่เปลี่ยน */
+    async publishAll(): Promise<number> {
+      await ensureSchema();
+      const sql = getSql();
+      const rows = await sql`update ${sql(kind)} set published = true, updated_at = now() where published = false returning slug`;
+      revalidateTag(tag);
+      return rows.length;
+    },
+
     async remove(slug: string): Promise<void> {
       await ensureSchema();
       const sql = getSql();
