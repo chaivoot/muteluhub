@@ -3,7 +3,10 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { ComingSoon, PageHeader } from '@/components/ComingSoon';
 import { GoalIcon } from '@/components/icons';
+import { PromptCard } from '@/components/PromptCard';
+import { SectionHeader } from '@/components/SectionHeader';
 import { GOALS, getGoal, isGoalSlug } from '@/lib/goals';
+import { recommendedForGoal } from '@/lib/prompts';
 
 export const dynamicParams = false;
 
@@ -43,6 +46,12 @@ export default async function GoalPage({ params }: { params: Params }) {
       <ComingSoon>
         <p>หน้านี้จะรวมสีเสื้อและเลขมงคลด้าน{g.short} สถานที่ขอพร หมอดูที่ถนัด ของเสริม และฤกษ์ที่เกี่ยวข้อง</p>
       </ComingSoon>
+      <SectionHeader title={`ถาม AI เรื่อง${g.short}`} href={`/ai-prompts/${g.slug}`} />
+      <div className="stack container">
+        {recommendedForGoal(g.slug).map((t) => (
+          <PromptCard key={t.slug} template={t} />
+        ))}
+      </div>
     </main>
   );
 }

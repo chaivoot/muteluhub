@@ -4,7 +4,8 @@
 หัวใจ: ผู้ใช้เริ่มจาก "อยากเสริมเรื่องอะไร" (8 เป้าหมาย) ทุกหน้าตอบเป้าหมายนั้น
 
 ## อ่านตามลำดับนี้
-1. `docs/mutelu-spec.md` - spec ของเจ้าของโปรเจกต์ (taxonomy, data model, URL, affiliate, ลำดับการทำ, เรื่องที่ยังไม่ตัดสินใจ) **ถือเป็นแหล่งความจริงหลัก**
+1. `docs/mutelu-spec.md` - spec ของเจ้าของโปรเจกต์ + `docs/mutelu-spec-addendum-*.md` (ส่วนเพิ่ม)
+    (taxonomy, data model, URL, affiliate, ลำดับการทำ, เรื่องที่ยังไม่ตัดสินใจ) **ถือเป็นแหล่งความจริงหลัก**
 2. `docs/design-brief.md` - brief ด้านดีไซน์ (ผู้ใช้, ความรู้สึกแบรนด์, หน้าจอที่ต้องมี)
 3. `design/design-system.md` - ระบบดีไซน์ที่เลือกแล้ว (direction C2 ครามทอง ภาพนำ)
 4. `design/mockups/*.png` และ `*.html` - ภาพอ้างอิง เปิด HTML ในเบราว์เซอร์ได้ (inline style อ่านค่าได้ตรง)
@@ -44,11 +45,19 @@ spec ไม่ได้กำหนด framework ระบุแค่ว่า 
 ## สไตล์การเขียนข้อความในเว็บ
 ภาษาไทยเป็นกันเอง กระชับ ไม่ใช้ em dash (—) ใช้ hyphen (-) แทนเมื่อจำเป็น ไม่ใส่อัญประกาศพร่ำเพรื่อ
 
+## เงื่อนไขการทำงาน (เจ้าของกำหนด 2026-10-11)
+- เจ้าของไม่ทำงานบนเครื่องตัวเอง Claude เขียนทุกอย่างใน sandbox แล้ว push ขึ้น GitHub
+- เปิด PR ได้เลยไม่ต้องรอคำสั่ง และ merge เข้า `main` ได้เลยเมื่อ test + build ผ่าน
+- `main` = Production (Vercel) เจ้าของทดสอบที่ production ไม่ดู preview
+- ดังนั้นก่อน merge ต้องรัน `npm test`, `npm run typecheck`, `npm run build` ให้ผ่านทุกครั้ง และเช็กหน้าจริงในเบราว์เซอร์ (มือถือ 390px) เพราะไม่มีใครตรวจ preview ให้
+- สรุปสิ่งที่ merge ไปแล้วให้เจ้าของทุกครั้ง พร้อมบอกว่าควรไปดูหน้าไหนบน production
+
 ## สถานะโปรเจกต์ (อัปเดตล่าสุด 2026-10-11)
 - ชื่อแบรนด์/โดเมน: **MuteluHub / muteluhub.com** (เจ้าของยืนยันแล้ว)
 - Stack: Next.js 15 (App Router) + TypeScript + CSS ธรรมดา (`design/tokens.css` import ตรงใน `src/app/layout.tsx`), deploy Vercel
 - ข้อมูล: ยังไม่มี database ใช้ไฟล์ใน `data/*.json` และ `src/data/*.ts` (โครงตรงกับ data model ใน spec ข้อ 5) ย้ายไป DB ได้ภายหลัง
-- เสร็จแล้ว: ข้อ 1 ในลำดับการทำ (ระบบดีไซน์ layout มือถือ หน้าแรก) หน้าอื่นเป็นโครงรอ
+- เสร็จแล้ว: ข้อ 1 ในลำดับการทำ (ระบบดีไซน์ layout มือถือ หน้าแรก) + addendum 01 AI prompt (คลัง, หน้า prompt เดี่ยว, generator) หน้าอื่นเป็นโครงรอ
+- addendum 01 ที่ยังไม่ทำ: ปุ่ม ถาม AI ต่อ ใน /tools/lucky-number และ /color-today (รอหลักคำนวณ/หลักทักษา) ส่วน prefill ผ่าน query string รองรับแล้ว; ปุ่มเปิดใน ChatGPT/Claude ยังไม่ทำเพราะยังไม่ได้ทดสอบว่า URL parameter ใช้ได้จริง
 - คำสั่ง: `npm run dev`, `npm test`, `npm run typecheck`, `npm run build`
 
 ## โครงโค้ด
@@ -57,3 +66,5 @@ spec ไม่ได้กำหนด framework ระบุแค่ว่า 
 - `src/data/festivals.ts` + `src/lib/festivals.ts` เทศกาลและวันที่รายปี
 - `src/data/daily-colors.ts` สีเสื้อ (ตอนนี้เป็นข้อมูลตัวอย่างเท่านั้น `DAILY_COLORS_STATUS = 'sample'`)
 - `src/components/goal-context.tsx` จำเป้าหมายที่เลือกใน localStorage + cookie `mh_goal`
+- `src/data/prompt-templates.ts` + `src/lib/prompts.ts` คลัง prompt, `GUARD_BLOCK` (ต่อท้ายทุก prompt ตอน render), ประกอบ prompt ฝั่ง client เท่านั้น
+- `src/lib/analytics.ts` event copy_prompt / open_followup / click_to_fortune_teller รับเฉพาะ slug goal discipline (ยังไม่ได้เลือกผู้ให้บริการ push เข้า window.dataLayer)

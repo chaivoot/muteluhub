@@ -37,6 +37,7 @@ const UI_PATHS = {
   places: <path d="M3 20h18 M5 20v-7h14v7 M12 3l-8 7h16z M9 20v-4h6v4" />,
   share: <path d="M12 15V4M7 9l5-5 5 5M5 14v6h14v-6" />,
   shirt: <path d="M8 4L3 7l2 4 3-1v10h8V10l3 1 2-4-5-3c-.5 1.5-2 2.5-4 2.5S8.5 5.5 8 4z" />,
+  sparkle: <path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z M18.5 15.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z" />,
   menu: <path d="M4 7h16M4 12h16M4 17h10" />,
   close: <path d="M6 6l12 12M18 6L6 18" />,
   back: <path d="M15 6l-6 6 6 6" />,
