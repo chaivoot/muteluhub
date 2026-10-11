@@ -1,36 +1,53 @@
 import { describe, expect, it } from 'vitest';
-import type { DailyColor } from '@/data/daily-colors';
-import { getShirtColor } from '@/lib/daily-colors';
+import { colorLabel, getShirtColor, taksaOfDay } from '@/lib/daily-colors';
 import { GOALS } from '@/lib/goals';
 
-const colors: DailyColor[] = [
-  { weekday: 0, goal: 'money', colorName: 'สีเขียว', hex: '#2F8A5B', avoid: false, source: 'test' },
-  { weekday: 0, colorName: 'สีฟ้า', hex: '#7FB3E0', avoid: true, source: 'test' },
-  { weekday: 0, goal: 'love', colorName: 'สีดำ', hex: '#000000', avoid: true, source: 'test' },
-];
-
-describe('getShirtColor', () => {
-  it('returns the lucky color for the goal and avoid colors for everyone', () => {
-    const r = getShirtColor(0, 'money', colors);
-    expect(r.lucky?.colorName).toBe('สีเขียว');
-    expect(r.avoid.map((c) => c.colorName)).toEqual(['สีฟ้า']);
+describe('taksaOfDay', () => {
+  it('Sunday matches the classic table (and the mockup sample)', () => {
+    const names = taksaOfDay(0).map((s) => `${s.role}:${s.color.name}`);
+    expect(names).toEqual([
+      'บริวาร:สีแดง',
+      'อายุ:สีเหลือง',
+      'เดช:สีชมพู',
+      'ศรี:สีเขียว',
+      'มูละ:สีม่วง',
+      'อุตสาหะ:สีส้ม',
+      'มนตรี:สีเทา',
+      'กาลกิณี:สีฟ้า',
+    ]);
   });
 
-  it('includes goal-specific avoid colors', () => {
-    expect(getShirtColor(0, 'love', colors).avoid).toHaveLength(2);
+  it('follows the taksa cycle, not the calendar order', () => {
+    // พฤหัสบดี: บริวาร พฤหัส, อายุ ราหู, เดช ศุกร์, ศรี อาทิตย์, ..., กาลกิณี เสาร์
+    const thu = taksaOfDay(4);
+    expect(thu[0].planet).toBe('jupiter');
+    expect(thu[3].planet).toBe('sun');
+    expect(thu[7].planet).toBe('saturn');
+    // พุธ (กลางวัน): กาลกิณี อังคาร (ชมพู)
+    expect(taksaOfDay(3)[7].planet).toBe('mars');
   });
 
-  it('returns nothing when no data exists for the day', () => {
-    const r = getShirtColor(1, 'money', colors);
-    expect(r.lucky).toBeUndefined();
-    expect(r.avoid).toEqual([]);
+  it('uses every planet exactly once per day', () => {
+    for (let d = 0; d < 7; d++) {
+      expect(new Set(taksaOfDay(d as 0).map((s) => s.planet)).size).toBe(8);
+    }
   });
 });
 
-describe('GOALS', () => {
-  it('has the 8 goals from the spec in order', () => {
-    expect(GOALS.map((g) => g.slug)).toEqual([
-      'love', 'career', 'money', 'business', 'health', 'study', 'family', 'protection',
-    ]);
+describe('getShirtColor', () => {
+  it('maps goals to roles', () => {
+    expect(colorLabel(getShirtColor(0, 'money').lucky.color)).toBe('สีเขียว');
+    expect(colorLabel(getShirtColor(0, 'money').avoid.color)).toBe('สีฟ้า น้ำเงิน');
+    expect(getShirtColor(0, 'career').lucky.role).toBe('เดช');
+    expect(getShirtColor(0, 'protection').lucky.role).toBe('มนตรี');
+  });
+
+  it('never recommends the avoid color', () => {
+    for (let d = 0; d < 7; d++) {
+      for (const g of GOALS) {
+        const r = getShirtColor(d as 0, g.slug);
+        expect(r.lucky.planet).not.toBe(r.avoid.planet);
+      }
+    }
   });
 });
