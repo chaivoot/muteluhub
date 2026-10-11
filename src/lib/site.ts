@@ -6,7 +6,7 @@ export const SITE_DESCRIPTION =
 export interface NavItem {
   href: string;
   label: string;
-  icon: 'fortune-tellers' | 'places' | 'abroad' | 'calendar' | 'shirt';
+  icon: 'fortune-tellers' | 'places' | 'abroad' | 'calendar' | 'shirt' | 'sparkle';
 }
 
 export const NAV_ITEMS: NavItem[] = [
@@ -15,4 +15,5 @@ export const NAV_ITEMS: NavItem[] = [
   { href: '/places', label: 'สถานที่เสริมดวงในไทย', icon: 'places' },
   { href: '/abroad', label: 'มูต่างประเทศ', icon: 'abroad' },
   { href: '/calendar', label: 'ปฏิทินมงคล', icon: 'calendar' },
+  { href: '/ai-prompts', label: 'ดูดวงด้วย AI', icon: 'sparkle' },
 ];

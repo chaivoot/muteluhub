@@ -7,6 +7,7 @@ const DESCRIPTIONS: Record<string, string> = {
   '/places': 'วัด ศาลเจ้า เทวาลัย ทั่วไทย',
   '/abroad': 'คู่มือทริปสายมู',
   '/calendar': 'ฤกษ์ดีตามประเภทงาน',
+  '/ai-prompts': 'prompt พร้อมใช้กับ ChatGPT Claude Gemini',
 };
 
 /** ทางเข้าหมอดู / สถานที่ไทย / ต่างประเทศ / ปฏิทินมงคล */
