@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>แนวทาง C ครามทอง</title>
+</head>
+<body>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<style>
+body{margin:0}
+a{color:#D6B064}a:hover{color:#EBCB86}
+</style>
+<div style="width: 1360px; height: 1480px; box-sizing: border-box; background: #10172A; padding: 56px; display: flex; gap: 64px; align-items: flex-start; font-family: 'Noto Sans Thai', sans-serif; color: #F3ECDD; line-height: 1.6">
+
+<!-- PHONE HOME -->
+<div style="width: 390px; flex: none; background: #172038; border-radius: 36px; overflow: hidden; border: 1px solid #2C3860; box-shadow: 0 24px 60px rgba(0,0,0,0.35); padding-bottom: 28px; position: relative">
+
+<svg style="position: absolute; right: -90px; top: -70px" width="300" height="300" viewBox="0 0 120 120" fill="none" stroke="#D6B064" stroke-opacity="0.16" stroke-width="0.6" aria-hidden="true"><circle cx="60" cy="60" r="58"/><circle cx="60" cy="60" r="46"/><circle cx="60" cy="60" r="34"/><circle cx="60" cy="60" r="20"/><path d="M60 2v116M2 60h116M19 19l82 82M101 19l-82 82"/></svg>
+
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 16px 16px 8px 20px; position: relative">
+<div style="display: flex; align-items: center; gap: 10px">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true"><circle cx="15" cy="15" r="13.5" stroke="#D6B064" stroke-width="1.5"/><path d="M19 7a9 9 0 1 0 0 16 7 7 0 1 1 0-16z" fill="#D6B064"/></svg>
+<span style="font-family: 'Trirong', serif; font-weight: 600; font-size: 19px; letter-spacing: 0.3px">MuteluHub</span>
+</div>
+<button aria-label="เมนู" style="width: 44px; height: 44px; border: none; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3ECDD" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+</div>
+
+<div style="padding: 18px 20px 0; position: relative">
+<p style="margin: 0; font-size: 14px; color: #D6B064">วันอาทิตย์ 11 ตุลาคม 2569</p>
+<h1 style="margin: 2px 0 0; font-family: 'Trirong', serif; font-weight: 600; font-size: 30px; line-height: 1.55">วันนี้อยากเสริม<br>เรื่องอะไร</h1>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); row-gap: 14px; column-gap: 4px; padding: 18px 16px 22px; position: relative">
+<button style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 0; border: none; background: transparent; font: inherit; font-size: 13px; color: #F3ECDD; line-height: 1.4; cursor: pointer"><span style="width: 54px; height: 54px; border-radius: 999px; border: 1px solid #F08AA066; background: #F08AA014; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F08AA0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>ความรัก</button>
+<button style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 0; border: none; background: transparent; font: inherit; font-size: 13px; color: #F3ECDD; line-height: 1.4; cursor: pointer"><span style="width: 54px; height: 54px; border-radius: 999px; border: 1px solid #84B4E866; background: #84B4E814; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#84B4E8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16v11H4z M9 8V5.5h6V8 M4 13h16"/></svg></span>การงาน</button>
+<button aria-pressed="true" style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 0; border: none; background: transparent; font: inherit; font-size: 13px; font-weight: 600; color: #E6C165; line-height: 1.4; cursor: pointer"><span style="width: 54px; height: 54px; border-radius: 999px; background: #E6C165; box-shadow: 0 0 0 4px #172038, 0 0 0 5px #E6C165; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#172038" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M10 10h4v4h-4z"/></svg></span>การเงิน</button>
+<button style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 0; border: none; background: transparent; font: inherit; font-size: 13px; color: #F3ECDD; line-height: 1.4; cursor: pointer"><span style="width: 54px; height: 54px; border-radius: 999px; border: 1px solid #F0A06A66; background: #F0A06A14; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F0A06A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h16 M5.5 10L7 5h10l1.5 5 M6 10v9h12v-9 M10 19v-5h4v5"/></svg></span>ค้าขาย</button>
+<button style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 0; border: none; background: transparent; font: inherit; font-size: 13px; color: #F3ECDD; line-height: 1.4; cursor: pointer"><span style="width: 54px; height: 54px; border-radius: 999px; border: 1px solid #8FD1A866; background: #8FD1A814; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8FD1A8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span>สุขภาพ</button>
+<button style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 0; border: none; background: transparent; font: inherit; font-size: 13px; color: #F3ECDD; line-height: 1.4; cursor: pointer"><span style="width: 54px; height: 54px; border-radius: 999px; border: 1px solid #B7A6F066; background: #B7A6F014; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B7A6F0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h5a3 3 0 0 1 3 3v11a2 2 0 0 0-2-2H4z M20 5h-5a3 3 0 0 0-3 3v11a2 2 0 0 1 2-2h6z"/></svg></span>การเรียน</button>
+<button style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 0; border: none; background: transparent; font: inherit; font-size: 13px; color: #F3ECDD; line-height: 1.4; cursor: pointer"><span style="width: 54px; height: 54px; border-radius: 999px; border: 1px solid #E0A68666; background: #E0A68614; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E0A686" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-6 8 6 M6 9.5V19h12V9.5 M10 19v-4h4v4"/></svg></span>ครอบครัว</button>
+<button style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 0; border: none; background: transparent; font: inherit; font-size: 13px; color: #F3ECDD; line-height: 1.4; cursor: pointer"><span style="width: 54px; height: 54px; border-radius: 999px; border: 1px solid #A9B8C666; background: #A9B8C614; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A9B8C6" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg></span>แคล้วคลาด</button>
+</div>
+
+<!-- Talisman shirt card -->
+<div style="margin: 0 16px; border-radius: 22px; padding: 4px; background: #D6B064">
+<div style="border-radius: 19px; background: #1F2A47; padding: 18px; display: flex; flex-direction: column; gap: 14px; border: 1px solid #D6B06455">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'Trirong', serif; font-size: 16px; font-weight: 600; color: #D6B064">สีเสื้อมงคลวันนี้</span>
+<span style="font-size: 12px; color: #E6C165; border: 1px solid #E6C16577; border-radius: 999px; padding: 1px 10px">ด้านการเงิน</span>
+</div>
+<div style="display: flex; gap: 16px; align-items: center">
+<div style="width: 80px; height: 80px; flex: none; border-radius: 999px; background: #2F8A5B; box-shadow: 0 0 0 3px #1F2A47, 0 0 0 4px #D6B06488; display: flex; align-items: center; justify-content: center"><svg width="40" height="40" viewBox="0 0 24 24" fill="#E9F5EC" aria-hidden="true"><path d="M8 4L3 7l2 4 3-1v10h8V10l3 1 2-4-5-3c-.5 1.5-2 2.5-4 2.5S8.5 5.5 8 4z"/></svg></div>
+<div>
+<div style="font-family: 'Trirong', serif; font-weight: 600; font-size: 28px; line-height: 1.45">สีเขียว</div>
+<div style="font-size: 14px; color: #B9B2A3">เสริมโชคลาภ การเงินคล่องตัว</div>
+</div>
+</div>
+<div style="display: flex; gap: 10px; align-items: center; padding-top: 12px; border-top: 1px dashed #3A4775">
+<span style="width: 18px; height: 18px; border-radius: 999px; background: #4C7BD0; flex: none"></span>
+<span style="font-size: 13px; color: #DDD5C5">ควรเลี่ยง <b style="font-weight: 600; color: #F3ECDD">สีฟ้า น้ำเงิน</b></span>
+</div>
+<div style="display: flex; gap: 8px">
+<button style="flex: 1; height: 44px; border: none; border-radius: 999px; background: #D6B064; color: #172038; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer">แชร์ลง LINE</button>
+<button style="flex: 1; height: 44px; border: 1px solid #4A5788; border-radius: 999px; background: transparent; color: #F3ECDD; font: inherit; font-size: 14px; cursor: pointer">บันทึกเป็นรูป</button>
+</div>
+<span style="font-size: 11px; color: #9C9686">ข้อมูลตัวอย่าง</span>
+</div>
+</div>
+
+<!-- Lucky number -->
+<a href="#" style="margin: 14px 16px 0; display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 20px; background: #273457; color: #F3ECDD; text-decoration: none; border: 1px solid #33406A">
+<span style="width: 48px; height: 48px; flex: none; border-radius: 999px; border: 1px solid #D6B064; color: #D6B064; font-family: 'Trirong', serif; font-weight: 700; font-size: 24px; display: flex; align-items: center; justify-content: center">๙</span>
+<span style="flex: 1; display: flex; flex-direction: column">
+<span style="font-size: 16px; font-weight: 600">คำนวณเลขมงคลจากวันเกิด</span>
+<span style="font-size: 13px; color: #B9B2A3">เบอร์โทร ทะเบียนรถ เลขบ้าน</span>
+</span>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D6B064" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+</a>
+
+<!-- Festival -->
+<div style="display: flex; justify-content: space-between; align-items: baseline; padding: 24px 20px 10px">
+<h2 style="margin: 0; font-family: 'Trirong', serif; font-size: 19px; font-weight: 600">เทศกาลที่กำลังจะมา</h2>
+<a href="#" style="font-size: 13px">ดูทั้งหมด</a>
+</div>
+<div style="display: flex; gap: 10px; padding: 0 16px">
+<a href="#" style="flex: 1.4; display: flex; flex-direction: column; gap: 2px; padding: 14px; border-radius: 16px; background: #E8846A; color: #1A1426; text-decoration: none"><span style="font-size: 12px; font-weight: 600">ต.ค. [วันที่]</span><span style="font-family: 'Trirong', serif; font-size: 18px; font-weight: 700; line-height: 1.4">เทศกาลกินเจ</span><span style="font-size: 12px">ข้อควรรู้ ของไหว้ สถานที่จัดงาน</span></a>
+<a href="#" style="flex: 1; display: flex; flex-direction: column; gap: 2px; padding: 14px; border-radius: 16px; background: #1F2A47; border: 1px solid #33406A; color: #F3ECDD; text-decoration: none"><span style="font-size: 12px; color: #D6B064">ก.พ.</span><span style="font-family: 'Trirong', serif; font-size: 18px; font-weight: 600; line-height: 1.4">ตรุษจีน 2570</span></a>
+</div>
+
+<!-- Entries -->
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 24px 16px 0">
+<a href="#" style="display: flex; align-items: center; gap: 10px; padding: 14px; border-radius: 16px; background: #1F2A47; border: 1px solid #33406A; color: #F3ECDD; text-decoration: none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D6B064" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6-5.3-3-5.3 3 1.2-6L3.4 9.3l6-.7z"/></svg><span style="font-size: 15px; font-weight: 600">หมอดู</span></a>
+<a href="#" style="display: flex; align-items: center; gap: 10px; padding: 14px; border-radius: 16px; background: #1F2A47; border: 1px solid #33406A; color: #F3ECDD; text-decoration: none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D6B064" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18 M5 20v-7h14v7 M12 3l-8 7h16z M9 20v-4h6v4"/></svg><span style="font-size: 15px; font-weight: 600">มูทั่วไทย</span></a>
+<a href="#" style="display: flex; align-items: center; gap: 10px; padding: 14px; border-radius: 16px; background: #1F2A47; border: 1px solid #33406A; color: #F3ECDD; text-decoration: none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D6B064" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18 M12 3c3 3 3 15 0 18 M12 3c-3 3-3 15 0 18"/></svg><span style="font-size: 15px; font-weight: 600">มูต่างประเทศ</span></a>
+<a href="#" style="display: flex; align-items: center; gap: 10px; padding: 14px; border-radius: 16px; background: #1F2A47; border: 1px solid #33406A; color: #F3ECDD; text-decoration: none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D6B064" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16v14H4z M4 10h16 M8 3v5 M16 3v5"/></svg><span style="font-size: 15px; font-weight: 600">ปฏิทินมงคล</span></a>
+</div>
+
+<!-- Affiliate -->
+<div style="margin: 24px 16px 0; padding: 16px; border-radius: 18px; background: #1B2440">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px">
+<h2 style="margin: 0; font-family: 'Trirong', serif; font-size: 17px; font-weight: 600">ของเสริมการเงินวันนี้</h2>
+<span style="font-size: 11px; color: #B9B2A3; border: 1px solid #3A4775; border-radius: 999px; padding: 0 8px">ลิงก์ affiliate</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+<a href="#" style="display: flex; flex-direction: column; gap: 4px; color: #F3ECDD; text-decoration: none"><span style="height: 84px; border-radius: 12px; background: #2A3658; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #B9B2A3">[รูปสินค้า]</span><span style="font-size: 13px; line-height: 1.45">กำไลหินนำโชค</span><span style="font-size: 12px; color: #B9B2A3">[ราคา] · Shopee</span></a>
+<a href="#" style="display: flex; flex-direction: column; gap: 4px; color: #F3ECDD; text-decoration: none"><span style="height: 84px; border-radius: 12px; background: #2A3658; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #B9B2A3">[รูปสินค้า]</span><span style="font-size: 13px; line-height: 1.45">กระเป๋าสตางค์สีเขียว</span><span style="font-size: 12px; color: #B9B2A3">[ราคา] · Shopee</span></a>
+<a href="#" style="display: flex; flex-direction: column; gap: 4px; color: #F3ECDD; text-decoration: none"><span style="height: 84px; border-radius: 12px; background: #2A3658; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #B9B2A3">[รูปสินค้า]</span><span style="font-size: 13px; line-height: 1.45">ชุดธูปเทียนไหว้</span><span style="font-size: 12px; color: #B9B2A3">[ราคา] · Shopee</span></a>
+</div>
+</div>
+</div>
+
+<!-- SYSTEM PANEL -->
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 40px; padding-top: 8px">
+<div>
+<div style="font-size: 14px; font-weight: 600; color: #D6B064; letter-spacing: 1px">แนวทาง C</div>
+<h2 style="margin: 4px 0 8px; font-family: 'Trirong', serif; font-weight: 600; font-size: 50px; line-height: 1.4">ครามทอง</h2>
+<p style="margin: 0; font-size: 17px; color: #CFC8B8; max-width: 640px">ผ้าครามกับดิ้นทอง ขลังและพรีเมียมที่สุดในสามแนว ใช้น้ำเงินครามอุ่นแทนดำม่วงนีออน ทองเป็นเส้นบาง ๆ ไม่ใช่ไล่สี เหมาะกับคนเปิดดูดวงตอนกลางคืน แต่ต้องคุมไม่ให้ไปทางเว็บดูดวงทั่วไป</p>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px">
+<div><div style="height: 72px; border-radius: 12px; background: #172038; border: 1px solid #33406A"></div><div style="font-size: 13px; font-weight: 600; margin-top: 6px">คราม</div><div style="font-size: 12px; color: #B9B2A3">#172038</div></div>
+<div><div style="height: 72px; border-radius: 12px; background: #1F2A47; border: 1px solid #33406A"></div><div style="font-size: 13px; font-weight: 600; margin-top: 6px">ครามการ์ด</div><div style="font-size: 12px; color: #B9B2A3">#1F2A47</div></div>
+<div><div style="height: 72px; border-radius: 12px; background: #F3ECDD"></div><div style="font-size: 13px; font-weight: 600; margin-top: 6px">ข้อความ</div><div style="font-size: 12px; color: #B9B2A3">#F3ECDD</div></div>
+<div><div style="height: 72px; border-radius: 12px; background: #D6B064"></div><div style="font-size: 13px; font-weight: 600; margin-top: 6px">ดิ้นทอง</div><div style="font-size: 12px; color: #B9B2A3">#D6B064</div></div>
+<div><div style="height: 72px; border-radius: 12px; background: #E8846A"></div><div style="font-size: 13px; font-weight: 600; margin-top: 6px">ส้มอิฐ</div><div style="font-size: 12px; color: #B9B2A3">#E8846A</div></div>
+<div><div style="height: 72px; border-radius: 12px; background: #33406A"></div><div style="font-size: 13px; font-weight: 600; margin-top: 6px">เส้น</div><div style="font-size: 12px; color: #B9B2A3">#33406A</div></div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; border-top: 1px solid #2C3860; padding-top: 24px">
+<div><div style="font-size: 12px; color: #B9B2A3; margin-bottom: 4px">หัวข้อ · Trirong 600 (มีหัว)</div><div style="font-family: 'Trirong', serif; font-weight: 600; font-size: 32px; line-height: 1.55">ไหว้พระเสริมดวง ฤกษ์ดีวันนี้</div></div>
+<div><div style="font-size: 12px; color: #B9B2A3; margin-bottom: 4px">เนื้อหา · Noto Sans Thai 400/600 · ระยะบรรทัด 1.6</div><div style="font-size: 16px; line-height: 1.7">ทดสอบสระบนล่างไม่ชนกัน: ปู่ ญี่ปุ่น ฤๅษี ฎีกา ผู้ใหญ่ น้ำมนต์ ขึ้นบ้านใหม่ ตรงตามฤกษ์</div></div>
+</div>
+
+<div>
+<div style="font-size: 13px; color: #B9B2A3; margin-bottom: 10px">Goal chip · สีพาสเทลสว่างบนคราม เส้นขอบบาง</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<span style="display: inline-flex; align-items: center; gap: 6px; height: 36px; padding: 0 14px 0 10px; border-radius: 999px; border: 1px solid #F08AA066; color: #F6B3C1; font-size: 14px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F08AA0" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>ความรัก</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; height: 36px; padding: 0 14px 0 10px; border-radius: 999px; border: 1px solid #84B4E866; color: #A9CBF0; font-size: 14px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#84B4E8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16v11H4z M9 8V5.5h6V8 M4 13h16"/></svg>การงาน</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; height: 36px; padding: 0 14px 0 10px; border-radius: 999px; border: 1px solid #E6C16566; color: #EED38E; font-size: 14px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E6C165" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M10 10h4v4h-4z"/></svg>การเงิน/โชคลาภ</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; height: 36px; padding: 0 14px 0 10px; border-radius: 999px; border: 1px solid #F0A06A66; color: #F5BE98; font-size: 14px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F0A06A" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h16 M5.5 10L7 5h10l1.5 5 M6 10v9h12v-9 M10 19v-5h4v5"/></svg>ค้าขาย</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; height: 36px; padding: 0 14px 0 10px; border-radius: 999px; border: 1px solid #8FD1A866; color: #B3E0C4; font-size: 14px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD1A8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg>สุขภาพ</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; height: 36px; padding: 0 14px 0 10px; border-radius: 999px; border: 1px solid #B7A6F066; color: #CFC3F5; font-size: 14px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B7A6F0" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h5a3 3 0 0 1 3 3v11a2 2 0 0 0-2-2H4z M20 5h-5a3 3 0 0 0-3 3v11a2 2 0 0 1 2-2h6z"/></svg>การเรียน/สอบ</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; height: 36px; padding: 0 14px 0 10px; border-radius: 999px; border: 1px solid #E0A68666; color: #EDC2A9; font-size: 14px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E0A686" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-6 8 6 M6 9.5V19h12V9.5 M10 19v-4h4v4"/></svg>ครอบครัว/มีบุตร</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; height: 36px; padding: 0 14px 0 10px; border-radius: 999px; border: 1px solid #A9B8C666; color: #C7D2DC; font-size: 14px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A9B8C6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg>แคล้วคลาด/ปกป้อง</span>
+</div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px">
+<div style="background: #1F2A47; border: 1px solid #33406A; border-radius: 20px; overflow: hidden">
+<div style="height: 150px; background: #172038; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #33406A">
+<svg width="120" height="120" viewBox="0 0 120 120" fill="#172038" stroke="#D6B064" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="60" cy="60" r="54" fill="none" stroke-opacity="0.35"/><rect x="40" y="24" width="11" height="44" rx="5.5"/><rect x="52" y="16" width="11" height="48" rx="5.5"/><rect x="64" y="20" width="11" height="46" rx="5.5"/><rect x="76" y="30" width="10" height="38" rx="5"/><rect x="38" y="56" width="48" height="50" rx="18"/><path d="M47 70c6 10 6 22 2 30 M50 72c10 2 22 0 32-4 M53 84c8 0 18-2 26-6" fill="none" stroke="#E8846A"/></svg>
+</div>
+<div style="padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'Trirong', serif; font-size: 18px; font-weight: 600">[ชื่อหมอดู]</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><span style="font-size: 12px; padding: 1px 10px; border-radius: 999px; background: #D6B064; color: #172038; font-weight: 600">ลายมือ</span><span style="font-size: 12px; padding: 0 10px; border-radius: 999px; border: 1px solid #E6C16566; color: #EED38E">การเงิน</span><span style="font-size: 12px; padding: 0 10px; border-radius: 999px; border: 1px solid #84B4E866; color: #A9CBF0">การงาน</span></div>
+<div style="font-size: 13px; color: #B9B2A3">หน้าร้าน · LINE · เชียงใหม่</div>
+</div>
+</div>
+<div style="background: #1F2A47; border: 1px solid #33406A; border-radius: 20px; overflow: hidden">
+<div style="height: 150px; background: #3A4466; display: flex; align-items: center; justify-content: center; position: relative; font-size: 13px; color: #DDD5C5">[รูปจริงของสถานที่]<span style="position: absolute; left: 10px; bottom: 10px; font-size: 11px; color: #FFFFFF; background: #000000A6; border-radius: 6px; padding: 1px 8px">ภาพ: [เครดิต]</span></div>
+<div style="padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'Trirong', serif; font-size: 18px; font-weight: 600">[ชื่อศาลเจ้า/วัด]</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><span style="font-size: 12px; padding: 0 10px; border-radius: 999px; border: 1px solid #E6C16566; color: #EED38E">การเงิน</span><span style="font-size: 12px; padding: 0 10px; border-radius: 999px; border: 1px solid #F0A06A66; color: #F5BE98">ค้าขาย</span></div>
+<div style="font-size: 13px; color: #B9B2A3">[องค์เทพ] · กรุงเทพฯ · เปิด [เวลา]</div>
+</div>
+</div>
+</div>
+
+<div>
+<div style="font-size: 13px; color: #B9B2A3; margin-bottom: 10px">ภาพ default หมอดูตามศาสตร์ · เส้นทองบนคราม วงแหวนบาง จุดส้มอิฐ</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px">
+<div style="aspect-ratio: 1; border-radius: 16px; background: #1F2A47; border: 1px solid #33406A; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px"><svg width="96" height="96" viewBox="0 0 120 120" fill="#1F2A47" stroke="#D6B064" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="60" cy="60" r="54" fill="none" stroke-opacity="0.35"/><rect x="40" y="24" width="11" height="44" rx="5.5"/><rect x="52" y="16" width="11" height="48" rx="5.5"/><rect x="64" y="20" width="11" height="46" rx="5.5"/><rect x="76" y="30" width="10" height="38" rx="5"/><rect x="38" y="56" width="48" height="50" rx="18"/><path d="M47 70c6 10 6 22 2 30 M50 72c10 2 22 0 32-4" fill="none" stroke="#E8846A"/></svg><span style="font-size: 13px">ลายมือ</span></div>
+<div style="aspect-ratio: 1; border-radius: 16px; background: #1F2A47; border: 1px solid #33406A; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px"><svg width="96" height="96" viewBox="0 0 120 120" fill="none" stroke="#D6B064" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="60" cy="60" r="54" stroke-opacity="0.35"/><rect x="34" y="14" width="52" height="90" rx="6"/><rect x="41" y="21" width="38" height="76" rx="3"/><circle cx="60" cy="52" r="10" stroke="#E8846A"/><path d="M60 34v6M60 64v6M42 52h6M72 52h6M48 40l4 4M68 60l4 4M72 40l-4 4M52 60l-4 4" stroke="#E8846A"/><path d="M50 86h20"/></svg><span style="font-size: 13px">ไพ่ทาโรต์</span></div>
+<div style="aspect-ratio: 1; border-radius: 16px; background: #1F2A47; border: 1px solid #33406A; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px"><svg width="96" height="96" viewBox="0 0 120 120" fill="none" stroke="#D6B064" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="60" cy="60" r="54" stroke-opacity="0.35"/><ellipse cx="60" cy="58" rx="26" ry="34"/><path d="M30 44h60M30 70h60" stroke="#E8846A" stroke-dasharray="3 5"/><path d="M48 52h6M66 52h6M60 54v10l-3 2M53 79h14"/></svg><span style="font-size: 13px">โหงวเฮ้ง</span></div>
+<div style="aspect-ratio: 1; border-radius: 16px; background: #1F2A47; border: 1px solid #33406A; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px"><svg width="96" height="96" viewBox="0 0 120 120" fill="none" stroke="#D6B064" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="60" cy="60" r="40"/><circle cx="60" cy="60" r="28"/><circle cx="60" cy="60" r="14"/><path d="M60 20v8M60 92v8M20 60h8M92 60h8"/><path d="M60 46l4 14-4 14-4-14z" stroke="#E8846A"/></svg><span style="font-size: 13px">ฮวงจุ้ย</span></div>
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>

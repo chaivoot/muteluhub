@@ -1,0 +1,160 @@
+[
+  {
+    "slug": "astrology",
+    "name": "โหราศาสตร์",
+    "disciplines": [
+      {
+        "slug": "thai-astrology",
+        "name": "โหราศาสตร์ไทย",
+        "defaultImages": [],
+        "imageStatus": "todo"
+      },
+      {
+        "slug": "lek-7-tua",
+        "name": "เลข 7 ตัว 9 ฐาน / ทักษา",
+        "defaultImages": [],
+        "imageStatus": "todo"
+      },
+      {
+        "slug": "western-astrology",
+        "name": "โหราศาสตร์ตะวันตก",
+        "defaultImages": [],
+        "imageStatus": "todo"
+      },
+      {
+        "slug": "vedic",
+        "name": "โหราศาสตร์ภารตะ (Vedic)",
+        "defaultImages": [],
+        "imageStatus": "todo"
+      },
+      {
+        "slug": "bazi",
+        "name": "ปาจื้อ / ดวงจีน",
+        "defaultImages": [],
+        "imageStatus": "todo"
+      },
+      {
+        "slug": "human-design",
+        "name": "Human Design",
+        "defaultImages": [],
+        "imageStatus": "todo"
+      }
+    ]
+  },
+  {
+    "slug": "cards-divination",
+    "name": "ไพ่และการเสี่ยงทาย",
+    "disciplines": [
+      {
+        "slug": "tarot",
+        "name": "ไพ่ทาโรต์",
+        "defaultImages": [
+          "design/mockups/images/ill-tarot.jpg"
+        ],
+        "imageStatus": "sample-ai-lowres"
+      },
+      {
+        "slug": "lenormand",
+        "name": "ไพ่ยิปซี / Lenormand",
+        "defaultImages": [],
+        "imageStatus": "todo"
+      },
+      {
+        "slug": "oracle",
+        "name": "ไพ่ออราเคิล",
+        "defaultImages": [],
+        "imageStatus": "todo"
+      },
+      {
+        "slug": "siam-si",
+        "name": "เซียมซี / ไอจิง / Runes",
+        "defaultImages": [],
+        "imageStatus": "todo"
+      }
+    ]
+  },
+  {
+    "slug": "body-reading",
+    "name": "ดูจากร่างกาย",
+    "disciplines": [
+      {
+        "slug": "palmistry",
+        "name": "ลายมือ",
+        "defaultImages": [
+          "design/mockups/images/ill-palm.jpg"
+        ],
+        "imageStatus": "sample-ai-lowres"
+      },
+      {
+        "slug": "face-reading",
+        "name": "โหงวเฮ้ง",
+        "defaultImages": [
+          "design/mockups/images/ill-face.jpg"
+        ],
+        "imageStatus": "sample-ai-lowres"
+      }
+    ]
+  },
+  {
+    "slug": "numbers-names",
+    "name": "ตัวเลขและชื่อ",
+    "disciplines": [
+      {
+        "slug": "numerology",
+        "name": "เลขศาสตร์ / Numerology",
+        "defaultImages": [],
+        "imageStatus": "todo"
+      },
+      {
+        "slug": "lucky-numbers",
+        "name": "เบอร์มงคล / ทะเบียนรถ",
+        "defaultImages": [],
+        "imageStatus": "todo"
+      },
+      {
+        "slug": "naming",
+        "name": "ตั้งชื่อ / เปลี่ยนชื่อมงคล",
+        "defaultImages": [],
+        "imageStatus": "todo"
+      }
+    ]
+  },
+  {
+    "slug": "space-timing",
+    "name": "พื้นที่และฤกษ์",
+    "disciplines": [
+      {
+        "slug": "feng-shui",
+        "name": "ฮวงจุ้ย",
+        "defaultImages": [
+          "design/mockups/images/ill-fengshui.jpg"
+        ],
+        "imageStatus": "sample-ai-lowres"
+      },
+      {
+        "slug": "auspicious-timing",
+        "name": "หาฤกษ์",
+        "defaultImages": [],
+        "imageStatus": "todo"
+      }
+    ]
+  },
+  {
+    "slug": "psychic",
+    "name": "สัมผัสพิเศษ",
+    "disciplines": [
+      {
+        "slug": "medium",
+        "name": "ร่างทรง",
+        "defaultImages": [],
+        "imageStatus": "todo"
+      },
+      {
+        "slug": "intuitive",
+        "name": "นั่งทางใน / ญาณ / สื่อวิญญาณ",
+        "defaultImages": [],
+        "imageStatus": "todo"
+      }
+    ]
+  }
+]

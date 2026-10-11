@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "love",
+    "name": "ความรัก / เสน่ห์",
+    "short": "ความรัก",
+    "color": "#F08AA0",
+    "chipText": "#F6B3C1",
+    "chipBg": "#F08AA014",
+    "chipBorder": "#F08AA066",
+    "icon": "design/icons/goals/love.svg",
+    "order": 1
+  },
+  {
+    "slug": "career",
+    "name": "การงาน / ตำแหน่ง",
+    "short": "การงาน",
+    "color": "#84B4E8",
+    "chipText": "#A9CBF0",
+    "chipBg": "#84B4E814",
+    "chipBorder": "#84B4E866",
+    "icon": "design/icons/goals/career.svg",
+    "order": 2
+  },
+  {
+    "slug": "money",
+    "name": "การเงิน / โชคลาภ",
+    "short": "การเงิน",
+    "color": "#E6C165",
+    "chipText": "#EED38E",
+    "chipBg": "#E6C16514",
+    "chipBorder": "#E6C16566",
+    "icon": "design/icons/goals/money.svg",
+    "order": 3
+  },
+  {
+    "slug": "business",
+    "name": "ค้าขาย / ธุรกิจ",
+    "short": "ค้าขาย",
+    "color": "#F0A06A",
+    "chipText": "#F5BE98",
+    "chipBg": "#F0A06A14",
+    "chipBorder": "#F0A06A66",
+    "icon": "design/icons/goals/business.svg",
+    "order": 4
+  },
+  {
+    "slug": "health",
+    "name": "สุขภาพ",
+    "short": "สุขภาพ",
+    "color": "#8FD1A8",
+    "chipText": "#B3E0C4",
+    "chipBg": "#8FD1A814",
+    "chipBorder": "#8FD1A866",
+    "icon": "design/icons/goals/health.svg",
+    "order": 5
+  },
+  {
+    "slug": "study",
+    "name": "การเรียน / สอบ",
+    "short": "การเรียน",
+    "color": "#B7A6F0",
+    "chipText": "#CFC3F5",
+    "chipBg": "#B7A6F014",
+    "chipBorder": "#B7A6F066",
+    "icon": "design/icons/goals/study.svg",
+    "order": 6
+  },
+  {
+    "slug": "family",
+    "name": "ครอบครัว / มีบุตร",
+    "short": "ครอบครัว",
+    "color": "#E0A686",
+    "chipText": "#EDC2A9",
+    "chipBg": "#E0A68614",
+    "chipBorder": "#E0A68666",
+    "icon": "design/icons/goals/family.svg",
+    "order": 7
+  },
+  {
+    "slug": "protection",
+    "name": "แคล้วคลาด / ปกป้อง",
+    "short": "แคล้วคลาด",
+    "color": "#A9B8C6",
+    "chipText": "#C7D2DC",
+    "chipBg": "#A9B8C614",
+    "chipBorder": "#A9B8C666",
+    "icon": "design/icons/goals/protection.svg",
+    "order": 8
+  }
+]

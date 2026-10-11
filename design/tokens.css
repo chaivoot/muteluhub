@@ -1,0 +1,59 @@
+/* MuteluHub design tokens - direction C2 (ครามทอง ภาพนำ)
+   Source of truth: design/tokens.json. Fonts: design/fonts/fonts.css */
+
+:root {
+  /* surfaces */
+  --color-bg-page: #10172A;        /* นอกกรอบมือถือ / พื้นหลังสุด */
+  --color-bg: #172038;             /* คราม: พื้นหลักของหน้า */
+  --color-surface: #1F2A47;        /* การ์ด */
+  --color-surface-raised: #273457; /* การ์ดเด่น เช่น ทางลัดเลขมงคล */
+  --color-surface-sunken: #1B2440; /* บล็อก affiliate */
+  --color-image-placeholder: #2A3658;
+
+  /* text */
+  --color-text: #F3ECDD;
+  --color-text-muted: #B9B2A3;
+  --color-text-soft: #DDD5C5;
+  --color-text-subtle: #9C9686;    /* เฉพาะ label เล็กที่ไม่สำคัญ */
+
+  /* accents */
+  --color-gold: #D6B064;           /* ดิ้นทอง: CTA หลัก เส้นขอบการ์ดเด่น */
+  --color-gold-bright: #E6C165;    /* สถานะ selected */
+  --color-vermilion: #E8846A;      /* ส้มอิฐ: เทศกาล จุดเน้นรอง */
+  --color-on-gold: #172038;
+
+  /* lines */
+  --color-border: #33406A;
+  --color-border-strong: #4A5788;
+  --color-divider: #2C3860;
+
+  /* overlays */
+  --scrim-photo-bottom: linear-gradient(180deg, rgba(16,23,42,0) 35%, rgba(16,23,42,0.92) 100%);
+  --scrim-hero: linear-gradient(180deg, rgba(23,32,56,0.55) 0%, rgba(23,32,56,0.05) 30%, rgba(23,32,56,0.35) 60%, #172038 100%);
+  --credit-bg: rgba(0,0,0,0.65);
+
+  /* goals: icon/border color, chip text color */
+  --goal-love: #F08AA0;        --goal-love-text: #F6B3C1;
+  --goal-career: #84B4E8;      --goal-career-text: #A9CBF0;
+  --goal-money: #E6C165;       --goal-money-text: #EED38E;
+  --goal-business: #F0A06A;    --goal-business-text: #F5BE98;
+  --goal-health: #8FD1A8;      --goal-health-text: #B3E0C4;
+  --goal-study: #B7A6F0;       --goal-study-text: #CFC3F5;
+  --goal-family: #E0A686;      --goal-family-text: #EDC2A9;
+  --goal-protection: #A9B8C6;  --goal-protection-text: #C7D2DC;
+  /* chip: background = goal color + 14 (8% alpha), border = goal color + 66 (40% alpha) */
+
+  /* type */
+  --font-display: 'Trirong', 'Noto Serif Thai', serif;  /* หัวข้อ ชื่อ ตัวเลขมงคล */
+  --font-body: 'Noto Sans Thai', 'Sarabun', sans-serif;  /* เนื้อหา UI */
+  --leading-body: 1.6;   /* ภาษาไทยต้องเผื่อสระบนล่าง ห้ามต่ำกว่า 1.5 */
+  --leading-display: 1.45;
+  --text-xs: 11px; --text-sm: 12px; --text-base: 14px; --text-md: 15px;
+  --text-lg: 17px; --text-xl: 19px; --text-2xl: 22px; --text-3xl: 28px; --text-hero: 32px;
+
+  /* shape */
+  --radius-sm: 6px; --radius-md: 14px; --radius-lg: 20px; --radius-xl: 22px; --radius-pill: 999px;
+  --space-gutter: 16px;  /* ขอบซ้ายขวาบนมือถือ */
+  --tap-min: 44px;
+  --shadow-phone: 0 24px 60px rgba(0,0,0,0.35);
+}
