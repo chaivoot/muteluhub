@@ -1,10 +1,11 @@
 import type { GoalSlug } from '@/lib/goals';
 
 /**
- * สถานที่เสริมดวง (ตาราง places ใน spec ข้อ 5)
+ * สถานที่เสริมดวง (ตาราง places ใน spec ข้อ 5) เก็บใน Neon Postgres นำเข้าผ่าน /admin/import
  * - ภาพต้องเป็นภาพจริงพร้อมเครดิตและ license เท่านั้น (ถ่ายเอง, Wikimedia Commons ที่เช็ก license, ขออนุญาต)
  *   ห้ามดึงจาก Google Maps ห้ามใช้ภาพตัวอย่างใน design/mockups/images
  * - ข้อมูลทุกช่องต้องมีแหล่งอ้างอิงใน sources ไม่แน่ใจให้เว้นว่าง (null / [])
+ * - notes เป็นบันทึกภายใน แสดงเฉพาะหลังบ้าน ห้ามแสดงบนหน้าเว็บ
  */
 export type PlaceType = 'temple' | 'shrine' | 'devalai' | 'chinese-shrine';
 
@@ -39,8 +40,11 @@ export interface Place {
   sources: string[];
   /** ลิงก์ Agoda ที่ใส่เอง ใช้แทนลิงก์ที่ประกอบอัตโนมัติ */
   agodaLinkOverride?: string;
+  mapsUrl?: string;
   /** วันที่ตรวจข้อมูลล่าสุด YYYY-MM-DD */
   checkedAt: string;
+  published: boolean;
+  notes: string[];
 }
 
 export const PLACE_TYPE_LABEL: Record<PlaceType, string> = {
@@ -49,5 +53,3 @@ export const PLACE_TYPE_LABEL: Record<PlaceType, string> = {
   devalai: 'เทวาลัย',
   'chinese-shrine': 'ศาลเจ้าจีน',
 };
-
-export const PLACES: Place[] = [];

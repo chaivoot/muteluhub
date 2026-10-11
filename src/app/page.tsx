@@ -7,14 +7,16 @@ import { SectionHeader } from '@/components/SectionHeader';
 import { ShirtColorCard } from '@/components/ShirtColorCard';
 import { SiteHeader } from '@/components/SiteHeader';
 import { upcomingFestivals } from '@/lib/festivals';
+import { listPublishedPlaces } from '@/lib/places-repo';
 import { bangkokDay, formatThaiFullDate } from '@/lib/thai-date';
 
 // วันที่ สีเสื้อ และเทศกาลขึ้นกับวัน จึงสร้างหน้าใหม่ทุก 10 นาที
 export const revalidate = 600;
 
-export default function HomePage() {
+export default async function HomePage() {
   const today = bangkokDay();
   const festivals = upcomingFestivals(today.iso);
+  const places = await listPublishedPlaces();
 
   return (
     <main>
@@ -52,7 +54,7 @@ export default function HomePage() {
         )}
       </div>
 
-      <PlacesForGoal />
+      <PlacesForGoal places={places} />
 
       <SectionHeader title="มูเรื่องไหนดี" />
       <ExploreGrid />

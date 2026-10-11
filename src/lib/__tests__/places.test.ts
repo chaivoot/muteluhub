@@ -1,8 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { PLACES, type Place } from '@/data/places';
-import { PROVINCES } from '@/data/provinces';
+import type { Place } from '@/data/places';
 import { agodaLink, showsLodging } from '@/lib/agoda';
-import { isGoalSlug } from '@/lib/goals';
 import { filterPlaces, mapLink, provincesWithPlaces, relatedPlaces } from '@/lib/places';
 
 const base: Omit<Place, 'slug' | 'provinceSlug' | 'goals' | 'deities'> = {
@@ -19,6 +17,8 @@ const base: Omit<Place, 'slug' | 'provinceSlug' | 'goals' | 'deities'> = {
   images: [],
   sources: [],
   checkedAt: '2026-10-11',
+  published: true,
+  notes: [],
 };
 const a: Place = { ...base, slug: 'a', provinceSlug: 'bangkok', goals: ['money', 'love'], deities: ['ท้าวมหาพรหม'] };
 const b: Place = { ...base, slug: 'b', provinceSlug: 'bangkok', goals: ['career'], deities: ['เจ้าพ่อเสือ'] };
@@ -46,6 +46,7 @@ describe('helpers', () => {
   it('builds map links only with coordinates', () => {
     expect(mapLink(a)).toContain('query=13.7,100.5');
     expect(mapLink({ ...a, lat: null })).toBeNull();
+    expect(mapLink({ ...a, mapsUrl: 'https://maps.example/x' })).toBe('https://maps.example/x');
   });
 
   it('only uses Agoda overrides and only outside Bangkok', () => {
@@ -56,27 +57,3 @@ describe('helpers', () => {
   });
 });
 
-describe('PLACES data', () => {
-  const ALLOWED_LICENSE = /^(CC0|Public domain|PD|CC BY(-SA)? \d\.\d)/i;
-
-  it.each(PLACES.map((p) => [p.slug, p] as const))('%s is valid', (_, p) => {
-    expect(p.slug).toMatch(/^[a-z0-9-]+$/);
-    expect(PROVINCES[p.slug]).toBeUndefined(); // ห้ามชนกับ slug จังหวัด
-    expect(PROVINCES[p.provinceSlug]).toBeDefined();
-    expect(p.goals.length).toBeGreaterThan(0);
-    expect(p.goals.every(isGoalSlug)).toBe(true);
-    expect(p.sources.length).toBeGreaterThan(0);
-    expect(p.summary).not.toContain('—');
-    for (const img of p.images) {
-      expect(img.src).toMatch(/^https:\/\/upload\.wikimedia\.org\//);
-      expect(img.sourceUrl).toMatch(/^https:\/\/commons\.wikimedia\.org\//);
-      expect(img.license).toMatch(ALLOWED_LICENSE);
-      expect(img.author.length).toBeGreaterThan(0);
-      expect(img.alt.length).toBeGreaterThan(0);
-    }
-  });
-
-  it('has unique slugs', () => {
-    expect(new Set(PLACES.map((p) => p.slug)).size).toBe(PLACES.length);
-  });
-});

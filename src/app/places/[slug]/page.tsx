@@ -7,26 +7,30 @@ import { GoalTag } from '@/components/GoalTag';
 import { UiIcon } from '@/components/icons';
 import { PlaceCard } from '@/components/PlaceCard';
 import { PlacesBrowser } from '@/components/PlacesBrowser';
-import { PLACES, PLACE_TYPE_LABEL, type Place } from '@/data/places';
+import { PLACE_TYPE_LABEL, type Place } from '@/data/places';
 import { PROVINCES, provinceShortName } from '@/data/provinces';
 import { agodaLink, showsLodging } from '@/lib/agoda';
 import { getGoal } from '@/lib/goals';
-import { filterPlaces, getPlace, mapLink, provincesWithPlaces, relatedPlaces } from '@/lib/places';
+import { filterPlaces, mapLink, provincesWithPlaces, relatedPlaces } from '@/lib/places';
+import { listPublishedPlaces } from '@/lib/places-repo';
 import { SITE_URL } from '@/lib/site';
 import { parseIsoDay, TH_MONTHS, toBuddhistYear } from '@/lib/thai-date';
 
 // /places/[slug] รับได้ทั้ง slug จังหวัด (หน้าจังหวัด) และ slug สถานที่ (หน้าสถานที่)
-export const dynamicParams = false;
+// ข้อมูลมาจากฐานข้อมูล สถานที่ที่นำเข้าใหม่จะสร้างหน้าเมื่อมีคนเปิดครั้งแรก
+export const revalidate = 3600;
 
-export function generateStaticParams() {
-  return [...PLACES.map((p) => ({ slug: p.slug })), ...provincesWithPlaces().map((p) => ({ slug: p.slug }))];
+export async function generateStaticParams() {
+  const places = await listPublishedPlaces();
+  return [...places.map((p) => ({ slug: p.slug })), ...provincesWithPlaces(places).map((p) => ({ slug: p.slug }))];
 }
 
 type Params = Promise<{ slug: string }>;
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { slug } = await params;
-  const place = getPlace(slug);
+  const places = await listPublishedPlaces();
+  const place = places.find((p) => p.slug === slug);
   if (place) {
     const goals = place.goals.map((g) => getGoal(g).short).join(' ');
     return {
@@ -35,7 +39,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       openGraph: place.images[0] ? { images: [{ url: place.images[0].src, alt: place.images[0].alt }] } : undefined,
     };
   }
-  if (PROVINCES[slug]) {
+  if (PROVINCES[slug] && places.some((p) => p.provinceSlug === slug)) {
     return {
       title: `สถานที่เสริมดวง${PROVINCES[slug]}`,
       description: `วัด ศาลเจ้า สถานที่ขอพรใน${PROVINCES[slug]} พร้อมของไหว้และวิธีขอพร`,
@@ -46,16 +50,18 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 
 export default async function PlaceOrProvincePage({ params }: { params: Params }) {
   const { slug } = await params;
-  const place = getPlace(slug);
-  if (place) return <PlaceDetail place={place} />;
-  if (PROVINCES[slug]) {
+  const places = await listPublishedPlaces();
+  const place = places.find((p) => p.slug === slug);
+  if (place) return <PlaceDetail place={place} places={places} />;
+  const inProvince = filterPlaces({ province: slug }, places);
+  if (PROVINCES[slug] && inProvince.length > 0) {
     return (
       <main>
         <PageHeader title={`มู${provinceShortName(slug)}`} backHref="/places" />
         <div className="prose intro">
           <p>สถานที่เสริมดวงใน{PROVINCES[slug]}</p>
         </div>
-        <PlacesBrowser places={filterPlaces({ province: slug })} fixedProvince={slug} />
+        <PlacesBrowser places={inProvince} fixedProvince={slug} />
       </main>
     );
   }
@@ -67,11 +73,11 @@ function formatCheckedAt(iso: string) {
   return `${d.day} ${TH_MONTHS[d.month - 1]} ${toBuddhistYear(d.year)}`;
 }
 
-function PlaceDetail({ place }: { place: Place }) {
+function PlaceDetail({ place, places }: { place: Place; places: Place[] }) {
   const image = place.images[0];
   const map = mapLink(place);
   const agoda = showsLodging(place) ? agodaLink(place) : null;
-  const related = relatedPlaces(place);
+  const related = relatedPlaces(place, 4, places);
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': place.type === 'temple' ? 'BuddhistTemple' : 'PlaceOfWorship',
