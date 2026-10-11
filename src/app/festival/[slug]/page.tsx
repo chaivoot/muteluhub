@@ -197,6 +197,13 @@ export default async function FestivalPage({ params }: { params: Params }) {
                     </a>
                   </li>
                 ))}
+                {festival.image?.sourceUrl && (
+                  <li>
+                    <a href={festival.image.sourceUrl} target="_blank" rel="noopener noreferrer">
+                      ภาพประกอบ: {festival.image.credit}
+                    </a>
+                  </li>
+                )}
               </ul>
             </details>
           </section>
