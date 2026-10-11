@@ -8,6 +8,7 @@ import { hasDatabase } from '@/lib/db';
 import { recentImports, type DirectoryKind } from '@/lib/directory-repo';
 import { getDiscipline } from '@/lib/disciplines';
 import { getGoal } from '@/lib/goals';
+import { placeLocation } from '@/lib/places';
 import { placesRepo } from '@/lib/places-repo';
 import { tellersRepo } from '@/lib/tellers-repo';
 import { deleteAction, logoutAction, publishAllAction, togglePublishedAction } from './actions';
@@ -35,7 +36,7 @@ async function listFor(kind: DirectoryKind): Promise<Listed[]> {
     return (await placesRepo.adminList()).map(({ item: p, updatedAt }: { item: Place; updatedAt: Date }) => ({
       ...p,
       updatedAt,
-      meta: [PROVINCES[p.provinceSlug], p.goals.map((g) => getGoal(g).short).join(' '), `รูป ${p.images.length}`].join(' · '),
+      meta: [placeLocation(p), p.goals.map((g) => getGoal(g).short).join(' '), `รูป ${p.images.length}`].join(' · '),
     }));
   }
   return (await tellersRepo.adminList()).map(({ item: t, updatedAt }: { item: FortuneTeller; updatedAt: Date }) => ({

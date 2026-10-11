@@ -7,7 +7,8 @@
  * (ใช้ร่วมกันทั้งหน้าสถานที่ หน้าจังหวัด หน้าเทศกาล)
  */
 export interface AgodaTarget {
-  provinceSlug: string;
+  country: string;
+  provinceSlug?: string;
   lat: number | null;
   lng: number | null;
   agodaLinkOverride?: string;
@@ -18,4 +19,4 @@ export function agodaLink(target: AgodaTarget): string | null {
 }
 
 /** บล็อกที่พักแสดงเฉพาะต่างจังหวัด (spec ข้อ 3.2) */
-export const showsLodging = (target: AgodaTarget) => target.provinceSlug !== 'bangkok';
+export const showsLodging = (target: AgodaTarget) => target.country !== 'TH' || target.provinceSlug !== 'bangkok';

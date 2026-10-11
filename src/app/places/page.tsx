@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ComingSoon, PageHeader } from '@/components/ComingSoon';
 import { PlacesBrowser } from '@/components/PlacesBrowser';
-import { provincesWithPlaces } from '@/lib/places';
+import { provincesWithPlaces, thaiPlaces } from '@/lib/places';
 import { listPublishedPlaces } from '@/lib/places-repo';
 
 export const revalidate = 3600;
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default async function PlacesPage() {
-  const places = await listPublishedPlaces();
+  const places = thaiPlaces(await listPublishedPlaces());
   const provinces = provincesWithPlaces(places);
   // ยังไม่มีข้อมูลที่ตรวจแล้ว: แสดงหน้ากำลังเตรียมแทนรายการว่าง
   if (places.length === 0) {

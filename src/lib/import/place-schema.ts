@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import type { Place } from '@/data/places';
+import { countryByCode } from '@/data/countries';
 import { PROVINCES } from '@/data/provinces';
 import { checkProvince, GOAL_SLUGS, isoDate, noEmDash, notesField, parseImport, resolveProvince, slugField, stringList, toNotes } from './common';
 
@@ -34,6 +35,9 @@ export const placeImportSchema = z
     type: z.enum(['temple', 'shrine', 'devalai', 'chinese-shrine']),
     deities: z.array(z.string().min(1)).min(1, 'ต้องมีองค์เทพอย่างน้อย 1'),
     goals: z.array(z.enum(GOAL_SLUGS)).min(1, 'ต้องมีเป้าหมายอย่างน้อย 1'),
+    /** ISO 3166-1 ค่าเริ่มต้น TH */
+    country: z.string().default('TH'),
+    city: z.string().optional(),
     province: z.string().optional(),
     provinceSlug: z.string().optional(),
     district: z.string().optional(),
@@ -54,8 +58,13 @@ export const placeImportSchema = z
     sources: z.array(z.string().url()).min(1, 'ต้องมีแหล่งอ้างอิงอย่างน้อย 1'),
   })
   .superRefine((v, ctx) => {
-    if (!v.provinceSlug && !v.province) ctx.addIssue({ code: 'custom', message: 'ต้องมี province หรือ provinceSlug' });
-    checkProvince(v, ctx);
+    if (v.country === 'TH') {
+      if (!v.provinceSlug && !v.province) ctx.addIssue({ code: 'custom', message: 'ต้องมี province หรือ provinceSlug' });
+      checkProvince(v, ctx);
+    } else {
+      if (!countryByCode(v.country)) ctx.addIssue({ code: 'custom', message: `ยังไม่รองรับประเทศ "${v.country}" (เพิ่มใน src/data/countries.ts)` });
+      if (!v.city) ctx.addIssue({ code: 'custom', message: 'สถานที่ต่างประเทศต้องมี city' });
+    }
     if (v.coords && !parseCoords(v.coords)) ctx.addIssue({ code: 'custom', message: 'coords ต้องเป็น "lat, lng"' });
   });
 
@@ -83,8 +92,9 @@ export function toPlace(v: z.output<typeof placeImportSchema>): Place {
     type: v.type,
     deities: v.deities,
     goals: [...new Set(v.goals)],
-    country: 'TH',
-    provinceSlug: resolveProvince(v)!,
+    country: v.country,
+    provinceSlug: v.country === 'TH' ? resolveProvince(v) : undefined,
+    city: v.country === 'TH' ? undefined : v.city,
     district: v.district,
     lat: lat == null ? null : round(lat),
     lng: lng == null ? null : round(lng),

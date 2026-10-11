@@ -7,6 +7,7 @@ import { PlacesForGoal } from '@/components/PlacesForGoal';
 import { PromptCard } from '@/components/PromptCard';
 import { SectionHeader } from '@/components/SectionHeader';
 import { GOALS, getGoal, isGoalSlug } from '@/lib/goals';
+import { thaiPlaces } from '@/lib/places';
 import { listPublishedPlaces } from '@/lib/places-repo';
 import { filterTellers } from '@/lib/tellers';
 import { listPublishedTellers } from '@/lib/tellers-repo';
@@ -55,7 +56,7 @@ export default async function GoalPage({ params }: { params: Params }) {
       <ComingSoon>
         <p>หน้านี้จะรวมสีเสื้อมงคลด้าน{g.short} ของเสริม และฤกษ์ที่เกี่ยวข้อง</p>
       </ComingSoon>
-      <PlacesForGoal places={places} goal={g.slug} />
+      <PlacesForGoal places={thaiPlaces(places)} goal={g.slug} />
       {goalTellers.length > 0 && (
         <section>
           <SectionHeader title={`หมอดูที่ถนัดเรื่อง${g.short}`} href={`/fortune-tellers?goal=${g.slug}`} />

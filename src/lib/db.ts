@@ -47,6 +47,8 @@ export function ensureSchema(): Promise<void> {
           updated_at timestamptz not null default now()
         )`;
       await sql`create index if not exists places_published_idx on places (published)`;
+      // สถานที่ต่างประเทศไม่มีจังหวัด (เพิ่มภายหลัง ตารางเดิมเคยเป็น not null)
+      await sql`alter table places alter column province_slug drop not null`;
       await sql`
         create table if not exists fortune_tellers (
           slug text primary key,

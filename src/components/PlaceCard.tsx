@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Place } from '@/data/places';
-import { provinceShortName } from '@/data/provinces';
 import { getGoal } from '@/lib/goals';
+import { placeLocation } from '@/lib/places';
 import { CreditBadge } from './CreditBadge';
 
 export function PlaceImageBox({ place, className }: { place: Place; className: string }) {
@@ -28,7 +28,7 @@ export function PlaceCard({ place }: { place: Place }) {
       <PlaceImageBox place={place} className="place-card__img" />
       <span className="place-card__name">{place.name}</span>
       <span className="place-card__meta">
-        {provinceShortName(place.provinceSlug)}
+        {placeLocation(place)}
         {goals && ` · ${goals}`}
       </span>
     </Link>
