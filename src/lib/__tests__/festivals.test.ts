@@ -45,3 +45,16 @@ describe('festivalPhase', () => {
     expect(festivalPhase(d, '2026-10-19')).toEqual({ phase: 'ended' });
   });
 });
+
+import { FESTIVALS } from '@/data/festivals';
+
+describe('festival content', () => {
+  it.each(FESTIVALS.filter((f) => f.content).map((f) => [f.slug, f] as const))('%s content is sourced and clean', (_, f) => {
+    const c = f.content!;
+    expect(c.sources.length).toBeGreaterThan(0);
+    for (const v of c.venues) expect(v.sources.length).toBeGreaterThan(0);
+    const text = JSON.stringify(c);
+    expect(text).not.toContain('—');
+    for (const url of [...c.sources, ...c.venues.flatMap((v) => v.sources)]) expect(() => new URL(url)).not.toThrow();
+  });
+});
