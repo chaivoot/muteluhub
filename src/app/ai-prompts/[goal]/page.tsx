@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!isGoalSlug(goal)) return {};
   const g = getGoal(goal);
   return {
+    alternates: { canonical: `/ai-prompts/${goal}` },
     title: `prompt ดูดวง${g.short}ด้วย AI`,
     description: `prompt ดูดวงเรื่อง${g.name} สำหรับ ChatGPT, Claude, Gemini คัดลอกไปใช้ได้ทันที`,
   };

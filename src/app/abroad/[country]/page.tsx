@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const c = getCountry(country);
   if (!c) return {};
   return {
+    alternates: { canonical: `/abroad/${country}` },
     title: `มู${c.name} คู่มือทริปสายมู ขอพรที่ไหนดี`,
     description: `${c.intro}`.slice(0, 160),
   };

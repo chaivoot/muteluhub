@@ -5,6 +5,7 @@ import { ColorToday } from '@/components/ColorToday';
 import { bangkokDay, formatThaiFullDate } from '@/lib/thai-date';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/color-today' },
   title: 'สีเสื้อมงคลวันนี้',
   description: 'สีเสื้อมงคลประจำวันตามหลักทักษา แยกตามเรื่องที่อยากเสริม การเงิน ความรัก การงาน พร้อมสีที่ควรเลี่ยง',
 };

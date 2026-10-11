@@ -21,12 +21,12 @@ const shirtUri = (fill: string) =>
     `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="${fill}"><path d="${SHIRT}"/></svg>`,
   ).toString('base64')}`;
 
-const svgUri = (svg: string) => `data:image/svg+xml;base64,${Buffer.from(svg).toString('base64')}`;
+export const svgUri = (svg: string) => `data:image/svg+xml;base64,${Buffer.from(svg).toString('base64')}`;
 
-const BG = '#172038';
-const GOLD = '#D6B064';
-const TEXT = '#F3ECDD';
-const MUTED = '#B9B2A3';
+export const BG = '#172038';
+export const GOLD = '#D6B064';
+export const TEXT = '#F3ECDD';
+export const MUTED = '#B9B2A3';
 
 function GoalGrid({ day, scale, exclude }: { day: ThaiDay; scale: number; exclude?: GoalSlug }) {
   const goals = GOALS.filter((g) => g.slug !== exclude);

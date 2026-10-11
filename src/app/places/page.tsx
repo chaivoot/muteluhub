@@ -8,6 +8,7 @@ import { listPublishedPlaces } from '@/lib/places-repo';
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/places' },
   title: 'สถานที่เสริมดวงในไทย',
   description: 'วัด ศาลเจ้า เทวาลัย ทั่วไทย แยกตามเรื่องที่อยากขอพร พร้อมเวลาเปิด ของไหว้ วิธีขอพรและแก้บน',
 };

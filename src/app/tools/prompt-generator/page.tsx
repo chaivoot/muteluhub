@@ -4,6 +4,7 @@ import { PageHeader } from '@/components/ComingSoon';
 import { PromptGenerator } from '@/components/PromptGenerator';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tools/prompt-generator' },
   title: 'สร้าง prompt ดูดวง',
   description: 'เลือกเรื่องที่อยากเสริม เลือกศาสตร์ กรอกข้อมูล แล้วได้ prompt ดูดวงพร้อมใช้กับ AI',
 };

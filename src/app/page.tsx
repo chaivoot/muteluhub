@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { ExploreGrid } from '@/components/ExploreGrid';
 import { FestivalCard } from '@/components/FestivalCard';
 import { GoalPicker } from '@/components/GoalPicker';
@@ -12,10 +13,22 @@ import { COUNTRIES } from '@/data/countries';
 import Link from 'next/link';
 import { PlaceImageBox } from '@/components/PlaceCard';
 import { listPublishedPlaces } from '@/lib/places-repo';
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site';
 import { bangkokDay, formatThaiFullDate } from '@/lib/thai-date';
 
 // วันที่ สีเสื้อ และเทศกาลขึ้นกับวัน จึงสร้างหน้าใหม่ทุก 10 นาที
 export const revalidate = 600;
+
+export const metadata: Metadata = { alternates: { canonical: '/' } };
+
+// บอก Google ชื่อเว็บ (แสดงใต้ผลค้นหา) และเจ้าของเว็บ
+const siteJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    { '@type': 'WebSite', '@id': `${SITE_URL}/#website`, url: SITE_URL, name: SITE_NAME, alternateName: 'มูเตลูฮับ', inLanguage: 'th-TH', description: SITE_DESCRIPTION },
+    { '@type': 'Organization', '@id': `${SITE_URL}/#org`, url: SITE_URL, name: SITE_NAME },
+  ],
+};
 
 export default async function HomePage() {
   const today = bangkokDay();
@@ -27,6 +40,7 @@ export default async function HomePage() {
 
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }} />
       <section className="hero">
         {/* TODO: ภาพบรรยากาศจริงพร้อมเครดิต (ห้ามใช้ภาพตัวอย่างใน design/mockups/images) */}
         <div className="hero__art" aria-hidden="true" />

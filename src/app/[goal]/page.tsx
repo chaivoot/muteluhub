@@ -29,6 +29,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!isGoalSlug(goal)) return {};
   const g = getGoal(goal);
   return {
+    alternates: { canonical: `/${goal}` },
     title: `เสริม${g.short}`,
     description: `รวมสีเสื้อ เลขมงคล สถานที่ หมอดู และของเสริมด้าน${g.name}`,
   };

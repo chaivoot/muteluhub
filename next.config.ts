@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     '/fortune-tellers/**': ['./src/assets/og/**'],
     '/color-today/**': ['./src/assets/og/**', './public/logo-mark.svg'],
+    '/opengraph-image': ['./src/assets/og/**', './public/logo-mark.svg'],
   },
 };
 

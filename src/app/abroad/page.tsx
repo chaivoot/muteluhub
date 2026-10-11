@@ -7,6 +7,7 @@ import { abroadPlaces } from '@/lib/places';
 import { listPublishedPlaces } from '@/lib/places-repo';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/abroad' },
   title: 'มูต่างประเทศ',
   description: 'คู่มือทริปสายมูต่างประเทศ ศาลเจ้าและวัดที่คนไทยนิยมไปขอพร ญี่ปุ่น ฮ่องกง ไต้หวัน',
 };

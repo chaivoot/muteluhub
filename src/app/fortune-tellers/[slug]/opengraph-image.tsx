@@ -4,6 +4,7 @@ import { provinceShortName } from '@/data/provinces';
 import { artVariantFor, disciplineArtSvg } from '@/lib/art/discipline-art';
 import { getDiscipline } from '@/lib/disciplines';
 import { OG_BODY, OG_DISPLAY, ogFonts } from '@/lib/og/fonts';
+import { ogThai } from '@/lib/og/thai';
 import { listPublishedTellers } from '@/lib/tellers-repo';
 
 // OG image อัตโนมัติ: ภาพ default ตามศาสตร์ + ชื่อหมอดู + ศาสตร์ (spec ข้อ 3.1)
@@ -23,15 +24,22 @@ export default async function OgImage({ params }: { params: Promise<{ slug: stri
   const art = disciplineArtSvg(disciplineSlug, teller ? artVariantFor(teller.slug) : 0);
 
   const title = teller ? teller.name : `หมอดู${discipline?.name ?? ''}`;
-  const tags = teller ? teller.disciplines.map((d) => getDiscipline(d)?.name ?? d) : discipline ? [discipline.groupName] : [];
+  const tags = teller
+    ? teller.disciplines.map((d) => getDiscipline(d)?.name ?? d)
+    : discipline
+      ? [discipline.groupName]
+      : [];
   const meta = teller
-    ? [...teller.channels.map((c) => CHANNEL_LABEL[c]), teller.provinceSlug ? provinceShortName(teller.provinceSlug) : null]
+    ? [
+        ...teller.channels.map((c) => CHANNEL_LABEL[c]),
+        teller.provinceSlug ? provinceShortName(teller.provinceSlug) : null,
+      ]
         .filter(Boolean)
         .join(' · ')
     : 'รวมหมอดูตามศาสตร์และเรื่องที่ถนัด';
 
   return new ImageResponse(
-    (
+    ogThai(
       <div style={{ width: '100%', height: '100%', display: 'flex', background: '#172038', color: '#F3ECDD' }}>
         <img src={svgDataUri(art)} width={630} height={630} alt="" />
         <div
@@ -66,7 +74,7 @@ export default async function OgImage({ params }: { params: Promise<{ slug: stri
           </div>
           <div style={{ fontFamily: OG_BODY, fontSize: 28, color: '#B9B2A3' }}>{meta}</div>
         </div>
-      </div>
+      </div>,
     ),
     { ...size, fonts: await ogFonts() },
   );
