@@ -2,8 +2,13 @@
 
 import { redirect } from 'next/navigation';
 import { login, logout, requireAdmin } from '@/lib/admin-auth';
-import { parsePlaceImport, type ImportItemResult } from '@/lib/import/place-schema';
-import { deletePlace, existingSlugs, setPlacePublished, upsertPlaces } from '@/lib/places-repo';
+import type { DirectoryKind } from '@/lib/directory-repo';
+import { isDirectoryKind } from '@/lib/admin-kinds';
+import type { ImportItemResult } from '@/lib/import/common';
+import { parsePlaceImport } from '@/lib/import/place-schema';
+import { parseTellerImport } from '@/lib/import/teller-schema';
+import { placesRepo } from '@/lib/places-repo';
+import { tellersRepo } from '@/lib/tellers-repo';
 
 export async function loginAction(_: unknown, form: FormData): Promise<{ error?: string }> {
   const ok = await login(String(form.get('password') ?? ''));
@@ -16,11 +21,21 @@ export async function logoutAction(): Promise<void> {
   redirect('/admin');
 }
 
-export interface PreviewItem extends Omit<ImportItemResult, 'place'> {
+type AnyItem = { slug: string; published: boolean; notes: string[] };
+
+function forKind(kind: DirectoryKind) {
+  if (kind === 'places') return { parse: parsePlaceImport, repo: placesRepo };
+  return { parse: parseTellerImport, repo: tellersRepo };
+}
+
+function parse(kind: DirectoryKind, text: string) {
+  return forKind(kind).parse(text) as { error?: string; items: ImportItemResult<AnyItem>[] };
+}
+
+export interface PreviewItem extends Omit<ImportItemResult<AnyItem>, 'item'> {
   action?: 'create' | 'update';
   published?: boolean;
-  imageCount?: number;
-  notes?: string[];
+  notesCount?: number;
 }
 
 export interface PreviewResult {
@@ -29,18 +44,18 @@ export interface PreviewResult {
 }
 
 /** ตรวจข้อมูลก่อนนำเข้า ยังไม่เขียนฐานข้อมูล */
-export async function previewImportAction(text: string): Promise<PreviewResult> {
+export async function previewImportAction(kind: DirectoryKind, text: string): Promise<PreviewResult> {
   await requireAdmin();
-  const parsed = parsePlaceImport(text);
+  if (!isDirectoryKind(kind)) return { error: 'ประเภทข้อมูลไม่ถูกต้อง', items: [] };
+  const parsed = parse(kind, text);
   if (parsed.error) return { error: parsed.error, items: [] };
-  const existing = await existingSlugs(parsed.items.filter((i) => i.ok).map((i) => i.place!.slug));
+  const existing = await forKind(kind).repo.existingSlugs(parsed.items.filter((i) => i.ok).map((i) => i.item!.slug));
   return {
-    items: parsed.items.map(({ place, ...rest }) => ({
+    items: parsed.items.map(({ item, ...rest }) => ({
       ...rest,
-      action: place ? (existing.has(place.slug) ? 'update' : 'create') : undefined,
-      published: place?.published,
-      imageCount: place?.images.length,
-      notes: place?.notes,
+      action: item ? (existing.has(item.slug) ? 'update' : 'create') : undefined,
+      published: item?.published,
+      notesCount: item?.notes.length,
     })),
   };
 }
@@ -51,29 +66,41 @@ export interface ImportResult {
   updated?: string[];
 }
 
-/** นำเข้าเฉพาะรายการที่ผ่านการตรวจ ถ้ามีรายการผิดจะไม่นำเข้าเลยสักรายการ */
-export async function importPlacesAction(text: string): Promise<ImportResult> {
+/** นำเข้าเฉพาะเมื่อทุกรายการผ่านการตรวจ (ไม่นำเข้าบางส่วน) */
+export async function importAction(kind: DirectoryKind, text: string): Promise<ImportResult> {
   await requireAdmin();
-  const parsed = parsePlaceImport(text);
-  if (parsed.error) return { error: parsed.error };
-  const bad = parsed.items.filter((i) => !i.ok);
-  if (bad.length) return { error: `มี ${bad.length} รายการที่ยังผิด แก้ให้ครบก่อนนำเข้า` };
+  if (!isDirectoryKind(kind)) return { error: 'ประเภทข้อมูลไม่ถูกต้อง' };
   try {
-    return await upsertPlaces(
-      parsed.items.map((i) => i.place!),
-      JSON.parse(text),
-    );
+    // แยกตามประเภทเพื่อให้ type ของแต่ละ repo ตรงกัน
+    if (kind === 'places') return await importAll(parsePlaceImport(text), (items) => placesRepo.upsert(items, JSON.parse(text)));
+    return await importAll(parseTellerImport(text), (items) => tellersRepo.upsert(items, JSON.parse(text)));
   } catch (err) {
     return { error: `บันทึกไม่สำเร็จ: ${(err as Error).message}` };
   }
 }
 
-export async function togglePublishedAction(form: FormData): Promise<void> {
-  await requireAdmin();
-  await setPlacePublished(String(form.get('slug')), form.get('published') === 'true');
+async function importAll<T>(
+  parsed: { error?: string; items: ImportItemResult<T>[] },
+  save: (items: T[]) => Promise<ImportResult>,
+): Promise<ImportResult> {
+  if (parsed.error) return { error: parsed.error };
+  const bad = parsed.items.filter((i) => !i.ok);
+  if (bad.length) return { error: `มี ${bad.length} รายการที่ยังผิด แก้ให้ครบก่อนนำเข้า` };
+  return save(parsed.items.map((i) => i.item!));
 }
 
-export async function deletePlaceAction(form: FormData): Promise<void> {
+function kindFrom(form: FormData): DirectoryKind {
+  const kind = form.get('kind');
+  if (!isDirectoryKind(kind)) throw new Error('Bad kind');
+  return kind;
+}
+
+export async function togglePublishedAction(form: FormData): Promise<void> {
   await requireAdmin();
-  await deletePlace(String(form.get('slug')));
+  await forKind(kindFrom(form)).repo.setPublished(String(form.get('slug')), form.get('published') === 'true');
+}
+
+export async function deleteAction(form: FormData): Promise<void> {
+  await requireAdmin();
+  await forKind(kindFrom(form)).repo.remove(String(form.get('slug')));
 }

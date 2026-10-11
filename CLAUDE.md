@@ -55,10 +55,11 @@ spec ไม่ได้กำหนด framework ระบุแค่ว่า 
 ## สถานะโปรเจกต์ (อัปเดตล่าสุด 2026-10-11)
 - ชื่อแบรนด์/โดเมน: **MuteluHub / muteluhub.com** (เจ้าของยืนยันแล้ว)
 - Stack: Next.js 15 (App Router) + TypeScript + CSS ธรรมดา (`design/tokens.css` import ตรงใน `src/app/layout.tsx`), deploy Vercel
-- ข้อมูล: taxonomy/เทศกาล/prompt อยู่ในไฟล์ (`data/*.json`, `src/data/*.ts`) ส่วน **สถานที่อยู่ใน Neon Postgres (สิงคโปร์)** นำเข้าผ่าน `/admin/import` (รูปแบบ: `docs/import-format.md`) ฟังก์ชัน Vercel ตั้ง region `sin1` ใน `vercel.json` ให้ตรงกับฐานข้อมูล
+- ข้อมูล: taxonomy/เทศกาล/prompt อยู่ในไฟล์ (`data/*.json`, `src/data/*.ts`) ส่วน **สถานที่และหมอดูอยู่ใน Neon Postgres (สิงคโปร์)** นำเข้าผ่าน `/admin/import` (รูปแบบ: `docs/import-format.md`) ฟังก์ชัน Vercel ตั้ง region `sin1` ใน `vercel.json` ให้ตรงกับฐานข้อมูล
 - env: `DATABASE_URL` (Neon), `ADMIN_PASSWORD` (หลังบ้าน), `NEXT_PUBLIC_SITE_URL`, `AGODA_CID`
 - ข้อควรระวัง: route ที่อ่านข้อมูลจาก DB ห้ามตั้ง `dynamicParams = false` (หลัง revalidateTag Next 15 จะตอบ 404) ให้ใช้ notFound() แทน
-- เสร็จแล้ว: ข้อ 1 ในลำดับการทำ (ระบบดีไซน์ layout มือถือ หน้าแรก) + addendum 01 AI prompt (คลัง, หน้า prompt เดี่ยว, generator) + เครื่องคำนวณเลขมงคล `/tools/lucky-number` หน้าอื่นเป็นโครงรอ
+- เสร็จแล้ว: ข้อ 1 ในลำดับการทำ (ระบบดีไซน์ layout มือถือ หน้าแรก) + addendum 01 AI prompt (คลัง, หน้า prompt เดี่ยว, generator) + เครื่องคำนวณเลขมงคล `/tools/lucky-number` + สถานที่ในไทย + หมอดู (รายการ ตัวกรอง bottom sheet โปรไฟล์ หน้าตามศาสตร์ OG image) หน้าอื่นเป็นโครงรอ
+- ภาพหมอดู: ภาพ SVG ตามศาสตร์ 3 แบบ (`src/lib/art/discipline-art.ts`, เสิร์ฟที่ `/art/[slug]-[n].svg`) เป็นชุดชั่วคราวจนกว่าจะมีภาพวาดจริงความละเอียดสูง
 - หลักคำนวณเลขมงคล: **Numerology แบบพีทาโกรัส** (เจ้าของเลือกแล้ว) โค้ดอยู่ที่ `src/lib/lucky-number/` ที่เดียว การจับคู่เลขกับเป้าหมายอยู่ใน `meanings.ts` (เป็นการตีความของเว็บ แก้ได้)
 - addendum 01 ที่ยังไม่ทำ: ปุ่ม ถาม AI ต่อ ใน /color-today (รอหลักทักษา) ส่วนเลขมงคลทำแล้ว ส่งค่าผ่าน sessionStorage (`src/lib/prompt-handoff.ts`) ไม่ใส่วันเกิดใน URL; ปุ่มเปิดใน ChatGPT/Claude ยังไม่ทำเพราะยังไม่ได้ทดสอบว่า URL parameter ใช้ได้จริง
 - คำสั่ง: `npm run dev`, `npm test`, `npm run typecheck`, `npm run build`
@@ -71,4 +72,5 @@ spec ไม่ได้กำหนด framework ระบุแค่ว่า 
 - `src/components/goal-context.tsx` จำเป้าหมายที่เลือกใน localStorage + cookie `mh_goal`
 - `src/data/prompt-templates.ts` + `src/lib/prompts.ts` คลัง prompt, `GUARD_BLOCK` (ต่อท้ายทุก prompt ตอน render), ประกอบ prompt ฝั่ง client เท่านั้น
 - `src/lib/analytics.ts` event copy_prompt / open_followup / click_to_fortune_teller รับเฉพาะ slug goal discipline (ยังไม่ได้เลือกผู้ให้บริการ push เข้า window.dataLayer)
-- `src/lib/db.ts` (postgres.js, สร้างตารางอัตโนมัติ), `src/lib/places-repo.ts` (อ่าน/เขียน + cache tag `places`), `src/lib/import/place-schema.ts` (ตรวจ JSON นำเข้า), `src/lib/admin-auth.ts` (รหัสผ่านเดียว)
+- `src/lib/db.ts` (postgres.js, สร้างตารางอัตโนมัติใต้ advisory lock), `src/lib/directory-repo.ts` (อ่าน/เขียนตาราง directory + cache tag ตามประเภท) ใช้โดย `places-repo.ts` และ `tellers-repo.ts`, `src/lib/import/*-schema.ts` (ตรวจ JSON นำเข้า), `src/lib/admin-auth.ts` (รหัสผ่านเดียว)
+- OG image หมอดู: `src/app/fortune-tellers/[slug]/opengraph-image.tsx` ใช้ฟอนต์ TTF ใน `src/assets/og` (ต้องอยู่ใน outputFileTracingIncludes ของ next.config)

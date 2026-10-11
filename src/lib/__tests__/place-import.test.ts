@@ -33,7 +33,7 @@ describe('parsePlaceImport', () => {
     expect(r.error).toBeUndefined();
     const item = r.items[0];
     expect(item.ok).toBe(true);
-    expect(item.place).toMatchObject({
+    expect(item.item).toMatchObject({
       slug: 'test-shrine',
       provinceSlug: 'bangkok',
       lat: 13.74413,
@@ -50,7 +50,7 @@ describe('parsePlaceImport', () => {
     const { province, ...rest } = valid;
     void province;
     const r = parsePlaceImport(JSON.stringify({ ...rest, provinceSlug: 'chiang-mai' }));
-    expect(r.items[0].place?.provinceSlug).toBe('chiang-mai');
+    expect(r.items[0].item?.provinceSlug).toBe('chiang-mai');
   });
 
   it('reports every problem per item', () => {

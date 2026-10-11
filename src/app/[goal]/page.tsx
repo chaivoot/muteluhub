@@ -8,6 +8,9 @@ import { PromptCard } from '@/components/PromptCard';
 import { SectionHeader } from '@/components/SectionHeader';
 import { GOALS, getGoal, isGoalSlug } from '@/lib/goals';
 import { listPublishedPlaces } from '@/lib/places-repo';
+import { filterTellers } from '@/lib/tellers';
+import { listPublishedTellers } from '@/lib/tellers-repo';
+import { TellerCard } from '@/components/TellerCard';
 import { recommendedForGoal } from '@/lib/prompts';
 
 // ไม่ตั้ง dynamicParams = false: หลัง revalidateTag (นำเข้าข้อมูล) Next 15 จะตอบ 404 กับหน้าที่ prerender ไว้
@@ -34,7 +37,8 @@ export default async function GoalPage({ params }: { params: Params }) {
   const { goal } = await params;
   if (!isGoalSlug(goal)) notFound();
   const g = getGoal(goal);
-  const places = await listPublishedPlaces();
+  const [places, tellers] = await Promise.all([listPublishedPlaces(), listPublishedTellers()]);
+  const goalTellers = filterTellers({ goal: g.slug }, tellers).slice(0, 3);
 
   return (
     <main>
@@ -49,9 +53,19 @@ export default async function GoalPage({ params }: { params: Params }) {
         <h2 className="goal-hero__title">{g.name}</h2>
       </div>
       <ComingSoon>
-        <p>หน้านี้จะรวมสีเสื้อมงคลด้าน{g.short} หมอดูที่ถนัด ของเสริม และฤกษ์ที่เกี่ยวข้อง</p>
+        <p>หน้านี้จะรวมสีเสื้อมงคลด้าน{g.short} ของเสริม และฤกษ์ที่เกี่ยวข้อง</p>
       </ComingSoon>
       <PlacesForGoal places={places} goal={g.slug} />
+      {goalTellers.length > 0 && (
+        <section>
+          <SectionHeader title={`หมอดูที่ถนัดเรื่อง${g.short}`} href={`/fortune-tellers?goal=${g.slug}`} />
+          <div className="stack container">
+            {goalTellers.map((t) => (
+              <TellerCard key={t.slug} teller={t} />
+            ))}
+          </div>
+        </section>
+      )}
       <SectionHeader title={`ถาม AI เรื่อง${g.short}`} href={`/ai-prompts/${g.slug}`} />
       <div className="stack container">
         {recommendedForGoal(g.slug).map((t) => (
