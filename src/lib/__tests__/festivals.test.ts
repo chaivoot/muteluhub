@@ -30,3 +30,18 @@ describe('currentFestivalDate', () => {
     expect(currentFestivalDate(kinje, '2027-01-01')?.year).toBe(2026);
   });
 });
+
+import { festivalPhase } from '@/lib/festivals';
+
+describe('festivalPhase', () => {
+  const d = { year: 2026, start: '2026-10-10', end: '2026-10-18', prep: '2026-10-09' };
+  it('counts days during the festival', () => {
+    expect(festivalPhase(d, '2026-10-11')).toEqual({ phase: 'ongoing', day: 2, totalDays: 9 });
+    expect(festivalPhase(d, '2026-10-18')).toEqual({ phase: 'ongoing', day: 9, totalDays: 9 });
+  });
+  it('handles prep day, upcoming and ended', () => {
+    expect(festivalPhase(d, '2026-10-09')).toEqual({ phase: 'prep' });
+    expect(festivalPhase(d, '2026-09-30')).toEqual({ phase: 'upcoming', daysUntil: 10 });
+    expect(festivalPhase(d, '2026-10-19')).toEqual({ phase: 'ended' });
+  });
+});

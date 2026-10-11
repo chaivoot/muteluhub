@@ -13,6 +13,43 @@ export interface FestivalDate {
   notes?: string;
 }
 
+export interface SourcedText {
+  text: string;
+  source?: string;
+}
+
+export interface FestivalVenue {
+  name: string;
+  province: string;
+  placeName?: string;
+  /** วันจัดงานปีนี้ (ถ้าประกาศแล้ว) */
+  dates?: string;
+  description: string;
+  sources: string[];
+}
+
+export interface FestivalFaq {
+  q: string;
+  a: string;
+  source?: string;
+}
+
+/** เนื้อหาหน้าเทศกาล อัปเดตทุกปี (URL ไม่มีปี) ทุกข้อเท็จจริงต้องมีแหล่งอ้างอิง */
+export interface FestivalContent {
+  intro: string;
+  /** หมายเหตุวันตามจันทรคติ */
+  lunarNote?: string;
+  rules: SourcedText[];
+  /** หัวข้อของรายการพิเศษ เช่น ผักกลิ่นฉุน 5 ชนิด */
+  specialList?: { title: string; items: string[]; source?: string };
+  venues: FestivalVenue[];
+  faq: FestivalFaq[];
+  healthNote?: string;
+  sources: string[];
+  /** วันที่ตรวจเนื้อหาล่าสุด */
+  checkedAt: string;
+}
+
 export interface Festival {
   slug: string;
   name: string;
@@ -20,6 +57,7 @@ export interface Festival {
   goals: GoalSlug[];
   dates: FestivalDate[];
   image?: { src: string; alt: string; credit: string };
+  content?: FestivalContent;
 }
 
 export const FESTIVALS: Festival[] = [
