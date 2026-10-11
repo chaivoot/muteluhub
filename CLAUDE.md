@@ -56,8 +56,9 @@ spec ไม่ได้กำหนด framework ระบุแค่ว่า 
 - ชื่อแบรนด์/โดเมน: **MuteluHub / muteluhub.com** (เจ้าของยืนยันแล้ว)
 - Stack: Next.js 15 (App Router) + TypeScript + CSS ธรรมดา (`design/tokens.css` import ตรงใน `src/app/layout.tsx`), deploy Vercel
 - ข้อมูล: ยังไม่มี database ใช้ไฟล์ใน `data/*.json` และ `src/data/*.ts` (โครงตรงกับ data model ใน spec ข้อ 5) ย้ายไป DB ได้ภายหลัง
-- เสร็จแล้ว: ข้อ 1 ในลำดับการทำ (ระบบดีไซน์ layout มือถือ หน้าแรก) + addendum 01 AI prompt (คลัง, หน้า prompt เดี่ยว, generator) หน้าอื่นเป็นโครงรอ
-- addendum 01 ที่ยังไม่ทำ: ปุ่ม ถาม AI ต่อ ใน /tools/lucky-number และ /color-today (รอหลักคำนวณ/หลักทักษา) ส่วน prefill ผ่าน query string รองรับแล้ว; ปุ่มเปิดใน ChatGPT/Claude ยังไม่ทำเพราะยังไม่ได้ทดสอบว่า URL parameter ใช้ได้จริง
+- เสร็จแล้ว: ข้อ 1 ในลำดับการทำ (ระบบดีไซน์ layout มือถือ หน้าแรก) + addendum 01 AI prompt (คลัง, หน้า prompt เดี่ยว, generator) + เครื่องคำนวณเลขมงคล `/tools/lucky-number` หน้าอื่นเป็นโครงรอ
+- หลักคำนวณเลขมงคล: **Numerology แบบพีทาโกรัส** (เจ้าของเลือกแล้ว) โค้ดอยู่ที่ `src/lib/lucky-number/` ที่เดียว การจับคู่เลขกับเป้าหมายอยู่ใน `meanings.ts` (เป็นการตีความของเว็บ แก้ได้)
+- addendum 01 ที่ยังไม่ทำ: ปุ่ม ถาม AI ต่อ ใน /color-today (รอหลักทักษา) ส่วนเลขมงคลทำแล้ว ส่งค่าผ่าน sessionStorage (`src/lib/prompt-handoff.ts`) ไม่ใส่วันเกิดใน URL; ปุ่มเปิดใน ChatGPT/Claude ยังไม่ทำเพราะยังไม่ได้ทดสอบว่า URL parameter ใช้ได้จริง
 - คำสั่ง: `npm run dev`, `npm test`, `npm run typecheck`, `npm run build`
 
 ## โครงโค้ด

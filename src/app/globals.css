@@ -337,3 +337,36 @@ ul { list-style: none; margin: 0; padding: 0; }
   .explore-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
   .explore-grid__item:last-child:nth-child(odd) { grid-column: auto; min-height: 112px; }
 }
+
+/* ---------- lucky number ---------- */
+.date-select { display: grid; grid-template-columns: 0.8fr 1.4fr 1fr; gap: 8px; }
+.field__error { font-size: 13px; color: var(--color-vermilion); }
+.privacy-note { padding-top: 10px; }
+.lucky-result { display: flex; flex-direction: column; gap: 14px; padding-top: 20px; }
+.lucky-card {
+  border: 3px solid var(--color-gold); border-radius: var(--radius-xl);
+  background: var(--color-surface); padding: 18px 16px 16px;
+}
+.lucky-card__eyebrow { font-size: var(--text-sm); color: var(--color-gold); }
+.lucky-card__numbers { display: flex; flex-wrap: wrap; gap: 12px; margin: 12px 0 16px; }
+.lucky-num {
+  width: 64px; height: 64px; border-radius: var(--radius-pill); border: 1.5px solid var(--color-gold);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1.1;
+}
+.lucky-num__thai { font-family: var(--font-display); font-weight: 700; font-size: 28px; color: var(--color-gold-bright); }
+.lucky-num__arabic { font-size: var(--text-xs); color: var(--color-text-muted); }
+.lucky-card__actions { display: flex; gap: 10px; align-items: center; }
+.core-numbers { margin: 0; display: grid; gap: 10px; }
+.core-number { padding: 12px 14px; border-radius: var(--radius-md); background: var(--color-surface); border: 1px solid var(--color-border); }
+.core-number dt { font-size: var(--text-sm); color: var(--color-text-muted); }
+.core-number dd { margin: 2px 0 0; display: flex; align-items: center; gap: 12px; color: var(--color-text-soft); }
+.core-number__value { font-family: var(--font-display); font-weight: 700; font-size: var(--text-3xl); color: var(--color-gold); flex: none; min-width: 36px; }
+.how-to { padding: 4px 4px 0; display: flex; flex-direction: column; gap: 8px; }
+.how-to__title { font-size: var(--text-lg); }
+.how-to__list { display: flex; flex-direction: column; gap: 4px; color: var(--color-text-soft); list-style: disc; padding-left: 20px; }
+.shortcut-card--flush { margin: 0; }
+.method-box {
+  margin-top: 24px; padding-top: 16px; padding-bottom: 16px; border-top: 1px solid var(--color-divider);
+  display: flex; flex-direction: column; gap: 6px; color: var(--color-text-muted); font-size: 13px;
+}
+.method-box strong { color: var(--color-text-soft); }

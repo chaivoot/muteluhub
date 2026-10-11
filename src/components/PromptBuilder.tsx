@@ -7,7 +7,8 @@ import type { PromptField, PromptTemplate } from '@/data/prompt-templates';
 import { track } from '@/lib/analytics';
 import { getDiscipline } from '@/lib/disciplines';
 import { getGoal, isGoalSlug } from '@/lib/goals';
-import { fieldOptions, missingFields, renderPrompt, valuesFromParams, type PromptValues } from '@/lib/prompts';
+import { fieldOptions, missingFields, renderPrompt, valuesFromParams, valuesFromRecord, type PromptValues } from '@/lib/prompts';
+import { takePromptHandoff } from '@/lib/prompt-handoff';
 import { bangkokDay, TH_WEEKDAYS } from '@/lib/thai-date';
 import { CopyButton } from './CopyButton';
 import { useGoal } from './goal-context';
@@ -20,6 +21,12 @@ export function PromptBuilder({ template }: { template: PromptTemplate }) {
   const params = useSearchParams();
   const { goal: rememberedGoal } = useGoal();
   const [values, setValues] = useState<PromptValues>(() => valuesFromParams(template, params));
+
+  // ค่าที่ส่งมาจากเครื่องมือของเว็บ (เลขมงคล สีเสื้อ) ผ่าน sessionStorage
+  useEffect(() => {
+    const handoff = takePromptHandoff(template.slug);
+    if (handoff) setValues((prev) => ({ ...prev, ...valuesFromRecord(template, handoff) }));
+  }, [template]);
 
   // ค่าเริ่มต้นอัตโนมัติ เติมเฉพาะช่องที่ยังว่าง
   useEffect(() => {

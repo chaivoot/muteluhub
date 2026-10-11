@@ -1,15 +1,21 @@
 import type { Metadata } from 'next';
-import { ComingSoon, PageHeader } from '@/components/ComingSoon';
+import { PageHeader } from '@/components/ComingSoon';
+import { LuckyNumberTool } from '@/components/LuckyNumberTool';
+import { LUCKY_NUMBER_METHOD } from '@/lib/lucky-number';
 
-export const metadata: Metadata = { title: 'เลขมงคลจากวันเกิด', description: 'คำนวณเลขมงคลจากวันเดือนปีเกิด ตามเรื่องที่อยากเสริม' };
+export const metadata: Metadata = {
+  title: 'เลขมงคลจากวันเกิด',
+  description: `คำนวณเลขมงคลจากวันเดือนปีเกิด ตามเรื่องที่อยากเสริม ด้วยหลัก ${LUCKY_NUMBER_METHOD.name}`,
+};
 
-export default function Page() {
+export default function LuckyNumberPage() {
   return (
     <main>
       <PageHeader title="เลขมงคลจากวันเกิด" />
-      <ComingSoon>
-        <p>กรอกวันเกิดและเลือกเรื่องที่อยากเสริม แล้วรับเลขมงคลของคุณ พร้อมบอกว่าใช้หลักคำนวณอะไร</p>
-      </ComingSoon>
+      <div className="prose intro">
+        <p>เลือกวันเกิดและเรื่องที่อยากเสริม แล้วดูเลขมงคลของคุณ คำนวณตามหลัก {LUCKY_NUMBER_METHOD.name}</p>
+      </div>
+      <LuckyNumberTool />
     </main>
   );
 }

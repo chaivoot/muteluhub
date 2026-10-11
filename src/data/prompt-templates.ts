@@ -51,6 +51,45 @@ const GOAL_FIELD: PromptField = {
   defaultFrom: 'selected-goal',
 };
 
+/**
+ * lucky-number-[goal]: ปุ่ม ถาม AI ต่อ ในหน้าเลขมงคลส่งผลมาที่นี่ (addendum 01 ข้อ 8)
+ * ข้อความของการเงินตรงกับ seed ใน addendum ส่วนเป้าหมายอื่นเปลี่ยนเฉพาะหัวข้อและตัวอย่าง
+ */
+const LUCKY_NUMBER_TOPICS: Record<GoalSlug, { short: string; topic: string; examples: string }> = {
+  love: { short: 'ความรัก', topic: 'ความรัก', examples: 'เบอร์โทร วันนัดสำคัญ เลขห้อง' },
+  career: { short: 'การงาน', topic: 'การงาน', examples: 'เบอร์โทร วันสัมภาษณ์หรือเริ่มงาน ป้ายทะเบียน' },
+  money: { short: 'การเงิน', topic: 'การเงิน', examples: 'เบอร์โทร เลขบัญชี ป้ายทะเบียน' },
+  business: { short: 'ค้าขาย', topic: 'การค้าขาย', examples: 'เบอร์ร้าน เลขที่ตั้งร้าน วันเปิดร้าน' },
+  health: { short: 'สุขภาพ', topic: 'สุขภาพ', examples: 'เบอร์โทร เลขห้อง วันเริ่มดูแลตัวเอง' },
+  study: { short: 'การเรียน', topic: 'การเรียนและการสอบ', examples: 'เบอร์โทร วันเริ่มอ่านหนังสือ เลขห้องพัก' },
+  family: { short: 'ครอบครัว', topic: 'ครอบครัว', examples: 'เบอร์โทร เลขที่บ้าน วันสำคัญของครอบครัว' },
+  protection: { short: 'แคล้วคลาด', topic: 'ความแคล้วคลาดปลอดภัย', examples: 'เบอร์โทร ป้ายทะเบียน เลขที่บ้าน' },
+};
+
+function luckyNumberTemplates(): PromptTemplate[] {
+  return ALL_GOALS.map((goal, i) => {
+    const { short, topic, examples } = LUCKY_NUMBER_TOPICS[goal];
+    return {
+      slug: `lucky-number-${goal}`,
+      title: `ถาม AI เรื่องเลขมงคลด้าน${short}`,
+      description: 'ใช้ผลจากเครื่องคำนวณเลขมงคล ให้ AI อธิบายและแนะนำวิธีใช้ในชีวิตประจำวัน',
+      discipline: 'numerology',
+      goals: [goal],
+      template: `ฉันเกิดวันที่ {{birth_date}}
+เว็บคำนวณเลขมงคลให้ตามหลัก {{method}} ได้ผลดังนี้: {{lucky_numbers}}
+ช่วยอธิบายว่าเลขเหล่านี้เกี่ยวกับ${topic}ของฉันอย่างไร และแนะนำวิธีใช้ในชีวิตประจำวัน เช่น ${examples}`,
+      requiredFields: [
+        { key: 'birth_date', label: 'วันเกิด', type: 'date' },
+        { key: 'method', label: 'หลักคำนวณ', type: 'text', placeholder: 'ได้จากหน้าเลขมงคล' },
+        { key: 'lucky_numbers', label: 'เลขมงคลที่ได้', type: 'text', placeholder: 'เช่น 5, 9, 24' },
+      ],
+      followUps: ['ถ้าจะเลือกเบอร์โทรใหม่ ควรดูอะไรบ้างจากเลขเหล่านี้'],
+      isFeatured: goal === 'money',
+      sortOrder: goal === 'money' ? 2 : 10 + i,
+    };
+  });
+}
+
 export const PROMPT_TEMPLATES: PromptTemplate[] = [
   {
     slug: 'tarot-love',
@@ -77,24 +116,7 @@ export const PROMPT_TEMPLATES: PromptTemplate[] = [
     isFeatured: true,
     sortOrder: 1,
   },
-  {
-    slug: 'lucky-number-money',
-    title: 'ถาม AI เรื่องเลขมงคลด้านการเงิน',
-    description: 'ใช้ผลจากเครื่องคำนวณเลขมงคล ให้ AI อธิบายและแนะนำวิธีใช้ในชีวิตประจำวัน',
-    discipline: 'numerology',
-    goals: ['money'],
-    template: `ฉันเกิดวันที่ {{birth_date}}
-เว็บคำนวณเลขมงคลให้ตามหลัก {{method}} ได้ผลดังนี้: {{lucky_numbers}}
-ช่วยอธิบายว่าเลขเหล่านี้เกี่ยวกับการเงินของฉันอย่างไร และแนะนำวิธีใช้ในชีวิตประจำวัน เช่น เบอร์โทร เลขบัญชี ป้ายทะเบียน`,
-    requiredFields: [
-      { key: 'birth_date', label: 'วันเกิด', type: 'date' },
-      { key: 'method', label: 'หลักคำนวณ', type: 'text', placeholder: 'ได้จากหน้าเลขมงคล' },
-      { key: 'lucky_numbers', label: 'เลขมงคลที่ได้', type: 'text', placeholder: 'เช่น 5, 9, 24' },
-    ],
-    followUps: [],
-    isFeatured: true,
-    sortOrder: 2,
-  },
+  ...luckyNumberTemplates(),
   {
     slug: 'color-today-career',
     title: 'แต่งตัวไปทำงานตามสีมงคลวันนี้',
