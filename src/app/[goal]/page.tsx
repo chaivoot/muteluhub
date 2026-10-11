@@ -7,9 +7,12 @@ import { PlacesForGoal } from '@/components/PlacesForGoal';
 import { PromptCard } from '@/components/PromptCard';
 import { SectionHeader } from '@/components/SectionHeader';
 import { GOALS, getGoal, isGoalSlug } from '@/lib/goals';
+import { listPublishedPlaces } from '@/lib/places-repo';
 import { recommendedForGoal } from '@/lib/prompts';
 
-export const dynamicParams = false;
+// ไม่ตั้ง dynamicParams = false: หลัง revalidateTag (นำเข้าข้อมูล) Next 15 จะตอบ 404 กับหน้าที่ prerender ไว้
+// slug ที่ไม่ใช่เป้าหมายจะถูก notFound() ด้านล่างแทน
+export const revalidate = 3600;
 
 export function generateStaticParams() {
   return GOALS.map((g) => ({ goal: g.slug }));
@@ -31,6 +34,7 @@ export default async function GoalPage({ params }: { params: Params }) {
   const { goal } = await params;
   if (!isGoalSlug(goal)) notFound();
   const g = getGoal(goal);
+  const places = await listPublishedPlaces();
 
   return (
     <main>
@@ -47,7 +51,7 @@ export default async function GoalPage({ params }: { params: Params }) {
       <ComingSoon>
         <p>หน้านี้จะรวมสีเสื้อมงคลด้าน{g.short} หมอดูที่ถนัด ของเสริม และฤกษ์ที่เกี่ยวข้อง</p>
       </ComingSoon>
-      <PlacesForGoal goal={g.slug} />
+      <PlacesForGoal places={places} goal={g.slug} />
       <SectionHeader title={`ถาม AI เรื่อง${g.short}`} href={`/ai-prompts/${g.slug}`} />
       <div className="stack container">
         {recommendedForGoal(g.slug).map((t) => (
