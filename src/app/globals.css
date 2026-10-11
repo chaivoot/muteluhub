@@ -370,3 +370,60 @@ ul { list-style: none; margin: 0; padding: 0; }
   display: flex; flex-direction: column; gap: 6px; color: var(--color-text-muted); font-size: 13px;
 }
 .method-box strong { color: var(--color-text-soft); }
+
+/* ---------- places ---------- */
+.place-card { width: 220px; flex: none; display: flex; flex-direction: column; color: var(--color-text); text-decoration: none; }
+.place-card:hover { color: var(--color-text); }
+.place-card__img { display: block; position: relative; height: 150px; border-radius: 16px; overflow: hidden; background: var(--color-image-placeholder); }
+.place-card__img img { width: 100%; height: 100%; object-fit: cover; }
+.place-card__name { font-size: var(--text-md); font-weight: 600; margin-top: 8px; line-height: 1.45; }
+.place-card__meta { font-size: var(--text-sm); color: var(--color-text-muted); }
+.place-img-empty {
+  position: absolute; inset: 0; display: block;
+  background: radial-gradient(circle at 50% 40%, rgba(214, 176, 100, 0.18), transparent 55%), var(--color-image-placeholder);
+}
+.carousel {
+  display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none;
+  padding: 0 16px 4px; scroll-padding: 0 16px;
+}
+.carousel > * { scroll-snap-align: start; }
+.place-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 12px; }
+.place-grid .place-card { width: auto; }
+.place-grid .place-card__img { height: auto; aspect-ratio: 4 / 3; }
+.filter-bar--wrap { flex-wrap: wrap; }
+.filter-bar__selects { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.place-hero { position: relative; height: 340px; overflow: hidden; background: var(--color-image-placeholder); }
+.place-hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.place-hero__scrim { position: absolute; inset: 0; background: var(--scrim-hero); }
+.place-hero__top { position: absolute; top: 12px; left: 12px; }
+.place-hero__text { position: absolute; left: 20px; right: 20px; bottom: 14px; display: flex; flex-direction: column; }
+.place-hero__type { font-size: var(--text-base); color: var(--color-gold-bright); }
+.place-hero__name { font-size: var(--text-3xl); line-height: 1.45; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); }
+.place__body { display: flex; flex-direction: column; gap: 18px; padding-top: 6px; }
+.place__summary { color: var(--color-text-soft); font-size: var(--text-md); }
+.place__h2 { font-size: var(--text-xl); margin-bottom: 8px; }
+.info-list { margin: 0; padding: 4px 14px; border-radius: var(--radius-md); background: var(--color-surface); border: 1px solid var(--color-border); }
+.info-list > div { display: flex; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--color-divider); }
+.info-list > div:last-child { border-bottom: none; }
+.info-list dt { flex: none; width: 72px; color: var(--color-text-muted); }
+.info-list dd { margin: 0; color: var(--color-text-soft); }
+.bullet-list { list-style: disc; padding-left: 20px; color: var(--color-text-soft); display: flex; flex-direction: column; gap: 4px; }
+.step-list { margin: 0; padding-left: 22px; color: var(--color-text-soft); display: flex; flex-direction: column; gap: 6px; }
+.step-list li::marker { color: var(--color-gold); font-family: var(--font-display); font-weight: 600; }
+.affiliate-inline {
+  padding: 14px; border-radius: 18px; border: 1px dashed #3A4775;
+  display: flex; gap: 12px; align-items: center; justify-content: space-between;
+}
+.affiliate-inline__body { display: flex; flex-direction: column; }
+.affiliate-inline__title { font-weight: 600; }
+.affiliate-label { flex: none; font-size: var(--text-xs); color: var(--color-text-muted); border: 1px solid #3A4775; border-radius: var(--radius-pill); padding: 0 8px; }
+.place__sources { font-size: var(--text-sm); color: var(--color-text-muted); display: flex; flex-direction: column; gap: 6px; border-top: 1px solid var(--color-divider); padding-top: 14px; }
+.place__sources summary { cursor: pointer; min-height: 32px; }
+.place__sources ul { padding-left: 4px; display: flex; flex-direction: column; gap: 2px; }
+
+@media (min-width: 768px) {
+  .place-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .place-hero { height: 440px; }
+  .carousel { overflow: visible; flex-wrap: wrap; }
+}

@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { ComingSoon, PageHeader } from '@/components/ComingSoon';
 import { GoalIcon } from '@/components/icons';
+import { PlacesForGoal } from '@/components/PlacesForGoal';
 import { PromptCard } from '@/components/PromptCard';
 import { SectionHeader } from '@/components/SectionHeader';
 import { GOALS, getGoal, isGoalSlug } from '@/lib/goals';
@@ -44,8 +45,9 @@ export default async function GoalPage({ params }: { params: Params }) {
         <h2 className="goal-hero__title">{g.name}</h2>
       </div>
       <ComingSoon>
-        <p>หน้านี้จะรวมสีเสื้อและเลขมงคลด้าน{g.short} สถานที่ขอพร หมอดูที่ถนัด ของเสริม และฤกษ์ที่เกี่ยวข้อง</p>
+        <p>หน้านี้จะรวมสีเสื้อมงคลด้าน{g.short} หมอดูที่ถนัด ของเสริม และฤกษ์ที่เกี่ยวข้อง</p>
       </ComingSoon>
+      <PlacesForGoal goal={g.slug} />
       <SectionHeader title={`ถาม AI เรื่อง${g.short}`} href={`/ai-prompts/${g.slug}`} />
       <div className="stack container">
         {recommendedForGoal(g.slug).map((t) => (
