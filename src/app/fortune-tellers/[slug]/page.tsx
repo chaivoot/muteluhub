@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (teller) {
     const disciplines = teller.disciplines.map((d) => getDiscipline(d)?.name ?? d).join(' ');
     return {
+      alternates: { canonical: `/fortune-tellers/${slug}` },
       title: `${teller.name} หมอดู${disciplines}`,
       description: teller.bio.slice(0, 160),
     };
@@ -42,6 +43,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const discipline = getDiscipline(slug);
   if (discipline && filterTellers({ discipline: slug }, tellers).length > 0) {
     return {
+      alternates: { canonical: `/fortune-tellers/${slug}` },
       title: `หมอดู${discipline.name}`,
       description: `รวมหมอดูศาสตร์${discipline.name} กรองตามเรื่องที่อยากเสริม ช่องทาง จังหวัด และราคา`,
     };

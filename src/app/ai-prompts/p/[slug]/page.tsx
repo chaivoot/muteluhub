@@ -17,7 +17,7 @@ type Params = Promise<{ slug: string }>;
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { slug } = await params;
   const t = getPromptTemplate(slug);
-  return t ? { title: t.title, description: t.description } : {};
+  return t ? { title: t.title, description: t.description, alternates: { canonical: `/ai-prompts/p/${slug}` } } : {};
 }
 
 export default async function PromptPage({ params }: { params: Params }) {

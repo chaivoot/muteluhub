@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const year = date ? ` ${toBuddhistYear(date.year)}` : '';
   const when = date ? ` ${formatThaiRange(date.start, date.end, true)}` : '';
   return {
+    alternates: { canonical: `/festival/${slug}` },
     title: `${festival.name}${year} วันไหน ข้อควรรู้ และงานทั่วไทย`,
     description: `${festival.name}${year}${when} ${festival.content?.intro ?? festival.tagline}`.slice(0, 160),
   };

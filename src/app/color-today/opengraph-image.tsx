@@ -2,6 +2,7 @@ import { ImageResponse } from 'next/og';
 import { ColorOgImage, OG_SIZE } from '@/lib/og/color-card';
 import { ogFonts } from '@/lib/og/fonts';
 import { logoMarkSvg } from '@/lib/og/logo';
+import { ogThai } from '@/lib/og/thai';
 
 // ภาพแชร์ของหน้า /color-today ไม่ผูกกับวัน (ภาพ metadata ถูก cache แบบ immutable)
 export const runtime = 'nodejs';
@@ -11,5 +12,5 @@ export const alt = 'สีเสื้อมงคลวันนี้ ตา�
 
 export default async function OgImage() {
   const [fonts, logoSvg] = await Promise.all([ogFonts(), logoMarkSvg()]);
-  return new ImageResponse(<ColorOgImage logoSvg={logoSvg} />, { ...size, fonts });
+  return new ImageResponse(ogThai(<ColorOgImage logoSvg={logoSvg} />), { ...size, fonts });
 }

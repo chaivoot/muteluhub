@@ -7,6 +7,7 @@ import { DISCIPLINES } from '@/lib/disciplines';
 import { listPublishedTellers } from '@/lib/tellers-repo';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/fortune-tellers' },
   title: 'หมอดู',
   description: 'รวมหมอดูแยกตามศาสตร์และเรื่องที่ถนัด กรองตามช่องทาง จังหวัด และราคา',
 };

@@ -4,6 +4,7 @@ import { LuckyNumberTool } from '@/components/LuckyNumberTool';
 import { LUCKY_NUMBER_METHOD } from '@/lib/lucky-number';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tools/lucky-number' },
   title: 'เลขมงคลจากวันเกิด',
   description: `คำนวณเลขมงคลจากวันเดือนปีเกิด ตามเรื่องที่อยากเสริม ด้วยหลัก ${LUCKY_NUMBER_METHOD.name}`,
 };

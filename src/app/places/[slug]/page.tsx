@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (place) {
     const goals = place.goals.map((g) => getGoal(g).short).join(' ');
     return {
+      alternates: { canonical: `/places/${slug}` },
       title: `${place.name} ขอพรเรื่องอะไร ไหว้อย่างไร`,
       description: `${place.summary} ขอพรเด่นเรื่อง${goals}`.slice(0, 160),
       openGraph: place.images[0] ? { images: [{ url: place.images[0].src, alt: place.images[0].alt }] } : undefined,
@@ -42,6 +43,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   }
   if (PROVINCES[slug] && places.some((p) => p.provinceSlug === slug)) {
     return {
+      alternates: { canonical: `/places/${slug}` },
       title: `สถานที่เสริมดวง${PROVINCES[slug]}`,
       description: `วัด ศาลเจ้า สถานที่ขอพรใน${PROVINCES[slug]} พร้อมของไหว้และวิธีขอพร`,
     };

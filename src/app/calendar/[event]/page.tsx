@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!e) return {};
   const year = toBuddhistYear(bangkokDay().year);
   return {
+    alternates: { canonical: `/calendar/${event}` },
     title: `ฤกษ์${e.name} ${year} วันดี วันธงชัย`,
     description: `ปฏิทินวันดีสำหรับ${e.name} ตามวันธงชัย อธิบดี และวันที่ควรเลี่ยง พร้อมวันจันทรคติ`,
   };

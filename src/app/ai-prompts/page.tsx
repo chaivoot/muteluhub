@@ -4,6 +4,7 @@ import { PageHeader } from '@/components/ComingSoon';
 import { PromptLibrary } from '@/components/PromptLibrary';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/ai-prompts' },
   title: 'prompt ดูดวงด้วย AI',
   description: 'คลัง prompt ดูดวงสำหรับ ChatGPT, Claude, Gemini แยกตามเรื่องที่อยากเสริมและศาสตร์ คัดลอกไปใช้ได้ทันที',
 };
