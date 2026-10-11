@@ -65,7 +65,14 @@ export const placeImportSchema = z
       if (!countryByCode(v.country)) ctx.addIssue({ code: 'custom', message: `ยังไม่รองรับประเทศ "${v.country}" (เพิ่มใน src/data/countries.ts)` });
       if (!v.city) ctx.addIssue({ code: 'custom', message: 'สถานที่ต่างประเทศต้องมี city' });
     }
-    if (v.coords && !parseCoords(v.coords)) ctx.addIssue({ code: 'custom', message: 'coords ต้องเป็น "lat, lng"' });
+    // พิกัดบังคับ: ใช้กับ ใกล้ฉัน และที่พักใกล้สถานที่
+    if (v.coords) {
+      if (!parseCoords(v.coords)) ctx.addIssue({ code: 'custom', message: 'coords ต้องเป็น "lat, lng"' });
+    } else if (v.lat == null || v.lng == null) {
+      ctx.addIssue({ code: 'custom', message: 'ต้องมีพิกัด coords "lat, lng" (หรือ lat และ lng)' });
+    } else if (Math.abs(v.lat) > 90 || Math.abs(v.lng) > 180) {
+      ctx.addIssue({ code: 'custom', message: 'lat/lng อยู่นอกช่วงที่เป็นไปได้' });
+    }
   });
 
 export type PlaceImport = z.input<typeof placeImportSchema>;
