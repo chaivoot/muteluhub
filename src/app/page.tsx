@@ -2,6 +2,7 @@ import { ExploreGrid } from '@/components/ExploreGrid';
 import { FestivalCard } from '@/components/FestivalCard';
 import { GoalPicker } from '@/components/GoalPicker';
 import { LuckyNumberShortcut } from '@/components/LuckyNumberShortcut';
+import { PlacesForGoal } from '@/components/PlacesForGoal';
 import { SectionHeader } from '@/components/SectionHeader';
 import { ShirtColorCard } from '@/components/ShirtColorCard';
 import { SiteHeader } from '@/components/SiteHeader';
@@ -50,6 +51,8 @@ export default function HomePage() {
           </div>
         )}
       </div>
+
+      <PlacesForGoal />
 
       <SectionHeader title="มูเรื่องไหนดี" />
       <ExploreGrid />
