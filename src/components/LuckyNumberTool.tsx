@@ -15,7 +15,6 @@ import {
 import { setPromptHandoff } from '@/lib/prompt-handoff';
 import { getPromptTemplate } from '@/lib/prompts';
 import { TH_MONTHS, bangkokDay, toBuddhistYear } from '@/lib/thai-date';
-import { toThaiDigits } from '@/lib/thai-digits';
 import { GoalChips } from './GoalChips';
 import { ShareButton } from './ShareButton';
 import { useGoal } from './goal-context';
@@ -119,8 +118,7 @@ export function LuckyNumberTool() {
             <ul className="lucky-card__numbers">
               {result.luckyNumbers.map((n) => (
                 <li key={n} className="lucky-num">
-                  <span className="lucky-num__thai">{toThaiDigits(n)}</span>
-                  <span className="lucky-num__arabic">{n}</span>
+                  <span className="lucky-num__value">{n}</span>
                 </li>
               ))}
             </ul>
@@ -141,14 +139,14 @@ export function LuckyNumberTool() {
             <div className="core-number">
               <dt>เลขเส้นทางชีวิต (Life Path)</dt>
               <dd>
-                <span className="core-number__value">{toThaiDigits(result.lifePath)}</span>
+                <span className="core-number__value">{result.lifePath}</span>
                 <span>{NUMBER_MEANINGS[result.lifePath]?.text}</span>
               </dd>
             </div>
             <div className="core-number">
               <dt>เลขวันเกิด</dt>
               <dd>
-                <span className="core-number__value">{toThaiDigits(result.birthday)}</span>
+                <span className="core-number__value">{result.birthday}</span>
                 <span>{NUMBER_MEANINGS[result.birthday]?.text}</span>
               </dd>
             </div>

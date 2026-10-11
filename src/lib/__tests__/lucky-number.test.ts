@@ -7,7 +7,6 @@ import {
   isValidBirthDate,
   reduceNumber,
 } from '@/lib/lucky-number';
-import { toThaiDigits } from '@/lib/thai-digits';
 
 describe('reduceNumber', () => {
   it('reduces to a single digit and records steps', () => {
@@ -58,8 +57,4 @@ describe('meanings data', () => {
       for (const n of GOAL_NUMBERS[g.slug]) expect(NUMBER_MEANINGS[n]).toBeDefined();
     }
   });
-});
-
-describe('toThaiDigits', () => {
-  it('converts digits', () => expect(toThaiDigits(24)).toBe('๒๔'));
 });

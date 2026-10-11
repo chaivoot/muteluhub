@@ -63,7 +63,7 @@ export function MenuButton() {
               ))}
               <li>
                 <Link href="/tools/lucky-number" className="menu-sheet__link">
-                  <span className="menu-sheet__num" aria-hidden="true">๙</span>
+                  <span className="menu-sheet__num" aria-hidden="true">9</span>
                   เลขมงคลจากวันเกิด
                 </Link>
               </li>
