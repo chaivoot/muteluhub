@@ -2,9 +2,10 @@
 
 import Link from 'next/link';
 import { useState, useTransition } from 'react';
-import { importPlacesAction, previewImportAction, type ImportResult, type PreviewResult } from '../actions';
+import type { DirectoryKind } from '@/lib/directory-repo';
+import { importAction, previewImportAction, type ImportResult, type PreviewResult } from '../actions';
 
-export function ImportForm() {
+export function ImportForm({ kind }: { kind: DirectoryKind }) {
   const [text, setText] = useState('');
   const [preview, setPreview] = useState<PreviewResult | null>(null);
   const [result, setResult] = useState<ImportResult | null>(null);
@@ -15,12 +16,12 @@ export function ImportForm() {
 
   function check() {
     setResult(null);
-    start(async () => setPreview(await previewImportAction(text)));
+    start(async () => setPreview(await previewImportAction(kind, text)));
   }
 
   function save() {
     start(async () => {
-      const r = await importPlacesAction(text);
+      const r = await importAction(kind, text);
       setResult(r);
       if (!r.error) setPreview(null);
     });
@@ -30,7 +31,7 @@ export function ImportForm() {
     <div className="form">
       <div className="field">
         <label htmlFor="json" className="field__label">
-          วาง JSON (array ของสถานที่ หรือ object เดียว)
+          วาง JSON (array หรือ object เดียว)
         </label>
         <textarea
           id="json"
@@ -77,7 +78,7 @@ export function ImportForm() {
                     {item.ok &&
                       ` · ${item.action === 'create' ? 'เพิ่มใหม่' : 'เขียนทับของเดิม'} · ${
                         item.published ? 'เผยแพร่ทันที' : 'ซ่อนไว้ก่อน'
-                      } · รูป ${item.imageCount}`}
+                      } · บันทึก ${item.notesCount}`}
                   </div>
                   {item.errors.length > 0 && (
                     <ul className="bullet-list field__error">
@@ -100,7 +101,7 @@ export function ImportForm() {
           <p>
             เพิ่มใหม่ {result.created?.length ?? 0} · อัปเดต {result.updated?.length ?? 0}
           </p>
-          <Link href="/admin" className="btn btn--outline">
+          <Link href={`/admin?tab=${kind}`} className="btn btn--outline">
             กลับไปหน้ารายการ
           </Link>
         </div>

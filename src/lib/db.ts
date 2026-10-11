@@ -34,7 +34,9 @@ export function getSql(): Sql {
 export function ensureSchema(): Promise<void> {
   if (!globalForDb.mhSchema) {
     const sql = getSql();
-    globalForDb.mhSchema = (async () => {
+    // หลาย process (เช่น build workers) อาจสร้างตารางพร้อมกัน ใช้ advisory lock กันชน
+    globalForDb.mhSchema = sql.begin(async (sql) => {
+      await sql`select pg_advisory_xact_lock(727274)`;
       await sql`
         create table if not exists places (
           slug text primary key,
@@ -46,6 +48,16 @@ export function ensureSchema(): Promise<void> {
         )`;
       await sql`create index if not exists places_published_idx on places (published)`;
       await sql`
+        create table if not exists fortune_tellers (
+          slug text primary key,
+          data jsonb not null,
+          published boolean not null default false,
+          province_slug text,
+          created_at timestamptz not null default now(),
+          updated_at timestamptz not null default now()
+        )`;
+      await sql`create index if not exists fortune_tellers_published_idx on fortune_tellers (published)`;
+      await sql`
         create table if not exists import_log (
           id serial primary key,
           kind text not null,
@@ -53,7 +65,7 @@ export function ensureSchema(): Promise<void> {
           summary jsonb not null,
           created_at timestamptz not null default now()
         )`;
-    })().catch((err) => {
+    }).then(() => undefined).catch((err) => {
       globalForDb.mhSchema = undefined;
       throw err;
     });

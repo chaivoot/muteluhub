@@ -1,17 +1,55 @@
 import Link from 'next/link';
+import { CHANNEL_LABEL, type FortuneTeller } from '@/data/fortune-tellers';
+import type { Place } from '@/data/places';
 import { PROVINCES } from '@/data/provinces';
 import { adminConfigured, isAdmin } from '@/lib/admin-auth';
+import { ADMIN_KINDS, isDirectoryKind, kindLabel } from '@/lib/admin-kinds';
 import { hasDatabase } from '@/lib/db';
+import { recentImports, type DirectoryKind } from '@/lib/directory-repo';
+import { getDiscipline } from '@/lib/disciplines';
 import { getGoal } from '@/lib/goals';
-import { adminListPlaces, recentImports } from '@/lib/places-repo';
-import { deletePlaceAction, logoutAction, togglePublishedAction } from './actions';
+import { placesRepo } from '@/lib/places-repo';
+import { tellersRepo } from '@/lib/tellers-repo';
+import { deleteAction, logoutAction, togglePublishedAction } from './actions';
 import { DeleteButton } from './DeleteButton';
 import { LoginForm } from './LoginForm';
 
 const dateTime = (d: Date) =>
   d.toLocaleString('th-TH', { timeZone: 'Asia/Bangkok', dateStyle: 'medium', timeStyle: 'short' });
 
-export default async function AdminPage() {
+interface Listed {
+  slug: string;
+  name: string;
+  published: boolean;
+  notes: string[];
+  checkedAt: string;
+  meta: string;
+  updatedAt: Date;
+}
+
+async function listFor(kind: DirectoryKind): Promise<Listed[]> {
+  if (kind === 'places') {
+    return (await placesRepo.adminList()).map(({ item: p, updatedAt }: { item: Place; updatedAt: Date }) => ({
+      ...p,
+      updatedAt,
+      meta: [PROVINCES[p.provinceSlug], p.goals.map((g) => getGoal(g).short).join(' '), `รูป ${p.images.length}`].join(' · '),
+    }));
+  }
+  return (await tellersRepo.adminList()).map(({ item: t, updatedAt }: { item: FortuneTeller; updatedAt: Date }) => ({
+    ...t,
+    updatedAt,
+    meta: [
+      t.disciplines.map((d) => getDiscipline(d)?.name ?? d).join(', '),
+      t.channels.map((c) => CHANNEL_LABEL[c]).join(' '),
+      t.provinceSlug ? PROVINCES[t.provinceSlug] : 'ออนไลน์',
+      t.priceFrom != null ? `เริ่ม ${t.priceFrom} บาท` : null,
+    ]
+      .filter(Boolean)
+      .join(' · '),
+  }));
+}
+
+export default async function AdminPage({ searchParams }: { searchParams: Promise<{ tab?: string }> }) {
   if (!adminConfigured() || !hasDatabase()) {
     return (
       <main className="container admin__main">
@@ -37,50 +75,61 @@ export default async function AdminPage() {
     );
   }
 
-  const [rows, imports] = await Promise.all([adminListPlaces(), recentImports(5)]);
-  const publishedCount = rows.filter((r) => r.place.published).length;
+  const { tab } = await searchParams;
+  const kind: DirectoryKind = isDirectoryKind(tab) ? tab : 'places';
+  const publicPath = ADMIN_KINDS.find((k) => k.kind === kind)!.publicPath;
+  const [rows, imports] = await Promise.all([listFor(kind), recentImports(5)]);
+  const publishedCount = rows.filter((r) => r.published).length;
 
   return (
     <main className="container admin__main">
       <div className="admin__head">
-        <h1 className="admin__title">สถานที่ ({rows.length})</h1>
+        <h1 className="admin__title">หลังบ้าน</h1>
         <form action={logoutAction}>
           <button type="submit" className="btn btn--outline btn--sm">
             ออกจากระบบ
           </button>
         </form>
       </div>
+
+      <nav className="chip-row" aria-label="ประเภทข้อมูล">
+        {ADMIN_KINDS.map((k) => (
+          <Link key={k.kind} href={`/admin?tab=${k.kind}`} className="chip" aria-current={k.kind === kind ? 'page' : undefined}>
+            {k.label}
+          </Link>
+        ))}
+      </nav>
+
       <p className="note">
-        เผยแพร่แล้ว {publishedCount} · ซ่อนอยู่ {rows.length - publishedCount}
+        {kindLabel(kind)} {rows.length} · เผยแพร่แล้ว {publishedCount} · ซ่อนอยู่ {rows.length - publishedCount}
       </p>
       <div className="actions">
-        <Link href="/admin/import" className="btn btn--gold">
-          นำเข้า JSON
+        <Link href={`/admin/import?kind=${kind}`} className="btn btn--gold">
+          นำเข้า JSON ({kindLabel(kind)})
         </Link>
       </div>
 
       <ul className="admin-list">
-        {rows.map(({ place, updatedAt }) => (
-          <li key={place.slug} className="admin-item">
+        {rows.map((r) => (
+          <li key={r.slug} className="admin-item">
             <div className="admin-item__main">
               <div className="admin-item__name">
-                {place.published ? (
-                  <Link href={`/places/${place.slug}`} target="_blank">
-                    {place.name}
+                {r.published ? (
+                  <Link href={`${publicPath}/${r.slug}`} target="_blank">
+                    {r.name}
                   </Link>
                 ) : (
-                  place.name
+                  r.name
                 )}
               </div>
               <div className="note">
-                {place.slug} · {PROVINCES[place.provinceSlug]} · {place.goals.map((g) => getGoal(g).short).join(' ')} · รูป{' '}
-                {place.images.length} · ตรวจ {place.checkedAt} · แก้ไข {dateTime(updatedAt)}
+                {r.slug} · {r.meta} · ตรวจ {r.checkedAt} · แก้ไข {dateTime(r.updatedAt)}
               </div>
-              {place.notes.length > 0 && (
+              {r.notes.length > 0 && (
                 <details className="admin-item__notes">
-                  <summary>บันทึก ({place.notes.length})</summary>
+                  <summary>บันทึก ({r.notes.length})</summary>
                   <ul className="bullet-list">
-                    {place.notes.map((n, i) => (
+                    {r.notes.map((n, i) => (
                       <li key={i}>{n}</li>
                     ))}
                   </ul>
@@ -88,17 +137,19 @@ export default async function AdminPage() {
               )}
             </div>
             <div className="admin-item__actions">
-              <span className={place.published ? 'pill pill--gold' : 'tag'}>{place.published ? 'เผยแพร่' : 'ซ่อน'}</span>
+              <span className={r.published ? 'pill pill--gold' : 'tag'}>{r.published ? 'เผยแพร่' : 'ซ่อน'}</span>
               <form action={togglePublishedAction}>
-                <input type="hidden" name="slug" value={place.slug} />
-                <input type="hidden" name="published" value={String(!place.published)} />
+                <input type="hidden" name="kind" value={kind} />
+                <input type="hidden" name="slug" value={r.slug} />
+                <input type="hidden" name="published" value={String(!r.published)} />
                 <button type="submit" className="btn btn--outline btn--sm">
-                  {place.published ? 'ซ่อน' : 'เผยแพร่'}
+                  {r.published ? 'ซ่อน' : 'เผยแพร่'}
                 </button>
               </form>
-              <form action={deletePlaceAction}>
-                <input type="hidden" name="slug" value={place.slug} />
-                <DeleteButton name={place.name} />
+              <form action={deleteAction}>
+                <input type="hidden" name="kind" value={kind} />
+                <input type="hidden" name="slug" value={r.slug} />
+                <DeleteButton name={r.name} />
               </form>
             </div>
           </li>
@@ -112,7 +163,8 @@ export default async function AdminPage() {
           <ul className="bullet-list">
             {imports.map((log) => (
               <li key={log.id}>
-                {dateTime(log.createdAt)} · ใหม่ {log.created.length} · อัปเดต {log.updated.length}
+                {dateTime(log.createdAt)} · {isDirectoryKind(log.kind) ? kindLabel(log.kind) : log.kind} · ใหม่{' '}
+                {log.created.length} · อัปเดต {log.updated.length}
               </li>
             ))}
           </ul>

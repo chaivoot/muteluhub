@@ -1,0 +1,179 @@
+'use client';
+
+import { useSearchParams } from 'next/navigation';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import { CHANNEL_LABEL, CHANNELS, PRICE_BUCKETS, type Channel, type FortuneTeller } from '@/data/fortune-tellers';
+import { PROVINCES } from '@/data/provinces';
+import { DISCIPLINES } from '@/lib/disciplines';
+import { getGoal, isGoalSlug, type GoalSlug } from '@/lib/goals';
+import { activeFilterCount, filterTellers } from '@/lib/tellers';
+import { BottomSheet } from './BottomSheet';
+import { GoalChips } from './GoalChips';
+import { TellerCard } from './TellerCard';
+import { UiIcon } from './icons';
+import { useGoal } from './goal-context';
+
+/**
+ * รายการหมอดู + filter: เป้าหมายอยู่แถวบนสุดเสมอ ที่เหลือ (ศาสตร์ ช่องทาง จังหวัด ราคา) อยู่ใน bottom sheet
+ * รับค่าเริ่มต้นจาก query string ?goal=&discipline= (ลิงก์จากหน้า prompt / เลขมงคล)
+ */
+export function TellersBrowser({ tellers, fixedDiscipline }: { tellers: FortuneTeller[]; fixedDiscipline?: string }) {
+  const params = useSearchParams();
+  const { goal: remembered } = useGoal();
+  const queryGoal = params.get('goal');
+  const [goal, setGoal] = useState<GoalSlug | null>(isGoalSlug(queryGoal) ? queryGoal : null);
+  const [touched, setTouched] = useState(isGoalSlug(queryGoal));
+  const [discipline, setDiscipline] = useState(fixedDiscipline ?? params.get('discipline') ?? '');
+  const [channel, setChannel] = useState<Channel | ''>('');
+  const [province, setProvince] = useState('');
+  const [price, setPrice] = useState('');
+  const [sheetOpen, setSheetOpen] = useState(false);
+  const closeSheet = useCallback(() => setSheetOpen(false), []);
+
+  useEffect(() => {
+    if (!touched && remembered) setGoal(remembered);
+  }, [remembered, touched]);
+
+  const filter = {
+    goal,
+    discipline: fixedDiscipline ?? (discipline || null),
+    channel: channel || null,
+    province: province || null,
+    price: price || null,
+  };
+  const results = filterTellers(filter, tellers);
+  const count = activeFilterCount({ ...filter, discipline: fixedDiscipline ? null : filter.discipline });
+
+  // ตัวเลือกเฉพาะที่มีข้อมูลจริง
+  const disciplineOptions = useMemo(() => {
+    const used = new Set(tellers.flatMap((t) => t.disciplines));
+    return DISCIPLINES.filter((d) => used.has(d.slug));
+  }, [tellers]);
+  const provinceOptions = useMemo(
+    () => [...new Set(tellers.map((t) => t.provinceSlug).filter((p): p is string => !!p))].sort((a, b) =>
+      (PROVINCES[a] ?? a).localeCompare(PROVINCES[b] ?? b, 'th'),
+    ),
+    [tellers],
+  );
+
+  function clearFilters() {
+    if (!fixedDiscipline) setDiscipline('');
+    setChannel('');
+    setProvince('');
+    setPrice('');
+  }
+
+  return (
+    <>
+      <GoalChips
+        value={goal}
+        onChange={(g) => {
+          setTouched(true);
+          setGoal(g);
+        }}
+      />
+      <div className="filter-bar container">
+        <span className="filter-bar__count">
+          {results.length} หมอดู{goal ? `ที่ถนัดเรื่อง${getGoal(goal).short}` : ''}
+        </span>
+        <button type="button" className="btn btn--outline btn--sm filter-btn" onClick={() => setSheetOpen(true)}>
+          <UiIcon name="filter" size={16} strokeWidth={1.9} />
+          ตัวกรอง{count > 0 ? ` ${count}` : ''}
+        </button>
+      </div>
+
+      <div className="stack container">
+        {results.map((t) => (
+          <TellerCard key={t.slug} teller={t} />
+        ))}
+        {results.length === 0 && (
+          <p className="note">
+            ยังไม่มีหมอดูตามตัวกรองนี้{' '}
+            {count > 0 && (
+              <button type="button" className="link-btn" onClick={clearFilters}>
+                ล้างตัวกรอง
+              </button>
+            )}
+          </p>
+        )}
+      </div>
+
+      <BottomSheet
+        open={sheetOpen}
+        title="ตัวกรอง"
+        onClose={closeSheet}
+        footer={
+          <>
+            <button type="button" className="btn btn--outline" onClick={clearFilters}>
+              ล้างทั้งหมด
+            </button>
+            <button type="button" className="btn btn--gold" onClick={closeSheet}>
+              ดู {results.length} หมอดู
+            </button>
+          </>
+        }
+      >
+        {!fixedDiscipline && (
+          <div className="field">
+            <label htmlFor="f-discipline" className="field__label">
+              ศาสตร์
+            </label>
+            <select id="f-discipline" className="select" value={discipline} onChange={(e) => setDiscipline(e.target.value)}>
+              <option value="">ทุกศาสตร์</option>
+              {disciplineOptions.map((d) => (
+                <option key={d.slug} value={d.slug}>
+                  {d.name}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
+        <fieldset className="field">
+          <legend className="field__label">ช่องทาง</legend>
+          <div className="chip-row chip-row--wrap">
+            {CHANNELS.map((c) => (
+              <button
+                key={c}
+                type="button"
+                className="chip"
+                aria-pressed={channel === c}
+                onClick={() => setChannel(channel === c ? '' : c)}
+              >
+                {CHANNEL_LABEL[c]}
+              </button>
+            ))}
+          </div>
+        </fieldset>
+        <div className="field">
+          <label htmlFor="f-province" className="field__label">
+            จังหวัด
+          </label>
+          <select id="f-province" className="select" value={province} onChange={(e) => setProvince(e.target.value)}>
+            <option value="">ทุกจังหวัด</option>
+            {provinceOptions.map((p) => (
+              <option key={p} value={p}>
+                {PROVINCES[p]}
+              </option>
+            ))}
+          </select>
+        </div>
+        <fieldset className="field">
+          <legend className="field__label">ราคาเริ่มต้น</legend>
+          <div className="chip-row chip-row--wrap">
+            {PRICE_BUCKETS.map((b) => (
+              <button
+                key={b.slug}
+                type="button"
+                className="chip"
+                aria-pressed={price === b.slug}
+                onClick={() => setPrice(price === b.slug ? '' : b.slug)}
+              >
+                {b.label}
+              </button>
+            ))}
+          </div>
+        </fieldset>
+      </BottomSheet>
+    </>
+  );
+}
