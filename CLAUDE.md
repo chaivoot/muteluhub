@@ -45,6 +45,13 @@ spec ไม่ได้กำหนด framework ระบุแค่ว่า 
 ## สไตล์การเขียนข้อความในเว็บ
 ภาษาไทยเป็นกันเอง กระชับ ไม่ใช้ em dash (—) ใช้ hyphen (-) แทนเมื่อจำเป็น ไม่ใส่อัญประกาศพร่ำเพรื่อ
 
+## เงื่อนไขการทำงาน (เจ้าของกำหนด 2026-10-11)
+- เจ้าของไม่ทำงานบนเครื่องตัวเอง Claude เขียนทุกอย่างใน sandbox แล้ว push ขึ้น GitHub
+- เปิด PR ได้เลยไม่ต้องรอคำสั่ง และ merge เข้า `main` ได้เลยเมื่อ test + build ผ่าน
+- `main` = Production (Vercel) เจ้าของทดสอบที่ production ไม่ดู preview
+- ดังนั้นก่อน merge ต้องรัน `npm test`, `npm run typecheck`, `npm run build` ให้ผ่านทุกครั้ง และเช็กหน้าจริงในเบราว์เซอร์ (มือถือ 390px) เพราะไม่มีใครตรวจ preview ให้
+- สรุปสิ่งที่ merge ไปแล้วให้เจ้าของทุกครั้ง พร้อมบอกว่าควรไปดูหน้าไหนบน production
+
 ## สถานะโปรเจกต์ (อัปเดตล่าสุด 2026-10-11)
 - ชื่อแบรนด์/โดเมน: **MuteluHub / muteluhub.com** (เจ้าของยืนยันแล้ว)
 - Stack: Next.js 15 (App Router) + TypeScript + CSS ธรรมดา (`design/tokens.css` import ตรงใน `src/app/layout.tsx`), deploy Vercel
