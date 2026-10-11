@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { PageHeader } from '@/components/ComingSoon';
+import { ComingSoon, PageHeader } from '@/components/ComingSoon';
 import { PlacesBrowser } from '@/components/PlacesBrowser';
 import { PLACES } from '@/data/places';
 import { provincesWithPlaces } from '@/lib/places';
@@ -12,6 +12,17 @@ export const metadata: Metadata = {
 
 export default function PlacesPage() {
   const provinces = provincesWithPlaces();
+  // ยังไม่มีข้อมูลที่ตรวจแล้ว: แสดงหน้ากำลังเตรียมแทนรายการว่าง
+  if (PLACES.length === 0) {
+    return (
+      <main>
+        <PageHeader title="สถานที่เสริมดวงในไทย" />
+        <ComingSoon>
+          <p>วัด ศาลเจ้า เทวาลัย ทั่วไทย พร้อมเวลาเปิด ของไหว้ วิธีขอพรและแก้บน</p>
+        </ComingSoon>
+      </main>
+    );
+  }
   return (
     <main>
       <PageHeader title="สถานที่เสริมดวงในไทย" />
