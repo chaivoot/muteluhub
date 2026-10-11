@@ -1,0 +1,389 @@
+[
+  {
+    "name": "ศาลเจ้าฟูชิมิอินาริ (Fushimi Inari Taisha)",
+    "nameEn": "Fushimi Inari Taisha",
+    "slug": "fushimi-inari-taisha",
+    "type": "shrine",
+    "deities": ["เทพเจ้าอินาริ (อินาริโอคามิ)"],
+    "goals": ["business", "family"],
+    "country": "JP",
+    "city": "เกียวโต",
+    "coords": "34.96720, 135.77339",
+    "description": "ศาลเจ้าหลักของศาลเจ้าอินาริราว 30,000 แห่งทั่วญี่ปุ่น บูชาเทพอินาริ เทพแห่งการเพาะปลูกและการค้าที่รุ่งเรือง ซุ้มโทริอิสีส้มเรียงยาวขึ้นเขาเป็นของที่บริษัทและผู้คนถวายเพื่อขอให้กิจการเจริญ คนสายค้าขายจึงชอบมาขอพรเรื่องธุรกิจ และมาเดินถ่ายรูปอุโมงค์เสนบงโทริอิกับรูปปั้นจิ้งจอกผู้ส่งสารของเทพ",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg/1280px-Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg",
+        "alt": "ทางเดินลอดซุ้มโทริอิสีส้มกับโคมหินที่ศาลเจ้าฟูชิมิอินาริ เกียวโต",
+        "author": "Basile Morin",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Fushimiinari-taisha%2C_naihaiden-1.jpg/1280px-Fushimiinari-taisha%2C_naihaiden-1.jpg",
+        "alt": "อาคารไหว้ด้านในของศาลเจ้าฟูชิมิอินาริ",
+        "author": "Saigen Jiro",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fushimiinari-taisha,_naihaiden-1.jpg"
+      }
+    ],
+    "published": false,
+    "checkedAt": "2026-10-11",
+    "notes": [
+      "เว็บทางการ inari.jp ระบุว่าผู้คนมาขอพรเรื่องผลผลิต ความสำเร็จทางธุรกิจ และความปลอดภัยของครอบครัว จึงใส่ goals = business, family",
+      "ไม่ใส่เวลาเปิด เพราะหน้าทางการที่ตรวจไม่ได้ระบุ ควรเช็กเวลาของจุดรับเครื่องรางและตราประทับ",
+      "ยังไม่ใส่วิธีไหว้และของไหว้ เพราะไม่พบแหล่งทางการที่อธิบายขั้นตอนเฉพาะของที่นี่",
+      "พิกัดจาก Wikidata Q714828"
+    ],
+    "sources": [
+      "https://inari.jp/en/",
+      "https://www.japan.travel/en/spot/1128/",
+      "https://www.japan.travel/th/spot/1128/",
+      "https://en.wikipedia.org/wiki/Fushimi_Inari-taisha",
+      "https://www.wikidata.org/wiki/Q714828"
+    ]
+  },
+  {
+    "name": "ศาลเจ้าเมจิ (Meiji Jingu)",
+    "nameEn": "Meiji Jingu",
+    "slug": "meiji-jingu",
+    "type": "shrine",
+    "deities": ["ดวงวิญญาณจักรพรรดิเมจิ", "ดวงวิญญาณจักรพรรดินีโชเก็น"],
+    "goals": ["love", "family"],
+    "country": "JP",
+    "city": "โตเกียว",
+    "coords": "35.67611, 139.69917",
+    "description": "ศาลเจ้าใหญ่กลางป่าในย่านฮาราจูกุ สร้างขึ้นเพื่อบูชาจักรพรรดิเมจิและจักรพรรดินีโชเก็น หน้าวิหารหลักมีต้นการบูรคู่ เมโอโตะคุสุ ที่ผูกเชือกชิเมนาวะเชื่อมกันไว้ เป็นสัญลักษณ์ของชีวิตคู่ที่มั่นคงและครอบครัวที่แข็งแรง คนที่อยากมีคู่หรืออยากให้ชีวิตคู่ราบรื่นจึงนิยมมาไหว้ เขียนเอมะ และเสี่ยงโอมิคุจิที่เป็นบทกลอนของจักรพรรดิ",
+    "hours": "เปิดตั้งแต่พระอาทิตย์ขึ้นถึงพระอาทิตย์ตก เวลาเปลี่ยนไปตามเดือน (เช่น ต.ค. 5:40-16:40 น.) จุดบริการส่วนใหญ่เปิด 9:00-16:00 น.",
+    "offerings": ["เหรียญใส่ตู้รับบริจาคหน้าวิหาร", "เอมะ (แผ่นไม้เขียนคำอธิษฐาน)", "โอมิคุจิ (ใบเสี่ยงทาย)"],
+    "howToPray": [
+      "ล้างมือที่จุดเทมิซึ: ล้างมือ วักน้ำใส่มือบ้วนปาก แล้วล้างมืออีกครั้ง",
+      "หน้าวิหารหลัก หยอดเหรียญลงตู้รับบริจาค (ไม่บังคับ)",
+      "โค้ง 2 ครั้ง ตบมือ 2 ครั้ง แล้วโค้งอีก 1 ครั้ง",
+      "เขียนคำอธิษฐานหรือคำขอบคุณบนเอมะ แล้วแขวนไว้รอบต้นการบูรหน้าวิหาร",
+      "เสี่ยงโอมิคุจิ ซึ่งเป็นบทกลอนวากะของจักรพรรดิเมจิและจักรพรรดินีโชเก็น (มีคำแปลภาษาอังกฤษ)"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Meiji_Jingu_2023-3.jpg/1280px-Meiji_Jingu_2023-3.jpg",
+        "alt": "วิหารหลักของศาลเจ้าเมจิ โตเกียว",
+        "author": "Akonnchiroll",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meiji_Jingu_2023-3.jpg"
+      }
+    ],
+    "published": false,
+    "checkedAt": "2026-10-11",
+    "notes": [
+      "เวลาเปิดจาก meijijingu.or.jp/en/visit/ ซึ่งมีตารางรายเดือน",
+      "ขั้นตอนไหว้ เอมะ และโอมิคุจิ จากหน้า Feel Shinto ของเว็บทางการ",
+      "goals love และ family อ้างจากป้ายอธิบายต้นเมโอโตะคุสุในฐานข้อมูลคำอธิบายหลายภาษาของรัฐบาลญี่ปุ่น (MLIT)",
+      "ในภาพมีขบวนแต่งงานอยู่ด้วย ถ้าไม่อยากให้มีคนในภาพให้เลือกภาพอื่น",
+      "พิกัดจาก Wikidata Q287165"
+    ],
+    "sources": [
+      "https://www.meijijingu.or.jp/en/visit/",
+      "https://www.meijijingu.or.jp/en/feelshinto/2.php",
+      "https://www.meijijingu.or.jp/en/feelshinto/3.php",
+      "https://www.meijijingu.or.jp/en/feelshinto/4.php",
+      "https://www.mlit.go.jp/tagengo-db/en/H30-00527.html",
+      "https://en.wikipedia.org/wiki/Meiji_Shrine",
+      "https://www.wikidata.org/wiki/Q287165"
+    ]
+  },
+  {
+    "name": "ศาลเจ้าโตเกียวไดจิงกู (Tokyo Daijingu)",
+    "nameEn": "Tokyo Daijingu",
+    "slug": "tokyo-daijingu",
+    "type": "shrine",
+    "deities": ["เทพีอามาเทราสึ", "เทพโทโยอุเกะ", "เทพผู้สร้างทั้งสาม (อาเมะโนะมินากานูชิ ทากามิมุสุบิ คามิมุสุบิ)", "ยามาโตะฮิเมะโนะมิโคโตะ"],
+    "goals": ["love"],
+    "country": "JP",
+    "city": "โตเกียว",
+    "coords": "35.69998, 139.74687",
+    "description": "ศาลเจ้าในย่านอีดาบาชิที่ได้ชื่อว่าเป็นอิเสะแห่งโตเกียว เพราะบูชาเทพองค์เดียวกับศาลเจ้าอิเสะ ที่นี่ยังบูชาเทพผู้สร้างทั้งสามซึ่งดูแลพลังแห่งการผูกสัมพันธ์ จึงขึ้นชื่อเรื่องขอพรความรักและการแต่งงาน และยังเป็นต้นกำเนิดพิธีแต่งงานหน้าเทพแบบชินโต คนที่ไปโตเกียวมักแวะมาขอคู่และซื้อเครื่องรางเรื่องความรักติดตัวกลับไป",
+    "hours": "ไหว้ได้ 6:00-21:00 น. จุดรับเครื่องราง 8:00-19:00 น. จุดรับตราประทับ (โกชุอิน) 9:00-17:00 น. อาจเปลี่ยนในช่วงที่มีงานพิธี",
+    "offerings": ["เครื่องรางเรื่องความรักและความสัมพันธ์"],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Tokyo_Daijingu_2019e.jpg/1280px-Tokyo_Daijingu_2019e.jpg",
+        "alt": "ศาลเจ้าโตเกียวไดจิงกู ย่านอีดาบาชิ โตเกียว",
+        "author": "江戸村のとくぞう",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Daijingu_2019e.jpg"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Shrine%2C_Tokyo_Daijingu_-_Chiyoda%2C_Tokyo%2C_Japan_-_DSC04748.jpg/1280px-Shrine%2C_Tokyo_Daijingu_-_Chiyoda%2C_Tokyo%2C_Japan_-_DSC04748.jpg",
+        "alt": "อาคารศาลเจ้าโตเกียวไดจิงกู เขตชิโยดะ",
+        "author": "Daderot",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shrine,_Tokyo_Daijingu_-_Chiyoda,_Tokyo,_Japan_-_DSC04748.jpg"
+      }
+    ],
+    "published": false,
+    "checkedAt": "2026-10-11",
+    "notes": [
+      "รายชื่อเทพ เหตุผลที่ขึ้นชื่อเรื่องความรัก และต้นกำเนิดพิธีแต่งงานแบบชินโต มาจากเว็บทางการ tokyodaijingu.or.jp/syoukai/",
+      "เวลาเปิดจากหน้าแรกของเว็บทางการ",
+      "มีคนพูดถึงเซียมซีความรัก แต่ยังไม่พบในหน้าทางการ จึงไม่ได้ใส่",
+      "ยังไม่ใส่วิธีไหว้ เพราะยังไม่ได้อ่านหน้าวิธีไหว้ของศาลเจ้า (tokyodaijingu.or.jp/sanpai/)",
+      "พิกัดจาก Wikidata Q11524717"
+    ],
+    "sources": [
+      "https://www.tokyodaijingu.or.jp/",
+      "https://www.tokyodaijingu.or.jp/syoukai/index.html",
+      "https://www.gotokyo.org/th/new-and-now/new-and-trending/250127/topics.html",
+      "https://en.wikipedia.org/wiki/Tokyo_Daijingu",
+      "https://www.wikidata.org/wiki/Q11524717"
+    ]
+  },
+  {
+    "name": "วัดหวังต้าเซียน (Wong Tai Sin Temple)",
+    "nameEn": "Sik Sik Yuen Wong Tai Sin Temple",
+    "slug": "wong-tai-sin-temple",
+    "type": "chinese-shrine",
+    "deities": ["หวังต้าเซียน (เทพเซียนหวง)", "หลี่ว์ต้งปิน", "เจ้าแม่กวนอิม", "เทพเจ้ากวนอู"],
+    "goals": ["love", "health", "business"],
+    "country": "HK",
+    "city": "ฮ่องกง",
+    "coords": "22.34247, 114.19354",
+    "description": "วัดลัทธิเต๋าชื่อดังฝั่งเกาลูน ขึ้นชื่อว่าขออะไรก็สมหวัง จึงเป็นวัดที่ชาวฮ่องกงศรัทธามากที่สุดแห่งหนึ่ง คนไทยสายมูนิยมมาขอพรเรื่องสุขภาพ ความรัก และการค้าขาย ไฮไลต์คือการเสี่ยงเซียมซีแล้วนำใบเซียมซีไปให้ซินแสในซุ้มดูดวงข้างวัดช่วยแปล",
+    "offerings": ["ธูป"],
+    "howToPray": [
+      "จุดธูป ไปคุกเข่าหน้าแท่นบูชาหลัก แล้วอธิษฐานขอพร",
+      "เขย่ากระบอกเซียมซีจนมีไม้หล่นออกมา 1 อัน",
+      "นำเลขบนไม้ไปแลกใบเซียมซีเลขเดียวกัน",
+      "ให้ซินแสในซุ้มดูดวงช่วยแปลคำทำนาย"
+    ],
+    "howToRepayVow": ["เมื่อสมหวังแล้ว กลับมาที่วัดเพื่อไหว้ขอบคุณ"],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/HK_WongTaiSinTemple.JPG/1280px-HK_WongTaiSinTemple.JPG",
+        "alt": "วิหารหลักวัดหวังต้าเซียน ฮ่องกง",
+        "author": "Chong Fat",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:HK_WongTaiSinTemple.JPG"
+      }
+    ],
+    "published": false,
+    "checkedAt": "2026-10-11",
+    "notes": [
+      "ขั้นตอนเสี่ยงเซียมซีและการกลับมาขอบคุณมาจาก en.wikipedia ส่วนชื่อเสียงเรื่องขออะไรก็สมหวังมาจาก en.wikipedia และ discoverhongkong (อ่านผ่านผลค้นหา เว็บบล็อกการดึงหน้า)",
+      "goals มาจากสื่อไทย (Thairath, Trip.com ภาษาไทย)",
+      "ไม่ใส่เวลาเปิด เพราะแหล่งข้อมูลขัดกัน (7:00-17:00 / 7:30-16:30 / ช่วงตรุษจีน 7:30-18:00) ควรเช็กก่อนใส่",
+      "ช่วงที่คนแน่น: วันที่ 1-15 ม.ค., วันเกิดหวังต้าเซียน (ขึ้น 23 ค่ำ เดือน 8 ตามปฏิทินจีน) และคืนส่งท้ายปีเก่าจีน",
+      "พิกัดจาก Wikidata Q1116359"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wong_Tai_Sin_Temple_(Hong_Kong)",
+      "https://www.discoverhongkong.com/ca/place-to-go/culture/wong-tai-sin-temple.html",
+      "https://th.trip.com/guide/activity/hong-kong-temple-visit.html",
+      "https://www.thairath.co.th/lifestyle/travel/2771231",
+      "https://www.wikidata.org/wiki/Q1116359"
+    ]
+  },
+  {
+    "name": "วัดแชกงหมิว (Che Kung Temple)",
+    "nameEn": "Che Kung Temple, Sha Tin",
+    "slug": "che-kung-temple-sha-tin",
+    "type": "chinese-shrine",
+    "deities": ["แชกงหมิว (เทพแชกง)"],
+    "goals": ["protection", "money", "study"],
+    "country": "HK",
+    "city": "ฮ่องกง",
+    "coords": "22.37348, 114.18289",
+    "description": "วัดของเทพแชกง แม่ทัพสมัยราชวงศ์ซ่งใต้ที่ผู้คนนับถือว่าช่วยปราบเภทภัยและโรคร้าย ตั้งอยู่ย่านไท่วาย เขตซาถิ่น จุดเด่นคือกังหันทองเหลืองที่เชื่อกันว่าหมุนแล้วช่วยเปลี่ยนดวงร้ายให้กลายเป็นดี คนไทยนิยมมาขอเรื่องแก้ชง ปัดเป่าโชคร้าย และโชคลาภ โดยเฉพาะช่วงต้นปีจีน",
+    "offerings": ["ธูป", "เทียน", "ผลไม้", "อาหาร", "กระดาษไหว้"],
+    "howToPray": [
+      "จุดธูปไหว้ขอพรเทพแชกง",
+      "ตีกลองสวรรค์เพื่อบอกท่านว่าเรามาถึงแล้ว",
+      "หมุนกังหันทองเหลืองพร้อมตั้งจิตอธิษฐาน (แต่ละแหล่งแนะนำทิศการหมุนต่างกัน ดูป้ายในวัด)",
+      "เสี่ยงเซียมซี",
+      "นักเรียนเขียนชื่อและคำอธิษฐานบนกระดานจินปั่งเพื่อขอให้สอบได้"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Che_Kung_Temple_201810.jpg/1280px-Che_Kung_Temple_201810.jpg",
+        "alt": "วัดแชกงหมิว ซาถิ่น ฮ่องกง",
+        "author": "Wpcpey",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Che_Kung_Temple_201810.jpg"
+      }
+    ],
+    "published": false,
+    "checkedAt": "2026-10-11",
+    "notes": [
+      "ประวัติเทพ ของไหว้ กังหัน กลอง กระดานจินปั่ง และวันไหว้ใหญ่ (ขึ้น 2-3 ค่ำ เดือนอ้าย) มาจาก en.wikipedia",
+      "ทิศการหมุนกังหัน: Wikipedia บอกว่าหมุนตามเข็มเพื่อต่อดวงปีก่อน หมุนทวนเข็มเพื่อเปลี่ยนดวงร้าย ส่วน Trip.com แนะนำหมุนตามเข็ม 3 รอบ ข้อมูลไม่ตรงกันจึงเขียนแบบกลาง ๆ",
+      "ไม่ใส่เวลาเปิด เพราะแหล่งข้อมูลขัดกัน (7:00-18:00 กับ 8:00-18:00)",
+      "พิกัดจาก Wikidata Q877141"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Che_Kung_Temple",
+      "https://www.discoverhongkong.com/uk/place-to-go/culture/che-kung-temple.html",
+      "https://th.trip.com/guide/activity/hong-kong-temple-visit.html",
+      "https://www.thairath.co.th/lifestyle/travel/2771231",
+      "https://www.wikidata.org/wiki/Q877141"
+    ]
+  },
+  {
+    "name": "วัดหมั่นโหมว (Man Mo Temple)",
+    "nameEn": "Man Mo Temple, Hollywood Road",
+    "slug": "man-mo-temple-hong-kong",
+    "type": "chinese-shrine",
+    "deities": ["เทพเจ้าบุ๋นเชียง (เทพแห่งอักษรศาสตร์)", "เทพเจ้ากวนอู"],
+    "goals": ["study", "career"],
+    "country": "HK",
+    "city": "ฮ่องกง",
+    "coords": "22.28398, 114.15024",
+    "description": "วัดเก่าบนถนนฮอลลีวูด ย่านเซิงหว่าน บูชาเทพบุ๋น (บุ๋นเชียง เทพแห่งอักษรศาสตร์) คู่กับเทพบู๊ (กวนอู) ในอดีตเป็นที่ที่บัณฑิตและนักเรียนมาขอพรให้เรียนก้าวหน้าและสอบได้อันดับดี คนไทยจึงนิยมมาขอเรื่องการเรียน การสอบ และการงาน และมาถ่ายรูปธูปขดขนาดใหญ่ที่ห้อยเต็มเพดาน",
+    "hours": "8:00-18:00 น. ส่วนวันขึ้น 1 ค่ำและ 15 ค่ำของทุกเดือนตามปฏิทินจีน และวันเทศกาลของวัด เปิดตั้งแต่ 7:00 น.",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Man_Mo_Temple_Compound.jpg/1280px-Man_Mo_Temple_Compound.jpg",
+        "alt": "หมู่อาคารวัดหมั่นโหมว ถนนฮอลลีวูด ฮ่องกง",
+        "author": "Baycrest",
+        "license": "CC BY-SA 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Man_Mo_Temple_Compound.jpg"
+      }
+    ],
+    "published": false,
+    "checkedAt": "2026-10-11",
+    "notes": [
+      "เวลาเปิดจากเว็บของ Tung Wah Group of Hospitals ผู้ดูแลวัด",
+      "เทพหลักและเรื่องที่นักเรียนมาขอพรมาจาก en.wikipedia",
+      "goal career และเรื่องธูปขดอ้างจาก Trip.com ภาษาไทย ยังไม่พบในแหล่งทางการ",
+      "ชื่อไทยสะกดได้หลายแบบ: หมั่นโหมว, หมั่นโหม่ว, หมั่นโหม่"
+    ],
+    "sources": [
+      "https://www.tungwah.org.hk/en/?p=1527",
+      "https://en.wikipedia.org/wiki/Man_Mo_Temple",
+      "https://th.trip.com/guide/activity/hong-kong-temple-visit.html",
+      "https://www.wikidata.org/wiki/Q717524"
+    ]
+  },
+  {
+    "name": "วัดเสียไห่เฉิงหวง (Taipei Xia-Hai City God Temple)",
+    "nameEn": "Taipei Xia-Hai City God Temple",
+    "slug": "taipei-xia-hai-city-god-temple",
+    "type": "chinese-shrine",
+    "deities": ["เทพเฉิงหวง (เทพเจ้าพิทักษ์เมือง)", "เทพเยว่เหล่า (เทพแห่งความรัก)"],
+    "goals": ["love"],
+    "country": "TW",
+    "city": "ไทเป",
+    "coords": "25.05559, 121.51007",
+    "description": "วัดเล็กบนถนนตี๋ฮว่า ย่านต้าเต้าเฉิง ที่ขึ้นชื่อที่สุดของไทเปเรื่องขอคู่ เพราะมีเทพเยว่เหล่าผู้ผูกด้ายแดงให้คนที่เป็นเนื้อคู่กัน แต่ละวันมีคนโสดมาไหว้หลายร้อยคน คนไทยที่ไปไต้หวันจึงมักแวะมาขอพรความรักแล้วรับด้ายแดงติดตัวกลับไป",
+    "offerings": ["ชุดของไหว้ของวัด (ธูป ด้ายแดง และเครื่องรางเยว่เหล่า)"],
+    "howToPray": [
+      "ซื้อชุดของไหว้ที่จุดบริการของวัด",
+      "จุดธูปไหว้ แล้วแนะนำตัวกับเทพ บอกชื่อ อายุ และที่อยู่",
+      "เล่าลักษณะคนที่อยากได้เป็นคู่ให้ละเอียด เช่น นิสัยใจคอ",
+      "เก็บด้ายแดงและเครื่องรางไว้กับตัวหรือในกระเป๋าเงินจนกว่าจะสมหวัง",
+      "ทำตามป้ายบอกขั้นตอนในวัด (ขั้นตอนเต็มมีราว 12 ข้อ)"
+    ],
+    "howToRepayVow": ["เมื่อสมหวังแล้ว ให้นำขนมแต่งงานกลับมาถวายเยว่เหล่า"],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Taipei_Xia-Hai_City_God_Temple_07.23.jpg/1280px-Taipei_Xia-Hai_City_God_Temple_07.23.jpg",
+        "alt": "ด้านหน้าวัดเสียไห่เฉิงหวง ถนนตี๋ฮว่า ไทเป",
+        "author": "Supanut Arunoprayote",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taipei_Xia-Hai_City_God_Temple_07.23.jpg"
+      }
+    ],
+    "published": false,
+    "checkedAt": "2026-10-11",
+    "notes": [
+      "ขั้นตอนไหว้ ของในชุดไหว้ การพกด้ายแดง และการนำขนมแต่งงานมาแก้บน มาจากบทความ CNN Travel ตอนตรวจเข้าเว็บทางการ tpecitygod.org ไม่ได้ (503) ควรเทียบกับป้ายหรือเว็บของวัดก่อนเผยแพร่",
+      "ไม่ใส่เวลาเปิด เพราะมีแต่แหล่งรอง (7:00-19:00)",
+      "ชื่อไทยสะกดได้ทั้ง เสียไห่เฉิงหวง และ เซี่ยไห่เฉิงหวง",
+      "พิกัดจาก Wikidata Q10937179"
+    ],
+    "sources": [
+      "https://edition.cnn.com/travel/article/love-god-temple-taipei-taiwan/index.html",
+      "https://www.travel.taipei/en/news/details/8801",
+      "https://en.wikipedia.org/wiki/Taipei_Xia-Hai_City_God_Temple",
+      "https://www.wikidata.org/wiki/Q10937179"
+    ]
+  },
+  {
+    "name": "วัดหลงซาน (Lungshan Temple)",
+    "nameEn": "Bangka Lungshan Temple",
+    "slug": "lungshan-temple-taipei",
+    "type": "chinese-shrine",
+    "deities": ["เจ้าแม่กวนอิม", "เทพเยว่เหล่า (เทพแห่งความรัก)", "เทพเจ้าบุ๋นเชียง (เหวินชาง)", "เทพเจ้ากวนอู", "เจ้าแม่ทับทิม (หม่าจู่)", "หมอเทวดาฮัวโต๋"],
+    "goals": ["love", "study", "health", "career"],
+    "country": "TW",
+    "city": "ไทเป",
+    "coords": "25.03722, 121.49990",
+    "description": "วัดเก่าแก่ย่านว่านหัว สร้างตั้งแต่ปี 1738 มีเจ้าแม่กวนอิมเป็นองค์ประธาน และมีเทพอีกหลายองค์ให้ขอพรได้แทบทุกเรื่องในที่เดียว ทั้งเยว่เหล่าเรื่องความรัก เหวินชางเรื่องการเรียนการสอบ และหมอฮัวโต๋เรื่องสุขภาพ คนไทยนิยมมาขอด้ายแดงจากเยว่เหล่าและเสี่ยงเซียมซีกวนอิม",
+    "offerings": ["ขนม ลูกอม หรือผลไม้ (ซื้อได้ที่จุดขายของไหว้ในวัด)", "ลูกอมแต่งงานหรือของหวานสำหรับไหว้เยว่เหล่า"],
+    "howToPray": [
+      "เข้าทางประตูมังกร (ฝั่งขวามือ) ล้างผลไม้และหยิบจานรองของไหว้ได้ที่จุดล้างหน้าประตู",
+      "พนมมือ บอกเทพถึงชื่อ วันเกิด ที่อยู่ปัจจุบัน และเรื่องที่อยากขอ แล้วโค้ง 3 ครั้ง",
+      "ไหว้เจ้าแม่กวนอิมที่วิหารกลางก่อน ตามด้วยพระมัญชุศรีและพระสมันตภัทร แล้วหันหน้าออกไปไหว้ฟ้า (เทียนกง)",
+      "ไหว้เทพในวิหารหลังทีละองค์ตามลำดับ ห้ามข้ามองค์ไหน",
+      "ขอด้ายแดงจากเยว่เหล่า: ไหว้ให้ครบทุกองค์ก่อน แล้วโยนไม้ปวยเสี่ยงทาย 3 ครั้ง ถ้าได้คว่ำหงายครบทั้ง 3 ครั้งจึงหยิบด้ายแดงได้",
+      "นำด้ายแดงหรือถุงเครื่องรางไปวนเหนือกระถางธูปกวนอิมตามเข็มนาฬิกา 3 รอบ แล้วพกติดตัว",
+      "ออกทางประตูเสือ"
+    ],
+    "howToRepayVow": ["เมื่อเจอคนที่ใช่หรือได้แต่งงาน ให้นำขนมแต่งงานหรือลูกอมแต่งงานมาไหว้ขอบคุณเยว่เหล่า"],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/%E5%8F%B0%E5%8C%97%E5%B8%82%E8%89%8B%E8%88%BA%E9%BE%8D%E5%B1%B1%E5%AF%BA.jpg/1280px-%E5%8F%B0%E5%8C%97%E5%B8%82%E8%89%8B%E8%88%BA%E9%BE%8D%E5%B1%B1%E5%AF%BA.jpg",
+        "alt": "วัดหลงซาน ย่านว่านหัว ไทเป",
+        "author": "Goranq",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:台北市艋舺龍山寺.jpg"
+      }
+    ],
+    "published": false,
+    "checkedAt": "2026-10-11",
+    "notes": [
+      "ขั้นตอนไหว้ การขอด้ายแดง และการแก้บนเยว่เหล่า สรุปจากหน้า 如何參拜 บนเว็บทางการ lungshan.org.tw (ภาษาจีน) มีจุดแปลเซียมซีเปิด 10:00-19:00",
+      "goals: love (เยว่เหล่า), study (เหวินชาง), health (ฮัวโต๋) จาก en.wikipedia ส่วน career จากเว็บทางการที่แนะนำเซียมซีกวนอูเรื่องงาน",
+      "ไม่ใส่เวลาเปิด: แหล่งรองบอก 6:00-22:00 แต่ยังไม่พบบนเว็บของวัด",
+      "ชื่อไทยใน th.wikipedia คือ วัดหลงชาน (ไทเป)",
+      "พิกัดจาก Wikidata Q706761"
+    ],
+    "sources": [
+      "https://www.lungshan.org.tw/Tour_Guide/how_to_prays",
+      "https://en.wikipedia.org/wiki/Lungshan_Temple_of_Manka",
+      "https://www.wikidata.org/wiki/Q706761"
+    ]
+  },
+  {
+    "name": "วัดเหวินอู่ ทะเลสาบสุริยันจันทรา (Wenwu Temple)",
+    "nameEn": "Sun Moon Lake Wen Wu Temple",
+    "slug": "wenwu-temple-sun-moon-lake",
+    "type": "chinese-shrine",
+    "deities": ["เทพเจ้าบุ๋นเชียง (เหวินชาง)", "เทพเจ้ากวนอู", "งักฮุย", "ขงจื๊อ", "เทพเยว่เหล่า (เทพแห่งความรัก)"],
+    "goals": ["study", "love"],
+    "country": "TW",
+    "city": "หนานโถว",
+    "coords": "23.86993, 120.92767",
+    "description": "วัดบุ๋นบู๊ริมทะเลสาบสุริยันจันทรา ภายในมี 3 วิหารเรียงขึ้นไปตามเนิน วิหารหน้าบูชาเทพบุ๋นเชียง วิหารกลางบูชากวนอูและงักฮุย ส่วนวิหารหลังบูชาขงจื๊อ คนจึงนิยมมาขอพรเรื่องการเรียนการสอบ และยังมีวิหารเยว่เหล่าให้ขอคู่ได้ด้วย นักท่องเที่ยวมักแวะไหว้พร้อมชมวิวทะเลสาบและถ่ายรูปกับสิงโตคู่หน้าวัด",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wen_Wu_Temple_01.jpg/1280px-Wen_Wu_Temple_01.jpg",
+        "alt": "ซุ้มประตูหน้าวัดเหวินอู่ ทะเลสาบสุริยันจันทรา",
+        "author": "Bernard Gagnon",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wen_Wu_Temple_01.jpg"
+      }
+    ],
+    "published": false,
+    "checkedAt": "2026-10-11",
+    "notes": [
+      "ผังวิหารและรายชื่อเทพมาจาก en.wikipedia (Sun Moon Lake Wen Wu Temple)",
+      "วิหารเยว่เหล่าเปิดพิธีเมื่อ 28 ก.ย. 2017 ตามข่าวของ storm.mg",
+      "goal study อนุมานจากการที่วัดบูชาเทพบุ๋นเชียงกับขงจื๊อ ยังไม่พบแหล่งทางการของวัด ควรตรวจอีกครั้ง",
+      "ไม่ใส่เวลาเปิดและวิธีไหว้ เพราะไม่พบเว็บทางการของวัด",
+      "พิกัดจาก Wikidata Q10311331"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sun_Moon_Lake_Wen_Wu_Temple",
+      "https://www.storm.mg/article/337684",
+      "https://www.wikidata.org/wiki/Q10311331"
+    ]
+  }
+]

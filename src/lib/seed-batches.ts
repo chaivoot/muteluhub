@@ -1,4 +1,5 @@
 import places01 from '@data/import/places-batch-01.json';
+import abroad01 from '@data/import/places-abroad-batch-01.json';
 import tellers01 from '@data/import/fortune-tellers-batch-01.json';
 import type { DirectoryKind } from '@/lib/directory-repo';
 
@@ -16,6 +17,7 @@ export interface SeedBatch {
 
 export const SEED_BATCHES: SeedBatch[] = [
   { id: 'places-batch-01', kind: 'places', label: 'สถานที่ชุดแรก 8 แห่ง', data: places01 },
+  { id: 'places-abroad-batch-01', kind: 'places', label: 'ต่างประเทศ: ญี่ปุ่น ฮ่องกง ไต้หวัน 9 แห่ง', data: abroad01 },
   { id: 'fortune-tellers-batch-01', kind: 'fortune_tellers', label: 'หมอดูไพ่ทาโรต์ออนไลน์ 10 คน', data: tellers01 },
 ];
 
