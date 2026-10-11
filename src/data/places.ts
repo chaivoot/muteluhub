@@ -26,8 +26,12 @@ export interface Place {
   /** ชื่อองค์เทพ / สิ่งศักดิ์สิทธิ์ (ตาราง deities) */
   deities: string[];
   goals: GoalSlug[];
-  country: 'TH';
-  provinceSlug: string;
+  /** รหัสประเทศ ISO 3166-1 เช่น TH, JP (ต่างประเทศดู src/data/countries.ts) */
+  country: string;
+  /** เฉพาะในไทย */
+  provinceSlug?: string;
+  /** เฉพาะต่างประเทศ ชื่อเมืองภาษาไทย */
+  city?: string;
   district?: string;
   lat: number | null;
   lng: number | null;

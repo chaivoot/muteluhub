@@ -9,7 +9,16 @@ import { PlaceCard } from './PlaceCard';
 import { useGoal } from './goal-context';
 
 /** รายการสถานที่ + filter: เป้าหมาย (บนสุด) องค์เทพ จังหวัด */
-export function PlacesBrowser({ places, fixedProvince }: { places: Place[]; fixedProvince?: string }) {
+export function PlacesBrowser({
+  places,
+  fixedProvince,
+  groupBy = 'province',
+}: {
+  places: Place[];
+  fixedProvince?: string;
+  /** ตัวกรองพื้นที่: จังหวัด (ในไทย) หรือ เมือง (ต่างประเทศ) */
+  groupBy?: 'province' | 'city';
+}) {
   const { goal: remembered } = useGoal();
   const [goal, setGoal] = useState<GoalSlug | null>(null);
   const [touched, setTouched] = useState(false);
@@ -22,10 +31,11 @@ export function PlacesBrowser({ places, fixedProvince }: { places: Place[]; fixe
 
   const deities = useMemo(() => deitiesOf(places), [places]);
   const provinces = useMemo(() => provincesWithPlaces(places), [places]);
+  const cities = useMemo(() => [...new Set(places.map((p) => p.city).filter((c): c is string => !!c))], [places]);
   const results = filterPlaces(
-    { goal, deity: deity || null, province: fixedProvince ?? (province || null) },
+    { goal, deity: deity || null, province: groupBy === 'province' ? (fixedProvince ?? (province || null)) : null },
     places,
-  );
+  ).filter((p) => groupBy !== 'city' || !province || p.city === province);
 
   return (
     <>
@@ -50,7 +60,7 @@ export function PlacesBrowser({ places, fixedProvince }: { places: Place[]; fixe
               ))}
             </select>
           </label>
-          {!fixedProvince && (
+          {!fixedProvince && groupBy === 'province' && (
             <label className="select-wrap">
               <span className="visually-hidden">จังหวัด</span>
               <select className="select" value={province} onChange={(e) => setProvince(e.target.value)}>
@@ -58,6 +68,19 @@ export function PlacesBrowser({ places, fixedProvince }: { places: Place[]; fixe
                 {provinces.map((p) => (
                   <option key={p.slug} value={p.slug}>
                     {p.name}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
+          {groupBy === 'city' && cities.length > 1 && (
+            <label className="select-wrap">
+              <span className="visually-hidden">เมือง</span>
+              <select className="select" value={province} onChange={(e) => setProvince(e.target.value)}>
+                <option value="">ทุกเมือง</option>
+                {cities.map((c) => (
+                  <option key={c} value={c}>
+                    {c}
                   </option>
                 ))}
               </select>

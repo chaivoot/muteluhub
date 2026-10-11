@@ -95,3 +95,28 @@ describe('parseCoords', () => {
     expect(parseCoords('100, 200')).toBeNull();
   });
 });
+
+describe('abroad places', () => {
+  const { province, district, ...base } = valid;
+  void province;
+  void district;
+  it('accepts a supported country with a city', () => {
+    const r = parsePlaceImport(JSON.stringify({ ...base, slug: 'test-jp', country: 'JP', city: 'เกียวโต' }));
+    expect(r.items[0].ok).toBe(true);
+    expect(r.items[0].item).toMatchObject({ country: 'JP', city: 'เกียวโต', provinceSlug: undefined });
+  });
+
+  it('requires a city and a known country', () => {
+    const r = parsePlaceImport(
+      JSON.stringify([
+        { ...base, slug: 'no-city', country: 'JP' },
+        { ...base, slug: 'mars', country: 'XX', city: 'x' },
+        { ...base, slug: 'thai-no-province' },
+      ]),
+    );
+    expect(r.items.map((i) => i.ok)).toEqual([false, false, false]);
+    expect(r.items[0].errors.join()).toMatch(/city/);
+    expect(r.items[1].errors.join()).toMatch(/XX/);
+    expect(r.items[2].errors.join()).toMatch(/province/);
+  });
+});

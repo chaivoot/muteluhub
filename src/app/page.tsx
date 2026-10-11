@@ -7,6 +7,10 @@ import { SectionHeader } from '@/components/SectionHeader';
 import { ShirtColorCard } from '@/components/ShirtColorCard';
 import { SiteHeader } from '@/components/SiteHeader';
 import { upcomingFestivals } from '@/lib/festivals';
+import { abroadPlaces, thaiPlaces } from '@/lib/places';
+import { COUNTRIES } from '@/data/countries';
+import Link from 'next/link';
+import { PlaceImageBox } from '@/components/PlaceCard';
 import { listPublishedPlaces } from '@/lib/places-repo';
 import { bangkokDay, formatThaiFullDate } from '@/lib/thai-date';
 
@@ -16,7 +20,10 @@ export const revalidate = 600;
 export default async function HomePage() {
   const today = bangkokDay();
   const festivals = upcomingFestivals(today.iso);
-  const places = await listPublishedPlaces();
+  const allPlaces = await listPublishedPlaces();
+  const places = thaiPlaces(allPlaces);
+  const abroad = abroadPlaces(allPlaces);
+  const abroadCountry = COUNTRIES.find((c) => abroad.some((p) => p.country === c.code));
 
   return (
     <main>
@@ -55,6 +62,19 @@ export default async function HomePage() {
       </div>
 
       <PlacesForGoal places={places} />
+
+      {abroadCountry && (
+        <div className="container home-abroad">
+          <Link href={`/abroad/${abroadCountry.slug}`} className="abroad-card">
+            <PlaceImageBox place={abroad.find((p) => p.country === abroadCountry.code)!} className="abroad-card__img" />
+            <span className="abroad-card__body">
+              <span className="abroad-card__eyebrow">มูต่างประเทศ</span>
+              <span className="abroad-card__title">คู่มือทริปสายมู {abroadCountry.name}</span>
+              <span className="abroad-card__sub">ศาลเจ้า เป้าหมาย ที่พักใกล้ ๆ</span>
+            </span>
+          </Link>
+        </div>
+      )}
 
       <SectionHeader title="มูเรื่องไหนดี" />
       <ExploreGrid />

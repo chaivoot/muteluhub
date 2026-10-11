@@ -11,7 +11,8 @@ import { PLACE_TYPE_LABEL, type Place } from '@/data/places';
 import { PROVINCES, provinceShortName } from '@/data/provinces';
 import { agodaLink, showsLodging } from '@/lib/agoda';
 import { getGoal } from '@/lib/goals';
-import { filterPlaces, mapLink, provincesWithPlaces, relatedPlaces } from '@/lib/places';
+import { countryByCode } from '@/data/countries';
+import { filterPlaces, mapLink, placeLocation, provincesWithPlaces, relatedPlaces, thaiPlaces } from '@/lib/places';
 import { listPublishedPlaces } from '@/lib/places-repo';
 import { SITE_URL } from '@/lib/site';
 import { parseIsoDay, TH_MONTHS, toBuddhistYear } from '@/lib/thai-date';
@@ -22,7 +23,7 @@ export const revalidate = 3600;
 
 export async function generateStaticParams() {
   const places = await listPublishedPlaces();
-  return [...places.map((p) => ({ slug: p.slug })), ...provincesWithPlaces(places).map((p) => ({ slug: p.slug }))];
+  return [...places.map((p) => ({ slug: p.slug })), ...provincesWithPlaces(thaiPlaces(places)).map((p) => ({ slug: p.slug }))];
 }
 
 type Params = Promise<{ slug: string }>;
@@ -53,7 +54,7 @@ export default async function PlaceOrProvincePage({ params }: { params: Params }
   const places = await listPublishedPlaces();
   const place = places.find((p) => p.slug === slug);
   if (place) return <PlaceDetail place={place} places={places} />;
-  const inProvince = filterPlaces({ province: slug }, places);
+  const inProvince = filterPlaces({ province: slug }, thaiPlaces(places));
   if (PROVINCES[slug] && inProvince.length > 0) {
     return (
       <main>
@@ -86,7 +87,12 @@ function PlaceDetail({ place, places }: { place: Place; places: Place[] }) {
     description: place.summary,
     url: `${SITE_URL}/places/${place.slug}`,
     image: image?.src,
-    address: { '@type': 'PostalAddress', addressRegion: PROVINCES[place.provinceSlug], addressCountry: 'TH' },
+    address: {
+      '@type': 'PostalAddress',
+      addressRegion: place.provinceSlug ? PROVINCES[place.provinceSlug] : undefined,
+      addressLocality: place.city,
+      addressCountry: place.country,
+    },
     geo: place.lat != null ? { '@type': 'GeoCoordinates', latitude: place.lat, longitude: place.lng } : undefined,
   };
 
@@ -101,14 +107,14 @@ function PlaceDetail({ place, places }: { place: Place; places: Place[] }) {
         )}
         <span className="place-hero__scrim" aria-hidden="true" />
         <div className="place-hero__top">
-          <Link href="/places" className="icon-btn icon-btn--glass" aria-label="ย้อนกลับ">
+          <Link href={place.country === 'TH' ? '/places' : `/abroad/${countryByCode(place.country)?.slug ?? ''}`} className="icon-btn icon-btn--glass" aria-label="ย้อนกลับ">
             <UiIcon name="back" size={22} strokeWidth={2} />
           </Link>
         </div>
         {image && <CreditBadge credit={`${image.author} / ${image.license}`} position="top-right" />}
         <div className="place-hero__text">
           <span className="place-hero__type">
-            {PLACE_TYPE_LABEL[place.type]} · {provinceShortName(place.provinceSlug)}
+            {PLACE_TYPE_LABEL[place.type]} · {placeLocation(place)}
           </span>
           <h1 className="place-hero__name">{place.name}</h1>
         </div>
@@ -137,7 +143,9 @@ function PlaceDetail({ place, places }: { place: Place; places: Place[] }) {
           <div>
             <dt>ที่ตั้ง</dt>
             <dd>
-              {[place.district, PROVINCES[place.provinceSlug]].filter(Boolean).join(' ')}
+              {place.country === 'TH'
+                ? [place.district, place.provinceSlug && PROVINCES[place.provinceSlug]].filter(Boolean).join(' ')
+                : [place.district, place.city, countryByCode(place.country)?.name].filter(Boolean).join(' ')}
               {map && (
                 <>
                   {' · '}
