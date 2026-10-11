@@ -58,14 +58,18 @@ export function fieldOptions(field: PromptField): { value: string; label: string
   return (field.options ?? []).map((o) => ({ value: o, label: o }));
 }
 
-/** ค่าที่เติมมาจาก query string รับเฉพาะ key ที่ template ประกาศไว้ */
-export function valuesFromParams(t: PromptTemplate, params: URLSearchParams): PromptValues {
+/** ค่าที่เติมมาจากภายนอก (query string / handoff) รับเฉพาะ key ที่ template ประกาศไว้ */
+export function valuesFromRecord(t: PromptTemplate, source: Record<string, unknown>): PromptValues {
   const values: PromptValues = {};
   for (const f of t.requiredFields) {
-    const v = params.get(f.key);
-    if (v) values[f.key] = v.slice(0, 2000);
+    const v = source[f.key];
+    if (typeof v === 'string' && v) values[f.key] = v.slice(0, 2000);
   }
   return values;
+}
+
+export function valuesFromParams(t: PromptTemplate, params: URLSearchParams): PromptValues {
+  return valuesFromRecord(t, Object.fromEntries(params));
 }
 
 export const sortedTemplates = (list: PromptTemplate[] = PROMPT_TEMPLATES) =>
