@@ -1,3 +1,4 @@
+import { TH_WEEKDAYS } from '@/lib/thai-date';
 import type { GoalSlug } from '@/lib/goals';
 
 /**
@@ -18,6 +19,8 @@ export interface PromptField {
   placeholder?: string;
   /** เติมค่าเริ่มต้นอัตโนมัติฝั่ง client */
   defaultFrom?: 'today-weekday' | 'selected-goal';
+  /** เว็บคำนวณให้จากช่องอื่น แสดงแบบอ่านอย่างเดียว (src/lib/prompt-derive.ts) */
+  computed?: 'lucky-method' | 'lucky-numbers' | 'color-lucky' | 'color-avoid';
 }
 
 export interface PromptTemplate {
@@ -80,8 +83,8 @@ function luckyNumberTemplates(): PromptTemplate[] {
 ช่วยอธิบายว่าเลขเหล่านี้เกี่ยวกับ${topic}ของฉันอย่างไร และแนะนำวิธีใช้ในชีวิตประจำวัน เช่น ${examples}`,
       requiredFields: [
         { key: 'birth_date', label: 'วันเกิด', type: 'date' },
-        { key: 'method', label: 'หลักคำนวณ', type: 'text', placeholder: 'ได้จากหน้าเลขมงคล' },
-        { key: 'lucky_numbers', label: 'เลขมงคลที่ได้', type: 'text', placeholder: 'เช่น 5, 9, 24' },
+        { key: 'method', label: 'หลักคำนวณ', type: 'text', computed: 'lucky-method' },
+        { key: 'lucky_numbers', label: 'เลขมงคลที่ได้', type: 'text', computed: 'lucky-numbers' },
       ],
       followUps: ['ถ้าจะเลือกเบอร์โทรใหม่ ควรดูอะไรบ้างจากเลขเหล่านี้'],
       isFeatured: goal === 'money',
@@ -118,9 +121,9 @@ function colorTodayTemplates(): PromptTemplate[] {
 วันนี้ฉันมี${matter}คือ: {{question}}
 ช่วยแนะนำ${advice}สำหรับวันนี้ให้เหมาะกับเรื่องนี้`,
       requiredFields: [
-        { key: 'weekday', label: 'วัน', type: 'text', defaultFrom: 'today-weekday' },
-        { key: 'color', label: 'สีมงคล', type: 'text', placeholder: 'ได้จากหน้าสีเสื้อวันนี้' },
-        { key: 'avoid_color', label: 'สีที่ควรเลี่ยง', type: 'text' },
+        { key: 'weekday', label: 'วัน', type: 'select', options: [...TH_WEEKDAYS], defaultFrom: 'today-weekday' },
+        { key: 'color', label: 'สีมงคล', type: 'text', computed: 'color-lucky' },
+        { key: 'avoid_color', label: 'สีที่ควรเลี่ยง', type: 'text', computed: 'color-avoid' },
         { ...QUESTION, label: `${matter}วันนี้`, placeholder: example },
       ],
       followUps: [],

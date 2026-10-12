@@ -8,6 +8,7 @@ import { track } from '@/lib/analytics';
 import { getDiscipline } from '@/lib/disciplines';
 import { getGoal, isGoalSlug } from '@/lib/goals';
 import { fieldOptions, missingFields, renderPrompt, valuesFromParams, valuesFromRecord, type PromptValues } from '@/lib/prompts';
+import { derivedValues } from '@/lib/prompt-derive';
 import { takePromptHandoff } from '@/lib/prompt-handoff';
 import { bangkokDay, TH_WEEKDAYS } from '@/lib/thai-date';
 import { CopyButton } from './CopyButton';
@@ -41,8 +42,11 @@ export function PromptBuilder({ template }: { template: PromptTemplate }) {
     });
   }, [template, rememberedGoal]);
 
-  const prompt = useMemo(() => renderPrompt(template, values), [template, values]);
-  const missing = missingFields(template, values);
+  // ช่องที่เว็บคำนวณให้ (เลขมงคล สีเสื้อ) ทับค่าที่กรอกเสมอ ให้ตรงกับเครื่องมือของเว็บ
+  const derived = useMemo(() => derivedValues(template, values), [template, values]);
+  const all = useMemo(() => ({ ...values, ...derived }), [values, derived]);
+  const prompt = useMemo(() => renderPrompt(template, all), [template, all]);
+  const missing = missingFields(template, all);
   const set = (key: string, value: string) => setValues((v) => ({ ...v, [key]: value }));
 
   // goal ใช้เพื่อ analytics / ลิงก์หมอดู: ค่าจากฟอร์มก่อน แล้วค่อยเป้าหมายเดียวของ template
@@ -61,9 +65,13 @@ export function PromptBuilder({ template }: { template: PromptTemplate }) {
   return (
     <div className="prompt-builder">
       <form className="form container" onSubmit={(e) => e.preventDefault()} aria-label="กรอกข้อมูลสำหรับ prompt">
-        {template.requiredFields.map((f) => (
-          <Field key={f.key} field={f} value={values[f.key] ?? ''} onChange={(v) => set(f.key, v)} />
-        ))}
+        {template.requiredFields.map((f) =>
+          f.computed ? (
+            <ComputedField key={f.key} field={f} value={derived[f.key] ?? ''} />
+          ) : (
+            <Field key={f.key} field={f} value={values[f.key] ?? ''} onChange={(v) => set(f.key, v)} />
+          ),
+        )}
         <p className="note">ข้อมูลที่กรอกอยู่ในเครื่องคุณเท่านั้น เว็บไม่ได้ส่งหรือเก็บไว้</p>
       </form>
 
@@ -108,6 +116,24 @@ export function PromptBuilder({ template }: { template: PromptTemplate }) {
           <span className="shortcut-card__sub">ดูหมอดูที่ถนัด{tellerTopic ? ` ${tellerTopic}` : ''}</span>
         </span>
       </Link>
+    </div>
+  );
+}
+
+/** ช่องที่เว็บคำนวณให้: แสดงผลอย่างเดียว */
+function ComputedField({ field, value }: { field: PromptField; value: string }) {
+  const waitingFor = field.computed === 'lucky-numbers' ? 'กรอกวันเกิดด้านบน เว็บคำนวณให้เอง' : 'เลือกวันด้านบน เว็บหาสีให้เอง';
+  return (
+    <div className="field">
+      <span className="field__label">{field.label}</span>
+      <output className="computed-value" aria-live="polite">
+        {value || <span className="note">{waitingFor}</span>}
+      </output>
+      {value && field.computed !== 'lucky-method' && (
+        <span className="note">
+          {field.computed === 'lucky-numbers' ? 'คำนวณจากวันเกิดให้อัตโนมัติ' : 'ตามหลักทักษา เหมือนหน้าสีเสื้อวันนี้'}
+        </span>
+      )}
     </div>
   );
 }
