@@ -156,6 +156,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 /* ---------- shirt color card (compact) ---------- */
 .shirt-card { margin: 0 16px; border-radius: var(--radius-xl); padding: 3px; background: var(--color-gold); }
 .shirt-card__inner {
+  position: relative;
   border-radius: var(--radius-lg); background: var(--color-surface);
   padding: 16px; display: flex; gap: 14px; align-items: center;
 }
@@ -625,3 +626,8 @@ ul { list-style: none; margin: 0; padding: 0; }
 .admin-filter__q .input { width: 100%; }
 .admin-pager { display: flex; gap: 12px; align-items: center; justify-content: center; }
 .seed-box > summary { cursor: pointer; }
+
+/* การ์ดสีเสื้อหน้าแรก: ลิงก์ที่วงสีขยายคลุมทั้งการ์ด ปุ่มแชร์อยู่ชั้นบน */
+.shirt-card__link::after { content: ''; position: absolute; inset: 0; border-radius: var(--radius-lg); }
+.shirt-card__inner:has(.shirt-card__link) { cursor: pointer; }
+.shirt-card__inner .icon-btn { position: relative; z-index: 1; }

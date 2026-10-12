@@ -43,7 +43,7 @@ export default async function HomePage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }} />
       <section className="hero">
-        {/* ภาพจากเจ้าของเว็บ (ไม่ใช่ภาพตัวอย่างใน design/mockups/images) */}
+        {/* ภาพบรรยากาศ AI จากเจ้าของเว็บ (2026-10-12) ใช้เป็นภาพ hero เท่านั้น ห้ามใช้แทนภาพสถานที่จริง */}
         <img
           src="/images/hero/hero-prayer-1600.webp"
           srcSet="/images/hero/hero-prayer-900.webp 900w, /images/hero/hero-prayer-1600.webp 1600w"
