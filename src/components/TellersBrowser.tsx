@@ -1,7 +1,7 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useMemo, useState, type ReactNode } from 'react';
 import { CHANNEL_LABEL, CHANNELS, PRICE_BUCKETS, type Channel, type FortuneTeller } from '@/data/fortune-tellers';
 import { PROVINCES } from '@/data/provinces';
 import { DISCIPLINES } from '@/lib/disciplines';
@@ -16,7 +16,16 @@ import { UiIcon } from './icons';
  * รายการหมอดู + filter: เป้าหมายอยู่แถวบนสุดเสมอ ที่เหลือ (ศาสตร์ ช่องทาง จังหวัด ราคา) อยู่ใน bottom sheet
  * รับค่าเริ่มต้นจาก query string ?goal=&discipline= (ลิงก์จากหน้า prompt / เลขมงคล)
  */
-export function TellersBrowser({ tellers, fixedDiscipline }: { tellers: FortuneTeller[]; fixedDiscipline?: string }) {
+export function TellersBrowser({
+  tellers,
+  fixedDiscipline,
+  belowGoals,
+}: {
+  tellers: FortuneTeller[];
+  fixedDiscipline?: string;
+  /** เนื้อหาที่แทรกใต้ปุ่มเรื่องที่อยากเสริม (หน้ารวมใช้วางแถว ดูตามศาสตร์) */
+  belowGoals?: ReactNode;
+}) {
   const params = useSearchParams();
   const queryGoal = params.get('goal');
   const [goal, setGoal] = useState<GoalSlug | null>(isGoalSlug(queryGoal) ? queryGoal : null);
@@ -67,6 +76,7 @@ export function TellersBrowser({ tellers, fixedDiscipline }: { tellers: FortuneT
           setGoal(g);
         }}
       />
+      {belowGoals}
       <div className="filter-bar container">
         <span className="filter-bar__count">
           {results.length} หมอดู{goal ? `ที่ถนัดเรื่อง${getGoal(goal).short}` : ''}
