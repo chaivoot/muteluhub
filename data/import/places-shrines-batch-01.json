@@ -1,0 +1,3857 @@
+[
+ {
+  "name": "ศาลหลักเมืองกรุงเทพมหานคร",
+  "nameEn": "Bangkok City Pillar Shrine",
+  "slug": "lak-mueang-bangkok",
+  "type": "shrine",
+  "deities": [
+   "พระหลักเมือง",
+   "พระเสื้อเมือง",
+   "พระทรงเมือง",
+   "พระกาฬชัยศรี",
+   "เจ้าเจตคุปต์",
+   "เจ้าหอกลอง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "กรุงเทพมหานคร",
+  "district": "เขตพระนคร",
+  "coords": "13.75256, 100.49403",
+  "description": "ศาลหลักเมืองของกรุงเทพฯ ฝั่งตรงข้ามพระบรมมหาราชวัง ยกเสาหลักเมืองครั้งแรกเมื่อ 21 เม.ย. 2325 พร้อมการสร้างกรุงรัตนโกสินทร์ และมีเสาที่ 2 ในสมัยรัชกาลที่ 4 ด้านเหนือมีหอเทพารักษ์ 5 องค์ คนนิยมมาไหว้เพื่อความเป็นสิริมงคลและให้ชีวิตมีหลักชัย",
+  "hours": "ทุกวัน 06.30-18.30 น. (เปิดตลอดคืนช่วงปีใหม่และตรุษจีน)",
+  "offerings": [
+   "ธูป 3 ดอก (บางแหล่งว่า 9 ดอก)",
+   "เทียน 1 เล่ม",
+   "ทองคำเปลว",
+   "ดอกบัว 2 ดอก",
+   "ผ้าแพร 3 สี",
+   "พวงมาลัย 2 พวง"
+  ],
+  "howToPray": [
+   "ไหว้หอพระพุทธรูปก่อน",
+   "ไหว้องค์พระหลักเมืองจำลอง จุดธูปเทียนในจุดที่จัดไว้ ปิดทอง และผูกผ้าแพร 3 สี",
+   "ไหว้องค์พระหลักเมืององค์จริง ถวายพวงมาลัยและกราบ ไม่จุดธูปเทียนและไม่ปิดทอง",
+   "ไหว้หอเทพารักษ์ทั้ง 5 องค์",
+   "เติมน้ำมันพระประจำวันเกิดหรือสะเดาะเคราะห์ได้ตามสะดวก",
+   "แต่งกายสุภาพ ไม่ใส่เสื้อแขนกุดหรือกระโปรงสั้น"
+  ],
+  "howToRepayVow": [
+   "แก้บนด้วยละครรำได้ ติดต่อเจ้าหน้าที่ที่ศาล"
+  ],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/(2019)_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.jpg/1280px-(2019)_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.jpg",
+    "alt": "ศาลหลักเมืองกรุงเทพมหานคร อาคารยอดปรางค์ เขตพระนคร",
+    "author": "กสิณธร ราชโอรส",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:(2019)_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/(2022)_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(1).jpg/1280px-(2022)_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(1).jpg",
+    "alt": "บริเวณศาลหลักเมืองกรุงเทพมหานคร",
+    "author": "กสิณธร ราชโอรส",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:(2022)_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(1).jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก Wikidata Q13021404 ตรงกับ OSM way 127290889 (13.75256, 100.49403) และ GPS ภาพ Commons ห่างไม่ถึง 20 ม.",
+   "ของไหว้/ขั้นตอนจากบทความไทยรัฐและ TrueID บางแหล่งว่าปัจจุบันไม่จุดธูปเทียนแล้ว ควรเช็กหน้างาน",
+   "ช่วงเวลาละครรำแก้บนจากงานวิจัยจุฬาฯ อาจเก่า จึงไม่ใส่เวลา"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3",
+   "https://travel.trueid.net/detail/gEwJJdXKdxyk",
+   "https://www.thairath.co.th/horoscope/belief/2789882",
+   "https://cuir.car.chula.ac.th/dspace/bitstream/123456789/74812/5/Malinee_ng_ch4_p.pdf"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าเกียนอันเกง",
+  "nameEn": "Kian An Keng Shrine",
+  "slug": "kian-an-keng-shrine",
+  "type": "chinese-shrine",
+  "deities": [
+   "พระโพธิสัตว์กวนอิม",
+   "เจ้าแม่ทับทิม",
+   "เจ้าพ่อกวนอู"
+  ],
+  "goals": [
+   "health",
+   "family"
+  ],
+  "province": "กรุงเทพมหานคร",
+  "district": "เขตธนบุรี",
+  "coords": "13.73995, 100.49255",
+  "description": "ศาลเจ้าจีนฮกเกี้ยนริมเจ้าพระยาในชุมชนกุฎีจีน ระหว่างวัดกัลยาณมิตรกับโบสถ์ซางตาครู้ส อาคารปัจจุบันสร้างเสร็จปี 2391 องค์ประธานคือพระโพธิสัตว์กวนอิมไม้จันทน์แกะสลักปิดทอง ผนังด้านในมีภาพจิตรกรรมเรื่องสามก๊ก และได้รางวัลอนุรักษ์สถาปัตยกรรมปี 2551",
+  "offerings": [
+   "ธูปหอม",
+   "ดอกไม้",
+   "ผลไม้หรืออาหารเจ"
+  ],
+  "howToPray": [
+   "ไหว้พระโพธิสัตว์กวนอิมเพื่อขอพร ไม่นิยมบนบาน"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Kuan_An_Keng_Shrine_(II).jpg/1280px-Kuan_An_Keng_Shrine_(II).jpg",
+    "alt": "ศาลเจ้าเกียนอันเกง ชุมชนกุฎีจีน ริมแม่น้ำเจ้าพระยา",
+    "author": "Supanut Arunoprayote",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kuan_An_Keng_Shrine_(II).jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/(2022)_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%AD%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%81%E0%B8%87_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(2).jpg/1280px-(2022)_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%AD%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%81%E0%B8%87_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(2).jpg",
+    "alt": "ด้านหน้าศาลเจ้าเกียนอันเกง เขตธนบุรี",
+    "author": "กสิณธร ราชโอรส",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:(2022)_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%AD%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%81%E0%B8%87_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(2).jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก Wikidata Q25543751 ตรงกับ OSM way 1467757640 และ GPS ภาพ Commons (13.74019, 100.49267) ห่างราว 30 ม.",
+   "goals อนุมานจากองค์กวนอิม (เมตตา สุขภาพ ครอบครัว) ไม่มีแหล่งระบุเรื่องขอพรเฉพาะของศาลนี้",
+   "ของไหว้เป็นคำแนะนำทั่วไปการไหว้กวนอิมจากไทยรัฐ (หมอช้าง) ไม่ใช่กติกาของศาล",
+   "Time Out (2019) ระบุเปิด 07.30-17.00 น. ข้อมูลเก่าจึงไม่ใส่ hours"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%AD%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%81%E0%B8%87",
+   "https://www.timeout.com/bangkok/th/attractions/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%AD%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%81%E0%B8%87",
+   "https://www.thairath.co.th/horoscope/belief/2769623"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าเล่งบ๊วยเอี๊ยะ",
+  "nameEn": "Leng Buai Ia Shrine",
+  "slug": "leng-buai-ia-shrine",
+  "type": "chinese-shrine",
+  "deities": [
+   "เล่งบ๊วยเอี๊ยะ (เทพเจ้าหางมังกร)",
+   "เทพเจ้ากวนอู",
+   "พระแม่สวรรค์"
+  ],
+  "goals": [
+   "protection",
+   "business"
+  ],
+  "province": "กรุงเทพมหานคร",
+  "district": "เขตสัมพันธวงศ์",
+  "coords": "13.74208, 100.50954",
+  "description": "ศาลเจ้าแต้จิ๋วเก่าแก่ย่านเยาวราช ในซอยเจริญกรุง 16 เชื่อมซอยเยาวราช 6 ดูแลโดยสมาคมแต้จิ๋วแห่งประเทศไทย ระฆังโบราณระบุปีตรงกับ พ.ศ. 2386 ภายในมีป้ายจารึกเก่าและกระถางธูปพระราชทานสมัยรัชกาลที่ 6 นิยมมาไหว้ช่วงตรุษจีน",
+  "hours": "ทุกวัน 07.00-17.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Leng_Buai_Ia_Shrine_07.23.jpg/1280px-Leng_Buai_Ia_Shrine_07.23.jpg",
+    "alt": "ศาลเจ้าเล่งบ๊วยเอี๊ยะ ย่านเยาวราช",
+    "author": "Supanut Arunoprayote",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leng_Buai_Ia_Shrine_07.23.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM way 1510182807 (wikidata=Q2357415) ตรงกับ GPS ภาพ Commons (13.74211, 100.50942) ส่วน Wikidata ระบุ 13.741944, 100.509167 ห่างราว 40 ม.",
+   "goals อนุมาน ไม่พบแหล่งระบุเรื่องขอพรเฉพาะของศาลนี้ ควรทบทวน",
+   "ป้ายจีนอ้างว่าสร้างปี 2201 แต่ยังไม่มีหลักฐานยืนยัน จึงใช้ปีจากระฆัง (2386) ตาม Wikipedia"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%87%E0%B8%9A%E0%B9%8A%E0%B8%A7%E0%B8%A2%E0%B9%80%E0%B8%AD%E0%B8%B5%E0%B9%8A%E0%B8%A2%E0%B8%B0",
+   "https://www.timeout.com/bangkok/th/attractions/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%87%E0%B8%9A%E0%B9%8A%E0%B8%A7%E0%B8%A2%E0%B9%80%E0%B8%AD%E0%B8%B5%E0%B9%8A%E0%B8%A2%E0%B8%B0",
+   "https://travel.trueid.net/detail/W9gPK5KDG5O4"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าแม่ทับทิม (สวนนายเลิศ)",
+  "nameEn": "Chao Mae Tuptim Shrine",
+  "slug": "chao-mae-thapthim-shrine-nai-lert",
+  "type": "shrine",
+  "deities": [
+   "เจ้าแม่ทับทิม"
+  ],
+  "goals": [
+   "family"
+  ],
+  "province": "กรุงเทพมหานคร",
+  "district": "เขตปทุมวัน",
+  "coords": "13.74831, 100.54647",
+  "description": "ศาลเจ้าแม่ทับทิมริมคลองแสนแสบ หลังโรงแรมในสวนนายเลิศ สร้างโดยนายเลิศ (พระยาภักดีนรเศรษฐ) หลังพบศาลลอยมาตามคลอง ขึ้นชื่อเรื่องคนมาขอบุตร และมีองคชาตไม้แกะสลักที่ผู้ศรัทธานำมาถวายจำนวนมาก",
+  "offerings": [
+   "เทียน",
+   "ดอกมะลิ",
+   "ดอกบัว",
+   "ธูปจีน",
+   "องคชาตไม้แกะสลัก"
+  ],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Chao_Mae_Tuptim-Pano.jpg/1280px-Chao_Mae_Tuptim-Pano.jpg",
+    "alt": "ศาลเจ้าแม่ทับทิมและองคชาตไม้ที่ผู้ศรัทธานำมาถวาย",
+    "author": "Ddalbiez",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chao_Mae_Tuptim-Pano.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM way 783034610 (ชื่อ ศาลเจ้าแม่ทับทิม ซอยสมคิด) Wikidata Q2956442 มีความละเอียดแค่ 0.01 องศา (13.7482, 100.547) สอดคล้องกันคร่าวๆ ยังไม่มีแหล่งที่ 2 ที่ละเอียด",
+   "ภาพ Commons ไม่มี GPS แต่อยู่ใน Category:Chao Mae Thapthim Shrine, Nai Loet",
+   "ชื่อโรงแรมปัจจุบันตาม Wikipedia คือ Mövenpick BDMS Wellness Resort ควรเช็กทางเข้าก่อนเผยแพร่",
+   "ไม่ใช่เจ้าแม่ทับทิมแบบจีน (หม่าโจ้ว) Wikipedia ระบุว่าเป็นเทพารักษ์ต้นไม้"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%97%E0%B8%B1%E0%B8%9A%E0%B8%97%E0%B8%B4%E0%B8%A1_%28%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%29",
+   "https://en.wikipedia.org/wiki/Chao_Mae_Tuptim_shrine"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "เทวาลัยพระพิฆเนศ สี่แยกห้วยขวาง",
+  "nameEn": "Ganesha Shrine, Huai Khwang",
+  "slug": "ganesha-shrine-huai-khwang",
+  "type": "shrine",
+  "deities": [
+   "พระพิฆเนศ"
+  ],
+  "goals": [
+   "career",
+   "money",
+   "business"
+  ],
+  "province": "กรุงเทพมหานคร",
+  "district": "เขตดินแดง",
+  "coords": "13.77848, 100.57333",
+  "description": "เทวาลัยพระพิฆเนศมุมสี่แยกห้วยขวาง ฝั่งถนนประชาสงเคราะห์ ใกล้ MRT ห้วยขวาง องค์ประธานเป็นพระพิฆเนศปางยืนประทานพร เชื่อว่าช่วยขจัดอุปสรรคและปลดหนี้ คนนิยมมาขอเรื่องความสำเร็จและการงาน เปิดให้ไหว้ตลอด 24 ชั่วโมง",
+  "hours": "เปิดตลอด 24 ชั่วโมง",
+  "offerings": [
+   "ผลไม้ เช่น กล้วย อ้อย สับปะรด",
+   "ขนมหวาน ขนมโมทกะ ลัฑฑู",
+   "นมสดหรือน้ำแดง",
+   "ผ้าสไบ",
+   "เทียน",
+   "พวงมาลัย",
+   "ไม่ถวายเนื้อสัตว์ ไข่ และของมึนเมา"
+  ],
+  "howToPray": [
+   "ซื้อของไหว้ได้ในเทวาลัย",
+   "ถวายของ จุดธูป แล้วสวดบทบูชาสั้นๆ เช่น โอม ศรีคเณศายะ นะมะฮา",
+   "กระซิบขอพรที่หูหนูมุสิกะที่ฐานเทวรูป โดยปิดหูหนูอีกข้างไว้",
+   "วันอังคารและวันพฤหัสบดีถือเป็นวันดี แต่มาได้ทุกวัน"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Ganesh_Shrine_at_Huai_Khwang,_Bangkok_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9E%E0%B8%B4%E0%B8%86%E0%B9%80%E0%B8%99%E0%B8%A8_%E0%B8%AA%E0%B8%B5%E0%B9%88%E0%B9%81%E0%B8%A2%E0%B8%81%E0%B8%AB%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%82%E0%B8%A7%E0%B8%B2%E0%B8%87_(April2021)_02.jpg/1280px-Ganesh_Shrine_at_Huai_Khwang,_Bangkok_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9E%E0%B8%B4%E0%B8%86%E0%B9%80%E0%B8%99%E0%B8%A8_%E0%B8%AA%E0%B8%B5%E0%B9%88%E0%B9%81%E0%B8%A2%E0%B8%81%E0%B8%AB%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%82%E0%B8%A7%E0%B8%B2%E0%B8%87_(April2021)_02.jpg",
+    "alt": "เทวาลัยพระพิฆเนศ สี่แยกห้วยขวาง",
+    "author": "Chainwit.",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ganesh_Shrine_at_Huai_Khwang,_Bangkok_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9E%E0%B8%B4%E0%B8%86%E0%B9%80%E0%B8%99%E0%B8%A8_%E0%B8%AA%E0%B8%B5%E0%B9%88%E0%B9%81%E0%B8%A2%E0%B8%81%E0%B8%AB%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%82%E0%B8%A7%E0%B8%B2%E0%B8%87_(April2021)_02.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก Wikidata Q137947701 ตรงกับ OSM node 1285554137 และ GPS ภาพ Commons (13.77857, 100.57337)",
+   "OSM ระบุแขวงดินแดง เขตดินแดง (ไม่ใช่เขตห้วยขวาง แม้ชื่อแยกจะเป็นห้วยขวาง)",
+   "ขั้นตอนไหว้และของไหว้จาก MGR Online / ฐานเศรษฐกิจ"
+  ],
+  "sources": [
+   "https://mgronline.com/travel/detail/9690000076619",
+   "https://www.thansettakij.com/lifestyle/665418",
+   "https://www.timeout.com/bangkok/th/attractions/%E0%B9%80%E0%B8%97%E0%B8%A7%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9E%E0%B8%B4%E0%B8%86%E0%B9%80%E0%B8%99%E0%B8%A8"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลพระพิฆเนศวร เซ็นทรัลเวิลด์",
+  "nameEn": "Ganesha Shrine, CentralWorld",
+  "slug": "ganesha-shrine-centralworld",
+  "type": "shrine",
+  "deities": [
+   "พระพิฆเนศ"
+  ],
+  "goals": [
+   "career",
+   "business",
+   "study"
+  ],
+  "province": "กรุงเทพมหานคร",
+  "district": "เขตปทุมวัน",
+  "coords": "13.74788, 100.54029",
+  "description": "ศาลพระพิฆเนศประทับนั่งบนลานหน้าเซ็นทรัลเวิลด์ฝั่งอดีตห้างอิเซตัน ติดกับศาลพระตรีมูรติ ด้านหน้ามีรูปปั้นหนูจำนวนมาก นิยมในหมู่คนทำงานศิลปะ บันเทิง และค้าขาย มักมาขอเรื่องความสำเร็จและการเริ่มต้นสิ่งใหม่",
+  "offerings": [
+   "ดอกดาวเรือง",
+   "กล้วยน้ำว้า",
+   "ขนมโมทกะหรือลาดู",
+   "ไม่ถวายเนื้อสัตว์ ไข่ และของมึนเมา"
+  ],
+  "howToPray": [
+   "ถวายของพร้อมจุดธูป",
+   "สวดบทบูชาสั้นๆ เช่น โอม ศรีคเณศายะ นะมะฮา แล้วตั้งจิตอธิษฐาน"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Ganesha_Shrine_at_Central_World,_Bangkok_(2026_Jul)_-_IMG_04.jpg/1280px-Ganesha_Shrine_at_Central_World,_Bangkok_(2026_Jul)_-_IMG_04.jpg",
+    "alt": "ศาลพระพิฆเนศวร หน้าเซ็นทรัลเวิลด์ ราชประสงค์",
+    "author": "Chainwit.",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ganesha_Shrine_at_Central_World,_Bangkok_(2026_Jul)_-_IMG_04.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก Wikidata Q137947525 ตรงกับ OSM way 1335315452 (13.74788, 100.54029) และ GPS ภาพ Commons",
+   "ศาลนี้แยกจากศาลพระตรีมูรติ (trimurti-shrine-centralworld) ที่อยู่ติดกัน ควรเช็กว่าไม่ซ้ำกับรายการเดิม",
+   "ของไหว้เป็นคำแนะนำทั่วไปการไหว้พระพิฆเนศจากฐานเศรษฐกิจ"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9E%E0%B8%B4%E0%B8%86%E0%B9%80%E0%B8%99%E0%B8%A8%E0%B8%A7%E0%B8%A3_%E0%B9%80%E0%B8%8B%E0%B9%87%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%A5%E0%B9%80%E0%B8%A7%E0%B8%B4%E0%B8%A5%E0%B8%94%E0%B9%8C",
+   "https://www.thansettakij.com/lifestyle/665418"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลพระลักษมี เกษรวิลเลจ",
+  "nameEn": "Lakshmi Shrine, Gaysorn Village",
+  "slug": "lakshmi-shrine-gaysorn",
+  "type": "shrine",
+  "deities": [
+   "พระแม่ลักษมี"
+  ],
+  "goals": [
+   "love",
+   "money"
+  ],
+  "province": "กรุงเทพมหานคร",
+  "district": "เขตปทุมวัน",
+  "coords": "13.74478, 100.54051",
+  "description": "ศาลพระแม่ลักษมีบนดาดฟ้าชั้น 4 ของเกษรวิลเลจ แยกราชประสงค์ ตั้งตั้งแต่ปี 2539 เทวรูปประทับบนดอกบัว คนนิยมมาขอเรื่องความรักและโชคลาภ เดินจาก BTS ชิดลม ทางออก 6 ตามสกายวอล์กได้",
+  "offerings": [
+   "ดอกบัวสีชมพู",
+   "น้ำอ้อย",
+   "น้ำเปล่า",
+   "นม",
+   "ผลไม้ 5 อย่าง",
+   "กำยาน",
+   "ธูป 9 ดอก",
+   "ไม่ถวายของที่มีเนื้อสัตว์"
+  ],
+  "howToPray": [
+   "ที่ศาลไม่มีร้านขายของไหว้ ควรเตรียมไปเอง",
+   "วันศุกร์เป็นวันที่นิยมมาไหว้"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Lakshmi_Shrine,_Gaysorn_Village_Bangkok_2020_01.jpg/1280px-Lakshmi_Shrine,_Gaysorn_Village_Bangkok_2020_01.jpg",
+    "alt": "ศาลพระลักษมี ชั้น 4 เกษรวิลเลจ",
+    "author": "Chainwit.",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lakshmi_Shrine,_Gaysorn_Village_Bangkok_2020_01.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก Wikidata Q59602401 ตรงกับ OSM node 6301517885 (ห่างไม่ถึง 5 ม.)",
+   "เวลาเปิดแต่ละแหล่งไม่ตรงกัน (10.00-18.00, 10.00-20.00, 07.00-19.00) จึงไม่ใส่ hours OSM ระบุ Mo-Su 10:00-20:00",
+   "ของไหว้รวมจากหลายบทความ (ไทยรัฐ PPTV ข่าวสด)"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%A1%E0%B8%B5_%E0%B9%80%E0%B8%81%E0%B8%A9%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%A5%E0%B9%80%E0%B8%A5%E0%B8%88",
+   "https://www.pptvhd36.com/news/%E0%B9%84%E0%B8%A5%E0%B8%9F%E0%B9%8C%E0%B8%AA%E0%B9%84%E0%B8%95%E0%B8%A5%E0%B9%8C/184118",
+   "https://www.thairath.co.th/horoscope/love/2761342"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลพระแม่อุมาเทวี บิ๊กซี ราชดำริ",
+  "nameEn": "Uma Devi Shrine, Ratchaprasong",
+  "slug": "uma-devi-shrine-ratchaprasong",
+  "type": "shrine",
+  "deities": [
+   "พระแม่อุมาเทวี"
+  ],
+  "goals": [
+   "family",
+   "love"
+  ],
+  "province": "กรุงเทพมหานคร",
+  "district": "เขตปทุมวัน",
+  "coords": "13.74742, 100.54086",
+  "description": "ศาลทรงโดมหน้าห้างบิ๊กซีราชดำริ สร้างปี 2554 เป็นหนึ่งในหมู่ศาลเทพฮินดูรอบแยกราชประสงค์ คนนิยมขอพรเรื่องครอบครัวที่มีความสุข ความรัก และการงานการเงิน",
+  "offerings": [
+   "ดอกกุหลาบสีแดงหรือพวงมาลัยกุหลาบ",
+   "ธูปสีแดง 9 ดอก",
+   "เทียนสีแดง 1 เล่ม",
+   "ผลไม้สีแดง",
+   "น้ำอ้อย น้ำมะพร้าว นมสด",
+   "ขนมหวาน",
+   "ไม่ถวายของคาว"
+  ],
+  "howToPray": [
+   "สวดบทบูชาพระพิฆเนศก่อน แล้วตามด้วยบทบูชาพระแม่อุมา",
+   "บอกชื่อและสิ่งที่ถวาย แล้วอธิษฐานขอพร"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%AD%E0%B8%B8%E0%B8%A1%E0%B8%B2%E0%B9%80%E0%B8%97%E0%B8%A7%E0%B8%B5_%E0%B8%9A%E0%B8%B4%E0%B9%8A%E0%B8%81%E0%B8%8B%E0%B8%B5_%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%94%E0%B8%B3%E0%B8%A3%E0%B8%B4_Uma_Devi_Shrine_Ratchaprasong.jpg/1280px-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%AD%E0%B8%B8%E0%B8%A1%E0%B8%B2%E0%B9%80%E0%B8%97%E0%B8%A7%E0%B8%B5_%E0%B8%9A%E0%B8%B4%E0%B9%8A%E0%B8%81%E0%B8%8B%E0%B8%B5_%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%94%E0%B8%B3%E0%B8%A3%E0%B8%B4_Uma_Devi_Shrine_Ratchaprasong.jpg",
+    "alt": "ศาลพระแม่อุมาเทวี หน้าบิ๊กซี ราชดำริ",
+    "author": "Chainwit.",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%AD%E0%B8%B8%E0%B8%A1%E0%B8%B2%E0%B9%80%E0%B8%97%E0%B8%A7%E0%B8%B5_%E0%B8%9A%E0%B8%B4%E0%B9%8A%E0%B8%81%E0%B8%8B%E0%B8%B5_%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%94%E0%B8%B3%E0%B8%A3%E0%B8%B4_Uma_Devi_Shrine_Ratchaprasong.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 6390254465 (Uma Devi Shrine, R Walk) แหล่งเดียว ภาพ Commons ไม่มี GPS ยังไม่มี Wikidata ควรตรวจซ้ำ",
+   "ของไหว้และวิธีไหว้เป็นคำแนะนำจากบทความสายมู (Sanook, Trip.com) ไม่ใช่ประกาศของศาล"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%A1%E0%B8%B5_%E0%B9%80%E0%B8%81%E0%B8%A9%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%A5%E0%B9%80%E0%B8%A5%E0%B8%88",
+   "https://www.sanook.com/horoscope/175653/",
+   "https://th.trip.com/blog/8shrines-ratchaprasong/"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าไต้ฮงกงหยกขาว เฉลิมพระเกียรติ 72 พรรษา",
+  "nameEn": "White Jade Tai Hong Kong Shrine",
+  "slug": "white-jade-tai-hong-kong-shrine",
+  "type": "chinese-shrine",
+  "deities": [
+   "หลวงปู่ไต้ฮง (ไต้ฮงกง)",
+   "พระโพธิสัตว์กวนอิม",
+   "พระกษิติครรภโพธิสัตว์"
+  ],
+  "goals": [
+   "health",
+   "protection"
+  ],
+  "province": "กรุงเทพมหานคร",
+  "district": "เขตสาทร",
+  "coords": "13.71514, 100.51873",
+  "description": "ศาลเจ้าแห่งใหม่ของมูลนิธิป่อเต็กตึ๊ง ถนนเจริญราษฎร์ ข้างสวนเฉลิมพระเกียรติ 80 พรรษา เปิดเมื่อ 25 พ.ค. 2569 องค์หลวงปู่ไต้ฮงทำจากหยกขาวขนาดใหญ่ อาคารแบบแต้จิ๋วโบราณ ผู้ศรัทธามักมาขอพรเรื่องสุขภาพ",
+  "hours": "ทุกวัน 07.00-18.00 น.",
+  "offerings": [
+   "ธูป (มีให้ฟรีที่ศาล)",
+   "กระดาษเงินกระดาษทอง (ศาลจัดไว้ให้)"
+  ],
+  "howToPray": [
+   "เริ่มไหว้ฟ้าดิน (ทีกง) ก่อน แล้วจึงไหว้องค์อื่นตามลำดับ"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Bangkok-Sathon_-_White_Jade_Tai_Hong_Gong_Shrine_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%84%E0%B8%95%E0%B9%89%E0%B8%AE%E0%B8%87%E0%B8%81%E0%B8%87%E0%B8%AB%E0%B8%A2%E0%B8%81%E0%B8%82%E0%B8%B2%E0%B8%A7_-_(2026_Jul)_-_IMG_17.jpg/1280px-Bangkok-Sathon_-_White_Jade_Tai_Hong_Gong_Shrine_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%84%E0%B8%95%E0%B9%89%E0%B8%AE%E0%B8%87%E0%B8%81%E0%B8%87%E0%B8%AB%E0%B8%A2%E0%B8%81%E0%B8%82%E0%B8%B2%E0%B8%A7_-_(2026_Jul)_-_IMG_17.jpg",
+    "alt": "ศาลเจ้าไต้ฮงกงหยกขาว เขตสาทร",
+    "author": "Chainwit.",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bangkok-Sathon_-_White_Jade_Tai_Hong_Gong_Shrine_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%84%E0%B8%95%E0%B9%89%E0%B8%AE%E0%B8%87%E0%B8%81%E0%B8%87%E0%B8%AB%E0%B8%A2%E0%B8%81%E0%B8%82%E0%B8%B2%E0%B8%A7_-_(2026_Jul)_-_IMG_17.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bangkok-Sathon_-_White_Jade_Tai_Hong_Gong_Shrine_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%84%E0%B8%95%E0%B9%89%E0%B8%AE%E0%B8%87%E0%B8%81%E0%B8%87%E0%B8%AB%E0%B8%A2%E0%B8%81%E0%B8%82%E0%B8%B2%E0%B8%A7_-_interior_(2026_Jul)_-_IMG_01.jpg/1280px-Bangkok-Sathon_-_White_Jade_Tai_Hong_Gong_Shrine_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%84%E0%B8%95%E0%B9%89%E0%B8%AE%E0%B8%87%E0%B8%81%E0%B8%87%E0%B8%AB%E0%B8%A2%E0%B8%81%E0%B8%82%E0%B8%B2%E0%B8%A7_-_interior_(2026_Jul)_-_IMG_01.jpg",
+    "alt": "ภายในศาลเจ้าไต้ฮงกงหยกขาว",
+    "author": "Chainwit.",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bangkok-Sathon_-_White_Jade_Tai_Hong_Gong_Shrine_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%84%E0%B8%95%E0%B9%89%E0%B8%AE%E0%B8%87%E0%B8%81%E0%B8%87%E0%B8%AB%E0%B8%A2%E0%B8%81%E0%B8%82%E0%B8%B2%E0%B8%A7_-_interior_(2026_Jul)_-_IMG_01.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก Wikidata Q140631622 สอดคล้องกับ OSM relation 21069010 (13.71511, 100.51907) และ GPS ภาพ Commons (13.7149-13.7152, 100.5187-100.5192)",
+   "เวลาเปิดจากข่าวช่วงเปิดศาล พ.ค. 2569 ควรเช็กอีกครั้ง",
+   "เป็นคนละแห่งกับศาลเจ้าไต้ฮงกงเดิมของป่อเต็กตึ๊งที่ถนนพลับพลาไชย"
+  ],
+  "sources": [
+   "https://www.thaipost.net/hi-light/999996/",
+   "https://www.pptvhd36.com/travel/thailand/276512",
+   "https://www.thaipost.net/news-update/1035331/"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้ากวนอู (คลองสาน)",
+  "nameEn": "Guan Yu Shrine, Khlong San",
+  "slug": "guan-yu-shrine-khlong-san",
+  "type": "chinese-shrine",
+  "deities": [
+   "เทพเจ้ากวนอู"
+  ],
+  "goals": [
+   "career",
+   "business"
+  ],
+  "province": "กรุงเทพมหานคร",
+  "district": "เขตคลองสาน",
+  "coords": "13.73740, 100.50003",
+  "description": "ศาลเจ้ากวนอูริมแม่น้ำเจ้าพระยา ในซอยสมเด็จเจ้าพระยา 3 สร้างโดยชาวจีนฮกเกี้ยน ภายหลังชาวแต้จิ๋วดูแล Wikipedia ระบุว่าเป็นศาลเจ้าเก่าแก่ที่สุดในกรุงเทพฯ ที่สร้างในสมัยรัตนโกสินทร์ ภายในมีองค์กวนอู 3 องค์ คนนิยมมาขอเรื่องการงาน ค้าขาย ที่ดิน และคดีความ",
+  "offerings": [
+   "ธูป 3 ดอก",
+   "เทียนแดง",
+   "น้ำชา"
+  ],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Guan_Yu_Shrine,_Khlong_San_06.23.jpg/1280px-Guan_Yu_Shrine,_Khlong_San_06.23.jpg",
+    "alt": "ศาลเจ้ากวนอู คลองสาน ริมแม่น้ำเจ้าพระยา",
+    "author": "Supanut Arunoprayote",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guan_Yu_Shrine,_Khlong_San_06.23.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM way 1196481588 (13.73737, 100.50008) ตรงกับ GPS ภาพ Commons (13.737397, 100.500023) และ Wikidata Q60765133 (13.737583, 100.500306) ห่างราว 35 ม.",
+   "ปีที่สร้างไม่ตรงกัน: Wikipedia ระบุอุทิศปี 2331 สร้างเสร็จ 2391 ส่วน MGR Online ระบุ 2279 จึงไม่ใส่ปีในคำอธิบาย"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%81%E0%B8%A7%E0%B8%99%E0%B8%AD%E0%B8%B9_%28%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%99%29",
+   "https://mgronline.com/travel/detail/9690000035133"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าโจวซือกง ตลาดน้อย",
+  "nameEn": "Cho Su Kong Shrine, Talat Noi",
+  "slug": "cho-su-kong-shrine-talat-noi",
+  "type": "chinese-shrine",
+  "deities": [
+   "พระหมอโจวซือกง"
+  ],
+  "goals": [
+   "health",
+   "money"
+  ],
+  "province": "กรุงเทพมหานคร",
+  "district": "เขตสัมพันธวงศ์",
+  "coords": "13.73442, 100.51171",
+  "description": "ศาลเจ้าจีนฮกเกี้ยนในย่านตลาดน้อย ติดริมแม่น้ำเจ้าพระยา อายุกว่า 200 ปี ประดิษฐานพระหมอโจวซือกง คนนิยมมาขอพรเรื่องสุขภาพ ความอยู่เย็นเป็นสุข และโชคลาภ",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Cho_Su_Kong_Shrine_06.23.jpg/1280px-Cho_Su_Kong_Shrine_06.23.jpg",
+    "alt": "ศาลเจ้าโจวซือกง ย่านตลาดน้อย",
+    "author": "Supanut Arunoprayote",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cho_Su_Kong_Shrine_06.23.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Cho_Su_Kong_Shrine_of_Talat_Noi_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%82%E0%B8%88%E0%B8%A7%E0%B8%8B%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%87_%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_(2021)_-_img_01.jpg/1280px-Cho_Su_Kong_Shrine_of_Talat_Noi_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%82%E0%B8%88%E0%B8%A7%E0%B8%8B%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%87_%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_(2021)_-_img_01.jpg",
+    "alt": "ด้านหน้าศาลเจ้าโจวซือกง ตลาดน้อย",
+    "author": "Chainwit.",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cho_Su_Kong_Shrine_of_Talat_Noi_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%82%E0%B8%88%E0%B8%A7%E0%B8%8B%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%87_%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_(2021)_-_img_01.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 3265832103 (13.73442, 100.51171) ตรงกับ GPS ภาพ Commons (13.734283, 100.511795) และ (13.734364, 100.511628)",
+   "คำอธิบายภาพ Commons ระบุสร้างปี 1804 (พ.ศ. 2347) แต่ไม่พบในแหล่งข่าว จึงใช้ อายุกว่า 200 ปี"
+  ],
+  "sources": [
+   "https://www.bangkokbiznews.com/lifestyle/1020402",
+   "https://has.hcu.ac.th/jspui/handle/123456789/4842"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าแม่กวนอิม มูลนิธิเทียนฟ้า",
+  "nameEn": "Guanyin Shrine, Thian Fah Foundation",
+  "slug": "guanyin-shrine-thian-fah",
+  "type": "chinese-shrine",
+  "deities": [
+   "เจ้าแม่กวนอิม"
+  ],
+  "goals": [
+   "health"
+  ],
+  "province": "กรุงเทพมหานคร",
+  "district": "เขตสัมพันธวงศ์",
+  "coords": "13.73806, 100.51218",
+  "description": "ศาลเจ้าแม่กวนอิมในมูลนิธิเทียนฟ้า ริมถนนเยาวราช ใกล้วงเวียนโอเดียน องค์เจ้าแม่กวนอิมปางประทานพรเป็นไม้แกะสลัก สันนิษฐานว่าสร้างในสมัยราชวงศ์ซ่ง อัญเชิญมาจากจีนราวปี 2501 คนนิยมมาขอพรเรื่องสุขภาพและให้หายจากโรคภัย",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Guanyin_Shrine,_Bangkok_07.23.jpg/1280px-Guanyin_Shrine,_Bangkok_07.23.jpg",
+    "alt": "ศาลเจ้าแม่กวนอิม มูลนิธิเทียนฟ้า เยาวราช",
+    "author": "Supanut Arunoprayote",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guanyin_Shrine,_Bangkok_07.23.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Kuan_Yin_Shrine,_Bangkok.jpg/1280px-Kuan_Yin_Shrine,_Bangkok.jpg",
+    "alt": "ศาลเจ้าแม่กวนอิม ถนนเยาวราช",
+    "author": "Christophe95",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kuan_Yin_Shrine,_Bangkok.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM way 305102128 (ศาลเจ้าแม่กวนอิม ซอยเยาวราช 7) ตรงกับ GPS ภาพ Commons (13.73815, 100.51255) และ (13.738106, 100.512552) ห่างราว 40 ม.",
+   "แหล่งข่าวไม่ระบุเวลาเปิด TrueID ระบุแค่เที่ยวชมได้ตลอดวัน"
+  ],
+  "sources": [
+   "https://www.bangkokbiznews.com/lifestyle/1020402",
+   "https://travel.trueid.net/detail/W9gPK5KDG5O4",
+   "https://www.thansettakij.com/lifestyle/travel-shopping/600393"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าพ่อหลักเมืองพระประแดง (นครเขื่อนขันธ์)",
+  "nameEn": "Phra Pradaeng City Pillar Shrine",
+  "slug": "lak-mueang-phra-pradaeng",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "สมุทรปราการ",
+  "district": "อำเภอพระประแดง",
+  "coords": "13.65888, 100.53381",
+  "description": "ศาลหลักเมืองของเมืองนครเขื่อนขันธ์ (พระประแดง) ที่รัชกาลที่ 2 โปรดให้สร้างเมืองริมแม่น้ำเจ้าพระยา ฝังเสาหลักเมืองเมื่อปี 2358 ชาวบ้านนับถือเป็นสิ่งศักดิ์สิทธิ์คู่บ้านคู่เมือง",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%94%E0%B8%87_%E0%B8%AD.%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%94%E0%B8%87_%E0%B8%88.%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3_(10).JPG/1280px-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%94%E0%B8%87_%E0%B8%AD.%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%94%E0%B8%87_%E0%B8%88.%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3_(10).JPG",
+    "alt": "ศาลเจ้าพ่อหลักเมืองพระประแดง จ.สมุทรปราการ",
+    "author": "กสิณธร ราชโอรส",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%94%E0%B8%87_%E0%B8%AD.%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%94%E0%B8%87_%E0%B8%88.%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3_(10).JPG"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Citypillarshrine_at_Samut_prakarn.jpg/1280px-Citypillarshrine_at_Samut_prakarn.jpg",
+    "alt": "ศาลเจ้าพ่อหลักเมืองพระประแดง",
+    "author": "Nipskung",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Citypillarshrine_at_Samut_prakarn.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก Wikidata Q99445130 ตรงกับ OSM way 1435605959 (13.65887, 100.53381) และ GPS ภาพ Commons (13.658894, 100.533777)",
+   "ข้อมูลยังบาง: แหล่งหลักคือบทความ TrueID เรื่องที่มีพระพิฆเนศบนยอดเสายังยืนยันไม่ได้ จึงไม่ใส่",
+   "ของไหว้/วิธีไหว้เฉพาะศาลนี้ไม่พบ เว้นไว้"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/l4XY0wpWr8gj"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลพันท้ายนรสิงห์ (ปากคลองโคกขาม)",
+  "nameEn": "Phanthai Norasing Shrine",
+  "slug": "phanthai-norasing-shrine-khok-kham",
+  "type": "shrine",
+  "deities": [
+   "พันท้ายนรสิงห์ (พ่อพันท้าย)"
+  ],
+  "goals": [
+   "protection",
+   "career"
+  ],
+  "province": "สมุทรสาคร",
+  "district": "อำเภอเมืองสมุทรสาคร",
+  "coords": "13.57350, 100.34578",
+  "description": "ศาลพันท้ายนรสิงห์แห่งแรกที่ปากคลองโคกขาม เชื่อกันว่าเป็นศาลเก่าแก่ที่สุดและจุดที่พันท้ายนรสิงห์ถูกประหาร ผู้ศรัทธาเรียกท่านว่าพ่อพันท้าย เชื่อว่าบนบานได้ทุกเรื่องยกเว้นเรื่องเกณฑ์ทหาร",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [
+   "มีผู้นิยมนำรูปปั้นไก่มาถวาย"
+  ],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C.jpg/1280px-%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C.jpg",
+    "alt": "ด้านหน้าศาลพันท้ายนรสิงห์ ปากคลองโคกขาม สมุทรสาคร",
+    "author": "Piith.hant",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%9B%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%81%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%A1%E0%B8%99%E0%B8%B3%E0%B8%A1%E0%B8%B2%E0%B8%96%E0%B8%A7%E0%B8%B2%E0%B8%A2%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C_1.jpg/1280px-%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%9B%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%81%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%A1%E0%B8%99%E0%B8%B3%E0%B8%A1%E0%B8%B2%E0%B8%96%E0%B8%A7%E0%B8%B2%E0%B8%A2%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C_1.jpg",
+    "alt": "รูปปั้นไก่ที่ผู้ศรัทธานำมาถวายที่ศาลพันท้ายนรสิงห์",
+    "author": "Piith.hant",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%9B%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%81%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%A1%E0%B8%99%E0%B8%B3%E0%B8%A1%E0%B8%B2%E0%B8%96%E0%B8%A7%E0%B8%B2%E0%B8%A2%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C_1.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก Wikipedia (13°34′24.6″N 100°20′44.8″E) ตรงกับ Wikidata Q42882014 (13.5735, 100.345778) และ GPS ภาพ Commons (13.573369, 100.346029)",
+   "มีอีกแห่งคือศาลใหม่ในอุทยานประวัติศาสตร์พันท้ายนรสิงห์ (13.5333, 100.3785, Wikidata Q55094346) ที่มีรูปเคารพขนาดเท่าจริง แยกเป็นรายการ phanthai-norasing-historical-park-shrine",
+   "เรื่องรูปปั้นไก่มาจากคำอธิบายภาพ Commons ของผู้ถ่ายเท่านั้น"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C",
+   "https://www.matichon.co.th/prachachuen/news_2515187",
+   "https://commons.wikimedia.org/wiki/Category:Phanthai_Norasing_Shrine"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "เทวาลัยคเณศร์ พระราชวังสนามจันทร์",
+  "nameEn": "Thewalai Khanet, Sanam Chan Palace",
+  "slug": "thewalai-khanet-sanam-chan",
+  "type": "devalai",
+  "deities": [
+   "พระคเณศ (พระพิฆเนศ)"
+  ],
+  "goals": [
+   "study",
+   "career"
+  ],
+  "province": "นครปฐม",
+  "district": "อำเภอเมืองนครปฐม",
+  "coords": "13.81962, 100.04545",
+  "description": "เทวาลัยพระคเณศกลางพระราชวังสนามจันทร์ สร้างตามพระราชดำริรัชกาลที่ 6 เปิดผ้าคลุมเทวรูปเมื่อ 1 ก.พ. 2461 เป็นเทพารักษ์ประจำพระราชวัง พระคเณศเป็นเทพผู้ขจัดอุปสรรคและเจ้าแห่งศิลปวิทยา และเป็นตรามหาวิทยาลัยศิลปากร",
+  "offerings": [],
+  "howToPray": [
+   "เทวาลัยอยู่แนวแกนเดียวกับพระที่นั่งพิมานปฐมและองค์พระปฐมเจดีย์ เชื่อว่าไหว้ครั้งเดียวได้สักการะทั้ง 3 แห่ง"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%99%E0%B8%B2%E0%B8%A1%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C_-%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9E%E0%B8%B4%E0%B8%86%E0%B9%80%E0%B8%99%E0%B8%A8_1.JPG/1280px-%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%99%E0%B8%B2%E0%B8%A1%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C_-%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9E%E0%B8%B4%E0%B8%86%E0%B9%80%E0%B8%99%E0%B8%A8_1.JPG",
+    "alt": "เทวาลัยคเณศร์ในพระราชวังสนามจันทร์ นครปฐม",
+    "author": "Pitpisit",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%99%E0%B8%B2%E0%B8%A1%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C_-%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9E%E0%B8%B4%E0%B8%86%E0%B9%80%E0%B8%99%E0%B8%A8_1.JPG"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก Wikidata Q137947495 ตรงกับ OSM way 1472988301 (13.81962, 100.04545)",
+   "goals study อนุมานจากฐานะเจ้าแห่งศิลปวิทยา ไม่มีแหล่งระบุเรื่องขอพรเฉพาะ",
+   "ไม่พบเวลาเปิดเทวาลัย Wikipedia ระบุพระราชวังเปิดให้ออกกำลังกาย 05.00-09.00 และ 16.00-20.00 น. ควรเช็กก่อนใส่ hours"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%99%E0%B8%B2%E0%B8%A1%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าแม่ทับทิม (พาหุรัด)",
+  "nameEn": "Chao Mae Thapthim Shrine, Phahurat",
+  "slug": "chao-mae-thapthim-shrine-phahurat",
+  "type": "chinese-shrine",
+  "deities": [
+   "เจ้าแม่ทับทิม (ม่าจ้อโป๋)"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "กรุงเทพมหานคร",
+  "district": "เขตพระนคร",
+  "coords": "13.74330, 100.50127",
+  "description": "ศาลเจ้าจีนเก่าแก่บนถนนจักรเพชร ใกล้เชิงสะพานพระปกเกล้าและย่านพาหุรัด จดทะเบียนเป็นศาสนสถานปี 2460 อาคารเดิมเสียหายจากระเบิดสมัยสงครามโลกครั้งที่ 2 และสร้างใหม่ปี 2498 องค์เจ้าแม่ทับทิมเป็นเทพีแห่งท้องทะเลและการเดินเรือ ตามตำนานสลักจากไม้จันทน์ที่ลอยมาติดปากคลองตลาด",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Chao_Mae_Thapthim_Shrine,_Wang_Burapha_20250215.jpg/1280px-Chao_Mae_Thapthim_Shrine,_Wang_Burapha_20250215.jpg",
+    "alt": "ศาลเจ้าแม่ทับทิม ถนนจักรเพชร พาหุรัด",
+    "author": "Supanut Arunoprayote",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chao_Mae_Thapthim_Shrine,_Wang_Burapha_20250215.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM way 1524815685 (13.74330, 100.50127) ตรงกับ Wikidata Q55607011 (13.7433, 100.5013) และ GPS ภาพ Commons (13.743203, 100.501237)",
+   "goals อนุมานจากความเชื่อเรื่องคุ้มครองการเดินทางทางน้ำ ไม่มีแหล่งระบุเรื่องขอพรเฉพาะ"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%97%E0%B8%B1%E0%B8%9A%E0%B8%97%E0%B8%B4%E0%B8%A1_%28%E0%B8%9E%E0%B8%B2%E0%B8%AB%E0%B8%B8%E0%B8%A3%E0%B8%B1%E0%B8%94%29"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าโรงเกือก (ศาลเจ้าพ่อฮ้อนหว่องกุง)",
+  "nameEn": "Rong Kuak Shrine, Talat Noi",
+  "slug": "rong-kuak-shrine-talat-noi",
+  "type": "chinese-shrine",
+  "deities": [
+   "เจ้าพ่อฮ้อนหว่องกุง",
+   "ไฉ่ซิงเอี๊ยะ"
+  ],
+  "goals": [
+   "money"
+  ],
+  "province": "กรุงเทพมหานคร",
+  "district": "เขตสัมพันธวงศ์",
+  "coords": "13.73284, 100.51208",
+  "description": "ศาลเจ้าของชาวจีนแคะริมแม่น้ำเจ้าพระยาในย่านตลาดน้อย พ่อค้าชาวจีนฮากกาเชิญเจ้าพ่อฮ้อนหว่องกุงจากจีนมาตั้งแต่สมัยรัชกาลที่ 5 ภายในมีเทพเจ้าแห่งโชคลาภไฉ่ซิงเอี๊ยะ ช่วงตรุษจีนมีคนมาไหว้มาก",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Rong_Kuak_Shrine_06.23.jpg/1280px-Rong_Kuak_Shrine_06.23.jpg",
+    "alt": "ศาลเจ้าโรงเกือก ย่านตลาดน้อย",
+    "author": "Supanut Arunoprayote",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rong_Kuak_Shrine_06.23.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Rong_Kuak_Shrine_Talat_Noi_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%81%E0%B8%B7%E0%B8%AD%E0%B8%81_%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_2021_June.jpg/1280px-Rong_Kuak_Shrine_Talat_Noi_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%81%E0%B8%B7%E0%B8%AD%E0%B8%81_%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_2021_June.jpg",
+    "alt": "ด้านหน้าศาลเจ้าโรงเกือก ตลาดน้อย",
+    "author": "Chainwit.",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rong_Kuak_Shrine_Talat_Noi_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%81%E0%B8%B7%E0%B8%AD%E0%B8%81_%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_2021_June.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM way 1157161871 (13.73281, 100.51219) ตรงกับ GPS ภาพ Commons (13.732847, 100.512077) และ (13.732839, 100.512061)",
+   "แหล่งข้อมูลหลักคือบทความ KTC แห่งเดียว"
+  ],
+  "sources": [
+   "https://www.ktc.co.th/article/travel-stories/thailand/th/thai-community-charm",
+   "https://has.hcu.ac.th/jspui/handle/123456789/4842"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลท้าวจตุโลกบาล เกษรวิลเลจ",
+  "nameEn": "Jatulokapala Shrine, Gaysorn",
+  "slug": "jatulokapala-shrine-gaysorn",
+  "type": "shrine",
+  "deities": [
+   "ท้าวจตุโลกบาล"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "กรุงเทพมหานคร",
+  "district": "เขตปทุมวัน",
+  "coords": "13.74473, 100.54082",
+  "description": "ศาลท้าวจตุโลกบาลบริเวณเกษรวิลเลจ อัญเชิญมาเมื่อ ก.พ. 2560 เป็นศาลล่าสุดในหมู่ศาลเทพรอบแยกราชประสงค์ เทวรูปรวมท้าวจตุโลกบาลทั้ง 4 องค์ไว้ในองค์เดียว ซึ่งปกติจะแยกเป็น 4 องค์",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Jatu_Lokapala_Shrine_Gaysorn_Bangkok.jpg/1280px-Jatu_Lokapala_Shrine_Gaysorn_Bangkok.jpg",
+    "alt": "ศาลท้าวจตุโลกบาล เกษรวิลเลจ ราชประสงค์",
+    "author": "Chainwit.",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jatu_Lokapala_Shrine_Gaysorn_Bangkok.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 11081806221 (Chatu Loka Pala Shrine) แหล่งเดียว ภาพ Commons ไม่มี GPS ยังไม่มี Wikidata",
+   "goals protection อนุมานจากฐานะเทพผู้รักษา 4 ทิศ ไม่มีแหล่งระบุเรื่องขอพรเฉพาะ",
+   "ไม่พบของไหว้/วิธีไหว้เฉพาะ เว้นไว้"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%A1%E0%B8%B5_%E0%B9%80%E0%B8%81%E0%B8%A9%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%A5%E0%B9%80%E0%B8%A5%E0%B8%88"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลพันท้ายนรสิงห์ (อุทยานประวัติศาสตร์พันท้ายนรสิงห์)",
+  "nameEn": "Phanthai Norasing Shrine, Historical Park",
+  "slug": "phanthai-norasing-historical-park-shrine",
+  "type": "shrine",
+  "deities": [
+   "พันท้ายนรสิงห์ (พ่อพันท้าย)",
+   "เจ้าแม่ศรีนวล"
+  ],
+  "goals": [
+   "protection",
+   "career"
+  ],
+  "province": "สมุทรสาคร",
+  "district": "อำเภอเมืองสมุทรสาคร",
+  "coords": "13.53330, 100.37853",
+  "description": "ศาลพันท้ายนรสิงห์ในอุทยานประวัติศาสตร์พันท้ายนรสิงห์ ตำบลพันท้ายนรสิงห์ กรมศิลปากรสร้างศาลใหม่ถัดจากศาลเก่าและกันพื้นที่ราว 100 ไร่ มีรูปเคารพขนาดเท่าตัวจริงในท่าถือท้ายเรือ ประดิษฐานเมื่อปี 2519 ภายในอุทยานมีศาลเจ้าแม่ศรีนวลที่เชื่อว่าเป็นภรรยาของท่าน",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C_(%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88)_02.jpg/1280px-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C_(%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88)_02.jpg",
+    "alt": "ศาลพันท้ายนรสิงห์ในอุทยานประวัติศาสตร์พันท้ายนรสิงห์ สมุทรสาคร",
+    "author": "Piith.hant",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C_(%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88)_02.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%AD_%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C_Statue_of_Phanthai_Norasing.JPG/1280px-%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%AD_%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C_Statue_of_Phanthai_Norasing.JPG",
+    "alt": "รูปหล่อพันท้ายนรสิงห์ในท่าถือท้ายเรือ",
+    "author": "กสิณธร ราชโอรส",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%AD_%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C_Statue_of_Phanthai_Norasing.JPG"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก GPS ภาพ Commons ศาลใหม่ (13.533299, 100.378534) ตรงกับ Wikidata Q55094346 (13.533056, 100.378333) และ Wikipedia (13°31′58.34″N 100°22′43.43″E)",
+   "ความเชื่อเรื่องบนบานได้ทุกเรื่องยกเว้นเกณฑ์ทหารมาจาก Wikipedia ซึ่งพูดถึงพ่อพันท้ายโดยรวม goals เป็นการอนุมาน",
+   "ภาพรูปหล่อมี GPS แค่ 2 ตำแหน่งทศนิยม (13.53, 100.38) แต่อยู่ใน Category:Phanthai Norasing Shrine"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C",
+   "https://travel.trueid.net/detail/8JNKGyYddE8"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลหลักเมืองพระนครศรีอยุธยา",
+  "nameEn": "Ayutthaya City Pillar Shrine",
+  "slug": "lak-mueang-ayutthaya",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "พระนครศรีอยุธยา",
+  "district": "อำเภอพระนครศรีอยุธยา",
+  "coords": "14.35187, 100.55989",
+  "description": "ศาลหลักเมืองในเขตเกาะเมืองอยุธยา หลักเมืองเดิมอยู่ใกล้ศาลพระกาฬและสี่แยกตะแลงแกง ศาลปัจจุบันเป็นอาคารทรงมณฑปจตุรมุข สร้างขึ้นใหม่ในวาระสมโภชกรุงรัตนโกสินทร์ 200 ปี (พ.ศ. 2525) โดยกรมศิลปากรออกแบบ เสาหลักเมืองทำจากไม้ชัยพฤกษ์ ยอดแกะสลักเป็นดอกบัวซ้อน 7 ชั้น",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ayutthaya_Provincial_City_Pillar_Shrine.jpg/1280px-Ayutthaya_Provincial_City_Pillar_Shrine.jpg",
+    "alt": "ศาลหลักเมืองพระนครศรีอยุธยา อาคารทรงมณฑปจตุรมุข",
+    "author": "Christophe95",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ayutthaya_Provincial_City_Pillar_Shrine.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM way 724700837 (14.35187, 100.55989) ตรงกับพิกัดกล้องของภาพ Commons (14.352098, 100.559847)",
+   "เวลาเปิดไม่ตรงกันระหว่างแหล่ง (09.00-17.00 กับ 06.00-18.00) จึงไม่ใส่ hours",
+   "แหล่งข้อมูลไม่ได้ระบุว่าคนนิยมขอเรื่องใดชัดเจน goals เป็นค่ามาตรฐานของศาลหลักเมือง"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/e1eBgJkYgw7Z",
+   "https://travel.trueid.net/detail/N3a8O6JnGDAV"
+  ]
+ },
+ {
+  "type": "chinese-shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลเจ้าแม่สร้อยดอกหมาก (วัดพนัญเชิง)",
+  "nameEn": "Chao Mae Soi Dok Mak Shrine, Wat Phanan Choeng",
+  "slug": "chao-mae-soi-dok-mak-ayutthaya",
+  "deities": [
+   "เจ้าแม่สร้อยดอกหมาก"
+  ],
+  "goals": [
+   "love",
+   "family",
+   "business"
+  ],
+  "province": "พระนครศรีอยุธยา",
+  "district": "อำเภอพระนครศรีอยุธยา",
+  "coords": "14.34452, 100.57923",
+  "description": "ศาลของพระนางสร้อยดอกหมาก หรือเจ้าแม่แอเนี้ย อยู่ในบริเวณวัดพนัญเชิง ไม่ไกลจากหลวงพ่อโต คนที่มาปิดทองหลวงพ่อโตมักแวะไหว้เจ้าแม่ด้วย นิยมมาขอเรื่องความรัก ขอลูก และขอให้ค้าขายสำเร็จ",
+  "offerings": [
+   "ดอกไม้ ธูป เทียน"
+  ],
+  "howToPray": [
+   "จุดธูปปักด้านนอกศาลก่อน แล้วค่อยเข้าไปไหว้ด้านใน",
+   "ผู้ชายไม่ควรแตะต้ององค์เจ้าแม่"
+  ],
+  "howToRepayVow": [
+   "นิยมแก้บนด้วยสร้อยไข่มุก เครื่องสำอาง ผ้าแพร หรือเรือสำเภาจำลอง",
+   "บางคนแก้บนด้วยการเชิดสิงโต"
+  ],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Saan_Chao_Mae_Soi_Dok_Mak_at_Wat_Panan_Choeng.JPG",
+    "alt": "ศาลเจ้าแม่สร้อยดอกหมาก ในวัดพนัญเชิง อยุธยา",
+    "author": "Sven.petersen",
+    "license": "Public Domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saan_Chao_Mae_Soi_Dok_Mak_at_Wat_Panan_Choeng.JPG"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%81.jpg/1280px-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%81.jpg",
+    "alt": "อาคารศาลเจ้าแม่สร้อยดอกหมาก วัดพนัญเชิง",
+    "author": "Pun2000pun",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%81.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM way 724591934 (ชื่อ ศาลเจ้าแม่สร้อยดอกหมาก, chinese_folk) 14.34452, 100.57923 แหล่งเดียว ยังไม่ได้ cross-check กับแหล่งที่สอง แต่อยู่ในพื้นที่วัดพนัญเชิงตรงกับภาพ Commons ที่ geosearch พบ",
+   "ศาลอยู่ในวัด ตั้ง type เป็น chinese-shrine ตามรูปแบบศาลเจ้าจีน",
+   "เวลาเปิด 08.30-18.00 น. พบใน search snippet เท่านั้น ยังไม่ได้ยืนยันจากหน้าที่อ่าน จึงไม่ใส่ hours"
+  ],
+  "sources": [
+   "https://www.posttoday.com/lifestyle/559093"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลหลักเมืองอ่างทอง",
+  "nameEn": "Ang Thong City Pillar Shrine",
+  "slug": "lak-mueang-ang-thong",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career"
+  ],
+  "province": "อ่างทอง",
+  "district": "อำเภอเมืองอ่างทอง",
+  "coords": "14.58823, 100.45396",
+  "description": "ศาลหลักเมืองตรงข้ามศาลากลางจังหวัดอ่างทอง อาคารจัตุรมุข 4 หน้า มีภาพจิตรกรรมฝาผนังครบทั้ง 4 ด้าน เสาหลักเมืองทำจากไม้ชัยพฤกษ์ ตั้งบนแท่นแปดเหลี่ยม คนนิยมมาขอให้ชีวิตมั่นคง ไร้อุปสรรค และการงานก้าวหน้า โดยเฉพาะวันเสาร์แรกของปี",
+  "offerings": [
+   "ดอกไม้ ธูป เทียน (มีศาลาจำหน่ายในบริเวณศาล)"
+  ],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Ang_Thong_%282024%29_-_Ang_Thong_City_Pillar_Shrine_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87_%28%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%B7%E0%B8%99%29.jpg/1280px-Ang_Thong_%282024%29_-_Ang_Thong_City_Pillar_Shrine_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87_%28%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%B7%E0%B8%99%29.jpg",
+    "alt": "ศาลหลักเมืองอ่างทองยามค่ำคืน",
+    "author": "Chainwit.",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ang_Thong_(2024)_-_Ang_Thong_City_Pillar_Shrine_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87_(%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%B7%E0%B8%99).jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 8856722886 (14.58823, 100.45396) ตรงกับพิกัดกล้องของภาพ Commons (14.588378, 100.454253)",
+   "ชื่อไฟล์ Commons สะกดว่า ศาลหลังเมือง (พิมพ์ผิดในชื่อไฟล์เดิม) ใช้ตามชื่อจริงของไฟล์"
+  ],
+  "sources": [
+   "https://www.naewna.com/likesara/779207"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลพระกาฬ (ลพบุรี)",
+  "nameEn": "San Phra Kan, Lop Buri",
+  "slug": "san-phra-kan-lopburi",
+  "deities": [
+   "เจ้าพ่อพระกาฬ"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "ลพบุรี",
+  "district": "อำเภอเมืองลพบุรี",
+  "coords": "14.80227, 100.61505",
+  "description": "ศาลศักดิ์สิทธิ์คู่เมืองลพบุรี กลางวงเวียนศรีสุนทร ถนนนารายณ์มหาราช ทางตะวันออกของพระปรางค์สามยอด ประดิษฐานเทวรูปเจ้าพ่อพระกาฬศิลปะลพบุรี ศาลหลังปัจจุบันสร้างราว พ.ศ. 2495-2496 บนฐานศิลาแลงเดิม รอบศาลมีลิงอาศัยอยู่หลายร้อยตัว ผู้ศรัทธานิยมปิดทององค์เทวรูป",
+  "hours": "ทุกวัน 08.30-17.30 น.",
+  "offerings": [
+   "ทองคำเปลวสำหรับปิดทององค์เทวรูป"
+  ],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/29/Lopbsanpkan0306a.jpg",
+    "alt": "ศาลพระกาฬ ลพบุรี",
+    "author": "Heinrich Damm",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lopbsanpkan0306a.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM way 1128114911 (14.80227, 100.61505) ตรงกับ Wikidata Q2219940 (14.80222, 100.615)",
+   "แหล่งข้อมูลไม่ได้ระบุว่าคนนิยมขอเรื่องใด goals ใส่เฉพาะ protection ในฐานะศาลคู่เมือง",
+   "ระวังลิงแย่งของ (ข้อสังเกตทั่วไป ยังไม่ได้ใส่ในเนื้อหา)"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/ศาลพระกาฬ",
+   "https://travel.trueid.net/detail/D4MMPRQrLp94"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลลูกศร (ศาลหลักเมืองลพบุรี)",
+  "nameEn": "San Luk Son (Lop Buri Tutelary Shrine)",
+  "slug": "san-luk-son-lopburi",
+  "deities": [
+   "เจ้าพ่อเจ้าแม่ศาลลูกศร"
+  ],
+  "goals": [
+   "protection",
+   "career"
+  ],
+  "province": "ลพบุรี",
+  "district": "อำเภอเมืองลพบุรี",
+  "coords": "14.80322, 100.6092",
+  "description": "ศาลศักดิ์สิทธิ์ของเมืองลพบุรีที่ผูกกับตำนานเมืองและเรื่องรามเกียรติ์ มีประเพณีนมัสการศาลลูกศรประจำปี และประเพณีแห่เจ้าพ่อเจ้าแม่ศาลลูกศร หัวหน้าส่วนราชการที่ย้ายมาประจำลพบุรีมักมาสักการะที่นี่",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%A8%E0%B8%A3_%E0%B8%A8%E0%B8%A3%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A3%E0%B8%B2%E0%B8%A1.jpg/1280px-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%A8%E0%B8%A3_%E0%B8%A8%E0%B8%A3%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A3%E0%B8%B2%E0%B8%A1.jpg",
+    "alt": "ศาลลูกศร ลพบุรี",
+    "author": "Wangwenhui",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%A8%E0%B8%A3_%E0%B8%A8%E0%B8%A3%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A3%E0%B8%B2%E0%B8%A1.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 14185007563 (เจ้าพ่อเจ้าแม่ศาลลูกศร, ถนนพระราม) 14.80322, 100.6092 Wikidata Q13021395 ให้พิกัดหยาบ 14.80, 100.61 ซึ่งสอดคล้องกัน",
+   "แหล่งที่อ่านเป็นบทคัดย่องานวิจัย ไม่ได้ระบุเรื่องที่คนนิยมขอ goals career อิงจากธรรมเนียมการสักการะของหัวหน้าส่วนราชการ ควรตรวจซ้ำ",
+   "เนื้อหายังบาง ควรเติมจากแหล่งท้องถิ่นก่อน publish"
+  ],
+  "sources": [
+   "https://so06.tci-thaijo.org/index.php/jra/article/view/264303"
+  ]
+ },
+ {
+  "type": "chinese-shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลเจ้าพ่อหลักเมืองสุพรรณบุรี",
+  "nameEn": "Suphan Buri City Pillar Shrine",
+  "slug": "lak-mueang-suphanburi",
+  "deities": [
+   "เจ้าพ่อหลักเมือง (เทวรูปพระนารายณ์)"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "สุพรรณบุรี",
+  "district": "อำเภอเมืองสุพรรณบุรี",
+  "coords": "14.47849, 100.11106",
+  "description": "ศาลหลักเมืองเก่าแก่ตั้งแต่สมัยอยุธยา ถนนมาลัยแมน ตำบลรั้วใหญ่ ภายในยังเก็บอาคารทรงไทยเดิมไว้แล้วครอบด้วยอาคารแบบเก๋งจีน ประดิษฐานเทวรูปศิลาสมัยลพบุรีที่ชาวบ้านนับถือเป็นเจ้าพ่อหลักเมือง เคารพทั้งคนไทยและคนจีน ติดกับอุทยานมังกรสวรรค์",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg/1280px-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg",
+    "alt": "ศาลเจ้าพ่อหลักเมืองสุพรรณบุรี อาคารแบบเก๋งจีน",
+    "author": "Tnwq",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Lakmueangsuphanburi06.jpg",
+    "alt": "ศาลหลักเมืองสุพรรณบุรี",
+    "author": "Heinrich Damm",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lakmueangsuphanburi06.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 14109371999 (14.47849, 100.11106) ตรงกับ Wikidata Q10465490 (14.478495, 100.111084) และพิกัดกล้องภาพ Commons (14.478056, 100.110833)",
+   "type เป็น chinese-shrine เพราะอาคารเป็นเก๋งจีน แม้จะเป็นศาลหลักเมือง",
+   "เวลาเปิดไม่ตรงกันระหว่างแหล่ง (trueid 08.00-17.00) จึงไม่ใส่ hours"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/ศาลหลักเมืองสุพรรณบุรี",
+   "https://travel.trueid.net/detail/N3a8O6JnGDAV"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลหลักเมืองกาญจนบุรี",
+  "nameEn": "Kanchanaburi City Pillar Shrine",
+  "slug": "lak-mueang-kanchanaburi",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "กาญจนบุรี",
+  "district": "อำเภอเมืองกาญจนบุรี",
+  "coords": "14.02036, 99.53065",
+  "description": "ศาลหลักเมืองบนถนนหลักเมือง ตำบลปากแพรก สร้างเมื่อ พ.ศ. 2503 เป็นอาคารจัตุรมุขหลังคาทรงไทย หลักเมืองเป็นเสาหัวเม็ดทรงมัน ด้านหน้ามีศิลาจารึกและจารึกไม้สักบอกวันสร้างเมือง มีงานไหว้ศาลหลักเมืองทุกปีในวันขึ้น 6 ค่ำ เดือน 6",
+  "hours": "ทุกวัน 05.00-20.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Kanchanaburi_Lak_Mueang.jpg",
+    "alt": "ศาลหลักเมืองกาญจนบุรี",
+    "author": "Ahoerstemeier",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanchanaburi_Lak_Mueang.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 14174702909 (14.02036, 99.53065) และ node 4828756221 (14.02021, 99.53005) ห่างกันราว 70 ม. Nominatim reverse ยืนยันชื่อ ศาลหลักเมืองกาญจนบุรี ถนนหลักเมือง",
+   "goals เป็นค่ามาตรฐานของศาลหลักเมือง แหล่งไม่ได้ระบุเรื่องที่ขอ"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/N3a8O6JnGDAV"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลหลักเมืองราชบุรี",
+  "nameEn": "Ratchaburi City Pillar Shrine",
+  "slug": "lak-mueang-ratchaburi",
+  "deities": [
+   "เจ้าพ่อหลักเมือง",
+   "พระพิฆเนศ"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "ราชบุรี",
+  "district": "อำเภอเมืองราชบุรี",
+  "coords": "13.54412, 99.82548",
+  "description": "ศาลหลักเมืองในเขตกำแพงเมืองเก่าราชบุรี ตั้งครั้งแรกในรัชกาลที่ 2 และย้ายที่หลายครั้ง อาคารปัจจุบันกรมศิลปากรออกแบบ สร้างเมื่อ พ.ศ. 2527 ในบริเวณมีพระพิฆเนศและรูปปั้นช้าง คนนิยมมาปิดทองไหว้ขอพรเพื่อความเป็นสิริมงคล",
+  "hours": "ทุกวัน 06.00-19.00 น.",
+  "offerings": [
+   "ทองคำเปลวสำหรับปิดทอง"
+  ],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Ratchaburi_Lak_Mueang_1.jpg",
+    "alt": "ศาลหลักเมืองราชบุรี",
+    "author": "Ahoerstemeier",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ratchaburi_Lak_Mueang_1.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Ratchaburi_Lak_Mueang_-_panoramio.jpg",
+    "alt": "ศาลหลักเมืองราชบุรี มุมภายนอก",
+    "author": "Andreas Hörstemeier",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ratchaburi_Lak_Mueang_-_panoramio.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 2408582421 (ศาลเจ้าพ่อหลักเมือง, ถนนรถไฟ, ย่านหลักเมือง) 13.54412, 99.82548 ตรงกับพิกัดกล้องภาพ Commons 'Ratchaburi Lak Mueang - panoramio.jpg' (13.544122, 99.825647)",
+   "trueid ระบุที่อยู่ ตำบลพงสวาย ส่วน OSM ระบุย่านหลักเมือง ควรตรวจชื่อตำบลอีกครั้ง",
+   "goals เป็นค่ามาตรฐานของศาลหลักเมือง"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/0lO5WKQPBmM9",
+   "https://travel.trueid.net/detail/N3a8O6JnGDAV"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลหลักเมืองเพชรบุรี",
+  "nameEn": "Phetchaburi City Pillar Shrine",
+  "slug": "lak-mueang-phetchaburi",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "เพชรบุรี",
+  "district": "อำเภอเมืองเพชรบุรี",
+  "coords": "13.11183, 99.93961",
+  "description": "ศาลหลักเมืองแห่งใหม่ของเพชรบุรี ตำบลคลองกระแชง อาคารออกแบบโดยกรมศิลปากร เสาหลักเมืองทำจากไม้ชัยพฤกษ์ รัชกาลที่ 9 เสด็จมาทรงเจิมเสาหลักเมืองเมื่อ 12 มิถุนายน พ.ศ. 2520 ยังมีศาลหลักเมืองหลังเก่าอยู่อีกแห่งในตัวเมือง",
+  "hours": "ทุกวัน 08.00-18.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Phetchaburi_lakmung_-_panoramio.jpg/1280px-Phetchaburi_lakmung_-_panoramio.jpg",
+    "alt": "ศาลหลักเมืองเพชรบุรี",
+    "author": "Boonchai C",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phetchaburi_lakmung_-_panoramio.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 2295500492 (13.11183, 99.93961) ตรงกับ Wikidata Q102184837 (13.111858, 99.939622) และพิกัดกล้องภาพ Commons (13.111789, 99.93958)",
+   "ศาลหลักเมืองเก่าอยู่ที่ราว 13.10365, 99.95278 (OSM) ไม่ใช่รายการนี้",
+   "goals เป็นค่ามาตรฐานของศาลหลักเมือง"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/VPVxAZp5lDAo"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลหลักเมืองประจวบคีรีขันธ์",
+  "nameEn": "Prachuap Khiri Khan City Pillar Shrine",
+  "slug": "lak-mueang-prachuap-khiri-khan",
+  "deities": [
+   "เจ้าพ่อหลักเมือง (องค์จตุโชค)"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "ประจวบคีรีขันธ์",
+  "district": "อำเภอเมืองประจวบคีรีขันธ์",
+  "coords": "11.81117, 99.79671",
+  "description": "ศาลหลักเมืองที่ขึ้นชื่อว่างามที่สุดแห่งหนึ่งของไทย ออกแบบตามศิลปะลพบุรี แกะสลักลวดลายประณีต องค์หลักเมืองเรียกว่า จตุโชค มีสี่เศียรสี่พักตร์ เปิดเมื่อ 20 สิงหาคม พ.ศ. 2537",
+  "hours": "ทุกวัน 08.00-19.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Lak_Mueang_of_Prachuap_Khiri_Khan_-_panoramio.jpg/1280px-Lak_Mueang_of_Prachuap_Khiri_Khan_-_panoramio.jpg",
+    "alt": "ศาลหลักเมืองประจวบคีรีขันธ์",
+    "author": "Andreas Hörstemeier",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lak_Mueang_of_Prachuap_Khiri_Khan_-_panoramio.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 2401119016 (11.81117, 99.79671) ตรงกับ Wikidata Q13021398 (11.811188, 99.79671) ภาพ Commons ถ่ายจาก 11.810644, 99.796842",
+   "goals เป็นค่ามาตรฐานของศาลหลักเมือง"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/N3a8O6JnGDAV"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลหลักเมืองสมุทรสงคราม",
+  "nameEn": "Samut Songkhram City Pillar Shrine",
+  "slug": "lak-mueang-samut-songkhram",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "สมุทรสงคราม",
+  "district": "อำเภอเมืองสมุทรสงคราม",
+  "coords": "13.41194, 100.00269",
+  "description": "ศาลหลักเมืองบนถนนเอกชัย ตัวเมืองแม่กลอง เป็นมณฑปจตุรมุขทรงไทย ก่ออิฐฉาบปูนทาสีเหลืองทอง หลังคาซ้อนสองชั้น ยอดปรางค์ประดับฝักเพกา เสาหลักเมืองเป็นไม้ชัยพฤกษ์ ฐานแกะเป็นกลีบบัว หัวเสาเป็นดอกบัว",
+  "hours": "ทุกวัน 08.30-17.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Lak_Mueang_Samut_Songkhram_-_panoramio.jpg",
+    "alt": "ศาลหลักเมืองสมุทรสงคราม",
+    "author": "Andreas Hörstemeier",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lak_Mueang_Samut_Songkhram_-_panoramio.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM way 829998820 (13.41194, 100.00269) ตรงกับพิกัดกล้องภาพ Commons (13.412074, 100.002537)",
+   "goals เป็นค่ามาตรฐานของศาลหลักเมือง"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/N3a8O6JnGDAV"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลสมเด็จพระเจ้าตากสินมหาราช (จันทบุรี)",
+  "nameEn": "King Taksin the Great Shrine, Chanthaburi",
+  "slug": "king-taksin-shrine-chanthaburi",
+  "deities": [
+   "สมเด็จพระเจ้าตากสินมหาราช"
+  ],
+  "goals": [
+   "protection",
+   "career"
+  ],
+  "province": "จันทบุรี",
+  "district": "อำเภอเมืองจันทบุรี",
+  "coords": "12.6165, 102.11008",
+  "description": "ศาลคู่เมืองจันทบุรี หน้าค่ายตากสิน ใกล้ศาลหลักเมือง จันทบุรีเป็นเมืองที่พระเจ้าตากรวบรวมไพร่พลก่อนกู้เอกราช ศาลเดิมสร้าง พ.ศ. 2463 ศาลใหม่ชาวจันท์ร่วมกันสร้างเมื่อ พ.ศ. 2534 เป็นอาคารเก้าเหลี่ยมหินอ่อน หลังคารูปพระมาลา ภายในมีพระบรมรูปทองเหลืองรมดำประทับนั่ง",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%95%E0%B8%B2%E0%B8%81%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%8A_%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg/1280px-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%95%E0%B8%B2%E0%B8%81%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%8A_%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg",
+    "alt": "ศาลสมเด็จพระเจ้าตากสินมหาราช จันทบุรี",
+    "author": "Chainwit.",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%95%E0%B8%B2%E0%B8%81%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%8A_%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM way 554612054 (King Taksin the Great Shrine) 12.6165, 102.11008 มีอีก way 551755363 (12.61636, 102.10991) ชื่อเดียวกัน ห่างราว 25 ม. ศาลหลักเมือง (OSM way 551755362) อยู่ติดกันที่ 12.61616, 102.11062",
+   "แหล่งที่อ่านไม่ได้ระบุเรื่องที่ขอ goals เป็นการตีความ (ศาลวีรกษัตริย์) ควรตรวจ"
+  ],
+  "sources": [
+   "https://mgronline.com/travel/detail/9650000123019"
+  ]
+ },
+ {
+  "type": "chinese-shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลเจ้าพ่อเขาใหญ่ เกาะสีชัง",
+  "nameEn": "Chao Pho Khao Yai Shrine, Ko Sichang",
+  "slug": "chao-pho-khao-yai-ko-sichang",
+  "deities": [
+   "เจ้าพ่อเขาใหญ่",
+   "เจ้าแม่กวนอิม",
+   "ไฉ่ซิงเอี๊ย",
+   "พระสังกัจจายน์",
+   "เห้งเจีย"
+  ],
+  "goals": [
+   "business",
+   "career",
+   "money"
+  ],
+  "province": "ชลบุรี",
+  "district": "อำเภอเกาะสีชัง",
+  "coords": "13.16818, 100.80666",
+  "description": "ศาลเจ้าเชิงเขาบนเกาะสีชัง สถาปัตยกรรมผสมศาลเจ้าจีนกับวัดไทย ตามจารึกราว พ.ศ. 2426 ชาวจีนเห็นแสงไฟบนเขาแล้วพบหินย้อยคล้ายศีรษะคน จึงนับถือเป็นเจ้าพ่อ พ่อค้านิยมมาไหว้ขอให้ค้าขายเจริญ การงานสำเร็จ และโชคลาภ",
+  "hours": "ทุกวัน 08.00-20.00 น.",
+  "offerings": [],
+  "howToPray": [
+   "ในบริเวณมีหลายจุดไหว้ เช่น เจ้าพ่อเสือ เจ้าแม่กวนอิม ศาลแปดเซียน ไฉ่ซิงเอี๊ย พระสังกัจจายน์ และเห้งเจีย"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Wat_Saan_Chao_Pho_Khao_Yai_06.JPG/1280px-Wat_Saan_Chao_Pho_Khao_Yai_06.JPG",
+    "alt": "ศาลเจ้าพ่อเขาใหญ่ เกาะสีชัง",
+    "author": "Ruslik0",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Saan_Chao_Pho_Khao_Yai_06.JPG"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM way 412146792 (13.16818, 100.80666) ตรงกับ Wikidata Q63107728 (13.16826, 100.806666)",
+   "ไปจากท่าเรือเกาะลอย ศรีราชา (ข้อมูลเรือจาก search snippet ยังไม่ได้ยืนยัน จึงไม่ใส่)",
+   "มีประเพณีนมัสการเจ้าพ่อราว 45 วันหลังตรุษจีน และงานรับส้ม-ปิดฮู้ก่อนตรุษจีน"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/ศาลเจ้าพ่อเขาใหญ่",
+   "https://travel.trueid.net/detail/O21qmGKVeKO2"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลเจ้าแม่สามมุข (เขาสามมุข)",
+  "nameEn": "Chao Mae Sam Muk Shrine",
+  "slug": "chao-mae-sam-muk-chonburi",
+  "deities": [
+   "เจ้าแม่สามมุข"
+  ],
+  "goals": [
+   "business",
+   "protection"
+  ],
+  "province": "ชลบุรี",
+  "district": "อำเภอเมืองชลบุรี",
+  "coords": "13.31653, 100.90365",
+  "description": "ศาลเก่าแก่บนเขาสามมุข ระหว่างอ่างศิลากับหาดบางแสน ผูกกับตำนานรักของสามมุขกับหนุ่มแสน แม่ค้าและชาวประมงนับถือมาก มักแวะไหว้ก่อนออกทะเล ลิงบนเขาเชื่อกันว่าเป็นบริวารของเจ้าแม่",
+  "hours": "ทุกวัน 06.00-18.00 น.",
+  "offerings": [
+   "มะพร้าวอ่อน",
+   "ขนมเปี๊ยะ",
+   "ผลไม้"
+  ],
+  "howToPray": [
+   "ไม่ควรทำร้ายหรือจับลิงบนเขา เพราะเชื่อกันว่าเป็นบริวารของเจ้าแม่"
+  ],
+  "howToRepayVow": [
+   "จุดประทัด",
+   "ถวายสร้อยไข่มุก"
+  ],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%A1%E0%B8%B8%E0%B8%81_-_panoramio.jpg/1280px-%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%A1%E0%B8%B8%E0%B8%81_-_panoramio.jpg",
+    "alt": "ศาลเจ้าแม่สามมุข บนเขาสามมุข ชลบุรี",
+    "author": "Boonchai C",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%A1%E0%B8%B8%E0%B8%81_-_panoramio.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 7712592297 (ศาลเจ้าแม่สามมุก) 13.31653, 100.90365 ตรงกับพิกัดกล้องภาพ Commons (13.316726, 100.90363)",
+   "แหล่งข่าวบอกว่ามีศาลเจ้าแม่สามมุข 2 แห่ง (ศาลไทยและศาลจีน) รายการนี้คือจุดตาม OSM/ภาพ ควรตรวจว่าเป็นศาลไหน"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/rgJawZArreMb"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลหลักเมืองปราจีนบุรี",
+  "nameEn": "Prachin Buri City Pillar Shrine",
+  "slug": "lak-mueang-prachinburi",
+  "deities": [
+   "เจ้าพ่อหลักเมือง",
+   "พระหลักเมือง"
+  ],
+  "goals": [
+   "career",
+   "protection"
+  ],
+  "province": "ปราจีนบุรี",
+  "district": "อำเภอเมืองปราจีนบุรี",
+  "coords": "14.05259, 101.37082",
+  "description": "ศาลหลักเมืองบนถนนหน้าเมือง เริ่มสร้างราว พ.ศ. 2410 สมัยรัชกาลที่ 4 อาคารทรงไทยจตุรมุขยอดปรางค์ตามแบบกรมศิลปากร เสาหลักเมืองเป็นไม้ชัยพฤกษ์ ยอดแกะเป็นสี่หน้า ข้างกันประดิษฐานพระหลักเมืองทรงเครื่องมหาจักรพรรดิ คนส่วนใหญ่มาขอพรเรื่องการงาน",
+  "hours": "ทุกวัน 08.00-17.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_-_panoramio.jpg/1280px-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_-_panoramio.jpg",
+    "alt": "ศาลหลักเมืองปราจีนบุรี",
+    "author": "Charin ninsu",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_-_panoramio.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 6183136402 (ศาลพระหลักเมือง, ถนนหน้าเมือง) 14.05259, 101.37082 ตรงกับพิกัดกล้องภาพ Commons (14.052507, 101.370903)"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/P2yMPN6aVgZ2"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลหลักเมืองนครนายก",
+  "nameEn": "Nakhon Nayok City Pillar Shrine",
+  "slug": "lak-mueang-nakhon-nayok",
+  "deities": [
+   "เจ้าพ่อหลักเมือง",
+   "พระสยามเทวาธิราช"
+  ],
+  "goals": [
+   "protection",
+   "career"
+  ],
+  "province": "นครนายก",
+  "district": "อำเภอเมืองนครนายก",
+  "coords": "14.20242, 101.21551",
+  "description": "ศาลหลักเมืองริมแม่น้ำนครนายก ในสวนสาธารณะเฉลิมพระเกียรติ ร.9 ภายในมีเสาหลักเมืองเดิมเป็นไม้ สูงราว 113 ซม. ยอดแกะเป็นดอกบัวตูม ตั้งคู่กับเสาใหม่ ราว พ.ศ. 2453 เคยย้ายเสามาไว้ที่อื่นเมื่อศาลเดิมทรุดโทรม",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Nakhon_Nayok_City_Pillar_Shrine_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81_%282024%29_-_%E0%B8%A0%E0%B8%B2%E0%B8%9E_01.jpg/1280px-Nakhon_Nayok_City_Pillar_Shrine_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81_%282024%29_-_%E0%B8%A0%E0%B8%B2%E0%B8%9E_01.jpg",
+    "alt": "ศาลหลักเมืองนครนายก",
+    "author": "Chainwit.",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nakhon_Nayok_City_Pillar_Shrine_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81_(2024)_-_%E0%B8%A0%E0%B8%B2%E0%B8%9E_01.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM way 1312834293 (14.20242, 101.21551) ตรงกับพิกัดกล้องภาพ Commons (14.202375, 101.215028)",
+   "แหล่งข้อมูลเป็นเว็บท่องเที่ยว (lovethailand) เวลาเปิดไม่ตรงกันระหว่างแหล่ง จึงไม่ใส่ hours",
+   "goals เป็นค่ามาตรฐานของศาลหลักเมือง"
+  ],
+  "sources": [
+   "https://www.lovethailand.org/travel/en/21-Nakhon-Nayok/1713-City-Pillar-Shrine.html"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลหลักเมืองชัยนาท",
+  "nameEn": "Chai Nat City Pillar Shrine",
+  "slug": "lak-mueang-chai-nat",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "ชัยนาท",
+  "district": "อำเภอเมืองชัยนาท",
+  "coords": "15.1844, 100.12286",
+  "description": "ศาลหลักเมืองริมเขื่อนหินริมแม่น้ำเจ้าพระยา กลางเมืองชัยนาท หลังคาทรงไทย ภายในประดิษฐานเสาหลักเมือง คนนิยมมาขอพรให้ชีวิตมั่นคง การงานสำเร็จ และเจริญรุ่งเรือง มีพิธีบวงสรวงช่วงปีใหม่ไทยและวันสำคัญทางศาสนา",
+  "hours": "ทุกวัน 06.00-18.00 น.",
+  "offerings": [
+   "ธูป เทียน ดอกไม้ หรือพวงมาลัย"
+  ],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Lak_Mueang_Chainat1.jpg/1280px-Lak_Mueang_Chainat1.jpg",
+    "alt": "ศาลหลักเมืองชัยนาท",
+    "author": "Media lib",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lak_Mueang_Chainat1.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 13957012305 (15.1844, 100.12286) Nominatim reverse ยืนยันชื่อ ศาลหลักเมืองชัยนาท ถนนพรหมประเสริฐ ยังไม่มีแหล่งที่สองที่เป็นอิสระ (ภาพ Commons ไม่มีพิกัด)",
+   "แหล่งข้อมูลเป็นเว็บท่องเที่ยวแหล่งเดียว (lovethailand) ควรหาแหล่งทางการเพิ่ม"
+  ],
+  "sources": [
+   "https://www.lovethailand.org/travel/en/18-Chai-Nat/5345-Chainat-City-Pillar-Shrine.html"
+  ]
+ },
+ {
+  "name": "พระบรมราชานุสาวรีย์สามกษัตริย์",
+  "nameEn": "Three Kings Monument",
+  "slug": "three-kings-monument-chiang-mai",
+  "type": "shrine",
+  "deities": [
+   "พญามังราย",
+   "พ่อขุนรามคำแหงมหาราช",
+   "พญางำเมือง"
+  ],
+  "goals": [
+   "career",
+   "protection"
+  ],
+  "province": "เชียงใหม่",
+  "district": "อำเภอเมืองเชียงใหม่",
+  "coords": "18.79024, 98.98733",
+  "description": "อนุสาวรีย์ของ 3 กษัตริย์ผู้ร่วมกันสร้างเวียงเชียงใหม่ คือ พญามังราย (องค์กลาง) พ่อขุนรามคำแหงมหาราช และพญางำเมือง ตั้งอยู่กลางเวียงหน้าหอศิลปวัฒนธรรมเมืองเชียงใหม่ มีลานกว้างด้านหน้าเรียกว่าข่วงสามกษัตริย์ เปิดเมื่อวันที่ 30 มกราคม 2527 และเป็นจุดที่คนเชียงใหม่มาสักการะ",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Three_Kings_Monument,_Chiang_Mai_(I).jpg/1280px-Three_Kings_Monument,_Chiang_Mai_(I).jpg",
+    "alt": "พระบรมราชานุสาวรีย์สามกษัตริย์ กลางเวียงเชียงใหม่",
+    "author": "Supanut Arunoprayote",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Three_Kings_Monument,_Chiang_Mai_(I).jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/DrieKoningenChiangMai.jpg/1280px-DrieKoningenChiangMai.jpg",
+    "alt": "อนุสาวรีย์สามกษัตริย์ หน้าหอศิลปวัฒนธรรมเมืองเชียงใหม่",
+    "author": "FredTC",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:DrieKoningenChiangMai.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก th.wikipedia (18.79024167, 98.98733333) ตรงกับ OSM node 1619287904 (18.79023, 98.98735) และ GPS ภาพ Commons",
+   "เป็นอนุสาวรีย์ ไม่ใช่ศาลในความหมายแคบ แต่เป็นจุดสักการะ แหล่งที่อ่านไม่ได้ระบุเครื่องสักการะหรือเรื่องที่นิยมขอ goals จึงใส่แบบกว้าง ควรตรวจก่อนเผยแพร่"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%A3%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%81%E0%B8%A9%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B4%E0%B8%A2%E0%B9%8C",
+   "https://www.openstreetmap.org/node/1619287904"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าพ่อหลักเมืองแจ่งกะต๊ำ",
+  "nameEn": "Chaeng Kra Tam City Pillar Shrine",
+  "slug": "lak-mueang-chaeng-kra-tam-chiang-mai",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "เชียงใหม่",
+  "district": "อำเภอเมืองเชียงใหม่",
+  "coords": "18.78182, 98.99284",
+  "description": "ศาลเจ้าพ่อหลักเมืองบริเวณแจ่งกะต๊ำ มุมกำแพงเมืองเก่าเชียงใหม่ ริมถนนมูลเมือง เป็นศาลเล็กๆ ที่คนในย่านนี้มากราบไหว้",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B9%81%E0%B8%88%E0%B9%88%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B9%8A%E0%B8%B3_(2026)_-_IMG_01.jpg/1280px-%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B9%81%E0%B8%88%E0%B9%88%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B9%8A%E0%B8%B3_(2026)_-_IMG_01.jpg",
+    "alt": "ศาลเจ้าพ่อหลักเมืองแจ่งกะต๊ำ เชียงใหม่",
+    "author": "Chainwit.",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B9%81%E0%B8%88%E0%B9%88%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B9%8A%E0%B8%B3_(2026)_-_IMG_01.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 11226861564 (18.78182, 98.99284) ตรงกับ GPS ภาพ Commons (18.781856, 98.992814) ห่างแจ่งก๊ะต๊ำ (OSM way 791602197) ราว 50 ม.",
+   "ข้อมูลประวัติน้อยมาก ไม่พบแหล่งข่าว/ททท. อธิบายศาลนี้ คำอธิบายจึงสั้น ควรเติมข้อมูลจากพื้นที่ก่อนเผยแพร่",
+   "ชื่อในไฟล์ Commons และ OSM สะกด แจ่งกระต๊ำ ส่วนชื่อมุมเมืองสะกดได้หลายแบบ (แจ่งกะต๊ำ/แจ่งก๊ะต๊ำ/แจ่งขะต๊ำ)"
+  ],
+  "sources": [
+   "https://commons.wikimedia.org/wiki/Category:San_Chao_Pho_Lak_Mueang_Chaeng_Kra_Tam",
+   "https://www.openstreetmap.org/node/11226861564"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "อนุสาวรีย์พ่อขุนเม็งรายมหาราช (พญามังราย)",
+  "nameEn": "King Mangrai Monument",
+  "slug": "king-mangrai-monument-chiang-rai",
+  "type": "shrine",
+  "deities": [
+   "พญามังราย"
+  ],
+  "goals": [
+   "protection",
+   "career"
+  ],
+  "province": "เชียงราย",
+  "district": "อำเภอเมืองเชียงราย",
+  "coords": "19.91045, 99.84010",
+  "description": "อนุสาวรีย์พญามังราย ปฐมกษัตริย์ราชวงศ์มังรายและผู้สร้างเมืองเชียงราย ตั้งอยู่ที่แยกพ่อขุน ในตัวเมืองเชียงราย คนเชียงรายและนักท่องเที่ยวนิยมแวะสักการะเพื่อความเป็นสิริมงคล และในงานฉลองการก่อตั้งเมืองจะมีพิธีสักการะที่ลานอนุสาวรีย์",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/King_Mangrai_Monument_%E0%B8%AD%E0%B8%99%E0%B8%B8%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2_%E0%B8%AB%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A2%E0%B8%81%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%AF_%28October_2021%29_-_img_01.jpg/1280px-King_Mangrai_Monument_%E0%B8%AD%E0%B8%99%E0%B8%B8%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2_%E0%B8%AB%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A2%E0%B8%81%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%AF_%28October_2021%29_-_img_01.jpg",
+    "alt": "อนุสาวรีย์พ่อขุนเม็งรายมหาราช แยกพ่อขุน เชียงราย",
+    "author": "Chainwit.",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:King_Mangrai_Monument_%E0%B8%AD%E0%B8%99%E0%B8%B8%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2_%E0%B8%AB%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A2%E0%B8%81%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%AF_(October_2021)_-_img_01.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/King_Mangrai_Monument_%E0%B8%AD%E0%B8%99%E0%B8%B8%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2_%E0%B8%AB%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A2%E0%B8%81%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%AF_%28October_2021%29_-_img_03.jpg/1280px-King_Mangrai_Monument_%E0%B8%AD%E0%B8%99%E0%B8%B8%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2_%E0%B8%AB%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A2%E0%B8%81%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%AF_%28October_2021%29_-_img_03.jpg",
+    "alt": "พระรูปพญามังรายที่แยกพ่อขุน เชียงราย",
+    "author": "Chainwit.",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:King_Mangrai_Monument_%E0%B8%AD%E0%B8%99%E0%B8%B8%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2_%E0%B8%AB%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A2%E0%B8%81%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%AF_(October_2021)_-_img_03.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 2622028552 (19.91045, 99.8401) ตรงกับ GPS ภาพ Commons (19.910533, 99.840181)",
+   "ข้อความเรื่องการสักการะมาจากผลค้นหา (gotoknow/thairath) ไม่ได้เปิดอ่านต้นฉบับเต็ม ควรตรวจซ้ำ"
+  ],
+  "sources": [
+   "https://www.openstreetmap.org/node/2622028552",
+   "https://commons.wikimedia.org/wiki/File:King_Mangrai_Monument_%E0%B8%AD%E0%B8%99%E0%B8%B8%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2_%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A2%E0%B8%81%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%AF_(October_2021)_-_img_01.jpg"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "อนุสาวรีย์พระนางจามเทวี",
+  "nameEn": "Queen Chamadevi Monument",
+  "slug": "chamadevi-monument-lamphun",
+  "type": "shrine",
+  "deities": [
+   "พระนางจามเทวี"
+  ],
+  "goals": [
+   "protection",
+   "career"
+  ],
+  "province": "ลำพูน",
+  "district": "อำเภอเมืองลำพูน",
+  "coords": "18.57472, 99.00424",
+  "description": "อนุสาวรีย์พระนางจามเทวี ปฐมกษัตริย์แห่งหริภุญชัย ตั้งอยู่ในสวนสาธารณะหนองดอก ถนนรอบเมืองใน ในเขตเทศบาลเมืองลำพูน ผู้คนมากราบไหว้ขอพรได้ตลอดวัน ทุกปีช่วงสงกรานต์และวันคล้ายวันสวรรคตตามจันทรคติจะมีพิธีบวงสรวง",
+  "hours": "เข้าสักการะได้ตลอดวัน",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Camadevi_(I).jpg/1280px-Camadevi_(I).jpg",
+    "alt": "อนุสาวรีย์พระนางจามเทวี ลำพูน",
+    "author": "Supanut Arunoprayote",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Camadevi_(I).jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%88%E0%B8%B2%E0%B8%A1%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A7%E0%B8%B5_-_panoramio.jpg/1280px-%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%88%E0%B8%B2%E0%B8%A1%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A7%E0%B8%B5_-_panoramio.jpg",
+    "alt": "พระรูปพระนางจามเทวีที่สวนสาธารณะหนองดอก ลำพูน",
+    "author": "Charin ninsu",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%88%E0%B8%B2%E0%B8%A1%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A7%E0%B8%B5_-_panoramio.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 3418499668 (18.57472, 99.00424) ตรงกับ GPS ภาพ Commons Camadevi (I).jpg (18.574628, 99.004212)",
+   "มีแหล่งกล่าวว่าถ้าสมหวังให้แก้บนด้วยไก่หรือช้าง แต่หน้า TrueID ที่เปิดอ่านไม่ได้ระบุ จึงยังไม่ใส่",
+   "ชื่อไฟล์ panoramio บน Commons สะกด จามะเทวี"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/VAv4n4gjVy4k",
+   "https://www.openstreetmap.org/node/3418499668"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าพ่อประตูผา",
+  "nameEn": "Chao Pho Pratu Pha Shrine",
+  "slug": "chao-pho-pratu-pha-shrine-lampang",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อประตูผา"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "ลำปาง",
+  "district": "อำเภอแม่เมาะ",
+  "coords": "18.51359, 99.81953",
+  "description": "ศาลเจ้าพ่อประตูผาอยู่ริมทางหลวงลำปาง-งาว ใกล้แหล่งภาพเขียนสีประตูผา ชาวลำปางนับถือเจ้าพ่อประตูผาเป็นทั้งวีรบุรุษและสิ่งศักดิ์สิทธิ์ คนที่ขับรถผ่านเส้นทางนี้มักแวะกราบไหว้",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "ไม่มีภาพใน Wikimedia Commons ใส่ไว้เพราะเป็นศาลที่มีชื่อเสียงมากของลำปาง",
+   "พิกัดจาก OSM node 13304305978 (18.51359, 99.81953) แหล่งเดียว ยังไม่ได้ยืนยันกับแหล่งที่ 2",
+   "ข้อมูลเรื่องคนขับรถแวะไหว้มาจากผลค้นหาข่าวมติชน (เปิดหน้าข่าวไม่ได้ 403) ส่วนเรื่องวีรบุรุษมาจากบทคัดย่องานวิจัย Veridian E-Journal ตำนานตัวบุคคลยังไม่ได้ยืนยันจึงไม่ใส่"
+  ],
+  "sources": [
+   "https://he02.tci-thaijo.org/index.php/Veridian-E-Journal/article/view/152928",
+   "https://www.openstreetmap.org/node/13304305978"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลหลักเมืองพะเยา",
+  "nameEn": "Phayao City Pillar Shrine",
+  "slug": "lak-mueang-phayao",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "พะเยา",
+  "district": "อำเภอเมืองพะเยา",
+  "coords": "19.16650, 99.90195",
+  "description": "ศาลหลักเมืองประจำจังหวัดพะเยา อยู่ริมถนนดอนสนามกลางเมือง มีทางเดินร่มไม้นำไปสู่ตัวศาล คนที่มาเที่ยวพะเยาหรือผ่านกลางเมืองมักแวะสักการะขอพร",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Phayao_-_City_pillar_shrine_and_walkway_Jan_2024.jpg/1280px-Phayao_-_City_pillar_shrine_and_walkway_Jan_2024.jpg",
+    "alt": "ทางเดินร่มไม้สู่ศาลหลักเมืองพะเยา",
+    "author": "BigDom",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phayao_-_City_pillar_shrine_and_walkway_Jan_2024.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM way 1468605644 (ศาลเสาหลักเมืองพะเยา 19.1665, 99.90195) แหล่งเดียว ภาพ Commons ไม่มี GPS",
+   "ข้อความเรื่องการแวะสักการะมาจากผลค้นหา (TrueID) ไม่ได้เปิดอ่านต้นฉบับเต็ม"
+  ],
+  "sources": [
+   "https://www.openstreetmap.org/way/1468605644",
+   "https://commons.wikimedia.org/wiki/File:Phayao_-_City_pillar_shrine_and_walkway_Jan_2024.jpg"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "อนุสาวรีย์พญางำเมือง",
+  "nameEn": "King Ngam Mueang Monument",
+  "slug": "king-ngam-mueang-monument-phayao",
+  "type": "shrine",
+  "deities": [
+   "พญางำเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career"
+  ],
+  "province": "พะเยา",
+  "district": "อำเภอเมืองพะเยา",
+  "coords": "19.16877, 99.89607",
+  "description": "อนุสาวรีย์พญางำเมือง กษัตริย์แห่งนครรัฐพะเยา ตั้งอยู่ริมกว๊านพะเยา ถนนชายกว๊าน เป็นจุดที่มีพิธีบวงสรวงพญางำเมืองของชาวพะเยา",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/King_Ngam_Mueang_Monument_in_Phayao_%E0%B8%A5%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%A3%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C_%E0%B8%9E%E0%B8%8D%E0%B8%B2%E0%B8%87%E0%B8%B3%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%81%E0%B8%A7%E0%B9%8A%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%B0%E0%B9%80%E0%B8%A2%E0%B8%B2.jpg/1280px-King_Ngam_Mueang_Monument_in_Phayao_%E0%B8%A5%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%A3%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C_%E0%B8%9E%E0%B8%8D%E0%B8%B2%E0%B8%87%E0%B8%B3%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%81%E0%B8%A7%E0%B9%8A%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%B0%E0%B9%80%E0%B8%A2%E0%B8%B2.jpg",
+    "alt": "อนุสาวรีย์พญางำเมือง ริมกว๊านพะเยา",
+    "author": "Chainwit.",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:King_Ngam_Mueang_Monument_in_Phayao_%E0%B8%A5%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%A3%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C_%E0%B8%9E%E0%B8%8D%E0%B8%B2%E0%B8%87%E0%B8%B3%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%81%E0%B8%A7%E0%B9%8A%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%B0%E0%B9%80%E0%B8%A2%E0%B8%B2.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 6315215536 (19.16877, 99.89607) แหล่งเดียว ภาพ Commons ไม่มี GPS",
+   "เรื่องพิธีบวงสรวงมาจากผลค้นหาข่าวมติชน ไม่ได้เปิดอ่านต้นฉบับเต็ม ไม่พบข้อมูลเรื่องการขอพรเฉพาะ"
+  ],
+  "sources": [
+   "https://www.openstreetmap.org/node/6315215536",
+   "https://commons.wikimedia.org/wiki/File:King_Ngam_Mueang_Monument_in_Phayao_%E0%B8%A5%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%A3%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C_%E0%B8%9E%E0%B8%8D%E0%B8%B2%E0%B8%87%E0%B8%B3%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%81%E0%B8%A7%E0%B9%8A%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%B0%E0%B9%80%E0%B8%A2%E0%B8%B2.jpg"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "อนุสาวรีย์พระยาพิชัยดาบหัก",
+  "nameEn": "Phraya Phichai Dap Hak Monument",
+  "slug": "phraya-phichai-dap-hak-monument-uttaradit",
+  "type": "shrine",
+  "deities": [
+   "พระยาพิชัยดาบหัก"
+  ],
+  "goals": [
+   "protection",
+   "career"
+  ],
+  "province": "อุตรดิตถ์",
+  "district": "อำเภอเมืองอุตรดิตถ์",
+  "coords": "17.62966, 100.09742",
+  "description": "อนุสาวรีย์พระยาพิชัยดาบหัก เจ้าเมืองพิชัยและทหารเอกสมัยธนบุรี ประดิษฐานหน้าศาลากลางจังหวัดอุตรดิตถ์ สร้างเพื่อเชิดชูความกล้าหาญ รักชาติ และเสียสละ กรมศิลปากรออกแบบและหล่อ เปิดเมื่อ 20 กุมภาพันธ์ 2512 เป็นที่กราบไหว้ของชาวอุตรดิตถ์",
+  "hours": "ทุกวัน 06.00-18.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Phraya_Phichai_Dap_Hak_Monument_1970_6.jpg",
+    "alt": "อนุสาวรีย์พระยาพิชัยดาบหัก หน้าศาลากลางจังหวัดอุตรดิตถ์ ปี 2513",
+    "author": "กระทรวงมหาดไทย",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phraya_Phichai_Dap_Hak_Monument_1970_6.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 8500444881 (17.62966, 100.09742) ตรงกับ OSM way 556015197 (ลานอนุสาวรีย์ 17.62993, 100.09727)",
+   "ภาพเป็นภาพเก่าปี 1970 ความกว้าง 1000 px (ไม่มี thumb 1280) ใน Commons มีชุดภาพ Memorial Day โดย Tmd แต่คำบรรยายภาพปนกับรูปที่วัดคุ้งตะเภา จึงไม่ใช้",
+   "TrueID ระบุที่อยู่ ต.ท่าอิฐ ส่วน OSM ระบุ ต.ท่าเสา"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/Or7aYJaQxNp2",
+   "https://www.openstreetmap.org/node/8500444881"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลสมเด็จพระเจ้าตากสินมหาราช จังหวัดตาก",
+  "nameEn": "King Taksin the Great Shrine, Tak",
+  "slug": "king-taksin-shrine-tak",
+  "type": "shrine",
+  "deities": [
+   "สมเด็จพระเจ้าตากสินมหาราช"
+  ],
+  "goals": [
+   "protection",
+   "career"
+  ],
+  "province": "ตาก",
+  "district": "อำเภอเมืองตาก",
+  "coords": "16.88583, 99.12114",
+  "description": "ศาลสมเด็จพระเจ้าตากสินมหาราชในตัวเมืองตาก ริมถนนตากสิน เมืองที่พระองค์เคยเป็นเจ้าเมืองก่อนขึ้นครองราชย์ ภายในมีภาพจิตรกรรมพระเจ้าตากทรงม้าออกศึก ทุกปีช่วงปลายธันวาคมถึงต้นมกราคมมีงานตากสินมหาราชานุสรณ์ที่บริเวณศาล",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Taksin_Shrine.JPG/1280px-Taksin_Shrine.JPG",
+    "alt": "ศาลสมเด็จพระเจ้าตากสินมหาราช ตัวเมืองตาก",
+    "author": "PumpkinSky",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taksin_Shrine.JPG"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Taksin_Shrine1.jpg/1280px-Taksin_Shrine1.jpg",
+    "alt": "พระบรมรูปในศาลสมเด็จพระเจ้าตากสินมหาราช จังหวัดตาก",
+    "author": "Media lib",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taksin_Shrine1.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 11515775669 (16.88583, 99.12114) แหล่งเดียว ภาพ Commons ไม่มี GPS",
+   "เรื่องภาพจิตรกรรมมาจากคำบรรยายไฟล์ Commons King Taksin Cavalry Battle at Phran Nok Mural.png งานประจำปีจาก Dailynews (28 ธ.ค. 2568-3 ม.ค. 2569)"
+  ],
+  "sources": [
+   "https://www.dailynews.co.th/news/5452659/",
+   "https://www.openstreetmap.org/node/11515775669"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าพ่อพะวอ",
+  "nameEn": "Chao Pho Phawo Shrine",
+  "slug": "chao-pho-phawo-shrine-mae-sot",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อพะวอ"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "ตาก",
+  "district": "อำเภอแม่สอด",
+  "coords": "16.77183, 98.68610",
+  "description": "ศาลเจ้าพ่อพะวอตั้งอยู่บนเทือกเขาพะวอ ริมทางหลวงสายตาก-แม่สอด ชาวตากถือเป็นสถานที่ศักดิ์สิทธิ์ ผู้เดินทางผ่านมักแวะกราบขอพร",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "ไม่มีภาพใน Wikimedia Commons ใส่ไว้เพราะเป็นศาลที่มีชื่อเสียงของตาก",
+   "พิกัดจาก OSM way 463400110 (16.77183, 98.6861) แหล่งเดียว Longdo ระบุตำบลท่าสายลวดซึ่งขัดกับ OSM ควรตรวจซ้ำก่อนเผยแพร่",
+   "คำอธิบายมาจากผลค้นหา TrueID (หน้าที่เปิดอ่านมีแค่ชื่อเรื่อง) ระวังสับสนกับศาลเจ้าพ่อพะวอที่ ต.คณฑี กำแพงเพชร ซึ่งเป็นคนละแห่ง"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/wo6vZdRkM51o",
+   "https://www.openstreetmap.org/way/463400110"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลหลักเมืองสุโขทัย (อุทยานประวัติศาสตร์สุโขทัย)",
+  "nameEn": "Sukhothai City Pillar Shrine",
+  "slug": "lak-mueang-sukhothai",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "สุโขทัย",
+  "district": "อำเภอเมืองสุโขทัย",
+  "coords": "17.01811, 99.70383",
+  "description": "ศาลหลักเมืองโบราณในอุทยานประวัติศาสตร์สุโขทัย ใกล้วัดมหาธาตุ เป็นโบราณสถานที่สันนิษฐานว่าเป็นหลักเมืองสุโขทัยตามพระราชนิพนธ์เที่ยวเมืองพระร่วง ตัวศาลเป็นฐานสี่เหลี่ยมยกสูง มีเสาศิลาแลงแปดเหลี่ยม",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Old_City_Pillar_of_Sukhothai_%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B9%82%E0%B8%82%E0%B8%97%E0%B8%B1%E0%B8%A2_(2025)_-_img_03.jpg/1280px-Old_City_Pillar_of_Sukhothai_%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B9%82%E0%B8%82%E0%B8%97%E0%B8%B1%E0%B8%A2_(2025)_-_img_03.jpg",
+    "alt": "ศาลหลักเมืองสุโขทัยในอุทยานประวัติศาสตร์สุโขทัย",
+    "author": "Chainwit.",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_City_Pillar_of_Sukhothai_%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B9%82%E0%B8%82%E0%B8%97%E0%B8%B1%E0%B8%A2_(2025)_-_img_03.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/201312141122a_HL_ps_Sukothai,_San_Lak_Muang.jpg/1280px-201312141122a_HL_ps_Sukothai,_San_Lak_Muang.jpg",
+    "alt": "ศาลหลักเมืองสุโขทัย ฐานศิลาแลงในเมืองเก่า",
+    "author": "Hartmann Linge",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:201312141122a_HL_ps_Sukothai,_San_Lak_Muang.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก Commons category/Wikidata Q18707008 (17.018111, 99.703833) ตรงกับ OSM way 1541260112 (17.01809, 99.70386) และ GPS ภาพ",
+   "อยู่ในเขตอุทยานประวัติศาสตร์ อาจต้องซื้อบัตรเข้าเขตเมืองเก่า ยังไม่ได้ยืนยัน",
+   "รายละเอียดสถาปัตยกรรมมาจากผลค้นหา TrueID ไม่ได้เปิดอ่านต้นฉบับเต็ม"
+  ],
+  "sources": [
+   "https://www.wikidata.org/wiki/Q18707008",
+   "https://commons.wikimedia.org/wiki/Category:City_Pillar_Shrine_(Sukhothai_Historical_Park)",
+   "https://www.openstreetmap.org/way/1541260112"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลพระแม่ย่า",
+  "nameEn": "Phra Mae Ya Shrine",
+  "slug": "phra-mae-ya-shrine-sukhothai",
+  "type": "shrine",
+  "deities": [
+   "พระแม่ย่า"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "money"
+  ],
+  "province": "สุโขทัย",
+  "district": "อำเภอเมืองสุโขทัย",
+  "coords": "17.00527, 99.82569",
+  "description": "ศาลประดิษฐานพระแม่ย่า เทวรูปหินชนวนสูงราว 130 ซม. ที่ชาวสุโขทัยนับถือเป็นเทพารักษ์คู่บ้านคู่เมือง เชื่อกันว่าคือพระนางเสือง พระมารดาของพ่อขุนรามคำแหง ศาลอยู่ด้านหน้าศาลากลางจังหวัดสุโขทัย อาคารปัจจุบันเสร็จปี 2541 ชาวบ้านเชื่อว่าไหว้ขอพรแล้วจะสมปรารถนา",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Phra_Mae_Ya_Shrine_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%A2%E0%B9%88%E0%B8%B2_(2026)_-_exterior_img_02.jpg/1280px-Phra_Mae_Ya_Shrine_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%A2%E0%B9%88%E0%B8%B2_(2026)_-_exterior_img_02.jpg",
+    "alt": "ศาลพระแม่ย่า หน้าศาลากลางจังหวัดสุโขทัย",
+    "author": "Chainwit.",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phra_Mae_Ya_Shrine_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%A2%E0%B9%88%E0%B8%B2_(2026)_-_exterior_img_02.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Phra_Mae_Ya_-_%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%A2%E0%B9%88%E0%B8%B2_(2026).jpg/1280px-Phra_Mae_Ya_-_%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%A2%E0%B9%88%E0%B8%B2_(2026).jpg",
+    "alt": "เทวรูปพระแม่ย่าองค์จริงในศาล",
+    "author": "Chainwit.",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phra_Mae_Ya_-_%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%A2%E0%B9%88%E0%B8%B2_(2026).jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก Commons category/Wikidata Q138194805 (17.00527288, 99.82569379) ตรงกับ OSM way 719579209 (17.00536, 99.82574) และ GPS ภาพ",
+   "มีงานสักการะพระแม่ย่าประจำปี 10 วัน 10 คืน ช่วง ก.พ.-มี.ค. และแห่ในวันสงกรานต์ (th.wikipedia)",
+   "เรื่องขอพรแล้วสมปรารถนามาจากผลค้นหา TrueID ไม่ได้เปิดอ่านต้นฉบับเต็ม"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%A2%E0%B9%88%E0%B8%B2",
+   "https://www.openstreetmap.org/way/719579209"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลหลักเมืองพิษณุโลก",
+  "nameEn": "Phitsanulok City Pillar Shrine",
+  "slug": "lak-mueang-phitsanulok",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "พิษณุโลก",
+  "district": "อำเภอเมืองพิษณุโลก",
+  "coords": "16.82435, 100.25980",
+  "description": "ศาลหลักเมืองพิษณุโลกอยู่ริมแม่น้ำน่านกลางเมือง อาคารยอดปรางค์ออกแบบโดยกรมศิลปากร เสาหลักเมืองทำจากไม้มงคล ลำต้นไม้ราชพฤกษ์ ท่อนลูกแก้วไม้ชิงชัน ยอดไม้สักทอง สร้างเสร็จปี 2540 เชื่อกันว่ามาไหว้แล้วเสริมชัยเสริมบุญ",
+  "hours": "ทุกวัน 06.00-18.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Phitsanulok_City_Pillar_Shrine_1.jpg/1280px-Phitsanulok_City_Pillar_Shrine_1.jpg",
+    "alt": "ศาลหลักเมืองพิษณุโลก อาคารยอดปรางค์ริมแม่น้ำน่าน",
+    "author": "Christophe95",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phitsanulok_City_Pillar_Shrine_1.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phitsanulok_City_Pillar_Shrine_2.jpg/1280px-Phitsanulok_City_Pillar_Shrine_2.jpg",
+    "alt": "ศาลหลักเมืองพิษณุโลก",
+    "author": "Christophe95",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phitsanulok_City_Pillar_Shrine_2.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 4166097326 (16.82435, 100.2598) ตรงกับ GPS ภาพ Commons (16.823992, 100.259996)",
+   "แนะนำไหว้ต่อเนื่องกับศาลสมเด็จพระนเรศวรมหาราชที่อยู่ไม่ไกล"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/eQy6L6RlKZpV",
+   "https://www.openstreetmap.org/node/4166097326"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลสมเด็จพระนเรศวรมหาราช พระราชวังจันทน์",
+  "nameEn": "King Naresuan the Great Shrine, Phitsanulok",
+  "slug": "king-naresuan-shrine-phitsanulok",
+  "type": "shrine",
+  "deities": [
+   "สมเด็จพระนเรศวรมหาราช"
+  ],
+  "goals": [
+   "career",
+   "protection"
+  ],
+  "province": "พิษณุโลก",
+  "district": "อำเภอเมืองพิษณุโลก",
+  "coords": "16.82985, 100.26140",
+  "description": "ศาลในเขตพระราชวังจันทน์ ถนนวังจันทน์ ประดิษฐานพระรูปสมเด็จพระนเรศวรมหาราชประทับนั่งทรงหลั่งน้ำจากพระสุวรรณภิงคาร ในอาคารแบบตรีมุข คนนิยมมาสักการะขอพรเรื่องความสำเร็จและการงาน",
+  "offerings": [
+   "ดอกไม้ ธูปเทียน",
+   "พวงมาลัย",
+   "ตุ๊กตาไก่ชน"
+  ],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AA%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B9%87%E0%B8%88%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B9%80%E0%B8%A3%E0%B8%A8%E0%B8%A7%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A7%E0%B8%B1%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C,King_Naresuan_Shine_-_panoramio.jpg/1280px-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AA%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B9%87%E0%B8%88%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B9%80%E0%B8%A3%E0%B8%A8%E0%B8%A7%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A7%E0%B8%B1%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C,King_Naresuan_Shine_-_panoramio.jpg",
+    "alt": "ศาลสมเด็จพระนเรศวรมหาราช พระราชวังจันทน์ พิษณุโลก",
+    "author": "::::=UT=::::",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AA%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B9%87%E0%B8%88%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B9%80%E0%B8%A3%E0%B8%A8%E0%B8%A7%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A7%E0%B8%B1%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C,King_Naresuan_Shine_-_panoramio.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM way 474202408 (16.82985, 100.2614) ตรงกับ GPS ภาพ Commons (16.829805, 100.261987)",
+   "เวลาเปิดขัดกัน: lovethailand ระบุ อังคาร-อาทิตย์ 09.00-16.00 น. อีกแหล่งระบุทุกวัน 07.00-17.00 น. จึงไม่ใส่ hours",
+   "เรื่องขอพรความสำเร็จ/การงานมาจากผลค้นหา (KTC) ไม่ได้เปิดอ่านต้นฉบับเต็ม"
+  ],
+  "sources": [
+   "https://www.lovethailand.org/travel/en/28-Phitsanulok/5692-King-Naresuan-the-Great-Shrine.html",
+   "https://www.openstreetmap.org/way/474202408"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลหลักเมืองกำแพงเพชร",
+  "nameEn": "Kamphaeng Phet City Pillar Shrine",
+  "slug": "lak-mueang-kamphaeng-phet",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "กำแพงเพชร",
+  "district": "อำเภอเมืองกำแพงเพชร",
+  "coords": "16.48980, 99.51623",
+  "description": "ศาลหลักเมืองกำแพงเพชรอยู่ในเขตอุทยานประวัติศาสตร์กำแพงเพชร ริมถนนราชดำเนิน 2 ตัวเสาหลักเมืองตั้งอยู่ในศาลเล็กแยกจากโบราณสถานรอบข้าง",
+  "hours": "ทุกวัน 07.00-17.00 น.",
+  "offerings": [
+   "ธูป",
+   "ดอกไม้"
+  ],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Lak_Mueang_Kamphaeng_Phet.JPG/1280px-Lak_Mueang_Kamphaeng_Phet.JPG",
+    "alt": "เสาหลักเมืองกำแพงเพชรในอุทยานประวัติศาสตร์",
+    "author": "Media lib",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lak_Mueang_Kamphaeng_Phet.JPG"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 6452321280 (16.4898, 99.51623) และ thaiholidayguide ระบุ 16.48983, 99.5162 (อาจอ้าง OSM เหมือนกัน)",
+   "แหล่งเนื้อหาคือ thaiholidayguide ซึ่งเป็นเว็บรวบรวม ความน่าเชื่อถือปานกลาง เวลาเปิดควรตรวจซ้ำ",
+   "ภาพถ่ายปี 2006 (Media lib) ไม่มี GPS"
+  ],
+  "sources": [
+   "https://www.thaiholidayguide.com/attraction/kham-pheang-phets-shrine-of-the-city-pillar/",
+   "https://www.openstreetmap.org/node/6452321280"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าพ่อหลักเมืองเพชรบูรณ์",
+  "nameEn": "Phetchabun City Pillar Shrine",
+  "slug": "lak-mueang-phetchabun",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business",
+   "health"
+  ],
+  "province": "เพชรบูรณ์",
+  "district": "อำเภอเมืองเพชรบูรณ์",
+  "coords": "16.42096, 101.16001",
+  "description": "ศาลหลักเมืองเพชรบูรณ์ริมถนนหลักเมือง กลางเมือง ต่างจากหลักเมืองส่วนใหญ่ที่เป็นไม้ เพราะเสาหลักเมืองเป็นหินทรายมีอักษรโบราณจารึก บันทึกท้องถิ่นว่ามาจากเมืองศรีเทพโบราณ ผู้คนมาขอพรเรื่องสุขภาพ ความเจริญรุ่งเรือง และความคุ้มครอง",
+  "hours": "ทุกวัน 06.00-18.00 น.",
+  "offerings": [
+   "ดอกไม้",
+   "ธูปเทียน",
+   "พวงมาลัย"
+  ],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B9%8C.jpg/1280px-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B9%8C.jpg",
+    "alt": "ศาลเจ้าพ่อหลักเมืองเพชรบูรณ์",
+    "author": "Ppauseplayn",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B9%8C.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%88.%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B9%8C.jpg/1280px-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%88.%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B9%8C.jpg",
+    "alt": "ศาลหลักเมืองเพชรบูรณ์ มุมหน้า",
+    "author": "Ppauseplayn",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%88.%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B9%8C.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก Commons category/Wikidata Q102185169 (16.42095957, 101.16001221) ตรงกับ OSM node 2322827369 (16.42097, 101.16008)",
+   "ที่มาจากเมืองศรีเทพเป็นบันทึกท้องถิ่นตาม thaiholidayguide ยังไม่ได้ยืนยันกับกรมศิลปากร เวลาเปิดควรตรวจซ้ำ"
+  ],
+  "sources": [
+   "https://www.thaiholidayguide.com/attraction/the-city-pillar-shrine-of-phetchaboon/",
+   "https://www.wikidata.org/wiki/Q102185169",
+   "https://www.openstreetmap.org/node/2322827369"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าพ่อแก้ว บางมูลนาก",
+  "nameEn": "Chao Pho Kaeo Shrine, Bang Mun Nak",
+  "slug": "chao-pho-kaeo-shrine-bang-mun-nak",
+  "type": "chinese-shrine",
+  "deities": [
+   "เจ้าพ่อแก้ว"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "พิจิตร",
+  "district": "อำเภอบางมูลนาก",
+  "coords": "16.02914, 100.37805",
+  "description": "ศาลเจ้าริมแม่น้ำน่านกลางตลาดบางมูลนาก มีที่มาจากนายย้อย แซ่ลี้ พบรูปไม้แกะสลักลอยมาตามแม่น้ำน่านเมื่อปี 2477 แล้วนำขึ้นตั้งไว้ริมตลิ่ง ต่อมาชาวบางมูลนากสร้างศาลขึ้น เจ้าพ่อแก้วเป็นที่นับถือของคนบางมูลนากและอำเภอใกล้เคียง",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7.jpg/1280px-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7.jpg",
+    "alt": "ศาลเจ้าพ่อแก้ว บางมูลนาก พิจิตร",
+    "author": "Ekströmz",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OSM node 4019015079 (16.02914, 100.37805) ตรงกับ GPS ภาพ Commons (16.029086, 100.378083)",
+   "ประวัติมาจากคำบรรยายไฟล์ Commons ศาลเจ้าพ่อแก้ว.jpg มีบล็อกระบุว่ามีงานประจำปีสัปดาห์ที่ 3 ของ ธ.ค. แห่รอบตลาด ยังไม่ได้ยืนยันกับแหล่งทางการ จึงไม่ใส่ในคำอธิบาย",
+   "type ใส่ chinese-shrine เพราะผู้ก่อตั้งเป็นชาวจีนและอยู่ในย่านตลาด ยังไม่ได้ยืนยันรูปแบบศาล ควรตรวจภาพ"
+  ],
+  "sources": [
+   "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7.jpg",
+   "https://www.openstreetmap.org/node/4019015079"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าพ่อเทพารักษ์-เจ้าแม่ทับทิม ปากน้ำโพ (ศาลเจ้าพ่อแควใหญ่)",
+  "nameEn": "Chao Pho Thepharak - Chao Mae Thapthim Shrine, Pak Nam Pho",
+  "slug": "chao-pho-thepharak-chao-mae-thapthim-paknampho",
+  "type": "chinese-shrine",
+  "deities": [
+   "บ๊นเถ่ากง",
+   "เทพเจ้ากวนอู",
+   "เจ้าแม่ทับทิม"
+  ],
+  "goals": [
+   "money",
+   "business",
+   "protection"
+  ],
+  "province": "นครสวรรค์",
+  "district": "อำเภอเมืองนครสวรรค์",
+  "coords": "15.69950, 100.14246",
+  "description": "ศาลเจ้าเก่าแก่อายุกว่า 130 ปี ริมแม่น้ำเจ้าพระยา ตรงข้ามตลาดปากน้ำโพ ในศาลมีระฆังโบราณจารึกภาษาจีนถวายเมื่อปี 2413 ศาลเดิมเป็นเรือนไม้ยกพื้นริมตลิ่ง สร้างใหม่ปี 2452 เป็นต้นงานแห่เจ้าพ่อ-เจ้าแม่ปากน้ำโพช่วงตรุษจีน คนนิยมมาขอโชคลาภและความคุ้มครอง",
+  "hours": "ทุกวัน 08.00-17.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "ไม่มีภาพใน Wikimedia Commons ใส่ไว้เพราะเป็นศาลเจ้าที่มีชื่อเสียงระดับประเทศ (งานแห่ตรุษจีนปากน้ำโพ)",
+   "พิกัดจาก OSM way 1477368477 (15.6995, 100.14246) แหล่งเดียว OSM มีอีกจุดชื่อ ศาลเจ้าพ่อ-เจ้าแม่ปากน้ำโพ (node 7114076185, ถ.โกสีย์ 15.71596, 100.14189) อาจเป็นศาลอีกแห่ง/ศาลใต้ชั่วคราว ควรตรวจว่าจุดไหนคือศาลหลัก",
+   "ข้อมูลจาก TrueID (ที่อยู่ 469 ต.ปากน้ำโพ โทร 0-5627-6599)"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/YKYgmdX30rgV",
+   "https://www.openstreetmap.org/way/1477368477"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลหลักเมืองขอนแก่น (ศาลเจ้าพ่อหลักเมือง)",
+  "nameEn": "Khon Kaen City Pillar Shrine",
+  "slug": "lak-mueang-khon-kaen",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อหลักเมือง (อินทร์ตา)",
+   "พระแม่ธรณีบีบมวยผม"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "ขอนแก่น",
+  "district": "อำเภอเมืองขอนแก่น",
+  "coords": "16.43112, 102.82844",
+  "description": "ศาลคู่บ้านคู่เมืองขอนแก่น ชาวไทยและชาวจีนร่วมกันสร้าง คนจีนเรียกว่าศาลหลักเมืองกง คนไทยเรียกศาลเจ้าพ่อหลักเมือง เทพารักษ์ประจำศาลมีนามย่อว่าอินทร์ตา ตัวศาลเป็นอาคารจัตุรมุข ยอดแบบอีสาน ฐานจำลองจากพระธาตุขามแก่น กลางคืนเปิดไฟสวยงาม",
+  "offerings": [],
+  "howToPray": [
+   "ไหว้เจ้าพ่อหลักเมืองขอพรให้ชีวิตเป็นสิริมงคล ขอให้ปกปักคุ้มครองและเดินทางไปกลับปลอดภัย",
+   "ในศาลมีพระแม่ธรณีบีบมวยผมให้สักการะด้วย"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99_-_panoramio.jpg/1280px-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99_-_panoramio.jpg",
+    "alt": "ศาลเจ้าพ่อหลักเมืองขอนแก่นยามค่ำคืน อาคารจัตุรมุขยอดแบบอีสาน",
+    "author": "CHAMRAT CHAROENKHET",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99_-_panoramio.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OpenStreetMap way 106646063 (16.4311192, 102.8284406) ตรงกับตำแหน่งภาพ Commons (16.43111, 102.828442)",
+   "ที่อยู่ไม่ตรงกันระหว่างแหล่ง: TrueID ระบุ ศาลาสุขใจ ถนนเทพารักษ์ บางแหล่งระบุถนนศรีจันทร์ ติดเทศบาลนครขอนแก่น จึงไม่ใส่ชื่อถนนในคำอธิบาย",
+   "ภาพถ่ายปี 2553 (panoramio) อาคารอาจเปลี่ยนไปบ้าง"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/YKwrOYglwqe5"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลหลักเมืองนครราชสีมา",
+  "nameEn": "Nakhon Ratchasima City Pillar Shrine",
+  "slug": "lak-mueang-nakhon-ratchasima",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "นครราชสีมา",
+  "district": "อำเภอเมืองนครราชสีมา",
+  "coords": "14.97500, 102.10601",
+  "description": "สิ่งศักดิ์สิทธิ์คู่บ้านคู่เมืองโคราช ตั้งอยู่มุมวัดพระนารายณ์มหาราช ถนนจอมพล สร้างพร้อมเมืองนครราชสีมาสมัยสมเด็จพระนารายณ์มหาราช ศาลหลังปัจจุบันสร้างแทนศาลไม้เดิมเมื่อปี 2506 และกรมศิลปากรขึ้นทะเบียนเป็นโบราณสถาน",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/3/37/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%8A.jpg",
+    "alt": "ศาลหลักเมืองนครราชสีมา ศาลสีขาวป้ายแดง มุมวัดพระนารายณ์มหาราช",
+    "author": "Noppal91",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%8A.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก Wikidata Q112918925 / th.wikipedia (14.975002, 102.106014) ตรงกับ OpenStreetMap way 549397530 (14.9749952, 102.1060061) อยู่ติดวัดพระนารายณ์มหาราช (OSM 14.97598, 102.10737)",
+   "ภาพกว้าง 807px ใช้ไฟล์ต้นฉบับ มีภาพอื่นใน Category:Nakhon Ratchasima City Pillar Shrine (CC BY 2.5) ถ้าต้องการเพิ่ม"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/ศาลหลักเมืองนครราชสีมา"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "อนุสาวรีย์ท้าวสุรนารี (ย่าโม)",
+  "nameEn": "Thao Suranari Monument",
+  "slug": "thao-suranari-monument-korat",
+  "type": "shrine",
+  "deities": [
+   "ท้าวสุรนารี (ย่าโม)"
+  ],
+  "goals": [
+   "protection",
+   "career"
+  ],
+  "province": "นครราชสีมา",
+  "district": "อำเภอเมืองนครราชสีมา",
+  "coords": "14.97473, 102.09812",
+  "description": "อนุสาวรีย์ย่าโมหน้าประตูชุมพล เปิดเมื่อ 24 มิถุนายน 2477 เป็นที่ที่ชาวโคราชมากราบไหว้บนบานย่าโมไม่ขาดสาย และมีเพลงโคราชดังอยู่เสมอ ทุกปีมีงานฉลองวันแห่งชัยชนะของท้าวสุรนารีช่วง 23 มีนาคม - 3 เมษายน",
+  "offerings": [],
+  "howToPray": [
+   "กราบไหว้ขอพรย่าโมที่ลานหน้าอนุสาวรีย์"
+  ],
+  "howToRepayVow": [
+   "เมื่อสมหวังแล้ว นิยมแก้บนโดยจ้างหมอเพลงร้องเพลงโคราชถวายย่าโม"
+  ],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Thao_Suranari_Monument_%28I%29.jpg/1280px-Thao_Suranari_Monument_%28I%29.jpg",
+    "alt": "อนุสาวรีย์ท้าวสุรนารีหน้าประตูชุมพล นครราชสีมา",
+    "author": "Supanut Arunoprayote",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thao_Suranari_Monument_%28I%29.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Thais_pray_in_front_of_Yamo.jpg/1280px-Thais_pray_in_front_of_Yamo.jpg",
+    "alt": "ผู้คนกราบไหว้และถวายของที่อนุสาวรีย์ย่าโม",
+    "author": "John Smith",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thais_pray_in_front_of_Yamo.jpg"
+   }
+  ],
+  "notes": [
+   "เป็นอนุสาวรีย์ ไม่ใช่ศาล แต่แหล่งข่าวระบุว่ามีการบนบานและแก้บนที่นี่จริง (thaipost) จึงใส่ type shrine ตามที่สั่ง",
+   "พิกัดจาก OpenStreetMap way 549315244 (14.9747305, 102.0981171) ตรงกับตำแหน่งภาพ Commons (14.974719, 102.098045)",
+   "ภาพที่ 2 มาจาก Wikivoyage เก่า ผู้สร้างระบุชื่อ John Smith",
+   "บทความ thaipost เป็นคอลัมน์ความเห็น เรื่องแก้บนด้วยเพลงโคราชเป็นความเชื่อที่รู้กันทั่วไปแต่ยังไม่มีแหล่งทางการยืนยัน"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/อนุสาวรีย์ท้าวสุรนารี",
+   "https://www.thaipost.net/main/detail/31256"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลหลักเมืองอุดรธานี",
+  "nameEn": "Udon Thani City Pillar Shrine",
+  "slug": "lak-mueang-udon-thani",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อหลักเมือง",
+   "พระพุทธโพธิ์ทอง",
+   "ท้าวเวสสุวรรณ"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business",
+   "money"
+  ],
+  "province": "อุดรธานี",
+  "district": "อำเภอเมืองอุดรธานี",
+  "coords": "17.41342, 102.78763",
+  "description": "ศาลหลักเมืองริมทุ่งศรีเมือง สร้างครั้งแรกปี 2502 และอัญเชิญดวงพระวิญญาณกรมหลวงประจักษ์ศิลปาคมผู้สร้างเมืองมาสถิต ศาลหลังใหม่ปี 2542 เป็นสถาปัตยกรรมอีสาน ในศาลมีเสาหลักเมืองไม้คูณ พระพุทธโพธิ์ทองหินทรายปางนาคปรก และท้าวเวสสุวรรณ",
+  "hours": "เปิดตลอด 24 ชั่วโมง",
+  "offerings": [
+   "ดอกไม้ ธูป เทียน",
+   "พวงมาลัย",
+   "น้ำมันตะเกียง"
+  ],
+  "howToPray": [
+   "ไหว้ทั้งเสาหลักเมืองต้นเดิมและต้นใหม่",
+   "ไหว้พระพุทธโพธิ์ทอง เชื่อว่าช่วยให้มีผู้ใหญ่เมตตาค้ำชู",
+   "ไหว้ท้าวเวสสุวรรณขอโชคลาภ และลูบกระบองของท้าวเวสสุวรรณตามความเชื่อ",
+   "เข้าประตูไหนให้ออกประตูนั้น เชื่อว่าเสริมสิริมงคล"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Udon_Thani_-_The_City_Pillar_Shrine_-_0002.jpg/1280px-Udon_Thani_-_The_City_Pillar_Shrine_-_0002.jpg",
+    "alt": "ศาลหลักเมืองอุดรธานี อาคารทรงอีสานริมทุ่งศรีเมือง",
+    "author": "Stefan Fussan",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Udon_Thani_-_The_City_Pillar_Shrine_-_0002.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OpenStreetMap way 1344565721 (17.4134193, 102.787633) ตรงกับ Wikidata Q13021400 (17.413375, 102.787636)",
+   "dailynews ระบุงานใหญ่ประจำปีทุกวันที่ 29 มกราคม มีการรำบวงสรวง"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/ศาลหลักเมืองอุดรธานี",
+   "https://www.dailynews.co.th/news/5342642/",
+   "https://www.thaipost.net/news-update/199702/"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "อนุสาวรีย์กรมหลวงประจักษ์ศิลปาคม",
+  "nameEn": "Krom Luang Prachaksinlapakhom Monument",
+  "slug": "krom-luang-prachak-monument-udon-thani",
+  "type": "shrine",
+  "deities": [
+   "กรมหลวงประจักษ์ศิลปาคม"
+  ],
+  "goals": [
+   "protection",
+   "career"
+  ],
+  "province": "อุดรธานี",
+  "district": "อำเภอเมืองอุดรธานี",
+  "coords": "17.40083, 102.79476",
+  "description": "อนุสาวรีย์ผู้ก่อตั้งเมืองอุดรเมื่อปี 2436 ตั้งอยู่กลางวงเวียนใจกลางเมือง เป็นรูปหล่อทองบรอนซ์ในเครื่องแบบทหารเต็มยศบนแท่นหินแกรนิต ชาวอุดรเคารพนับถือมาก นิยมมาขอพรให้ได้ดั่งใจหวัง",
+  "offerings": [],
+  "howToPray": [
+   "กราบสักการะที่ลานอนุสาวรีย์แล้วขอพรให้ได้ดั่งใจหวัง"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Udon_Thani_-_Krom_Luang_Prachaksinlapakhom_Monument_-_0002.jpg/1280px-Udon_Thani_-_Krom_Luang_Prachaksinlapakhom_Monument_-_0002.jpg",
+    "alt": "อนุสาวรีย์กรมหลวงประจักษ์ศิลปาคม กลางวงเวียนเมืองอุดรธานี",
+    "author": "Stefan Fussan",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Udon_Thani_-_Krom_Luang_Prachaksinlapakhom_Monument_-_0002.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OpenStreetMap node 11330703599 ที่วงเวียนกรมหลวงประจักษ์ฯ (17.4008348, 102.7947555) ตรงกับตำแหน่งภาพ Commons (17.40069, 102.79477)",
+   "ระวัง: OSM มีอีก node ชื่ออนุสาวรีย์กรมหลวงประจักษ์ศิลปาคมที่วงเวียนน้ำพุ (17.4042796, 102.79392) น่าจะผิดตำแหน่ง ไม่ได้ใช้",
+   "เป็นอนุสาวรีย์ ไม่ใช่ศาล ส่วนศาลเทพารักษ์กรมหลวงประจักษ์ใกล้พระตำหนักหนองประจักษ์เป็นอีกแห่ง ยังไม่มีภาพ จึงไม่ได้ใส่",
+   "ข้อมูลวิธีไหว้มาจากบทความ thaipost เท่านั้น"
+  ],
+  "sources": [
+   "https://www.thaipost.net/news-update/199702/"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าปู่-ย่า อุดรธานี",
+  "nameEn": "Chao Pu-Ya Shrine, Udon Thani",
+  "slug": "chao-pu-ya-shrine-udon-thani",
+  "type": "chinese-shrine",
+  "deities": [
+   "ทีกง",
+   "ปึงเถ่ากงม่า",
+   "เจ้าพ่อหนองบัว",
+   "ตี่จู๋เอี๊ย",
+   "พระสังกัจจายน์",
+   "ฉั่งง่วนส่วย"
+  ],
+  "goals": [
+   "business",
+   "protection"
+  ],
+  "province": "อุดรธานี",
+  "district": "อำเภอเมืองอุดรธานี",
+  "coords": "17.40044, 102.80670",
+  "description": "ศาลเจ้าจีนในสวนสาธารณะหนองบัว ถนนศาลเจ้าเนรมิต ศูนย์รวมใจชาวไทยเชื้อสายจีนในอุดรธานี คนนิยมมาขอพรเรื่องค้าขาย เรื่องไม่สบายใจ และแก้ชง เป็นจุดตั้งขบวนแห่ในงานใหญ่ของเมือง เข้าชมฟรี",
+  "offerings": [
+   "ธูป (มีป้ายบอกจำนวนแต่ละจุด รวมราว 30 ดอก)",
+   "เทียนมงคล",
+   "น้ำมันตะเกียง",
+   "ส้ม",
+   "ชุดของไหว้มีจำหน่ายที่ศาล"
+  ],
+  "howToPray": [
+   "เริ่มไหว้ฟ้าดิน (ทีกง) ด้านหน้าก่อน แล้วไหว้ตามลำดับป้ายรวม 6 จุด",
+   "ลำดับ: ทีกง, ปึงเถ่ากงม่า, ศาลเจ้าพ่อหนองบัว, ตี่จู๋เอี๊ย, พระสังกัจจายน์, ฉั่งง่วนส่วย",
+   "ถ้าไม่แน่ใจ สอบถามเจ้าหน้าที่ที่ศาลได้ มีเซียมซีให้เสี่ยงด้วย"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Chao_Pu-Ya_Shrine.jpg/1280px-Chao_Pu-Ya_Shrine.jpg",
+    "alt": "อาคารศาลเจ้าปู่-ย่า อุดรธานี ศิลปะจีน ป้ายชื่อศาลภาษาจีน",
+    "author": "Z3144228",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chao_Pu-Ya_Shrine.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OpenStreetMap node 1308678306 (17.4004404, 102.8067022) ริมถนนศาลเจ้าเนรมิต ฝั่งตะวันตกของหนองบัว ตรงกับที่อยู่ใน Wongnai แต่ยังไม่มีแหล่งพิกัดที่ 2 (OSM มี node มูลนิธิศาลเจ้าปู่ย่า ห่างไปทางใต้ราว 180 ม. คืออาคารมูลนิธิ/ศูนย์วัฒนธรรม)",
+   "ภาพ Commons ไม่มีพิกัดและหมวด แต่ใช้ประกอบบทความอุดรธานีใน ml/ms.wikipedia และป้ายบนอาคารเขียน 本頭公媽廟 (ปึงเถ่ากงม่า) จึงเชื่อว่าเป็นศาลนี้ ควรตรวจสายตาอีกครั้ง",
+   "brief เดิมบอกว่าอยู่ที่หนองประจักษ์ แต่แหล่งข้อมูลระบุว่าอยู่สวนสาธารณะหนองบัว",
+   "วิธีไหว้มาจากรีวิว Wongnai (ไม่ใช่แหล่งทางการ)"
+  ],
+  "sources": [
+   "https://www.wongnai.com/attractions/356821pv-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9B%E0%B8%B9%E0%B9%88-%E0%B8%A2%E0%B9%88%E0%B8%B2-%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A3%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5/reviews",
+   "https://www.thaipost.net/news-update/199702/",
+   "https://www.dailynews.co.th/news/4580574/"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลหลักเมืองอุบลราชธานี",
+  "nameEn": "Ubon Ratchathani City Pillar Shrine",
+  "slug": "lak-mueang-ubon-ratchathani",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "อุบลราชธานี",
+  "district": "อำเภอเมืองอุบลราชธานี",
+  "coords": "15.22831, 104.85774",
+  "description": "ศาลหลักเมืองบนถนนศรีณรงค์ เปิดเมื่อ 16 มกราคม 2519 ต่อมาบูรณะเป็นอาคารจตุรมุขแบบภาคกลาง เสาหลักเมืองเป็นไม้ราชพฤกษ์ยอดบัวตูม คนนิยมมาไหว้ขอพร เสริมฤกษ์ เสริมชัย ทุกปีเทศบาลจัดงานทำบุญหลักเมืองวันขึ้น 1 ค่ำ เดือน 7",
+  "offerings": [],
+  "howToPray": [
+   "ในบริเวณมีอนุสาวรีย์พระอุบาลีคุณูปมาจารย์และสมเด็จพระมหาวีรวงศ์ (ติสฺโส อ้วน) ให้สักการะด้วย"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ubon_Ratchathani_City_Pillar_Shrine.jpg/1280px-Ubon_Ratchathani_City_Pillar_Shrine.jpg",
+    "alt": "ศาลหลักเมืองอุบลราชธานี อาคารจตุรมุข",
+    "author": "Christophe95",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ubon_Ratchathani_City_Pillar_Shrine.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OpenStreetMap way 739078963 (15.2283085, 104.8577371) ตรงกับตำแหน่งภาพ Commons (15.228569, 104.857544)"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/mqzXLDgd15J0"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลหลักเมืองนครพนม",
+  "nameEn": "Nakhon Phanom City Pillar Shrine",
+  "slug": "lak-mueang-nakhon-phanom",
+  "type": "shrine",
+  "deities": [
+   "พระเสื้อเมือง",
+   "พระทรงเมือง",
+   "พระหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "นครพนม",
+  "district": "อำเภอเมืองนครพนม",
+  "coords": "17.40816, 104.78046",
+  "description": "ศาลหลักเมืองใจกลางเมืองนครพนม ใกล้ริมโขง สร้างปี 2522 เป็นอาคารทรงไทยจัตุรมุข หลังคาซ้อน 3 ชั้น เชื่อกันว่าเป็นที่สถิตของพระเสื้อเมือง พระทรงเมือง และพระหลักเมือง ผู้คนมาสักการะและทำบุญได้",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Lakmueangnakhonphanoma.jpg/1280px-Lakmueangnakhonphanoma.jpg",
+    "alt": "ศาลหลักเมืองจังหวัดนครพนม ป้ายชื่อหน้าศาลและบันไดขึ้นอาคาร",
+    "author": "Hdamm",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lakmueangnakhonphanoma.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OpenStreetMap node 14058036116 (17.4081572, 104.7804642) ถนนอภิบาลบัญชา แหล่งเดียว ภาพ Commons ไม่มีพิกัด อยู่ใกล้ถนนริมโขง (สุนทรวิจิตร) สอดคล้องกับคำอธิบายว่าอยู่ริมโขง ควรตรวจซ้ำ",
+   "แหล่งข้อมูลไม่ตรงกันเรื่องที่อยู่ (iok2u: ถนนสุนทรวิจิตร, Trip.com: ถนนอภิบาลบัญชา) และไม้เสาหลักเมือง (ชัยพฤกษ์ หรือ กันเกรา) จึงไม่ใส่รายละเอียดเหล่านี้",
+   "อย่าสับสนกับศาลเจ้าพ่อหมื่น (เดิมเรียกศาลเจ้าพ่อหมื่นหลักเมือง) ในวัดโอกาส"
+  ],
+  "sources": [
+   "https://www.iok2u.com/variety/travel-thailand/travel-nakhonphanom-muang-citypillarshrine"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลหลักเมืองยโสธร (ศาลเจ้าพ่อหลักเมืองยโสธร)",
+  "nameEn": "Yasothon City Pillar Shrine",
+  "slug": "lak-mueang-yasothon",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "ยโสธร",
+  "district": "อำเภอเมืองยโสธร",
+  "coords": "15.79154, 104.14332",
+  "description": "ศาลหลักเมืองในย่านเมืองเก่าบ้านสิงห์ท่า ตั้งเสาหลักเมืองเมื่อปี 2530 ตัวศาลคล้ายศาลเจ้าจีน ผสมศิลปะจีน ไทย และลาว มีเสาหลักเมือง 3 ต้น ทุกปีมีขบวนแห่ตามวันจีนที่ตั้งศาล",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Yasothon_City_Pillar_Shrine_%28I%29.jpg/1280px-Yasothon_City_Pillar_Shrine_%28I%29.jpg",
+    "alt": "ศาลหลักเมืองยโสธร อาคารผสมศิลปะจีนในย่านบ้านสิงห์ท่า",
+    "author": "Supanut Arunoprayote",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yasothon_City_Pillar_Shrine_%28I%29.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OpenStreetMap way 1564102761 (15.7915419, 104.1433189) ถนนแจ้งสนิท ตรงกับตำแหน่งภาพ Commons (15.79148, 104.14344)",
+   "ไม่พบแหล่งภาษาไทยที่อธิบายวิธีไหว้หรือของไหว้ของศาลนี้"
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Yasothon",
+   "https://www.lovethailand.org/travel/en/55-Yasothon/3541-Ban-Sing-Tha-Old-Town.html"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลหลักเมืองสุรินทร์",
+  "nameEn": "Surin City Pillar Shrine",
+  "slug": "lak-mueang-surin",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อหลักเมือง",
+   "พระพุทธรูปนาคปรก"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "สุรินทร์",
+  "district": "อำเภอเมืองสุรินทร์",
+  "coords": "14.88460, 103.48920",
+  "description": "ศาลหลักเมืองบนถนนเทศบาล 3 ชาวสุรินทร์นับถือมากว่า 100 ปีตั้งแต่ยังไม่มีเสาหลักเมือง กรมศิลปากรออกแบบศาลและเสาในปี 2511 เสาทำจากไม้ชัยพฤกษ์ ภายหลังบูรณะเป็นศิลปะขอมผสมไทย ในศาลยังมีพระนาคปรกและโบราณวัตถุที่ขุดพบบริเวณนี้",
+  "hours": "ทุกวัน 08.30-16.30 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Surin_City_Pillar_Shrine_-_Surin.jpg/1280px-Surin_City_Pillar_Shrine_-_Surin.jpg",
+    "alt": "ศาลหลักเมืองสุรินทร์",
+    "author": "JJ Harrison",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Surin_City_Pillar_Shrine_-_Surin.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OpenStreetMap way 1415663836 (14.8845983, 103.4892) ตรงกับ Wikidata Q29511842 (14.884611, 103.4891)",
+   "ภาพนี้ใช้ใน en.wikipedia หน้า Surin มีภาพ panoramio CC BY 3.0 อีกหลายภาพที่พิกัดเดียวกัน"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/XEeqqpddGmgE"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลหลักเมืองบุรีรัมย์",
+  "nameEn": "Buriram City Pillar Shrine",
+  "slug": "lak-mueang-buriram",
+  "type": "shrine",
+  "deities": [
+   "พระเสื้อเมือง",
+   "พระทรงเมือง",
+   "เทพารักษ์"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "บุรีรัมย์",
+  "district": "อำเภอเมืองบุรีรัมย์",
+  "coords": "14.99614, 103.11377",
+  "description": "ศาลหลักเมืองกลางเมืองบุรีรัมย์ เชื่อกันว่าเป็นจุดกำเนิดเมือง ศาลหลังใหม่สร้างปี 2548 เป็นปรางค์แบบขอม 5 ชั้น ภายในมีเสาหลักเมือง 2 ต้น คนนิยมมาไหว้ช่วงต้นปีเพื่อเสริมหลักชัยให้ชีวิต การงานมั่นคง ข้างกันมีศาลเจ้าพ่อหลักเมืองแบบจีน",
+  "hours": "ทุกวัน 08.00-20.00 น.",
+  "offerings": [],
+  "howToPray": [
+   "ไหว้ขอพรให้ชีวิตมีหลักชัย การงานมั่นคง",
+   "ไหว้ศาลหลักเมืองแล้วแวะไหว้ศาลเจ้าพ่อหลักเมือง (ศาลจีน) ที่อยู่ติดกันด้วย"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Buriram_City_pillar_shrine_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B1%E0%B8%A1%E0%B8%A2%E0%B9%8C_img_01.jpg/1280px-Buriram_City_pillar_shrine_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B1%E0%B8%A1%E0%B8%A2%E0%B9%8C_img_01.jpg",
+    "alt": "ศาลหลักเมืองบุรีรัมย์ ทรงปรางค์ขอม",
+    "author": "Reversemos.sapanaht",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buriram_City_pillar_shrine_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B1%E0%B8%A1%E0%B8%A2%E0%B9%8C_img_01.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OpenStreetMap way 637267857 สวนหลักเมือง The City Pillar Shrine (14.9961413, 103.1137675) ใกล้ตำแหน่งภาพ Commons (14.995958, 103.113747) ราว 20 ม. OSM ไม่มีจุดตัวอาคารศาลแยก",
+   "ภาพ img 01 มีป้ายโต๊ะถวายน้ำ พวงมาลัย ในศาล แต่ไม่มีแหล่งข้อความยืนยันจึงไม่ใส่ในของไหว้"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/Z37K9B5Ww4W3",
+   "https://www.wongnai.com/attractions/1917439BM-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87-%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B1%E0%B8%A1%E0%B8%A2%E0%B9%8C/reviews"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าพ่อหลักเมือง บุรีรัมย์ (ศาลเจ้าจีน)",
+  "nameEn": "Chao Pho Lak Mueang Chinese Shrine, Buriram",
+  "slug": "chao-pho-lak-mueang-chinese-shrine-buriram",
+  "type": "chinese-shrine",
+  "deities": [
+   "เจ้าพ่อหลักเมือง",
+   "ไฉ่ซิงเอี๊ย",
+   "กวนอู"
+  ],
+  "goals": [
+   "money",
+   "business",
+   "protection"
+  ],
+  "province": "บุรีรัมย์",
+  "district": "อำเภอเมืองบุรีรัมย์",
+  "coords": "14.99611, 103.11373",
+  "description": "ศาลเจ้าจีนในบริเวณเดียวกับศาลหลักเมืองบุรีรัมย์ ประดิษฐานรูปเหมือนเจ้าพ่อหลักเมือง ด้านซ้ายเป็นไฉ่ซิงเอี๊ย ด้านขวาเป็นกวนอู ชาวไทยเชื้อสายจีนในบุรีรัมย์มาไหว้กันมากช่วงเทศกาล กลางคืนเปิดไฟสวย",
+  "offerings": [],
+  "howToPray": [
+   "นิยมไหว้ต่อจากศาลหลักเมืองที่อยู่ติดกัน",
+   "จอดรถริมถนนรอบบริเวณศาลได้"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Buriram_City_pillar_shrine_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B1%E0%B8%A1%E0%B8%A2%E0%B9%8C_img_06.jpg/1280px-Buriram_City_pillar_shrine_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B1%E0%B8%A1%E0%B8%A2%E0%B9%8C_img_06.jpg",
+    "alt": "ศาลเจ้าจีนสีแดงประดับโคมในบริเวณศาลหลักเมืองบุรีรัมย์",
+    "author": "Reversemos.sapanaht",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buriram_City_pillar_shrine_-_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B1%E0%B8%A1%E0%B8%A2%E0%B9%8C_img_06.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดเป็นตำแหน่งกล้องของภาพ Commons img 06 (14.996114, 103.113725) ที่ถ่ายศาลจีน ไม่ใช่ตัวอาคาร คลาดเคลื่อนได้ราว 20-30 ม. อยู่ในสวนหลักเมืองเดียวกับศาลหลักเมือง ไม่พบจุด OSM แยก",
+   "ชื่อตาม Wongnai (ศาลเจ้าพ่อหลักเมือง บุรีรัมย์) บางแหล่งเรียกศาลจีนข้างศาลหลักเมืองว่าศาลปึงเถ่ากงม่า ยังไม่ได้ยืนยันชื่อทางการ",
+   "ภาพบันทึกชื่อไฟล์ว่า Buriram City pillar shrine แต่ตรวจสายตาแล้วเป็นอาคารศาลเจ้าจีน"
+  ],
+  "sources": [
+   "https://www.wongnai.com/attractions/1917439BM-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87-%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B1%E0%B8%A1%E0%B8%A2%E0%B9%8C/reviews",
+   "https://travel.trueid.net/detail/Z37K9B5Ww4W3"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลหลักเมืองร้อยเอ็ด",
+  "nameEn": "Roi Et City Pillar Shrine",
+  "slug": "lak-mueang-roi-et",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "ร้อยเอ็ด",
+  "district": "อำเภอเมืองร้อยเอ็ด",
+  "coords": "16.05675, 103.65253",
+  "description": "ศาลคู่บ้านคู่เมืองร้อยเอ็ด ตั้งอยู่บนเกาะกลางบึงพลาญชัยใจกลางเมือง ชาวร้อยเอ็ดเชื่อว่าเจ้าพ่อช่วยดลบันดาลให้ชาวเมืองมีความสุขสมปรารถนา คนต่างถิ่นที่มาเที่ยวก็นิยมแวะสักการะ",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%94.jpg/1280px-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%94.jpg",
+    "alt": "ศาลหลักเมืองร้อยเอ็ดในบึงพลาญชัย",
+    "author": "คีโต",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%94.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OpenStreetMap way 1444501158 ศาลหลักเมืองจังหวัดร้อยเอ็ด (16.0567477, 103.6525301) แหล่งเดียว ภาพ Commons ไม่มีพิกัด ตำแหน่งอยู่บนเกาะกลางบึงพลาญชัยตามที่แหล่งข่าวระบุ"
+  ],
+  "sources": [
+   "https://mgronline.com/travel/detail/9660000054833"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลเจ้าพ่อพญาแล (หนองปลาเฒ่า)",
+  "nameEn": "Chao Pho Phraya Lae Shrine",
+  "slug": "chao-pho-phraya-lae-shrine-chaiyaphum",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อพญาแล (พระยาภักดีชุมพล)"
+  ],
+  "goals": [
+   "protection",
+   "career"
+  ],
+  "province": "ชัยภูมิ",
+  "district": "อำเภอเมืองชัยภูมิ",
+  "coords": "15.79771, 102.01097",
+  "description": "ศาลริมหนองปลาเฒ่า จุดที่เล่ากันว่าพระยาภักดีชุมพล (แล) เจ้าเมืองชัยภูมิคนแรกถูกประหารเมื่อปี 2369 ชาวชัยภูมินับถือเป็นสิ่งศักดิ์สิทธิ์คู่บ้านคู่เมือง ศาลสร้างใหม่ปี 2511 มีงานบุญเดือนหกที่ศาลทุกปี ในบริเวณมีรูปปั้นเต่ายักษ์ของเจ้าพ่อด้วย",
+  "offerings": [
+   "อาหารคาวหวาน",
+   "บายศรี",
+   "ขันหมากเบ็ง"
+  ],
+  "howToPray": [
+   "ผู้ศรัทธามาบนบานขอพรกับเจ้าพ่อพญาแล"
+  ],
+  "howToRepayVow": [
+   "แก้บนด้วยเครื่องสักการะ เช่น อาหารคาวหวาน บายศรี และขันหมากเบ็ง"
+  ],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%9E%E0%B8%8D%E0%B8%B2%E0%B9%81%E0%B8%A5.jpg/1280px-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%9E%E0%B8%8D%E0%B8%B2%E0%B9%81%E0%B8%A5.jpg",
+    "alt": "รูปปั้นเต่าใหญ่เจ้าพ่อพญาแล คล้องพวงมาลัย ในบริเวณศาลริมหนองปลาเฒ่า",
+    "author": "Skaterlight2013",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%9E%E0%B8%8D%E0%B8%B2%E0%B9%81%E0%B8%A5.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OpenStreetMap way 737418704 (15.7977146, 102.0109653) ตรงกับตำแหน่งภาพ Commons (15.797961, 102.010803)",
+   "ภาพเป็นรูปปั้นเต่ายักษ์ในบริเวณศาล (คำอธิบายไฟล์: เต่ายักษ์) ไม่ใช่ตัวอาคารศาล ป้ายในภาพเล่าเรื่องเต่าในหนองปลาเฒ่าที่เชื่อมโยงกับเจ้าพ่อ หากต้องการภาพตัวศาลควรหาเพิ่ม",
+   "th.wikipedia ระบุว่าสถานที่ประหารยังไม่ยุติทางประวัติศาสตร์ (จดหมายเหตุ ร.3 ระบุหนองบัวลำภู) คำอธิบายจึงใช้คำว่าเล่ากันว่า",
+   "ของไหว้และพิธีมาจากบทคัดย่องานวิจัยใน TCI ซึ่งพูดถึงการสักการะเจ้าพ่อพญาแลโดยรวม ไม่ได้แยกว่าเป็นศาลหรืออนุสาวรีย์"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/พระยาภักดีชุมพล_(แล)",
+   "https://so12.tci-thaijo.org/index.php/j_ssp/article/view/8710"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "อนุสาวรีย์เจ้าพ่อพญาแล",
+  "nameEn": "Chao Pho Phraya Lae Monument",
+  "slug": "phraya-lae-monument-chaiyaphum",
+  "type": "shrine",
+  "deities": [
+   "เจ้าพ่อพญาแล (พระยาภักดีชุมพล)"
+  ],
+  "goals": [
+   "protection",
+   "career"
+  ],
+  "province": "ชัยภูมิ",
+  "district": "อำเภอเมืองชัยภูมิ",
+  "coords": "15.80688, 102.03150",
+  "description": "อนุสาวรีย์เจ้าเมืองชัยภูมิคนแรก สร้างปี 2518 ที่วงเวียนศูนย์ราชการทางเข้าเมือง หน้าศาลากลางจังหวัด เป็นจุดสักการะสำคัญของเมือง ช่วงงานเจ้าพ่อพญาแลราว 12-20 มกราคม มีขบวนช้างมาสักการะอนุสาวรีย์",
+  "offerings": [
+   "บายศรี",
+   "อาหารคาวหวาน",
+   "ขันหมากเบ็ง"
+  ],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/Chaiyaphum_City_Hall.jpg",
+    "alt": "อนุสาวรีย์เจ้าพ่อพญาแลหน้าศาลากลางจังหวัดชัยภูมิ",
+    "author": "Oatz",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chaiyaphum_City_Hall.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OpenStreetMap node 3512350591 อนุสาวรีย์เจ้าพ่อพญาแล ที่ Sun Ratchakan Roundabout (15.8068841, 102.0315048) ตรงกับคำอธิบายใน th.wikipedia ว่าอยู่วงเวียนศูนย์ราชการ ไม่มีพิกัดแหล่งที่ 2",
+   "ภาพความละเอียดต่ำ (500px) เป็น Public domain ตามที่ผู้อัปโหลด (Oatz) ระบุ ควรหาภาพที่ดีกว่า",
+   "ของไหว้ยกมาจากงานวิจัย TCI เรื่องการสักการะเจ้าพ่อพญาแลโดยรวม",
+   "งานช้างและวันที่มาจากข่าว mgronline ปี 2553 วันจัดงานอาจเปลี่ยนแต่ละปี"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/พระยาภักดีชุมพล_(แล)",
+   "https://mgronline.com/local/detail/9530000003877",
+   "https://so12.tci-thaijo.org/index.php/j_ssp/article/view/8710"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "name": "ศาลหลักเมืองหนองบัวลำภู (ศาลหลักเมืองพระวอ-พระตา)",
+  "nameEn": "Phra Wo Phra Ta City Pillar Shrine",
+  "slug": "lak-mueang-phra-wo-phra-ta-nong-bua-lamphu",
+  "type": "shrine",
+  "deities": [
+   "พระวอ",
+   "พระตา"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "หนองบัวลำภู",
+  "district": "อำเภอเมืองหนองบัวลำภู",
+  "coords": "17.21050, 102.43867",
+  "description": "ศาลหลักเมืองที่สร้างเพื่อสักการะพระวอและพระตา ผู้สร้างบ้านแปงเมืองหนองบัวลำภู วางศิลาฤกษ์ 21 พฤศจิกายน 2518 และเปิดเมื่อ 28 กุมภาพันธ์ 2519 อยู่ห่างทางหลวง 210 ราว 100 เมตร มีพิธีบวงสรวงศาลหลักเมืองและพิธีเลี้ยงบ้าน",
+  "offerings": [
+   "ดอกไม้ ธูป เทียน",
+   "พวงมาลัย"
+  ],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/NongbuaLamphu_SanLakMueang091223a.jpg/1280px-NongbuaLamphu_SanLakMueang091223a.jpg",
+    "alt": "ศาลหลักเมืองหนองบัวลำภู อาคารทรงไทยสีขาวแดง",
+    "author": "Me and yu",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:NongbuaLamphu_SanLakMueang091223a.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัดจาก OpenStreetMap way 1443447025 (17.2105025, 102.4386662) ตรงกับ lovethailand.org (17.210467, 102.438489)",
+   "ภาพถ่ายปี 2552 ไม่มีพิกัด คำอธิบาย Lak Mueang shrine of Nongbua Lamphu"
+  ],
+  "sources": [
+   "https://www.lovethailand.org/travel/t/47-หนองบัวลำภู/3217-ศาลหลักเมืองพระวอ-พระตา.html"
+  ],
+  "published": false,
+  "checkedAt": "2026-10-12"
+ },
+ {
+  "type": "chinese-shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลเจ้าจุ้ยตุ่ย (จุ้ยตุ่ยเต้าโบ้เก้ง)",
+  "nameEn": "Jui Tui Shrine",
+  "slug": "jui-tui-shrine-phuket",
+  "deities": [
+   "กิ๋วอ๋องไต่เต่"
+  ],
+  "goals": [
+   "protection",
+   "health"
+  ],
+  "province": "ภูเก็ต",
+  "district": "อำเภอเมืองภูเก็ต",
+  "coords": "7.88310, 98.38320",
+  "description": "ศาลเจ้าจีนเก่าแก่ในซอยภูธร ถนนระนอง กลางเมืองภูเก็ต คนภูเก็ตเรียกว่าอ๊าม เป็นศาลเจ้าหลักแห่งหนึ่งของงานประเพณีถือศีลกินผัก (กินเจ) 9 วัน 9 คืน มีพิธีบูชาดาวนพเคราะห์และแห่พระไปตามถนนในเมือง",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Jui_Tui_Shrine.jpg/1280px-Jui_Tui_Shrine.jpg",
+    "alt": "ด้านหน้าศาลเจ้าจุ้ยตุ่ย เมืองภูเก็ต",
+    "author": "Christophe95",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jui_Tui_Shrine.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Jui_Tui_Shrine_02.jpg/1280px-Jui_Tui_Shrine_02.jpg",
+    "alt": "ภายในศาลเจ้าจุ้ยตุ่ย ภูเก็ต",
+    "author": "Christophe95",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jui_Tui_Shrine_02.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัด: Wikidata Q6631981 (7.88304, 98.38329), OSM way 475818884 (7.883121, 98.383037), พิกัดกล้องภาพ Commons (7.8832, 98.383284) ตรงกัน",
+   "พิกัดในวิกิพีเดียไทย (7.52, 98.22) ผิด ไม่ได้ใช้",
+   "ไม่ได้ใส่เวลาเปิด"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/ศาลเจ้าจุ้ยตุ่ย",
+   "https://www.wikidata.org/wiki/Q6631981"
+  ]
+ },
+ {
+  "type": "chinese-shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลเจ้ากะทู้ (ไล่ทู้เต้าโบ้เก้ง)",
+  "nameEn": "Kathu Shrine",
+  "slug": "kathu-shrine-phuket",
+  "deities": [
+   "กิ๋วอ๋องไต่เต่"
+  ],
+  "goals": [
+   "protection",
+   "health"
+  ],
+  "province": "ภูเก็ต",
+  "district": "อำเภอกะทู้",
+  "coords": "7.91642, 98.34508",
+  "description": "ศาลเจ้าเก่าแก่ของชาวกะทู้ที่ถือเป็นจุดเริ่มต้นของเทศกาลถือศีลกินผักในภูเก็ต ตามตำนานเล่าว่าคณะงิ้วจากจีนจัดพิธีกินผักที่นี่แล้วโรคภัยหายไป ชาวภูเก็ตจึงนับถือและศาลเจ้าอื่นหลายแห่งก็มาอัญเชิญไฟศักดิ์สิทธิ์จากที่นี่ไป",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Kathu_Shrine_established_in_the_early_1800s._The_earliest_and_historical_birthplace_of_the_Nine_Emperor_Gods_worship_in_Southeast_Asia_region.jpg/1280px-Kathu_Shrine_established_in_the_early_1800s._The_earliest_and_historical_birthplace_of_the_Nine_Emperor_Gods_worship_in_Southeast_Asia_region.jpg",
+    "alt": "แท่นบูชาและของไหว้ภายในศาลเจ้ากะทู้ ภูเก็ต",
+    "author": "Slabain258",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kathu_Shrine_established_in_the_early_1800s._The_earliest_and_historical_birthplace_of_the_Nine_Emperor_Gods_worship_in_Southeast_Asia_region.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัด: Wikidata Q13021409 (7.9164167, 98.3450833) และ OSM way 570817600 (7.916423, 98.345083) ตรงกัน แต่อาจคัดลอกมาจากกัน",
+   "ภาพ CC0 มีภาพเดียวที่ไม่ใช่ภาพเจาะแก้มในเทศกาล (ภาพเทศกาลบน Commons เป็นภาพเจาะหน้า หลีกเลี่ยง)"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/ศาลเจ้าไล่ทู้เต้าโบ้เก้ง",
+   "https://www.wikidata.org/wiki/Q13021409"
+  ]
+ },
+ {
+  "type": "chinese-shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลเจ้าปุดจ้อ (อ๊ามปุดจ้อ)",
+  "nameEn": "Put Jor Shrine",
+  "slug": "put-jor-shrine-phuket",
+  "deities": [
+   "เจ้าแม่กวนอิม (กวนอิมปุดจ้อ)"
+  ],
+  "goals": [
+   "family",
+   "love"
+  ],
+  "province": "ภูเก็ต",
+  "district": "อำเภอเมืองภูเก็ต",
+  "coords": "7.88355, 98.38328",
+  "description": "ศาลเจ้าจีนเก่าแก่ของภูเก็ต บูชาเจ้าแม่กวนอิมที่คนภูเก็ตเรียกว่าปุดจ้อ ตั้งอยู่ติดกับศาลเจ้าจุ้ยตุ่ย ศาลหลังปัจจุบันสร้างราวปี 2452 คนภูเก็ตเชื้อสายจีนนิยมมาไหว้ขอบุตรและขอพรในวันแต่งงาน",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/PutJaw_Detail_Dragon.JPG",
+    "alt": "ลวดลายมังกรประดับศาลเจ้าปุดจ้อ ภูเก็ต",
+    "author": "(WT-en) Jpatokal at English Wikivoyage",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PutJaw_Detail_Dragon.JPG"
+   }
+  ],
+  "notes": [
+   "พิกัด: Wikidata Q56561898 (7.883573, 98.383291) และ OSM way 475818885 (7.883529, 98.38327) ตรงกัน",
+   "ภาพมีแค่ภาพรายละเอียดลายมังกร 800px ไม่เห็นตัวอาคาร ควรหาภาพที่ดีกว่า"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/ศาลเจ้าปุดจ้อ",
+   "https://www.wikidata.org/wiki/Q56561898"
+  ]
+ },
+ {
+  "type": "chinese-shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลเจ้าฮกหงวนก้ง",
+  "nameEn": "Hok Nguan Kong Shrine",
+  "slug": "hok-nguan-kong-shrine-phuket",
+  "deities": [
+   "เฉ่งจุ้ยจ้อซูก้ง"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "ภูเก็ต",
+  "district": "อำเภอเมืองภูเก็ต",
+  "coords": "7.87990, 98.39193",
+  "description": "ศาลเจ้าจีนเก่าแก่ของภูเก็ต บูชาเฉ่งจุ้ยจ้อซูก้ง (จ้อซูก้ง) ที่ชาวฮกเกี้ยนผู้มาทำเหมืองดีบุกนำผงธูปมาจากจีน ย้ายที่ตั้งมาแล้ว 3 ครั้ง ศาลหลังปัจจุบันใกล้วงเวียนสุรินทร์ (หอนาฬิกา) สร้างในสมัยรัชกาลที่ 6",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/%E7%A6%8F%E5%85%83%E5%AE%AEHokguangong3.jpg/1280px-%E7%A6%8F%E5%85%83%E5%AE%AEHokguangong3.jpg",
+    "alt": "ด้านหน้าศาลเจ้าฮกหงวนก้ง ภูเก็ต",
+    "author": "Chunpeang1tan",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E7%A6%8F%E5%85%83%E5%AE%AEHokguangong3.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/%E7%A6%8F%E5%85%83%E5%AE%AEHokguangong5.jpg/1280px-%E7%A6%8F%E5%85%83%E5%AE%AEHokguangong5.jpg",
+    "alt": "แท่นบูชาจ้อซูก้งในศาลเจ้าฮกหงวนก้ง",
+    "author": "Chunpeang1tan",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E7%A6%8F%E5%85%83%E5%AE%AEHokguangong5.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัด: Wikidata Q97350254 (7.879793, 98.391928) และพิกัดกล้องภาพ Commons (7.880144, 98.391931) ตรงกัน",
+   "เป้าหมาย protection เป็นค่าทั่วไป แหล่งที่อ่านไม่ได้บอกว่าคนนิยมมาขอเรื่องใด"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/ศาลเจ้าฮกหงวนก้ง",
+   "https://www.wikidata.org/wiki/Q97350254"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลหลักเมืองกระบี่",
+  "nameEn": "Krabi City Pillar Shrine",
+  "slug": "lak-mueang-krabi",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "career",
+   "money",
+   "protection"
+  ],
+  "province": "กระบี่",
+  "district": "อำเภอเมืองกระบี่",
+  "coords": "8.05963, 98.91803",
+  "description": "ศาลหลักเมืองกลางเมืองกระบี่ ตำบลปากน้ำ ใกล้ศาลากลางจังหวัด สร้างเป็นที่ยึดเหนี่ยวจิตใจของชาวกระบี่ วางศิลาฤกษ์ปี 2531 คนนิยมมาขอพรเพื่อความเป็นสิริมงคล หน้าที่การงานรุ่งเรืองและเรื่องเงิน",
+  "hours": "ทุกวัน 06.00-18.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Krabi_-_Stadtpfeiler_-_0019.jpg/1280px-Krabi_-_Stadtpfeiler_-_0019.jpg",
+    "alt": "ศาลหลักเมืองกระบี่",
+    "author": "Stefan Fussan",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Krabi_-_Stadtpfeiler_-_0019.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Krabi_-_Stadtpfeiler_-_0016.jpg/1280px-Krabi_-_Stadtpfeiler_-_0016.jpg",
+    "alt": "อาคารศาลหลักเมืองกระบี่",
+    "author": "Stefan Fussan",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Krabi_-_Stadtpfeiler_-_0016.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัด: Wikidata Q50660069 (8.059657, 98.918045) และ OSM node 4666783992 (8.05961, 98.918013) ตรงกัน",
+   "เวลาเปิดจาก TrueID แหล่งเดียว"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/N9om5NrXEk0M",
+   "https://www.wikidata.org/wiki/Q50660069"
+  ]
+ },
+ {
+  "type": "chinese-shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลเจ้าเฉ้งจุ้ยจ้อซู่ก๋ง เหนือคลอง",
+  "nameEn": "Qing Shui Pagoda (Cheng Chui Cho Su Kong Shrine)",
+  "slug": "cheng-chui-cho-su-kong-shrine-nuea-khlong-krabi",
+  "deities": [
+   "จ้อซู้ก๋ง",
+   "กิ๋วอ๋องไต่เต่"
+  ],
+  "goals": [
+   "protection",
+   "health"
+  ],
+  "province": "กระบี่",
+  "district": "อำเภอเหนือคลอง",
+  "coords": "8.07120, 98.99950",
+  "description": "ศาลเจ้าที่ชาวเหนือคลองนับถือ ตั้งมาราว 140 ปี และเป็นสถานที่จัดงานกินเจของกระบี่ ในงานมีพิธีไหว้ดาวนพเคราะห์และพิธีเดินข้ามสะพานสะเดาะพระเคราะห์ (โกยฮั่น) ซึ่งมีคนจากหลายจังหวัดมาร่วม",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Qing_Shui_Pagoda%2C_Nuea_Khlong_SF0002.jpg/1280px-Qing_Shui_Pagoda%2C_Nuea_Khlong_SF0002.jpg",
+    "alt": "เจดีย์และรูปเจ้าแม่กวนอิมที่ศาลเจ้าเฉ้งจุ้ยจ้อซู่ก๋ง เหนือคลอง กระบี่",
+    "author": "Stefan Fussan",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qing_Shui_Pagoda,_Nuea_Khlong_SF0002.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัด: Wikidata Q13021406 (8.07122, 98.999426) และพิกัดกล้องภาพ Commons (8.071, 98.999694) ตรงกัน",
+   "เป้าหมาย health/protection อิงพิธีสะเดาะเคราะห์ในงานกินเจ"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/ศาลเจ้าเฉ้งจุ้ยจ้อซุ้ก๋ง",
+   "https://www.wikidata.org/wiki/Q13021406"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลกรมหลวงชุมพรเขตอุดมศักดิ์ เมืองเก่าลันตา",
+  "nameEn": "Kromluang Chumphon Khetudomsak Shrine, Ko Lanta",
+  "slug": "kromluang-chumphon-shrine-ko-lanta",
+  "deities": [
+   "พระเจ้าบรมวงศ์เธอ กรมหลวงชุมพรเขตอุดมศักดิ์ (เสด็จเตี่ย)"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "กระบี่",
+  "district": "อำเภอเกาะลันตา",
+  "coords": "7.53104, 99.09429",
+  "description": "ศาลเสด็จเตี่ยในย่านเมืองเก่าลันตา (บ้านศรีรายา) บนเกาะลันตาใหญ่ กรมหลวงชุมพรฯ ทรงเป็นองค์บิดาแห่งทหารเรือไทย มีศาลของพระองค์กว่า 200 แห่งทั่วประเทศ เป็นที่เคารพของชาวเรือและคนริมทะเล",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Kromluang_Chumphon_Khetudomsak_Shrine.jpg/1280px-Kromluang_Chumphon_Khetudomsak_Shrine.jpg",
+    "alt": "ศาลกรมหลวงชุมพรเขตอุดมศักดิ์ เมืองเก่าลันตา",
+    "author": "Krzysztof Golik",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kromluang_Chumphon_Khetudomsak_Shrine.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัด: Wikidata Q54870606 (7.531005, 99.094283), OSM node 5422071420 (7.531068, 99.094304), พิกัดกล้องภาพ (7.531057, 99.094442) ตรงกัน",
+   "แหล่งข้อมูลเฉพาะของศาลนี้มีน้อย เนื้อหาเป็นข้อมูลพระองค์จากวิกิพีเดีย ส่วนที่ว่าเป็นที่เคารพของชาวเรือเป็นข้อมูลทั่วไปของศาลเสด็จเตี่ย ควรตรวจก่อนเผยแพร่"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/พระเจ้าบรมวงศ์เธอ_กรมหลวงชุมพรเขตอุดมศักดิ์",
+   "https://www.wikidata.org/wiki/Q54870606"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลหลักเมืองนครศรีธรรมราช",
+  "nameEn": "Nakhon Si Thammarat City Pillar Shrine",
+  "slug": "lak-mueang-nakhon-si-thammarat",
+  "deities": [
+   "เจ้าพ่อหลักเมือง",
+   "องค์จตุคามรามเทพ"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "นครศรีธรรมราช",
+  "district": "อำเภอเมืองนครศรีธรรมราช",
+  "coords": "8.43042, 99.96217",
+  "description": "ศาลหลักเมืองทางทิศเหนือของสนามหน้าเมือง ตำบลคลัง มี 5 อาคาร หลังกลางประดิษฐานเสาหลักเมืองไม้ตะเคียนทอง ล้อมด้วยศาลาจตุโลกเทพ 4 หลัง เสาหลักเมืองสร้างใหม่ปี 2530 และผูกพันกับความเชื่อเรื่ององค์จตุคามรามเทพ",
+  "hours": "ทุกวัน 07.30-19.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/City_Pillar_Shrine%2C_Nakhon_Si_Thammarat.jpg/1280px-City_Pillar_Shrine%2C_Nakhon_Si_Thammarat.jpg",
+    "alt": "อาคารศาลหลักเมืองนครศรีธรรมราช",
+    "author": "Wutkh",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:City_Pillar_Shrine,_Nakhon_Si_Thammarat.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/02/Nakhon_Si_Thammarat_Lak_Mueang_-_panoramio.jpg",
+    "alt": "ศาลหลักเมืองนครศรีธรรมราช",
+    "author": "Andreas Hörstemeier",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nakhon_Si_Thammarat_Lak_Mueang_-_panoramio.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัด: Wikidata Q18707017 (8.43045, 99.962153) และ OSM node 1586071760 (8.430382, 99.962178) ตรงกัน, พิกัดภาพ panoramio (8.429414, 99.962368) ใกล้กัน",
+   "เวลาเปิดจาก TrueID แหล่งเดียว"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/N3a8O6JnGDAV",
+   "https://mgronline.com/daily/detail/9510000017800",
+   "https://www.wikidata.org/wiki/Q18707017"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลหลักเมืองขนอม",
+  "nameEn": "Khanom City Pillar Shrine",
+  "slug": "lak-mueang-khanom",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "นครศรีธรรมราช",
+  "district": "อำเภอขนอม",
+  "coords": "9.18268, 99.85176",
+  "description": "ศาลหลักเมืองในสวนสาธารณะพ่อตาคูระ อำเภอขนอม ชาวบ้านร่วมกันสร้างเพื่อระลึกถึงความเป็นเมืองเก่าแก่ของขนอม เป็นศูนย์รวมศรัทธาของคนขนอมและเปิดให้สักการะได้ทุกวัน",
+  "hours": "ทุกวัน 08.00-18.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sala_Lak_Mueang_Khanom_1.jpg/1280px-Sala_Lak_Mueang_Khanom_1.jpg",
+    "alt": "ศาลหลักเมืองขนอม นครศรีธรรมราช",
+    "author": "Ahoerstemeier",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sala_Lak_Mueang_Khanom_1.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัด: Wikidata Q66107535 (9.182639, 99.851694) และพิกัดกล้องภาพ Commons ของ Ahoerstemeier (9.18261-9.18289, 99.8517-99.8521) ตรงกัน",
+   "เป็นหลักเมืองระดับอำเภอ"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/GwdezKvrZ5eL",
+   "https://www.wikidata.org/wiki/Q66107535"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลหลักเมืองสุราษฎร์ธานี",
+  "nameEn": "Surat Thani City Pillar Shrine",
+  "slug": "lak-mueang-surat-thani",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "สุราษฎร์ธานี",
+  "district": "อำเภอเมืองสุราษฎร์ธานี",
+  "coords": "9.13921, 99.32168",
+  "description": "ศาลหลักเมืองริมแม่น้ำตาปี ตำบลตลาด ตัวศาลออกแบบในสไตล์ศรีวิชัย เสาหลักเมืองสูง 108 นิ้ว ยอดแกะสลักเป็นพระโพธิสัตว์อวโลกิเตศวร 4 หน้าหันไป 4 ทิศ ลงรักปิดทอง",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Surat_Thani_City_Pillar_Shrine_1.jpg/1280px-Surat_Thani_City_Pillar_Shrine_1.jpg",
+    "alt": "ศาลหลักเมืองสุราษฎร์ธานี ริมแม่น้ำตาปี",
+    "author": "Christophe95",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Surat_Thani_City_Pillar_Shrine_1.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Interior_of_Surat_Thani_City_Pillar_Shrine.jpg/1280px-Interior_of_Surat_Thani_City_Pillar_Shrine.jpg",
+    "alt": "เสาหลักเมืองภายในศาลหลักเมืองสุราษฎร์ธานี",
+    "author": "Christophe95",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Interior_of_Surat_Thani_City_Pillar_Shrine.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัด: Wikidata Q18707028 (9.139223, 99.32164), OSM way 167081575 (9.139189, 99.321705) และพิกัดภาพหลายภาพตรงกัน",
+   "เวลาเปิดแต่ละแหล่งไม่ตรงกัน (07.00-19.00 / 07.30-18.00) จึงไม่ใส่",
+   "แหล่งหนึ่งว่าสร้างปี 2539 ยังไม่ได้ยืนยันจากหน้าที่อ่านเอง จึงไม่ใส่"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/Ov7w7Qo105Y",
+   "https://www.wikidata.org/wiki/Q18707028"
+  ]
+ },
+ {
+  "type": "chinese-shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลเจ้าแม่กวนอิม เกาะพะงัน",
+  "nameEn": "Guanyin Shrine (Chinese Temple), Ko Pha Ngan",
+  "slug": "kuan-im-shrine-ko-pha-ngan",
+  "deities": [
+   "เจ้าแม่กวนอิม"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "สุราษฎร์ธานี",
+  "district": "อำเภอเกาะพะงัน",
+  "coords": "9.76775, 100.00590",
+  "description": "ศาลเจ้าจีนสีสันสดใสบนเนินเขาใกล้อ่าวโฉลกหลำ สร้างถวายเจ้าแม่กวนอิม เดิมเคยใช้เป็นประภาคารนำทางให้ชาวประมงในอ่าว มีอาคาร 3 หลังลดหลั่นตามเนิน และจุดชมวิวมองเห็นอ่าวโฉลกหลำ",
+  "hours": "ทุกวัน 08.00-17.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Kuan_Yin_Temple_Ko_Pha_Ngan_04.jpg/1280px-Kuan_Yin_Temple_Ko_Pha_Ngan_04.jpg",
+    "alt": "ศาลเจ้าแม่กวนอิมบนเนินเขา เกาะพะงัน",
+    "author": "Christophe95",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kuan_Yin_Temple_Ko_Pha_Ngan_04.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัด: Wikidata Q56246131 (9.767778, 100.005556) และพิกัดกล้องภาพ Christophe95 (9.767717, 100.00605) ตรงกัน",
+   "ภาพชุด ChinessTemple2-9.761527 ในหมวดเดียวกันอยู่ห่างไป ~700 ม. อาจเป็นคนละที่ ไม่ได้ใช้",
+   "แหล่งข้อมูลเป็นบล็อกท่องเที่ยว (thaiest) แหล่งเดียว เวลาเปิดและค่าเข้า 40 บาทแต่ละแหล่งไม่ตรงกัน ควรตรวจ"
+  ],
+  "sources": [
+   "https://thaiest.com/blog/koh-phangan-temples",
+   "https://www.wikidata.org/wiki/Q56246131"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลเจ้าพ่อหลักเมืองสงขลา",
+  "nameEn": "Songkhla City Pillar Shrine",
+  "slug": "lak-mueang-songkhla",
+  "deities": [
+   "เจ้าพ่อหลักเมือง (เซ่งห๋องเหล่าเอี้ย)",
+   "พระเสื้อเมือง",
+   "พระหมอ"
+  ],
+  "goals": [
+   "protection",
+   "health",
+   "career",
+   "business"
+  ],
+  "province": "สงขลา",
+  "district": "อำเภอเมืองสงขลา",
+  "coords": "7.19653, 100.59089",
+  "description": "ศาลหลักเมืองบนถนนนางงาม ย่านเมืองเก่าสงขลา เป็นโบราณสถานสมัยรัตนโกสินทร์ อาคารเป็นเก๋งจีน สร้างในสมัยพระยาวิเชียรคีรีเป็นเจ้าเมือง เป็นที่สักการะร่วมกันของคนไทยและคนไทยเชื้อสายจีน",
+  "hours": "ทุกวัน 08.00-18.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Songkhla_City_Pillar_Shrine_%28I%29.jpg/1280px-Songkhla_City_Pillar_Shrine_%28I%29.jpg",
+    "alt": "ศาลเจ้าพ่อหลักเมืองสงขลา ถนนนางงาม",
+    "author": "Supanut Arunoprayote",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Songkhla_City_Pillar_Shrine_(I).jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/Songkhla_Lak_Mueang_inside.jpg",
+    "alt": "ภายในศาลหลักเมืองสงขลา",
+    "author": "Ahoerstemeier",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Songkhla_Lak_Mueang_inside.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัด: OSM node 4695685892 (7.196575, 100.590997) และพิกัดกล้องภาพ Supanut (7.196482, 100.59079) ตรงกัน",
+   "รายชื่อเทพ (พระเสื้อเมือง พระหมอ) จากผลค้นหาข่าวที่ยังไม่ได้เปิดอ่านเต็ม ชื่อเซ่งห๋องเหล่าเอี้ยจาก TrueID"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/N3a8O6JnGDAV"
+  ]
+ },
+ {
+  "type": "chinese-shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลเจ้ามูลนิธิมิตรภาพสามัคคี (ท่งเซียเซี่ยงตึ๊ง) หาดใหญ่",
+  "nameEn": "Tong Xia Foundation Shrine, Hat Yai",
+  "slug": "tong-xia-shrine-hat-yai",
+  "deities": [
+   "เจ้าแม่ลิ้มกอเหนี่ยว",
+   "ฮกเต็กแป๊ะกง",
+   "นาจาไท้จื้อ"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "สงขลา",
+  "district": "อำเภอหาดใหญ่",
+  "coords": "7.00940, 100.47615",
+  "description": "ศาลเจ้าของมูลนิธิมิตรภาพสามัคคี (ท่งเซียเซี่ยงตึ๊ง) กลางเมืองหาดใหญ่ ประดิษฐานองค์เจ้าแม่ลิ้มกอเหนี่ยว ฮกเต็กแป๊ะกง และนาจาไท้จื้อ ทุกปีมีการอัญเชิญองค์จำลองเจ้าแม่ลิ้มกอเหนี่ยวจากหาดใหญ่ไปให้สาธุชนในกรุงเทพฯ สักการะ",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Tong_Xia_Foundation%27s_Shrine_%28I%29.jpg/1280px-Tong_Xia_Foundation%27s_Shrine_%28I%29.jpg",
+    "alt": "ศาลเจ้ามูลนิธิท่งเซียเซี่ยงตึ๊ง หาดใหญ่",
+    "author": "Supanut Arunoprayote",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tong_Xia_Foundation%27s_Shrine_(I).jpg"
+   }
+  ],
+  "notes": [
+   "พิกัด: OSM/Nominatim 'Chinese Temple' ถนนศุภสารรังสรรค์ (7.0095442, 100.4760096) และพิกัดกล้องภาพ Supanut (7.009238, 100.476318) ห่างกันราว 45 ม. ใช้ค่ากลาง",
+   "แหล่งข้อมูลมีแค่ข่าวสดเรื่องงานอัญเชิญเจ้าแม่ลิ้มกอเหนี่ยวไปมูลนิธิป่อเต็กตึ๊ง ไม่มีประวัติศาลเจ้าเอง ควรเสริมข้อมูล"
+  ],
+  "sources": [
+   "https://www.khaosod.co.th/around-thailand/news_8122751"
+  ]
+ },
+ {
+  "type": "chinese-shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลเจ้าเล่งจูเกียง (ศาลเจ้าแม่ลิ้มกอเหนี่ยว)",
+  "nameEn": "Leng Chu Kiang Shrine (Lim Ko Niao Shrine)",
+  "slug": "leng-chu-kiang-shrine-pattani",
+  "deities": [
+   "เจ้าแม่ลิ้มกอเหนี่ยว",
+   "โจ๊วซูกง (พระหมอ)",
+   "เจ้าแม่ทับทิม"
+  ],
+  "goals": [
+   "protection",
+   "health"
+  ],
+  "province": "ปัตตานี",
+  "district": "อำเภอเมืองปัตตานี",
+  "coords": "6.87150, 101.25825",
+  "description": "ศาลเจ้าจีนเชิงสะพานเดชานุชิต ถนนอาเนาะรู เมืองปัตตานี ก่อตั้งราวปี 2117 เทพประธานคือโจ๊วซูกง (พระหมอ) ภายหลังอัญเชิญเจ้าแม่ลิ้มกอเหนี่ยวมาประดิษฐาน เป็นศูนย์รวมใจคนไทยเชื้อสายจีนในภาคใต้ ทุกปีมีงานแห่เจ้าแม่ข้ามน้ำลุยไฟ ราว 15 ค่ำ เดือน 3 ตามปฏิทินจีน",
+  "offerings": [
+   "ผ้าแพรสีแดง",
+   "สร้อยมุก"
+  ],
+  "howToPray": [
+   "มีธรรมเนียมที่เล่าต่อกันว่า อธิษฐานกับสร้อยมุกแล้วแขวนถวายเจ้าแม่ 2 เส้น และนำกลับบ้าน 1 เส้นเพื่อเป็นสิริมงคล"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Leng_Chu_Kiang_Shrine_in_2018.jpg",
+    "alt": "ด้านหน้าศาลเจ้าเล่งจูเกียง ปัตตานี",
+    "author": "แอนเดอร์สัน",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leng_Chu_Kiang_Shrine_in_2018.jpg"
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%87%E0%B8%88%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B8%A2%E0%B8%87_%28%E0%B8%9B%E0%B8%B1%E0%B8%95%E0%B8%95%E0%B8%B2%E0%B8%99%E0%B8%B5%29.jpg",
+    "alt": "ลานหน้าศาลเจ้าเล่งจูเกียง ปัตตานี",
+    "author": "Piyawat Chongkaichak",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%87%E0%B8%88%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B8%A2%E0%B8%87_(%E0%B8%9B%E0%B8%B1%E0%B8%95%E0%B8%95%E0%B8%B2%E0%B8%99%E0%B8%B5).jpg"
+   }
+  ],
+  "notes": [
+   "พิกัด: Wikidata Q40980487 (6.871471, 101.258336), OSM way 1337111627 (6.871545, 101.258196), พิกัดกล้องภาพ (6.871167, 101.257833) ตรงกัน",
+   "ของถวายและพิธีสร้อยมุกจากข่าวสดที่เล่าถึงองค์จำลองเจ้าแม่ที่นำไปกรุงเทพฯ (คำว่า นัยว่าท่านโปรด) ไม่ใช่กติกาของศาลเจ้าโดยตรง",
+   "วันงานแห่จากผลค้นหา mgronline/seasite ยังไม่ได้อ่านหน้าเต็ม"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/ศาลเจ้าเล่งจูเกียง",
+   "https://www.khaosod.co.th/around-thailand/news_8122751",
+   "https://www.wikidata.org/wiki/Q40980487"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลหลักเมืองยะลา",
+  "nameEn": "Yala City Pillar Shrine",
+  "slug": "lak-mueang-yala",
+  "deities": [
+   "เจ้าพ่อหลักเมือง"
+  ],
+  "goals": [
+   "protection",
+   "career",
+   "business"
+  ],
+  "province": "ยะลา",
+  "district": "อำเภอเมืองยะลา",
+  "coords": "6.54110, 101.28042",
+  "description": "ศาลหลักเมืองในตำบลสะเตง เมืองยะลา เสาหลักเมืองแกะสลักลายไทย ยอดเป็นพระพรหม 4 หน้าจากไม้ชัยพฤกษ์ เป็นศูนย์รวมใจของชาวยะลา และมีงานสมโภชศาลหลักเมืองซึ่งเป็นงานใหญ่ของจังหวัด",
+  "hours": "ทุกวัน 08.00-18.30 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Yala_TH_City_Pillar_Shrine.jpg/1280px-Yala_TH_City_Pillar_Shrine.jpg",
+    "alt": "ศาลหลักเมืองยะลา",
+    "author": "Pchaas",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yala_TH_City_Pillar_Shrine.jpg"
+   }
+  ],
+  "notes": [
+   "พิกัด: Wikidata Q16139112 (6.54104, 101.28044) และ OSM node 2814747825 (6.541175, 101.280404) ตรงกัน",
+   "เวลาเปิดจาก TrueID แหล่งเดียว"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/N3a8O6JnGDAV",
+   "https://www.wikidata.org/wiki/Q16139112"
+  ]
+ },
+ {
+  "type": "shrine",
+  "published": false,
+  "checkedAt": "2026-10-12",
+  "name": "ศาลกรมหลวงชุมพรเขตอุดมศักดิ์ หาดทรายรี (ศาลเสด็จเตี่ย)",
+  "nameEn": "Prince Chumphon Shrine, Hat Sai Ri",
+  "slug": "kromluang-chumphon-shrine-hat-sai-ri",
+  "deities": [
+   "พระเจ้าบรมวงศ์เธอ กรมหลวงชุมพรเขตอุดมศักดิ์ (เสด็จเตี่ย)"
+  ],
+  "goals": [
+   "protection",
+   "career"
+  ],
+  "province": "ชุมพร",
+  "district": "อำเภอเมืองชุมพร",
+  "coords": "10.39950, 99.27970",
+  "description": "ศาลเสด็จเตี่ยที่ปลายหาดทรายรี จุดที่กรมหลวงชุมพรฯ องค์บิดาแห่งทหารเรือไทย สิ้นพระชนม์เมื่อปี 2466 ฐานศาลสร้างเป็นรูปเรือรบ ข้างกันตั้งเรือหลวงชุมพรเป็นอนุสรณ์ คนท้องถิ่น ทหารเรือ และชาวเรือมักแวะสักการะก่อนออกทะเล",
+  "offerings": [],
+  "howToPray": [
+   "แต่งกายสุภาพ เพราะเป็นสถานที่สักการะ ไม่ใช่แค่จุดชมวิว"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B8%B8%E0%B8%A1%E0%B8%9E%E0%B8%A3_Mueang_Chum_Phop_Province_at_Hat_Sai_Ri_%2CBy_HS3CMI_-_panoramio_-_CHAMRAT_CHAROENKHET_%284%29.jpg/1280px-%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B8%B8%E0%B8%A1%E0%B8%9E%E0%B8%A3_Mueang_Chum_Phop_Province_at_Hat_Sai_Ri_%2CBy_HS3CMI_-_panoramio_-_CHAMRAT_CHAROENKHET_%284%29.jpg",
+    "alt": "ฐานรูปเรือรบของศาลกรมหลวงชุมพรฯ หาดทรายรี",
+    "author": "CHAMRAT CHAROENKHET",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B8%B8%E0%B8%A1%E0%B8%9E%E0%B8%A3_Mueang_Chum_Phop_Province_at_Hat_Sai_Ri_,By_HS3CMI_-_panoramio_-_CHAMRAT_CHAROENKHET_(4).jpg"
+   }
+  ],
+  "notes": [
+   "พิกัด: OSM node 4413204693 'พระตำหนักกรมหลวงชุมพรเขตอุดมศักดิ์' place_of_worship (10.399631, 99.279722) และพิกัดภาพ panoramio 'ทางขึ้นศาลเสด็จเตี่ย หาดทรายรี' (10.39933, 99.2795) / 'ศาลกรมหลวงฯ หาดทรายรี' (10.39927, 99.279672) ใกล้กัน",
+   "ภาพที่ใช้เห็นแค่ฐานรูปเรือ ไม่เห็นองค์ศาล (ระบุว่าเป็นฐานรูปเรือตาม thaiholidayguide) ควรหาภาพที่ดีกว่า",
+   "เวลาเปิดแต่ละแหล่งไม่ตรงกัน (08.00-17.00 / 08.00-20.00) จึงไม่ใส่",
+   "ยังไม่พบแหล่งที่เชื่อถือได้เรื่องของถวาย (เช่น ประทัด ตุ๊กตาทหารเรือ) จึงเว้นว่าง"
+  ],
+  "sources": [
+   "https://www.thaiholidayguide.com/attraction/hat-sai-ri/",
+   "https://th.wikipedia.org/wiki/พระเจ้าบรมวงศ์เธอ_กรมหลวงชุมพรเขตอุดมศักดิ์"
+  ]
+ }
+]
