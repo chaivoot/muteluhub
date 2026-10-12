@@ -43,8 +43,15 @@ export default async function HomePage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }} />
       <section className="hero">
-        {/* TODO: ภาพบรรยากาศจริงพร้อมเครดิต (ห้ามใช้ภาพตัวอย่างใน design/mockups/images) */}
-        <div className="hero__art" aria-hidden="true" />
+        {/* ภาพจากเจ้าของเว็บ (ไม่ใช่ภาพตัวอย่างใน design/mockups/images) */}
+        <img
+          src="/images/hero/hero-prayer-1600.webp"
+          srcSet="/images/hero/hero-prayer-900.webp 900w, /images/hero/hero-prayer-1600.webp 1600w"
+          sizes="100vw"
+          alt="หญิงสาวพนมมือไหว้ขอพรหน้าองค์เทพในศาลเจ้าจีน"
+          className="hero__img"
+          fetchPriority="high"
+        />
         <div className="hero__scrim" aria-hidden="true" />
         <SiteHeader overlay />
         <div className="hero__content">
