@@ -10,7 +10,7 @@ import { ShirtSolid, UiIcon } from './icons';
 import { useGoal } from './goal-context';
 import { ShareButton } from './ShareButton';
 
-/** การ์ดสีเสื้อวันนี้ แบบย่อ (หน้าแรก) ตามเป้าหมายที่เลือก */
+/** การ์ดสีเสื้อวันนี้ แบบย่อ (หน้าแรก) ตามเป้าหมายที่เลือก กดทั้งการ์ดไปหน้าสีเสื้อ ยกเว้นปุ่มแชร์ */
 export function ShirtColorCard({
   weekday,
   shirts = {},
@@ -28,7 +28,7 @@ export function ShirtColorCard({
       <div className="shirt-card__inner">
         <Link
           href={goal ? `/color-today?goal=${goal}` : '/color-today'}
-          className={offer ? 'shirt-card__swatch shirt-swatch--photo' : 'shirt-card__swatch'}
+          className={offer ? 'shirt-card__swatch shirt-card__link shirt-swatch--photo' : 'shirt-card__swatch shirt-card__link'}
           style={{
             background: result?.lucky.color.hex ?? 'var(--color-image-placeholder)',
             borderColor: result?.lucky.color.hex,

@@ -82,4 +82,5 @@ spec ไม่ได้กำหนด framework ระบุแค่ว่า 
 - SEO: `src/app/sitemap.ts` (รวมสถานที่/หมอดูจาก DB, revalidate 1 ชม.), `src/app/robots.ts` (กัน /admin), ทุกหน้าสาธารณะตั้ง `alternates.canonical` (หน้าใหม่ต้องใส่ด้วย และเพิ่มใน sitemap), หน้าแรกมี JSON-LD WebSite, ภาพแชร์เริ่มต้น `src/app/opengraph-image.tsx`
 - ภาพ OG ภาษาไทย: Satori ไม่จัดวรรณยุกต์ซ้อนสระบน ฟอนต์ใน `src/assets/og` เพิ่มวรรณยุกต์ยกสูงด้วย `scripts/og-thai-marks.py` และทุก ImageResponse ต้องห่อด้วย `ogThai()` (`src/lib/og/thai.ts`)
 - ใกล้ฉัน: `src/lib/geo.ts` + ปุ่มใน `PlacesBrowser` ตำแหน่งใช้ในเบราว์เซอร์เท่านั้น พิกัดสถานที่บังคับตอนนำเข้า
+- ภาพ hero หน้าแรก `public/images/hero/` เป็นภาพ AI ที่เจ้าของให้มา ใช้เป็นภาพบรรยากาศได้ แต่ห้ามนำภาพ AI ไปใช้เป็นภาพสถานที่จริง
 - สินค้า affiliate (Shopee): ตาราง `products` นำเข้าที่ `/admin/import?kind=products` (`src/lib/import/product-schema.ts` รับเฉพาะลิงก์ affiliate `s.shopee.co.th` / `shope.ee`) ตอนนี้ใช้กับเสื้อสีมงคล: `listShirtOffers()` สีละ 1 ตัว แสดงรูปแทนไอคอนใน `/color-today` และการ์ดหน้าแรก + ลิงก์ rel="sponsored" ป้าย ลิงก์ affiliate (การ์ดแชร์ PNG ยังใช้ไอคอน) รูปสินค้าเก็บที่ `public/images/shirts/`
