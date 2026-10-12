@@ -1,7 +1,7 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { CHANNEL_LABEL, CHANNELS, PRICE_BUCKETS, type Channel, type FortuneTeller } from '@/data/fortune-tellers';
 import { PROVINCES } from '@/data/provinces';
 import { DISCIPLINES } from '@/lib/disciplines';
@@ -11,7 +11,6 @@ import { BottomSheet } from './BottomSheet';
 import { GoalChips } from './GoalChips';
 import { TellerCard } from './TellerCard';
 import { UiIcon } from './icons';
-import { useGoal } from './goal-context';
 
 /**
  * รายการหมอดู + filter: เป้าหมายอยู่แถวบนสุดเสมอ ที่เหลือ (ศาสตร์ ช่องทาง จังหวัด ราคา) อยู่ใน bottom sheet
@@ -19,20 +18,14 @@ import { useGoal } from './goal-context';
  */
 export function TellersBrowser({ tellers, fixedDiscipline }: { tellers: FortuneTeller[]; fixedDiscipline?: string }) {
   const params = useSearchParams();
-  const { goal: remembered } = useGoal();
   const queryGoal = params.get('goal');
   const [goal, setGoal] = useState<GoalSlug | null>(isGoalSlug(queryGoal) ? queryGoal : null);
-  const [touched, setTouched] = useState(isGoalSlug(queryGoal));
   const [discipline, setDiscipline] = useState(fixedDiscipline ?? params.get('discipline') ?? '');
   const [channel, setChannel] = useState<Channel | ''>('');
   const [province, setProvince] = useState('');
   const [price, setPrice] = useState('');
   const [sheetOpen, setSheetOpen] = useState(false);
   const closeSheet = useCallback(() => setSheetOpen(false), []);
-
-  useEffect(() => {
-    if (!touched && remembered) setGoal(remembered);
-  }, [remembered, touched]);
 
   const filter = {
     goal,
@@ -50,9 +43,10 @@ export function TellersBrowser({ tellers, fixedDiscipline }: { tellers: FortuneT
     return DISCIPLINES.filter((d) => used.has(d.slug));
   }, [tellers]);
   const provinceOptions = useMemo(
-    () => [...new Set(tellers.map((t) => t.provinceSlug).filter((p): p is string => !!p))].sort((a, b) =>
-      (PROVINCES[a] ?? a).localeCompare(PROVINCES[b] ?? b, 'th'),
-    ),
+    () =>
+      [...new Set(tellers.map((t) => t.provinceSlug).filter((p): p is string => !!p))].sort((a, b) =>
+        (PROVINCES[a] ?? a).localeCompare(PROVINCES[b] ?? b, 'th'),
+      ),
     [tellers],
   );
 
@@ -68,7 +62,6 @@ export function TellersBrowser({ tellers, fixedDiscipline }: { tellers: FortuneT
       <GoalChips
         value={goal}
         onChange={(g) => {
-          setTouched(true);
           setGoal(g);
         }}
       />
@@ -118,7 +111,12 @@ export function TellersBrowser({ tellers, fixedDiscipline }: { tellers: FortuneT
             <label htmlFor="f-discipline" className="field__label">
               ศาสตร์
             </label>
-            <select id="f-discipline" className="select" value={discipline} onChange={(e) => setDiscipline(e.target.value)}>
+            <select
+              id="f-discipline"
+              className="select"
+              value={discipline}
+              onChange={(e) => setDiscipline(e.target.value)}
+            >
               <option value="">ทุกศาสตร์</option>
               {disciplineOptions.map((d) => (
                 <option key={d.slug} value={d.slug}>

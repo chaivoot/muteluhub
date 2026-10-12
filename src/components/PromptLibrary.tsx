@@ -1,28 +1,21 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { PROMPT_TEMPLATES } from '@/data/prompt-templates';
 import { getDiscipline } from '@/lib/disciplines';
 import type { GoalSlug } from '@/lib/goals';
 import { filterTemplates } from '@/lib/prompts';
 import { GoalChips } from './GoalChips';
 import { PromptCard } from './PromptCard';
-import { useGoal } from './goal-context';
 
 const DISCIPLINE_OPTIONS = [
   ...new Set(PROMPT_TEMPLATES.map((t) => t.discipline).filter((d): d is string => d !== null)),
 ].map((slug) => ({ value: slug, label: getDiscipline(slug)?.name ?? slug }));
 
-/** คลัง prompt กรองตามเป้าหมาย (บนสุด) + ศาสตร์ เริ่มจากเป้าหมายที่ผู้ใช้เลือกไว้ */
+/** คลัง prompt กรองตามเป้าหมาย (บนสุด) + ศาสตร์ เริ่มที่ทั้งหมดเสมอ (ไม่ใช้เป้าหมายที่จำไว้ กันกดพลาดแล้วติดตัวกรอง) */
 export function PromptLibrary() {
-  const { goal: remembered } = useGoal();
   const [goal, setGoal] = useState<GoalSlug | null>(null);
-  const [touched, setTouched] = useState(false);
   const [discipline, setDiscipline] = useState('');
-
-  useEffect(() => {
-    if (!touched && remembered) setGoal(remembered);
-  }, [remembered, touched]);
 
   const results = useMemo(() => filterTemplates({ goal, discipline: discipline || null }), [goal, discipline]);
 
@@ -31,7 +24,6 @@ export function PromptLibrary() {
       <GoalChips
         value={goal}
         onChange={(g) => {
-          setTouched(true);
           setGoal(g);
         }}
       />
