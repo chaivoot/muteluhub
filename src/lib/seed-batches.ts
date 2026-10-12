@@ -4,6 +4,7 @@ import tellers01 from '@data/import/fortune-tellers-batch-01.json';
 import shrines01 from '@data/import/places-shrines-batch-01.json';
 import places02 from '@data/import/places-batch-02.json';
 import shirts01 from '@data/import/products-shirts-batch-01.json';
+import tellers02 from '@data/import/fortune-tellers-batch-02.json';
 import type { DirectoryKind } from '@/lib/directory-repo';
 
 /**
@@ -25,6 +26,7 @@ export const SEED_BATCHES: SeedBatch[] = [
   { id: 'places-shrines-batch-01', kind: 'places', label: 'ศาลเจ้าทั่วไทย 86 แห่ง (50 จังหวัด)', data: shrines01 },
   { id: 'products-shirts-batch-01', kind: 'products', label: 'เสื้อ YUEDPAO 12 ตัว ครบ 8 สีทักษา (สีเสื้อมงคล)', data: shirts01 },
   { id: 'fortune-tellers-batch-01', kind: 'fortune_tellers', label: 'หมอดูไพ่ทาโรต์ออนไลน์ 10 คน', data: tellers01 },
+  { id: 'fortune-tellers-batch-02', kind: 'fortune_tellers', label: 'หมอดูชุด 2: 59 คน ครบทุกศาสตร์ (โหร ซินแส เลข ลายมือ ไพ่)', data: tellers02 },
 ];
 
 export const getSeedBatch = (id: string) => SEED_BATCHES.find((b) => b.id === id);
