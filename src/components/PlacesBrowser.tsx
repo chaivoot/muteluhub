@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import type { Place } from '@/data/places';
 import type { GoalSlug } from '@/lib/goals';
 import { formatDistance, NEAR_ME_RADIUS_KM, sortByDistance, type LatLng } from '@/lib/geo';
@@ -8,7 +8,6 @@ import { deitiesOf, filterPlaces, provincesWithPlaces } from '@/lib/places';
 import { GoalChips } from './GoalChips';
 import { UiIcon } from './icons';
 import { PlaceCard } from './PlaceCard';
-import { useGoal } from './goal-context';
 
 type GeoState = 'idle' | 'locating' | 'denied' | 'unavailable';
 
@@ -23,9 +22,7 @@ export function PlacesBrowser({
   /** ตัวกรองพื้นที่: จังหวัด (ในไทย) หรือ เมือง (ต่างประเทศ) */
   groupBy?: 'province' | 'city';
 }) {
-  const { goal: remembered } = useGoal();
   const [goal, setGoal] = useState<GoalSlug | null>(null);
-  const [touched, setTouched] = useState(false);
   const [deity, setDeity] = useState('');
   const [province, setProvince] = useState('');
   const [here, setHere] = useState<LatLng | null>(null);
@@ -59,10 +56,6 @@ export function PlacesBrowser({
     );
   };
 
-  useEffect(() => {
-    if (!touched && remembered) setGoal(remembered);
-  }, [remembered, touched]);
-
   const deities = useMemo(() => deitiesOf(places), [places]);
   const provinces = useMemo(() => provincesWithPlaces(places), [places]);
   const cities = useMemo(() => [...new Set(places.map((p) => p.city).filter((c): c is string => !!c))], [places]);
@@ -89,7 +82,6 @@ export function PlacesBrowser({
       <GoalChips
         value={goal}
         onChange={(g) => {
-          setTouched(true);
           setGoal(g);
         }}
       />
