@@ -34,12 +34,23 @@ export interface FestivalFaq {
   source?: string;
 }
 
+/** หัวข้อเนื้อหาเพิ่มเติม เช่น กิจกรรมช่วงเทศกาล ข้อควรระวังตามความเชื่อ */
+export interface FestivalSection {
+  title: string;
+  intro?: string;
+  items: { name: string; text: string; source?: string }[];
+}
+
 /** เนื้อหาหน้าเทศกาล อัปเดตทุกปี (URL ไม่มีปี) ทุกข้อเท็จจริงต้องมีแหล่งอ้างอิง */
 export interface FestivalContent {
   intro: string;
   /** หมายเหตุวันตามจันทรคติ */
   lunarNote?: string;
+  /** หัวข้อของ rules (ค่าเริ่มต้น ข้อควรปฏิบัติ) */
+  rulesTitle?: string;
   rules: SourcedText[];
+  /** หัวข้อเพิ่มเติม แสดงต่อจาก rules */
+  sections?: FestivalSection[];
   /** หัวข้อของรายการพิเศษ เช่น ผักกลิ่นฉุน 5 ชนิด */
   specialList?: { title: string; items: string[]; source?: string };
   venues: FestivalVenue[];

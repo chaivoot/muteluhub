@@ -123,14 +123,31 @@ export default async function FestivalPage({ params }: { params: Params }) {
             </section>
           )}
 
-          <section>
-            <h2 className="place__h2">ข้อควรปฏิบัติ</h2>
-            <ul className="bullet-list">
-              {c.rules.map((r) => (
-                <li key={r.text}>{r.text}</li>
-              ))}
-            </ul>
-          </section>
+          {c.rules.length > 0 && (
+            <section>
+              <h2 className="place__h2">{c.rulesTitle ?? 'ข้อควรปฏิบัติ'}</h2>
+              <ul className="bullet-list">
+                {c.rules.map((r) => (
+                  <li key={r.text}>{r.text}</li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {c.sections?.map((sec) => (
+            <section key={sec.title}>
+              <h2 className="place__h2">{sec.title}</h2>
+              {sec.intro && <p className="fest-section__intro">{sec.intro}</p>}
+              <div className="venue-list">
+                {sec.items.map((it) => (
+                  <div key={it.name} className="venue">
+                    <div className="venue__name">{it.name}</div>
+                    <p className="venue__desc">{it.text}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          ))}
 
           {c.specialList && (
             <section>
