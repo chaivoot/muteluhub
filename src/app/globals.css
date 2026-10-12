@@ -688,3 +688,20 @@ ul { list-style: none; margin: 0; padding: 0; }
 .upload { display: inline-flex; flex-direction: column; gap: 4px; }
 .goal-chips { gap: 8px 6px; }
 .goal-chips .chip { height: 34px; padding: 0 12px 0 9px; gap: 5px; }
+
+/* ---------- discipline nav (หน้ารวมหมอดู) ---------- */
+.disc-nav { padding-top: 14px; padding-bottom: 4px; }
+.disc-nav__title { margin: 0 0 8px; font-family: var(--font-display); font-size: var(--text-lg); font-weight: 600; }
+.disc-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.disc-tile {
+  display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 10px 6px 8px;
+  border-radius: var(--radius-md); background: var(--color-surface); border: 1px solid var(--color-border);
+  color: var(--color-text); text-decoration: none; text-align: center;
+}
+.disc-tile:hover { border-color: var(--color-gold); color: var(--color-text); }
+.disc-tile__img { width: 56px; height: 56px; border-radius: 12px; }
+.disc-tile__name { font-size: var(--text-sm); font-weight: 600; line-height: 1.35; }
+.disc-tile__count { font-size: var(--text-xs); color: var(--color-text-muted); }
+.disc-nav__more { margin-top: 8px; }
+.disc-nav__more summary { cursor: pointer; min-height: 36px; display: flex; align-items: center; color: var(--color-gold-bright); font-size: var(--text-sm); }
+.disc-nav__more .disc-grid { margin-top: 6px; }

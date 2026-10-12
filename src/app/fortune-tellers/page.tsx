@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { Suspense } from 'react';
 import { ComingSoon, PageHeader } from '@/components/ComingSoon';
+import { DisciplineNav } from '@/components/DisciplineNav';
 import { TellersBrowser } from '@/components/TellersBrowser';
-import { DISCIPLINES } from '@/lib/disciplines';
 import { listPublishedTellers } from '@/lib/tellers-repo';
 
 export const metadata: Metadata = {
@@ -26,27 +25,12 @@ export default async function FortuneTellersPage() {
       </main>
     );
   }
-  const used = new Set(tellers.flatMap((t) => t.disciplines));
   return (
     <main>
       <PageHeader title="หมอดู" />
       <Suspense>
-        <TellersBrowser tellers={tellers} />
+        <TellersBrowser tellers={tellers} belowGoals={<DisciplineNav tellers={tellers} />} />
       </Suspense>
-      <section className="container">
-        <div className="section-header section-header--flush">
-          <h2 className="section-header__title">ดูตามศาสตร์</h2>
-        </div>
-        <ul className="chip-row chip-row--wrap">
-          {DISCIPLINES.filter((d) => used.has(d.slug)).map((d) => (
-            <li key={d.slug}>
-              <Link href={`/fortune-tellers/${d.slug}`} className="chip">
-                {d.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
     </main>
   );
 }
