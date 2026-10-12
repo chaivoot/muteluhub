@@ -620,3 +620,8 @@ ul { list-style: none; margin: 0; padding: 0; }
 .shirt-buy__hook { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: var(--text-lg); color: var(--color-gold-bright); }
 .shirt-buy__row { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; }
 .shirt-buy__link { font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.admin-filter { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.admin-filter__q { flex: 1 1 100%; }
+.admin-filter__q .input { width: 100%; }
+.admin-pager { display: flex; gap: 12px; align-items: center; justify-content: center; }
+.seed-box > summary { cursor: pointer; }
