@@ -27,13 +27,13 @@ export const getPlace = (slug: string, places: Place[]) => places.find((p) => p.
 
 export const isProvinceSlug = (slug: string) => slug in PROVINCES;
 
-/** จังหวัดที่มีสถานที่อย่างน้อย 1 แห่ง เรียงตามจำนวน */
+/** จังหวัดที่มีสถานที่อย่างน้อย 1 แห่ง เรียงตามตัวอักษร */
 export function provincesWithPlaces(places: Place[]): { slug: string; name: string; count: number }[] {
   const counts = new Map<string, number>();
   for (const p of places) if (p.provinceSlug) counts.set(p.provinceSlug, (counts.get(p.provinceSlug) ?? 0) + 1);
   return [...counts]
     .map(([slug, count]) => ({ slug, name: PROVINCES[slug] ?? slug, count }))
-    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'th'));
+    .sort((a, b) => a.name.localeCompare(b.name, 'th'));
 }
 
 export function deitiesOf(places: Place[]): string[] {

@@ -4,6 +4,9 @@ export interface LatLng {
   lng: number;
 }
 
+/** ใกล้ฉัน: แสดงเฉพาะสถานที่ในรัศมีนี้ (กม.) */
+export const NEAR_ME_RADIUS_KM = 30;
+
 /** ระยะทางตามแนวโค้งโลก (haversine) เป็นกิโลเมตร */
 export function distanceKm(a: LatLng, b: LatLng): number {
   const R = 6371;
