@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ComingSoon } from '@/components/ComingSoon';
+import { SiteHeader } from '@/components/SiteHeader';
 import { CreditBadge } from '@/components/CreditBadge';
 import { GoalTag } from '@/components/GoalTag';
-import { UiIcon } from '@/components/icons';
 import { FESTIVALS, type Festival, type FestivalDate } from '@/data/festivals';
 import { currentFestivalDate, festivalPhase, getFestival } from '@/lib/festivals';
 import { getGoal } from '@/lib/goals';
@@ -63,6 +63,7 @@ export default async function FestivalPage({ params }: { params: Params }) {
   return (
     <main>
       <FestivalJsonLd festival={festival} date={date} />
+      <SiteHeader />
       <div className="fest-hero">
         {festival.image ? (
           <img src={festival.image.src} alt={festival.image.alt} className="festival-card__img" />
@@ -71,11 +72,6 @@ export default async function FestivalPage({ params }: { params: Params }) {
         )}
         <span className="fest-hero__scrim" aria-hidden="true" />
         {festival.image && <CreditBadge credit={festival.image.credit} position="top-right" />}
-        <div className="place-hero__top">
-          <Link href="/" className="icon-btn icon-btn--glass" aria-label="ย้อนกลับ">
-            <UiIcon name="back" size={22} strokeWidth={2} />
-          </Link>
-        </div>
         <div className="fest-hero__text">
           {date && (
             <div className="fest-hero__badges">

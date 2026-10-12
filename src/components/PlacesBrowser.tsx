@@ -4,7 +4,8 @@ import { useMemo, useState } from 'react';
 import type { Place } from '@/data/places';
 import type { GoalSlug } from '@/lib/goals';
 import { formatDistance, NEAR_ME_RADIUS_KM, sortByDistance, type LatLng } from '@/lib/geo';
-import { deitiesOf, filterPlaces, provincesWithPlaces } from '@/lib/places';
+import { filterPlaces, provincesWithPlaces } from '@/lib/places';
+import { DeityCombobox, type DeityValue } from './DeityCombobox';
 import { GoalChips } from './GoalChips';
 import { UiIcon } from './icons';
 import { PlaceCard } from './PlaceCard';
@@ -23,7 +24,7 @@ export function PlacesBrowser({
   groupBy?: 'province' | 'city';
 }) {
   const [goal, setGoal] = useState<GoalSlug | null>(null);
-  const [deity, setDeity] = useState('');
+  const [deity, setDeity] = useState<DeityValue>(null);
   const [province, setProvince] = useState('');
   const [here, setHere] = useState<LatLng | null>(null);
   const [geo, setGeo] = useState<GeoState>('idle');
@@ -56,13 +57,13 @@ export function PlacesBrowser({
     );
   };
 
-  const deities = useMemo(() => deitiesOf(places), [places]);
   const provinces = useMemo(() => provincesWithPlaces(places), [places]);
   const cities = useMemo(() => [...new Set(places.map((p) => p.city).filter((c): c is string => !!c))], [places]);
   const results = filterPlaces(
     {
       goal,
-      deity: deity || null,
+      deity: deity?.kind === 'group' ? deity.slug : null,
+      deityText: deity?.kind === 'text' ? deity.text : null,
       province: groupBy === 'province' ? (fixedProvince ?? (province || null)) : null,
     },
     places,
@@ -108,17 +109,7 @@ export function PlacesBrowser({
           )}
         </div>
         <div className="filter-bar__selects">
-          <label className="select-wrap">
-            <span className="visually-hidden">องค์เทพ / สิ่งศักดิ์สิทธิ์</span>
-            <select className="select" value={deity} onChange={(e) => setDeity(e.target.value)}>
-              <option value="">ทุกองค์เทพ</option>
-              {deities.map((d) => (
-                <option key={d} value={d}>
-                  {d}
-                </option>
-              ))}
-            </select>
-          </label>
+          <DeityCombobox places={places} value={deity} onChange={setDeity} />
           {!fixedProvince && groupBy === 'province' && (
             <label className="select-wrap">
               <span className="visually-hidden">จังหวัด</span>

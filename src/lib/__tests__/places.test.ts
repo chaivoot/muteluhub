@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Place } from '@/data/places';
 import { agodaLink, showsLodging } from '@/lib/agoda';
-import { filterPlaces, mapLink, provincesWithPlaces, relatedPlaces } from '@/lib/places';
+import { deitiesOf, deitySuggestions, filterPlaces, mapLink, provincesWithPlaces, relatedPlaces } from '@/lib/places';
 
 const base: Omit<Place, 'slug' | 'provinceSlug' | 'goals' | 'deities'> = {
   name: 'x',
@@ -29,8 +29,29 @@ describe('filterPlaces', () => {
   it('filters by goal, deity and province together', () => {
     expect(filterPlaces({ goal: 'money' }, list).map((p) => p.slug)).toEqual(['a', 'c']);
     expect(filterPlaces({ goal: 'money', province: 'bangkok' }, list).map((p) => p.slug)).toEqual(['a']);
-    expect(filterPlaces({ deity: 'เจ้าพ่อเสือ' }, list).map((p) => p.slug)).toEqual(['b']);
+    expect(filterPlaces({ deity: 'tua-lao-ia' }, list).map((p) => p.slug)).toEqual(['b']);
+    expect(filterPlaces({ deity: 'brahma' }, list).map((p) => p.slug)).toEqual(['a']);
     expect(filterPlaces({}, list)).toHaveLength(3);
+  });
+});
+
+describe('deity groups', () => {
+  it('groups spelling variants of the same deity', () => {
+    const variants = ['กวนอู', 'เทพเจ้ากวนอู', 'เจ้าพ่อกวนอู'].map((d, i) => ({ ...b, slug: `g${i}`, deities: [d] }));
+    expect(filterPlaces({ deity: 'guan-yu', province: 'bangkok' }, [...list, ...variants])).toHaveLength(3);
+    expect(deitiesOf(variants)).toEqual([expect.objectContaining({ slug: 'guan-yu', count: 3 })]);
+  });
+
+  it('suggests groups and loose deity names for typed text', () => {
+    const d: Place = { ...b, slug: 'd', deities: ['เจ้าพ่อพระกาฬ', 'เทพเจ้ากวนอู'] };
+    expect(deitySuggestions([...list, d], '').map((s) => s.label)).toContain('เทพเจ้ากวนอู');
+    expect(deitySuggestions([...list, d], 'กวน')).toEqual([expect.objectContaining({ kind: 'group', slug: 'guan-yu' })]);
+    expect(deitySuggestions([...list, d], 'พระกาฬ')).toEqual([{ kind: 'text', label: 'เจ้าพ่อพระกาฬ', count: 1 }]);
+    expect(filterPlaces({ deityText: 'พระ กาฬ' }, [...list, d]).map((p) => p.slug)).toEqual(['d']);
+  });
+
+  it('ignores an unknown deity slug', () => {
+    expect(filterPlaces({ deity: 'nope' }, list)).toHaveLength(0);
   });
 });
 
