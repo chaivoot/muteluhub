@@ -229,6 +229,8 @@ ul { list-style: none; margin: 0; padding: 0; }
 .credit-badge {
   position: absolute; font-size: var(--text-xs); line-height: 1.6; color: #FFFFFF;
   background: var(--credit-bg); border-radius: 4px; padding: 0 6px;
+  /* ยังให้เครดิตครบ แต่จางลงไม่แย่งสายตาจากภาพ (เจ้าของขอ 2026-10-12) */
+  opacity: 0.5;
 }
 .credit-badge--bottom-left { left: 8px; bottom: 8px; }
 .credit-badge--top-right { right: 10px; top: 12px; }
