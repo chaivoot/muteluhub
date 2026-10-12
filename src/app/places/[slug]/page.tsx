@@ -9,7 +9,8 @@ import { PlaceCard } from '@/components/PlaceCard';
 import { PlacesBrowser } from '@/components/PlacesBrowser';
 import { PLACE_TYPE_LABEL, type Place } from '@/data/places';
 import { PROVINCES, provinceShortName } from '@/data/provinces';
-import { agodaLink, showsLodging } from '@/lib/agoda';
+import { agodaLink, agodaNearPlace } from '@/lib/agoda';
+import { LodgingBlock } from '@/components/LodgingBlock';
 import { getGoal } from '@/lib/goals';
 import { countryByCode } from '@/data/countries';
 import { filterPlaces, mapLink, placeLocation, provincesWithPlaces, relatedPlaces, thaiPlaces } from '@/lib/places';
@@ -58,6 +59,7 @@ export default async function PlaceOrProvincePage({ params }: { params: Params }
   if (place) return <PlaceDetail place={place} places={places} />;
   const inProvince = filterPlaces({ province: slug }, thaiPlaces(places));
   if (PROVINCES[slug] && inProvince.length > 0) {
+    const provinceAgoda = agodaLink({ country: 'TH', provinceSlug: slug });
     return (
       <main>
         <PageHeader title={`มู${provinceShortName(slug)}`} backHref="/places" />
@@ -65,6 +67,16 @@ export default async function PlaceOrProvincePage({ params }: { params: Params }
           <p>สถานที่เสริมดวงใน{PROVINCES[slug]}</p>
         </div>
         <PlacesBrowser places={inProvince} fixedProvince={slug} />
+        {provinceAgoda && (
+          <div className="container">
+            <LodgingBlock
+              href={provinceAgoda}
+              slug={slug}
+              title={`ที่พักใน${provinceShortName(slug)}`}
+              note="สายมูที่ต้องเดินทางไกล หาที่พักไว้ก่อน ไหว้ได้หลายที่ไม่ต้องรีบ"
+            />
+          </div>
+        )}
       </main>
     );
   }
@@ -79,7 +91,7 @@ function formatCheckedAt(iso: string) {
 function PlaceDetail({ place, places }: { place: Place; places: Place[] }) {
   const image = place.images[0];
   const map = mapLink(place);
-  const agoda = showsLodging(place) ? agodaLink(place) : null;
+  const agoda = agodaLink(place);
   const related = relatedPlaces(place, 4, places);
   const country = countryByCode(place.country);
   const crumbs =
@@ -218,15 +230,16 @@ function PlaceDetail({ place, places }: { place: Place; places: Place[] }) {
         )}
 
         {agoda && (
-          <section className="affiliate-inline">
-            <span className="affiliate-inline__body">
-              <span className="affiliate-inline__title">ที่พักใกล้ ๆ</span>
-              <a href={agoda} target="_blank" rel="sponsored noopener noreferrer">
-                ดูที่พักใกล้{place.name}บน Agoda
-              </a>
-            </span>
-            <span className="affiliate-label">ลิงก์ affiliate</span>
-          </section>
+          <LodgingBlock
+            href={agoda}
+            slug={place.slug}
+            title={`ที่พักใกล้${place.name}`}
+            note={
+              agodaNearPlace(place.slug)
+                ? 'มาไหว้แล้วค้างต่อ เทียบราคาโรงแรมและที่พักรอบ ๆ ได้บน Agoda'
+                : `เทียบราคาที่พักใน${placeLocation(place, false)}บน Agoda`
+            }
+          />
         )}
 
         <section className="place__sources">

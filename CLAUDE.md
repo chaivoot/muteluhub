@@ -27,7 +27,7 @@
 - CID ของ Agoda อยู่ใน env var เท่านั้น ห้าม hardcode
 
 ## เรื่องที่ยังไม่ตัดสินใจ (ถามเจ้าของก่อนทำส่วนที่เกี่ยวข้อง)
-ดู spec ข้อ 8: ชื่อแบรนด์/โดเมน, หลักคำนวณเลขมงคล, หลักสีเสื้อ, แหล่งข้อมูลปฏิทินมงคล, รูปแบบ deep link Agoda, เงื่อนไข Shopee, slug ไทยหรืออังกฤษ
+ดู spec ข้อ 8: ชื่อแบรนด์/โดเมน, หลักคำนวณเลขมงคล, หลักสีเสื้อ, แหล่งข้อมูลปฏิทินมงคล, เงื่อนไข Shopee, slug ไทยหรืออังกฤษ
 ทำโครงให้เปลี่ยนค่าเหล่านี้ได้ง่าย (เช่น daily_colors มีคอลัมน์ source, ฟังก์ชันคำนวณเลขมงคลแยกเป็น module เดียวและแสดงชื่อหลักคำนวณบนหน้า)
 
 ## Stack
@@ -84,3 +84,4 @@ spec ไม่ได้กำหนด framework ระบุแค่ว่า 
 - ใกล้ฉัน: `src/lib/geo.ts` + ปุ่มใน `PlacesBrowser` ตำแหน่งใช้ในเบราว์เซอร์เท่านั้น พิกัดสถานที่บังคับตอนนำเข้า
 - ภาพ hero หน้าแรก `public/images/hero/` เป็นภาพ AI ที่เจ้าของให้มา ใช้เป็นภาพบรรยากาศได้ แต่ห้ามนำภาพ AI ไปใช้เป็นภาพสถานที่จริง
 - สินค้า affiliate (Shopee): ตาราง `products` นำเข้าที่ `/admin/import?kind=products` (`src/lib/import/product-schema.ts` รับเฉพาะลิงก์ affiliate `s.shopee.co.th` / `shope.ee`) ตอนนี้ใช้กับเสื้อสีมงคล: `listShirtOffers()` สีละ 1 ตัว แสดงรูปแทนไอคอนใน `/color-today` และการ์ดหน้าแรก + ลิงก์ rel="sponsored" ป้าย ลิงก์ affiliate (การ์ดแชร์ PNG ยังใช้ไอคอน) รูปสินค้าเก็บที่ `public/images/shirts/`
+- ที่พัก Agoda: `src/lib/agoda.ts` ลิงก์ `partners/partnersearch.aspx?pcs=1&cid=&city=&poi=` (ทดสอบแล้ว 2026-10-12 cid คงอยู่หลัง redirect) รหัส city/poi อยู่ที่ `src/data/agoda-ids.ts` (มี poi = ที่พักรอบสถานที่ ไม่มี = ทั้งจังหวัด) แสดงทุกสถานที่รวม กทม. (เจ้าของขอ 2026-10-12) + หน้าจังหวัด ผ่าน `LodgingBlock` ไม่มี AGODA_CID = ไม่แสดง

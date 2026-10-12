@@ -50,6 +50,7 @@ const UI_PATHS = {
   close: <path d="M6 6l12 12M18 6L6 18" />,
   back: <path d="M15 6l-6 6 6 6" />,
   chevron: <path d="M9 6l6 6-6 6" />,
+  bed: <path d="M3 18V6 M3 14h18v4 M21 14v-2a3 3 0 0 0-3-3h-7v5 M7 12.5a1.8 1.8 0 1 0 0-3.6 1.8 1.8 0 0 0 0 3.6z" />,
   locate: <path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z M12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />,
 } satisfies Record<string, ReactNode>;
 
