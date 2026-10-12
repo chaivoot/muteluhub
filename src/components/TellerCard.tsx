@@ -8,8 +8,8 @@ import { formatPrice } from '@/lib/tellers';
 import { GoalTag } from './GoalTag';
 
 /** การ์ดหมอดู (list): ภาพ default ตามศาสตร์หลัก ชื่อ tag ศาสตร์ (ทอง) + เป้าหมาย ช่องทาง จังหวัด ราคา */
-/** ป้ายหมอดูที่ปักหมุด ถ้าปักหมุดเพราะได้ค่าตอบแทนให้เปลี่ยนเป็น ผู้สนับสนุน */
-export const PINNED_LABEL = 'แนะนำ';
+/** ป้ายหมอดูที่ปักหมุด (เจ้าของกำหนด 2026-10-12: หมุดเป็นพื้นที่ผู้สนับสนุน) */
+export const PINNED_LABEL = 'ผู้สนับสนุน';
 
 export function TellerCard({ teller, pinned = false }: { teller: FortuneTeller; pinned?: boolean }) {
   const primary = getDiscipline(teller.disciplines[0]);
