@@ -6,8 +6,10 @@ import type { DirectoryKind } from '@/lib/directory-repo';
 import { isDirectoryKind } from '@/lib/admin-kinds';
 import type { ImportItemResult } from '@/lib/import/common';
 import { parsePlaceImport } from '@/lib/import/place-schema';
+import { parseProductImport } from '@/lib/import/product-schema';
 import { parseTellerImport } from '@/lib/import/teller-schema';
 import { placesRepo } from '@/lib/places-repo';
+import { productsRepo } from '@/lib/products-repo';
 import { getSeedBatch } from '@/lib/seed-batches';
 import { tellersRepo } from '@/lib/tellers-repo';
 
@@ -26,6 +28,7 @@ type AnyItem = { slug: string; published: boolean; notes: string[] };
 
 function forKind(kind: DirectoryKind) {
   if (kind === 'places') return { parse: parsePlaceImport, repo: placesRepo };
+  if (kind === 'products') return { parse: parseProductImport, repo: productsRepo };
   return { parse: parseTellerImport, repo: tellersRepo };
 }
 
@@ -74,6 +77,8 @@ export async function importAction(kind: DirectoryKind, text: string): Promise<I
   try {
     // แยกตามประเภทเพื่อให้ type ของแต่ละ repo ตรงกัน
     if (kind === 'places') return await importAll(parsePlaceImport(text), (items) => placesRepo.upsert(items, JSON.parse(text)));
+    if (kind === 'products')
+      return await importAll(parseProductImport(text), (items) => productsRepo.upsert(items, JSON.parse(text)));
     return await importAll(parseTellerImport(text), (items) => tellersRepo.upsert(items, JSON.parse(text)));
   } catch (err) {
     return { error: `บันทึกไม่สำเร็จ: ${(err as Error).message}` };
@@ -125,6 +130,7 @@ export async function seedAction(_: unknown, form: FormData): Promise<SeedResult
   const text = JSON.stringify(batch.data);
   try {
     if (batch.kind === 'places') return await seedWith(parsePlaceImport(text), placesRepo, batch.data);
+    if (batch.kind === 'products') return await seedWith(parseProductImport(text), productsRepo, batch.data);
     return await seedWith(parseTellerImport(text), tellersRepo, batch.data);
   } catch (err) {
     return { error: `บันทึกไม่สำเร็จ: ${(err as Error).message}` };

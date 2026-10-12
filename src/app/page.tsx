@@ -13,6 +13,7 @@ import { COUNTRIES } from '@/data/countries';
 import Link from 'next/link';
 import { PlaceImageBox } from '@/components/PlaceCard';
 import { listPublishedPlaces } from '@/lib/places-repo';
+import { listShirtOffers } from '@/lib/products-repo';
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site';
 import { bangkokDay, formatThaiFullDate } from '@/lib/thai-date';
 
@@ -33,7 +34,7 @@ const siteJsonLd = {
 export default async function HomePage() {
   const today = bangkokDay();
   const festivals = upcomingFestivals(today.iso);
-  const allPlaces = await listPublishedPlaces();
+  const [allPlaces, shirts] = await Promise.all([listPublishedPlaces(), listShirtOffers()]);
   const places = thaiPlaces(allPlaces);
   const abroad = abroadPlaces(allPlaces);
   const abroadCountry = COUNTRIES.find((c) => abroad.some((p) => p.country === c.code));
@@ -60,7 +61,7 @@ export default async function HomePage() {
 
       <div className="home-split">
         <div>
-          <ShirtColorCard weekday={today.weekday} />
+          <ShirtColorCard weekday={today.weekday} shirts={shirts} />
           <LuckyNumberShortcut />
         </div>
         {festivals.length > 0 && (

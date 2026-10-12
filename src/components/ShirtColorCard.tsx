@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import type { Planet } from '@/data/daily-colors';
+import type { ShirtOffer } from '@/data/products';
 import { colorShort, getShirtColor } from '@/lib/daily-colors';
 import { getGoal } from '@/lib/goals';
 import type { Weekday } from '@/lib/thai-date';
@@ -9,21 +11,35 @@ import { useGoal } from './goal-context';
 import { ShareButton } from './ShareButton';
 
 /** การ์ดสีเสื้อวันนี้ แบบย่อ (หน้าแรก) ตามเป้าหมายที่เลือก */
-export function ShirtColorCard({ weekday }: { weekday: Weekday }) {
+export function ShirtColorCard({
+  weekday,
+  shirts = {},
+}: {
+  weekday: Weekday;
+  shirts?: Partial<Record<Planet, ShirtOffer>>;
+}) {
   const { goal } = useGoal();
   const goalInfo = goal ? getGoal(goal) : null;
   const result = goal ? getShirtColor(weekday, goal) : null;
+  const offer = result ? shirts[result.lucky.planet] : undefined;
 
   return (
     <section className="shirt-card" aria-label="สีเสื้อมงคลวันนี้">
       <div className="shirt-card__inner">
         <Link
           href={goal ? `/color-today?goal=${goal}` : '/color-today'}
-          className="shirt-card__swatch"
-          style={{ background: result?.lucky.color.hex ?? 'var(--color-image-placeholder)' }}
+          className={offer ? 'shirt-card__swatch shirt-swatch--photo' : 'shirt-card__swatch'}
+          style={{
+            background: result?.lucky.color.hex ?? 'var(--color-image-placeholder)',
+            borderColor: result?.lucky.color.hex,
+          }}
           aria-label="ดูสีเสื้อมงคลทั้งหมดของวันนี้"
         >
-          <ShirtSolid color={result ? result.lucky.color.ink : 'var(--color-text-muted)'} />
+          {offer ? (
+            <img src={offer.image.src} alt={offer.image.alt} className="shirt-photo" />
+          ) : (
+            <ShirtSolid color={result ? result.lucky.color.ink : 'var(--color-text-muted)'} />
+          )}
         </Link>
         <div className="shirt-card__body">
           <div className="shirt-card__eyebrow">สีเสื้อมงคลวันนี้{goalInfo ? ` · ${goalInfo.short}` : ''}</div>

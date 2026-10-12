@@ -3,7 +3,7 @@
  * props รับเฉพาะ slug / goal / discipline ตาม type ห้ามส่งค่าที่ผู้ใช้กรอก (วันเกิด คำถาม ไพ่)
  * ยังไม่ได้เลือกผู้ให้บริการ: ตอนนี้ push เข้า window.dataLayer ถ้ามี
  */
-export type AnalyticsEvent = 'copy_prompt' | 'open_followup' | 'click_to_fortune_teller';
+export type AnalyticsEvent = 'copy_prompt' | 'open_followup' | 'click_to_fortune_teller' | 'click_affiliate';
 
 export interface AnalyticsProps {
   slug?: string;

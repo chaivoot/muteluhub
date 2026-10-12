@@ -3,10 +3,10 @@ import { revalidateTag, unstable_cache } from 'next/cache';
 import { ensureSchema, getSql, hasDatabase } from '@/lib/db';
 
 /**
- * คลังข้อมูล directory แบบเดียวกันทุกประเภท (สถานที่ หมอดู ...)
+ * คลังข้อมูล directory แบบเดียวกันทุกประเภท (สถานที่ หมอดู สินค้า)
  * ตาราง: slug, data jsonb, published, province_slug, created_at, updated_at
  */
-export type DirectoryKind = 'places' | 'fortune_tellers';
+export type DirectoryKind = 'places' | 'fortune_tellers' | 'products';
 
 interface Entry {
   slug: string;

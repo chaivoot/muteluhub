@@ -10,6 +10,9 @@ import { getDiscipline } from '@/lib/disciplines';
 import { getGoal } from '@/lib/goals';
 import { placeLocation } from '@/lib/places';
 import { placesRepo } from '@/lib/places-repo';
+import { productsRepo } from '@/lib/products-repo';
+import { PLANET_COLOR } from '@/data/daily-colors';
+import type { Product } from '@/data/products';
 import { tellersRepo } from '@/lib/tellers-repo';
 import { deleteAction, logoutAction, publishAllAction, togglePublishedAction } from './actions';
 import { ConfirmButton } from './ConfirmButton';
@@ -29,6 +32,8 @@ interface Listed {
   checkedAt: string;
   meta: string;
   updatedAt: Date;
+  /** ลิงก์ของรายการ (สินค้าไม่มีหน้าในเว็บ ลิงก์ไป Shopee) */
+  href?: string;
 }
 
 async function listFor(kind: DirectoryKind): Promise<Listed[]> {
@@ -37,6 +42,20 @@ async function listFor(kind: DirectoryKind): Promise<Listed[]> {
       ...p,
       updatedAt,
       meta: [placeLocation(p), p.goals.map((g) => getGoal(g).short).join(' '), `รูป ${p.images.length}`].join(' · '),
+    }));
+  }
+  if (kind === 'products') {
+    return (await productsRepo.adminList()).map(({ item: p, updatedAt }: { item: Product; updatedAt: Date }) => ({
+      ...p,
+      updatedAt,
+      href: p.url,
+      meta: [
+        p.brand,
+        p.shirtColor ? `เสื้อ${p.shade ? `สี${p.shade}` : PLANET_COLOR[p.shirtColor].name}` : null,
+        new URL(p.url).hostname,
+      ]
+        .filter(Boolean)
+        .join(' · '),
     }));
   }
   return (await tellersRepo.adminList()).map(({ item: t, updatedAt }: { item: FortuneTeller; updatedAt: Date }) => ({
@@ -140,7 +159,7 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
             <div className="admin-item__main">
               <div className="admin-item__name">
                 {r.published ? (
-                  <Link href={`${publicPath}/${r.slug}`} target="_blank">
+                  <Link href={r.href ?? `${publicPath}/${r.slug}`} target="_blank">
                     {r.name}
                   </Link>
                 ) : (
