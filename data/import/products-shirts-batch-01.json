@@ -117,5 +117,91 @@
    "ลิงก์ affiliate สร้างจากรูปแบบ an_redir (affiliate_id 15309190191, sub_id color-today) ทดสอบแล้ว redirect ไปหน้าสินค้าพร้อม utm_source=an_15309190191",
    "ทุกสีใช้ลิงก์สินค้าเดียวกัน (shopee.co.th/yuedpao_official/9753661432) ถ้าเสื้อคอวีอยู่คนละหน้าสินค้า ให้แก้ url รายสี"
   ]
+ },
+ {
+  "name": "เสื้อยืด YUEDPAO สีม่วงลาเวนเดอร์ คอกลม",
+  "slug": "yuedpao-lavender",
+  "brand": "YUEDPAO (ยืดเปล่า)",
+  "url": "https://s.shopee.co.th/an_redir?origin_link=https%3A%2F%2Fshopee.co.th%2Fyuedpao_official%2F9753661432&affiliate_id=15309190191&sub_id=color-today",
+  "image": {
+   "src": "/images/shirts/yuedpao-lavender.webp",
+   "alt": "เสื้อยืด YUEDPAO สีม่วงลาเวนเดอร์ คอกลม"
+  },
+  "color": "ม่วง",
+  "checkedAt": "2026-10-12",
+  "published": true,
+  "notes": [
+   "ลิงก์ affiliate สร้างจากรูปแบบ an_redir (affiliate_id 15309190191, sub_id color-today) ทดสอบแล้ว redirect ไปหน้าสินค้าพร้อม utm_source=an_15309190191",
+   "ทุกสีใช้ลิงก์สินค้าเดียวกัน (shopee.co.th/yuedpao_official/9753661432) ถ้าเสื้อคอวีอยู่คนละหน้าสินค้า ให้แก้ url รายสี"
+  ]
+ },
+ {
+  "name": "เสื้อยืด YUEDPAO สีชมพูหม่น คอกลม",
+  "slug": "yuedpao-dusty-pink",
+  "brand": "YUEDPAO (ยืดเปล่า)",
+  "url": "https://s.shopee.co.th/an_redir?origin_link=https%3A%2F%2Fshopee.co.th%2Fyuedpao_official%2F9753661432&affiliate_id=15309190191&sub_id=color-today",
+  "image": {
+   "src": "/images/shirts/yuedpao-dusty-pink.webp",
+   "alt": "เสื้อยืด YUEDPAO สีชมพูหม่น คอกลม"
+  },
+  "color": "ชมพู",
+  "checkedAt": "2026-10-12",
+  "published": true,
+  "notes": [
+   "ลิงก์ affiliate สร้างจากรูปแบบ an_redir (affiliate_id 15309190191, sub_id color-today) ทดสอบแล้ว redirect ไปหน้าสินค้าพร้อม utm_source=an_15309190191",
+   "ทุกสีใช้ลิงก์สินค้าเดียวกัน (shopee.co.th/yuedpao_official/9753661432) ถ้าเสื้อคอวีอยู่คนละหน้าสินค้า ให้แก้ url รายสี"
+  ]
+ },
+ {
+  "name": "เสื้อยืด YUEDPAO สีชมพูแซลมอน คอกลม",
+  "slug": "yuedpao-salmon-pink",
+  "brand": "YUEDPAO (ยืดเปล่า)",
+  "url": "https://s.shopee.co.th/an_redir?origin_link=https%3A%2F%2Fshopee.co.th%2Fyuedpao_official%2F9753661432&affiliate_id=15309190191&sub_id=color-today",
+  "image": {
+   "src": "/images/shirts/yuedpao-salmon-pink.webp",
+   "alt": "เสื้อยืด YUEDPAO สีชมพูแซลมอน คอกลม"
+  },
+  "color": "แดง",
+  "checkedAt": "2026-10-12",
+  "published": true,
+  "notes": [
+   "ลิงก์ affiliate สร้างจากรูปแบบ an_redir (affiliate_id 15309190191, sub_id color-today) ทดสอบแล้ว redirect ไปหน้าสินค้าพร้อม utm_source=an_15309190191",
+   "ทุกสีใช้ลิงก์สินค้าเดียวกัน (shopee.co.th/yuedpao_official/9753661432) ถ้าเสื้อคอวีอยู่คนละหน้าสินค้า ให้แก้ url รายสี",
+   "ร้านไม่มีเสื้อแดง เจ้าของให้ใช้ชมพูแซลมอนแทนสีแดง (2026-10-12)"
+  ]
+ },
+ {
+  "name": "เสื้อยืด YUEDPAO สีเหลือง คอกลม",
+  "slug": "yuedpao-yellow",
+  "brand": "YUEDPAO (ยืดเปล่า)",
+  "url": "https://s.shopee.co.th/an_redir?origin_link=https%3A%2F%2Fshopee.co.th%2Fyuedpao_official%2F9753661432&affiliate_id=15309190191&sub_id=color-today",
+  "image": {
+   "src": "/images/shirts/yuedpao-yellow.webp",
+   "alt": "เสื้อยืด YUEDPAO สีเหลือง คอกลม"
+  },
+  "color": "เหลือง",
+  "checkedAt": "2026-10-12",
+  "published": true,
+  "notes": [
+   "ลิงก์ affiliate สร้างจากรูปแบบ an_redir (affiliate_id 15309190191, sub_id color-today) ทดสอบแล้ว redirect ไปหน้าสินค้าพร้อม utm_source=an_15309190191",
+   "ทุกสีใช้ลิงก์สินค้าเดียวกัน (shopee.co.th/yuedpao_official/9753661432) ถ้าเสื้อคอวีอยู่คนละหน้าสินค้า ให้แก้ url รายสี"
+  ]
+ },
+ {
+  "name": "เสื้อยืด YUEDPAO สีเขียวมิ้นต์ คอกลม",
+  "slug": "yuedpao-mint-green",
+  "brand": "YUEDPAO (ยืดเปล่า)",
+  "url": "https://s.shopee.co.th/an_redir?origin_link=https%3A%2F%2Fshopee.co.th%2Fyuedpao_official%2F9753661432&affiliate_id=15309190191&sub_id=color-today",
+  "image": {
+   "src": "/images/shirts/yuedpao-mint-green.webp",
+   "alt": "เสื้อยืด YUEDPAO สีเขียวมิ้นต์ คอกลม"
+  },
+  "color": "เขียว",
+  "checkedAt": "2026-10-12",
+  "published": true,
+  "notes": [
+   "ลิงก์ affiliate สร้างจากรูปแบบ an_redir (affiliate_id 15309190191, sub_id color-today) ทดสอบแล้ว redirect ไปหน้าสินค้าพร้อม utm_source=an_15309190191",
+   "ทุกสีใช้ลิงก์สินค้าเดียวกัน (shopee.co.th/yuedpao_official/9753661432) ถ้าเสื้อคอวีอยู่คนละหน้าสินค้า ให้แก้ url รายสี"
+  ]
  }
 ]

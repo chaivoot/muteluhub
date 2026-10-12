@@ -21,7 +21,7 @@ export const SEED_BATCHES: SeedBatch[] = [
   { id: 'places-batch-01', kind: 'places', label: 'สถานที่ชุดแรก 8 แห่ง', data: places01 },
   { id: 'places-abroad-batch-01', kind: 'places', label: 'ต่างประเทศ: ญี่ปุ่น ฮ่องกง ไต้หวัน 9 แห่ง', data: abroad01 },
   { id: 'places-shrines-batch-01', kind: 'places', label: 'ศาลเจ้าทั่วไทย 86 แห่ง (50 จังหวัด)', data: shrines01 },
-  { id: 'products-shirts-batch-01', kind: 'products', label: 'เสื้อ YUEDPAO 7 สี (สีเสื้อมงคล)', data: shirts01 },
+  { id: 'products-shirts-batch-01', kind: 'products', label: 'เสื้อ YUEDPAO 12 ตัว ครบ 8 สีทักษา (สีเสื้อมงคล)', data: shirts01 },
   { id: 'fortune-tellers-batch-01', kind: 'fortune_tellers', label: 'หมอดูไพ่ทาโรต์ออนไลน์ 10 คน', data: tellers01 },
 ];
 
