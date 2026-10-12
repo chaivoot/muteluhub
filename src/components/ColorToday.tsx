@@ -2,7 +2,9 @@
 
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState, type CSSProperties } from 'react';
-import { DAILY_COLORS_SOURCE, GOAL_ROLE, PLANET_NAME, ROLE_MEANING } from '@/data/daily-colors';
+import { DAILY_COLORS_SOURCE, GOAL_ROLE, PLANET_NAME, ROLE_MEANING, type Planet } from '@/data/daily-colors';
+import type { ShirtOffer } from '@/data/products';
+import { track } from '@/lib/analytics';
 import { colorLabel, colorShort, getShirtColor, taksaOfDay } from '@/lib/daily-colors';
 import { GOALS, getGoal, isGoalSlug, type GoalSlug } from '@/lib/goals';
 import { setPromptHandoff } from '@/lib/prompt-handoff';
@@ -12,7 +14,16 @@ import { ShirtSolid } from './icons';
 import { useGoal } from './goal-context';
 
 /** หน้าสีเสื้อมงคลวันนี้แบบเต็ม: การ์ดตามเป้าหมาย สีที่ควรเลี่ยง ทุกเป้าหมายของวันนี้ ทั้งสัปดาห์ แชร์ */
-export function ColorToday({ weekday, dateLabel }: { weekday: Weekday; dateLabel: string }) {
+export function ColorToday({
+  weekday,
+  dateLabel,
+  shirts = {},
+}: {
+  weekday: Weekday;
+  dateLabel: string;
+  /** เสื้อจริงต่อสี (affiliate) สีที่ยังไม่มีใช้ไอคอน */
+  shirts?: Partial<Record<Planet, ShirtOffer>>;
+}) {
   const router = useRouter();
   const params = useSearchParams();
   const { goal: remembered, setGoal: remember } = useGoal();
@@ -27,6 +38,7 @@ export function ColorToday({ weekday, dateLabel }: { weekday: Weekday; dateLabel
   const g = getGoal(goal);
   const { lucky, avoid } = getShirtColor(weekday, goal);
   const today = taksaOfDay(weekday);
+  const offer = shirts[lucky.planet];
   const pageUrl = typeof window === 'undefined' ? '' : `${window.location.origin}/color-today?goal=${goal}`;
   const lineShare = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(pageUrl)}`;
 
@@ -56,8 +68,15 @@ export function ColorToday({ weekday, dateLabel }: { weekday: Weekday; dateLabel
       <section className="container color-full" aria-live="polite">
         <div className="shirt-card shirt-card--full">
           <div className="shirt-card__inner shirt-card__inner--full">
-            <div className="color-full__swatch" style={{ background: lucky.color.hex }}>
-              <ShirtSolid size={64} color={lucky.color.ink} />
+            <div
+              className={offer ? 'color-full__swatch shirt-swatch--photo' : 'color-full__swatch'}
+              style={{ background: lucky.color.hex, borderColor: lucky.color.hex }}
+            >
+              {offer ? (
+                <img src={offer.image.src} alt={offer.image.alt} className="shirt-photo" />
+              ) : (
+                <ShirtSolid size={64} color={lucky.color.ink} />
+              )}
             </div>
             <div className="shirt-card__eyebrow">
               {dateLabel} · {g.short}
@@ -71,6 +90,20 @@ export function ColorToday({ weekday, dateLabel }: { weekday: Weekday; dateLabel
               <span className="color-dot" style={{ background: avoid.color.hex }} />
               สีที่ควรเลี่ยง: {colorShort(avoid.color)}
             </div>
+            {offer && (
+              <div className="shirt-buy">
+                <a
+                  href={offer.url}
+                  target="_blank"
+                  rel="sponsored nofollow noopener noreferrer"
+                  className="shirt-buy__link"
+                  onClick={() => track('click_affiliate', { slug: offer.slug, goal })}
+                >
+                  ดูเสื้อ{lucky.color.name}ที่ Shopee
+                </a>
+                <span className="affiliate-label">ลิงก์ affiliate</span>
+              </div>
+            )}
             <div className="color-full__actions">
               <a href={lineShare} target="_blank" rel="noopener noreferrer" className="btn btn--gold">
                 แชร์ลง LINE

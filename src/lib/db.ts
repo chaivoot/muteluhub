@@ -60,6 +60,16 @@ export function ensureSchema(): Promise<void> {
         )`;
       await sql`create index if not exists fortune_tellers_published_idx on fortune_tellers (published)`;
       await sql`
+        create table if not exists products (
+          slug text primary key,
+          data jsonb not null,
+          published boolean not null default false,
+          province_slug text,
+          created_at timestamptz not null default now(),
+          updated_at timestamptz not null default now()
+        )`;
+      await sql`create index if not exists products_published_idx on products (published)`;
+      await sql`
         create table if not exists import_log (
           id serial primary key,
           kind text not null,
