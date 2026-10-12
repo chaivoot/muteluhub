@@ -35,8 +35,14 @@ describe('filterPlaces', () => {
 });
 
 describe('helpers', () => {
-  it('counts provinces', () => {
+  it('counts provinces and sorts them alphabetically', () => {
     expect(provincesWithPlaces(list)[0]).toEqual({ slug: 'bangkok', name: 'กรุงเทพมหานคร', count: 2 });
+    const names = provincesWithPlaces([
+      { ...c, slug: 'x', provinceSlug: 'phuket' },
+      { ...c, slug: 'y', provinceSlug: 'chiang-mai' },
+      { ...c, slug: 'z', provinceSlug: 'nakhon-ratchasima' },
+    ]).map((p) => p.name);
+    expect(names).toEqual(['เชียงใหม่', 'นครราชสีมา', 'ภูเก็ต']);
   });
 
   it('ranks related places: same province first, then shared goals', () => {

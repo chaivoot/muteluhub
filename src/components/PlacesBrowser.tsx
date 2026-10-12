@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Place } from '@/data/places';
 import type { GoalSlug } from '@/lib/goals';
-import { formatDistance, sortByDistance, type LatLng } from '@/lib/geo';
+import { formatDistance, NEAR_ME_RADIUS_KM, sortByDistance, type LatLng } from '@/lib/geo';
 import { deitiesOf, filterPlaces, provincesWithPlaces } from '@/lib/places';
 import { GoalChips } from './GoalChips';
 import { UiIcon } from './icons';
@@ -74,7 +74,15 @@ export function PlacesBrowser({
     },
     places,
   ).filter((p) => groupBy !== 'city' || !province || p.city === province);
-  const rows = here ? sortByDistance(results, here) : results.map((item) => ({ item, km: null }));
+  const sorted = here ? sortByDistance(results, here) : null;
+  const nearby = sorted?.filter((r) => r.km != null && r.km <= NEAR_ME_RADIUS_KM) ?? [];
+  // ไม่มีที่ไหนในรัศมี: แสดง 3 แห่งที่ใกล้ที่สุดแทนหน้าว่าง
+  const outOfRange = sorted != null && nearby.length === 0 && sorted.length > 0;
+  const rows = !sorted
+    ? results.map((item) => ({ item, km: null as number | null }))
+    : outOfRange
+      ? sorted.slice(0, 3)
+      : nearby;
 
   return (
     <>
@@ -87,7 +95,13 @@ export function PlacesBrowser({
       />
       <div className="filter-bar filter-bar--wrap container">
         <div className="filter-bar__top">
-          <span className="filter-bar__count">{results.length} แห่ง</span>
+          <span className="filter-bar__count">
+            {!sorted
+              ? `${results.length} แห่ง`
+              : outOfRange
+                ? `ใกล้ที่สุด ${rows.length} แห่ง`
+                : `${rows.length} แห่งใน ${NEAR_ME_RADIUS_KM} กม.`}
+          </span>
           {nearMe && (
             <button
               type="button"
@@ -148,7 +162,13 @@ export function PlacesBrowser({
             : 'หาตำแหน่งไม่ได้ตอนนี้ ลองใหม่อีกครั้ง หรือเลือกจังหวัดแทน'}
         </p>
       )}
-      {here && <p className="container note">เรียงจากใกล้ไปไกล ระยะเป็นเส้นตรง ไม่ใช่ระยะทางขับรถ</p>}
+      {here && (
+        <p className="container note" role="status">
+          {outOfRange
+            ? `ยังไม่มีสถานที่ในระยะ ${NEAR_ME_RADIUS_KM} กม. จากคุณ นี่คือที่ใกล้ที่สุดตอนนี้`
+            : `ในระยะ ${NEAR_ME_RADIUS_KM} กม. เรียงจากใกล้ไปไกล ระยะเป็นเส้นตรง ไม่ใช่ระยะทางขับรถ`}
+        </p>
+      )}
       <div className="place-grid container">
         {rows.map(({ item, km }) => (
           <PlaceCard key={item.slug} place={item} distance={km == null ? undefined : formatDistance(km)} />
