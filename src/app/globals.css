@@ -616,5 +616,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 /* ---------- shirt photo (affiliate) ---------- */
 .shirt-swatch--photo { overflow: hidden; border: 4px solid; background: #fff !important; }
 .shirt-photo { width: 100%; height: 100%; object-fit: cover; display: block; }
-.shirt-buy { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+.shirt-buy { display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 14px; padding: 12px 14px; width: 100%; border: 1px dashed #3A4775; border-radius: 18px; }
+.shirt-buy__hook { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: var(--text-lg); color: var(--color-gold-bright); }
+.shirt-buy__row { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; }
 .shirt-buy__link { font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }

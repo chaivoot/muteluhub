@@ -92,16 +92,20 @@ export function ColorToday({
             </div>
             {offer && (
               <div className="shirt-buy">
-                <a
-                  href={offer.url}
-                  target="_blank"
-                  rel="sponsored nofollow noopener noreferrer"
-                  className="shirt-buy__link"
-                  onClick={() => track('click_affiliate', { slug: offer.slug, goal })}
-                >
-                  ดูเสื้อ{lucky.color.name}ที่ Shopee
-                </a>
-                <span className="affiliate-label">ลิงก์ affiliate</span>
+                {/* สีตามทักษาวนซ้ำทุกสัปดาห์ สั่งวันนี้ทันใส่วันเดียวกันสัปดาห์หน้า */}
+                <p className="shirt-buy__hook">วัน{TH_WEEKDAYS[weekday]}หน้า ฉันต้องมีเสื้อสีนี้</p>
+                <div className="shirt-buy__row">
+                  <a
+                    href={offer.url}
+                    target="_blank"
+                    rel="sponsored nofollow noopener noreferrer"
+                    className="shirt-buy__link"
+                    onClick={() => track('click_affiliate', { slug: offer.slug, goal })}
+                  >
+                    ดูเสื้อ{lucky.color.name}ที่ Shopee
+                  </a>
+                  <span className="affiliate-label">ลิงก์ affiliate</span>
+                </div>
               </div>
             )}
             <div className="color-full__actions">
@@ -189,10 +193,7 @@ export function ColorToday({
           <strong>หลัก: {DAILY_COLORS_SOURCE.name}</strong>
         </p>
         <p>{DAILY_COLORS_SOURCE.description}</p>
-        <p>
-          จับคู่เรื่องที่อยากเสริมกับตำแหน่ง:{' '}
-          {GOALS.map((x) => `${x.short} = ${GOAL_ROLE[x.slug]}`).join(', ')}
-        </p>
+        <p>จับคู่เรื่องที่อยากเสริมกับตำแหน่ง: {GOALS.map((x) => `${x.short} = ${GOAL_ROLE[x.slug]}`).join(', ')}</p>
       </section>
     </>
   );
