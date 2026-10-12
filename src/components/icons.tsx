@@ -3,19 +3,27 @@ import type { GoalSlug } from '@/lib/goals';
 
 // path จาก design/icons/**/*.svg (viewBox 24, stroke = currentColor)
 const GOAL_PATHS: Record<GoalSlug, ReactNode> = {
-  love: <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z" />,
+  love: <path fill="currentColor" d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z" />,
   career: <path d="M4 8h16v11H4z M9 8V5.5h6V8 M4 13h16" />,
-  money: (
+  // สัญลักษณ์บาท ฿
+  money: <path d="M8 5.5h4.8a3.1 3.1 0 0 1 0 6.2H8z M8 11.7h5.6a3.4 3.4 0 0 1 0 6.8H8z M11 3v2.5 M11 18.5V21" />,
+  business: <path d="M4 10h16 M5.5 10L7 5h10l1.5 5 M6 10v9h12v-9 M10 19v-5h4v5" />,
+  // คนแข็งแรงเกร็งกล้ามแขน
+  health: (
     <>
-      <circle cx="12" cy="12" r="8" />
-      <path d="M10 10h4v4h-4z" />
+      <circle cx="12" cy="5" r="2" />
+      <path d="M8 21l1.5-7h5L16 21 M9.5 14L9 9.5h6l-.5 4.5 M9 9.5c-2 0-3.5-1-3.5-3.5 0-1 .8-1.8 1.8-1.8 M15 9.5c2 0 3.5-1 3.5-3.5 0-1-.8-1.8-1.8-1.8" />
     </>
   ),
-  business: <path d="M4 10h16 M5.5 10L7 5h10l1.5 5 M6 10v9h12v-9 M10 19v-5h4v5" />,
-  health: <path d="M3 12h4l2-5 4 10 2-5h6" />,
   study: <path d="M4 5h5a3 3 0 0 1 3 3v11a2 2 0 0 0-2-2H4z M20 5h-5a3 3 0 0 0-3 3v11a2 2 0 0 1 2-2h6z" />,
   family: <path d="M4 11l8-6 8 6 M6 9.5V19h12V9.5 M10 19v-4h4v4" />,
-  protection: <path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z" />,
+  // พระเครื่องห้อยคอ (แคล้วคลาด)
+  protection: (
+    <>
+      <path d="M9.5 4.5a2.5 2.5 0 0 1 5 0 M6.5 21V12a5.5 5.5 0 0 1 11 0v9z M9.5 21v-5a2.5 2.5 0 0 1 5 0v5" />
+      <circle cx="12" cy="11" r="1.4" />
+    </>
+  ),
 };
 
 const UI_PATHS = {
