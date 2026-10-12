@@ -3,7 +3,7 @@
 import { GOALS, type GoalSlug } from '@/lib/goals';
 import { GoalIcon } from './icons';
 
-/** chip เป้าหมายเลื่อนแนวนอน (filter แถวบนสุด) */
+/** chip เป้าหมาย (filter แถวบนสุด) ขึ้นบรรทัดใหม่ให้เห็นครบทุกเรื่องโดยไม่ต้องเลื่อน (เจ้าของขอ 2026-10-12) */
 export function GoalChips({
   value,
   onChange,
@@ -14,7 +14,7 @@ export function GoalChips({
   allowAll?: boolean;
 }) {
   return (
-    <div className="chip-row container" role="group" aria-label="กรองตามเป้าหมาย">
+    <div className="chip-row chip-row--wrap goal-chips container" role="group" aria-label="กรองตามเป้าหมาย">
       {allowAll && (
         <button type="button" className="chip" aria-pressed={value === null} onClick={() => onChange(null)}>
           ทั้งหมด
