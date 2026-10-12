@@ -1,0 +1,35 @@
+[
+  {
+    "name": "ศาลหลักเมืองมีนบุรี",
+    "nameEn": "Min Buri City Pillar Shrine",
+    "slug": "lak-mueang-min-buri",
+    "type": "shrine",
+    "deities": [
+      "เจ้าพ่อหลักเมือง"
+    ],
+    "goals": [
+      "protection"
+    ],
+    "province": "กรุงเทพมหานคร",
+    "district": "มีนบุรี",
+    "coords": "13.8149156, 100.7345864",
+    "description": "ศาลหลักเมืองของมีนบุรี เมืองที่เคยเป็นจังหวัดมีนบุรีตั้งแต่ปี 2445 ก่อนถูกยุบรวมกับจังหวัดพระนครในปี 2474 ชื่อมีนบุรีแปลว่าเมืองปลา ตัวศาลอยู่บนถนนสีหบุรานุกิจ เขตมีนบุรี",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [],
+    "notes": [
+      "internal: coords จากหมุด Google Maps ที่เจ้าของส่งมา (2026-10-12) ชื่อในแผนที่ ศาลหลักเมืองจังหวัดมีนบุรี 190 ถนนสีหบุรานุกิจ ใช้เฉพาะพิกัด ไม่ได้ใช้ภาพ Nominatim reverse: ถนนสีหบุรานุกิจ แขวงมีนบุรี เขตมีนบุรี กรุงเทพมหานคร",
+      "internal: ประวัติจังหวัดมีนบุรี (ตั้ง 2445 ยุบ 1 เม.ย. 2474) จาก silpa-mag และ sanook",
+      "internal: goal protection อนุมานจากบทบาทศาลหลักเมือง แหล่งข้อมูลไม่ได้ระบุเรื่องที่ขอ",
+      "internal: photo status - ยังไม่มีภาพ"
+    ],
+    "sources": [
+      "https://www.silpa-mag.com/?p=18756",
+      "https://www.sanook.com/news/9879754/",
+      "https://li01.tci-thaijo.org/index.php/crujournal/article/view/259823"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-12"
+  }
+]
