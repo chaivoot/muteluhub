@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ComingSoon } from '@/components/ComingSoon';
+import { Breadcrumbs, ComingSoon } from '@/components/ComingSoon';
 import { SiteHeader } from '@/components/SiteHeader';
 import { CreditBadge } from '@/components/CreditBadge';
 import { GoalTag } from '@/components/GoalTag';
@@ -92,6 +92,7 @@ export default async function FestivalPage({ params }: { params: Params }) {
         </ComingSoon>
       ) : (
         <div className="container place__body">
+          <Breadcrumbs items={[{ href: '/festival', label: 'เทศกาลและบทความ' }]} />
           <p className="place__summary">{c.intro}</p>
           <div className="tag-row">
             {festival.goals.map((g) => (
