@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const when = date ? ` ${formatThaiRange(date.start, date.end, true)}` : '';
   return {
     alternates: { canonical: `/festival/${slug}` },
-    title: `${festival.name}${year} วันไหน ข้อควรรู้ และงานทั่วไทย`,
+    title: `${festival.name}${year} ${festival.seoTitle ?? 'วันไหน ข้อควรรู้ และงานทั่วไทย'}`,
     description: `${festival.name}${year}${when} ${festival.content?.intro ?? festival.tagline}`.slice(0, 160),
   };
 }
@@ -43,7 +43,10 @@ const fullDate = (iso: string) => {
 
 function PhaseBadge({ date, todayIso }: { date: FestivalDate; todayIso: string }) {
   const p = festivalPhase(date, todayIso);
-  if (p.phase === 'ongoing') return <span className="pill pill--vermilion">วันนี้วันที่ {p.day} จาก {p.totalDays} วัน</span>;
+  if (p.phase === 'ongoing')
+    return (
+      <span className="pill pill--vermilion">{p.totalDays > 1 ? `วันนี้วันที่ ${p.day} จาก ${p.totalDays} วัน` : 'วันนี้'}</span>
+    );
   if (p.phase === 'prep') return <span className="pill pill--vermilion">วันนี้วันล้างท้อง</span>;
   if (p.phase === 'upcoming') return <span className="pill pill--gold">อีก {p.daysUntil} วัน</span>;
   return <span className="pill pill--gold">จบแล้วสำหรับปีนี้</span>;
@@ -110,14 +113,23 @@ export default async function FestivalPage({ params }: { params: Params }) {
                     <dd>{fullDate(date.prep)}</dd>
                   </div>
                 )}
-                <div>
-                  <dt>วันแรก</dt>
-                  <dd>{fullDate(date.start)}</dd>
-                </div>
-                <div>
-                  <dt>วันสุดท้าย</dt>
-                  <dd>{fullDate(date.end)}</dd>
-                </div>
+                {date.start === date.end ? (
+                  <div>
+                    <dt>วันงาน</dt>
+                    <dd>{fullDate(date.start)}</dd>
+                  </div>
+                ) : (
+                  <>
+                    <div>
+                      <dt>วันแรก</dt>
+                      <dd>{fullDate(date.start)}</dd>
+                    </div>
+                    <div>
+                      <dt>วันสุดท้าย</dt>
+                      <dd>{fullDate(date.end)}</dd>
+                    </div>
+                  </>
+                )}
               </dl>
               {c.lunarNote && <p className="note fest-note">{c.lunarNote}</p>}
             </section>
