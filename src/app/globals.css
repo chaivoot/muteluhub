@@ -631,3 +631,4 @@ ul { list-style: none; margin: 0; padding: 0; }
 .shirt-card__link::after { content: ''; position: absolute; inset: 0; border-radius: var(--radius-lg); }
 .shirt-card__inner:has(.shirt-card__link) { cursor: pointer; }
 .shirt-card__inner .icon-btn { position: relative; z-index: 1; }
+.computed-value { display: block; padding: 12px 14px; border-radius: var(--radius-md); background: var(--color-surface); border: 1px dashed #3A4775; color: var(--color-gold-bright); font-weight: 600; }

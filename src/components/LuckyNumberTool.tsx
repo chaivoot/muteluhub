@@ -12,6 +12,7 @@ import {
   isValidBirthDate,
   type BirthDate,
 } from '@/lib/lucky-number';
+import { luckyNumbersText } from '@/lib/prompt-derive';
 import { setPromptHandoff } from '@/lib/prompt-handoff';
 import { getPromptTemplate } from '@/lib/prompts';
 import { TH_MONTHS, bangkokDay, toBuddhistYear } from '@/lib/thai-date';
@@ -53,7 +54,7 @@ export function LuckyNumberTool() {
     setPromptHandoff(slug, {
       birth_date: iso,
       method: LUCKY_NUMBER_METHOD.name,
-      lucky_numbers: `${result.luckyNumbers.join(', ')} (เลขเส้นทางชีวิต ${result.lifePath}, เลขวันเกิด ${result.birthday})`,
+      lucky_numbers: luckyNumbersText(result),
     });
     router.push(`/ai-prompts/p/${slug}`);
   }
