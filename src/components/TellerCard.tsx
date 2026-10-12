@@ -8,14 +8,17 @@ import { formatPrice } from '@/lib/tellers';
 import { GoalTag } from './GoalTag';
 
 /** การ์ดหมอดู (list): ภาพ default ตามศาสตร์หลัก ชื่อ tag ศาสตร์ (ทอง) + เป้าหมาย ช่องทาง จังหวัด ราคา */
-export function TellerCard({ teller }: { teller: FortuneTeller }) {
+/** ป้ายหมอดูที่ปักหมุด ถ้าปักหมุดเพราะได้ค่าตอบแทนให้เปลี่ยนเป็น ผู้สนับสนุน */
+export const PINNED_LABEL = 'แนะนำ';
+
+export function TellerCard({ teller, pinned = false }: { teller: FortuneTeller; pinned?: boolean }) {
   const primary = getDiscipline(teller.disciplines[0]);
   const where = [
     ...teller.channels.map((c) => CHANNEL_LABEL[c]),
     teller.provinceSlug ? provinceShortName(teller.provinceSlug) : null,
   ].filter(Boolean);
   return (
-    <Link href={`/fortune-tellers/${teller.slug}`} className="teller-card">
+    <Link href={`/fortune-tellers/${teller.slug}`} className={pinned ? 'teller-card teller-card--pinned' : 'teller-card'}>
       <img
         src={tellerArtPath(teller)}
         alt={`ภาพประกอบศาสตร์${primary?.name ?? ''}`}
@@ -25,6 +28,7 @@ export function TellerCard({ teller }: { teller: FortuneTeller }) {
         loading="lazy"
       />
       <span className="teller-card__body">
+        {pinned && <span className="pill pill--gold teller-card__pin">{PINNED_LABEL}</span>}
         <span className="teller-card__name">{teller.name}</span>
         <span className="tag-row">
           {teller.disciplines.slice(0, 1).map((d) => (

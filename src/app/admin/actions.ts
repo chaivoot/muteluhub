@@ -106,6 +106,13 @@ export async function togglePublishedAction(form: FormData): Promise<void> {
   await forKind(kindFrom(form)).repo.setPublished(String(form.get('slug')), form.get('published') === 'true');
 }
 
+/** ปักหมุดหมอดูในหมวด: ค่าที่ติ๊ก (slug ศาสตร์ หรือ all) แทนที่ของเดิมทั้งหมด */
+export async function setPinsAction(form: FormData): Promise<void> {
+  await requireAdmin();
+  const pins = [...new Set(form.getAll('pin').map(String))].filter((p) => /^[a-z0-9-]+$/.test(p));
+  await forKind(kindFrom(form)).repo.setPins(String(form.get('slug')), pins);
+}
+
 export async function publishAllAction(form: FormData): Promise<void> {
   await requireAdmin();
   await forKind(kindFrom(form)).repo.publishAll();

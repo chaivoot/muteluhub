@@ -69,6 +69,10 @@ export function ensureSchema(): Promise<void> {
           updated_at timestamptz not null default now()
         )`;
       await sql`create index if not exists products_published_idx on products (published)`;
+      // ปักหมุด: แยกจาก data เพื่อไม่ให้การนำเข้าซ้ำล้างค่า (เช่น หมอดูที่ปักหมุดในหมวด)
+      for (const t of ['places', 'fortune_tellers', 'products']) {
+        await sql`alter table ${sql(t)} add column if not exists pinned_in text[] not null default '{}'`;
+      }
       await sql`
         create table if not exists import_log (
           id serial primary key,

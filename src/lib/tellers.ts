@@ -26,6 +26,15 @@ export function filterTellers(f: TellerFilter, tellers: FortuneTeller[]): Fortun
   );
 }
 
+/** หมุดของหน้ารวมหมอดู */
+export const PIN_ALL = 'all';
+
+/** หมอดูที่ปักหมุดในหมวดนี้ขึ้นก่อน (คงลำดับเดิมในแต่ละกลุ่ม) */
+export function sortPinned(tellers: FortuneTeller[], pin: string): FortuneTeller[] {
+  const isPinned = (t: FortuneTeller) => t.pinnedIn?.includes(pin) ?? false;
+  return [...tellers.filter(isPinned), ...tellers.filter((t) => !isPinned(t))];
+}
+
 /** จำนวนตัวกรองใน bottom sheet ที่เลือกอยู่ (ไม่นับเป้าหมาย ซึ่งอยู่แถวบนเสมอ) */
 export const activeFilterCount = (f: TellerFilter) =>
   [f.discipline, f.channel, f.province, f.price].filter(Boolean).length;

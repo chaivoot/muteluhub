@@ -6,7 +6,7 @@ import { CHANNEL_LABEL, CHANNELS, PRICE_BUCKETS, type Channel, type FortuneTelle
 import { PROVINCES } from '@/data/provinces';
 import { DISCIPLINES } from '@/lib/disciplines';
 import { getGoal, isGoalSlug, type GoalSlug } from '@/lib/goals';
-import { activeFilterCount, filterTellers } from '@/lib/tellers';
+import { activeFilterCount, filterTellers, PIN_ALL, sortPinned } from '@/lib/tellers';
 import { BottomSheet } from './BottomSheet';
 import { GoalChips } from './GoalChips';
 import { TellerCard } from './TellerCard';
@@ -34,7 +34,9 @@ export function TellersBrowser({ tellers, fixedDiscipline }: { tellers: FortuneT
     province: province || null,
     price: price || null,
   };
-  const results = filterTellers(filter, tellers);
+  // ปักหมุด: เลือกศาสตร์อยู่ = หมุดของศาสตร์นั้น ไม่ได้เลือก = หมุดหน้ารวม
+  const pin = filter.discipline ?? PIN_ALL;
+  const results = sortPinned(filterTellers(filter, tellers), pin);
   const count = activeFilterCount({ ...filter, discipline: fixedDiscipline ? null : filter.discipline });
 
   // ตัวเลือกเฉพาะที่มีข้อมูลจริง
@@ -77,7 +79,7 @@ export function TellersBrowser({ tellers, fixedDiscipline }: { tellers: FortuneT
 
       <div className="stack container">
         {results.map((t) => (
-          <TellerCard key={t.slug} teller={t} />
+          <TellerCard key={t.slug} teller={t} pinned={t.pinnedIn?.includes(pin)} />
         ))}
         {results.length === 0 && (
           <p className="note">
