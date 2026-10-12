@@ -232,6 +232,10 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 .credit-badge--bottom-left { left: 8px; bottom: 8px; }
 .credit-badge--top-right { right: 10px; top: 12px; }
+.credit-badge--bottom-right { right: 8px; bottom: 6px; }
+/* การ์ดเทศกาล: ป้ายวันที่อยู่บนซ้าย เครดิตอยู่ล่างขวาใต้ข้อความ จะได้ไม่ทับกัน */
+.festival-card .credit-badge { max-width: calc(100% - 16px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.festival-card .festival-card__text { bottom: 30px; }
 
 /* explore grid */
 .explore-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 0 16px; }

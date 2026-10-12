@@ -15,7 +15,7 @@ export function ArticleCard({ article }: { article: Article }) {
       <span className="festival-card__badges">
         <span className="pill pill--gold">บทความ</span>
       </span>
-      {article.cover && <CreditBadge credit={article.cover.credit} position="top-right" />}
+      {article.cover && <CreditBadge credit={article.cover.credit} position="bottom-right" />}
       <span className="festival-card__text">
         <span className="festival-card__name">{article.title}</span>
         <span className="festival-card__tagline">{article.excerpt}</span>

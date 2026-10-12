@@ -17,7 +17,7 @@ export function FestivalCard({ occurrence }: { occurrence: FestivalOccurrence })
         <span className="pill pill--gold">{formatThaiRange(date.start, date.end)}</span>
         {status === 'ongoing' && <span className="pill pill--vermilion">กำลังจัดงาน</span>}
       </span>
-      {festival.image && <CreditBadge credit={festival.image.credit} position="top-right" />}
+      {festival.image && <CreditBadge credit={festival.image.credit} position="bottom-right" />}
       <span className="festival-card__text">
         <span className="festival-card__name">{festival.name}</span>
         <span className="festival-card__tagline">{festival.tagline}</span>
