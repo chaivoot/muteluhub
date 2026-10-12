@@ -684,3 +684,5 @@ ul { list-style: none; margin: 0; padding: 0; }
 .article-editor__preview { padding: 12px; border-radius: var(--radius-md); border: 1px dashed var(--color-border-strong); }
 .admin__subtitle { margin: 28px 0 4px; font-size: var(--text-xl); }
 .upload { display: inline-flex; flex-direction: column; gap: 4px; }
+.goal-chips { gap: 8px 6px; }
+.goal-chips .chip { height: 34px; padding: 0 12px 0 9px; gap: 5px; }
