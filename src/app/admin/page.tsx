@@ -34,6 +34,42 @@ interface Listed {
   updatedAt: Date;
   /** ลิงก์ของรายการ (สินค้าไม่มีหน้าในเว็บ ลิงก์ไป Shopee) */
   href?: string;
+  /** กลุ่มสำหรับตัวกรอง: จังหวัด/ประเทศ, ศาสตร์หลัก, สีเสื้อ */
+  group: string;
+}
+
+const PAGE_SIZE = 30;
+
+interface Filters {
+  q: string;
+  status: 'all' | 'published' | 'hidden';
+  group: string;
+  page: number;
+}
+
+function readFilters(sp: Record<string, string | undefined>): Filters {
+  const status = sp.status === 'published' || sp.status === 'hidden' ? sp.status : 'all';
+  return { q: (sp.q ?? '').trim(), status, group: sp.group ?? '', page: Math.max(1, Number(sp.page) || 1) };
+}
+
+function applyFilters(rows: Listed[], f: Filters): Listed[] {
+  const q = f.q.toLowerCase();
+  return rows.filter(
+    (r) =>
+      (f.status === 'all' || r.published === (f.status === 'published')) &&
+      (!f.group || r.group === f.group) &&
+      (!q || `${r.name} ${r.slug} ${r.meta}`.toLowerCase().includes(q)),
+  );
+}
+
+/** URL หน้าหลังบ้านพร้อมตัวกรองปัจจุบัน */
+function adminHref(kind: DirectoryKind, f: Filters, page: number): string {
+  const sp = new URLSearchParams({ tab: kind });
+  if (f.q) sp.set('q', f.q);
+  if (f.status !== 'all') sp.set('status', f.status);
+  if (f.group) sp.set('group', f.group);
+  if (page > 1) sp.set('page', String(page));
+  return `/admin?${sp}`;
 }
 
 async function listFor(kind: DirectoryKind): Promise<Listed[]> {
@@ -41,6 +77,7 @@ async function listFor(kind: DirectoryKind): Promise<Listed[]> {
     return (await placesRepo.adminList()).map(({ item: p, updatedAt }: { item: Place; updatedAt: Date }) => ({
       ...p,
       updatedAt,
+      group: p.country === 'TH' ? (PROVINCES[p.provinceSlug ?? ''] ?? 'ไม่ระบุจังหวัด') : placeLocation(p).split(' · ').pop()!,
       meta: [placeLocation(p), p.goals.map((g) => getGoal(g).short).join(' '), `รูป ${p.images.length}`].join(' · '),
     }));
   }
@@ -49,6 +86,7 @@ async function listFor(kind: DirectoryKind): Promise<Listed[]> {
       ...p,
       updatedAt,
       href: p.url,
+      group: p.shirtColor ? PLANET_COLOR[p.shirtColor].name : 'อื่น ๆ',
       meta: [
         p.brand,
         p.shirtColor ? `เสื้อ${p.shade ? `สี${p.shade}` : PLANET_COLOR[p.shirtColor].name}` : null,
@@ -61,6 +99,7 @@ async function listFor(kind: DirectoryKind): Promise<Listed[]> {
   return (await tellersRepo.adminList()).map(({ item: t, updatedAt }: { item: FortuneTeller; updatedAt: Date }) => ({
     ...t,
     updatedAt,
+    group: getDiscipline(t.disciplines[0])?.name ?? t.disciplines[0],
     meta: [
       t.disciplines.map((d) => getDiscipline(d)?.name ?? d).join(', '),
       t.channels.map((c) => CHANNEL_LABEL[c]).join(' '),
@@ -72,7 +111,11 @@ async function listFor(kind: DirectoryKind): Promise<Listed[]> {
   }));
 }
 
-export default async function AdminPage({ searchParams }: { searchParams: Promise<{ tab?: string }> }) {
+export default async function AdminPage({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | undefined>>;
+}) {
   if (!adminConfigured() || !hasDatabase()) {
     return (
       <main className="container admin__main">
@@ -98,11 +141,19 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
     );
   }
 
-  const { tab } = await searchParams;
-  const kind: DirectoryKind = isDirectoryKind(tab) ? tab : 'places';
+  const sp = await searchParams;
+  const kind: DirectoryKind = isDirectoryKind(sp.tab) ? sp.tab : 'places';
+  const filters = readFilters(sp);
   const publicPath = ADMIN_KINDS.find((k) => k.kind === kind)!.publicPath;
   const [rows, imports] = await Promise.all([listFor(kind), recentImports(5)]);
   const publishedCount = rows.filter((r) => r.published).length;
+  const groups = [...new Set(rows.map((r) => r.group))].sort((a, b) => a.localeCompare(b, 'th'));
+  const filtered = applyFilters(rows, filters);
+  const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const page = Math.min(filters.page, pages);
+  const shown = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  const filtering = filters.q !== '' || filters.status !== 'all' || filters.group !== '';
+  const groupLabel = kind === 'places' ? 'จังหวัด / ประเทศ' : kind === 'products' ? 'สี' : 'ศาสตร์หลัก';
 
   return (
     <main className="container admin__main">
@@ -144,17 +195,55 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
       </div>
 
       {SEED_BATCHES.some((b) => b.kind === kind) && (
-        <section className="seed-box">
-          <div className="field__label">ชุดข้อมูลเริ่มต้น (จาก repo)</div>
+        <details className="seed-box" open={rows.length === 0}>
+          <summary className="field__label">ชุดข้อมูลเริ่มต้น (จาก repo)</summary>
           {SEED_BATCHES.filter((b) => b.kind === kind).map((b) => (
             <SeedButton key={b.id} batch={b.id} label={`${b.label} (${b.data.length} รายการ)`} />
           ))}
-          <p className="note">นำเข้าเฉพาะรายการที่ยังไม่มี ไม่เขียนทับของเดิม ทุกรายการเข้ามาแบบซ่อนไว้ก่อน</p>
-        </section>
+          <p className="note">นำเข้าเฉพาะรายการที่ยังไม่มี ไม่เขียนทับของเดิม สถานะเผยแพร่ตามที่ตั้งไว้ในชุดข้อมูล</p>
+        </details>
       )}
 
+      <form className="admin-filter" method="get" action="/admin">
+        <input type="hidden" name="tab" value={kind} />
+        <label className="admin-filter__q">
+          <span className="visually-hidden">ค้นหา</span>
+          <input className="input" type="search" name="q" defaultValue={filters.q} placeholder="ค้นหาชื่อ slug หรือรายละเอียด" />
+        </label>
+        <label className="select-wrap">
+          <span className="visually-hidden">สถานะ</span>
+          <select className="select" name="status" defaultValue={filters.status}>
+            <option value="all">ทุกสถานะ</option>
+            <option value="published">เผยแพร่</option>
+            <option value="hidden">ซ่อน</option>
+          </select>
+        </label>
+        <label className="select-wrap">
+          <span className="visually-hidden">{groupLabel}</span>
+          <select className="select" name="group" defaultValue={filters.group}>
+            <option value="">ทุก{groupLabel}</option>
+            {groups.map((g) => (
+              <option key={g} value={g}>
+                {g} ({rows.filter((r) => r.group === g).length})
+              </option>
+            ))}
+          </select>
+        </label>
+        <button type="submit" className="btn btn--gold btn--sm">
+          กรอง
+        </button>
+        {filtering && (
+          <Link href={`/admin?tab=${kind}`} className="btn btn--outline btn--sm">
+            ล้าง
+          </Link>
+        )}
+      </form>
+      <p className="note">
+        พบ {filtered.length} รายการ{pages > 1 ? ` · หน้า ${page}/${pages}` : ''}
+      </p>
+
       <ul className="admin-list">
-        {rows.map((r) => (
+        {shown.map((r) => (
           <li key={r.slug} className="admin-item">
             <div className="admin-item__main">
               <div className="admin-item__name">
@@ -199,7 +288,25 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
           </li>
         ))}
         {rows.length === 0 && <li className="note">ยังไม่มีข้อมูล กดนำเข้า JSON เพื่อเริ่ม</li>}
+        {rows.length > 0 && filtered.length === 0 && <li className="note">ไม่พบรายการตามตัวกรองนี้</li>}
       </ul>
+      {pages > 1 && (
+        <nav className="admin-pager" aria-label="หน้า">
+          {page > 1 && (
+            <Link href={adminHref(kind, filters, page - 1)} className="btn btn--outline btn--sm">
+              ก่อนหน้า
+            </Link>
+          )}
+          <span className="note">
+            หน้า {page} / {pages}
+          </span>
+          {page < pages && (
+            <Link href={adminHref(kind, filters, page + 1)} className="btn btn--outline btn--sm">
+              ถัดไป
+            </Link>
+          )}
+        </nav>
+      )}
 
       {imports.length > 0 && (
         <section>
