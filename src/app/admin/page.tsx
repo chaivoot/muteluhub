@@ -36,6 +36,8 @@ interface Listed {
   href?: string;
   /** กลุ่มสำหรับตัวกรอง: จังหวัด/ประเทศ, ศาสตร์หลัก, สีเสื้อ */
   group: string;
+  /** ภาพหลัก (สถานที่/สินค้า) undefined = ประเภทนี้ไม่มีภาพจริง (หมอดูใช้ภาพประกอบตามศาสตร์) */
+  thumb?: string | null;
 }
 
 const PAGE_SIZE = 30;
@@ -44,12 +46,14 @@ interface Filters {
   q: string;
   status: 'all' | 'published' | 'hidden';
   group: string;
+  image: 'all' | 'missing' | 'has';
   page: number;
 }
 
 function readFilters(sp: Record<string, string | undefined>): Filters {
   const status = sp.status === 'published' || sp.status === 'hidden' ? sp.status : 'all';
-  return { q: (sp.q ?? '').trim(), status, group: sp.group ?? '', page: Math.max(1, Number(sp.page) || 1) };
+  const image = sp.image === 'missing' || sp.image === 'has' ? sp.image : 'all';
+  return { q: (sp.q ?? '').trim(), status, group: sp.group ?? '', image, page: Math.max(1, Number(sp.page) || 1) };
 }
 
 function applyFilters(rows: Listed[], f: Filters): Listed[] {
@@ -58,6 +62,7 @@ function applyFilters(rows: Listed[], f: Filters): Listed[] {
     (r) =>
       (f.status === 'all' || r.published === (f.status === 'published')) &&
       (!f.group || r.group === f.group) &&
+      (f.image === 'all' || r.thumb === undefined || (f.image === 'missing') === !r.thumb) &&
       (!q || `${r.name} ${r.slug} ${r.meta}`.toLowerCase().includes(q)),
   );
 }
@@ -68,6 +73,7 @@ function adminHref(kind: DirectoryKind, f: Filters, page: number): string {
   if (f.q) sp.set('q', f.q);
   if (f.status !== 'all') sp.set('status', f.status);
   if (f.group) sp.set('group', f.group);
+  if (f.image !== 'all') sp.set('image', f.image);
   if (page > 1) sp.set('page', String(page));
   return `/admin?${sp}`;
 }
@@ -77,6 +83,7 @@ async function listFor(kind: DirectoryKind): Promise<Listed[]> {
     return (await placesRepo.adminList()).map(({ item: p, updatedAt }: { item: Place; updatedAt: Date }) => ({
       ...p,
       updatedAt,
+      thumb: p.images[0]?.src ?? null,
       group: p.country === 'TH' ? (PROVINCES[p.provinceSlug ?? ''] ?? 'ไม่ระบุจังหวัด') : placeLocation(p).split(' · ').pop()!,
       meta: [placeLocation(p), p.goals.map((g) => getGoal(g).short).join(' '), `รูป ${p.images.length}`].join(' · '),
     }));
@@ -86,6 +93,7 @@ async function listFor(kind: DirectoryKind): Promise<Listed[]> {
       ...p,
       updatedAt,
       href: p.url,
+      thumb: p.image.src,
       group: p.shirtColor ? PLANET_COLOR[p.shirtColor].name : 'อื่น ๆ',
       meta: [
         p.brand,
@@ -152,7 +160,9 @@ export default async function AdminPage({
   const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const page = Math.min(filters.page, pages);
   const shown = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
-  const filtering = filters.q !== '' || filters.status !== 'all' || filters.group !== '';
+  const filtering = filters.q !== '' || filters.status !== 'all' || filters.group !== '' || filters.image !== 'all';
+  const hasImages = rows.some((r) => r.thumb !== undefined);
+  const missingImage = rows.filter((r) => r.thumb === null);
   const groupLabel = kind === 'places' ? 'จังหวัด / ประเทศ' : kind === 'products' ? 'สี' : 'ศาสตร์หลัก';
 
   return (
@@ -204,7 +214,7 @@ export default async function AdminPage({
         </details>
       )}
 
-      <form className="admin-filter" method="get" action="/admin">
+      <form key={adminHref(kind, filters, 1)} className="admin-filter" method="get" action="/admin">
         <input type="hidden" name="tab" value={kind} />
         <label className="admin-filter__q">
           <span className="visually-hidden">ค้นหา</span>
@@ -229,6 +239,16 @@ export default async function AdminPage({
             ))}
           </select>
         </label>
+        {hasImages && (
+          <label className="select-wrap">
+            <span className="visually-hidden">ภาพ</span>
+            <select className="select" name="image" defaultValue={filters.image}>
+              <option value="all">ภาพ: ทั้งหมด</option>
+              <option value="missing">ยังไม่มีภาพ ({missingImage.length})</option>
+              <option value="has">มีภาพแล้ว ({rows.length - missingImage.length})</option>
+            </select>
+          </label>
+        )}
         <button type="submit" className="btn btn--gold btn--sm">
           กรอง
         </button>
@@ -238,6 +258,12 @@ export default async function AdminPage({
           </Link>
         )}
       </form>
+      {missingImage.length > 0 && filters.image !== 'missing' && (
+        <p className="admin-warn">
+          ยังไม่มีภาพ {missingImage.length} รายการ{' '}
+          <Link href={adminHref(kind, { ...filters, image: 'missing' }, 1)}>ดูรายการที่ยังไม่มีภาพ</Link>
+        </p>
+      )}
       <p className="note">
         พบ {filtered.length} รายการ{pages > 1 ? ` · หน้า ${page}/${pages}` : ''}
       </p>
@@ -245,6 +271,12 @@ export default async function AdminPage({
       <ul className="admin-list">
         {shown.map((r) => (
           <li key={r.slug} className="admin-item">
+            {r.thumb !== undefined &&
+              (r.thumb ? (
+                <img src={r.thumb} alt="" className="admin-item__thumb" loading="lazy" />
+              ) : (
+                <span className="admin-item__thumb admin-item__thumb--missing">ไม่มีภาพ</span>
+              ))}
             <div className="admin-item__main">
               <div className="admin-item__name">
                 {r.published ? (
