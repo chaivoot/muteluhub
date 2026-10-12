@@ -14,7 +14,8 @@ import { productsRepo } from '@/lib/products-repo';
 import { PLANET_COLOR } from '@/data/daily-colors';
 import type { Product } from '@/data/products';
 import { tellersRepo } from '@/lib/tellers-repo';
-import { deleteAction, logoutAction, publishAllAction, togglePublishedAction } from './actions';
+import { deleteAction, logoutAction, publishAllAction, setPinsAction, togglePublishedAction } from './actions';
+import { PIN_ALL } from '@/lib/tellers';
 import { ConfirmButton } from './ConfirmButton';
 import { DeleteButton } from './DeleteButton';
 import { LoginForm } from './LoginForm';
@@ -38,20 +39,23 @@ interface Listed {
   group: string;
   /** ภาพหลัก (สถานที่/สินค้า) undefined = ประเภทนี้ไม่มีภาพจริง (หมอดูใช้ภาพประกอบตามศาสตร์) */
   thumb?: string | null;
+  /** หมวดที่ปักหมุดได้ (หมอดู: หน้ารวม + ศาสตร์ของคนนั้น) */
+  pinOptions?: { value: string; label: string }[];
+  pinnedIn?: string[];
 }
 
 const PAGE_SIZE = 30;
 
 interface Filters {
   q: string;
-  status: 'all' | 'published' | 'hidden';
+  status: 'all' | 'published' | 'hidden' | 'pinned';
   group: string;
   image: 'all' | 'missing' | 'has';
   page: number;
 }
 
 function readFilters(sp: Record<string, string | undefined>): Filters {
-  const status = sp.status === 'published' || sp.status === 'hidden' ? sp.status : 'all';
+  const status = sp.status === 'published' || sp.status === 'hidden' || sp.status === 'pinned' ? sp.status : 'all';
   const image = sp.image === 'missing' || sp.image === 'has' ? sp.image : 'all';
   return { q: (sp.q ?? '').trim(), status, group: sp.group ?? '', image, page: Math.max(1, Number(sp.page) || 1) };
 }
@@ -60,7 +64,8 @@ function applyFilters(rows: Listed[], f: Filters): Listed[] {
   const q = f.q.toLowerCase();
   return rows.filter(
     (r) =>
-      (f.status === 'all' || r.published === (f.status === 'published')) &&
+      (f.status === 'all' ||
+        (f.status === 'pinned' ? (r.pinnedIn?.length ?? 0) > 0 : r.published === (f.status === 'published'))) &&
       (!f.group || r.group === f.group) &&
       (f.image === 'all' || r.thumb === undefined || (f.image === 'missing') === !r.thumb) &&
       (!q || `${r.name} ${r.slug} ${r.meta}`.toLowerCase().includes(q)),
@@ -108,6 +113,10 @@ async function listFor(kind: DirectoryKind): Promise<Listed[]> {
     ...t,
     updatedAt,
     group: getDiscipline(t.disciplines[0])?.name ?? t.disciplines[0],
+    pinOptions: [
+      { value: PIN_ALL, label: 'หน้ารวมหมอดู' },
+      ...t.disciplines.map((d) => ({ value: d, label: getDiscipline(d)?.name ?? d })),
+    ],
     meta: [
       t.disciplines.map((d) => getDiscipline(d)?.name ?? d).join(', '),
       t.channels.map((c) => CHANNEL_LABEL[c]).join(' '),
@@ -226,6 +235,7 @@ export default async function AdminPage({
             <option value="all">ทุกสถานะ</option>
             <option value="published">เผยแพร่</option>
             <option value="hidden">ซ่อน</option>
+            {kind === 'fortune_tellers' && <option value="pinned">ปักหมุดอยู่</option>}
           </select>
         </label>
         <label className="select-wrap">
@@ -290,6 +300,32 @@ export default async function AdminPage({
               <div className="note">
                 {r.slug} · {r.meta} · ตรวจ {r.checkedAt} · แก้ไข {dateTime(r.updatedAt)}
               </div>
+              {r.pinOptions && (
+                <details className="admin-item__notes admin-pins">
+                  <summary>
+                    ปักหมุด
+                    {r.pinnedIn && r.pinnedIn.length > 0
+                      ? `: ${r.pinOptions
+                          .filter((o) => r.pinnedIn!.includes(o.value))
+                          .map((o) => o.label)
+                          .join(', ')}`
+                      : ' (ยังไม่ได้ปัก)'}
+                  </summary>
+                  <form action={setPinsAction} className="admin-pins__form">
+                    <input type="hidden" name="kind" value={kind} />
+                    <input type="hidden" name="slug" value={r.slug} />
+                    {r.pinOptions.map((o) => (
+                      <label key={o.value} className="admin-pins__opt">
+                        <input type="checkbox" name="pin" value={o.value} defaultChecked={r.pinnedIn?.includes(o.value)} />
+                        {o.label}
+                      </label>
+                    ))}
+                    <button type="submit" className="btn btn--outline btn--sm">
+                      บันทึกหมุด
+                    </button>
+                  </form>
+                </details>
+              )}
               {r.notes.length > 0 && (
                 <details className="admin-item__notes">
                   <summary>บันทึก ({r.notes.length})</summary>

@@ -4,7 +4,7 @@ import { ensureSchema, getSql, hasDatabase } from '@/lib/db';
 
 /**
  * คลังข้อมูล directory แบบเดียวกันทุกประเภท (สถานที่ หมอดู สินค้า)
- * ตาราง: slug, data jsonb, published, province_slug, created_at, updated_at
+ * ตาราง: slug, data jsonb, published, province_slug, pinned_in, created_at, updated_at
  */
 export type DirectoryKind = 'places' | 'fortune_tellers' | 'products';
 
@@ -13,12 +13,15 @@ interface Entry {
   published: boolean;
   notes: string[];
   provinceSlug?: string;
+  /** หมวดที่ปักหมุดไว้ ('all' = หน้ารวม) ตั้งจากหลังบ้าน ไม่มาจากไฟล์นำเข้า */
+  pinnedIn?: string[];
 }
 
 interface Row<T> {
   slug: string;
   data: T;
   published: boolean;
+  pinned_in: string[];
   updated_at: Date;
 }
 
@@ -34,14 +37,14 @@ export interface UpsertSummary {
 
 export function createDirectoryRepo<T extends Entry>(kind: DirectoryKind) {
   const tag = kind;
-  const fromRow = (r: Row<T>): T => ({ ...r.data, slug: r.slug, published: r.published });
+  const fromRow = (r: Row<T>): T => ({ ...r.data, slug: r.slug, published: r.published, pinnedIn: r.pinned_in ?? [] });
 
   async function queryPublished(): Promise<T[]> {
     if (!hasDatabase()) return [];
     await ensureSchema();
     const sql = getSql();
     const rows = await sql<Row<T>[]>`
-      select slug, data, published, updated_at from ${sql(kind)}
+      select slug, data, published, pinned_in, updated_at from ${sql(kind)}
       where published = true order by data->>'name'`;
     // notes เป็นบันทึกภายใน ไม่ส่งออกหน้าเว็บ
     return rows.map(fromRow).map((x) => ({ ...x, notes: [] }));
@@ -56,7 +59,7 @@ export function createDirectoryRepo<T extends Entry>(kind: DirectoryKind) {
     async adminList(): Promise<AdminRow<T>[]> {
       await ensureSchema();
       const sql = getSql();
-      const rows = await sql<Row<T>[]>`select slug, data, published, updated_at from ${sql(kind)} order by updated_at desc`;
+      const rows = await sql<Row<T>[]>`select slug, data, published, pinned_in, updated_at from ${sql(kind)} order by updated_at desc`;
       return rows.map((r) => ({ item: fromRow(r), updatedAt: r.updated_at }));
     },
 
@@ -76,7 +79,9 @@ export function createDirectoryRepo<T extends Entry>(kind: DirectoryKind) {
         const created: string[] = [];
         const updated: string[] = [];
         for (const it of items) {
-          const { published, ...data } = it;
+          // pinnedIn อยู่คอลัมน์แยก ไม่เก็บใน data
+          const { published, pinnedIn, ...data } = it;
+          void pinnedIn;
           const [row] = await tx<{ inserted: boolean }[]>`
             insert into ${tx(kind)} (slug, data, published, province_slug)
             values (${it.slug}, ${tx.json(data as never)}, ${published}, ${it.provinceSlug ?? null})
@@ -95,6 +100,13 @@ export function createDirectoryRepo<T extends Entry>(kind: DirectoryKind) {
       });
       revalidateTag(tag);
       return summary;
+    },
+
+    async setPins(slug: string, pins: string[]): Promise<void> {
+      await ensureSchema();
+      const sql = getSql();
+      await sql`update ${sql(kind)} set pinned_in = ${pins}, updated_at = now() where slug = ${slug}`;
+      revalidateTag(tag);
     },
 
     async setPublished(slug: string, published: boolean): Promise<void> {

@@ -3,7 +3,7 @@ import type { FortuneTeller } from '@/data/fortune-tellers';
 import { ALL_ART_FILES, artVariantFor, disciplineArtSvg, tellerArtPath } from '@/lib/art/discipline-art';
 import { DISCIPLINES } from '@/lib/disciplines';
 import { parseTellerImport } from '@/lib/import/teller-schema';
-import { activeFilterCount, filterTellers, lineUrl, similarTellers, telUrl } from '@/lib/tellers';
+import { activeFilterCount, filterTellers, lineUrl, similarTellers, sortPinned, telUrl } from '@/lib/tellers';
 
 // ข้อมูลทดสอบใช้ชื่อสมมติเท่านั้น (CLAUDE.md)
 const base: FortuneTeller = {
@@ -112,5 +112,15 @@ describe('parseTellerImport', () => {
     expect(r.items[2].errors.join()).toMatch(/ติดต่อ|LINE/);
     expect(r.items[3].errors.join()).toMatch(/จังหวัด/);
     expect(r.items[4].errors.join()).toMatch(/phone/);
+  });
+});
+
+describe('sortPinned', () => {
+  it('puts tellers pinned in the given category first and keeps order', () => {
+    const t = (slug: string, pinnedIn?: string[]) => ({ slug, pinnedIn }) as unknown as FortuneTeller;
+    const list = [t('a'), t('b', ['tarot']), t('c', ['all']), t('d', ['tarot', 'all'])];
+    expect(sortPinned(list, 'tarot').map((x) => x.slug)).toEqual(['b', 'd', 'a', 'c']);
+    expect(sortPinned(list, 'all').map((x) => x.slug)).toEqual(['c', 'd', 'a', 'b']);
+    expect(sortPinned(list, 'palmistry').map((x) => x.slug)).toEqual(['a', 'b', 'c', 'd']);
   });
 });

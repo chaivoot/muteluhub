@@ -28,6 +28,8 @@ export interface Contact {
 
 export interface FortuneTeller {
   slug: string;
+  /** หมวดที่ปักหมุด (slug ศาสตร์ หรือ 'all' = หน้ารวมหมอดู) ตั้งจากหลังบ้าน */
+  pinnedIn?: string[];
   name: string;
   /** slug ศาสตร์จาก data/disciplines.json ตัวแรกคือศาสตร์หลัก (ใช้เลือกภาพ default) */
   disciplines: string[];
