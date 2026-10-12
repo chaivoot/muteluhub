@@ -27,6 +27,12 @@ export function upcomingFestivals(
   return result.sort((a, b) => a.date.start.localeCompare(b.date.start));
 }
 
+/** ใช้รูปปกจากหลังบ้าน (ถ้ามี) แทนรูปในโค้ด */
+export function withCover(festival: Festival, covers: Record<string, { src: string; alt: string; credit: string }>): Festival {
+  const c = covers[festival.slug];
+  return c ? { ...festival, image: { src: c.src, alt: c.alt, credit: c.credit } } : festival;
+}
+
 export function getFestival(slug: string): Festival | undefined {
   return FESTIVALS.find((f) => f.slug === slug);
 }

@@ -6,7 +6,9 @@ import { SiteHeader } from '@/components/SiteHeader';
 import { CreditBadge } from '@/components/CreditBadge';
 import { GoalTag } from '@/components/GoalTag';
 import { FESTIVALS, type Festival, type FestivalDate } from '@/data/festivals';
-import { currentFestivalDate, festivalPhase, getFestival } from '@/lib/festivals';
+import { currentFestivalDate, festivalPhase, getFestival, withCover } from '@/lib/festivals';
+import { getFestivalCovers, listPublishedArticles } from '@/lib/articles-repo';
+import { ArticleCard } from '@/components/ArticleCard';
 import { getGoal } from '@/lib/goals';
 import { SITE_URL } from '@/lib/site';
 import { bangkokDay, formatThaiRange, parseIsoDay, TH_MONTHS, TH_WEEKDAYS, toBuddhistYear } from '@/lib/thai-date';
@@ -54,8 +56,11 @@ function PhaseBadge({ date, todayIso }: { date: FestivalDate; todayIso: string }
 
 export default async function FestivalPage({ params }: { params: Params }) {
   const { slug } = await params;
-  const festival = getFestival(slug);
-  if (!festival) notFound();
+  const base = getFestival(slug);
+  if (!base) notFound();
+  const [covers, articles] = await Promise.all([getFestivalCovers(), listPublishedArticles()]);
+  const festival = withCover(base, covers);
+  const related = articles.filter((a) => a.festival === slug);
   const today = bangkokDay();
   const date = currentFestivalDate(festival, today.iso);
   const c = festival.content;
@@ -207,6 +212,17 @@ export default async function FestivalPage({ params }: { params: Params }) {
                     <summary>{f.q}</summary>
                     <p>{f.a}</p>
                   </details>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {related.length > 0 && (
+            <section>
+              <h2>อ่านต่อ</h2>
+              <div className="stack stack--flush">
+                {related.map((a) => (
+                  <ArticleCard key={a.slug} article={a} />
                 ))}
               </div>
             </section>

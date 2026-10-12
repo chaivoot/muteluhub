@@ -73,6 +73,33 @@ export function ensureSchema(): Promise<void> {
       for (const t of ['places', 'fortune_tellers', 'products']) {
         await sql`alter table ${sql(t)} add column if not exists pinned_in text[] not null default '{}'`;
       }
+      // บทความ + รูปที่อัปโหลดจากหลังบ้าน (เก็บไฟล์ใน Postgres ไม่ต้องตั้งที่เก็บไฟล์เพิ่ม รูปถูกย่อเป็น webp ก่อนอัปโหลด)
+      await sql`
+        create table if not exists articles (
+          slug text primary key,
+          data jsonb not null,
+          published boolean not null default false,
+          published_at timestamptz,
+          created_at timestamptz not null default now(),
+          updated_at timestamptz not null default now()
+        )`;
+      await sql`
+        create table if not exists media (
+          id text primary key,
+          mime text not null,
+          bytes bytea not null,
+          width int,
+          height int,
+          created_at timestamptz not null default now()
+        )`;
+      await sql`
+        create table if not exists festival_covers (
+          slug text primary key,
+          src text not null,
+          alt text not null,
+          credit text not null,
+          updated_at timestamptz not null default now()
+        )`;
       await sql`
         create table if not exists import_log (
           id serial primary key,

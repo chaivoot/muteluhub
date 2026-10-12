@@ -8,6 +8,7 @@ import { abroadPlaces, provincesWithPlaces, thaiPlaces } from '@/lib/places';
 import { listPublishedPlaces } from '@/lib/places-repo';
 import { SITE_URL } from '@/lib/site';
 import { listPublishedTellers } from '@/lib/tellers-repo';
+import { listPublishedArticles } from '@/lib/articles-repo';
 
 // อ่านสถานที่/หมอดูจาก DB รายการใหม่เข้า sitemap ภายใน 1 ชั่วโมง
 export const revalidate = 3600;
@@ -17,7 +18,11 @@ type Entry = MetadataRoute.Sitemap[number];
 const url = (path: string) => `${SITE_URL}${path}`;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [places, tellers] = await Promise.all([listPublishedPlaces(), listPublishedTellers()]);
+  const [places, tellers, articles] = await Promise.all([
+    listPublishedPlaces(),
+    listPublishedTellers(),
+    listPublishedArticles(),
+  ]);
   const thai = thaiPlaces(places);
 
   const page = (
@@ -41,6 +46,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...GOALS.map((g) => page(`/${g.slug}`, 'weekly', 0.8)),
     page('/festival', 'weekly', 0.7),
     ...FESTIVALS.map((f) => page(`/festival/${f.slug}`, 'weekly', 0.8, f.content?.checkedAt)),
+    ...articles.map((a) => page(`/articles/${a.slug}`, 'monthly', 0.7, a.updatedAt)),
 
     page('/places', 'weekly', 0.8),
     ...provincesWithPlaces(thai).map((p) => page(`/places/${p.slug}`, 'weekly', 0.6)),

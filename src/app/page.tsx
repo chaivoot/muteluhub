@@ -7,7 +7,9 @@ import { PlacesForGoal } from '@/components/PlacesForGoal';
 import { SectionHeader } from '@/components/SectionHeader';
 import { ShirtColorCard } from '@/components/ShirtColorCard';
 import { SiteHeader } from '@/components/SiteHeader';
-import { upcomingFestivals } from '@/lib/festivals';
+import { upcomingFestivals, withCover } from '@/lib/festivals';
+import { FESTIVALS } from '@/data/festivals';
+import { getFestivalCovers } from '@/lib/articles-repo';
 import { abroadPlaces, thaiPlaces } from '@/lib/places';
 import { COUNTRIES } from '@/data/countries';
 import Link from 'next/link';
@@ -33,8 +35,8 @@ const siteJsonLd = {
 
 export default async function HomePage() {
   const today = bangkokDay();
-  const festivals = upcomingFestivals(today.iso);
-  const [allPlaces, shirts] = await Promise.all([listPublishedPlaces(), listShirtOffers()]);
+  const [allPlaces, shirts, covers] = await Promise.all([listPublishedPlaces(), listShirtOffers(), getFestivalCovers()]);
+  const festivals = upcomingFestivals(today.iso, 45, FESTIVALS.map((f) => withCover(f, covers)));
   const places = thaiPlaces(allPlaces);
   const abroad = abroadPlaces(allPlaces);
   const abroadCountry = COUNTRIES.find((c) => abroad.some((p) => p.country === c.code));

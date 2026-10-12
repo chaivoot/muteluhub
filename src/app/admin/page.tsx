@@ -16,6 +16,7 @@ import type { Product } from '@/data/products';
 import { tellersRepo } from '@/lib/tellers-repo';
 import { deleteAction, logoutAction, publishAllAction, setPinsAction, togglePublishedAction } from './actions';
 import { PIN_ALL } from '@/lib/tellers';
+import { AdminNav } from './AdminNav';
 import { ConfirmButton } from './ConfirmButton';
 import { DeleteButton } from './DeleteButton';
 import { LoginForm } from './LoginForm';
@@ -185,13 +186,7 @@ export default async function AdminPage({
         </form>
       </div>
 
-      <nav className="chip-row" aria-label="ประเภทข้อมูล">
-        {ADMIN_KINDS.map((k) => (
-          <Link key={k.kind} href={`/admin?tab=${k.kind}`} className="chip" aria-current={k.kind === kind ? 'page' : undefined}>
-            {k.label}
-          </Link>
-        ))}
-      </nav>
+      <AdminNav current={kind} />
 
       <p className="note">
         {kindLabel(kind)} {rows.length} · เผยแพร่แล้ว {publishedCount} · ซ่อนอยู่ {rows.length - publishedCount}
