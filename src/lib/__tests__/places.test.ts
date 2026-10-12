@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { Place } from '@/data/places';
-import { agodaLink, showsLodging } from '@/lib/agoda';
+import { agodaLink } from '@/lib/agoda';
 import { deitiesOf, deitySuggestions, filterPlaces, mapLink, provincesWithPlaces, relatedPlaces } from '@/lib/places';
 
 const base: Omit<Place, 'slug' | 'provinceSlug' | 'goals' | 'deities'> = {
@@ -76,11 +76,21 @@ describe('helpers', () => {
     expect(mapLink({ ...a, mapsUrl: 'https://maps.example/x' })).toBe('https://maps.example/x');
   });
 
-  it('only uses Agoda overrides and only outside Bangkok', () => {
-    expect(agodaLink(c)).toBeNull();
-    expect(agodaLink({ ...c, agodaLinkOverride: 'https://example.com' })).toBe('https://example.com');
-    expect(showsLodging(a)).toBe(false);
-    expect(showsLodging(c)).toBe(true);
+  it('builds Agoda partner links from env CID, poi or province city', () => {
+    expect(agodaLink(c, undefined)).toBeNull();
+    expect(agodaLink({ ...c, agodaLinkOverride: 'https://example.com' }, undefined)).toBe('https://example.com');
+    // ไม่มี poi: ค้นทั้งจังหวัด
+    const city = new URL(agodaLink(c, '123')!);
+    expect(city.origin + city.pathname).toBe('https://www.agoda.com/partners/partnersearch.aspx');
+    expect(city.searchParams.get('cid')).toBe('123');
+    expect(city.searchParams.get('city')).toBe('7401');
+    expect(city.searchParams.get('poi')).toBeNull();
+    // มี poi: ที่พักรอบสถานที่ ใช้ city ของ poi
+    const near = new URL(agodaLink({ ...c, slug: 'chao-mae-soi-dok-mak-ayutthaya' }, '123')!);
+    expect(near.searchParams.get('poi')).toBe('57001');
+    expect(near.searchParams.get('city')).toBe('17704');
+    expect(agodaLink(a, '1')).toContain('city=9395');
+    expect(agodaLink({ ...c, country: 'JP', provinceSlug: undefined, city: 'เกียวโต' }, '1')).toContain('city=1784');
   });
 });
 
