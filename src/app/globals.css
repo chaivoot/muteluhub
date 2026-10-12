@@ -80,7 +80,15 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 .site-header__brand:hover { color: var(--color-text); }
 
-.page-header { display: flex; align-items: center; gap: 4px; padding: 14px 12px 4px; }
+.site-header:not(.site-header--overlay) {
+  position: sticky; top: 0; z-index: 20; background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+.page-header { display: flex; flex-direction: column; gap: 2px; padding: 12px var(--space-gutter) 4px; }
+.place__body > .crumbs { margin-bottom: 10px; }
+.crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: var(--text-sm); color: var(--color-text-soft); }
+.crumbs a { color: var(--color-text-soft); text-decoration: none; }
+.crumbs a:hover { color: var(--color-gold-bright); }
 .page-header__title { flex: 1; font-size: var(--text-2xl); font-family: var(--font-display); font-weight: 600; line-height: var(--leading-display); margin: 0; }
 
 /* ---------- menu sheet ---------- */
@@ -396,7 +404,6 @@ ul { list-style: none; margin: 0; padding: 0; }
 .place-hero { position: relative; height: 340px; overflow: hidden; background: var(--color-image-placeholder); }
 .place-hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .place-hero__scrim { position: absolute; inset: 0; background: var(--scrim-hero); }
-.place-hero__top { position: absolute; top: 12px; left: 12px; }
 .place-hero__text { position: absolute; left: 20px; right: 20px; bottom: 14px; display: flex; flex-direction: column; }
 .place-hero__type { font-size: var(--text-base); color: var(--color-gold-bright); }
 .place-hero__name { font-size: var(--text-3xl); line-height: 1.45; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); }
@@ -633,3 +640,15 @@ ul { list-style: none; margin: 0; padding: 0; }
 .shirt-card__inner .icon-btn { position: relative; z-index: 1; }
 .computed-value { display: block; padding: 12px 14px; border-radius: var(--radius-md); background: var(--color-surface); border: 1px dashed #3A4775; color: var(--color-gold-bright); font-weight: 600; }
 .fest-section__intro { color: var(--color-text-soft); margin-bottom: 10px; }
+
+/* ---------- deity combobox ---------- */
+.combo { position: relative; flex: 1 1 0; min-width: 0; }
+.combo__input.select { width: 100%; min-height: 40px; padding: 4px 34px 4px 14px; font-size: 16px; border-radius: var(--radius-pill); }
+.combo__input::placeholder { color: var(--color-text); opacity: 1; }
+.combo__chevron { position: absolute; right: 14px; top: 50%; width: 8px; height: 8px; margin-top: -6px; border-right: 1.5px solid var(--color-text-soft); border-bottom: 1.5px solid var(--color-text-soft); transform: rotate(45deg); pointer-events: none; }
+.combo__btn { position: absolute; right: 4px; top: 50%; transform: translateY(-50%); width: 32px; height: 32px; border: 0; border-radius: 50%; background: transparent; color: var(--color-text-soft); font-size: 20px; line-height: 1; cursor: pointer; }
+.combo__list { position: absolute; z-index: 30; left: 0; top: calc(100% + 6px); width: max(100%, min(320px, calc(100vw - 32px))); max-height: min(360px, 55vh); overflow-y: auto; margin: 0; padding: 6px; list-style: none; border-radius: var(--radius-md); border: 1px solid var(--color-border-strong); background: var(--color-surface-raised); box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45); }
+.combo__option { display: flex; justify-content: space-between; gap: 12px; padding: 10px 12px; border-radius: 10px; font-size: var(--text-sm); cursor: pointer; }
+.combo__option:hover, .combo__option[aria-selected='true'] { background: rgba(214, 176, 100, 0.14); color: var(--color-gold-bright); }
+.combo__count { color: var(--color-text-soft); font-variant-numeric: tabular-nums; }
+.combo__empty { padding: 10px 12px; font-size: var(--text-sm); color: var(--color-text-soft); }

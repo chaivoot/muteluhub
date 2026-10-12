@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { PageHeader } from '@/components/ComingSoon';
+import { Breadcrumbs, PageHeader } from '@/components/ComingSoon';
+import { SiteHeader } from '@/components/SiteHeader';
 import { CreditBadge } from '@/components/CreditBadge';
 import { GoalTag } from '@/components/GoalTag';
-import { UiIcon } from '@/components/icons';
 import { PlaceCard } from '@/components/PlaceCard';
 import { PlacesBrowser } from '@/components/PlacesBrowser';
 import { PLACE_TYPE_LABEL, type Place } from '@/data/places';
@@ -81,6 +81,17 @@ function PlaceDetail({ place, places }: { place: Place; places: Place[] }) {
   const map = mapLink(place);
   const agoda = showsLodging(place) ? agodaLink(place) : null;
   const related = relatedPlaces(place, 4, places);
+  const country = countryByCode(place.country);
+  const crumbs =
+    place.country === 'TH'
+      ? [
+          { href: '/places', label: 'สถานที่เสริมดวง' },
+          ...(place.provinceSlug ? [{ href: `/places/${place.provinceSlug}`, label: provinceShortName(place.provinceSlug) }] : []),
+        ]
+      : [
+          { href: '/abroad', label: 'มูต่างประเทศ' },
+          ...(country ? [{ href: `/abroad/${country.slug}`, label: country.name }] : []),
+        ];
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': place.type === 'temple' ? 'BuddhistTemple' : 'PlaceOfWorship',
@@ -101,6 +112,7 @@ function PlaceDetail({ place, places }: { place: Place; places: Place[] }) {
   return (
     <main className="place">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <SiteHeader />
       <div className="place-hero">
         {image ? (
           <img src={image.src} alt={image.alt} className="place-hero__img" />
@@ -108,11 +120,6 @@ function PlaceDetail({ place, places }: { place: Place; places: Place[] }) {
           <span className="place-img-empty" aria-hidden="true" />
         )}
         <span className="place-hero__scrim" aria-hidden="true" />
-        <div className="place-hero__top">
-          <Link href={place.country === 'TH' ? '/places' : `/abroad/${countryByCode(place.country)?.slug ?? ''}`} className="icon-btn icon-btn--glass" aria-label="ย้อนกลับ">
-            <UiIcon name="back" size={22} strokeWidth={2} />
-          </Link>
-        </div>
         {image && <CreditBadge credit={`${image.author} / ${image.license}`} position="top-right" />}
         <div className="place-hero__text">
           <span className="place-hero__type">
@@ -123,6 +130,7 @@ function PlaceDetail({ place, places }: { place: Place; places: Place[] }) {
       </div>
 
       <div className="container place__body">
+        <Breadcrumbs items={crumbs} />
         <div className="tag-row">
           {place.deities.map((d) => (
             <span key={d} className="tag tag--discipline">
