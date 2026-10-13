@@ -37,6 +37,8 @@ export interface FestivalFaq {
 /** หัวข้อเนื้อหาเพิ่มเติม เช่น กิจกรรมช่วงเทศกาล ข้อควรระวังตามความเชื่อ */
 export interface FestivalSection {
   title: string;
+  /** cards = การ์ด (ค่าเริ่มต้น), checklist = รายการของไหว้ติ๊กได้, steps = ขั้นตอนเรียงเลข */
+  style?: 'cards' | 'checklist' | 'steps';
   intro?: string;
   items: { name: string; text: string; source?: string }[];
 }
@@ -71,6 +73,8 @@ export interface Festival {
   image?: { src: string; alt: string; credit: string; sourceUrl?: string };
   /** ต่อท้ายชื่อใน title ของหน้า (ค่าเริ่มต้น: วันไหน ข้อควรรู้ และงานทั่วไทย) */
   seoTitle?: string;
+  /** สถานที่ในเว็บที่แสดงในหัวข้อ ไหว้ที่ไหนดี (deity = กลุ่ม/หมวดเทพ เช่น family:chinese) */
+  placeFilter?: { deity?: string; goal?: GoalSlug } | null;
   content?: FestivalContent;
 }
 
