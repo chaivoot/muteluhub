@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Place } from '@/data/places';
 import { getGoal } from '@/lib/goals';
-import { PLACE_PLACEHOLDER } from '@/lib/place-placeholder';
+import { placeholderFor } from '@/lib/place-placeholder';
 import { placeLocation } from '@/lib/places';
 import { CreditBadge } from './CreditBadge';
 
@@ -16,8 +16,8 @@ export function PlaceImageBox({ place, className }: { place: Place; className: s
         </>
       ) : (
         <>
-          <img src={PLACE_PLACEHOLDER.srcSmall} alt={PLACE_PLACEHOLDER.alt} loading="lazy" className="place-img-placeholder" />
-          <CreditBadge credit={PLACE_PLACEHOLDER.credit} />
+          <img src={placeholderFor(place).srcSmall} alt={placeholderFor(place).alt} loading="lazy" className="place-img-placeholder" />
+          <CreditBadge credit={placeholderFor(place).credit} />
         </>
       )}
     </span>
