@@ -29,7 +29,12 @@ export interface TaksaSlot {
 
 /** ตำแหน่งทักษาทั้ง 8 ของวัน เรียงตาม TAKSA_ROLES */
 export function taksaOfDay(weekday: Weekday): TaksaSlot[] {
-  const start = TAKSA_ORDER.indexOf(WEEKDAY_PLANET[weekday]);
+  return taksaOfPlanet(WEEKDAY_PLANET[weekday]);
+}
+
+/** ตำแหน่งทักษาทั้ง 8 นับจากดาวที่กำหนด (ใช้กับวันเกิด ซึ่งพุธกลางคืน = ราหู) */
+export function taksaOfPlanet(planet: Planet): TaksaSlot[] {
+  const start = TAKSA_ORDER.indexOf(planet);
   return TAKSA_ROLES.map((role, i) => {
     const planet = TAKSA_ORDER[(start + i) % TAKSA_ORDER.length];
     return { role, planet, color: PLANET_COLOR[planet] };
