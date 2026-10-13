@@ -10,6 +10,7 @@ import { useEffect } from 'react';
  * - ส่งผ่าน /ingest ของเว็บเอง (rewrite ใน next.config) ตัวบล็อกโฆษณาจะไม่ตัดทิ้ง
  * - ไม่อัดหน้าจอ (session recording) ไม่เก็บค่าที่พิมพ์ ส่วนที่มีข้อมูลส่วนตัว (เบอร์ วันเกิด ทะเบียน) ใส่ class ph-no-capture
  * - ไม่นับหน้าหลังบ้าน
+ * - ทุก event มี property site = muteluhub (เผื่อใช้ project ร่วมกับเว็บอื่น กรองด้วย site ได้)
  */
 export function PostHogInit() {
   useEffect(() => {
@@ -23,6 +24,7 @@ export function PostHogInit() {
       cookieless_mode: 'always',
       person_profiles: 'never',
       disable_session_recording: true,
+      loaded: (ph) => ph.register({ site: 'muteluhub' }),
       before_send: (event) => {
         const url = String(event?.properties?.$current_url ?? '');
         return url.includes('/admin') ? null : event;
