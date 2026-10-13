@@ -719,3 +719,13 @@ ul { list-style: none; margin: 0; padding: 0; }
 .fest-steps > li::before { content: counter(step); position: absolute; left: 12px; top: 10px; width: 26px; height: 26px; border-radius: 50%; background: var(--color-gold); color: var(--color-on-gold); font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 14px; }
 .carousel--flush { padding-left: 0; padding-right: 0; }
 .fest-where__head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+
+.admin-seed {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+  padding: 12px 14px;
+  margin-top: 12px;
+  border: 1px dashed var(--color-gold);
+  border-radius: 12px;
+}

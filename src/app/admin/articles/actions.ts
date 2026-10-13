@@ -6,6 +6,7 @@ import { requireAdmin } from '@/lib/admin-auth';
 import { articleExists, deleteArticle, saveArticle, setFestivalCover } from '@/lib/articles-repo';
 import { articleSchema, imageSchema } from '@/lib/import/article-schema';
 import type { GoalSlug } from '@/lib/goals';
+import { starterArticles } from '@/lib/starter-articles';
 
 export interface SaveResult {
   error?: string;
@@ -41,4 +42,14 @@ export async function setFestivalCoverAction(slug: string, cover: unknown): Prom
   if (!parsed.success) return { error: parsed.error.issues.map((i) => i.message).join(' · ') };
   await setFestivalCover(slug, parsed.data);
   return { slug };
+}
+
+/** นำเข้าบทความตั้งต้นจาก repo เป็นฉบับร่าง ข้าม slug ที่มีอยู่แล้ว */
+export async function importStarterArticlesAction(): Promise<void> {
+  await requireAdmin();
+  for (const a of starterArticles()) {
+    if (await articleExists(a.slug)) continue;
+    await saveArticle({ ...a, goals: a.goals as GoalSlug[], seoTitle: a.seoTitle || null, published: false }, true);
+  }
+  redirect('/admin/articles');
 }
