@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
-import { BG, GOLD, MUTED, OG_SIZE, svgUri, TEXT } from '@/lib/og/color-card';
+import { BG, GOLD, MUTED, OG_SIZE, TEXT } from '@/lib/og/color-card';
 import { OG_BODY, OG_DISPLAY, ogFonts } from '@/lib/og/fonts';
-import { logoMarkSvg } from '@/lib/og/logo';
+import { logoBadgeUri } from '@/lib/og/logo';
 import { ogThai } from '@/lib/og/thai';
 import { GOALS } from '@/lib/goals';
 
@@ -12,7 +12,7 @@ export const contentType = 'image/png';
 export const alt = 'MuteluHub รวมทุกเรื่องสายมู';
 
 export default async function OgImage() {
-  const [fonts, logoSvg] = await Promise.all([ogFonts(), logoMarkSvg()]);
+  const [fonts, logo] = await Promise.all([ogFonts(), logoBadgeUri()]);
   return new ImageResponse(
     ogThai(
       <div
@@ -29,7 +29,7 @@ export default async function OgImage() {
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
-          <img src={svgUri(logoSvg)} width={112} height={112} alt="" />
+          <img src={logo} width={150} height={150} alt="" />
           <div style={{ display: 'flex', fontFamily: OG_DISPLAY, fontWeight: 600, fontSize: 96 }}>MuteluHub</div>
         </div>
         <div

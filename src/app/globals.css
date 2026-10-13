@@ -706,3 +706,4 @@ ul { list-style: none; margin: 0; padding: 0; }
 .disc-nav__more summary { cursor: pointer; min-height: 36px; display: flex; align-items: center; color: var(--color-gold-bright); font-size: var(--text-sm); }
 .disc-nav__more .disc-grid { margin-top: 6px; }
 .combo__option--family { font-weight: 600; color: var(--color-gold-bright); }
+.logo-mark { display: block; border-radius: 50%; box-shadow: 0 0 0 1px rgba(214, 176, 100, 0.35); }
