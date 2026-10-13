@@ -1,6 +1,8 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { DEITY_FAMILIES, deityGroup, FAMILY_PREFIX } from '@/data/deity-groups';
+import { isGoalSlug } from '@/lib/goals';
 import type { Place } from '@/data/places';
 import type { GoalSlug } from '@/lib/goals';
 import { formatDistance, NEAR_ME_RADIUS_KM, sortByDistance, type LatLng } from '@/lib/geo';
@@ -25,6 +27,15 @@ export function PlacesBrowser({
 }) {
   const [goal, setGoal] = useState<GoalSlug | null>(null);
   const [deity, setDeity] = useState<DeityValue>(null);
+  // ลิงก์ที่ส่งตัวกรองมาด้วย เช่น /places?deity=family:chinese จากหน้าตรุษจีน
+  // อ่านหลัง mount (ไม่ใช้ useSearchParams) เพื่อให้ HTML ของหน้ายังมีรายการสถานที่ครบสำหรับ SEO
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const g = params.get('goal');
+    if (isGoalSlug(g)) setGoal(g);
+    const d = deityFromQuery(params.get('deity'));
+    if (d) setDeity(d);
+  }, []);
   const [province, setProvince] = useState('');
   const [here, setHere] = useState<LatLng | null>(null);
   const [geo, setGeo] = useState<GeoState>('idle');
@@ -164,4 +175,14 @@ export function PlacesBrowser({
       )}
     </>
   );
+}
+
+function deityFromQuery(slug: string | null): DeityValue {
+  if (!slug) return null;
+  if (slug.startsWith(FAMILY_PREFIX)) {
+    const f = DEITY_FAMILIES.find((x) => `${FAMILY_PREFIX}${x.slug}` === slug);
+    return f ? { kind: 'group', slug, label: f.label } : null;
+  }
+  const g = deityGroup(slug);
+  return g ? { kind: 'group', slug, label: g.label } : null;
 }

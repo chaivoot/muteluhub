@@ -9,6 +9,9 @@ import { FESTIVALS, type Festival, type FestivalDate } from '@/data/festivals';
 import { currentFestivalDate, festivalPhase, getFestival, withCover } from '@/lib/festivals';
 import { getFestivalCovers, listPublishedArticles } from '@/lib/articles-repo';
 import { ArticleCard } from '@/components/ArticleCard';
+import { PlaceCard } from '@/components/PlaceCard';
+import { filterPlaces, thaiPlaces } from '@/lib/places';
+import { listPublishedPlaces } from '@/lib/places-repo';
 import { getGoal } from '@/lib/goals';
 import { SITE_URL } from '@/lib/site';
 import { bangkokDay, formatThaiRange, parseIsoDay, TH_MONTHS, TH_WEEKDAYS, toBuddhistYear } from '@/lib/thai-date';
@@ -61,6 +64,15 @@ export default async function FestivalPage({ params }: { params: Params }) {
   const [covers, articles] = await Promise.all([getFestivalCovers(), listPublishedArticles()]);
   const festival = withCover(base, covers);
   const related = articles.filter((a) => a.festival === slug);
+  const pf = festival.placeFilter;
+  const wherePlaces = pf
+    ? filterPlaces({ deity: pf.deity ?? null, goal: pf.goal ?? null }, thaiPlaces(await listPublishedPlaces()))
+        .sort((a, b) => Number(b.images.length > 0) - Number(a.images.length > 0))
+        .slice(0, 8)
+    : [];
+  const placesHref = pf
+    ? `/places?${new URLSearchParams(pf.deity ? { deity: pf.deity } : pf.goal ? { goal: pf.goal } : {})}`
+    : '/places';
   const today = bangkokDay();
   const date = currentFestivalDate(festival, today.iso);
   const c = festival.content;
@@ -152,16 +164,56 @@ export default async function FestivalPage({ params }: { params: Params }) {
             <section key={sec.title}>
               <h2 className="place__h2">{sec.title}</h2>
               {sec.intro && <p className="fest-section__intro">{sec.intro}</p>}
-              <div className="venue-list">
-                {sec.items.map((it) => (
-                  <div key={it.name} className="venue">
-                    <div className="venue__name">{it.name}</div>
-                    <p className="venue__desc">{it.text}</p>
-                  </div>
+              {sec.style === 'checklist' ? (
+                <ul className="fest-checklist">
+                  {sec.items.map((it) => (
+                    <li key={it.name}>
+                      <label>
+                        <input type="checkbox" />
+                        <span>
+                          <strong>{it.name}</strong> {it.text}
+                        </span>
+                      </label>
+                    </li>
+                  ))}
+                </ul>
+              ) : sec.style === 'steps' ? (
+                <ol className="fest-steps">
+                  {sec.items.map((it) => (
+                    <li key={it.name}>
+                      <div className="venue__name">{it.name}</div>
+                      <p className="venue__desc">{it.text}</p>
+                    </li>
+                  ))}
+                </ol>
+              ) : (
+                <div className="venue-list">
+                  {sec.items.map((it) => (
+                    <div key={it.name} className="venue">
+                      <div className="venue__name">{it.name}</div>
+                      <p className="venue__desc">{it.text}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </section>
+          ))}
+
+          {wherePlaces.length > 0 && (
+            <section>
+              <div className="fest-where__head">
+                <h2 className="place__h2">ไหว้ที่ไหนดี</h2>
+                <Link href={placesHref} className="section-header__link">
+                  ดูทั้งหมด
+                </Link>
+              </div>
+              <div className="carousel carousel--flush">
+                {wherePlaces.map((p) => (
+                  <PlaceCard key={p.slug} place={p} />
                 ))}
               </div>
             </section>
-          ))}
+          )}
 
           {c.specialList && (
             <section>

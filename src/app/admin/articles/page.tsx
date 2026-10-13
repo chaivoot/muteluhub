@@ -4,7 +4,9 @@ import { FESTIVALS } from '@/data/festivals';
 import { isAdmin } from '@/lib/admin-auth';
 import { adminListArticles, getFestivalCovers } from '@/lib/articles-repo';
 import { hasDatabase } from '@/lib/db';
+import { starterArticles } from '@/lib/starter-articles';
 import { AdminNav } from '../AdminNav';
+import { importStarterArticlesAction } from './actions';
 import { FestivalCoverForm } from './FestivalCoverForm';
 
 function dateTime(iso: string) {
@@ -14,6 +16,8 @@ function dateTime(iso: string) {
 export default async function AdminArticlesPage() {
   if (!hasDatabase() || !(await isAdmin())) redirect('/admin');
   const [articles, covers] = await Promise.all([adminListArticles(), getFestivalCovers()]);
+  const have = new Set(articles.map((a) => a.slug));
+  const starters = starterArticles().filter((a) => !have.has(a.slug));
   return (
     <main className="container admin__main">
       <h1 className="admin__title">หลังบ้าน</h1>
@@ -24,6 +28,18 @@ export default async function AdminArticlesPage() {
           เขียนบทความใหม่
         </Link>
       </div>
+      {starters.length > 0 && (
+        <form action={importStarterArticlesAction} className="admin-seed">
+          <p className="note">
+            มีบทความที่เตรียมไว้ให้ {starters.length} เรื่อง: {starters.map((a) => a.title).join(' · ')}
+            <br />
+            กดนำเข้าแล้วจะเป็นฉบับร่าง ใส่รูปปกแล้วติ๊กเผยแพร่ได้เลย
+          </p>
+          <button type="submit" className="btn btn--outline btn--sm">
+            นำเข้าบทความที่เตรียมไว้
+          </button>
+        </form>
+      )}
       <ul className="admin-list">
         {articles.map((a) => (
           <li key={a.slug} className="admin-item">
