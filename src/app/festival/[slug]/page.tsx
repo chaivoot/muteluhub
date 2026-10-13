@@ -46,13 +46,13 @@ const fullDate = (iso: string) => {
   return `วัน${TH_WEEKDAYS[d.weekday]} ${d.day} ${TH_MONTHS[d.month - 1]} ${toBuddhistYear(d.year)}`;
 };
 
-function PhaseBadge({ date, todayIso }: { date: FestivalDate; todayIso: string }) {
+function PhaseBadge({ date, todayIso, prepLabel }: { date: FestivalDate; todayIso: string; prepLabel: string }) {
   const p = festivalPhase(date, todayIso);
   if (p.phase === 'ongoing')
     return (
       <span className="pill pill--vermilion">{p.totalDays > 1 ? `วันนี้วันที่ ${p.day} จาก ${p.totalDays} วัน` : 'วันนี้'}</span>
     );
-  if (p.phase === 'prep') return <span className="pill pill--vermilion">วันนี้วันล้างท้อง</span>;
+  if (p.phase === 'prep') return <span className="pill pill--vermilion">วันนี้{prepLabel}</span>;
   if (p.phase === 'upcoming') return <span className="pill pill--gold">อีก {p.daysUntil} วัน</span>;
   return <span className="pill pill--gold">จบแล้วสำหรับปีนี้</span>;
 }
@@ -93,7 +93,7 @@ export default async function FestivalPage({ params }: { params: Params }) {
           {date && (
             <div className="fest-hero__badges">
               <span className="pill pill--gold">{formatThaiRange(date.start, date.end, true)}</span>
-              <PhaseBadge date={date} todayIso={today.iso} />
+              <PhaseBadge date={date} todayIso={today.iso} prepLabel={festival.prepLabel ?? 'วันล้างท้อง'} />
             </div>
           )}
           <h1 className="place-hero__name">
@@ -123,7 +123,7 @@ export default async function FestivalPage({ params }: { params: Params }) {
               <dl className="info-list">
                 {date.prep && (
                   <div>
-                    <dt>ล้างท้อง</dt>
+                    <dt>{festival.prepLabel ?? 'วันล้างท้อง'}</dt>
                     <dd>{fullDate(date.prep)}</dd>
                   </div>
                 )}
