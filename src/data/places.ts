@@ -51,6 +51,8 @@ export interface Place {
   /** วันที่ตรวจข้อมูลล่าสุด YYYY-MM-DD */
   checkedAt: string;
   published: boolean;
+  /** ปักหมุดจากหลังบ้าน (คอลัมน์ pinned_in) เช่น 'home' = แนะนำหน้าแรก */
+  pinnedIn?: string[];
   notes: string[];
 }
 
