@@ -57,7 +57,7 @@ spec ไม่ได้กำหนด framework ระบุแค่ว่า 
 ## สถานะโปรเจกต์ (อัปเดตล่าสุด 2026-10-11)
 - ชื่อแบรนด์/โดเมน: **MuteluHub / muteluhub.com** (เจ้าของยืนยันแล้ว)
 - Stack: Next.js 15 (App Router) + TypeScript + CSS ธรรมดา (`design/tokens.css` import ตรงใน `src/app/layout.tsx`), deploy Vercel
-- ข้อมูล: taxonomy/เทศกาล/prompt อยู่ในไฟล์ (`data/*.json`, `src/data/*.ts`) ส่วน **สถานที่และหมอดูอยู่ใน Neon Postgres (สิงคโปร์)** นำเข้าผ่าน `/admin/import` (รูปแบบ: `docs/import-format.md`) ฟังก์ชัน Vercel ตั้ง region `sin1` ใน `vercel.json` ให้ตรงกับฐานข้อมูล
+- ข้อมูล: taxonomy/เทศกาล/prompt อยู่ในไฟล์ (`data/*.json`, `src/data/*.ts`) ส่วน **สถานที่และหมอดูอยู่ใน Neon Postgres (สิงคโปร์)** นำเข้าผ่าน `/admin/import` (รูปแบบ: `docs/import-format.md`) ฟังก์ชัน Vercel ตั้ง region `sin1` ใน `vercel.json` ให้ตรงกับฐานข้อมูล และปิด preview deploy ของ branch อื่น (deploy เฉพาะ `main` ประหยัด Deployment Storage ของแผนฟรี 10 GB เจ้าของไม่ดู preview อยู่แล้ว)
 - env: `DATABASE_URL` (Neon), `ADMIN_PASSWORD` (หลังบ้าน), `NEXT_PUBLIC_SITE_URL`, `AGODA_CID`, `NEXT_PUBLIC_POSTHOG_KEY` (+ `NEXT_PUBLIC_POSTHOG_HOST` ถ้าใช้ EU)
 - ข้อควรระวัง: route ที่อ่านข้อมูลจาก DB ห้ามตั้ง `dynamicParams = false` (หลัง revalidateTag Next 15 จะตอบ 404) ให้ใช้ notFound() แทน
 - เสร็จแล้ว: ข้อ 1 ในลำดับการทำ (ระบบดีไซน์ layout มือถือ หน้าแรก) + addendum 01 AI prompt (คลัง, หน้า prompt เดี่ยว, generator) + เครื่องคำนวณเลขมงคล `/tools/lucky-number` + สถานที่ในไทย + หมอดู (รายการ ตัวกรอง bottom sheet โปรไฟล์ หน้าตามศาสตร์ OG image) + สีเสื้อมงคลวันนี้ `/color-today` (การ์ดแชร์ 1080x1350 / 1080x1920) หน้าอื่นเป็นโครงรอ
