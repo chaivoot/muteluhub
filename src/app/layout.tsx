@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
 import { GoalProvider } from '@/components/goal-context';
+import { TEXT_SIZE_SCRIPT } from '@/lib/text-size';
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site';
 import '../../design/tokens.css'; // design tokens: แหล่งค่าเดียว
 import './fonts.css';
@@ -21,7 +22,10 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="th">
+    <html lang="th" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: TEXT_SIZE_SCRIPT }} />
+      </head>
       <body>
         <GoalProvider>
           <div className="app">{children}</div>

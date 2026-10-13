@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from 'react';
 import { NAV_ITEMS } from '@/lib/site';
 import { GOALS } from '@/lib/goals';
 import { GoalIcon, UiIcon } from './icons';
+import { TextSizeToggle } from './TextSizeToggle';
 
 export function MenuButton() {
   const [open, setOpen] = useState(false);
@@ -68,6 +69,7 @@ export function MenuButton() {
                 </Link>
               </li>
             </ul>
+            <TextSizeToggle />
             <div className="menu-sheet__label">เสริมเรื่อง</div>
             <ul className="chip-row chip-row--wrap">
               {GOALS.map((g) => (
