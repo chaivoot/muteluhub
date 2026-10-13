@@ -1,12 +1,22 @@
 import type { Place } from '@/data/places';
 import { countryByCode } from '@/data/countries';
-import { DEITY_GROUPS, deityGroup, inDeityGroup, type DeityGroup } from '@/data/deity-groups';
+import {
+  DEITY_FAMILIES,
+  DEITY_GROUPS,
+  deityFamily,
+  deityGroup,
+  FAMILY_PREFIX,
+  familiesForQuery,
+  inDeityFamily,
+  inDeityGroup,
+  type DeityGroup,
+} from '@/data/deity-groups';
 import { PROVINCES, provinceShortName } from '@/data/provinces';
 import type { GoalSlug } from '@/lib/goals';
 
 export interface PlaceFilter {
   goal?: GoalSlug | null;
-  /** slug ของกลุ่มองค์เทพใน DEITY_GROUPS */
+  /** slug ของกลุ่มองค์เทพใน DEITY_GROUPS หรือ family:<slug> สำหรับหมวดใหญ่ (เทพจีน เทพฮินดู ...) */
   deity?: string | null;
   /** ข้อความที่ผู้ใช้พิมพ์เอง หาในชื่อองค์เทพแบบบางส่วน (ใช้เมื่อไม่ได้เลือกกลุ่ม) */
   deityText?: string | null;
@@ -18,14 +28,27 @@ export const thaiPlaces = (places: Place[]) => places.filter((p) => p.country ==
 export const abroadPlaces = (places: Place[], code?: string) =>
   places.filter((p) => p.country !== 'TH' && (!code || p.country === code));
 
+/** ตรงกับตัวกรององค์เทพไหม: กลุ่ม (กวนอู) หรือหมวด (family:chinese) */
+function matchesDeity(slug: string, p: Place): boolean {
+  if (slug.startsWith(FAMILY_PREFIX)) {
+    const family = deityFamily(slug.slice(FAMILY_PREFIX.length));
+    return family != null && inDeityFamily(family, p);
+  }
+  const group = deityGroup(slug);
+  return group != null && inDeityGroup(group, p.deities);
+}
+
 export function filterPlaces(filter: PlaceFilter, places: Place[]): Place[] {
-  const group = filter.deity ? deityGroup(filter.deity) : undefined;
   const text = normalizeDeity(filter.deityText ?? '');
+  // พิมพ์คำกว้าง ๆ อย่าง เทพจีน / เทพพราหมณ์ แล้วกด Enter โดยไม่เลือก: นับทั้งหมวดด้วย
+  const textFamilies = text ? familiesForQuery(text) : [];
   return places.filter(
     (p) =>
       (!filter.goal || p.goals.includes(filter.goal)) &&
-      (!filter.deity || (group != null && inDeityGroup(group, p.deities))) &&
-      (!text || p.deities.some((d) => normalizeDeity(d).includes(text))) &&
+      (!filter.deity || matchesDeity(filter.deity, p)) &&
+      (!text ||
+        p.deities.some((d) => normalizeDeity(d).includes(text)) ||
+        textFamilies.some((f) => inDeityFamily(f, p))) &&
       (!filter.province || p.provinceSlug === filter.province),
   );
 }
@@ -55,15 +78,23 @@ export type DeitySuggestion =
  */
 export function deitySuggestions(places: Place[], query: string, limit = 12): DeitySuggestion[] {
   const q = normalizeDeity(query);
+  const matchedFamilies = q ? familiesForQuery(q) : DEITY_FAMILIES;
+  const families: DeitySuggestion[] = matchedFamilies
+    .map((f) => ({ f, count: places.filter((p) => inDeityFamily(f, p)).length }))
+    .filter(({ count }) => count > 0)
+    .map(({ f, count }) => ({ kind: 'group', slug: `${FAMILY_PREFIX}${f.slug}`, label: f.label, count }));
+  const familySlugs = new Set(matchedFamilies.map((f) => f.slug));
   const groups: DeitySuggestion[] = deitiesOf(places)
     .filter(
       (g) =>
         !q ||
         normalizeDeity(g.label).includes(q) ||
+        familySlugs.has(g.family) ||
         places.some((p) => p.deities.some((d) => g.match.test(d) && normalizeDeity(d).includes(q))),
     )
     .map((g) => ({ kind: 'group', slug: g.slug, label: g.label, count: g.count }));
-  if (!q) return groups;
+  // ไม่พิมพ์: หมวดใหญ่ขึ้นก่อน แล้วตามด้วยทุกกลุ่ม (รายการเต็ม ไม่ตัดจำนวน)
+  if (!q) return [...families, ...groups];
   const loose = new Map<string, number>();
   for (const p of places)
     for (const d of new Set(p.deities))
@@ -72,7 +103,7 @@ export function deitySuggestions(places: Place[], query: string, limit = 12): De
   const texts: DeitySuggestion[] = [...loose]
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'th'))
     .map(([label, count]) => ({ kind: 'text', label, count }));
-  return [...groups, ...texts].slice(0, limit);
+  return [...families, ...groups, ...texts].slice(0, limit);
 }
 
 /** กลุ่มองค์เทพที่มีสถานที่อย่างน้อย 1 แห่ง เรียงตามจำนวน (มากก่อน) */
