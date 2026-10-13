@@ -1,6 +1,7 @@
 'use server';
 
 import { redirect } from 'next/navigation';
+import { z } from 'zod';
 import { login, logout, requireAdmin } from '@/lib/admin-auth';
 import type { DirectoryKind } from '@/lib/directory-repo';
 import { isDirectoryKind } from '@/lib/admin-kinds';
@@ -160,4 +161,47 @@ async function seedWith<T extends { slug: string }>(
   const rawFresh = raw.filter((r) => freshSlugs.has((r as { slug?: string }).slug ?? ''));
   const { created } = await repo.upsert(fresh, rawFresh);
   return { created, skipped: [...existing] };
+}
+
+/**
+ * รูปสถานที่ที่อัปโหลดจากหลังบ้าน (เก็บแยกจากข้อมูลนำเข้า)
+ * ต้องเป็นภาพจริงของสถานที่ พร้อมชื่อเจ้าของภาพและสิทธิ์การใช้ ห้ามภาพ AI ห้ามภาพจาก Google Maps
+ */
+const uploadedPlaceImage = z.object({
+  src: z.string().regex(/^\/media\/[A-Za-z0-9_-]+$/, 'รูปต้องอัปโหลดผ่านหลังบ้าน'),
+  alt: z.string().trim().min(1, 'ใส่คำอธิบายรูป').max(200),
+  author: z.string().trim().min(1, 'ใส่ชื่อเจ้าของภาพหรือช่างภาพ').max(120),
+  license: z.string().trim().min(1, 'เลือกสิทธิ์การใช้ภาพ').max(80),
+  sourceUrl: z
+    .string()
+    .trim()
+    .max(500)
+    .refine((u) => u === '' || /^https:\/\//.test(u), 'ลิงก์ที่มาต้องขึ้นต้นด้วย https://')
+    .refine((u) => !/google\.|goo\.gl|googleusercontent|ggpht/.test(u), 'ห้ามใช้รูปจาก Google Maps'),
+});
+
+export interface PlaceImageResult {
+  error?: string;
+}
+
+export async function addPlaceImageAction(slug: string, input: unknown, asCover: boolean): Promise<PlaceImageResult> {
+  await requireAdmin();
+  const parsed = uploadedPlaceImage.safeParse(input);
+  if (!parsed.success) return { error: parsed.error.issues.map((i) => i.message).join(' · ') };
+  const place = (await placesRepo.adminList()).find((r) => r.item.slug === slug)?.item;
+  if (!place) return { error: 'ไม่พบสถานที่นี้' };
+  const current = place.uploadedImages ?? [];
+  if (current.length >= 8) return { error: 'อัปโหลดได้สูงสุด 8 รูปต่อสถานที่' };
+  const next = asCover ? [parsed.data, ...current] : [...current, parsed.data];
+  await placesRepo.setUploadedImages(slug, next);
+  return {};
+}
+
+export async function removePlaceImageAction(slug: string, src: string): Promise<PlaceImageResult> {
+  await requireAdmin();
+  const place = (await placesRepo.adminList()).find((r) => r.item.slug === slug)?.item;
+  if (!place) return { error: 'ไม่พบสถานที่นี้' };
+  const current = place.uploadedImages ?? [];
+  await placesRepo.setUploadedImages(slug, current.filter((i) => i.src !== src));
+  return {};
 }
