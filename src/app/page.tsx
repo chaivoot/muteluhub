@@ -7,9 +7,9 @@ import { PlacesForGoal } from '@/components/PlacesForGoal';
 import { SectionHeader } from '@/components/SectionHeader';
 import { ShirtColorCard } from '@/components/ShirtColorCard';
 import { SiteHeader } from '@/components/SiteHeader';
-import { upcomingFestivals, withCover } from '@/lib/festivals';
+import { festivalArticles, upcomingFestivals, withCover } from '@/lib/festivals';
 import { FESTIVALS } from '@/data/festivals';
-import { getFestivalCovers } from '@/lib/articles-repo';
+import { getFestivalCovers, listPublishedArticles } from '@/lib/articles-repo';
 import { abroadPlaces, thaiPlaces } from '@/lib/places';
 import { COUNTRIES } from '@/data/countries';
 import Link from 'next/link';
@@ -35,8 +35,17 @@ const siteJsonLd = {
 
 export default async function HomePage() {
   const today = bangkokDay();
-  const [allPlaces, shirts, covers] = await Promise.all([listPublishedPlaces(), listShirtOffers(), getFestivalCovers()]);
-  const festivals = upcomingFestivals(today.iso, 45, FESTIVALS.map((f) => withCover(f, covers)));
+  const [allPlaces, shirts, covers, articles] = await Promise.all([
+    listPublishedPlaces(),
+    listShirtOffers(),
+    getFestivalCovers(),
+    listPublishedArticles(),
+  ]);
+  const upcoming = upcomingFestivals(today.iso, 45, FESTIVALS.map((f) => withCover(f, covers)));
+  // หน้าแรกแสดงไม่เกิน 3 ใบ (ใกล้สุดก่อน) ที่เหลือดูได้ที่ /festival
+  const festivals = upcoming.slice(0, 3);
+  const readings = festivalArticles(articles, upcoming);
+  const festivalName = new Map(upcoming.map((o) => [o.festival.slug, o.festival.name]));
   const places = thaiPlaces(allPlaces);
   const abroad = abroadPlaces(allPlaces);
   const abroadCountry = COUNTRIES.find((c) => abroad.some((p) => p.country === c.code));
@@ -75,12 +84,27 @@ export default async function HomePage() {
         </div>
         {festivals.length > 0 && (
           <div>
-            <SectionHeader title="เทศกาลที่กำลังจะมา" />
+            <SectionHeader title="เทศกาลที่กำลังจะมา" href="/festival" />
             <div className="stack">
               {festivals.map((o) => (
                 <FestivalCard key={`${o.festival.slug}-${o.date.year}`} occurrence={o} />
               ))}
             </div>
+            {readings.length > 0 && (
+              <div className="home-reads">
+                <h3 className="home-reads__title">อ่านรับเทศกาล</h3>
+                <ul className="home-reads__list">
+                  {readings.map((a) => (
+                    <li key={a.slug}>
+                      <Link href={`/articles/${a.slug}`} className="home-reads__item">
+                        <span className="home-reads__name">{a.title}</span>
+                        <span className="home-reads__meta">{festivalName.get(a.festival!)}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         )}
       </div>

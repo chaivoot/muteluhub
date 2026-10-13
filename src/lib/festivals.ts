@@ -9,16 +9,16 @@ export interface FestivalOccurrence {
 
 /**
  * เทศกาลที่กำลังจัดอยู่ หรือจะเริ่มภายใน withinDays วัน
- * (ปล่อยหน้าก่อนเทศกาล 4-6 สัปดาห์ จึงตั้งค่าเริ่มต้น 45 วัน)
+ * (ปล่อยหน้าก่อนเทศกาล 4-6 สัปดาห์ จึงตั้งค่าเริ่มต้น 45 วัน แต่ละเทศกาลตั้ง featureDays เองได้)
  */
 export function upcomingFestivals(
   todayIso: string,
   withinDays = 45,
   festivals: Festival[] = FESTIVALS,
 ): FestivalOccurrence[] {
-  const horizon = addDays(todayIso, withinDays);
   const result: FestivalOccurrence[] = [];
   for (const festival of festivals) {
+    const horizon = addDays(todayIso, festival.featureDays ?? withinDays);
     for (const date of festival.dates) {
       if (date.end < todayIso || date.start > horizon) continue;
       result.push({ festival, date, status: date.start <= todayIso ? 'ongoing' : 'upcoming' });
@@ -59,4 +59,17 @@ export function festivalPhase(date: FestivalDate, todayIso: string): FestivalPha
   if (today >= start) return { phase: 'ongoing', day: today - start + 1, totalDays: end - start + 1 };
   if (date.prep && todayIso === date.prep) return { phase: 'prep' };
   return { phase: 'upcoming', daysUntil: start - today };
+}
+
+/** บทความที่ผูกกับเทศกาลที่กำลังจะมา เรียงตามวันเทศกาล (ขึ้นหน้าแรกเองช่วงเทศกาล หายเองเมื่อจบ) */
+export function festivalArticles<A extends { festival: string | null }>(
+  articles: A[],
+  occurrences: FestivalOccurrence[],
+  limit = 3,
+): A[] {
+  const order = occurrences.map((o) => o.festival.slug);
+  return articles
+    .filter((a) => a.festival && order.includes(a.festival))
+    .sort((a, b) => order.indexOf(a.festival!) - order.indexOf(b.festival!))
+    .slice(0, limit);
 }
