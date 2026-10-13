@@ -22,6 +22,12 @@ export const PLACE_PLACEHOLDER: Placeholder = {
 };
 
 const BY_TYPE: Partial<Record<PlaceType, Placeholder>> = {
+  temple: {
+    src: '/images/placeholder/thai-temple-1200.webp',
+    srcSmall: '/images/placeholder/thai-temple-600.webp',
+    alt: 'ภาพประกอบ: คนจุดธูปไหว้พระพุทธรูปในวัด',
+    credit: CREDIT,
+  },
   'chinese-shrine': {
     src: '/images/placeholder/chinese-shrine-1200.webp',
     srcSmall: '/images/placeholder/chinese-shrine-600.webp',
