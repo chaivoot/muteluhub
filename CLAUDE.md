@@ -58,7 +58,7 @@ spec ไม่ได้กำหนด framework ระบุแค่ว่า 
 - ชื่อแบรนด์/โดเมน: **MuteluHub / muteluhub.com** (เจ้าของยืนยันแล้ว)
 - Stack: Next.js 15 (App Router) + TypeScript + CSS ธรรมดา (`design/tokens.css` import ตรงใน `src/app/layout.tsx`), deploy Vercel
 - ข้อมูล: taxonomy/เทศกาล/prompt อยู่ในไฟล์ (`data/*.json`, `src/data/*.ts`) ส่วน **สถานที่และหมอดูอยู่ใน Neon Postgres (สิงคโปร์)** นำเข้าผ่าน `/admin/import` (รูปแบบ: `docs/import-format.md`) ฟังก์ชัน Vercel ตั้ง region `sin1` ใน `vercel.json` ให้ตรงกับฐานข้อมูล
-- env: `DATABASE_URL` (Neon), `ADMIN_PASSWORD` (หลังบ้าน), `NEXT_PUBLIC_SITE_URL`, `AGODA_CID`
+- env: `DATABASE_URL` (Neon), `ADMIN_PASSWORD` (หลังบ้าน), `NEXT_PUBLIC_SITE_URL`, `AGODA_CID`, `NEXT_PUBLIC_POSTHOG_KEY` (+ `NEXT_PUBLIC_POSTHOG_HOST` ถ้าใช้ EU)
 - ข้อควรระวัง: route ที่อ่านข้อมูลจาก DB ห้ามตั้ง `dynamicParams = false` (หลัง revalidateTag Next 15 จะตอบ 404) ให้ใช้ notFound() แทน
 - เสร็จแล้ว: ข้อ 1 ในลำดับการทำ (ระบบดีไซน์ layout มือถือ หน้าแรก) + addendum 01 AI prompt (คลัง, หน้า prompt เดี่ยว, generator) + เครื่องคำนวณเลขมงคล `/tools/lucky-number` + สถานที่ในไทย + หมอดู (รายการ ตัวกรอง bottom sheet โปรไฟล์ หน้าตามศาสตร์ OG image) + สีเสื้อมงคลวันนี้ `/color-today` (การ์ดแชร์ 1080x1350 / 1080x1920) หน้าอื่นเป็นโครงรอ
 - ภาพหมอดู: ภาพ SVG ตามศาสตร์ 3 แบบ (`src/lib/art/discipline-art.ts`, เสิร์ฟที่ `/art/[slug]-[n].svg`) เป็นชุดชั่วคราวจนกว่าจะมีภาพวาดจริงความละเอียดสูง
@@ -75,7 +75,7 @@ spec ไม่ได้กำหนด framework ระบุแค่ว่า 
 - `src/data/daily-colors.ts` + `src/lib/daily-colors.ts` สีเสื้อตามหลักทักษา (คำนวณจากลำดับทักษา + สีประจำดาว), การ์ดแชร์ `src/lib/og/color-card.tsx` เสิร์ฟที่ `/color-today/card?goal=&size=portrait|story`
 - `src/components/goal-context.tsx` จำเป้าหมายที่เลือกใน localStorage + cookie `mh_goal`
 - `src/data/prompt-templates.ts` + `src/lib/prompts.ts` คลัง prompt, `GUARD_BLOCK` (ต่อท้ายทุก prompt ตอน render), ประกอบ prompt ฝั่ง client เท่านั้น
-- `src/lib/analytics.ts` event copy_prompt / open_followup / click_to_fortune_teller รับเฉพาะ slug goal discipline (ยังไม่ได้เลือกผู้ให้บริการ push เข้า window.dataLayer)
+- `src/lib/analytics.ts` event copy_prompt / open_followup / click_to_fortune_teller / click_affiliate รับเฉพาะ slug goal discipline ส่งเข้า PostHog (`src/components/PostHogInit.tsx`: cookieless ไม่มีแบนเนอร์ ต้องเปิด Cookieless server hash mode ในโปรเจกต์ PostHog, proxy ผ่าน `/ingest` ใน next.config, ไม่อัดหน้าจอ ไม่นับ /admin) ส่วนที่ผู้ใช้กรอกข้อมูลส่วนตัวใส่ class `ph-no-capture`
 - `src/lib/db.ts` (postgres.js, สร้างตารางอัตโนมัติใต้ advisory lock), `src/lib/directory-repo.ts` (อ่าน/เขียนตาราง directory + cache tag ตามประเภท) ใช้โดย `places-repo.ts` และ `tellers-repo.ts`, `src/lib/import/*-schema.ts` (ตรวจ JSON นำเข้า), `src/lib/admin-auth.ts` (รหัสผ่านเดียว)
 - OG image หมอดู: `src/app/fortune-tellers/[slug]/opengraph-image.tsx` ใช้ฟอนต์ TTF ใน `src/assets/og` (ต้องอยู่ใน outputFileTracingIncludes ของ next.config)
 - ชุดข้อมูลเริ่มต้น: `data/import/*.json` ลงทะเบียนใน `src/lib/seed-batches.ts` แล้วเจ้าของกดนำเข้าได้ที่ `/admin` (ข้าม slug ที่มีอยู่แล้ว ไม่เขียนทับ) Claude เข้าถึงฐานข้อมูล production ไม่ได้ ให้ส่งข้อมูลผ่านทางนี้

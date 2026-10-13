@@ -61,7 +61,7 @@ export function LuckyNumberTool() {
 
   return (
     <>
-      <form className="form container" onSubmit={(e) => e.preventDefault()} aria-label="กรอกวันเกิด">
+      <form className="form container ph-no-capture" onSubmit={(e) => e.preventDefault()} aria-label="กรอกวันเกิด">
         <fieldset className="field">
           <legend className="field__label">วันเกิด</legend>
           <div className="date-select">
@@ -113,7 +113,7 @@ export function LuckyNumberTool() {
       <p className="container note privacy-note">คำนวณในเครื่องคุณเท่านั้น เว็บไม่ได้ส่งหรือเก็บวันเกิดของคุณ</p>
 
       {result && goalInfo && birth && (
-        <section className="lucky-result container" aria-live="polite" aria-label="ผลเลขมงคล">
+        <section className="lucky-result container ph-no-capture" aria-live="polite" aria-label="ผลเลขมงคล">
           <div className="lucky-card">
             <div className="lucky-card__eyebrow">เลขมงคลด้าน{goalInfo.short}ของคุณ</div>
             <ul className="lucky-card__numbers">

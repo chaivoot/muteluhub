@@ -63,7 +63,7 @@ export function PromptBuilder({ template }: { template: PromptTemplate }) {
     .join(' · ');
 
   return (
-    <div className="prompt-builder">
+    <div className="prompt-builder ph-no-capture">
       <form className="form container" onSubmit={(e) => e.preventDefault()} aria-label="กรอกข้อมูลสำหรับ prompt">
         {template.requiredFields.map((f) =>
           f.computed ? (

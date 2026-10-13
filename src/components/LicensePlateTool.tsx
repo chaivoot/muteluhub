@@ -50,7 +50,7 @@ export function LicensePlateTool() {
 
   return (
     <>
-      <form className="form container" onSubmit={(e) => e.preventDefault()} aria-label="กรอกทะเบียนรถและวันเกิด">
+      <form className="form container ph-no-capture" onSubmit={(e) => e.preventDefault()} aria-label="กรอกทะเบียนรถและวันเกิด">
         <label className="field">
           <span className="field__label">ทะเบียนรถ</span>
           <input
@@ -82,7 +82,7 @@ export function LicensePlateTool() {
       <p className="container note privacy-note">คำนวณในเครื่องคุณเท่านั้น เว็บไม่ได้ส่งหรือเก็บทะเบียนและวันเกิดของคุณ</p>
 
       {(result || personal) && (
-        <section className="lucky-result container" aria-live="polite" aria-label="ผลเช็กทะเบียน">
+        <section className="lucky-result container ph-no-capture" aria-live="polite" aria-label="ผลเช็กทะเบียน">
           {result && <PlateResultCard result={result} goalShort={goalInfo?.short ?? null} personal={personal} />}
 
           {personal && goalInfo && <PersonalCard personal={personal} goalShort={goalInfo.short} />}

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
 import { GoalProvider } from '@/components/goal-context';
+import { PostHogInit } from '@/components/PostHogInit';
 import { TEXT_SIZE_SCRIPT } from '@/lib/text-size';
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site';
 import '../../design/tokens.css'; // design tokens: แหล่งค่าเดียว
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <script dangerouslySetInnerHTML={{ __html: TEXT_SIZE_SCRIPT }} />
       </head>
       <body>
+        <PostHogInit />
         <GoalProvider>
           <div className="app">{children}</div>
         </GoalProvider>

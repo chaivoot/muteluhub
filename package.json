@@ -12,6 +12,7 @@
   "dependencies": {
     "next": "15.5.27",
     "postgres": "^3.4.7",
+    "posthog-js": "1.434.15",
     "react": "19.1.1",
     "react-dom": "19.1.1",
     "server-only": "^0.0.1",
