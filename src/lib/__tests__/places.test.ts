@@ -50,6 +50,25 @@ describe('deity groups', () => {
     expect(filterPlaces({ deityText: 'พระ กาฬ' }, [...list, d]).map((p) => p.slug)).toEqual(['d']);
   });
 
+  it('searches by family: เทพจีน / เทพพราหมณ์ / เทพอินเดีย (typos too)', () => {
+    const gy: Place = { ...b, slug: 'gy', type: 'chinese-shrine', deities: ['เทพเจ้ากวนอู'] };
+    const sh: Place = { ...b, slug: 'sh', type: 'chinese-shrine', deities: ['เจ้าพ่อพระกาฬ'] };
+    const ga: Place = { ...b, slug: 'ga', type: 'devalai', deities: ['พระพิฆเนศ'] };
+    const br: Place = { ...b, slug: 'br', type: 'temple', deities: ['ท้าวมหาพรหม'] };
+    const all = [gy, sh, ga, br];
+    // หมวดจีนนับทั้งเทพจีนและสถานที่ประเภทศาลเจ้าจีน
+    expect(filterPlaces({ deity: 'family:chinese' }, all).map((p) => p.slug)).toEqual(['gy', 'sh']);
+    expect(filterPlaces({ deity: 'family:hindu' }, all).map((p) => p.slug)).toEqual(['ga', 'br']);
+    for (const q of ['เทพพราหมณ์', 'เทพพราหม์', 'เทพอินเดีย', 'ฮินดู']) {
+      expect(deitySuggestions(all, q)[0]).toMatchObject({ slug: 'family:hindu', count: 2 });
+      expect(filterPlaces({ deityText: q }, all).map((p) => p.slug)).toEqual(['ga', 'br']);
+    }
+    const chinese = deitySuggestions(all, 'เทพจีน');
+    expect(chinese[0]).toMatchObject({ slug: 'family:chinese', count: 2 });
+    expect(chinese.map((s) => s.label)).toContain('เทพเจ้ากวนอู');
+    expect(deitySuggestions(all, '').slice(0, 2).map((s) => s.label)).toEqual(['เทพจีนทั้งหมด', 'เทพฮินดู / พราหมณ์ทั้งหมด']);
+  });
+
   it('ignores an unknown deity slug', () => {
     expect(filterPlaces({ deity: 'nope' }, list)).toHaveLength(0);
   });

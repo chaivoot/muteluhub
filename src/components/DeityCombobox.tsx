@@ -109,7 +109,11 @@ export function DeityCombobox({
                 id={`${listId}-${i}`}
                 role="option"
                 aria-selected={i === active}
-                className="combo__option"
+                className={
+                  o.kind === 'group' && o.slug.startsWith('family:')
+                    ? 'combo__option combo__option--family'
+                    : 'combo__option'
+                }
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={() => pick(o)}
               >
