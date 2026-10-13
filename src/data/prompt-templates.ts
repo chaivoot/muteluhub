@@ -133,6 +133,33 @@ function colorTodayTemplates(): PromptTemplate[] {
   });
 }
 
+/**
+ * phone-number-[goal]: ปุ่ม ถาม AI ต่อ ในหน้าเช็กเบอร์มงคล ส่งผลวิเคราะห์มา (ไม่ส่งตัวเบอร์)
+ */
+function phoneNumberTemplates(): PromptTemplate[] {
+  return ALL_GOALS.map((goal, i) => {
+    const { short, topic } = LUCKY_NUMBER_TOPICS[goal];
+    return {
+      slug: `phone-number-${goal}`,
+      title: `ถาม AI เรื่องเบอร์มงคลด้าน${short}`,
+      description: 'ใช้ผลจากหน้าเช็กเบอร์มงคล ให้ AI ช่วยอธิบายและแนะนำการเลือกเบอร์',
+      discipline: 'lucky-numbers',
+      goals: [goal],
+      template: `เว็บวิเคราะห์เบอร์โทรของฉันตามหลักผลรวม + คู่เลข ได้ผลดังนี้:
+{{phone_result}}
+พื้นดวงตามวันเกิด (ทักษา): {{birth_numbers}}
+ช่วยอธิบายว่าเบอร์นี้เกี่ยวกับ${topic}ของฉันอย่างไร และถ้าจะหาเบอร์ใหม่ที่เสริม${topic} ควรมองหาคู่เลขแบบไหน`,
+      requiredFields: [
+        { key: 'phone_result', label: 'ผลวิเคราะห์เบอร์', type: 'text', multiline: true, placeholder: 'ผลรวม และคู่เลขที่ได้' },
+        { key: 'birth_numbers', label: 'เลขตามวันเกิด', type: 'text', placeholder: 'เช่น เกิดวันอาทิตย์ เลขเสริม 4 เลขที่ควรเลี่ยง 6' },
+      ],
+      followUps: ['คู่เลขไหนในเบอร์นี้ที่ควรระวังที่สุด และเพราะอะไร'],
+      isFeatured: false,
+      sortOrder: 50 + i,
+    };
+  });
+}
+
 export const PROMPT_TEMPLATES: PromptTemplate[] = [
   {
     slug: 'tarot-love',
@@ -161,6 +188,7 @@ export const PROMPT_TEMPLATES: PromptTemplate[] = [
   },
   ...luckyNumberTemplates(),
   ...colorTodayTemplates(),
+  ...phoneNumberTemplates(),
   {
     slug: 'chart-reading-general',
     title: 'ตีความผังดวงที่มีอยู่แล้ว',

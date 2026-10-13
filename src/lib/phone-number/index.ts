@@ -1,7 +1,8 @@
 /**
  * เช็กเบอร์มงคล: หลักเดียวทั้งเว็บ (เจ้าของเลือก 2026-10-13: ผลรวม + คู่เลข)
  * - ผลรวม: บวกเลขทุกหลักของเบอร์
- * - คู่เลข: อ่านเลขติดกันทีละคู่ (เลื่อนทีละหลัก) ตั้งแต่หลักที่ PHONE_METHOD.pairsFrom
+ * - คู่เลข: ไม่นับ 3 ตัวแรก (0 + รหัสเครือข่าย) อ่าน 7 ตัวท้ายเป็นคู่ติดกัน 6 คู่ (เบอร์บ้าน 9 หลักไม่นับ 2 ตัวแรก)
+ *   3 คู่สุดท้าย (4 ตัวท้าย) ถือเป็นคู่หลักตามที่หลายตำราให้น้ำหนัก
  * ความหมายคู่เลขและผลรวมอยู่ที่ src/data/phone-pairs.ts (รวบรวมจากหลายแหล่ง เป็นความเชื่อ)
  * คำนวณฝั่ง client เท่านั้น เบอร์ไม่ถูกส่งขึ้น server
  */
@@ -10,10 +11,12 @@ import type { GoalSlug } from '@/lib/goals';
 
 export const PHONE_METHOD = {
   name: 'ผลรวม + คู่เลข',
-  /** index ของหลักแรกที่เริ่มอ่านคู่ (1 = ข้ามเลข 0 ตัวแรก) */
-  pairsFrom: 1,
+  /** จำนวนหลักแรกที่ไม่นับคู่ (มือถือ 3 = 0 + รหัสเครือข่าย, เบอร์บ้าน 2) */
+  skip: (length: number) => (length === 10 ? 3 : 2),
+  /** จำนวนคู่ท้ายที่ถือเป็นคู่หลัก */
+  keyPairs: 3,
   description:
-    'บวกเลขทุกหลักของเบอร์เป็นผลรวม แล้วอ่านเลขที่ติดกันทีละคู่ (ไม่นับเลข 0 ตัวแรก) แต่ละคู่มีความหมายตามความเชื่อเรื่องเลขมงคลของไทย ความหมายรวบรวมจากหลายแหล่งที่ตรงกันเป็นส่วนใหญ่',
+    'บวกเลขทุกหลักของเบอร์เป็นผลรวม แล้วอ่าน 7 ตัวท้ายเป็นคู่เลขที่ติดกัน 6 คู่ (ไม่นับ 3 ตัวแรกซึ่งเป็น 0 และรหัสเครือข่าย) โดย 3 คู่สุดท้ายเป็นคู่หลัก ความหมายรวบรวมจากหลายแหล่งในไทยที่ตรงกันเป็นส่วนใหญ่',
   notes: PHONE_METHOD_NOTES,
 } as const;
 
@@ -41,6 +44,8 @@ export interface PairResult extends PhoneMeaning {
   pair: string;
   /** ตำแหน่งหลักแรกของคู่ในเบอร์ (0-based) */
   index: number;
+  /** อยู่ใน 4 ตัวท้าย */
+  key: boolean;
 }
 
 export interface PhoneResult {
@@ -58,9 +63,10 @@ export interface PhoneResult {
 export function analyzePhone(digits: string, goal: GoalSlug | null = null): PhoneResult {
   const sum = digits.split('').reduce((s, c) => s + Number(c), 0);
   const pairs: PairResult[] = [];
-  for (let i = PHONE_METHOD.pairsFrom; i < digits.length - 1; i++) {
+  const last = digits.length - 2;
+  for (let i = PHONE_METHOD.skip(digits.length); i <= last; i++) {
     const pair = digits.slice(i, i + 2);
-    pairs.push({ pair, index: i, ...PHONE_PAIRS[pair] });
+    pairs.push({ pair, index: i, key: i > last - PHONE_METHOD.keyPairs, ...PHONE_PAIRS[pair] });
   }
   const counts = { good: 0, neutral: 0, bad: 0 };
   for (const p of pairs) counts[p.level]++;

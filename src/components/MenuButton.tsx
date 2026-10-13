@@ -68,6 +68,12 @@ export function MenuButton() {
                   เลขมงคลจากวันเกิด
                 </Link>
               </li>
+              <li>
+                <Link href="/tools/phone-number" className="menu-sheet__link">
+                  <span className="menu-sheet__num" aria-hidden="true">☎</span>
+                  เช็กเบอร์มงคล
+                </Link>
+              </li>
             </ul>
             <TextSizeToggle />
             <div className="menu-sheet__label">เสริมเรื่อง</div>

@@ -3,6 +3,7 @@ import { ExploreGrid } from '@/components/ExploreGrid';
 import { FestivalCard } from '@/components/FestivalCard';
 import { GoalPicker } from '@/components/GoalPicker';
 import { LuckyNumberShortcut } from '@/components/LuckyNumberShortcut';
+import { PhoneNumberShortcut } from '@/components/PhoneNumberShortcut';
 import { PlacesForGoal } from '@/components/PlacesForGoal';
 import { SectionHeader } from '@/components/SectionHeader';
 import { ShirtColorCard } from '@/components/ShirtColorCard';
@@ -81,6 +82,7 @@ export default async function HomePage() {
         <div>
           <ShirtColorCard weekday={today.weekday} shirts={shirts} />
           <LuckyNumberShortcut />
+          <PhoneNumberShortcut />
         </div>
         {festivals.length > 0 && (
           <div>
