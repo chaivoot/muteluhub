@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Breadcrumbs, PageHeader } from '@/components/ComingSoon';
+import { PLACE_PLACEHOLDER } from '@/lib/place-placeholder';
 import { SiteHeader } from '@/components/SiteHeader';
 import { CreditBadge } from '@/components/CreditBadge';
 import { GoalTag } from '@/components/GoalTag';
@@ -129,10 +130,16 @@ function PlaceDetail({ place, places }: { place: Place; places: Place[] }) {
         {image ? (
           <img src={image.src} alt={image.alt} className="place-hero__img" />
         ) : (
-          <span className="place-img-empty" aria-hidden="true" />
+          <img
+            src={PLACE_PLACEHOLDER.src}
+            srcSet={`${PLACE_PLACEHOLDER.srcSmall} 600w, ${PLACE_PLACEHOLDER.src} 1200w`}
+            sizes="100vw"
+            alt={PLACE_PLACEHOLDER.alt}
+            className="place-hero__img place-img-placeholder"
+          />
         )}
         <span className="place-hero__scrim" aria-hidden="true" />
-        {image && <CreditBadge credit={`${image.author} / ${image.license}`} position="top-right" />}
+        <CreditBadge credit={image ? `${image.author} / ${image.license}` : PLACE_PLACEHOLDER.credit} position="top-right" />
         <div className="place-hero__text">
           <span className="place-hero__type">
             {PLACE_TYPE_LABEL[place.type]} · {placeLocation(place)}
