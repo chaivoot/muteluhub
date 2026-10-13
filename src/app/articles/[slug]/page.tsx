@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { Breadcrumbs } from '@/components/ComingSoon';
 import { CreditBadge } from '@/components/CreditBadge';
 import { GoalTag } from '@/components/GoalTag';
+import { TextSizeToggle } from '@/components/TextSizeToggle';
 import { SiteHeader } from '@/components/SiteHeader';
 import { getFestival } from '@/lib/festivals';
 import { getGoal } from '@/lib/goals';
@@ -86,7 +87,10 @@ export default async function ArticlePage({ params }: { params: Params }) {
             ))}
           </div>
         )}
-        <Markdown source={a.body} />
+        <TextSizeToggle />
+        <div className="reading">
+          <Markdown source={a.body} />
+        </div>
         {festival && (
           <p>
             <Link href={`/festival/${festival.slug}`} className="btn btn--outline">
