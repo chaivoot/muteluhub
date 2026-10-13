@@ -21,7 +21,6 @@ const shirtUri = (fill: string) =>
     `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="${fill}"><path d="${SHIRT}"/></svg>`,
   ).toString('base64')}`;
 
-export const svgUri = (svg: string) => `data:image/svg+xml;base64,${Buffer.from(svg).toString('base64')}`;
 
 export const BG = '#172038';
 export const GOLD = '#D6B064';
@@ -63,12 +62,12 @@ export function ColorCard({
   day,
   goal,
   size,
-  logoSvg,
+  logoSrc,
 }: {
   day: ThaiDay;
   goal: GoalSlug;
   size: CardSize;
-  logoSvg: string;
+  logoSrc: string;
 }) {
   const { lucky, avoid } = getShirtColor(day.weekday, goal);
   const g = getGoal(goal);
@@ -140,7 +139,7 @@ export function ColorCard({
       ) : null}
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-        <img src={svgUri(logoSvg)} width={56} height={56} alt="" />
+        <img src={logoSrc} width={56} height={56} alt="" />
         <div style={{ fontFamily: OG_DISPLAY, fontSize: 40 }}>MuteluHub</div>
         <div style={{ fontFamily: OG_BODY, fontSize: 30, color: MUTED }}>muteluhub.com</div>
       </div>
@@ -155,7 +154,7 @@ export function ColorCard({
  */
 export const OG_SIZE = { width: 1200, height: 630 };
 
-export function ColorOgImage({ logoSvg }: { logoSvg: string }) {
+export function ColorOgImage({ logoSrc }: { logoSrc: string }) {
   const colors = TAKSA_ORDER.map((p) => PLANET_COLOR[p]);
   return (
     <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 28, background: BG, color: TEXT }}>
@@ -167,7 +166,7 @@ export function ColorOgImage({ logoSvg }: { logoSvg: string }) {
       <div style={{ display: 'flex', fontFamily: OG_DISPLAY, fontWeight: 600, fontSize: 92, lineHeight: 1.4, marginTop: 20 }}>สีเสื้อมงคลวันนี้</div>
       <div style={{ display: 'flex', fontFamily: OG_BODY, fontWeight: 500, fontSize: 34, color: MUTED }}>ตามหลักทักษา เลือกได้ตามเรื่องที่อยากเสริม พร้อมสีที่ควรเลี่ยง</div>
       <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginTop: 10 }}>
-        <img src={svgUri(logoSvg)} width={52} height={52} alt="" />
+        <img src={logoSrc} width={52} height={52} alt="" />
         <div style={{ display: 'flex', fontFamily: OG_DISPLAY, fontWeight: 600, fontSize: 36 }}>MuteluHub</div>
       </div>
     </div>

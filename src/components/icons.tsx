@@ -98,14 +98,7 @@ export function ShirtSolid({ size = 32, color }: { size?: number; color: string 
   );
 }
 
-/** โลโก้แบบย่อ: M บนวงทอง + พระจันทร์เสี้ยว (ต้นฉบับ design/logo/logo-mark.svg สร้างจาก scripts/make-logo.py) */
-export function LogoMark({ size = 34 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 512 512" aria-hidden="true">
-      <path d="M481.11 199.87 A232 232 0 1 1 312.13 30.89" fill="none" stroke="var(--color-gold)" strokeWidth="18" strokeLinecap="round" />
-      <path fill="var(--color-gold)" d="M430.45 134.71 A44 44 0 1 0 377.29 81.55 A37.84 37.84 0 0 1 430.45 134.71Z" />
-      <circle cx="256" cy="256" r="190" fill="var(--color-gold)" />
-      <path fill="var(--color-on-gold)" d="M165.7 326.6Q174.3 323.8 181.5 322.4V198.0Q172.7 196.2 165.5 193.6V190.0H214.3L254.10000000000002 291.2L297.70000000000005 190.0H346.5V193.6Q343.3 194.6 330.70000000000005 198.4V322.4Q337.1 323.6 346.5 326.6V330.0H283.5V326.6Q292.5 323.8 299.3 322.4V213.8L255.3 314.8H237.10000000000002L193.9 211.39999999999998V322.4Q200.7 323.8 209.7 326.6V330.0H165.7Z" />
-    </svg>
-  );
+/** โลโก้แบบย่อ: เหรียญทอง M จากโลโก้ของเจ้าของ (ต้นฉบับ design/logo/logo-original.jpg) */
+export function LogoMark({ size = 36 }: { size?: number }) {
+  return <img src="/logo-mark-96.webp" width={size} height={size} alt="" className="logo-mark" />;
 }

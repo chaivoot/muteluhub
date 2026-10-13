@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 import { isGoalSlug } from '@/lib/goals';
 import { CARD_DIMENSIONS, ColorCard, type CardSize } from '@/lib/og/color-card';
 import { ogFonts } from '@/lib/og/fonts';
-import { logoMarkSvg } from '@/lib/og/logo';
+import { logoMarkUri } from '@/lib/og/logo';
 import { ogThai } from '@/lib/og/thai';
 import { bangkokDay } from '@/lib/thai-date';
 
@@ -19,8 +19,8 @@ export async function GET(req: Request) {
   const size = (params.get('size') === 'story' ? 'story' : 'portrait') as CardSize;
   if (!isGoalSlug(goal)) return new Response('Unknown goal', { status: 400 });
   const day = bangkokDay();
-  const [fonts, logoSvg] = await Promise.all([ogFonts(), logoMarkSvg()]);
-  const res = new ImageResponse(ogThai(<ColorCard day={day} goal={goal} size={size} logoSvg={logoSvg} />), {
+  const [fonts, logoSrc] = await Promise.all([ogFonts(), logoMarkUri()]);
+  const res = new ImageResponse(ogThai(<ColorCard day={day} goal={goal} size={size} logoSrc={logoSrc} />), {
     ...CARD_DIMENSIONS[size],
     fonts,
   });

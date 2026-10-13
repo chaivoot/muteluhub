@@ -2,10 +2,21 @@ import 'server-only';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
-let cache: Promise<string> | undefined;
+/**
+ * โลโก้สำหรับภาพแชร์ (data URI ให้ Satori)
+ * mark = เหรียญทอง M (ใช้ขนาดเล็ก), badge = โลโก้เต็ม MUTELU HUB (ใช้ขนาดใหญ่)
+ * ต้นฉบับจากเจ้าของ: design/logo/logo-original.jpg
+ */
+const cache = new Map<string, Promise<string>>();
 
-/** โลโก้แบบย่อ (SVG) สำหรับภาพแชร์ ใช้สีจริงแทน CSS variable */
-export function logoMarkSvg(): Promise<string> {
-  cache ??= readFile(join(process.cwd(), 'public/logo-mark.svg'), 'utf8');
-  return cache;
+function pngUri(file: string): Promise<string> {
+  let p = cache.get(file);
+  if (!p) {
+    p = readFile(join(process.cwd(), 'public', file)).then((b) => `data:image/png;base64,${b.toString('base64')}`);
+    cache.set(file, p);
+  }
+  return p;
 }
+
+export const logoMarkUri = () => pngUri('logo-mark.png');
+export const logoBadgeUri = () => pngUri('logo-badge.png');
