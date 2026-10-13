@@ -1,26 +1,28 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { TEXT_SIZE_KEY } from '@/lib/text-size';
+import { DEFAULT_TEXT_SIZE, TEXT_SIZE_KEY } from '@/lib/text-size';
 
 const SIZES = [
-  { key: 'm', label: 'ก', aria: 'ตัวอักษรขนาดปกติ' },
-  { key: 'l', label: 'ก', aria: 'ตัวอักษรใหญ่' },
+  { key: 'm', label: 'ก', aria: 'ตัวอักษรเล็ก' },
+  { key: 'l', label: 'ก', aria: 'ตัวอักษรขนาดกลาง (ค่าเริ่มต้น)' },
   { key: 'xl', label: 'ก', aria: 'ตัวอักษรใหญ่มาก' },
 ] as const;
 type Size = (typeof SIZES)[number]['key'];
 /** ปุ่มปรับขนาดตัวอักษรทั้งเว็บ (ผู้อ่านสายมูหลายคนสูงอายุ) จำค่าไว้ในเบราว์เซอร์ */
 export function TextSizeToggle() {
-  const [size, setSize] = useState<Size>('m');
+  const [size, setSize] = useState<Size>(DEFAULT_TEXT_SIZE);
 
   useEffect(() => {
     const cur = document.documentElement.dataset.textSize;
-    if (cur === 'l' || cur === 'xl') setSize(cur);
+    if (cur === 'm' || cur === 'xl') setSize(cur);
   }, []);
 
   const choose = (s: Size) => {
     setSize(s);
-    document.documentElement.dataset.textSize = s;
+    // ขนาดกลางเป็นค่าเริ่มต้นใน CSS จึงไม่ต้องตั้ง attribute
+    if (s === DEFAULT_TEXT_SIZE) delete document.documentElement.dataset.textSize;
+    else document.documentElement.dataset.textSize = s;
     try {
       localStorage.setItem(TEXT_SIZE_KEY, s);
     } catch {}
