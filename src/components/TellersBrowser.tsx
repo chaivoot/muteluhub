@@ -29,7 +29,18 @@ export function TellersBrowser({
   const params = useSearchParams();
   const queryGoal = params.get('goal');
   const [goal, setGoal] = useState<GoalSlug | null>(isGoalSlug(queryGoal) ? queryGoal : null);
-  const [discipline, setDiscipline] = useState(fixedDiscipline ?? params.get('discipline') ?? '');
+  // ลิงก์จากหน้าอื่นใส่ศาสตร์มาด้วย (เช่น prompt สีเสื้อ = เลข 7 ตัว) ถ้าคู่กับเรื่องนั้นแล้วไม่เจอใคร ให้แสดงทุกศาสตร์แทนพร้อมบอก
+  const [initial] = useState(() => {
+    const q = fixedDiscipline ? '' : (params.get('discipline') ?? '');
+    const g = isGoalSlug(queryGoal) ? queryGoal : null;
+    const none = { channel: null, province: null, price: null };
+    const relaxed =
+      !!q &&
+      filterTellers({ goal: g, discipline: q, ...none }, tellers).length === 0 &&
+      filterTellers({ goal: g, discipline: null, ...none }, tellers).length > 0;
+    return { discipline: relaxed ? '' : q, relaxedFrom: relaxed ? q : null };
+  });
+  const [discipline, setDiscipline] = useState(fixedDiscipline ?? initial.discipline);
   const [channel, setChannel] = useState<Channel | ''>('');
   const [province, setProvince] = useState('');
   const [price, setPrice] = useState('');
@@ -100,6 +111,12 @@ export function TellersBrowser({
         </button>
       </div>
 
+      {initial.relaxedFrom && !discipline && (
+        <p className="container note">
+          ยังไม่มีหมอดูสาย{getDiscipline(initial.relaxedFrom)?.name ?? initial.relaxedFrom}
+          {goal ? `ที่ถนัดเรื่อง${getGoal(goal).short}` : ''} จึงแสดงทุกศาสตร์
+        </p>
+      )}
       {active.length > 0 && (
         <div className="container chip-row chip-row--wrap active-filters" aria-label="ตัวกรองที่ใช้อยู่">
           {active.map((a) => (
