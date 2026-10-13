@@ -74,6 +74,12 @@ export function MenuButton() {
                   เช็กเบอร์มงคล
                 </Link>
               </li>
+              <li>
+                <Link href="/tools/license-plate" className="menu-sheet__link">
+                  <span className="menu-sheet__num" aria-hidden="true">ก</span>
+                  เช็กทะเบียนรถมงคล
+                </Link>
+              </li>
             </ul>
             <TextSizeToggle />
             <div className="menu-sheet__label">เสริมเรื่อง</div>
