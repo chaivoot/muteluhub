@@ -58,7 +58,8 @@ export function PlaceImagesForm({ slug, name, uploaded }: { slug: string; name: 
 
       {!draft ? (
         <ImageUpload
-          label="+ อัปโหลดรูป"
+          label={uploaded.length ? '+ เพิ่มรูปอีก' : '+ เลือกรูปจากเครื่อง'}
+          className="btn btn--gold place-images__pick"
           onUploaded={(src) => setDraft({ src, alt: name, author: '', license: 'ถ่ายเอง', sourceUrl: '' })}
         />
       ) : (

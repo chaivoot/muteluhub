@@ -15,7 +15,7 @@ import { PLANET_COLOR } from '@/data/daily-colors';
 import type { Product } from '@/data/products';
 import { tellersRepo } from '@/lib/tellers-repo';
 import { PIN_HOME } from '@/data/popular-places';
-import { PlaceImagesForm } from './PlaceImagesForm';
+import { PlaceImageSlot } from './PlaceImageSlot';
 import { deleteAction, logoutAction, publishAllAction, setPinsAction, togglePublishedAction } from './actions';
 import { PIN_ALL } from '@/lib/tellers';
 import { AdminNav } from './AdminNav';
@@ -282,7 +282,9 @@ export default async function AdminPage({
       <ul className="admin-list">
         {shown.map((r) => (
           <li key={r.slug} className="admin-item">
-            {r.thumb !== undefined &&
+            {r.uploaded ? (
+              <PlaceImageSlot slug={r.slug} name={r.name} thumb={r.thumb ?? null} uploaded={r.uploaded} />
+            ) : r.thumb !== undefined &&
               (r.thumb ? (
                 <img src={r.thumb} alt="" className="admin-item__thumb" loading="lazy" />
               ) : (
@@ -301,12 +303,6 @@ export default async function AdminPage({
               <div className="note">
                 {r.slug} · {r.meta} · ตรวจ {r.checkedAt} · แก้ไข {dateTime(r.updatedAt)}
               </div>
-              {r.uploaded && (
-                <details className="admin-item__notes">
-                  <summary>{r.thumb ? `รูป (อัปโหลดแล้ว ${r.uploaded.length})` : 'ใส่รูป'}</summary>
-                  <PlaceImagesForm slug={r.slug} name={r.name} uploaded={r.uploaded} />
-                </details>
-              )}
               {r.pinOptions && (
                 <details className="admin-item__notes admin-pins">
                   <summary>
