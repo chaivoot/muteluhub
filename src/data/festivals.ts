@@ -71,6 +71,8 @@ export interface Festival {
   dates: FestivalDate[];
   /** ชื่อวันก่อนงาน (prep) ค่าเริ่มต้น วันล้างท้อง เช่น ตรุษจีน = วันจ่าย */
   prepLabel?: string;
+  /** ขึ้นหน้าแรกล่วงหน้ากี่วัน (ค่าเริ่มต้น 45) เช่น ตรุษจีนคนค้นของไหว้เร็ว ฮาโลวีนสั้นกว่า */
+  featureDays?: number;
   /** ภาพจริงพร้อมเครดิต (ห้ามใช้ภาพ AI จาก mockup) sourceUrl = หน้าไฟล์ต้นทางสำหรับแสดงที่มาและสัญญาอนุญาต */
   image?: { src: string; alt: string; credit: string; sourceUrl?: string };
   /** ต่อท้ายชื่อใน title ของหน้า (ค่าเริ่มต้น: วันไหน ข้อควรรู้ และงานทั่วไทย) */
@@ -342,6 +344,7 @@ export const FESTIVALS: Festival[] = [
   },
   {
     slug: 'halloween',
+    featureDays: 21,
     name: 'ฮาโลวีน',
     tagline: 'ประตูนรกเปิดจริงไหม ข้อควรระวังตามความเชื่อ และไปปาร์ตี้ให้ปลอดภัย',
     seoTitle: 'ประตูนรกเปิดจริงไหม ข้อควรระวังแบบสายมู',
@@ -1390,6 +1393,8 @@ export const FESTIVALS: Festival[] = [
   },
   {
     slug: "chinese-new-year",
+    // ขึ้นหน้าแรกราว 1 ธ.ค. (วันไหว้ 5 ก.พ.)
+    featureDays: 66,
     name: "ตรุษจีน",
     tagline: "วันจ่าย วันไหว้ วันเที่ยว ของไหว้ ไหว้กี่โมง และไปไหว้ที่ไหนดี",
     seoTitle: "วันจ่าย วันไหว้ วันเที่ยว ของไหว้ และไหว้กี่โมง",

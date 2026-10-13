@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { Festival } from '@/data/festivals';
-import { currentFestivalDate, upcomingFestivals } from '@/lib/festivals';
+import { currentFestivalDate, festivalArticles, upcomingFestivals } from '@/lib/festivals';
 
 const kinje: Festival = {
   slug: 'kinje',
@@ -56,5 +56,30 @@ describe('festival content', () => {
     const text = JSON.stringify(c);
     expect(text).not.toContain('—');
     for (const url of [...c.sources, ...c.venues.flatMap((v) => v.sources)]) expect(() => new URL(url)).not.toThrow();
+  });
+});
+
+describe('featureDays และบทความช่วงเทศกาล', () => {
+  const fest = (slug: string, start: string, featureDays?: number): Festival => ({
+    slug,
+    name: slug,
+    tagline: '',
+    goals: [],
+    dates: [{ year: 2027, start, end: start }],
+    featureDays,
+  });
+  it('ใช้ featureDays ของเทศกาลแทนค่าเริ่มต้น', () => {
+    expect(upcomingFestivals('2026-12-01', 45, [fest('cny', '2027-02-05', 66)])).toHaveLength(1);
+    expect(upcomingFestivals('2026-12-01', 45, [fest('cny', '2027-02-05')])).toHaveLength(0);
+  });
+  it('เลือกบทความตามเทศกาลที่กำลังจะมา เรียงตามวันเทศกาล', () => {
+    const occ = upcomingFestivals('2026-10-13', 45, [fest('b', '2026-11-20'), fest('a', '2026-11-01')]);
+    const arts = [
+      { slug: 'x', festival: 'b' },
+      { slug: 'y', festival: null },
+      { slug: 'z', festival: 'a' },
+      { slug: 'w', festival: 'gone' },
+    ];
+    expect(festivalArticles(arts, occ).map((a) => a.slug)).toEqual(['z', 'x']);
   });
 });
