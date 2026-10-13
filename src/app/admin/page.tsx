@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { CHANNEL_LABEL, type FortuneTeller } from '@/data/fortune-tellers';
-import type { Place } from '@/data/places';
+import type { Place, PlaceImage } from '@/data/places';
 import { PROVINCES } from '@/data/provinces';
 import { adminConfigured, isAdmin } from '@/lib/admin-auth';
 import { ADMIN_KINDS, isDirectoryKind, kindLabel } from '@/lib/admin-kinds';
@@ -14,6 +14,7 @@ import { productsRepo } from '@/lib/products-repo';
 import { PLANET_COLOR } from '@/data/daily-colors';
 import type { Product } from '@/data/products';
 import { tellersRepo } from '@/lib/tellers-repo';
+import { PlaceImagesForm } from './PlaceImagesForm';
 import { deleteAction, logoutAction, publishAllAction, setPinsAction, togglePublishedAction } from './actions';
 import { PIN_ALL } from '@/lib/tellers';
 import { AdminNav } from './AdminNav';
@@ -43,6 +44,8 @@ interface Listed {
   /** หมวดที่ปักหมุดได้ (หมอดู: หน้ารวม + ศาสตร์ของคนนั้น) */
   pinOptions?: { value: string; label: string }[];
   pinnedIn?: string[];
+  /** สถานที่: รูปที่อัปโหลดจากหลังบ้าน (ลบได้) */
+  uploaded?: PlaceImage[];
 }
 
 const PAGE_SIZE = 30;
@@ -90,6 +93,7 @@ async function listFor(kind: DirectoryKind): Promise<Listed[]> {
       ...p,
       updatedAt,
       thumb: p.images[0]?.src ?? null,
+      uploaded: p.uploadedImages ?? [],
       group: p.country === 'TH' ? (PROVINCES[p.provinceSlug ?? ''] ?? 'ไม่ระบุจังหวัด') : placeLocation(p).split(' · ').pop()!,
       meta: [placeLocation(p), p.goals.map((g) => getGoal(g).short).join(' '), `รูป ${p.images.length}`].join(' · '),
     }));
@@ -295,6 +299,12 @@ export default async function AdminPage({
               <div className="note">
                 {r.slug} · {r.meta} · ตรวจ {r.checkedAt} · แก้ไข {dateTime(r.updatedAt)}
               </div>
+              {r.uploaded && (
+                <details className="admin-item__notes">
+                  <summary>{r.thumb ? `รูป (อัปโหลดแล้ว ${r.uploaded.length})` : 'ใส่รูป'}</summary>
+                  <PlaceImagesForm slug={r.slug} name={r.name} uploaded={r.uploaded} />
+                </details>
+              )}
               {r.pinOptions && (
                 <details className="admin-item__notes admin-pins">
                   <summary>

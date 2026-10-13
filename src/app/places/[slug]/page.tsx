@@ -261,9 +261,13 @@ function PlaceDetail({ place, places }: { place: Place; places: Place[] }) {
           {image && (
             <p>
               ภาพ:{' '}
-              <a href={image.sourceUrl} target="_blank" rel="noopener noreferrer">
-                {image.author}
-              </a>{' '}
+              {image.sourceUrl ? (
+                <a href={image.sourceUrl} target="_blank" rel="noopener noreferrer">
+                  {image.author}
+                </a>
+              ) : (
+                image.author
+              )}{' '}
               / {image.license}
             </p>
           )}

@@ -14,7 +14,7 @@ export interface PlaceImage {
   alt: string;
   author: string;
   license: string;
-  /** หน้าไฟล์ต้นฉบับ (เช่น Wikimedia Commons) */
+  /** หน้าไฟล์ต้นฉบับ (เช่น Wikimedia Commons) ว่างได้สำหรับรูปที่อัปโหลดเอง */
   sourceUrl: string;
 }
 
@@ -40,7 +40,10 @@ export interface Place {
   offerings: string[];
   howToPray: string[];
   howToRepayVow: string[];
+  /** รูปจากไฟล์นำเข้า + รูปที่อัปโหลดจากหลังบ้าน (อัปโหลดอยู่ก่อน) */
   images: PlaceImage[];
+  /** เฉพาะรูปที่อัปโหลดจากหลังบ้าน (ไม่มาจากไฟล์นำเข้า) ใช้ให้หลังบ้านลบได้ */
+  uploadedImages?: PlaceImage[];
   sources: string[];
   /** ลิงก์ Agoda ที่ใส่เอง ใช้แทนลิงก์ที่ประกอบอัตโนมัติ */
   agodaLinkOverride?: string;

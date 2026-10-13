@@ -72,6 +72,8 @@ export function ensureSchema(): Promise<void> {
       // ปักหมุด: แยกจาก data เพื่อไม่ให้การนำเข้าซ้ำล้างค่า (เช่น หมอดูที่ปักหมุดในหมวด)
       for (const t of ['places', 'fortune_tellers', 'products']) {
         await sql`alter table ${sql(t)} add column if not exists pinned_in text[] not null default '{}'`;
+        // รูปที่อัปโหลดจากหลังบ้าน แยกจาก data เพื่อไม่ให้การนำเข้าซ้ำล้างรูป (ใช้กับสถานที่)
+        await sql`alter table ${sql(t)} add column if not exists extra_images jsonb not null default '[]'`;
       }
       // บทความ + รูปที่อัปโหลดจากหลังบ้าน (เก็บไฟล์ใน Postgres ไม่ต้องตั้งที่เก็บไฟล์เพิ่ม รูปถูกย่อเป็น webp ก่อนอัปโหลด)
       await sql`

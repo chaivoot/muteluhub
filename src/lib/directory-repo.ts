@@ -4,7 +4,8 @@ import { ensureSchema, getSql, hasDatabase } from '@/lib/db';
 
 /**
  * คลังข้อมูล directory แบบเดียวกันทุกประเภท (สถานที่ หมอดู สินค้า)
- * ตาราง: slug, data jsonb, published, province_slug, pinned_in, created_at, updated_at
+ * ตาราง: slug, data jsonb, published, province_slug, pinned_in, extra_images, created_at, updated_at
+ * extra_images = รูปที่อัปโหลดจากหลังบ้าน แสดงก่อนรูปจากไฟล์นำเข้า (images) นำเข้าซ้ำไม่ล้าง
  */
 export type DirectoryKind = 'places' | 'fortune_tellers' | 'products';
 
@@ -15,6 +16,8 @@ interface Entry {
   provinceSlug?: string;
   /** หมวดที่ปักหมุดไว้ ('all' = หน้ารวม) ตั้งจากหลังบ้าน ไม่มาจากไฟล์นำเข้า */
   pinnedIn?: string[];
+  /** รูปที่อัปโหลดจากหลังบ้าน (รวมอยู่ใน images แล้วด้วย ช่องนี้ไว้ให้หลังบ้านลบได้) */
+  uploadedImages?: unknown[];
 }
 
 interface Row<T> {
@@ -22,6 +25,7 @@ interface Row<T> {
   data: T;
   published: boolean;
   pinned_in: string[];
+  extra_images: unknown[] | null;
   updated_at: Date;
 }
 
@@ -37,17 +41,22 @@ export interface UpsertSummary {
 
 export function createDirectoryRepo<T extends Entry>(kind: DirectoryKind) {
   const tag = kind;
-  const fromRow = (r: Row<T>): T => ({ ...r.data, slug: r.slug, published: r.published, pinnedIn: r.pinned_in ?? [] });
+  const fromRow = (r: Row<T>): T => {
+    const extra = r.extra_images ?? [];
+    const data = r.data as T & { images?: unknown[] };
+    const merged = extra.length && Array.isArray(data.images) ? { images: [...extra, ...data.images] } : {};
+    return { ...r.data, ...merged, slug: r.slug, published: r.published, pinnedIn: r.pinned_in ?? [], uploadedImages: extra };
+  };
 
   async function queryPublished(): Promise<T[]> {
     if (!hasDatabase()) return [];
     await ensureSchema();
     const sql = getSql();
     const rows = await sql<Row<T>[]>`
-      select slug, data, published, pinned_in, updated_at from ${sql(kind)}
+      select slug, data, published, pinned_in, extra_images, updated_at from ${sql(kind)}
       where published = true order by data->>'name'`;
     // notes เป็นบันทึกภายใน ไม่ส่งออกหน้าเว็บ
-    return rows.map(fromRow).map((x) => ({ ...x, notes: [] }));
+    return rows.map(fromRow).map((x) => ({ ...x, notes: [], uploadedImages: undefined }));
   }
 
   const listPublished = unstable_cache(queryPublished, [`published-${kind}`], { tags: [tag], revalidate: 3600 });
@@ -59,7 +68,7 @@ export function createDirectoryRepo<T extends Entry>(kind: DirectoryKind) {
     async adminList(): Promise<AdminRow<T>[]> {
       await ensureSchema();
       const sql = getSql();
-      const rows = await sql<Row<T>[]>`select slug, data, published, pinned_in, updated_at from ${sql(kind)} order by updated_at desc`;
+      const rows = await sql<Row<T>[]>`select slug, data, published, pinned_in, extra_images, updated_at from ${sql(kind)} order by updated_at desc`;
       return rows.map((r) => ({ item: fromRow(r), updatedAt: r.updated_at }));
     },
 
@@ -80,8 +89,9 @@ export function createDirectoryRepo<T extends Entry>(kind: DirectoryKind) {
         const updated: string[] = [];
         for (const it of items) {
           // pinnedIn อยู่คอลัมน์แยก ไม่เก็บใน data
-          const { published, pinnedIn, ...data } = it;
+          const { published, pinnedIn, uploadedImages, ...data } = it;
           void pinnedIn;
+          void uploadedImages;
           const [row] = await tx<{ inserted: boolean }[]>`
             insert into ${tx(kind)} (slug, data, published, province_slug)
             values (${it.slug}, ${tx.json(data as never)}, ${published}, ${it.provinceSlug ?? null})
@@ -106,6 +116,13 @@ export function createDirectoryRepo<T extends Entry>(kind: DirectoryKind) {
       await ensureSchema();
       const sql = getSql();
       await sql`update ${sql(kind)} set pinned_in = ${pins}, updated_at = now() where slug = ${slug}`;
+      revalidateTag(tag);
+    },
+
+    async setUploadedImages(slug: string, images: unknown[]): Promise<void> {
+      await ensureSchema();
+      const sql = getSql();
+      await sql`update ${sql(kind)} set extra_images = ${sql.json(images as never)}, updated_at = now() where slug = ${slug}`;
       revalidateTag(tag);
     },
 
