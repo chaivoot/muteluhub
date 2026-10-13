@@ -784,7 +784,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .phone-pair--bad { border-left-color: var(--color-vermilion); }
 .phone-pair__num { font-family: var(--font-display); font-weight: 700; font-size: calc(26px * var(--fs)); line-height: 1.2; min-width: 40px; color: var(--color-text); }
 .phone-pair__text { color: var(--color-text-soft); line-height: 1.6; }
-.phone-tag { margin-right: 6px; }
+.phone-tag { margin: 0 6px 4px 0; display: inline-block; max-width: 100%; vertical-align: middle; }
 .phone-tag--good { color: var(--color-gold); border-color: var(--color-gold); }
 .phone-tag--bad { color: var(--color-vermilion); border-color: var(--color-vermilion); }
 .phone-personal { margin: 10px 0 0; display: grid; gap: 8px; }
@@ -796,3 +796,13 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 .phone-digit--good { border: 1.5px solid var(--color-gold); color: var(--color-gold-bright); }
 .phone-digit--bad { border: 1.5px solid var(--color-vermilion); color: var(--color-vermilion); }
+
+/* ---------- เช็กทะเบียนรถ ---------- */
+.plate-letters { font-family: var(--font-display); font-size: var(--text-lg); letter-spacing: 0.08em; color: var(--color-text); }
+.phone-warn { color: var(--color-vermilion); font-weight: 600; }
+.plate-totals { list-style: none; margin: 6px 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.plate-total {
+  min-width: 48px; height: 48px; padding: 0 8px; border-radius: var(--radius-pill); border: 1.5px solid var(--color-gold);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-weight: 700; font-size: calc(22px * var(--fs)); color: var(--color-gold-bright);
+}

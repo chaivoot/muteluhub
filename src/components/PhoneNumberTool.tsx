@@ -8,13 +8,12 @@ import { track } from '@/lib/analytics';
 import { getGoal, type GoalSlug } from '@/lib/goals';
 import { PHONE_METHOD, analyzePhone, checkPhone, formatPhone, type PhoneResult } from '@/lib/phone-number';
 import {
-  BIRTH_DAYS,
-  birthDaySlugFromWeekday,
   pairsWithAvoid,
   personalNumbers,
   type PersonalNumbers,
 } from '@/lib/phone-number/personal';
 import { setPromptHandoff } from '@/lib/prompt-handoff';
+import { BirthDayField } from './BirthDayField';
 import { GoalChips } from './GoalChips';
 import { ShareButton } from './ShareButton';
 import { useGoal } from './goal-context';
@@ -37,7 +36,6 @@ export function PhoneNumberTool() {
   const [goal, setGoal] = useState<GoalSlug | null>(null);
   const [phone, setPhone] = useState('');
   const [birth, setBirth] = useState('');
-  const [birthDate, setBirthDate] = useState('');
 
   useEffect(() => {
     if (!goal && remembered) setGoal(remembered);
@@ -48,14 +46,6 @@ export function PhoneNumberTool() {
   const personal = birth && goal ? personalNumbers(birth, goal) : null;
   const goalInfo = goal ? getGoal(goal) : null;
   const showError = check && !check.ok && check.reason !== 'empty' && normalizedLength(phone) >= 9;
-
-  function pickDate(iso: string) {
-    setBirthDate(iso);
-    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
-    if (!m) return;
-    const w = new Date(Date.UTC(Number(m[1]), Number(m[2]) - 1, Number(m[3]))).getUTCDay();
-    setBirth(birthDaySlugFromWeekday(w));
-  }
 
   function askAi() {
     if (!goal) return;
@@ -86,27 +76,7 @@ export function PhoneNumberTool() {
           )}
         </label>
 
-        <div className="field">
-          <label htmlFor="birth-day" className="field__label">
-            เกิดวันอะไร (ไม่บังคับ)
-          </label>
-          <select id="birth-day" className="select" value={birth} onChange={(e) => setBirth(e.target.value)}>
-            <option value="">ไม่ระบุ</option>
-            {BIRTH_DAYS.map((b) => (
-              <option key={b.slug} value={b.slug}>
-                {b.label}
-              </option>
-            ))}
-          </select>
-          <details className="note">
-            <summary>ไม่แน่ใจว่าเกิดวันอะไร</summary>
-            <label className="field">
-              <span>ใส่วันเดือนปีเกิด เว็บหาวันให้</span>
-              <input className="input" type="date" value={birthDate} onChange={(e) => pickDate(e.target.value)} />
-            </label>
-            <span>เกิดวันพุธหลัง 18.00 น. นับเป็นพุธกลางคืน เลือกเองในช่องด้านบน</span>
-          </details>
-        </div>
+        <BirthDayField value={birth} onChange={setBirth} />
       </form>
 
       <h2 className="step-title container">อยากเสริมเรื่องอะไร</h2>

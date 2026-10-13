@@ -4,6 +4,7 @@ import { FestivalCard } from '@/components/FestivalCard';
 import { GoalPicker } from '@/components/GoalPicker';
 import { LuckyNumberShortcut } from '@/components/LuckyNumberShortcut';
 import { PhoneNumberShortcut } from '@/components/PhoneNumberShortcut';
+import { LicensePlateShortcut } from '@/components/LicensePlateShortcut';
 import { PlacesForGoal } from '@/components/PlacesForGoal';
 import { SectionHeader } from '@/components/SectionHeader';
 import { ShirtColorCard } from '@/components/ShirtColorCard';
@@ -83,6 +84,7 @@ export default async function HomePage() {
           <ShirtColorCard weekday={today.weekday} shirts={shirts} />
           <LuckyNumberShortcut />
           <PhoneNumberShortcut />
+          <LicensePlateShortcut />
         </div>
         {festivals.length > 0 && (
           <div>
