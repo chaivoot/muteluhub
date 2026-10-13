@@ -4,7 +4,7 @@ import { useSearchParams } from 'next/navigation';
 import { useCallback, useMemo, useState, type ReactNode } from 'react';
 import { CHANNEL_LABEL, CHANNELS, PRICE_BUCKETS, type Channel, type FortuneTeller } from '@/data/fortune-tellers';
 import { PROVINCES } from '@/data/provinces';
-import { DISCIPLINES } from '@/lib/disciplines';
+import { DISCIPLINES, getDiscipline } from '@/lib/disciplines';
 import { getGoal, isGoalSlug, type GoalSlug } from '@/lib/goals';
 import { activeFilterCount, filterTellers, PIN_ALL, sortPinned } from '@/lib/tellers';
 import { BottomSheet } from './BottomSheet';
@@ -61,6 +61,19 @@ export function TellersBrowser({
     [tellers],
   );
 
+  // ตัวกรองใน sheet ที่ใช้อยู่ แสดงเป็นชิปให้เห็นและกดเอาออกได้ (กันงงว่าทำไมผลน้อยหรือเป็น 0)
+  const active: { key: string; label: string; clear: () => void }[] = [];
+  if (!fixedDiscipline && discipline)
+    active.push({ key: 'd', label: getDiscipline(discipline)?.name ?? discipline, clear: () => setDiscipline('') });
+  if (channel) active.push({ key: 'c', label: CHANNEL_LABEL[channel], clear: () => setChannel('') });
+  if (province) active.push({ key: 'p', label: PROVINCES[province] ?? province, clear: () => setProvince('') });
+  if (price)
+    active.push({ key: 'r', label: PRICE_BUCKETS.find((b) => b.slug === price)?.label ?? price, clear: () => setPrice('') });
+  // ถ้าผลเป็น 0 บอกว่าเอาตัวกรองอื่นออกแล้วจะเจอกี่คน
+  const goalOnly = results.length === 0 && active.length > 0
+    ? filterTellers({ goal, discipline: fixedDiscipline ?? null, channel: null, province: null, price: null }, tellers).length
+    : 0;
+
   function clearFilters() {
     if (!fixedDiscipline) setDiscipline('');
     setChannel('');
@@ -87,19 +100,37 @@ export function TellersBrowser({
         </button>
       </div>
 
+      {active.length > 0 && (
+        <div className="container chip-row chip-row--wrap active-filters" aria-label="ตัวกรองที่ใช้อยู่">
+          {active.map((a) => (
+            <button key={a.key} type="button" className="chip active-filters__chip" aria-label={`เอา ${a.label} ออก`} onClick={a.clear}>
+              {a.label} <span aria-hidden="true">×</span>
+            </button>
+          ))}
+        </div>
+      )}
+
       <div className="stack container">
         {results.map((t) => (
           <TellerCard key={t.slug} teller={t} pinned={t.pinnedIn?.includes(pin)} />
         ))}
         {results.length === 0 && (
-          <p className="note">
-            ยังไม่มีหมอดูตามตัวกรองนี้{' '}
-            {count > 0 && (
-              <button type="button" className="link-btn" onClick={clearFilters}>
-                ล้างตัวกรอง
+          <div className="note stack">
+            <span>
+              ยังไม่มีหมอดู{goal ? `เรื่อง${getGoal(goal).short}` : ''}ที่ตรงกับ {active.map((a) => a.label).join(' + ') || 'ตัวกรองนี้'}
+            </span>
+            {goalOnly > 0 ? (
+              <button type="button" className="btn btn--gold btn--sm" onClick={clearFilters}>
+                ดู{goal ? `หมอดูเรื่อง${getGoal(goal).short}` : 'หมอดู'}ทั้งหมด {goalOnly} คน
               </button>
+            ) : (
+              count > 0 && (
+                <button type="button" className="link-btn" onClick={clearFilters}>
+                  ล้างตัวกรอง
+                </button>
+              )
             )}
-          </p>
+          </div>
         )}
       </div>
 

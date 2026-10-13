@@ -761,3 +761,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 :root[data-text-size="l"] { --fs: 1.12; }
 :root[data-text-size="xl"] { --fs: 1.25; }
+
+/* ชิปตัวกรองที่ใช้อยู่ (หมอดู) */
+.active-filters { margin-bottom: 10px; }
+.active-filters__chip { border-color: var(--color-gold); color: var(--color-gold); }
