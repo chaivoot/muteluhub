@@ -58,7 +58,7 @@ export function PhoneNumberTool() {
 
   return (
     <>
-      <form className="form container" onSubmit={(e) => e.preventDefault()} aria-label="กรอกเบอร์และวันเกิด">
+      <form className="form container ph-no-capture" onSubmit={(e) => e.preventDefault()} aria-label="กรอกเบอร์และวันเกิด">
         <label className="field">
           <span className="field__label">เบอร์โทร</span>
           <input
@@ -92,7 +92,7 @@ export function PhoneNumberTool() {
       <p className="container note privacy-note">วิเคราะห์ในเครื่องคุณเท่านั้น เว็บไม่ได้ส่งหรือเก็บเบอร์และวันเกิดของคุณ</p>
 
       {(result || personal) && (
-        <section className="lucky-result container" aria-live="polite" aria-label="ผลเช็กเบอร์">
+        <section className="lucky-result container ph-no-capture" aria-live="polite" aria-label="ผลเช็กเบอร์">
           {result && <PhoneResultCard result={result} goalShort={goalInfo?.short ?? null} personal={personal} />}
 
           {personal && goalInfo && (
