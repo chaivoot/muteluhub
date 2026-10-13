@@ -671,6 +671,26 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 /* ---------- articles ---------- */
 .article-body { color: var(--color-text-soft); display: flex; flex-direction: column; gap: 10px; }
+/* หน้าบทความ: ตัวใหญ่ บรรทัดห่าง สีสว่างขึ้น อ่านง่ายสำหรับผู้สูงอายุ (เจ้าของขอ 2026-10-13) ปรับเพิ่มได้ด้วย TextSizeToggle */
+.reading { --read-size: 19px; }
+:root[data-text-size="l"] .reading { --read-size: 21px; }
+:root[data-text-size="xl"] .reading { --read-size: 24px; }
+.reading .article-body { font-size: var(--read-size); line-height: 1.85; color: var(--color-text); gap: 16px; }
+.reading .article-body .bullet-list,
+.reading .article-body ol { color: var(--color-text); gap: 8px; }
+.reading .article-body h2 { font-size: calc(var(--read-size) + 6px); line-height: 1.45; margin: 24px 0 4px; }
+.reading .article-body h3 { font-size: calc(var(--read-size) + 2px); line-height: 1.5; margin: 16px 0 0; }
+.reading .article-figure figcaption { font-size: 14px; }
+.text-size { display: flex; align-items: center; gap: 6px; margin: 4px 0 12px; }
+.text-size__label { font-size: 15px; color: var(--color-text-soft); margin-right: 4px; }
+.text-size__btn {
+  min-width: 44px; height: 44px; border-radius: 10px; border: 1px solid var(--color-border-strong);
+  background: var(--color-surface); color: var(--color-text); font-family: var(--font-display); line-height: 1; cursor: pointer;
+}
+.text-size__btn--m { font-size: 16px; }
+.text-size__btn--l { font-size: 20px; }
+.text-size__btn--xl { font-size: 25px; }
+.text-size__btn[aria-pressed="true"] { border-color: var(--color-gold); color: var(--color-gold); background: var(--color-surface-raised); }
 .article-body p { margin: 0; }
 .article-body h2 { font-size: var(--text-xl); margin: 18px 0 6px; }
 .article-body h3 { font-size: var(--text-lg); margin: 14px 0 4px; }
