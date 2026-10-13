@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Place } from '@/data/places';
 import { agodaLink } from '@/lib/agoda';
-import { deitiesOf, deitySuggestions, filterPlaces, mapLink, provincesWithPlaces, relatedPlaces } from '@/lib/places';
+import { deitiesOf, deitySuggestions, featuredPlaces, filterPlaces, mapLink, provincesWithPlaces, relatedPlaces } from '@/lib/places';
 
 const base: Omit<Place, 'slug' | 'provinceSlug' | 'goals' | 'deities'> = {
   name: 'x',
@@ -113,3 +113,20 @@ describe('helpers', () => {
   });
 });
 
+
+describe('featuredPlaces', () => {
+  const img = [{ src: '/x.webp', alt: '', author: 'a', license: 'CC BY', sourceUrl: '' }];
+  const mk = (slug: string, withImage: boolean, pinnedIn: string[] = []): Place => ({
+    ...base,
+    slug,
+    provinceSlug: 'bangkok',
+    goals: ['money'],
+    deities: [],
+    images: withImage ? img : [],
+    pinnedIn,
+  });
+  it('ไม่เอาที่ไม่มีภาพ ปักหมุดหน้าแรกก่อน แล้วยอดนิยม แล้วที่เหลือตามลำดับเดิม', () => {
+    const list = [mk('zzz', true), mk('erawan-shrine', true), mk('no-photo', false), mk('wat-khaek-silom', true), mk('mine', true, ['home'])];
+    expect(featuredPlaces(list).map((p) => p.slug)).toEqual(['mine', 'erawan-shrine', 'wat-khaek-silom', 'zzz']);
+  });
+});

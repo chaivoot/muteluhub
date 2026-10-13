@@ -12,7 +12,7 @@ import { SiteHeader } from '@/components/SiteHeader';
 import { festivalArticles, upcomingFestivals, withCover } from '@/lib/festivals';
 import { FESTIVALS } from '@/data/festivals';
 import { getFestivalCovers, listPublishedArticles } from '@/lib/articles-repo';
-import { abroadPlaces, thaiPlaces } from '@/lib/places';
+import { abroadPlaces, featuredPlaces, thaiPlaces } from '@/lib/places';
 import { COUNTRIES } from '@/data/countries';
 import Link from 'next/link';
 import { PlaceImageBox } from '@/components/PlaceCard';
@@ -49,7 +49,8 @@ export default async function HomePage() {
   const readings = festivalArticles(articles, upcoming);
   const festivalName = new Map(upcoming.map((o) => [o.festival.slug, o.festival.name]));
   const places = thaiPlaces(allPlaces);
-  const abroad = abroadPlaces(allPlaces);
+  // ต่างประเทศ: เลือกเฉพาะที่มีภาพ ปักหมุด/ยอดนิยมก่อน
+  const abroad = featuredPlaces(abroadPlaces(allPlaces));
   const abroadCountry = COUNTRIES.find((c) => abroad.some((p) => p.country === c.code));
 
   return (
@@ -113,7 +114,7 @@ export default async function HomePage() {
         )}
       </div>
 
-      <PlacesForGoal places={places} />
+      <PlacesForGoal places={featuredPlaces(places)} />
 
       {abroadCountry && (
         <div className="container home-abroad">

@@ -14,6 +14,7 @@ import { productsRepo } from '@/lib/products-repo';
 import { PLANET_COLOR } from '@/data/daily-colors';
 import type { Product } from '@/data/products';
 import { tellersRepo } from '@/lib/tellers-repo';
+import { PIN_HOME } from '@/data/popular-places';
 import { PlaceImagesForm } from './PlaceImagesForm';
 import { deleteAction, logoutAction, publishAllAction, setPinsAction, togglePublishedAction } from './actions';
 import { PIN_ALL } from '@/lib/tellers';
@@ -94,6 +95,7 @@ async function listFor(kind: DirectoryKind): Promise<Listed[]> {
       updatedAt,
       thumb: p.images[0]?.src ?? null,
       uploaded: p.uploadedImages ?? [],
+      pinOptions: p.country === 'TH' ? [{ value: PIN_HOME, label: 'แนะนำหน้าแรก (มาก่อนรายการยอดนิยม)' }] : [{ value: PIN_HOME, label: 'แนะนำหน้าแรก (การ์ดต่างประเทศ)' }],
       group: p.country === 'TH' ? (PROVINCES[p.provinceSlug ?? ''] ?? 'ไม่ระบุจังหวัด') : placeLocation(p).split(' · ').pop()!,
       meta: [placeLocation(p), p.goals.map((g) => getGoal(g).short).join(' '), `รูป ${p.images.length}`].join(' · '),
     }));
@@ -234,7 +236,7 @@ export default async function AdminPage({
             <option value="all">ทุกสถานะ</option>
             <option value="published">เผยแพร่</option>
             <option value="hidden">ซ่อน</option>
-            {kind === 'fortune_tellers' && <option value="pinned">ปักหมุดอยู่</option>}
+            {kind !== 'products' && <option value="pinned">ปักหมุดอยู่</option>}
           </select>
         </label>
         <label className="select-wrap">

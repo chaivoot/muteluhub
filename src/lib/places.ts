@@ -1,3 +1,4 @@
+import { PIN_HOME, POPULAR_PLACE_SLUGS } from '@/data/popular-places';
 import type { Place } from '@/data/places';
 import { countryByCode } from '@/data/countries';
 import {
@@ -139,4 +140,20 @@ export function placeLocation(place: Place, withCountry = true): string {
   if (place.country === 'TH') return provinceShortName(place.provinceSlug ?? '');
   const country = countryByCode(place.country)?.name ?? place.country;
   return withCountry ? [place.city, country].filter(Boolean).join(' · ') : (place.city ?? country);
+}
+
+/**
+ * สถานที่สำหรับหน้าแรก / หน้าเป้าหมาย: เฉพาะที่มีภาพ เรียง ปักหมุดหน้าแรก (หลังบ้าน) > ยอดนิยม (POPULAR_PLACE_SLUGS) > ที่เหลือ
+ */
+export function featuredPlaces(places: Place[]): Place[] {
+  const rank = (p: Place) => {
+    if (p.pinnedIn?.includes(PIN_HOME)) return -1;
+    const i = POPULAR_PLACE_SLUGS.indexOf(p.slug);
+    return i === -1 ? POPULAR_PLACE_SLUGS.length : i;
+  };
+  return places
+    .filter((p) => p.images.length > 0)
+    .map((p, i) => ({ p, r: rank(p), i }))
+    .sort((a, b) => a.r - b.r || a.i - b.i)
+    .map((x) => x.p);
 }
