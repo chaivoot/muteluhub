@@ -49,8 +49,8 @@
   --leading-body: 1.6;   /* ภาษาไทยต้องเผื่อสระบนล่าง ห้ามต่ำกว่า 1.5 */
   --leading-display: 1.45;
   /* ขนาดตัวอักษร: ขยายทั้งเว็บ (เจ้าของขอ 2026-10-13 ผู้ใช้สายมูหลายคนสูงอายุ)
-     --fs = ตัวคูณจากปุ่มปรับขนาด (1 / 1.12 / 1.25) ตั้งที่ html[data-text-size] */
-  --fs: 1;
+     --fs = ตัวคูณจากปุ่มปรับขนาด เล็ก 1 / กลาง 1.12 (ค่าเริ่มต้น) / ใหญ่ 1.25 ตั้งที่ html[data-text-size] */
+  --fs: 1.12;
   --text-xs: calc(13px * var(--fs)); --text-sm: calc(16px * var(--fs)); --text-base: calc(18px * var(--fs)); --text-md: calc(19px * var(--fs));
   --text-lg: calc(21px * var(--fs)); --text-xl: calc(23px * var(--fs)); --text-2xl: calc(26px * var(--fs)); --text-3xl: calc(32px * var(--fs)); --text-hero: calc(36px * var(--fs));
 

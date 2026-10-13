@@ -759,7 +759,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .home-reads__name { font-size: calc(18px * var(--fs)); font-weight: 600; line-height: 1.5; }
 .home-reads__meta { font-size: calc(16px * var(--fs)); color: var(--color-text-soft); }
 
-:root[data-text-size="l"] { --fs: 1.12; }
+:root[data-text-size="m"] { --fs: 1; }
 :root[data-text-size="xl"] { --fs: 1.25; }
 
 /* ชิปตัวกรองที่ใช้อยู่ (หมอดู) */
