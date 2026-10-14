@@ -44,8 +44,8 @@
   /* chip: background = goal color + 14 (8% alpha), border = goal color + 66 (40% alpha) */
 
   /* type */
-  --font-display: 'Trirong', 'Noto Serif Thai', serif;  /* หัวข้อ ชื่อ ตัวเลขมงคล */
-  --font-body: 'Noto Sans Thai', 'Sarabun', sans-serif;  /* เนื้อหา UI */
+  --font-display: 'Kanit', 'Noto Sans Thai', sans-serif;  /* หัวข้อ ชื่อ ตัวเลขมงคล (Kanit เจ้าของเลือก 2026-10-14) */
+  --font-body: 'Kanit', 'Noto Sans Thai', sans-serif;  /* เนื้อหา UI */
   --leading-body: 1.6;   /* ภาษาไทยต้องเผื่อสระบนล่าง ห้ามต่ำกว่า 1.5 */
   --leading-display: 1.45;
   /* ขนาดตัวอักษร: ขยายทั้งเว็บ (เจ้าของขอ 2026-10-13 ผู้ใช้สายมูหลายคนสูงอายุ)
