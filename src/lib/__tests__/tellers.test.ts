@@ -3,7 +3,7 @@ import type { FortuneTeller } from '@/data/fortune-tellers';
 import { ALL_ART_FILES, artVariantFor, disciplineArtSvg, tellerArtPath } from '@/lib/art/discipline-art';
 import { DISCIPLINES } from '@/lib/disciplines';
 import { parseTellerImport } from '@/lib/import/teller-schema';
-import { activeFilterCount, filterTellers, lineUrl, similarTellers, sortPinned, telUrl } from '@/lib/tellers';
+import { activeFilterCount, filterTellers, lineLabel, lineUrl, similarTellers, sortPinned, telUrl } from '@/lib/tellers';
 
 // ข้อมูลทดสอบใช้ชื่อสมมติเท่านั้น (CLAUDE.md)
 const base: FortuneTeller = {
@@ -48,6 +48,9 @@ describe('contact links', () => {
   it('builds LINE links for official and personal IDs', () => {
     expect(lineUrl('@shop')).toBe('https://line.me/R/ti/p/%40shop');
     expect(lineUrl('someone')).toBe('https://line.me/ti/p/~someone');
+    expect(lineLabel('https://lin.ee/nHOSTTx')).toBe('แอด LINE');
+    expect(lineLabel('https://line.me/R/ti/p/%40shop')).toBe('LINE @shop');
+    expect(lineLabel('@shop')).toBe('LINE @shop');
     expect(lineUrl('https://lin.ee/abc')).toBe('https://lin.ee/abc');
     expect(telUrl('081-234-5678')).toBe('tel:0812345678');
   });
