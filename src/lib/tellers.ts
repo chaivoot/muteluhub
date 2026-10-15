@@ -64,4 +64,15 @@ export function lineUrl(id: string): string {
   return `https://line.me/ti/p/~${encodeURIComponent(v)}`;
 }
 
+/** ป้ายปุ่ม LINE: ถ้าข้อมูลเป็นลิงก์ (เช่น lin.ee) ไม่แสดง URL ดิบ แสดงเฉพาะไอดีที่อ่านได้ */
+export function lineLabel(id: string): string {
+  const v = id.trim();
+  if (/^https?:\/\//.test(v)) {
+    const m = v.match(/line\.me\/(?:R\/)?ti\/p\/~?(@?[^/?#]+)/);
+    const handle = m ? decodeURIComponent(m[1]) : '';
+    return handle && handle.startsWith('@') ? `LINE ${handle}` : 'แอด LINE';
+  }
+  return `LINE ${v}`;
+}
+
 export const telUrl = (phone: string) => `tel:${phone.replace(/[^\d+]/g, '')}`;

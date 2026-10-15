@@ -12,7 +12,7 @@ import { tellerArtPath } from '@/lib/art/discipline-art';
 import { getDiscipline } from '@/lib/disciplines';
 import { getGoal } from '@/lib/goals';
 import { SITE_URL } from '@/lib/site';
-import { filterTellers, formatPrice, lineUrl, similarTellers, telUrl } from '@/lib/tellers';
+import { filterTellers, formatPrice, lineLabel, lineUrl, similarTellers, telUrl } from '@/lib/tellers';
 import { listPublishedTellers } from '@/lib/tellers-repo';
 import { parseIsoDay, TH_MONTHS, toBuddhistYear } from '@/lib/thai-date';
 
@@ -97,7 +97,7 @@ function TellerProfile({ teller, all }: { teller: FortuneTeller; all: FortuneTel
   };
 
   const contacts: { href: string; label: string; external: boolean }[] = [
-    contact.line ? { href: lineUrl(contact.line), label: `LINE: ${contact.line}`, external: true } : null,
+    contact.line ? { href: lineUrl(contact.line), label: lineLabel(contact.line), external: true } : null,
     contact.phone ? { href: telUrl(contact.phone), label: `โทร ${contact.phone}`, external: false } : null,
     contact.facebook ? { href: contact.facebook, label: 'Facebook', external: true } : null,
     contact.instagram ? { href: contact.instagram, label: 'Instagram', external: true } : null,
