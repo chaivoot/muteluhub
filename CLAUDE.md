@@ -71,7 +71,7 @@ spec ไม่ได้กำหนด framework ระบุแค่ว่า 
 ## โครงโค้ด
 - `src/lib/goals.ts` อ่าน `data/goals.json` (แหล่งเดียวของเป้าหมาย)
 - `src/lib/thai-date.ts` วันที่ไทย พ.ศ. ตามเวลา Asia/Bangkok
-- `src/data/festivals.ts` + `src/lib/festivals.ts` เทศกาลและวันที่รายปี
+- `src/data/festivals.ts` + `src/lib/festivals.ts` เทศกาลและวันที่รายปี (วันไหว้เทพรายปีที่เล็กกว่าแยกไฟล์ `festivals-chinese-days.ts` วันจีนแปลงด้วยปฏิทิน HKO, `festivals-hindu-days.ts` วันฮินดูจาก Drik Panchang กรุงเทพฯ แล้วต่อท้าย FESTIVALS ต้องเติมวันที่ปีถัดไปทุกปี)
 - `src/data/daily-colors.ts` + `src/lib/daily-colors.ts` สีเสื้อตามหลักทักษา (คำนวณจากลำดับทักษา + สีประจำดาว), การ์ดแชร์ `src/lib/og/color-card.tsx` เสิร์ฟที่ `/color-today/card?goal=&size=portrait|story`
 - `src/components/goal-context.tsx` จำเป้าหมายที่เลือกใน localStorage + cookie `mh_goal`
 - `src/data/prompt-templates.ts` + `src/lib/prompts.ts` คลัง prompt, `GUARD_BLOCK` (ต่อท้ายทุก prompt ตอน render), ประกอบ prompt ฝั่ง client เท่านั้น
