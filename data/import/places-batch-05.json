@@ -1,0 +1,1934 @@
+[
+  {
+    "name": "วัดอรุณราชวราราม (วัดแจ้ง)",
+    "nameEn": "Wat Arun Ratchawararam",
+    "slug": "wat-arun-bangkok",
+    "type": "temple",
+    "deities": [
+      "พระพุทธธรรมมิศราชโลกธาตุดิลก (พระประธานในพระอุโบสถ)",
+      "ยักษ์ทวารบาล สหัสเดชะ และทศกัณฐ์"
+    ],
+    "goals": [
+      "career",
+      "study"
+    ],
+    "province": "กรุงเทพมหานคร",
+    "district": "บางกอกใหญ่",
+    "coords": "13.74371, 100.488966",
+    "description": "วัดประจำรัชกาลริมเจ้าพระยาฝั่งธนฯ เดิมชื่อวัดบางมะกอก สมัยกรุงธนบุรีเปลี่ยนชื่อเป็นวัดแจ้ง จุดเด่นคือพระปรางค์ประธานสูง 67 เมตร ประดับกระเบื้องเคลือบและชามเบญจรงค์ คนนิยมมาไหว้พระประธานในพระอุโบสถขอพรเรื่องการงาน การเรียน และความก้าวหน้าในชีวิต",
+    "hours": "08.00-18.00 น.",
+    "offerings": [],
+    "howToPray": [
+      "มาไหว้ช่วงเช้าตรู่ เชื่อกันว่าเป็นมงคลเป็นพิเศษ"
+    ],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%932.jpg/1280px-%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%932.jpg",
+        "alt": "พระปรางค์ประธานวัดอรุณราชวราราม",
+        "author": "Mastertongapollo",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%932.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = Thai Wikipedia (13.74371, 100.488966) ตรงกับ OSM way 23481741 'วัดอรุณ' (13.7438976, 100.4885137)",
+      "internal: goals career/study จาก Krungsri (ขอเรื่องการงาน การเรียน ความก้าวหน้า); เวลาเปิดจาก TrueID ควรเช็กค่าเข้าชมล่าสุด",
+      "internal: ยักษ์ 2 ตนหน้าประตูพระอุโบสถ TrueID บอกว่าเชื่อกันว่าช่วยปัดเป่าสิ่งชั่วร้าย",
+      "internal: photo = Commons File:เจดีย์ประธานทรงปรางค์วัดอรุณ2.jpg (CC BY-SA 4.0, Mastertongapollo) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%93%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1",
+      "https://www.krungsri.com/th/plearn-plearn/lifestyle/living/lucky-spiritual-places-bangkok",
+      "https://travel.trueid.net/detail/97V35Awoyk40"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดพระเชตุพนวิมลมังคลาราม (วัดโพธิ์)",
+    "nameEn": "Wat Pho (Wat Phra Chetuphon)",
+    "slug": "wat-pho-bangkok",
+    "type": "temple",
+    "deities": [
+      "พระพุทธไสยาสน์ (พระนอนวัดโพธิ์)"
+    ],
+    "goals": [
+      "love"
+    ],
+    "province": "กรุงเทพมหานคร",
+    "district": "พระนคร",
+    "coords": "13.746519, 100.493338",
+    "description": "วัดประจำรัชกาลที่ 1 ได้ชื่อว่าเป็นมหาวิทยาลัยแห่งแรกของไทย เพราะรวบรวมจารึกวิชาการแพทย์แผนไทย ดาราศาสตร์ และวรรณคดีไว้ จารึกเหล่านี้ขึ้นทะเบียนเป็นมรดกความทรงจำแห่งโลกระดับภูมิภาคเอเชียแปซิฟิก สายมูนิยมมากราบพระนอนองค์ใหญ่ ขอพรเรื่องความรักและชีวิตที่สงบสุข",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C_4_%E0%B8%A3%E0%B8%B1%E0%B8%8A%E0%B8%81%E0%B8%B2%E0%B8%A5_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%8A%E0%B8%95%E0%B8%B8%E0%B8%9E%E0%B8%99%E0%B8%AF.jpg/1280px-%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C_4_%E0%B8%A3%E0%B8%B1%E0%B8%8A%E0%B8%81%E0%B8%B2%E0%B8%A5_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%8A%E0%B8%95%E0%B8%B8%E0%B8%9E%E0%B8%99%E0%B8%AF.jpg",
+        "alt": "พระมหาเจดีย์ 4 รัชกาล วัดโพธิ์",
+        "author": "Mastertongapollo",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C_4_%E0%B8%A3%E0%B8%B1%E0%B8%8A%E0%B8%81%E0%B8%B2%E0%B8%A5_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%8A%E0%B8%95%E0%B8%B8%E0%B8%9E%E0%B8%99%E0%B8%AF.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = Thai Wikipedia (13.746519, 100.493338)",
+      "internal: goal love จาก Wongnai (บทความปี 2563) ซึ่งบอกว่าขอเรื่องความรักและชีวิตสงบสุข; บทความเดียวกันมีรายการของไหว้ แต่ยังไม่ได้ใส่เพราะอ่านแล้วไม่ชัด ควรเช็กกับต้นฉบับ",
+      "internal: มีข้อมูลว่าคนขอบุตรกับพระพุทธโลกนาถที่วัดโพธิ์ (ไทยรัฐ) แต่เปิดอ่านต้นฉบับไม่ได้ จึงยังไม่ใส่ goal family",
+      "internal: ยังไม่ได้ใส่เวลาเปิดและค่าเข้าชม",
+      "internal: photo = Commons File:พระมหาเจดีย์ 4 รัชกาล วัดพระเชตุพนฯ.jpg (CC BY-SA 4.0, Mastertongapollo) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%8A%E0%B8%95%E0%B8%B8%E0%B8%9E%E0%B8%99%E0%B8%A7%E0%B8%B4%E0%B8%A1%E0%B8%A5%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%A5%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1",
+      "https://www.wongnai.com/trips/temple-for-praying-and-mutelu"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดไตรมิตรวิทยาราม",
+    "nameEn": "Wat Traimit Withayaram",
+    "slug": "wat-traimit-bangkok",
+    "type": "temple",
+    "deities": [
+      "พระราหู (ในพระวิหารหลังเก่า)"
+    ],
+    "goals": [
+      "protection"
+    ],
+    "province": "กรุงเทพมหานคร",
+    "district": "สัมพันธวงศ์",
+    "coords": "13.738051, 100.513648",
+    "description": "วัดกลางย่านเยาวราช ถนนตรีมิตร เดิมชื่อวัดสามจีน เชื่อกันว่าชาวจีน 3 คนร่วมกันสร้าง ปี 2482 พ่อค้า ประชาชน ครู และนักเรียนร่วมกันบูรณะแล้วเปลี่ยนชื่อเป็นวัดไตรมิตรวิทยาราม ในพระวิหารหลังเก่ามีพระราหูให้ไหว้ขอพรเพื่อเสริมสิ่งดีและปัดเป่าเคราะห์",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/0005387_-_Wat_Traimitr_Withayaram_001.jpg/1280px-0005387_-_Wat_Traimitr_Withayaram_001.jpg",
+        "alt": "วัดไตรมิตรวิทยาราม เยาวราช",
+        "author": "Preecha.MJ",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:0005387_-_Wat_Traimitr_Withayaram_001.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = Thai Wikipedia (13.738051, 100.513648)",
+      "internal: goal protection จาก Lazada (ไหว้พระราหูเพื่อสิ่งดีและปัดเป่าสิ่งอัปมงคล)",
+      "internal: ยังไม่ได้ใส่หลวงพ่อทองคำใน deities เพราะไม่ได้อ่านแหล่งที่บอกเรื่องการขอพรกับองค์นี้ ควรเพิ่มหลังเช็ก; ยังไม่มีเวลาเปิด",
+      "internal: photo = Commons File:0005387 - Wat Traimitr Withayaram 001.jpg (CC BY-SA 4.0, Preecha.MJ) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%95%E0%B8%A3%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1",
+      "https://www.lazada.co.th/blog/rahu-temples-in-thailand"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดหัวลำโพง",
+    "nameEn": "Wat Hua Lamphong",
+    "slug": "wat-hua-lamphong-bangkok",
+    "type": "temple",
+    "deities": [
+      "ท้าวเวสสุวรรณ",
+      "พระพิฆเนศ"
+    ],
+    "goals": [
+      "protection",
+      "money"
+    ],
+    "province": "กรุงเทพมหานคร",
+    "district": "บางรัก",
+    "coords": "13.731685, 100.529095",
+    "description": "วัดกลางเมืองติด MRT สามย่าน เดิมชื่อวัดวัวลำพอง เป็นที่ตั้งของมูลนิธิร่วมกตัญญู คนนิยมมาทำบุญโลงศพเพื่อเสริมดวงและผ่อนเคราะห์ และไหว้ท้าวเวสสุวรรณขอโชคลาภ",
+    "hours": "06.00-18.00 น.",
+    "offerings": [
+      "ทำบุญโลงศพที่มูลนิธิร่วมกตัญญู",
+      "ทำบุญเลี้ยงวัวที่คอกวัวในวัด"
+    ],
+    "howToPray": [
+      "ทำบุญโลงศพ: เขียนชื่อลงกระดาษสีชมพูแล้วติดไว้ในอาคาร",
+      "บริจาคตามกำลัง ชุดเต็ม 500 บาทมีโลงศพและผ้าขาว",
+      "จุดธูป 20 ดอกที่ศาล",
+      "เผาใบอนุโมทนาบัตร"
+    ],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Wat_Hua_Lamphong_Bangkok.jpg/1280px-Wat_Hua_Lamphong_Bangkok.jpg",
+        "alt": "อาคารหลักในวัดหัวลำโพง",
+        "author": "Mark Fisher",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Hua_Lamphong_Bangkok.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = Thai Wikipedia (13.731685, 100.529095)",
+      "internal: goals จาก Sanook 2567 (ปกป้องภัยอันตราย) + The Standard 2566 (ท้าวเวสสุวรรณ โชคลาภ) + Krungsri (ทำบุญโลงศพเสริมดวง ผ่อนเคราะห์)",
+      "internal: เวลาเปิด 06.00-18.00 จาก Sanook; Krungsri บอกว่าจุดทำบุญโลงศพของมูลนิธิเปิด 24 ชม. ควรเช็ก",
+      "internal: ขั้นตอนทำบุญโลงศพและราคา 500 บาทจาก Sanook (มี.ค. 2567) ราคาอาจเปลี่ยน",
+      "internal: photo = Commons File:Wat Hua Lamphong Bangkok.jpg (CC BY-SA 2.0, Mark Fisher) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B8%A5%E0%B8%B3%E0%B9%82%E0%B8%9E%E0%B8%87",
+      "https://www.sanook.com/travel/1447119/",
+      "https://thestandard.co/dna-mrt-mutelu/",
+      "https://www.krungsri.com/th/plearn-plearn/lifestyle/living/lucky-spiritual-places-bangkok"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดวรามาตยภัณฑสาราราม (วัดขุนจันทร์)",
+    "nameEn": "Wat Khun Chan (Wat Woramat Yaphan Sararam)",
+    "slug": "wat-khun-chan-bangkok",
+    "type": "temple",
+    "deities": [
+      "พระราหู"
+    ],
+    "goals": [
+      "protection",
+      "money"
+    ],
+    "province": "กรุงเทพมหานคร",
+    "district": "ธนบุรี",
+    "coords": "13.7201373, 100.4714159",
+    "description": "วัดในซอยเทอดไท 28 ย่านตลาดพลู ขึ้นชื่อเรื่องสะเดาะเคราะห์ปีชงและบูชาพระราหู กลางลานวัดมีองค์พระราหูขนาดใหญ่ คนนิยมมาขอพรให้พ้นเคราะห์และเสริมโชคลาภ",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_01.jpg/1280px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_01.jpg",
+        "alt": "วัดขุนจันทร์ เขตธนบุรี",
+        "author": "กสิณธร ราชโอรส",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%98%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_01.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM way 376675944 'วัดวรามาตยภัณฑสาราราม' (Wikipedia ไม่มีพิกัด)",
+      "internal: goals จาก Lazada (ป้องกันเคราะห์ โชคลาภเงินทอง) + Wikipedia (สะเดาะเคราะห์ปีชง บูชาพระราหู)",
+      "internal: ยังไม่มีเวลาเปิดและของไหว้เฉพาะวัด",
+      "internal: photo = Commons File:วัดขุนจันทร์ เขตธนบุรี กรุงเทพมหานคร 01.jpg (CC BY-SA 4.0, กสิณธร ราชโอรส) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A7%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%A2%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1",
+      "https://www.lazada.co.th/blog/rahu-temples-in-thailand"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดเจ้าอาม",
+    "nameEn": "Wat Chao Am",
+    "slug": "wat-chao-am-bangkok",
+    "type": "temple",
+    "deities": [
+      "พระราหู"
+    ],
+    "goals": [
+      "protection",
+      "money"
+    ],
+    "province": "กรุงเทพมหานคร",
+    "district": "บางกอกน้อย",
+    "coords": "13.7751623, 100.4657271",
+    "description": "วัดริมถนนบางขุนนนท์ที่สมเด็จพระเจ้าตากสินทรงสร้างอุทิศให้พระสนมอาม พร้อมพระปรางค์องค์ใหญ่บรรจุอัฐิ ในวัดมีพระราหูให้ไหว้ขอพรให้แคล้วคลาด มีโชค และเปลี่ยนเรื่องร้ายให้กลายเป็นดี",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AD%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%287%29.jpg/1280px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AD%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%287%29.jpg",
+        "alt": "วัดเจ้าอาม เขตบางกอกน้อย",
+        "author": "กสิณธร ราชโอรส",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AD%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%AD%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(7).jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM relation 13432304 'วัดเจ้าอาม' (Wikipedia ไม่มีพิกัด)",
+      "internal: goals จาก Lazada (ป้องกันภัย โชคดี เปลี่ยนร้ายเป็นดี)",
+      "internal: ยังไม่มีเวลาเปิดและของไหว้",
+      "internal: photo = Commons File:วัดเจ้าอาม เขตบางกอกน้อย กรุงเทพมหานคร (7).jpg (CC BY-SA 4.0, กสิณธร ราชโอรส) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AD%E0%B8%B2%E0%B8%A1",
+      "https://www.lazada.co.th/blog/rahu-temples-in-thailand"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดกัลยาณมิตรวรมหาวิหาร",
+    "nameEn": "Wat Kalayanamit",
+    "slug": "wat-kalayanamit-bangkok",
+    "type": "temple",
+    "deities": [
+      "พระพุทธไตรรัตนนายก (หลวงพ่อโต)"
+    ],
+    "goals": [
+      "career",
+      "money",
+      "protection"
+    ],
+    "province": "กรุงเทพมหานคร",
+    "district": "บางกอกใหญ่",
+    "coords": "13.739885, 100.491359",
+    "description": "วัดริมเจ้าพระยาฝั่งธนฯ ตรงปากคลองบางกอกใหญ่ฝั่งใต้ ประดิษฐานหลวงพ่อโตองค์ใหญ่ปางมารวิชัย คนนิยมมาขอพรเรื่องการงาน โชคลาภ และเดินทางปลอดภัย ช่วงตรุษจีนและปีใหม่คนมาไหว้กันมาก",
+    "offerings": [
+      "ธูป 3 ดอก",
+      "เทียนแดง 1 คู่",
+      "พวงมาลัย"
+    ],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%B1%E0%B8%A5%E0%B8%A2%E0%B8%B2%E0%B8%93%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%A3%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A32.jpg/1280px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%B1%E0%B8%A5%E0%B8%A2%E0%B8%B2%E0%B8%93%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%A3%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A32.jpg",
+        "alt": "วัดกัลยาณมิตรวรมหาวิหาร ริมแม่น้ำเจ้าพระยา",
+        "author": "Mastertongapollo",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%B1%E0%B8%A5%E0%B8%A2%E0%B8%B2%E0%B8%93%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%A3%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A32.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = Thai Wikipedia (13.739885, 100.491359) ตรงกับ OSM way 342355805",
+      "internal: goals จาก Krungsri (การงาน โชคลาภ เงินทอง) + Wongnai 2563 (เดินทางปลอดภัย มีมิตรดี) ของไหว้จาก Wongnai",
+      "internal: ยังไม่มีเวลาเปิด",
+      "internal: photo = Commons File:วัดกัลยาณมิตรวรมหาวิหาร2.jpg (CC BY-SA 4.0, Mastertongapollo) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%B1%E0%B8%A5%E0%B8%A2%E0%B8%B2%E0%B8%93%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%A3%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3",
+      "https://www.krungsri.com/th/plearn-plearn/lifestyle/living/lucky-spiritual-places-bangkok",
+      "https://www.wongnai.com/trips/temple-for-praying-and-mutelu"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดทิพยวารีวิหาร (วัดกัมโล่วยี่)",
+    "nameEn": "Wat Thipphayawari Wihan (Kam Lo Yi)",
+    "slug": "wat-thipphayawari-bangkok",
+    "type": "chinese-shrine",
+    "deities": [
+      "เจ้าพ่อมังกรเขียว",
+      "บ่อน้ำศักดิ์สิทธิ์"
+    ],
+    "goals": [
+      "career",
+      "business",
+      "protection"
+    ],
+    "province": "กรุงเทพมหานคร",
+    "district": "พระนคร",
+    "coords": "13.7462290, 100.4986399",
+    "description": "วัดจีนนิกายในซอยทิพย์วารี ถนนตรีเพชร ย่านบ้านหม้อ มีศาลเจ้าพ่อมังกรเขียวและบ่อน้ำศักดิ์สิทธิ์ คนนิยมมาขอพรเรื่องการงาน ค้าขาย และให้แคล้วคลาดปลอดภัยเวลาเดินทาง",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B4%E0%B8%9E%E0%B8%A2%E0%B8%A7%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2812%29.jpg/1280px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B4%E0%B8%9E%E0%B8%A2%E0%B8%A7%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2812%29.jpg",
+        "alt": "วัดทิพยวารีวิหาร ย่านบ้านหม้อ",
+        "author": "กสิณธร ราชโอรส",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B4%E0%B8%9E%E0%B8%A2%E0%B8%A7%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_(12).jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM node 12526550268 'วัดทิพยวารีวิหาร' (Wikipedia ไม่มีพิกัด)",
+      "internal: type chinese-shrine เพราะเป็นวัดจีนนิกาย ถ้าอยากจัดเป็น temple เปลี่ยนได้",
+      "internal: goals จาก Krungsri; ยังไม่มีเวลาเปิดและของไหว้",
+      "internal: photo = Commons File:วัดทิพยวารีวิหาร เขตพระนคร กรุงเทพมหานคร (12).jpg (CC BY-SA 4.0, กสิณธร ราชโอรส) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B4%E0%B8%9E%E0%B8%A2%E0%B8%A7%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3",
+      "https://www.krungsri.com/th/plearn-plearn/lifestyle/living/lucky-spiritual-places-bangkok"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดปทุมวนารามราชวรวิหาร",
+    "nameEn": "Wat Pathum Wanaram",
+    "slug": "wat-pathumwanaram-bangkok",
+    "type": "temple",
+    "deities": [
+      "พระเสริม",
+      "พระแสน",
+      "พระสายน์"
+    ],
+    "goals": [
+      "career",
+      "money"
+    ],
+    "province": "กรุงเทพมหานคร",
+    "district": "ปทุมวัน",
+    "coords": "13.74629, 100.536742",
+    "description": "วัดกลางเมืองระหว่างสยามพารากอนกับเซ็นทรัลเวิลด์ สร้างสมัยรัชกาลที่ 4 ปี 2400 มีชื่อเรื่องป่ากลางเมือง ในวัดประดิษฐานพระพุทธรูปศิลปะลาว 3 องค์ คือพระเสริม พระแสน และพระสายน์ คนนิยมมาขอพรเรื่องการงาน การเงิน และความสุขในชีวิต",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B8%E0%B9%82%E0%B8%9A%E0%B8%AA%E0%B8%96%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B9%80%E0%B9%80%E0%B8%A5%E0%B8%B0%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%97%E0%B8%B8%E0%B8%A1%E0%B8%A7%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1.jpg/1280px-%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B8%E0%B9%82%E0%B8%9A%E0%B8%AA%E0%B8%96%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B9%80%E0%B9%80%E0%B8%A5%E0%B8%B0%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%97%E0%B8%B8%E0%B8%A1%E0%B8%A7%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1.jpg",
+        "alt": "พระอุโบสถ พระเจดีย์ และพระวิหาร วัดปทุมวนาราม",
+        "author": "Mastertongapollo",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B8%E0%B9%82%E0%B8%9A%E0%B8%AA%E0%B8%96%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B9%80%E0%B9%80%E0%B8%A5%E0%B8%B0%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%97%E0%B8%B8%E0%B8%A1%E0%B8%A7%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = Thai Wikipedia (13.74629, 100.536742) ตรงกับ OSM way 31983987",
+      "internal: goals จาก Krungsri; ยังไม่มีเวลาเปิดและของไหว้",
+      "internal: photo = Commons File:พระอุโบสถพระเจดีย์เเละพระวิหารวัดปทุมวนาราม.jpg (CC BY-SA 4.0, Mastertongapollo) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%97%E0%B8%B8%E0%B8%A1%E0%B8%A7%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3",
+      "https://www.krungsri.com/th/plearn-plearn/lifestyle/living/lucky-spiritual-places-bangkok"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "พลับพลาสยามินทราศิริราชานุสรณีย์ (โรงพยาบาลศิริราช)",
+    "nameEn": "Siriraj Royal Monument Pavilion (King Chulalongkorn)",
+    "slug": "siriraj-rama-5-monument",
+    "type": "shrine",
+    "deities": [
+      "พระบรมราชานุสาวรีย์รัชกาลที่ 5 กับพระราชโอรส"
+    ],
+    "goals": [
+      "health"
+    ],
+    "province": "กรุงเทพมหานคร",
+    "district": "บางกอกน้อย",
+    "coords": "13.7596664, 100.4872260",
+    "description": "พลับพลาประดิษฐานพระบรมราชานุสาวรีย์รัชกาลที่ 5 กับพระราชโอรส อยู่ในสวนเฉลิมพระเกียรติ 72 พรรษา ภายในโรงพยาบาลศิริราช คนไข้และญาตินิยมมาขอพรเรื่องสุขภาพ การรักษาโรค และความสุขสวัสดี",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [],
+    "notes": [
+      "internal: coords = OSM way 376299024 'พลับพลาสยามินทราศิริราชานุสรณีย์' ติดกับ OSM way 1487708687 สวนเฉลิมพระเกียรติ 72 พรรษา",
+      "internal: goal health จาก Krungsri; ยังไม่มีเวลาเปิด ของไหว้ และภาพ",
+      "internal: เป็นอนุสรณ์ในโรงพยาบาล ควรเช็กว่าเหมาะจะแสดงบนเว็บหรือไม่",
+      "internal: photo status - ยังไม่มีภาพจาก Commons ที่ยืนยันได้ว่าเป็นสถานที่นี้"
+    ],
+    "sources": [
+      "https://www.krungsri.com/th/plearn-plearn/lifestyle/living/lucky-spiritual-places-bangkok",
+      "https://www.openstreetmap.org/way/376299024"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดเทพมณเฑียร (สมาคมฮินดูสมาช)",
+    "nameEn": "Dev Mandir (Hindu Samaj), Sao Chingcha",
+    "slug": "wat-thep-monthian-bangkok",
+    "type": "devalai",
+    "deities": [
+      "พระกฤษณะและพระนางราธา",
+      "พระพิฆเนศ",
+      "พระแม่อุมาเทวี",
+      "พระพรหม",
+      "พระนารายณ์และพระแม่ลักษมี"
+    ],
+    "goals": [
+      "love",
+      "family",
+      "career",
+      "study",
+      "money"
+    ],
+    "province": "กรุงเทพมหานคร",
+    "district": "พระนคร",
+    "coords": "13.7505148, 100.5025309",
+    "description": "โบสถ์พราหมณ์ลัทธิไวษณพบนอาคารโรงเรียนภารตวิทยาลัย ถนนศิริพงษ์ ใกล้เสาชิงช้า คนโสดนิยมมาขอพรความรักกับพระกฤษณะและพระนางราธา ให้ได้คู่ที่จริงใจและรักกันยืนยาว นอกจากนี้ยังไหว้พระพิฆเนศเรื่องงานและการเรียน และพระนารายณ์กับพระแม่ลักษมีเรื่องความสำเร็จ",
+    "hours": "06.00-20.00 น. (ปิดพัก 12.00-15.00 น.)",
+    "offerings": [
+      "ผลไม้ เช่น กล้วย อ้อย สับปะรด แอปเปิล องุ่น",
+      "ดอกไม้และพวงมาลัย",
+      "นม น้ำเปล่า น้ำหวาน",
+      "ธัญพืช"
+    ],
+    "howToPray": [
+      "เริ่มไหว้พระพิฆเนศก่อน",
+      "ห้ามจุดธูป",
+      "ห้ามถวายเนื้อสัตว์และของคาว"
+    ],
+    "howToRepayVow": [],
+    "images": [],
+    "notes": [
+      "internal: coords = OSM way 902154654 'วัดเทพมณเฑียร' (religion=hindu, wikipedia=th:สมาคมฮินดูสมาช)",
+      "internal: เวลาเปิดจาก LG; ของไหว้และข้อห้ามจาก Daily News (ก.พ. 2568) + LG; ลำดับไหว้พระพิฆเนศก่อนจากฐานเศรษฐกิจ",
+      "internal: goals love (LG, Daily News, Matichon) family (LG, ฐานเศรษฐกิจ) career/study (ฐานเศรษฐกิจ: พระพิฆเนศ) money (ฐานเศรษฐกิจ: พระนารายณ์ พระแม่ลักษมี)",
+      "internal: ยังหาภาพบน Commons ที่ยืนยันว่าเป็นที่นี่ไม่ได้ (มี 'Vishnu Temple, Giant Swing, Bangkok.jpg' แต่ไม่แน่ใจว่าเป็นวัดเทพมณเฑียรหรือเทวสถาน)",
+      "internal: photo status - ยังไม่มีภาพจาก Commons ที่ยืนยันได้ว่าเป็นสถานที่นี้"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A1%E0%B8%B2%E0%B8%84%E0%B8%A1%E0%B8%AE%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B9%E0%B8%AA%E0%B8%A1%E0%B8%B2%E0%B8%8A",
+      "https://www.lg.com/th/blog-list/recommend-place-to-pray-for-love/",
+      "https://www.dailynews.co.th/articles/4387790/",
+      "https://www.thansettakij.com/lifestyle/traveling/642892",
+      "https://www.matichon.co.th/lifestyle/news_35064"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "เทวสถานโบสถ์พราหมณ์",
+    "nameEn": "Devasathan (Brahmin Temple), Bangkok",
+    "slug": "devasathan-bangkok",
+    "type": "devalai",
+    "deities": [
+      "พระอิศวร",
+      "พระอุมาเทวี",
+      "พระพรหม",
+      "พระมหาวิฆเณศวร (พระพิฆเนศ)",
+      "พระนารายณ์"
+    ],
+    "goals": [
+      "study",
+      "career"
+    ],
+    "province": "กรุงเทพมหานคร",
+    "district": "พระนคร",
+    "coords": "13.752344, 100.500371",
+    "description": "สำนักพราหมณ์พระราชครูในสำนักพระราชวัง ตั้งอยู่ถนนดินสอ ใกล้เสาชิงช้าและศาลาว่าการกรุงเทพมหานคร ภายในมีเทวรูปพระอิศวร พระอุมาเทวี พระพรหม พระพิฆเนศ และพระนารายณ์ คนนิยมไหว้พระพิฆเนศขอพรเรื่องปัญญา ความสำเร็จ และการเริ่มต้นสิ่งใหม่",
+    "hours": "09.00-16.30 น.",
+    "offerings": [],
+    "howToPray": [
+      "เริ่มไหว้พระพิฆเนศในโบสถ์กลางก่อน"
+    ],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Devasathan_Bangkok_%282021%29.jpg/1280px-Devasathan_Bangkok_%282021%29.jpg",
+        "alt": "เทวสถานโบสถ์พราหมณ์ เสาชิงช้า",
+        "author": "Chainwit.",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Devasathan_Bangkok_(2021).jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = Thai Wikipedia (13.752344, 100.500371) ตรงกับ OSM way 629260929 (religion=hindu)",
+      "internal: เวลาเปิด 09.00-16.30 จาก TrueID และฐานเศรษฐกิจ (ฐานเศรษฐกิจระบุเป็นเวลาของโบสถ์พระนารายณ์) ควรเช็กว่าทุกโบสถ์เปิดเวลาเดียวกันไหม",
+      "internal: goals จากฐานเศรษฐกิจ (พระพิฆเนศ: ปัญญา ความสำเร็จ การเริ่มต้น)",
+      "internal: photo = Commons File:Devasathan Bangkok (2021).jpg (CC BY-SA 4.0, Chainwit.) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%97%E0%B8%A7%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B9%82%E0%B8%9A%E0%B8%AA%E0%B8%96%E0%B9%8C%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%AB%E0%B8%A1%E0%B8%93%E0%B9%8C",
+      "https://travel.trueid.net/detail/azQdqv9ZL4jA",
+      "https://www.thansettakij.com/lifestyle/traveling/642892"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดวิษณุ (สมาคมฮินดูธรรมสภา)",
+    "nameEn": "Wat Vishnu (Vishnu Temple), Bangkok",
+    "slug": "wat-vishnu-bangkok",
+    "type": "devalai",
+    "deities": [
+      "พระวิษณุ",
+      "พระแม่ลักษมี",
+      "พระราม",
+      "พระนางสีดา",
+      "หนุมาน"
+    ],
+    "goals": [
+      "family",
+      "career",
+      "money",
+      "business"
+    ],
+    "province": "กรุงเทพมหานคร",
+    "district": "สาทร",
+    "coords": "13.7125271, 100.5212518",
+    "description": "โบสถ์พราหมณ์ลัทธิไวษณพในซอยวัดปรก มีเทวรูปหินอ่อนแกะสลักจากชัยปุระ อินเดีย 24 องค์ องค์ประธานคือพระวิษณุกับพระแม่ลักษมี คนมาขอพรเรื่องครอบครัว การงาน การเงิน ธุรกิจ และโชคลาภ",
+    "offerings": [],
+    "howToPray": [
+      "พราหมณ์เป็นผู้ประกอบพิธีและถวายเครื่องบูชาแทนผู้มาไหว้"
+    ],
+    "howToRepayVow": [],
+    "images": [],
+    "notes": [
+      "internal: coords = OSM node 476307401 'วัดวิษณุ' (religion=hindu)",
+      "internal: เขต: Wikipedia/OSM = สาทร (แขวงทุ่งวัดดอน) แนวหน้า 2563 เขียนว่ายานนาวา",
+      "internal: เวลาเปิดไม่ตรงกัน แนวหน้า 2563 = 06.00-20.00 น. Shopee = 06.00-12.00 และ 15.00-20.30 น. จึงยังไม่ใส่",
+      "internal: goals จากแนวหน้า (ครอบครัว การงาน การเงิน ธุรกิจ โชคลาภ); ยังไม่มีภาพที่ยืนยันได้",
+      "internal: photo status - ยังไม่มีภาพจาก Commons ที่ยืนยันได้ว่าเป็นสถานที่นี้"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A1%E0%B8%B2%E0%B8%84%E0%B8%A1%E0%B8%AE%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B9%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%AA%E0%B8%A0%E0%B8%B2",
+      "https://www.naewna.com/lady/502721",
+      "https://shopee.co.th/blog/hindu-god-pray-one-day-trip/amp/"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "ศาลท้าวหิรัญพนาสูร (โรงพยาบาลพระมงกุฎเกล้า)",
+    "nameEn": "Thao Hiranyaphanasun Shrine, Phramongkutklao Hospital",
+    "slug": "thao-hiranyaphanasun-shrine",
+    "type": "shrine",
+    "deities": [
+      "ท้าวหิรัญพนาสูร"
+    ],
+    "goals": [
+      "health",
+      "protection"
+    ],
+    "province": "กรุงเทพมหานคร",
+    "district": "ราชเทวี",
+    "coords": "13.7699187, 100.5336114",
+    "description": "ศาลในโรงพยาบาลพระมงกุฎเกล้า ถนนราชวิถี ท้าวหิรัญพนาสูรเป็นอสูรที่เชื่อกันว่าคอยคุ้มครองรัชกาลที่ 6 คนไข้และญาตินิยมมาขอพรให้หายจากโรคภัยไข้เจ็บและพ้นภัย",
+    "hours": "08.30-16.00 น.",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [],
+    "notes": [
+      "internal: coords = OSM node 14282765907 'ท้าวหิรัญพนาสูร' (tourism=artwork) ข้าง OSM way 1568172506 สวนท้าวหิรัญพนาสูร ควรเช็กว่าเป็นจุดศาลจริง",
+      "internal: goals และเวลาเปิดจาก TrueID (สุขภาพ หายจากโรค โชค อำนาจ คุ้มครอง)",
+      "internal: ยังไม่มีภาพ",
+      "internal: photo status - ยังไม่มีภาพจาก Commons ที่ยืนยันได้ว่าเป็นสถานที่นี้"
+    ],
+    "sources": [
+      "https://travel.trueid.net/detail/0WDB9JD1lX0m",
+      "https://www.openstreetmap.org/node/14282765907"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดคณิกาผล (ย่าแฟง)",
+    "nameEn": "Wat Khanikaphon",
+    "slug": "wat-khanikaphon-bangkok",
+    "type": "temple",
+    "deities": [
+      "ย่าแฟง (ยายแฟง)",
+      "หลวงพ่อทองคำ",
+      "หลวงพ่อองค์ดำ"
+    ],
+    "goals": [
+      "love",
+      "money",
+      "career"
+    ],
+    "province": "กรุงเทพมหานคร",
+    "district": "ป้อมปราบศัตรูพ่าย",
+    "coords": "13.74416667, 100.51",
+    "description": "วัดบนถนนพลับพลาไชย ตรงข้ามสถานีตำรวจพลับพลาไชย 2 สร้างเมื่อปี 2376 โดยยายแฟง เจ้าของสำนักโรงยายแฟงย่านเยาวราช ปัจจุบันคนนิยมมาไหว้ย่าแฟงขอพรเรื่องความรัก โชคลาภ และการงาน",
+    "offerings": [
+      "พวงมาลัยและช่อดอกจำปี",
+      "น้ำแดง",
+      "ธูปเทียน",
+      "หมากพลูและบุหรี่",
+      "น้ำหอมและเครื่องสำอาง",
+      "เครื่องประดับและผ้าซิ่น",
+      "ตุ๊กตานางรำ 1 คู่"
+    ],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/%282019%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%93%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%9C%E0%B8%A5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.jpg/1280px-%282019%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%93%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%9C%E0%B8%A5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.jpg",
+        "alt": "วัดคณิกาผล ถนนพลับพลาไชย",
+        "author": "กสิณธร ราชโอรส",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:(2019)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%93%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%9C%E0%B8%A5_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%A8%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B9%E0%B8%9E%E0%B9%88%E0%B8%B2%E0%B8%A2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = Thai Wikipedia (13.74416667, 100.51) ตรงกับ OSM way 301157260",
+      "internal: goals และของไหว้จาก Daily News (ก.พ. 2568) ซึ่งบอกว่ามีชุดของไหว้ขายหน้าวัด 100 บาท",
+      "internal: ยังไม่มีเวลาเปิด",
+      "internal: photo = Commons File:(2019) วัดคณิกาผล เขตป้อมปราบศัตรูพ่าย กรุงเทพมหานคร.jpg (CC BY-SA 4.0, กสิณธร ราชโอรส) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%93%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%9C%E0%B8%A5",
+      "https://www.dailynews.co.th/articles/4387790/"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดจุฬามณี (ท้าวเวสสุวรรณ)",
+    "nameEn": "Wat Chulamani, Amphawa",
+    "slug": "wat-chulamani-samut-songkhram",
+    "type": "temple",
+    "deities": [
+      "ท้าวเวสสุวรรณ"
+    ],
+    "goals": [
+      "money",
+      "business",
+      "love"
+    ],
+    "province": "สมุทรสงคราม",
+    "district": "อัมพวา",
+    "coords": "13.4263300, 99.9654016",
+    "description": "วัดริมถนนสมุทรสงคราม-บางแพ ตำบลบางช้าง อำเภออัมพวา สายมูรู้จักกันดีเรื่ององค์ท้าวเวสสุวรรณ คนนิยมมาขอโชคลาภ ค้าขาย ความรัก และความสำเร็จ",
+    "offerings": [
+      "ธูป 9 ดอก",
+      "ผลไม้ 5 อย่าง เช่น กล้วย ส้ม แอปเปิล สับปะรด องุ่น",
+      "กุหลาบอย่างน้อย 9 ดอก",
+      "น้ำชา 1 หรือ 5 ถ้วย"
+    ],
+    "howToPray": [
+      "ตั้งนะโม 3 จบ แล้วสวดคาถาบูชาท้าวเวสสุวรรณ",
+      "อธิษฐานขอพร",
+      "ถือกระเป๋าสตางค์ที่ใช้ประจำ เดินวนรอบกระบองท้าวเวสสุวรรณตามเข็มนาฬิกา 9 รอบ"
+    ],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%B8%E0%B8%AC%E0%B8%B2%E0%B8%A1%E0%B8%93%E0%B8%B5_%E0%B8%AD.%E0%B8%AD%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%A7%E0%B8%B2_%E0%B8%88.%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1_%286%29.jpg/1280px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%B8%E0%B8%AC%E0%B8%B2%E0%B8%A1%E0%B8%93%E0%B8%B5_%E0%B8%AD.%E0%B8%AD%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%A7%E0%B8%B2_%E0%B8%88.%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1_%286%29.jpg",
+        "alt": "วัดจุฬามณี อำเภออัมพวา",
+        "author": "กสิณธร ราชโอรส",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%B8%E0%B8%AC%E0%B8%B2%E0%B8%A1%E0%B8%93%E0%B8%B5_%E0%B8%AD.%E0%B8%AD%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%A7%E0%B8%B2_%E0%B8%88.%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1_(6).jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM way 1378655676 'วัดจุฬามณี' (landuse=religious ใช้จุดกึ่งกลาง) Wikipedia ไม่มีพิกัด",
+      "internal: ของไหว้และวิธีไหว้จาก KTC (ขอพรเรื่องค้าขาย) goals money/business จาก KTC ทั้ง 2 บทความ love จาก KTC places-to-make-wishes",
+      "internal: ผลค้นหาเจอประกาศปิดวัดช่วงโควิด (ปี 2565) ควรเช็กว่าเปิดตามปกติแล้ว และยังไม่มีเวลาเปิด",
+      "internal: photo = Commons File:วัดจุฬามณี อ.อัมพวา จ.สมุทรสงคราม (6).jpg (CC BY-SA 4.0, กสิณธร ราชโอรส) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%B8%E0%B8%AC%E0%B8%B2%E0%B8%A1%E0%B8%93%E0%B8%B5_%28%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%29",
+      "https://www.ktc.co.th/article/knowledge/place-to-pray-for-a-blessing-on-trade",
+      "https://www.ktc.co.th/article/travel-guide/thailand/places-to-make-wishes-with-auspiciousness"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดท่าไม้",
+    "nameEn": "Wat Tha Mai, Krathum Baen",
+    "slug": "wat-tha-mai-samut-sakhon",
+    "type": "temple",
+    "deities": [
+      "พระราหู (ศาลาเทวาพิทักษ์)",
+      "พระพุทธชินราชจำลอง",
+      "เจ้าแม่กวนอิม"
+    ],
+    "goals": [
+      "protection"
+    ],
+    "province": "สมุทรสาคร",
+    "district": "กระทุ่มแบน",
+    "coords": "13.6765441, 100.2552442",
+    "description": "วัดริมแม่น้ำท่าจีน อำเภอกระทุ่มแบน เริ่มจากสำนักสงฆ์เมื่อปี 2520 ขึ้นชื่อเรื่องเมตตามหานิยมและการทำบุญสะเดาะเคราะห์เสริมดวง ในศาลาเทวาพิทักษ์มีพระราหูให้ไหว้ขอพรปัดเป่าเคราะห์",
+    "offerings": [],
+    "howToPray": [
+      "ทำบุญสะเดาะเคราะห์และเสริมดวง",
+      "ลอดใต้โบสถ์เพื่อสะเดาะเคราะห์",
+      "ไถ่ชีวิตโคกระบือ"
+    ],
+    "howToRepayVow": [],
+    "images": [],
+    "notes": [
+      "internal: coords = OSM node 1886588934 'วัดท่าไม้' ต.ท่าไม้ อ.กระทุ่มแบน",
+      "internal: ข้อมูลจาก The Thaiger (มี.ค. 2565) เรื่องเมตตามหานิยมยังไม่ได้แปลงเป็น goal (อาจเป็น love หรือ business ให้เจ้าของเลือก)",
+      "internal: ยังไม่มีเวลาเปิดและภาพ",
+      "internal: photo status - ยังไม่มีภาพจาก Commons ที่ยืนยันได้ว่าเป็นสถานที่นี้"
+    ],
+    "sources": [
+      "https://thethaiger.com/th/news/540747/",
+      "https://www.openstreetmap.org/node/1886588934"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดศีรษะทอง (พระราหู)",
+    "nameEn": "Wat Sisa Thong",
+    "slug": "wat-sisa-thong-nakhon-pathom",
+    "type": "temple",
+    "deities": [
+      "พระราหูอมจันทร์อมพระอาทิตย์"
+    ],
+    "goals": [
+      "protection"
+    ],
+    "province": "นครปฐม",
+    "district": "นครชัยศรี",
+    "coords": "13.8091951, 100.1604984",
+    "description": "วัดในตำบลศีรษะทอง อำเภอนครชัยศรี ขึ้นชื่อเรื่ององค์พระราหูอมจันทร์อมพระอาทิตย์ คนนิยมมาไหว้พระราหูเพื่อความเป็นสิริมงคลและปัดเป่าเคราะห์ ทางวัดมีของดำเตรียมไว้ให้",
+    "hours": "ทุกวัน ยกเว้นวันพระ",
+    "offerings": [
+      "ของดำสำหรับไหว้พระราหู (ทางวัดมีให้)"
+    ],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [],
+    "notes": [
+      "internal: coords = OSM way 586859743 'วัดศีรษะทอง' ต.ศีรษะทอง อ.นครชัยศรี",
+      "internal: ข้อมูลจาก Lazada; ยังไม่มีเวลาเปิดเป็นชั่วโมง และยังไม่มีภาพ",
+      "internal: photo status - ยังไม่มีภาพจาก Commons ที่ยืนยันได้ว่าเป็นสถานที่นี้"
+    ],
+    "sources": [
+      "https://www.lazada.co.th/blog/rahu-temples-in-thailand",
+      "https://www.openstreetmap.org/way/586859743"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดไผ่ล้อม",
+    "nameEn": "Wat Phai Lom, Nakhon Pathom",
+    "slug": "wat-phai-lom-nakhon-pathom",
+    "type": "temple",
+    "deities": [
+      "พระราหู"
+    ],
+    "goals": [
+      "protection"
+    ],
+    "province": "นครปฐม",
+    "district": "เมืองนครปฐม",
+    "coords": "13.8185576, 100.0678633",
+    "description": "วัดในตัวเมืองนครปฐม เป็นวัดต้นตำรับที่จัดพิธีบูชาพระราหูเป็นประจำ คนนิยมมาร่วมพิธีบวงสรวงและสวดนพเคราะห์เพื่อสะเดาะเคราะห์และเสริมดวง",
+    "offerings": [],
+    "howToPray": [
+      "ร่วมพิธีบวงสรวงพระราหูและสวดนพเคราะห์"
+    ],
+    "howToRepayVow": [],
+    "images": [],
+    "notes": [
+      "internal: coords = OSM way 104675847 'วัดไผ่ล้อม' อ.เมืองนครปฐม (Lazada ไม่ได้บอกอำเภอ แต่วัดไผ่ล้อมในนครปฐมตาม Wikipedia มีแห่งเดียวที่ อ.เมือง)",
+      "internal: ยังไม่มีวันเวลาพิธี เวลาเปิด และภาพ",
+      "internal: photo status - ยังไม่มีภาพจาก Commons ที่ยืนยันได้ว่าเป็นสถานที่นี้"
+    ],
+    "sources": [
+      "https://www.lazada.co.th/blog/rahu-temples-in-thailand",
+      "https://www.openstreetmap.org/way/104675847"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดพราหมณี (หลวงพ่อปากแดง)",
+    "nameEn": "Wat Phrahmani (Luang Pho Pak Daeng)",
+    "slug": "wat-phrahmani-nakhon-nayok",
+    "type": "temple",
+    "deities": [
+      "หลวงพ่อปากแดง"
+    ],
+    "goals": [
+      "money",
+      "career",
+      "family"
+    ],
+    "province": "นครนายก",
+    "district": "เมืองนครนายก",
+    "coords": "14.2352899, 101.2460885",
+    "description": "พระอารามหลวงในตำบลบ้านใหญ่ สร้างสมัยรัชกาลที่ 5 ปี 2439 และเป็นที่ตั้งอนุสรณ์สถานกองพลทหารญี่ปุ่นที่ 37 คนนิยมมาไหว้หลวงพ่อปากแดง ขอโชคลาภ การงาน และขอบุตร",
+    "offerings": [
+      "ธูปเทียนและดอกไม้",
+      "กล้วย",
+      "หมากพลู",
+      "น้ำแดง"
+    ],
+    "howToPray": [
+      "ปิดทองที่ฐานองค์หลวงพ่อ",
+      "ขอทีละ 1 เรื่อง สำเร็จแล้วค่อยมาขอเรื่องใหม่"
+    ],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Wat_Luang_Pho_Pak_Daeng_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%AB%E0%B8%A1%E0%B8%93%E0%B8%B5_%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B9%81%E0%B8%94%E0%B8%87_%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81_04.jpg/1280px-Wat_Luang_Pho_Pak_Daeng_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%AB%E0%B8%A1%E0%B8%93%E0%B8%B5_%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B9%81%E0%B8%94%E0%B8%87_%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81_04.jpg",
+        "alt": "วัดพราหมณี (วัดหลวงพ่อปากแดง) นครนายก",
+        "author": "Chainwit.",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Luang_Pho_Pak_Daeng_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%AB%E0%B8%A1%E0%B8%93%E0%B8%B5_%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B9%81%E0%B8%94%E0%B8%87_%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81_04.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM node 11081152326 'วัดพราหมณี' (Wikipedia ไม่มีพิกัด)",
+      "internal: จำนวนของไหว้ไม่ตรงกัน KTC = กล้วย 1 หวี หมากพลู 1 ชุด น้ำแดง 1 ขวด Wongnai 2563 = กล้วย 9 หวี หมากพลู 9 คำ มาลัย 9 พวง จึงใส่แค่ชนิด",
+      "internal: ยังไม่มีเวลาเปิด",
+      "internal: photo = Commons File:Wat Luang Pho Pak Daeng วัดพราหมณี หลวงพ่อปากแดง นครนายก 04.jpg (CC BY-SA 4.0, Chainwit.) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%AB%E0%B8%A1%E0%B8%93%E0%B8%B5",
+      "https://www.ktc.co.th/en/article/travel-guide/thailand/nakhon-nayok-temple",
+      "https://www.wongnai.com/trips/temple-for-praying-and-mutelu"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "พระพิฆเนศปางชนะมาร ปราสาทนครหลวง",
+    "nameEn": "Ganesha at Prasat Nakhon Luang",
+    "slug": "ganesha-prasat-nakhon-luang",
+    "type": "devalai",
+    "deities": [
+      "พระพิฆเนศปางชนะมาร"
+    ],
+    "goals": [
+      "career",
+      "money",
+      "protection"
+    ],
+    "province": "พระนครศรีอยุธยา",
+    "district": "นครหลวง",
+    "coords": "14.46527778, 100.61083333",
+    "description": "จุดไหว้พระพิฆเนศที่ปราสาทนครหลวง โบราณสถานสมัยพระเจ้าปราสาททองราวปี 2174 ซึ่งชั้นบนมีมณฑปประดิษฐานพระพุทธบาทสี่รอย คนนิยมมาขอพรเรื่องการงาน โชคลาภ เงินทอง และปัดเป่าสิ่งไม่ดี",
+    "hours": "06.00-18.00 น.",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Ayutthaya-Nakhon_Luang_-_Prasat_Nakhon_Luang_%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%97%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87_%282025%29_-_east_elevation.jpg/1280px-Ayutthaya-Nakhon_Luang_-_Prasat_Nakhon_Luang_%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%97%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87_%282025%29_-_east_elevation.jpg",
+        "alt": "ปราสาทนครหลวง พระนครศรีอยุธยา",
+        "author": "Chainwit.",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ayutthaya-Nakhon_Luang_-_Prasat_Nakhon_Luang_%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%97%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87_(2025)_-_east_elevation.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = Thai Wikipedia ปราสาทนครหลวง (14.46527778, 100.61083333) ตรงกับ OSM way 1361450652 ยังไม่ได้เช็กตำแหน่งองค์พระพิฆเนศในพื้นที่",
+      "internal: ข้อมูลพระพิฆเนศและเวลาเปิดจาก TrueID (ไหว้พระพิฆเนศ 12 แห่ง) ควรเช็กชื่อองค์และจุดตั้งเพิ่ม",
+      "internal: ภาพเป็นตัวปราสาท ไม่ใช่องค์พระพิฆเนศ",
+      "internal: photo = Commons File:Ayutthaya-Nakhon Luang - Prasat Nakhon Luang ปราสาทนครหลวง (2025) - east elevation.jpg (CC BY 4.0, Chainwit.) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://travel.trueid.net/detail/azQdqv9ZL4jA",
+      "https://th.wikipedia.org/wiki/%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%97%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "อุทยานพระพิฆเนศ นครนายก",
+    "nameEn": "Ganesha Park, Nakhon Nayok",
+    "slug": "ganesha-park-nakhon-nayok",
+    "type": "devalai",
+    "deities": [
+      "พระพิฆเนศ",
+      "พระพิฆเนศ 108 ปาง"
+    ],
+    "goals": [
+      "career",
+      "protection"
+    ],
+    "province": "นครนายก",
+    "district": "เมืองนครนายก",
+    "coords": "14.2575914, 101.2592327",
+    "description": "อุทยานพระพิฆเนศที่สี่แยกประชาเกษม ถนนนครนายก-น้ำตกสาริกา ห่างตัวเมืองราว 5 กิโลเมตร มีพระพิฆเนศ 108 ปางให้พรแตกต่างกัน คนนิยมมาขอพรเรื่องความสำเร็จและให้แคล้วคลาด",
+    "offerings": [],
+    "howToPray": [
+      "กระซิบคำขอที่หูหนูมุสิกะ แล้วปิดหูอีกข้างของหนูไว้"
+    ],
+    "howToRepayVow": [],
+    "images": [],
+    "notes": [
+      "internal: coords = OSM node 5402775121 'อุทยานพระพิฆเนศ' (religion=hindu)",
+      "internal: เวลาเปิดไม่ตรงกัน TrueID 12 ศาล = จ.-ศ. 09.00-17.30 ส.-อา. 08.30-18.00 อีกบทความ = 06.00-18.00 จึงยังไม่ใส่",
+      "internal: goals จาก TrueID (ขอพรความสำเร็จ ความสุข การปกป้อง); ยังไม่มีภาพ",
+      "internal: photo status - ยังไม่มีภาพจาก Commons ที่ยืนยันได้ว่าเป็นสถานที่นี้"
+    ],
+    "sources": [
+      "https://travel.trueid.net/detail/azQdqv9ZL4jA",
+      "https://travel.trueid.net/detail/9mPRljJBeaL",
+      "https://www.openstreetmap.org/node/5402775121"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดจันทรังษี (หลวงพ่อสด)",
+    "nameEn": "Wat Chantharangsi, Ang Thong",
+    "slug": "wat-chantharangsi-ang-thong",
+    "type": "temple",
+    "deities": [
+      "หลวงพ่อสด จันทสโร (รูปหล่อโลหะ)",
+      "หลวงพ่อโยก"
+    ],
+    "goals": [
+      "health",
+      "money"
+    ],
+    "province": "อ่างทอง",
+    "district": "เมืองอ่างทอง",
+    "coords": "14.5645403, 100.4672127",
+    "description": "วัดในตำบลหัวไผ่ สร้างปี 2446 มีวิหารทรงจัตุรมุขยอดบุษบกสูง 48 เมตร ภายในประดิษฐานรูปหล่อหลวงพ่อสด วัดปากน้ำ หน้าตักกว้าง 6 เมตร 9 นิ้ว สูง 9 เมตร 9 นิ้ว คนนิยมมาขอพรให้สุขภาพแข็งแรงสดใส และมีเงินสดใช้ไม่ขาด",
+    "hours": "08.00-18.00 น.",
+    "offerings": [],
+    "howToPray": [
+      "ลูบฐานองค์หลวงพ่อสดแล้วอธิษฐาน"
+    ],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Ang_Thong_%282024%29_Wat_Chantharangsee_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%87%E0%B8%A9%E0%B8%B5_%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87_-_img_06.jpg/1280px-Ang_Thong_%282024%29_Wat_Chantharangsee_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%87%E0%B8%A9%E0%B8%B5_%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87_-_img_06.jpg",
+        "alt": "วัดจันทรังษี อ่างทอง",
+        "author": "Chainwit.",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ang_Thong_(2024)_Wat_Chantharangsee_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%87%E0%B8%A9%E0%B8%B5_%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87_-_img_06.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM way 1249176221 'วัดจันทรังษี' (Wikipedia ไม่มีพิกัด) ภาพ Commons มี GPS 14.564364, 100.467139 ใกล้กัน",
+      "internal: goals health/money จาก TrueID และ KTC เวลาเปิดจาก TrueID วิธีไหว้จาก KTC",
+      "internal: photo = Commons File:Ang Thong (2024) Wat Chantharangsee วัดจันทรังษี อ่างทอง - img 06.jpg (CC BY 4.0, Chainwit.) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%87%E0%B8%A9%E0%B8%B5_%28%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87%29",
+      "https://travel.trueid.net/detail/0WDB9JD1lX0m",
+      "https://www.ktc.co.th/article/travel-guide/thailand/places-to-make-wishes-with-auspiciousness"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดธรรมิกราช",
+    "nameEn": "Wat Thammikarat, Ayutthaya",
+    "slug": "wat-thammikarat-ayutthaya",
+    "type": "temple",
+    "deities": [
+      "หลวงพ่อขาว (พระประธานในพระอุโบสถ)",
+      "เศียรพระธรรมิกราชจำลอง",
+      "น้ำพระพุทธมนต์ในพระวิหาร"
+    ],
+    "goals": [
+      "health",
+      "money",
+      "protection"
+    ],
+    "province": "พระนครศรีอยุธยา",
+    "district": "พระนครศรีอยุธยา",
+    "coords": "14.3588356, 100.5616386",
+    "description": "อดีตพระอารามหลวงสมัยอยุธยา ติดกับพระราชวังโบราณและวัดพระศรีสรรเพชญ์ เดิมชื่อวัดมุขราช เป็นที่พบเศียรพระธรรมิกราช คนนิยมมาขอพรเรื่องสุขภาพ โชคลาภ และสะเดาะเคราะห์",
+    "hours": "08.00-16.30 น.",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Ayutthaya_-_Wat_Thammikarat_-_0002.jpg/1280px-Ayutthaya_-_Wat_Thammikarat_-_0002.jpg",
+        "alt": "วัดธรรมิกราช พระนครศรีอยุธยา",
+        "author": "Stefan Fussan",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ayutthaya_-_Wat_Thammikarat_-_0002.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM way 722877919 'วัดธรรมิกราช' ภาพ Commons มี GPS 14.358689, 100.561969 ตรงกัน",
+      "internal: goals health จาก TrueID ส่วน money/protection จาก KTC (โชคลาภ ปัดเป่าเคราะห์ เมตตา) เวลาเปิดจาก TrueID",
+      "internal: photo = Commons File:Ayutthaya - Wat Thammikarat - 0002.jpg (CC BY-SA 3.0, Stefan Fussan) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%8A",
+      "https://travel.trueid.net/detail/7j8XMkvY87zj",
+      "https://www.ktc.co.th/article/travel-guide/thailand/places-to-make-wishes-with-auspiciousness"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดหน้าพระเมรุราชิการาม",
+    "nameEn": "Wat Na Phra Men, Ayutthaya",
+    "slug": "wat-na-phra-men-ayutthaya",
+    "type": "temple",
+    "deities": [
+      "พระพุทธนิมิตวิชิตมารโมลีศรีสรรเพชญ์บรมไตรโลกนาถ (พระประธานทรงเครื่อง)"
+    ],
+    "goals": [
+      "career",
+      "study"
+    ],
+    "province": "พระนครศรีอยุธยา",
+    "district": "พระนครศรีอยุธยา",
+    "coords": "14.3628327, 100.5588113",
+    "description": "วัดย่านคลองสระบัว ในพระอุโบสถประดิษฐานพระประธานทรงเครื่องสำริดองค์ใหญ่ คนนิยมมาขอพรเรื่องการงาน การเรียน และสอบเข้ารับราชการ",
+    "hours": "08.00-17.00 น.",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Ubosot_of_Wat_Na_Phra_Men.jpg/1280px-Ubosot_of_Wat_Na_Phra_Men.jpg",
+        "alt": "พระอุโบสถวัดหน้าพระเมรุ พระนครศรีอยุธยา",
+        "author": "Supanut Arunoprayote",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ubosot_of_Wat_Na_Phra_Men.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM way 734477377 'วัดหน้าพระเมรุราชิการาม' ต.ท่าวาสุกรี",
+      "internal: ข้อมูลทั้งหมดจาก TrueID (5 พิกัดสายมูอยุธยา)",
+      "internal: photo = Commons File:Ubosot of Wat Na Phra Men.jpg (CC BY 4.0, Supanut Arunoprayote) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://travel.trueid.net/detail/7j8XMkvY87zj",
+      "https://www.openstreetmap.org/way/734477377"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วิหารพระมงคลบพิตร",
+    "nameEn": "Wihan Phra Mongkhon Bophit",
+    "slug": "wihan-phra-mongkhon-bophit-ayutthaya",
+    "type": "temple",
+    "deities": [
+      "พระมงคลบพิตร"
+    ],
+    "goals": [
+      "family",
+      "career"
+    ],
+    "province": "พระนครศรีอยุธยา",
+    "district": "พระนครศรีอยุธยา",
+    "coords": "14.3548474, 100.5577117",
+    "description": "วิหารริมถนนศรีสรรเพชญ์ ตำบลประตูชัย ประดิษฐานพระมงคลบพิตร พระพุทธรูปสำริดองค์ใหญ่สูงราว 12.45 เมตร คนนิยมมาขอลูกและขอพรให้ประสบความสำเร็จ",
+    "hours": "08.30-16.30 น.",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Wihan_Phra_Mongkhon_Bophit%2C_Ayutthaya%2C_Tailandia%2C_2013-08-23%2C_DD_01.jpg/1280px-Wihan_Phra_Mongkhon_Bophit%2C_Ayutthaya%2C_Tailandia%2C_2013-08-23%2C_DD_01.jpg",
+        "alt": "วิหารพระมงคลบพิตร พระนครศรีอยุธยา",
+        "author": "Diego Delso",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wihan_Phra_Mongkhon_Bophit,_Ayutthaya,_Tailandia,_2013-08-23,_DD_01.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM way 724700779 'วิหารพระมงคลบพิตร'",
+      "internal: goals และเวลาเปิดจาก TrueID (ขอลูก ความสำเร็จ); KTC บอกว่าเสริมบารมีและสิริมงคลทุกด้าน",
+      "internal: photo = Commons File:Wihan Phra Mongkhon Bophit, Ayutthaya, Tailandia, 2013-08-23, DD 01.jpg (CC BY-SA 3.0, Diego Delso) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://travel.trueid.net/detail/7j8XMkvY87zj",
+      "https://www.ktc.co.th/article/travel-guide/ayutthaya-auspicious-temples-start-a-new-year",
+      "https://www.openstreetmap.org/way/724700779"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดราชบูรณะ",
+    "nameEn": "Wat Ratchaburana, Ayutthaya",
+    "slug": "wat-ratchaburana-ayutthaya",
+    "type": "temple",
+    "deities": [
+      "พระปรางค์ประธานวัดราชบูรณะ"
+    ],
+    "goals": [
+      "money"
+    ],
+    "province": "พระนครศรีอยุธยา",
+    "district": "พระนครศรีอยุธยา",
+    "coords": "14.3587414, 100.5672924",
+    "description": "โบราณสถานในตำบลท่าวาสุกรี จุดเด่นคือพระปรางค์ประธาน เครื่องทองที่พบในกรุจัดแสดงอยู่ที่ห้องราชบูรณะในพิพิธภัณฑสถานแห่งชาติ คนนิยมมาไหว้ขอโชคลาภ",
+    "hours": "08.00-18.30 น.",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Ayutthaya_-_Wat_Ratchaburana_-_0032.jpg/1280px-Ayutthaya_-_Wat_Ratchaburana_-_0032.jpg",
+        "alt": "พระปรางค์วัดราชบูรณะ พระนครศรีอยุธยา",
+        "author": "Stefan Fussan",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ayutthaya_-_Wat_Ratchaburana_-_0032.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM way 79265224 'วัดราชบูรณะ' (tourism=attraction)",
+      "internal: ข้อมูลจาก TrueID; เป็นโบราณสถาน อาจมีค่าเข้าชม ควรเช็ก",
+      "internal: photo = Commons File:Ayutthaya - Wat Ratchaburana - 0032.jpg (CC BY-SA 3.0, Stefan Fussan) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://travel.trueid.net/detail/7j8XMkvY87zj",
+      "https://www.openstreetmap.org/way/79265224"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดมณีวงศ์",
+    "nameEn": "Wat Mani Wong, Nakhon Nayok",
+    "slug": "wat-mani-wong-nakhon-nayok",
+    "type": "temple",
+    "deities": [
+      "พระพุทธรูปปางป่าเลไลยก์จำลององค์ใหญ่",
+      "พญานาค 4 ตระกูล"
+    ],
+    "goals": [
+      "money"
+    ],
+    "province": "นครนายก",
+    "district": "เมืองนครนายก",
+    "coords": "14.1545549, 101.1866539",
+    "description": "วัดในตำบลดงละคร มีพระพุทธรูปปางป่าเลไลยก์จำลององค์ใหญ่ และรูปพญานาค 4 ตระกูลกว่า 1,400 ตน คนนิยมมาลอดบ่วงนาคบาศขอให้มีกินมีใช้ เหลือกินเหลือเก็บ",
+    "offerings": [],
+    "howToPray": [
+      "ลอดบ่วงนาคบาศให้ครบ 9 บ่วง"
+    ],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Nakhon_Nayok_-_Wat_Maniwong_Temple_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%93%E0%B8%B5%E0%B8%A7%E0%B8%87%E0%B8%A8%E0%B9%8C_%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81_%E0%B8%A0%E0%B8%B2%E0%B8%9E_01.jpg/1280px-Nakhon_Nayok_-_Wat_Maniwong_Temple_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%93%E0%B8%B5%E0%B8%A7%E0%B8%87%E0%B8%A8%E0%B9%8C_%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81_%E0%B8%A0%E0%B8%B2%E0%B8%9E_01.jpg",
+        "alt": "วัดมณีวงศ์ นครนายก",
+        "author": "Chainwit.",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nakhon_Nayok_-_Wat_Maniwong_Temple_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%93%E0%B8%B5%E0%B8%A7%E0%B8%87%E0%B8%A8%E0%B9%8C_%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81_%E0%B8%A0%E0%B8%B2%E0%B8%9E_01.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM node 5402775221 'วัดมณีวงศ์' ต.ดงละคร",
+      "internal: ข้อมูลจาก KTC; ยังไม่มีเวลาเปิด",
+      "internal: photo = Commons File:Nakhon Nayok - Wat Maniwong Temple วัดมณีวงศ์ จังหวัดนครนายก ภาพ 01.jpg (CC BY 4.0, Chainwit.) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://www.ktc.co.th/en/article/travel-guide/thailand/nakhon-nayok-temple",
+      "https://www.openstreetmap.org/node/5402775221"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดคีรีวัน",
+    "nameEn": "Wat Khiri Wan, Nakhon Nayok",
+    "slug": "wat-khiri-wan-nakhon-nayok",
+    "type": "temple",
+    "deities": [
+      "พระแก้วมรกตจำลององค์ใหญ่"
+    ],
+    "goals": [
+      "love",
+      "career",
+      "money"
+    ],
+    "province": "นครนายก",
+    "district": "เมืองนครนายก",
+    "coords": "14.2480165, 101.2756245",
+    "description": "วัดบนเนินเขาในตำบลศรีนาวา วิหารบนยอดประดิษฐานพระแก้วมรกตจำลองที่ว่ากันว่าใหญ่ที่สุดในโลก คนนิยมมาขอพรเรื่องความรัก การงาน โชคลาภ และความสำเร็จ",
+    "offerings": [],
+    "howToPray": [
+      "เข้าไปใกล้องค์พระแล้วกราบขอพร",
+      "บทความแนะนำให้มาช่วงวันเกิด เดือนเกิด หรือสงกรานต์"
+    ],
+    "howToRepayVow": [],
+    "images": [],
+    "notes": [
+      "internal: coords = OSM node 12300463779 'วัดคีรีวัน'",
+      "internal: ข้อมูลจาก KTC; ยังไม่มีเวลาเปิดและภาพ",
+      "internal: photo status - ยังไม่มีภาพจาก Commons ที่ยืนยันได้ว่าเป็นสถานที่นี้"
+    ],
+    "sources": [
+      "https://www.ktc.co.th/en/article/travel-guide/thailand/nakhon-nayok-temple",
+      "https://www.openstreetmap.org/node/12300463779"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดใหญ่ทักขิณาราม (วัดใหญ่ลาว)",
+    "nameEn": "Wat Yai Thakkhinaram, Nakhon Nayok",
+    "slug": "wat-yai-thakkhinaram-nakhon-nayok",
+    "type": "temple",
+    "deities": [
+      "หลวงพ่อปากแดง (พระประธานในพระอุโบสถ)"
+    ],
+    "goals": [
+      "love",
+      "career",
+      "money"
+    ],
+    "province": "นครนายก",
+    "district": "เมืองนครนายก",
+    "coords": "14.2114040, 101.2261130",
+    "description": "วัดในตำบลบ้านใหญ่ ตัวเมืองนครนายก ในพระอุโบสถประดิษฐานพระพุทธรูปที่คนเรียกว่าหลวงพ่อปากแดง คนนิยมมาขอพรเรื่องความรัก การงาน โชคลาภ และความสำเร็จ",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [],
+    "notes": [
+      "internal: coords = OSM way 1486089406 'วัดใหญ่ทักขิณาราม'",
+      "internal: KTC ฉบับภาษาอังกฤษเขียนชื่อพระประธานว่า Phra Phokphanyan ยังไม่รู้ชื่อไทยที่ถูกต้อง ควรเช็ก",
+      "internal: ยังไม่มีเวลาเปิดและภาพ",
+      "internal: photo status - ยังไม่มีภาพจาก Commons ที่ยืนยันได้ว่าเป็นสถานที่นี้"
+    ],
+    "sources": [
+      "https://www.ktc.co.th/en/article/travel-guide/thailand/nakhon-nayok-temple",
+      "https://www.openstreetmap.org/way/1486089406"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "อุทยานพระพิฆเนศ คลองเขื่อน",
+    "nameEn": "Khlong Khuean Ganesha Park",
+    "slug": "ganesha-park-khlong-khuean",
+    "type": "devalai",
+    "deities": [
+      "พระพิฆเนศปางยืน องค์สำริด"
+    ],
+    "goals": [
+      "career"
+    ],
+    "province": "ฉะเชิงเทรา",
+    "district": "คลองเขื่อน",
+    "coords": "13.7361621, 101.1749121",
+    "description": "อุทยานพระพิฆเนศในอำเภอคลองเขื่อน มีพระพิฆเนศปางยืนเนื้อสำริดองค์ใหญ่กลางธรรมชาติ คนนิยมมาขอพรให้ชีวิตประสบความสำเร็จและสมปรารถนา",
+    "hours": "06.00-18.00 น.",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ganesha_Park%2CChachoengsao_%282%29.jpg/1280px-Ganesha_Park%2CChachoengsao_%282%29.jpg",
+        "alt": "พระพิฆเนศปางยืน อุทยานพระพิฆเนศ คลองเขื่อน",
+        "author": "กสิณธร ราชโอรส",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ganesha_Park,Chachoengsao_(2).jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM node 5549282325 'Khlong Khuean Ganesh Park' (tourism=attraction) อ.คลองเขื่อน",
+      "internal: ข้อมูลและเวลาเปิดจาก TrueID; ความสูง 39 เมตรและปีเปิด 2564 มาจากผลค้นหาที่ยังไม่ได้เปิดอ่านต้นฉบับ จึงยังไม่ใส่",
+      "internal: ภาพอยู่ในหมวด Commons The Khlong Khuean Ganesh International Park (ถ่าย ธ.ค. 2560)",
+      "internal: photo = Commons File:Ganesha Park,Chachoengsao (2).jpg (CC BY-SA 4.0, กสิณธร ราชโอรส) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://travel.trueid.net/detail/azQdqv9ZL4jA",
+      "https://www.openstreetmap.org/node/5549282325"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดโลกโมฬี",
+    "nameEn": "Wat Lok Moli",
+    "slug": "wat-lok-moli-chiang-mai",
+    "type": "temple",
+    "deities": [
+      "พระนางจิรประภามหาเทวี"
+    ],
+    "goals": [
+      "love"
+    ],
+    "province": "เชียงใหม่",
+    "district": "เมืองเชียงใหม่",
+    "coords": "18.79621111, 98.98264167",
+    "description": "วัดเก่าแก่กว่า 500 ปีสมัยล้านนา ทางทิศเหนือของเมืองเชียงใหม่ ใกล้แจ่งหัวริน คนนิยมมาขอพรความรักกับพระนางจิรประภามหาเทวี ทั้งขอให้เจอคนที่ใช่และขอให้ความรักที่มีอยู่ยืนยาว",
+    "offerings": [],
+    "howToPray": [
+      "ขอเฉพาะเมื่อรักจริง ไม่ควรขอเล่น ๆ"
+    ],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Twilight_temple.jpg/1280px-Twilight_temple.jpg",
+        "alt": "วัดโลกโมฬี เชียงใหม่ ยามพลบค่ำ",
+        "author": "Wildwind8854",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Twilight_temple.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = Thai Wikipedia (18.79621111, 98.98264167)",
+      "internal: goal love จาก LG, KTC และ PPTV (พ.ค. 2569) LG ระบุเวลาเปิด 00:00-18:00 ซึ่งน่าจะผิด จึงยังไม่ใส่",
+      "internal: ภาพ 'Twilight temple.jpg' เป็นภาพหน้า Wikipedia ของวัด คำอธิบายภาพบน Commons ระบุ Wat Lok Moli รหัสโบราณสถาน 0003570",
+      "internal: photo = Commons File:Twilight temple.jpg (CC BY-SA 3.0, Wildwind8854) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B9%82%E0%B8%A1%E0%B8%AC%E0%B8%B5",
+      "https://www.lg.com/th/blog-list/recommend-place-to-pray-for-love/",
+      "https://www.ktc.co.th/article/travel-guide/thailand/recommended-popular-temples-in-chiang-mai",
+      "https://www.pptvhd36.com/travel/thailand/275134"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดเจ็ดยอด (วัดโพธารามมหาวิหาร)",
+    "nameEn": "Wat Chet Yot",
+    "slug": "wat-chet-yot-chiang-mai",
+    "type": "temple",
+    "deities": [
+      "พระประจำวันเกิด",
+      "พระเจดีย์เจ็ดยอด"
+    ],
+    "goals": [
+      "health",
+      "protection"
+    ],
+    "province": "เชียงใหม่",
+    "district": "เมืองเชียงใหม่",
+    "coords": "18.80908333, 98.97165",
+    "description": "พระอารามหลวงที่พระเจ้าติโลกราชโปรดให้สร้างปี 1998 เจดีย์ศิลาแลงจำลองแบบมหาโพธิวิหาร อินเดีย และเคยใช้ทำสังคายนาพระไตรปิฎกครั้งที่ 8 ของโลก คนนิยมมาไหว้พระประจำวันเกิดและร่วมพิธีสืบชะตา ขอพรต่ออายุ สะเดาะเคราะห์ และลดอุปสรรคในชีวิต",
+    "offerings": [],
+    "howToPray": [
+      "ไหว้พระประจำวันเกิด",
+      "ร่วมพิธีสืบชะตาแบบล้านนา"
+    ],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Wat_Chet_Yod_%28I%29.jpg/1280px-Wat_Chet_Yod_%28I%29.jpg",
+        "alt": "เจดีย์วัดเจ็ดยอด เชียงใหม่",
+        "author": "This Photo was taken by Supanut Arunoprayote.\n\nFeel free to use any of my images, but please mention me as the author and may send me a message.  (สามารถใช้ภาพได้อิสระ แต่กรุณาใส่เครดิตผู้ถ่ายและอาจส่งข้อความบอกกล่าวด้วย) \n\n\n\nPlease do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract.",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Chet_Yod_(I).jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = Thai Wikipedia (18.80908333, 98.97165) ภาพ Commons มี GPS 18.808788, 98.971703 ตรงกัน",
+      "internal: goals จาก PPTV (พ.ค. 2569); ยังไม่มีเวลาเปิดและวันจัดพิธีสืบชะตา",
+      "internal: photo = Commons File:Wat Chet Yod (I).jpg (CC BY 4.0, This Photo was taken by Supanut Arunoprayote.\n\nFeel free to use any of my images, but please mention me as the author and may send me a message.  (สามารถใช้ภาพได้อิสระ แต่กรุณาใส่เครดิตผู้ถ่ายและอาจส่งข้อความบอกกล่าวด้วย) \n\n\n\nPlease do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract.) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%94%E0%B8%A2%E0%B8%AD%E0%B8%94",
+      "https://www.pptvhd36.com/travel/thailand/275134"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดอุโมงค์ (สวนพุทธธรรม)",
+    "nameEn": "Wat Umong",
+    "slug": "wat-umong-chiang-mai",
+    "type": "temple",
+    "deities": [
+      "พระพุทธรูปในอุโมงค์"
+    ],
+    "goals": [
+      "health"
+    ],
+    "province": "เชียงใหม่",
+    "district": "เมืองเชียงใหม่",
+    "coords": "18.782837, 98.951132",
+    "description": "วัดเก่าแก่เชิงดอยสุเทพที่พญามังรายโปรดให้สร้าง มีอุโมงค์โบราณประดิษฐานพระพุทธรูป บรรยากาศร่มรื่นเหมาะกับสายสมาธิ คนนิยมมาขอพรเรื่องสุขภาพใจ การปล่อยวาง และฮีลใจ",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Wat_Umong_%28I%29.jpg/1280px-Wat_Umong_%28I%29.jpg",
+        "alt": "เจดีย์วัดอุโมงค์ สวนพุทธธรรม เชียงใหม่",
+        "author": "This Photo was taken by Supanut Arunoprayote.\n\nFeel free to use any of my images, but please mention me as the author and may send me a message.  (สามารถใช้ภาพได้อิสระ แต่กรุณาใส่เครดิตผู้ถ่ายและอาจส่งข้อความบอกกล่าวด้วย) \n\n\n\nPlease do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract.",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Umong_(I).jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = Thai Wikipedia (18.782837, 98.951132) ภาพ Commons มี GPS ตรงกัน",
+      "internal: goal health จาก PPTV (สุขภาพใจ ปล่อยวาง) เป็นสุขภาพใจ ไม่ใช่ขอหายป่วย",
+      "internal: ปี 2567 กรมศิลปากรบูรณะรูปปั้นโบราณจนเป็นข่าว (Wikipedia); ยังไม่มีเวลาเปิด",
+      "internal: photo = Commons File:Wat Umong (I).jpg (CC BY 4.0, This Photo was taken by Supanut Arunoprayote.\n\nFeel free to use any of my images, but please mention me as the author and may send me a message.  (สามารถใช้ภาพได้อิสระ แต่กรุณาใส่เครดิตผู้ถ่ายและอาจส่งข้อความบอกกล่าวด้วย) \n\n\n\nPlease do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract.) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B9%82%E0%B8%A1%E0%B8%87%E0%B8%84%E0%B9%8C_%28%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%29",
+      "https://www.pptvhd36.com/travel/thailand/275134",
+      "https://www.ktc.co.th/article/travel-guide/thailand/recommended-popular-temples-in-chiang-mai"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดเชียงมั่น",
+    "nameEn": "Wat Chiang Man",
+    "slug": "wat-chiang-man-chiang-mai",
+    "type": "temple",
+    "deities": [
+      "พระเสตังคมณี (พระแก้วขาว)",
+      "พระศิลา"
+    ],
+    "goals": [
+      "family",
+      "protection"
+    ],
+    "province": "เชียงใหม่",
+    "district": "เมืองเชียงใหม่",
+    "coords": "18.7935584, 98.9893792",
+    "description": "วัดที่มีประวัติยาวนานคู่การสร้างเมืองเชียงใหม่ ในพระวิหารประดิษฐานพระเสตังคมณี (พระแก้วขาว) และพระศิลาปางปราบช้างนาฬาคีรี ชื่อวัดเป็นมงคล คนนิยมมาขอพรเรื่องความมั่นคง ครอบครัว และความปลอดภัย",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Wat_Chiang_Man_%28I%29.jpg/1280px-Wat_Chiang_Man_%28I%29.jpg",
+        "alt": "วัดเชียงมั่น เชียงใหม่",
+        "author": "This Photo was taken by Supanut Arunoprayote.\n\nFeel free to use any of my images, but please mention me as the author and may send me a message.  (สามารถใช้ภาพได้อิสระ แต่กรุณาใส่เครดิตผู้ถ่ายและอาจส่งข้อความบอกกล่าวด้วย) \n\n\n\nPlease do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract.",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Chiang_Man_(I).jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM way 98070869 'วัดเชียงมั่น' ภาพ Commons มี GPS 18.793782, 98.989388 ตรงกัน",
+      "internal: goals จาก PPTV (ความมั่นคง ครอบครัว ความปลอดภัย); ยังไม่มีเวลาเปิด",
+      "internal: photo = Commons File:Wat Chiang Man (I).jpg (CC BY 4.0, This Photo was taken by Supanut Arunoprayote.\n\nFeel free to use any of my images, but please mention me as the author and may send me a message.  (สามารถใช้ภาพได้อิสระ แต่กรุณาใส่เครดิตผู้ถ่ายและอาจส่งข้อความบอกกล่าวด้วย) \n\n\n\nPlease do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract.) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%A1%E0%B8%B1%E0%B9%88%E0%B8%99",
+      "https://www.pptvhd36.com/travel/thailand/275134"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดศรีสุพรรณ (อุโบสถเงิน)",
+    "nameEn": "Wat Sri Suphan (Silver Temple)",
+    "slug": "wat-sri-suphan-chiang-mai",
+    "type": "temple",
+    "deities": [
+      "อุโบสถเงิน"
+    ],
+    "goals": [
+      "money",
+      "career"
+    ],
+    "province": "เชียงใหม่",
+    "district": "เมืองเชียงใหม่",
+    "coords": "18.7785379, 98.9833197",
+    "description": "วัดในตำบลหายยา ย่านถนนวัวลาย ขึ้นชื่อเรื่องอุโบสถเงิน คนนิยมมาขอพรเรื่องการเงิน เสริมบารมี ความคิดสร้างสรรค์ และงานศิลปะ",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Silver_Temple_in_Chiang_Mai.jpg/1280px-Silver_Temple_in_Chiang_Mai.jpg",
+        "alt": "อุโบสถเงิน วัดศรีสุพรรณ เชียงใหม่",
+        "author": "Justraveling.com",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Silver_Temple_in_Chiang_Mai.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM way 309886989 'วัดศรีสุพรรณ'",
+      "internal: goals และเรื่องอุโบสถเงินจาก PPTV",
+      "internal: ไม่ได้ใส่เวลาเปิดและข้อห้ามสำหรับผู้หญิงในอุโบสถ ควรเช็กก่อนเผยแพร่",
+      "internal: photo = Commons File:Silver Temple in Chiang Mai.jpg (CC BY-SA 4.0, Justraveling.com) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93_%28%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%29",
+      "https://www.pptvhd36.com/travel/thailand/275134"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดอุปคุต",
+    "nameEn": "Wat Upakhut, Chiang Mai",
+    "slug": "wat-upakhut-chiang-mai",
+    "type": "temple",
+    "deities": [
+      "พระอุปคุต"
+    ],
+    "goals": [
+      "protection"
+    ],
+    "province": "เชียงใหม่",
+    "district": "เมืองเชียงใหม่",
+    "coords": "18.7875334, 99.0013447",
+    "description": "วัดที่ตั้งชื่อตามพระอุปคุต ตั้งวัดเมื่อปี 2300 มีประเพณีใส่บาตรเที่ยงคืนวันเป็งปุ๊ด ตามความเชื่อว่าพระอุปคุตจะปลอมเป็นสามเณรมาบิณฑบาต คนนิยมมาขอพรให้ชีวิตราบรื่น ไม่เจออุปสรรคหนัก ๆ",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Chiang_Mai_-_Wat_Up_Khut_-_0005.jpg/1280px-Chiang_Mai_-_Wat_Up_Khut_-_0005.jpg",
+        "alt": "วัดอุปคุต เชียงใหม่",
+        "author": "Stefan Fussan",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chiang_Mai_-_Wat_Up_Khut_-_0005.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM way 495778859 'วัดอุปคุต' ถนนท่าแพ ภาพ Commons มี GPS 18.787238, 99.001380 ตรงกัน",
+      "internal: Wikipedia บอกตำบลช้างคลาน แต่ OSM อยู่ในตำบลช้างม่อย ควรเช็ก",
+      "internal: goal จาก PPTV",
+      "internal: photo = Commons File:Chiang Mai - Wat Up Khut - 0005.jpg (CC BY-SA 3.0, Stefan Fussan) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%84%E0%B8%B8%E0%B8%95",
+      "https://www.pptvhd36.com/travel/thailand/275134"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดป่าแดด",
+    "nameEn": "Wat Pa Daet, Chiang Mai",
+    "slug": "wat-pa-daet-chiang-mai",
+    "type": "temple",
+    "deities": [
+      "พระพุทธรูปเก่าแก่ในวัด",
+      "เครื่องรางของขลังล้านนา"
+    ],
+    "goals": [
+      "money",
+      "career",
+      "business"
+    ],
+    "province": "เชียงใหม่",
+    "district": "เมืองเชียงใหม่",
+    "coords": "18.7516251, 98.9856682",
+    "description": "วัดในตำบลป่าแดด อำเภอเมืองเชียงใหม่ มีชื่อเรื่องเครื่องรางของขลังล้านนา คนนิยมมาขอพรเรื่องการเงิน ความสำเร็จ ปลดหนี้ และค้าขายเมตตามหานิยม",
+    "offerings": [],
+    "howToPray": [
+      "นั่งสงบใจสักครู่แล้วอธิษฐาน"
+    ],
+    "howToRepayVow": [],
+    "images": [],
+    "notes": [
+      "internal: coords = OSM way 38487630 'วัดป่าแดด' ต.ป่าแดด อ.เมืองเชียงใหม่ (KTC ระบุตำบลป่าแดด อำเภอเมือง จึงไม่ใช่วัดป่าแดดที่สันทรายหรือสันป่าตอง)",
+      "internal: goals จาก KTC + PPTV; ยังไม่มีเวลาเปิดและภาพ",
+      "internal: photo status - ยังไม่มีภาพจาก Commons ที่ยืนยันได้ว่าเป็นสถานที่นี้"
+    ],
+    "sources": [
+      "https://www.ktc.co.th/article/travel-guide/thailand/places-to-make-wishes-with-auspiciousness",
+      "https://www.pptvhd36.com/travel/thailand/275134",
+      "https://www.openstreetmap.org/way/38487630"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "ลานพญาศรีสัตตนาคราช",
+    "nameEn": "Phaya Si Sattanakharat, Nakhon Phanom",
+    "slug": "phaya-si-sattanakharat-nakhon-phanom",
+    "type": "shrine",
+    "deities": [
+      "พญาศรีสัตตนาคราช"
+    ],
+    "goals": [
+      "money"
+    ],
+    "province": "นครพนม",
+    "district": "เมืองนครพนม",
+    "coords": "17.3993347, 104.7904878",
+    "description": "องค์พญานาคทองเหลืองริมแม่น้ำโขง ถนนสุนทรวิจิตร หน้าสำนักงานป่าไม้ หนัก 9,000 กิโลกรัม สูงรวมฐาน 15 เมตร คนนิยมมาขอพรและบนบาน โดยเฉพาะเรื่องโชคลาภ เงินทอง และความร่ำรวย",
+    "hours": "เข้าชมได้ตลอดวัน",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [],
+    "notes": [
+      "internal: coords = OSM node 5813049354 'พญาศรีสัตตนาคราช' (historic=monument, height=15)",
+      "internal: goal money จาก Matichon (ขอโชคลาภ) และ KTC (โชคลาภ เงินทอง ความร่ำรวย); เวลาเปิดจาก TrueID",
+      "internal: type shrine เพราะเป็นลานองค์พญานาค ไม่ใช่วัด; ยังไม่มีภาพ",
+      "internal: photo status - ยังไม่มีภาพจาก Commons ที่ยืนยันได้ว่าเป็นสถานที่นี้"
+    ],
+    "sources": [
+      "https://travel.trueid.net/detail/zWkZq4j00YNO",
+      "https://www.matichon.co.th/clips/news_732008",
+      "https://www.ktc.co.th/article/travel-stories/thailand/th/sacred-sites-issan"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดมัชฌิมาวาส (หลวงพ่อนาค)",
+    "nameEn": "Wat Matchimawat, Udon Thani",
+    "slug": "wat-matchimawat-udon-thani",
+    "type": "temple",
+    "deities": [
+      "หลวงพ่อนาค"
+    ],
+    "goals": [
+      "love"
+    ],
+    "province": "อุดรธานี",
+    "district": "เมืองอุดรธานี",
+    "coords": "17.4154537, 102.7904284",
+    "description": "วัดกลางเมืองอุดรธานีที่กรมหลวงประจักษ์ศิลปาคมทรงสร้าง เดิมชื่อวัดโนนหมากแข้ง ทรงตั้งชื่อให้เป็นวัดของประชาชนทุกคน หลวงพ่อนาคในวัดขึ้นชื่อเรื่องขอพรให้ความรักมั่นคงยั่งยืน",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Udon_Thani_-_Wat_Matchimawat_-_0006.jpg/1280px-Udon_Thani_-_Wat_Matchimawat_-_0006.jpg",
+        "alt": "วัดมัชฌิมาวาส อุดรธานี",
+        "author": "Stefan Fussan",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Udon_Thani_-_Wat_Matchimawat_-_0006.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM way 1344567149 'วัดมัชฌิมาวาส' ภาพ Commons มี GPS 17.415517, 102.790963 ตรงกัน",
+      "internal: goal love จาก Matichon (ปี 2559 ค่อนข้างเก่า) ควรเช็กว่ายังเป็นที่นิยม; ยังไม่มีเวลาเปิด",
+      "internal: photo = Commons File:Udon Thani - Wat Matchimawat - 0006.jpg (CC BY-SA 3.0, Stefan Fussan) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%B1%E0%B8%8A%E0%B8%8C%E0%B8%B4%E0%B8%A1%E0%B8%B2%E0%B8%A7%E0%B8%B2%E0%B8%AA_%28%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A3%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5%29",
+      "https://www.matichon.co.th/lifestyle/news_35064"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "ถ้ำนาคี (อุทยานแห่งชาติภูลังกา)",
+    "nameEn": "Tham Nakhi, Phu Langka National Park",
+    "slug": "tham-nakhi-phu-langka",
+    "type": "shrine",
+    "deities": [
+      "พญานาค"
+    ],
+    "goals": [
+      "money",
+      "business",
+      "career"
+    ],
+    "province": "นครพนม",
+    "district": "บ้านแพง",
+    "coords": "17.9856453, 104.1273643",
+    "description": "ถ้ำในอุทยานแห่งชาติภูลังกา ฝั่งอำเภอบ้านแพง ผูกกับตำนานว่าเป็นที่บำเพ็ญเพียรของพญานาค ต้องเดินขึ้นเขาเล็กน้อยจากจุดลงรถ คนนิยมมาขอพรเรื่องโชคลาภ ค้าขาย การงาน และความสำเร็จ",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [],
+    "notes": [
+      "internal: coords = OSM node 9368651627 'ถ้ำนาคี' (natural=cave_entrance) อ.บ้านแพง จ.นครพนม",
+      "internal: ไม่ใช่ถ้ำนาคา (บึงกาฬ) ซึ่งเป็นอีกถ้ำในอุทยานเดียวกัน",
+      "internal: type shrine เพราะเป็นถ้ำ/จุดสักการะในอุทยาน ไม่ใช่วัด; ควรเช็กเวลาเปิด การจองคิว และค่าเข้าอุทยาน; ยังไม่มีภาพ",
+      "internal: photo status - ยังไม่มีภาพจาก Commons ที่ยืนยันได้ว่าเป็นสถานที่นี้"
+    ],
+    "sources": [
+      "https://www.ktc.co.th/article/travel-stories/thailand/th/sacred-sites-issan",
+      "https://www.openstreetmap.org/node/9368651627"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดพระทอง (วัดพระผุด)",
+    "nameEn": "Wat Phra Thong, Thalang",
+    "slug": "wat-phra-thong-phuket",
+    "type": "temple",
+    "deities": [
+      "พระผุด (พระพุทธรูปโผล่จากดินครึ่งองค์)"
+    ],
+    "goals": [
+      "money",
+      "protection"
+    ],
+    "province": "ภูเก็ต",
+    "district": "ถลาง",
+    "coords": "8.0344125, 98.3373150",
+    "description": "วัดในตำบลเทพกระษัตรี ตั้งวัดเมื่อปี 2328 ประดิษฐานพระผุด พระพุทธรูปโบราณที่โผล่จากพื้นดินครึ่งองค์ มีเรื่องเล่าว่าทัพพระเจ้าปดุงพยายามขุดไปแต่ทำไม่สำเร็จ คนนิยมมาขอพรเรื่องโชคลาภและให้แคล้วคลาดปลอดภัย",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%AD%E0%B8%87_%E0%B8%AD.%E0%B8%96%E0%B8%A5%E0%B8%B2%E0%B8%87_%E0%B8%88.%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95_%283%29.jpg/1280px-%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%AD%E0%B8%87_%E0%B8%AD.%E0%B8%96%E0%B8%A5%E0%B8%B2%E0%B8%87_%E0%B8%88.%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95_%283%29.jpg",
+        "alt": "วัดพระทอง อำเภอถลาง ภูเก็ต",
+        "author": "กสิณธร ราชโอรส",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:(2024)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%AD%E0%B8%87_%E0%B8%AD.%E0%B8%96%E0%B8%A5%E0%B8%B2%E0%B8%87_%E0%B8%88.%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95_(3).jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM way 319652601 'วัดพระทอง' (Wikipedia ไม่มีพิกัด)",
+      "internal: goals จาก Trip.com (โชคลาภ แคล้วคลาด) ควรหาแหล่งไทยอีกแห่งยืนยัน; ยังไม่มีเวลาเปิด",
+      "internal: photo = Commons File:(2024) วัดพระทอง อ.ถลาง จ.ภูเก็ต (3).jpg (CC BY-SA 4.0, กสิณธร ราชโอรส) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%AD%E0%B8%87",
+      "https://th.trip.com/guide/attraction/temples-in-phuket.html"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดศรีสุนทร",
+    "nameEn": "Wat Si Sunthon, Thalang",
+    "slug": "wat-si-sunthon-phuket",
+    "type": "temple",
+    "deities": [
+      "พระพุทธไสยาสน์องค์ใหญ่"
+    ],
+    "goals": [
+      "health",
+      "protection"
+    ],
+    "province": "ภูเก็ต",
+    "district": "ถลาง",
+    "coords": "7.9899628, 98.3548394",
+    "description": "วัดเก่าในตำบลศรีสุนทร เดิมชื่อวัดบ้านพอน สร้างเมื่อปี 2335 จุดเด่นคือพระนอนองค์ใหญ่สีทอง คนนิยมมาขอพรเรื่องสุขภาพ สะเดาะเคราะห์ และเสริมดวง",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [],
+    "notes": [
+      "internal: coords = OSM node 5424020124 'Wat Sri Sunthon' ต.ศรีสุนทร อ.ถลาง (Wikipedia ไม่มีพิกัด)",
+      "internal: goals จาก Trip.com; ยังไม่มีเวลาเปิด",
+      "internal: ภาพ 'Reclining Buddha statue in Phuket.jpg' เป็นภาพหน้า Wikipedia ของวัดนี้ Commons ไม่มีช่องผู้สร้างแบบอ่านด้วยเครื่อง คำอธิบายเดิมจาก vi.wikipedia ระบุว่าผู้ถ่ายคือ Michael Janich (ภาพปี 2547 ความละเอียด 2560px อยู่ในหมวด Wat Si Sunthon, Phuket) ควรหาภาพใหม่กว่านี้",
+      "internal: photo = Commons File:Reclining Buddha statue in Phuket.jpg (CC BY-SA 3.0, Michael Janich) license เช็กผ่าน Commons API 2026-10-19",
+      "เอาภาพ Commons ปี 2004 ออก เพราะชื่อผู้ถ่ายมีแค่ในคำบรรยายที่คัดมาจากวิกิพีเดียภาษาเวียดนาม ยืนยันเครดิตไม่ได้ ควรหาภาพใหม่"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%97%E0%B8%A3_%28%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95%29",
+      "https://th.trip.com/guide/attraction/temples-in-phuket.html"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดเขารังสามัคคีธรรม",
+    "nameEn": "Wat Khao Rang, Phuket",
+    "slug": "wat-khao-rang-phuket",
+    "type": "temple",
+    "deities": [
+      "พระพุทธรูปองค์ใหญ่สีทอง"
+    ],
+    "goals": [
+      "career"
+    ],
+    "province": "ภูเก็ต",
+    "district": "เมืองภูเก็ต",
+    "coords": "7.8938451, 98.3816902",
+    "description": "วัดบนเขารัง ตำบลรัษฎา ใกล้ตัวเมืองภูเก็ต มีพระพุทธรูปองค์ใหญ่สีทองและบันไดนาค คนนิยมมาขอพรเรื่องความก้าวหน้า การงาน และความสำเร็จ",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Wat_Khao_Rang_Samakkhitham.jpg/1280px-Wat_Khao_Rang_Samakkhitham.jpg",
+        "alt": "วัดเขารังสามัคคีธรรม ภูเก็ต",
+        "author": "Christophe95",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Khao_Rang_Samakkhitham.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM node 4325646889 'วัดเขารัง' ต.รัษฎา อ.เมืองภูเก็ต",
+      "internal: ข้อมูลจาก Trip.com อย่างเดียว ควรหาแหล่งไทยยืนยันชื่อเต็มของวัดและพระพุทธรูป",
+      "internal: photo = Commons File:Wat Khao Rang Samakkhitham.jpg (CC BY-SA 4.0, Christophe95) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.trip.com/guide/attraction/temples-in-phuket.html",
+      "https://www.openstreetmap.org/node/4325646889"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดมงคลนิมิตร (วัดกลาง)",
+    "nameEn": "Wat Mongkhon Nimit, Phuket Town",
+    "slug": "wat-mongkhon-nimit-phuket",
+    "type": "temple",
+    "deities": [
+      "พระประธานในพระอุโบสถ"
+    ],
+    "goals": [
+      "study",
+      "career",
+      "money"
+    ],
+    "province": "ภูเก็ต",
+    "district": "เมืองภูเก็ต",
+    "coords": "7.8863342, 98.3890937",
+    "description": "พระอารามหลวงชั้นตรีกลางเมืองเก่าภูเก็ต ถนนดีบุก คนทั่วไปเรียกว่าวัดกลาง คนนิยมมาขอพรเรื่องการเรียน การงาน และโชคลาภ",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Wat_Mongkhon_Nimit_Phuket_City.jpg/1280px-Wat_Mongkhon_Nimit_Phuket_City.jpg",
+        "alt": "วัดมงคลนิมิตร เมืองภูเก็ต",
+        "author": "Eustaquio Santimano",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Mongkhon_Nimit_Phuket_City.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM node 702197108 'วัดมงคลนิมิตร' ถนนดีบุก (Wikipedia ไม่มีพิกัด)",
+      "internal: goals จาก Trip.com; deities ใส่กว้าง ๆ เพราะยังไม่รู้ชื่อพระประธาน ควรเช็ก; ยังไม่มีเวลาเปิด",
+      "internal: photo = Commons File:Wat Mongkhon Nimit Phuket City.jpg (CC BY 2.0, Eustaquio Santimano) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%87%E0%B8%84%E0%B8%A5%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3_%28%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95%29",
+      "https://th.trip.com/guide/attraction/temples-in-phuket.html"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดพระนางสร้าง",
+    "nameEn": "Wat Phra Nang Sang, Thalang",
+    "slug": "wat-phra-nang-sang-phuket",
+    "type": "temple",
+    "deities": [
+      "พระพุทธรูปโบราณในพระอุโบสถ"
+    ],
+    "goals": [
+      "protection"
+    ],
+    "province": "ภูเก็ต",
+    "district": "ถลาง",
+    "coords": "8.0266350, 98.3325330",
+    "description": "วัดเก่าแก่ในตำบลเทพกระษัตรี ตั้งวัดเมื่อปี 2301 ผูกกับตำนานพระนางเลือดขาว มีพระพุทธรูปโบราณและพระเครื่องที่มีชื่อเสียง คนนิยมมาขอพรให้คุ้มครอง แคล้วคลาด และปลอดภัย",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87_%E0%B8%AD.%E0%B8%96%E0%B8%A5%E0%B8%B2%E0%B8%87_%E0%B8%88.%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95_%2841%29.jpg/1280px-%282024%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87_%E0%B8%AD.%E0%B8%96%E0%B8%A5%E0%B8%B2%E0%B8%87_%E0%B8%88.%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95_%2841%29.jpg",
+        "alt": "วัดพระนางสร้าง อำเภอถลาง ภูเก็ต",
+        "author": "กสิณธร ราชโอรส",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:(2024)_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87_%E0%B8%AD.%E0%B8%96%E0%B8%A5%E0%B8%B2%E0%B8%87_%E0%B8%88.%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95_(41).jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM node 4575295522 'วัดพระนางสร้าง' (Wikipedia ไม่มีพิกัด)",
+      "internal: goal จาก Trip.com; ยังไม่มีเวลาเปิด",
+      "internal: photo = Commons File:(2024) วัดพระนางสร้าง อ.ถลาง จ.ภูเก็ต (41).jpg (CC BY-SA 4.0, กสิณธร ราชโอรส) license เช็กผ่าน Commons API 2026-10-19"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87",
+      "https://th.trip.com/guide/attraction/temples-in-phuket.html"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดไพศาลสถิตย์ (หลวงพ่อปากแดง)",
+    "nameEn": "Wat Phaisan Sathit, Nakhon Si Thammarat",
+    "slug": "wat-phaisan-sathit-nakhon-si-thammarat",
+    "type": "temple",
+    "deities": [
+      "หลวงพ่อปากแดง"
+    ],
+    "goals": [
+      "love"
+    ],
+    "province": "นครศรีธรรมราช",
+    "district": "เมืองนครศรีธรรมราช",
+    "coords": "8.5932857, 99.9557743",
+    "description": "วัดในตำบลปากพูน ประดิษฐานหลวงพ่อปากแดง จุดเด่นคือรากต้นไทรที่ชอนไชคลุมโบสถ์ สายมูที่อยากขอพรเรื่องความรักนิยมมาไหว้ที่นี่",
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [],
+    "notes": [
+      "internal: coords = OSM node 6402024686 (ชื่อใน OSM สะกดว่า 'ดไพศาลสถิตย์' ต.ปากพูน) ควรเช็กตำแหน่งอีกครั้ง",
+      "internal: ข้อมูลจาก Wongnai; ยังไม่มีเวลาเปิดและภาพ",
+      "internal: photo status - ยังไม่มีภาพจาก Commons ที่ยืนยันได้ว่าเป็นสถานที่นี้"
+    ],
+    "sources": [
+      "https://www.wongnai.com/listings/temples-nakhonsithammarat",
+      "https://www.openstreetmap.org/node/6402024686"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  }
+]
