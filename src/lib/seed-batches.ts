@@ -6,6 +6,7 @@ import shrines01 from '@data/import/places-shrines-batch-01.json';
 import places02 from '@data/import/places-batch-02.json';
 import places03 from '@data/import/places-batch-03.json';
 import places04 from '@data/import/places-batch-04.json';
+import places05 from '@data/import/places-batch-05.json';
 import shirts01 from '@data/import/products-shirts-batch-01.json';
 import tellers02 from '@data/import/fortune-tellers-batch-02.json';
 import tellers03 from '@data/import/fortune-tellers-batch-03.json';
@@ -32,6 +33,7 @@ export const SEED_BATCHES: SeedBatch[] = [
   { id: 'places-shrines-batch-01', kind: 'places', label: 'ศาลเจ้าทั่วไทย 86 แห่ง (50 จังหวัด)', data: shrines01 },
   { id: 'places-batch-03', kind: 'places', label: 'ศาลหลักเมืองที่ยังขาด + ศาลท้องถิ่น ชุด 3: 44 แห่ง', data: places03 },
   { id: 'places-batch-04', kind: 'places', label: 'ศาลหลักเมืองมีนบุรี (พิกัดจากเจ้าของ)', data: places04 },
+  { id: 'places-batch-05', kind: 'places', label: 'สถานที่ชุด 5: 47 แห่ง (เทวาลัย วัดไหว้พระราหู ท้าวเวสสุวรรณ พญานาค)', data: places05 },
   { id: 'products-shirts-batch-01', kind: 'products', label: 'เสื้อ YUEDPAO 12 ตัว ครบ 8 สีทักษา (สีเสื้อมงคล)', data: shirts01 },
   { id: 'fortune-tellers-batch-01', kind: 'fortune_tellers', label: 'หมอดูไพ่ทาโรต์ออนไลน์ 10 คน', data: tellers01 },
   { id: 'fortune-tellers-batch-02', kind: 'fortune_tellers', label: 'หมอดูชุด 2: 59 คน ครบทุกศาสตร์ (โหร ซินแส เลข ลายมือ ไพ่)', data: tellers02 },
