@@ -1,5 +1,6 @@
 import places01 from '@data/import/places-batch-01.json';
 import abroad01 from '@data/import/places-abroad-batch-01.json';
+import abroad02 from '@data/import/places-abroad-batch-02.json';
 import tellers01 from '@data/import/fortune-tellers-batch-01.json';
 import shrines01 from '@data/import/places-shrines-batch-01.json';
 import places02 from '@data/import/places-batch-02.json';
@@ -26,6 +27,7 @@ export interface SeedBatch {
 export const SEED_BATCHES: SeedBatch[] = [
   { id: 'places-batch-01', kind: 'places', label: 'สถานที่ชุดแรก 8 แห่ง', data: places01 },
   { id: 'places-abroad-batch-01', kind: 'places', label: 'ต่างประเทศ: ญี่ปุ่น ฮ่องกง ไต้หวัน 9 แห่ง', data: abroad01 },
+  { id: 'places-abroad-batch-02', kind: 'places', label: 'ต่างประเทศชุด 2: 32 แห่ง 10 ประเทศ (เพิ่มสิงคโปร์ เมียนมา ลาว อินเดีย จีน เกาหลี มาเลเซีย)', data: abroad02 },
   { id: 'places-batch-02', kind: 'places', label: 'วัดและศาลทั่วไทยชุด 2: 117 แห่ง ครบ 77 จังหวัด', data: places02 },
   { id: 'places-shrines-batch-01', kind: 'places', label: 'ศาลเจ้าทั่วไทย 86 แห่ง (50 จังหวัด)', data: shrines01 },
   { id: 'places-batch-03', kind: 'places', label: 'ศาลหลักเมืองที่ยังขาด + ศาลท้องถิ่น ชุด 3: 44 แห่ง', data: places03 },
