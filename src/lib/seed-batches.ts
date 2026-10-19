@@ -8,6 +8,7 @@ import places04 from '@data/import/places-batch-04.json';
 import shirts01 from '@data/import/products-shirts-batch-01.json';
 import tellers02 from '@data/import/fortune-tellers-batch-02.json';
 import tellers03 from '@data/import/fortune-tellers-batch-03.json';
+import tellers04 from '@data/import/fortune-tellers-batch-04.json';
 import type { DirectoryKind } from '@/lib/directory-repo';
 
 /**
@@ -33,6 +34,7 @@ export const SEED_BATCHES: SeedBatch[] = [
   { id: 'fortune-tellers-batch-01', kind: 'fortune_tellers', label: 'หมอดูไพ่ทาโรต์ออนไลน์ 10 คน', data: tellers01 },
   { id: 'fortune-tellers-batch-02', kind: 'fortune_tellers', label: 'หมอดูชุด 2: 59 คน ครบทุกศาสตร์ (โหร ซินแส เลข ลายมือ ไพ่)', data: tellers02 },
   { id: 'fortune-tellers-batch-03', kind: 'fortune_tellers', label: 'หมอดูชุด 3: 3 คน (ตรวจจากรายชื่อ Horoworld)', data: tellers03 },
+  { id: 'fortune-tellers-batch-04', kind: 'fortune_tellers', label: 'หมอดูชุด 4: 27 คน (โหราศาสตร์ไทย ปาจื้อ ลายมือ โหงวเฮ้ง ตั้งชื่อ ฯลฯ)', data: tellers04 },
 ];
 
 export const getSeedBatch = (id: string) => SEED_BATCHES.find((b) => b.id === id);
