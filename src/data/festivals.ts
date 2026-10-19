@@ -1,4 +1,6 @@
 import type { GoalSlug } from '@/lib/goals';
+import { CHINESE_DAY_FESTIVALS } from './festivals-chinese-days';
+import { HINDU_DAY_FESTIVALS } from './festivals-hindu-days';
 
 /**
  * เทศกาล: URL ไม่มีปี (/festival/[slug]) เนื้อหาอัปเดตทุกปี
@@ -2512,4 +2514,7 @@ export const FESTIVALS: Festival[] = [
       ]
     }
   },
+  // วันไหว้เทพรายปีที่เล็กกว่า แยกไฟล์ไว้ไม่ให้ไฟล์นี้ยาวเกินไป
+  ...CHINESE_DAY_FESTIVALS,
+  ...HINDU_DAY_FESTIVALS,
 ];
