@@ -1,0 +1,1356 @@
+[
+  {
+    "name": "วัดเซนโซจิ (Senso-ji)",
+    "nameEn": "Senso-ji",
+    "slug": "sensoji",
+    "type": "temple",
+    "deities": [
+      "พระโพธิสัตว์กวนอิม (คันนง)"
+    ],
+    "goals": [
+      "health"
+    ],
+    "country": "JP",
+    "city": "โตเกียว",
+    "district": "อาซากุสะ",
+    "coords": "35.71472, 139.79675",
+    "description": "วัดที่เก่าแก่ที่สุดในโตเกียว ย่านอาซากุสะ บูชาพระโพธิสัตว์กวนอิม ตามตำนานเริ่มจากชาวประมงพบรูปเคารพกวนอิมในแม่น้ำสุมิดะเมื่อปี 628 ผู้มาไหว้นิยมรับควันจากกระถางธูปใหญ่หน้าวิหารเพื่อขอให้สุขภาพแข็งแรงปราศจากโรคภัย",
+    "hours": "วิหารหลัก 6:00-17:00 น. (ต.ค.-มี.ค. เปิด 6:30 น.)",
+    "howToPray": [
+      "ถ้ามีจุดชำระล้าง ให้ล้างมือและบ้วนปากแบบเดียวกับที่ศาลเจ้า",
+      "จุดธูป ดับไฟด้วยการโบกมือ แล้วปักลงกระถางธูป",
+      "พนมมืออธิษฐานเงียบๆ ที่วัดพุทธไม่ต้องปรบมือ",
+      "รับควันจากกระถางธูปใหญ่หน้าวิหาร เชื่อกันว่าช่วยให้ปราศจากโรคภัย"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Sensoji_2023.jpg/1280px-Sensoji_2023.jpg",
+        "alt": "วิหารหลักวัดเซนโซจิ อาซากุสะ โตเกียว",
+        "author": "Akonnchiroll",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sensoji_2023.jpg"
+      }
+    ],
+    "notes": [
+      "เวลาเปิดวิหารหลักและความเชื่อเรื่องควันธูปเพื่อสุขภาพ (無病息災) มาจากเว็บทางการ senso-ji.jp/about/",
+      "goals = health ตามความเชื่อเรื่องควันธูปจากเว็บทางการ",
+      "ขั้นตอนไหว้มาจากคู่มือไหว้วัดและศาลเจ้าของ JNTO (japan.travel ภาษาไทย) เป็นธรรมเนียมทั่วไป ไม่ใช่ขั้นตอนเฉพาะของที่นี่",
+      "พิกัดจาก en.wikipedia (Sensō-ji)"
+    ],
+    "sources": [
+      "https://www.senso-ji.jp/about/",
+      "https://en.wikipedia.org/wiki/Sens%C5%8D-ji",
+      "https://www.japan.travel/th/guide/shrine-and-temple-traditions"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดคิโยมิซุเดระ (Kiyomizu-dera)",
+    "nameEn": "Kiyomizu-dera",
+    "slug": "kiyomizu-dera",
+    "type": "temple",
+    "deities": [
+      "พระโพธิสัตว์กวนอิม 11 หน้า (จูอิจิเมนคันนง)"
+    ],
+    "goals": [
+      "study",
+      "love",
+      "health"
+    ],
+    "country": "JP",
+    "city": "เกียวโต",
+    "coords": "34.99500, 135.78500",
+    "description": "วัดเก่าแก่ทางตะวันออกของเกียวโต เป็นส่วนหนึ่งของมรดกโลก บูชาพระโพธิสัตว์กวนอิม 11 หน้า ไฮไลต์ของสายมูคือน้ำตกโอโตวะที่แยกเป็น 3 สาย เชื่อกันว่าช่วยเรื่องการเรียน ความรัก และอายุยืน ตามธรรมเนียมควรดื่มเพียงสายเดียว",
+    "howToPray": [
+      "ถ้ามีจุดชำระล้าง ให้ล้างมือและบ้วนปากแบบเดียวกับที่ศาลเจ้า",
+      "จุดธูป ดับไฟด้วยการโบกมือ แล้วปักลงกระถางธูป",
+      "พนมมืออธิษฐานเงียบๆ ที่วัดพุทธไม่ต้องปรบมือ",
+      "ที่น้ำตกโอโตวะ ใช้กระบวยรองน้ำจากสายที่ตรงกับคำขอ แล้วดื่มเพียงสายเดียว"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Kiyomizu-dera%2C_Kyoto%2C_November_2016_-02.jpg/1280px-Kiyomizu-dera%2C_Kyoto%2C_November_2016_-02.jpg",
+        "alt": "ระเบียงไม้และวิหารวัดคิโยมิซุเดระ เกียวโต",
+        "author": "Martin Falbisoner",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kiyomizu-dera,_Kyoto,_November_2016_-02.jpg"
+      }
+    ],
+    "notes": [
+      "ความเชื่อน้ำตก 3 สาย (เรียน รัก อายุยืน) และธรรมเนียมดื่มสายเดียว อ่านผ่านผลค้นหาจาก snowmonkeyresorts.com และ haniseoul.com ภาษาไทย แหล่งไม่ตรงกันว่าสายไหนคือเรื่องไหน จึงไม่ระบุลำดับสาย",
+      "ศาลเจ้าจิชุ (ขอพรความรัก) อยู่ติดวัด แต่ไม่ได้แยกเป็นรายการเพราะยังไม่ได้ตรวจสถานะการบูรณะ",
+      "ขั้นตอนไหว้มาจากคู่มือไหว้วัดและศาลเจ้าของ JNTO (japan.travel ภาษาไทย) เป็นธรรมเนียมทั่วไป ไม่ใช่ขั้นตอนเฉพาะของที่นี่",
+      "ไม่ใส่เวลาเปิด เพราะหน้าทางการที่ตรวจไม่ได้ระบุ",
+      "พิกัดจาก en.wikipedia (Kiyomizu-dera)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kiyomizu-dera",
+      "https://www.kiyomizudera.or.jp/en/",
+      "https://www.snowmonkeyresorts.com/th/activities/kiyomizudera/",
+      "https://www.haniseoul.com/th/travels/japan/kiyomizu-dera-temple-kyoto-guide",
+      "https://www.japan.travel/th/guide/shrine-and-temple-traditions"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "ศาลเจ้าคิตาโนะเท็นมันกู (Kitano Tenmangu)",
+    "nameEn": "Kitano Tenmangu",
+    "slug": "kitano-tenmangu",
+    "type": "shrine",
+    "deities": [
+      "สุงาวาระ โนะ มิจิซาเนะ (เทนจิน)"
+    ],
+    "goals": [
+      "study"
+    ],
+    "country": "JP",
+    "city": "เกียวโต",
+    "coords": "35.03111, 135.73528",
+    "description": "ศาลเจ้าชินโตในเกียวโต สร้างเมื่อปี 947 บูชาสุงาวาระ โนะ มิจิซาเนะ นักปราชญ์และกวีสมัยเฮอัน จึงเป็นที่ขอพรเรื่องการเรียนและการสอบที่ขึ้นชื่อ เหมาะกับนักเรียนหรือคนที่กำลังจะสอบ",
+    "howToPray": [
+      "ล้างมือที่จุดชำระล้าง ใช้กระบวยตักน้ำด้วยมือขวาเทล้างมือซ้าย แล้วล้างมือขวาและบ้วนปาก",
+      "ถึงหน้าแท่นบูชา โยนเหรียญลงกล่องบริจาคเบาๆ แล้วสั่นกระดิ่ง (ถ้ามี)",
+      "โค้งคำนับ 2 ครั้ง ปรบมือ 2 ครั้ง",
+      "พนมมืออธิษฐานขอพร แล้วโค้งคำนับอีก 1 ครั้ง"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Kitano-tenmangu_Kyoto_Japan41s3s4592.jpg/1280px-Kitano-tenmangu_Kyoto_Japan41s3s4592.jpg",
+        "alt": "อาคารหลักศาลเจ้าคิตาโนะเท็นมันกู เกียวโต",
+        "author": "663highland",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kitano-tenmangu_Kyoto_Japan41s3s4592.jpg"
+      }
+    ],
+    "notes": [
+      "goals = study จากบทความ TrueID ท่องเที่ยว (7 ศาลเจ้าเกียวโต) ที่ระบุว่าขอพรเรื่องการเรียน สอบผ่าน",
+      "ขั้นตอนไหว้มาจากคู่มือไหว้วัดและศาลเจ้าของ JNTO (japan.travel ภาษาไทย) เป็นธรรมเนียมทั่วไป ไม่ใช่ขั้นตอนเฉพาะของที่นี่",
+      "ไม่ใส่เวลาเปิด เพราะยังไม่ได้ตรวจหน้าทางการ",
+      "ภาพมีหลาย license (GFDL / CC BY-SA 3.0 / CC BY 2.5) เลือกใช้ CC BY-SA 3.0",
+      "พิกัดจาก en.wikipedia (Kitano Tenmangū)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kitano_Tenmang%C5%AB",
+      "https://travel.trueid.net/detail/ndgQxx9XKNAz",
+      "https://www.japan.travel/th/guide/shrine-and-temple-traditions"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "ศาลเจ้าคันดะเมียวจิน (Kanda Myojin)",
+    "nameEn": "Kanda Myojin",
+    "slug": "kanda-myojin",
+    "type": "shrine",
+    "deities": [
+      "ไดโกกุเทน",
+      "เอบิสุ",
+      "ไทระ โนะ มาซาคาโดะ"
+    ],
+    "goals": [
+      "business",
+      "love",
+      "money"
+    ],
+    "country": "JP",
+    "city": "โตเกียว",
+    "district": "ชิโยดะ (ใกล้อากิฮาบาระ)",
+    "coords": "35.70194, 139.76778",
+    "description": "ศาลเจ้าเก่าแก่ใกล้อากิฮาบาระ มีประวัติย้อนไปถึงปี 730 ประดิษฐานเทพ 3 องค์ ในนั้นมีไดโกกุเทนและเอบิสุ 2 ใน 7 เทพแห่งโชคลาภของญี่ปุ่น คนจึงนิยมมาขอพรให้ธุรกิจรุ่งเรือง โชคลาภ และความรัก",
+    "howToPray": [
+      "ล้างมือที่จุดชำระล้าง ใช้กระบวยตักน้ำด้วยมือขวาเทล้างมือซ้าย แล้วล้างมือขวาและบ้วนปาก",
+      "ถึงหน้าแท่นบูชา โยนเหรียญลงกล่องบริจาคเบาๆ แล้วสั่นกระดิ่ง (ถ้ามี)",
+      "โค้งคำนับ 2 ครั้ง ปรบมือ 2 ครั้ง",
+      "พนมมืออธิษฐานขอพร แล้วโค้งคำนับอีก 1 ครั้ง"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Kanda-Myojin_2012.JPG/1280px-Kanda-Myojin_2012.JPG",
+        "alt": "อาคารหลักศาลเจ้าคันดะเมียวจิน โตเกียว",
+        "author": "Kakidai",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanda-Myojin_2012.JPG"
+      }
+    ],
+    "notes": [
+      "เทพ 3 องค์และเรื่องขอพร (ธุรกิจ ความรัก โชคลาภ) จาก gotokyo.org ภาษาไทย (spot/17)",
+      "gotokyo ระบุเวลาเปิดเปลี่ยนตามฤดูกาล ไม่มีวันหยุด จึงไม่ใส่เวลาเปิด",
+      "ขั้นตอนไหว้มาจากคู่มือไหว้วัดและศาลเจ้าของ JNTO (japan.travel ภาษาไทย) เป็นธรรมเนียมทั่วไป ไม่ใช่ขั้นตอนเฉพาะของที่นี่",
+      "พิกัดจาก en.wikipedia (Kanda Shrine)"
+    ],
+    "sources": [
+      "https://www.gotokyo.org/th/spot/17/index.html",
+      "https://en.wikipedia.org/wiki/Kanda_Shrine",
+      "https://www.japan.travel/th/guide/shrine-and-temple-traditions"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "ศาลเจ้าอิมาโดะ (Imado Jinja)",
+    "nameEn": "Imado Jinja",
+    "slug": "imado-jinja",
+    "type": "shrine",
+    "deities": [
+      "อิซานางิ",
+      "อิซานามิ"
+    ],
+    "goals": [
+      "love"
+    ],
+    "country": "JP",
+    "city": "โตเกียว",
+    "district": "อาซากุสะ",
+    "coords": "35.71920, 139.80351",
+    "description": "ศาลเจ้าเล็กๆ ย่านอาซากุสะ ไม่ไกลจากวัดเซนโซจิ บูชาเทพคู่สามีภรรยาอิซานางิและอิซานามิ จึงขึ้นชื่อเรื่องขอพรความรักและการแต่งงาน ที่นี่เชื่อกันว่าเป็นต้นกำเนิดแมวกวัก มีแมวกวักคู่ให้ถ่ายรูป และแผ่นเอมะทรงกลมแขวนอยู่เต็มรั้ว",
+    "howToPray": [
+      "ล้างมือที่จุดชำระล้าง ใช้กระบวยตักน้ำด้วยมือขวาเทล้างมือซ้าย แล้วล้างมือขวาและบ้วนปาก",
+      "ถึงหน้าแท่นบูชา โยนเหรียญลงกล่องบริจาคเบาๆ แล้วสั่นกระดิ่ง (ถ้ามี)",
+      "โค้งคำนับ 2 ครั้ง ปรบมือ 2 ครั้ง",
+      "พนมมืออธิษฐานขอพร แล้วโค้งคำนับอีก 1 ครั้ง",
+      "เขียนคำขอพรบนแผ่นเอมะทรงกลมของศาลเจ้าแล้วแขวนไว้"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Imado_Jinja_Shinto_shrine%2C_Asakusa%2C_Tokyo%2C_Japan_-_September_2015.jpg/1280px-Imado_Jinja_Shinto_shrine%2C_Asakusa%2C_Tokyo%2C_Japan_-_September_2015.jpg",
+        "alt": "ศาลเจ้าอิมาโดะ ย่านอาซากุสะ โตเกียว",
+        "author": "Rickard Törnblad",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Imado_Jinja_Shinto_shrine,_Asakusa,_Tokyo,_Japan_-_September_2015.jpg"
+      }
+    ],
+    "notes": [
+      "เทพคู่และเรื่องความรัก/การแต่งงาน แมวกวัก เอมะ จาก Time Out Tokyo",
+      "เอมะทรงกลม (เล่นคำ en = วงกลม/สายสัมพันธ์) อ่านผ่านผลค้นหาจาก gltjp.com (เว็บบล็อกการดึงหน้า)",
+      "เวลาเปิดแหล่งข้อมูลไม่ตรงกัน (9:00-17:00 / 9:00-16:00) จึงไม่ใส่",
+      "ขั้นตอนไหว้มาจากคู่มือไหว้วัดและศาลเจ้าของ JNTO (japan.travel ภาษาไทย) เป็นธรรมเนียมทั่วไป ไม่ใช่ขั้นตอนเฉพาะของที่นี่",
+      "ไม่มีบทความ en.wikipedia พิกัดจาก OpenStreetMap way 1297460706"
+    ],
+    "sources": [
+      "https://www.timeout.com/tokyo/attractions/imado-shrine",
+      "https://gltjp.com/en/directory/item/14475",
+      "https://www.openstreetmap.org/way/1297460706",
+      "https://www.japan.travel/th/guide/shrine-and-temple-traditions"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดโปหลินและพระใหญ่เทียนถาน (Po Lin Monastery)",
+    "nameEn": "Po Lin Monastery",
+    "slug": "po-lin-monastery",
+    "type": "temple",
+    "deities": [
+      "พระใหญ่เทียนถาน (Tian Tan Buddha)",
+      "พระพุทธรูปสำริด 3 องค์ในวิหารหลัก"
+    ],
+    "goals": [
+      "career"
+    ],
+    "country": "HK",
+    "city": "ฮ่องกง",
+    "district": "เกาะลันเตา (ที่ราบสูงง่องปิง)",
+    "coords": "22.25551, 113.90789",
+    "description": "วัดพุทธนิกายเซนบนที่ราบสูงง่องปิง เกาะลันเตา ก่อตั้งปี 1906 คู่กับพระใหญ่เทียนถานที่สร้างเสร็จปี 1993 คนไทยนิยมขึ้นไปไหว้พระใหญ่เพื่อขอพรเรื่องชีวิตและการงาน เดินทางสะดวกด้วยกระเช้า Ngong Ping 360 แล้วเดินขึ้นบันไดไปยังองค์พระ",
+    "howToPray": [
+      "จุดธูปไหว้ที่วัดโปหลิน",
+      "เดินขึ้นบันไดไปไหว้พระใหญ่เทียนถานด้านบน แล้วตั้งจิตอธิษฐาน"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Po_Lin_Monastery_2.jpg/1280px-Po_Lin_Monastery_2.jpg",
+        "alt": "อาคารในวัดโปหลิน เกาะลันเตา ฮ่องกง",
+        "author": "Enoch Lau",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Po_Lin_Monastery_2.jpg"
+      }
+    ],
+    "notes": [
+      "ประวัติ (ก่อตั้ง 1906, พระใหญ่ 1993) จาก en.wikipedia",
+      "goals = career จาก Trip.com ภาษาไทย (ไหว้พระฮ่องกง 2569) ที่ระบุว่าขอพรเรื่องชีวิต การงาน ความสำเร็จ และบันได 268 ขั้น",
+      "ไม่ใส่เวลาเปิด ควรเช็กเวลากระเช้าและเวลาเปิดองค์พระก่อนใส่",
+      "พิกัดจาก en.wikipedia (Po Lin Monastery)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Po_Lin_Monastery",
+      "https://th.trip.com/guide/activity/hong-kong-temple-visit.html",
+      "https://th.trip.com/blog/hong-kong-mutelu-temple/"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดเจ้าแม่กวนอิมฮุงฮำ (Kwun Yam Temple, Hung Hom)",
+    "nameEn": "Kwun Yam Temple, Hung Hom",
+    "slug": "hung-hom-kwun-yam-temple",
+    "type": "chinese-shrine",
+    "deities": [
+      "เจ้าแม่กวนอิม"
+    ],
+    "goals": [
+      "money",
+      "business"
+    ],
+    "country": "HK",
+    "city": "ฮ่องกง",
+    "district": "ฮุงฮำ (เกาลูน)",
+    "coords": "22.30806, 114.18579",
+    "description": "วัดเจ้าแม่กวนอิมเล็กๆ ย่านฮุงฮำ ฝั่งเกาลูน สายมูไทยรู้จักกันดีเรื่องขอพรด้านการเงิน โชคลาภ และขยายกิจการ ขึ้นชื่อเรื่องพิธียืมเงินเจ้าแม่กวนอิมที่จัดปีละครั้งหลังตรุษจีน และเสี่ยงเซียมซีได้",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/HK_%E7%B4%85%E7%A3%A1_Hung_Hom_%E8%A7%80%E9%9F%B3%E8%A1%97_Kun_Yam_Street_%E5%B7%AE%E9%A4%A8%E9%87%8C_Station_Lane_%E8%A7%80%E9%9F%B3%E5%BB%9F_Kun_Yam_Temple_November_2020_SS2_01.jpg/1280px-HK_%E7%B4%85%E7%A3%A1_Hung_Hom_%E8%A7%80%E9%9F%B3%E8%A1%97_Kun_Yam_Street_%E5%B7%AE%E9%A4%A8%E9%87%8C_Station_Lane_%E8%A7%80%E9%9F%B3%E5%BB%9F_Kun_Yam_Temple_November_2020_SS2_01.jpg",
+        "alt": "วัดเจ้าแม่กวนอิม ถนน Station Lane ย่านฮุงฮำ ฮ่องกง",
+        "author": "Laiuh Shosaing Chooka",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:HK_%E7%B4%85%E7%A3%A1_Hung_Hom_%E8%A7%80%E9%9F%B3%E8%A1%97_Kun_Yam_Street_%E5%B7%AE%E9%A4%A8%E9%87%8C_Station_Lane_%E8%A7%80%E9%9F%B3%E5%BB%9F_Kun_Yam_Temple_November_2020_SS2_01.jpg"
+      }
+    ],
+    "notes": [
+      "goals และพิธียืมเงินเจ้าแม่ (ปีละครั้งหลังตรุษจีน) จาก Trip.com ภาษาไทย 2 บทความ ยังไม่ได้ตรวจวันที่ของพิธีจากแหล่งทางการ จึงไม่ระบุวันที่และขั้นตอน",
+      "ไม่มีบทความ en.wikipedia ของวัดนี้ พิกัดจาก OpenStreetMap way 184575603 (觀音廟, 18-20 Station Lane)",
+      "ไม่ใส่เวลาเปิด"
+    ],
+    "sources": [
+      "https://th.trip.com/guide/activity/hong-kong-temple-visit.html",
+      "https://th.trip.com/blog/hong-kong-mutelu-temple/",
+      "https://www.openstreetmap.org/way/184575603"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "หินคู่รัก ถนนโบเวน (Lovers' Rock)",
+    "nameEn": "Lovers' Rock (Yan Yuen Shek)",
+    "slug": "lovers-rock-bowen-road",
+    "type": "shrine",
+    "deities": [
+      "หินคู่รัก (หยานหยวนเส็ก)"
+    ],
+    "goals": [
+      "love",
+      "family"
+    ],
+    "country": "HK",
+    "city": "ฮ่องกง",
+    "district": "หว่านไจ๋ (เหนือถนนโบเวน)",
+    "coords": "22.27088, 114.17653",
+    "description": "หินแกรนิตสูงราว 10 เมตรบนเนินเขาเหนือเส้นทางเดิน Bowen Road ฝั่งหว่านไจ๋ คนท้องถิ่นเชื่อว่าอธิษฐานอย่างจริงใจแล้วจะสมหวังเรื่องความรัก การแต่งงาน และการมีลูก ช่วงวันชีซีหรือวันที่ 7 เดือน 7 ตามปฏิทินจีนคนจะแน่นเป็นพิเศษ",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Bowen_Road_Lovers%27_Stone_Garden_09.jpg/1280px-Bowen_Road_Lovers%27_Stone_Garden_09.jpg",
+        "alt": "สวนหินคู่รัก Lovers' Rock ถนนโบเวน ฮ่องกง",
+        "author": "Underwaterbuffalo",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bowen_Road_Lovers'_Stone_Garden_09.jpg"
+      }
+    ],
+    "notes": [
+      "ความสูง ที่ตั้ง ความเชื่อ (ความรัก แต่งงาน ลูก) และช่วงที่คนแน่น อ่านผ่านผลค้นหาจาก Lonely Planet, droneandslr.com และ Trip.com ไม่ได้เปิดหน้าทางการ",
+      "type = shrine เพราะเป็นหินศักดิ์สิทธิ์กลางแจ้ง ไม่ใช่วัด",
+      "ไม่ใส่วิธีไหว้และของไหว้ เพราะไม่พบแหล่งที่อธิบายขั้นตอน",
+      "ไม่มีบทความ en.wikipedia พิกัดจาก OpenStreetMap node 638298712 (姻緣石 Lover's Rock)",
+      "ภาพเป็นสวนหินคู่รัก (Lovers' Stone Garden) ควรเช็กว่าเห็นตัวหินชัดหรือไม่"
+    ],
+    "sources": [
+      "https://www.lonelyplanet.com/china/hong-kong/wan-chai-northeast-hong-kong-island/attractions/lovers-rock/a/poi-sig/364197/1323952",
+      "https://droneandslr.com/travel-blog/hong-kong/lovers-rock-hike/",
+      "https://www.openstreetmap.org/node/638298712"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดเจ้าแม่ทับทิม เย่าหมาเต่ย (Tin Hau Temple, Yau Ma Tei)",
+    "nameEn": "Tin Hau Temple Complex, Yau Ma Tei",
+    "slug": "yau-ma-tei-tin-hau-temple",
+    "type": "chinese-shrine",
+    "deities": [
+      "เจ้าแม่ทับทิม (เทียนโหว)",
+      "เจ้าแม่กวนอิม",
+      "เทพเฉิงหวง"
+    ],
+    "goals": [
+      "protection"
+    ],
+    "country": "HK",
+    "city": "ฮ่องกง",
+    "district": "เย่าหมาเต่ย (เกาลูน)",
+    "coords": "22.30991, 114.17068",
+    "description": "กลุ่มวัด 5 หลังเรียงกันในย่านเย่าหมาเต่ย มีวัดเจ้าแม่ทับทิม เทพีแห่งท้องทะเล วัดเจ้าแม่กวนอิม และวัดเทพเฉิงหวง อยู่ติดตลาดกลางคืน Temple Street คนนิยมมาขอพรให้เดินทางปลอดภัยและชีวิตมั่นคง และชมธูปขดที่แขวนเหนือศีรษะ",
+    "howToPray": [
+      "จุดธูปไหว้เจ้าแม่ทับทิม",
+      "ตั้งจิตอธิษฐานขอให้เดินทางปลอดภัย"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tin_Hau_Temple_Complex%2C_Yau_Ma_Tei_02.jpg/1280px-Tin_Hau_Temple_Complex%2C_Yau_Ma_Tei_02.jpg",
+        "alt": "กลุ่มวัดเจ้าแม่ทับทิม ย่านเย่าหมาเต่ย ฮ่องกง",
+        "author": "Underwaterbuffalo",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tin_Hau_Temple_Complex,_Yau_Ma_Tei_02.jpg"
+      }
+    ],
+    "notes": [
+      "องค์ประกอบกลุ่มวัด 5 หลังและที่ตั้งจาก en.wikipedia (Tin Hau Temple Complex, Yau Ma Tei)",
+      "goals = protection (เดินทางปลอดภัย) และวิธีไหว้จาก Trip.com ภาษาไทย (ไหว้พระฮ่องกง 2569)",
+      "ไม่ใส่เวลาเปิด",
+      "พิกัดจาก en.wikipedia"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tin_Hau_Temple_Complex,_Yau_Ma_Tei",
+      "https://th.trip.com/guide/activity/hong-kong-temple-visit.html"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดสิงเทียนกง (Xingtian Temple)",
+    "nameEn": "Xingtian Temple (Hsing Tian Kong)",
+    "slug": "xingtian-temple",
+    "type": "chinese-shrine",
+    "deities": [
+      "เทพเจ้ากวนอู"
+    ],
+    "goals": [
+      "business",
+      "career"
+    ],
+    "country": "TW",
+    "city": "ไทเป",
+    "district": "จงซาน",
+    "coords": "25.06307, 121.53385",
+    "description": "วัดยอดนิยมกลางกรุงไทเป สร้างปี 1967 บูชาเทพเจ้ากวนอู เทพผู้คุ้มครองนักธุรกิจ คนจึงมาขอพรให้งานราบรื่นและธุรกิจรุ่งเรือง ที่นี่ไม่จุดธูป ไม่เผากระดาษ และไม่มีตู้บริจาค ลงรถไฟฟ้าสถานี Xingtian Temple ได้เลย",
+    "howToPray": [
+      "ไม่ต้องเตรียมธูป ที่นี่ไม่มีกระถางธูปและไม่เผากระดาษ พนมมือไหว้และอธิษฐานขอพร"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Xingtian_Temple_07.23.jpg/1280px-Xingtian_Temple_07.23.jpg",
+        "alt": "วัดสิงเทียนกง ไทเป",
+        "author": "Supanut Arunoprayote",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xingtian_Temple_07.23.jpg"
+      }
+    ],
+    "notes": [
+      "กวนอูผู้คุ้มครองนักธุรกิจ ปีที่สร้าง การงดจุดธูปตั้งแต่ปี 2014 และสถานีรถไฟฟ้า จาก en.wikipedia",
+      "goals และข้อมูลไม่เผากระดาษ ไม่มีกระถางธูป ไม่มีตู้บริจาค จาก KTC (8 วัดดังไทเป)",
+      "KTC ระบุเวลา 04:00-22:00 แต่เป็นบทความท่องเที่ยว ยังไม่ได้ตรวจกับวัด จึงไม่ใส่",
+      "พิกัดจาก en.wikipedia (Xingtian Temple)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Xingtian_Temple",
+      "https://www.ktc.co.th/article/travel-stories/asia/taiwan/8-must-visit-temples-in-taipei"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดต้าหลงต้งเป่าอัน (Dalongdong Baoan Temple)",
+    "nameEn": "Dalongdong Baoan Temple",
+    "slug": "dalongdong-baoan-temple",
+    "type": "chinese-shrine",
+    "deities": [
+      "เป่าเซิงต้าตี้ (เทพแห่งการรักษาโรค)"
+    ],
+    "goals": [
+      "health",
+      "family"
+    ],
+    "country": "TW",
+    "city": "ไทเป",
+    "district": "ต้าถง",
+    "coords": "25.07317, 121.51556",
+    "description": "วัดเต๋าเก่าแก่ของไทเป เริ่มสร้างปี 1804 บูชาเป่าเซิงต้าตี้ เทพแห่งการรักษาโรค คนจึงมาขอพรให้สุขภาพแข็งแรงและขอบุตร ตัววัดได้รางวัลอนุรักษ์มรดกวัฒนธรรมของ UNESCO ปี 2003 และอยู่ติดกับวัดขงจื๊อไทเป",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Taipeh_Dalongdong_Baoan_Temple_Haupthalle_1.jpg/1280px-Taipeh_Dalongdong_Baoan_Temple_Haupthalle_1.jpg",
+        "alt": "วิหารหลักวัดต้าหลงต้งเป่าอัน ไทเป",
+        "author": "Zairon",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taipeh_Dalongdong_Baoan_Temple_Haupthalle_1.jpg"
+      }
+    ],
+    "notes": [
+      "ประวัติและรางวัล UNESCO Asia-Pacific Heritage Awards 2003 จาก en.wikipedia",
+      "goals (สุขภาพ ขอบุตร) จาก KTC (8 วัดดังไทเป)",
+      "ไม่ใส่วิธีไหว้ เพราะขั้นตอนที่พบมาจากบล็อกต่างประเทศ (foreignersintaiwan) อ่านผ่านผลค้นหาเท่านั้น",
+      "เวลา 06:30-21:00 มีใน KTC แต่ยังไม่ได้ตรวจกับเว็บวัด baoan.org.tw จึงไม่ใส่",
+      "พิกัดจาก en.wikipedia (Dalongdong Baoan Temple)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dalongdong_Baoan_Temple",
+      "https://www.ktc.co.th/article/travel-stories/asia/taiwan/8-must-visit-temples-in-taipei"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดขงจื๊อไทเป (Taipei Confucius Temple)",
+    "nameEn": "Taipei Confucius Temple",
+    "slug": "taipei-confucius-temple",
+    "type": "chinese-shrine",
+    "deities": [
+      "ขงจื๊อ"
+    ],
+    "goals": [
+      "study"
+    ],
+    "country": "TW",
+    "city": "ไทเป",
+    "district": "ต้าถง",
+    "coords": "25.07294, 121.51661",
+    "description": "วัดขงจื๊อของไทเป สร้างครั้งแรกปี 1879 สมัยราชวงศ์ชิง ปัจจุบันอยู่ติดกับวัดเป่าอัน นักเรียนนักศึกษานิยมมาขอพรให้สอบผ่าน เดินไหว้ต่อกับวัดเป่าอันได้ในทริปเดียว",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Taipei_Confucius_Temple_1.jpg/1280px-Taipei_Confucius_Temple_1.jpg",
+        "alt": "วัดขงจื๊อไทเป",
+        "author": "Dudva",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taipei_Confucius_Temple_1.jpg"
+      }
+    ],
+    "notes": [
+      "ปีที่สร้างจาก en.wikipedia",
+      "goals = study จาก KTC (8 วัดดังไทเป) ที่ระบุว่าขอพรให้สอบผ่าน",
+      "KTC ระบุเปิดอังคาร-อาทิตย์ ปิดวันจันทร์ ยังไม่ได้ตรวจกับเว็บทางการ จึงไม่ใส่เวลาเปิด",
+      "ไม่ใส่วิธีไหว้ ข้อมูลการลงทะเบียนขอพรช่วงสอบที่พบเป็นข่าวปี 2020 (Taiwan News) อาจเปลี่ยนแล้ว",
+      "พิกัดจาก en.wikipedia (Taipei Confucius Temple) ตรงกับ OSM relation 6082933"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Taipei_Confucius_Temple",
+      "https://www.ktc.co.th/article/travel-stories/asia/taiwan/8-must-visit-temples-in-taipei"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดกวนตู้ (Guandu Temple)",
+    "nameEn": "Guandu Temple",
+    "slug": "guandu-temple",
+    "type": "chinese-shrine",
+    "deities": [
+      "เจ้าแม่ทับทิม (หม่าจู่)"
+    ],
+    "goals": [
+      "money",
+      "protection"
+    ],
+    "country": "TW",
+    "city": "ไทเป",
+    "district": "เป่ยโถว",
+    "coords": "25.11786, 121.46378",
+    "description": "วัดเจ้าแม่หม่าจู่เก่าแก่ในเขตเป่ยโถว สร้างครั้งแรกปี 1712 ตกแต่งด้วยเสามังกรและงานแกะสลักทั้งวัด คนนิยมมาขอพรให้ร่ำรวย โชคดี และเดินทางปลอดภัย เดินจากสถานีรถไฟฟ้า Guandu ได้",
+    "howToPray": [
+      "หยอดเหรียญที่เสาบริเวณทางเข้าเพื่อเสริมโชค"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Taipeh_Guandu_Temple_3.jpg/1280px-Taipeh_Guandu_Temple_3.jpg",
+        "alt": "วัดกวนตู้ ไทเป",
+        "author": "Zairon",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taipeh_Guandu_Temple_3.jpg"
+      }
+    ],
+    "notes": [
+      "ปีที่สร้าง เทพประธาน และการเดินทางจาก en.wikipedia",
+      "goals และเคล็ดหยอดเหรียญที่เสาทางเข้าจาก KTC (8 วัดดังไทเป)",
+      "ไม่ใส่เวลาเปิด",
+      "พิกัดจาก en.wikipedia (Guandu Temple)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guandu_Temple",
+      "https://www.ktc.co.th/article/travel-stories/asia/taiwan/8-must-visit-temples-in-taipei"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดเทียนโหวกง ซีเหมินติง (Taipei Tianhou Temple)",
+    "nameEn": "Taipei Tianhou Temple",
+    "slug": "taipei-tianhou-temple",
+    "type": "chinese-shrine",
+    "deities": [
+      "เจ้าแม่ทับทิม (หม่าจู่)"
+    ],
+    "goals": [
+      "protection"
+    ],
+    "country": "TW",
+    "city": "ไทเป",
+    "district": "ว่านหัว (ซีเหมินติง)",
+    "coords": "25.04297, 121.50638",
+    "description": "วัดเจ้าแม่หม่าจู่กลางย่านช้อปปิ้งซีเหมินติง แวะไหว้ระหว่างเดินเที่ยวได้สะดวก คนนิยมมาขอพรเรื่องความปลอดภัย",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Chengdu_Rd%2C_Taipei_-_Tianhou_Temple_-_exterior_%282025%29_-_img_01.jpg/1280px-Chengdu_Rd%2C_Taipei_-_Tianhou_Temple_-_exterior_%282025%29_-_img_01.jpg",
+        "alt": "วัดเทียนโหวกง ย่านซีเหมินติง ไทเป",
+        "author": "Chainwit.",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chengdu_Rd,_Taipei_-_Tianhou_Temple_-_exterior_(2025)_-_img_01.jpg"
+      }
+    ],
+    "notes": [
+      "goals จาก KTC (8 วัดดังไทเป) ที่ระบุว่าขอพรเรื่องความปลอดภัย",
+      "ข้อมูลยังน้อย ไม่มีบทความ en.wikipedia ควรหาประวัติวัดเพิ่มก่อนเผยแพร่",
+      "พิกัดจาก OpenStreetMap way 527996183 (台北天后宮)"
+    ],
+    "sources": [
+      "https://www.ktc.co.th/article/travel-stories/asia/taiwan/8-must-visit-temples-in-taipei",
+      "https://www.openstreetmap.org/way/527996183"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วิหารมหาโพธิ์ พุทธคยา (Mahabodhi Temple)",
+    "nameEn": "Mahabodhi Temple, Bodh Gaya",
+    "slug": "mahabodhi-temple",
+    "type": "temple",
+    "deities": [
+      "พระพุทธเจ้า (สถานที่ตรัสรู้)",
+      "ต้นพระศรีมหาโพธิ์"
+    ],
+    "goals": [
+      "career"
+    ],
+    "country": "IN",
+    "city": "พุทธคยา",
+    "district": "รัฐพิหาร",
+    "coords": "24.69600, 84.99130",
+    "description": "สถานที่ตรัสรู้ของพระพุทธเจ้า 1 ในสังเวชนียสถาน 4 แห่ง และเป็นมรดกโลก มีต้นโพธิ์ที่เชื่อว่าสืบสายจากต้นที่พระพุทธเจ้าประทับตรัสรู้ ชาวพุทธไทยมาแสวงบุญ สวดมนต์ และอธิษฐานใต้ต้นพระศรีมหาโพธิ์",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mahabodhitemple.jpg/1280px-Mahabodhitemple.jpg",
+        "alt": "วิหารมหาโพธิ์ พุทธคยา และต้นพระศรีมหาโพธิ์",
+        "author": "Bpilgrim",
+        "license": "CC BY-SA 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mahabodhitemple.jpg"
+      }
+    ],
+    "notes": [
+      "ประวัติ มรดกโลก และต้นโพธิ์จาก en.wikipedia",
+      "goals = career อ้างอิงอ่อน: บล็อก Thansettakij เล่าว่าคนไทยไปอธิษฐานขอบุญบารมี และผู้เขียนเล่าว่าผู้ไปประสบความสำเร็จด้านการงาน เป็นคำบอกเล่าส่วนตัว ควรให้เจ้าของตัดสินใจว่าจะจัดหมวดอย่างไร",
+      "ไม่ใส่เวลาเปิดและวิธีไหว้",
+      "พิกัดจาก en.wikipedia (Mahabodhi Temple) ตรงกับ OSM way 314531108"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mahabodhi_Temple",
+      "https://www.thansettakij.com/blogs/lifestyle/569951",
+      "https://www.thaipost.net/general-news/286106/"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดศรีสิทธิวินายัก มุมไบ (Shree Siddhivinayak Temple)",
+    "nameEn": "Shree Siddhivinayak Ganapati Mandir",
+    "slug": "siddhivinayak-temple-mumbai",
+    "type": "devalai",
+    "deities": [
+      "พระพิฆเนศ (สิทธิวินายัก)"
+    ],
+    "goals": [
+      "career",
+      "study"
+    ],
+    "country": "IN",
+    "city": "มุมไบ",
+    "district": "ประภาเทวี",
+    "coords": "19.01692, 72.83041",
+    "description": "เทวาลัยพระพิฆเนศชื่อดังของมุมไบ สร้างปี 1801 ชื่อสิทธิวินายักแปลว่าพระพิฆเนศผู้ประทานความสมปรารถนา เป็นหนึ่งในวัดฮินดูที่คนไปไหว้มากที่สุดในเมือง สายมูไทยที่นับถือพระพิฆเนศในฐานะเทพแห่งความสำเร็จนิยมขอพรเรื่องการงานและการเรียน",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Shree_Siddhivinayak_Temple_Mumbai.jpg/1280px-Shree_Siddhivinayak_Temple_Mumbai.jpg",
+        "alt": "วัดศรีสิทธิวินายัก มุมไบ",
+        "author": "Darwininan",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shree_Siddhivinayak_Temple_Mumbai.jpg"
+      }
+    ],
+    "notes": [
+      "ปีที่สร้าง ความหมายของชื่อ และที่ตั้งจาก en.wikipedia (Siddhivinayak Temple, Mumbai)",
+      "goals มาจากความเชื่อทั่วไปของคนไทยต่อพระพิฆเนศ (การงาน การศึกษา) ตามบทความ Bangkokbiznews ไม่ได้เจาะจงวัดนี้ ควรตรวจเพิ่ม",
+      "ไม่ใส่ของไหว้และวิธีไหว้ เพราะยังไม่พบแหล่งเฉพาะของวัดนี้",
+      "พิกัดจาก en.wikipedia"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Siddhivinayak_Temple,_Mumbai",
+      "https://www.bangkokbiznews.com/lifestyle/980100"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดพระเขี้ยวแก้ว (Buddha Tooth Relic Temple)",
+    "nameEn": "Buddha Tooth Relic Temple and Museum",
+    "slug": "buddha-tooth-relic-temple",
+    "type": "temple",
+    "deities": [
+      "พระเขี้ยวแก้ว (พระทันตธาตุ)",
+      "พระศรีอริยเมตไตรย"
+    ],
+    "goals": [
+      "health",
+      "career",
+      "protection"
+    ],
+    "country": "SG",
+    "city": "สิงคโปร์",
+    "district": "ไชนาทาวน์",
+    "coords": "1.28151, 103.84419",
+    "description": "วัดพุทธมหายานกลางไชนาทาวน์ สร้างตามสถาปัตยกรรมราชวงศ์ถัง ประดิษฐานพระเขี้ยวแก้วให้ชมที่ชั้น 4 คนไทยนิยมมาทำบุญเสริมดวง แก้ปีชง และขอพรเรื่องสุขภาพกับความสำเร็จในการงาน",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Buddha_Tooth_Relic_Temple%2C_Singapore%2C_20240122_0810_2924_01.jpg/1280px-Buddha_Tooth_Relic_Temple%2C_Singapore%2C_20240122_0810_2924_01.jpg",
+        "alt": "วัดพระเขี้ยวแก้ว ไชนาทาวน์ สิงคโปร์",
+        "author": "Jakub Hałun",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buddha_Tooth_Relic_Temple,_Singapore,_20240122_0810_2924_01.jpg"
+      }
+    ],
+    "notes": [
+      "สถาปัตยกรรมและพระเขี้ยวแก้วชั้น 4 จาก en.wikipedia",
+      "goals: สุขภาพ/การงาน จาก KTC (สายมูเอเชีย) และทำบุญเสริมดวงแก้ปีชง จาก KTC (9 วัดสิงคโปร์)",
+      "พระศรีอริยเมตไตรยประดิษฐานในวิหารร้อยมังกร (Hundred Dragon Hall) ตาม en.wikipedia",
+      "ไม่มีพิกัดใน en.wikipedia ใช้ OpenStreetMap way 47298635"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Buddha_Tooth_Relic_Temple_and_Museum",
+      "https://www.ktc.co.th/article/travel-stories/asia/as/9-must-visit-temples-in-singapore",
+      "https://www.ktc.co.th/article/travel-guide/asia/must-visit-spiritual-destinations-asia",
+      "https://www.openstreetmap.org/way/47298635"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดเจ้าแม่กวนอิม ถนนวอเตอร์ลู (Kwan Im Thong Hood Cho Temple)",
+    "nameEn": "Kwan Im Thong Hood Cho Temple",
+    "slug": "kwan-im-thong-hood-cho-temple",
+    "type": "chinese-shrine",
+    "deities": [
+      "เจ้าแม่กวนอิม"
+    ],
+    "goals": [
+      "health"
+    ],
+    "country": "SG",
+    "city": "สิงคโปร์",
+    "district": "ถนนวอเตอร์ลู (บูกิส)",
+    "coords": "1.30087, 103.85301",
+    "description": "วัดเจ้าแม่กวนอิมเก่าแก่บนถนนวอเตอร์ลู เริ่มสร้างปี 1884 เชื่อกันว่าไหว้แล้วนำโชคดี คนไทยนิยมมาขอพรเรื่องสุขภาพแข็งแรงและอายุยืน และเสี่ยงเซียมซีที่ขึ้นชื่อว่าแม่น ผู้ศรัทธาหลายคนแวะไหว้วัดฮินดูศรีกฤษณันที่อยู่ติดกันด้วย",
+    "howToPray": [
+      "คุกเข่าหน้าแท่นบูชาหลัก อธิษฐาน แล้วเขย่ากระบอกเซียมซี"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Kwan_Im_Thong_Hood_Cho_Temple_%28Feb_2024%29.jpg/1280px-Kwan_Im_Thong_Hood_Cho_Temple_%28Feb_2024%29.jpg",
+        "alt": "วัดเจ้าแม่กวนอิม ถนนวอเตอร์ลู สิงคโปร์",
+        "author": "ScribblingGeek",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kwan_Im_Thong_Hood_Cho_Temple_(Feb_2024).jpg"
+      }
+    ],
+    "notes": [
+      "ปีที่สร้าง ความเชื่อเรื่องโชค และการไหว้ข้ามศาสนากับวัดศรีกฤษณันจาก en.wikipedia",
+      "goals (สุขภาพ อายุยืน) และเซียมซีแม่นจาก KTC (9 วัดสิงคโปร์)",
+      "ขั้นตอนคุกเข่าเขย่าเซียมซีอ่านผ่านผลค้นหาจาก Time Out Singapore",
+      "Time Out ระบุ 6:00-18:00 ยังไม่ได้ตรวจกับวัด จึงไม่ใส่",
+      "พิกัดจาก en.wikipedia ตรงกับ OSM way 48045896"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kwan_Im_Thong_Hood_Cho_Temple",
+      "https://www.ktc.co.th/article/travel-stories/asia/as/9-must-visit-temples-in-singapore",
+      "https://timeout.com/singapore/things-to-do/kwan-im-thong-hood-cho-temple"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดเทียนฮกเก๋ง (Thian Hock Keng)",
+    "nameEn": "Thian Hock Keng Temple",
+    "slug": "thian-hock-keng",
+    "type": "chinese-shrine",
+    "deities": [
+      "เจ้าแม่ทับทิม (หม่าจู่)",
+      "เจ้าแม่กวนอิม"
+    ],
+    "goals": [
+      "love",
+      "family"
+    ],
+    "country": "SG",
+    "city": "สิงคโปร์",
+    "district": "ถนนเทล็อกแอเยอร์",
+    "coords": "1.28106, 103.84753",
+    "description": "วัดเจ้าแม่หม่าจู่ที่เก่าแก่และสำคัญที่สุดของชาวฮกเกี้ยนในสิงคโปร์ เป็นโบราณสถานแห่งชาติ ด้านหลังมีวิหารเจ้าแม่กวนอิม คนไทยนิยมมาขอพรเรื่องความรัก ชีวิตคู่ที่ยั่งยืน และขอบุตร",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Singapore_Tempel_Thian_Hock_Keng_1.jpg/1280px-Singapore_Tempel_Thian_Hock_Keng_1.jpg",
+        "alt": "วัดเทียนฮกเก๋ง สิงคโปร์",
+        "author": "Zairon",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Singapore_Tempel_Thian_Hock_Keng_1.jpg"
+      }
+    ],
+    "notes": [
+      "ประวัติและสถานะโบราณสถานแห่งชาติ (1973) จาก en.wikipedia",
+      "goals จาก KTC (9 วัดสิงคโปร์)",
+      "ไม่ใส่เวลาเปิดและวิธีไหว้",
+      "พิกัดจาก en.wikipedia (Thian Hock Keng)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Thian_Hock_Keng",
+      "https://www.ktc.co.th/article/travel-stories/asia/as/9-must-visit-temples-in-singapore"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดศรีมาริอัมมัน สิงคโปร์ (Sri Mariamman Temple)",
+    "nameEn": "Sri Mariamman Temple, Singapore",
+    "slug": "sri-mariamman-temple-singapore",
+    "type": "devalai",
+    "deities": [
+      "พระแม่มาริอัมมัน (พระแม่อุมาเทวี)"
+    ],
+    "goals": [
+      "health"
+    ],
+    "country": "SG",
+    "city": "สิงคโปร์",
+    "district": "ไชนาทาวน์",
+    "coords": "1.28261, 103.84528",
+    "description": "เทวาลัยฮินดูแห่งแรกและเก่าแก่ที่สุดของสิงคโปร์ สร้างปี 1827 สไตล์ดราวิเดียน อยู่กลางไชนาทาวน์ คนไทยนิยมมาขอพรให้พ้นจากโรคภัย ถ้ามาช่วงเดือนตุลาคมถึงพฤศจิกายนจะได้เห็นพิธีเดินลุยไฟประจำปี",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gopuram_-_Sri_Mariamman_Temple_Singapore_%282023%29_-_img_01.jpg/1280px-Gopuram_-_Sri_Mariamman_Temple_Singapore_%282023%29_-_img_01.jpg",
+        "alt": "โคปุรัมของวัดศรีมาริอัมมัน สิงคโปร์",
+        "author": "Chainwit.",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gopuram_-_Sri_Mariamman_Temple_Singapore_(2023)_-_img_01.jpg"
+      }
+    ],
+    "notes": [
+      "ปีที่สร้างและสถานะวัดฮินดูแห่งแรกจาก en.wikipedia",
+      "goals (พ้นจากโรคภัย) และพิธีลุยไฟช่วง ต.ค.-พ.ย. จาก KTC (9 วัดสิงคโปร์)",
+      "ไม่ใส่ของไหว้และวิธีไหว้",
+      "พิกัดจาก en.wikipedia"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sri_Mariamman_Temple,_Singapore",
+      "https://www.ktc.co.th/article/travel-stories/asia/as/9-must-visit-temples-in-singapore"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "พระมหาเจดีย์ชเวดากอง (Shwedagon Pagoda)",
+    "nameEn": "Shwedagon Pagoda",
+    "slug": "shwedagon-pagoda",
+    "type": "temple",
+    "deities": [
+      "พระมหาเจดีย์ชเวดากอง (พระเกศาธาตุ)",
+      "พระพุทธรูปประจำวันเกิด 8 ทิศ"
+    ],
+    "goals": [
+      "career"
+    ],
+    "country": "MM",
+    "city": "ย่างกุ้ง",
+    "coords": "16.79835, 96.14971",
+    "description": "มหาเจดีย์ทองคำที่ศักดิ์สิทธิ์ที่สุดของเมียนมา เชื่อว่าบรรจุพระเกศาธาตุและเครื่องบริขารของพระพุทธเจ้า 4 พระองค์ รอบฐานมีจุดบูชาประจำวันเกิด 8 ทิศ ชาวพุทธจะสรงน้ำพระประจำวันเกิดของตัวเองพร้อมอธิษฐาน คนไทยถือเป็นพระธาตุประจำปีมะเมีย นิยมมาขอพรเรื่องความก้าวหน้าในชีวิต",
+    "howToPray": [
+      "เดินเวียนรอบองค์เจดีย์",
+      "ไปที่จุดบูชาประจำวันเกิดของตัวเอง (วันพุธแยกเป็นกลางวันและกลางคืน)",
+      "ถวายดอกไม้ แล้วสรงน้ำพระพุทธรูปประจำวันเกิดพร้อมอธิษฐาน"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Shwedagon_Pagoda_2017.jpg/1280px-Shwedagon_Pagoda_2017.jpg",
+        "alt": "พระมหาเจดีย์ชเวดากอง ย่างกุ้ง",
+        "author": "Bjørn Christian Tørrissen",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shwedagon_Pagoda_2017.jpg"
+      }
+    ],
+    "notes": [
+      "พระธาตุ 4 พระองค์ จุดบูชาประจำวันเกิด 8 จุด และพิธีสรงน้ำอธิษฐาน จาก en.wikipedia",
+      "ปีเกิดม้า (มะเมีย) ขอพรเรื่องความก้าวหน้า และการเดินเวียนเทียน จาก KTC (auspicious trips) จึงใส่ goals = career",
+      "KTC ระบุเปิด 4:00-22:00 แต่ไม่ได้ตรวจกับแหล่งทางการ จึงไม่ใส่",
+      "ควรเช็กสถานการณ์ความปลอดภัยในเมียนมาก่อนเผยแพร่และก่อนแนะนำการเดินทาง",
+      "พิกัดจาก en.wikipedia (Shwedagon Pagoda)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Shwedagon_Pagoda",
+      "https://www.ktc.co.th/article/travel-stories/asia/as/auspiciou-trips"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "พระธาตุอินทร์แขวน (Kyaiktiyo Pagoda)",
+    "nameEn": "Kyaiktiyo Pagoda (Golden Rock)",
+    "slug": "kyaiktiyo-pagoda",
+    "type": "temple",
+    "deities": [
+      "พระธาตุอินทร์แขวน (พระเกศาธาตุ)"
+    ],
+    "goals": [
+      "money"
+    ],
+    "country": "MM",
+    "city": "รัฐมอญ",
+    "district": "ยอดเขาไจทีโย",
+    "coords": "17.48168, 97.09812",
+    "description": "เจดีย์เล็กบนก้อนหินทองคำที่ตั้งเอียงอยู่ริมหน้าผาบนยอดเขาไจทีโย ตำนานว่าหินทรงตัวอยู่ได้ด้วยพระเกศาธาตุเส้นเดียว ชาวพม่าเชื่อว่าถ้าได้มาสักการะครบ 3 ครั้งในชีวิต จะเจริญรุ่งเรืองมีกินมีใช้ ผู้ชายปิดทองที่ก้อนหินได้ ส่วนผู้หญิงไม่อนุญาตให้แตะก้อนหิน",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Kyaiktiyo_Pagoda_1.jpg/1280px-Kyaiktiyo_Pagoda_1.jpg",
+        "alt": "พระธาตุอินทร์แขวน ก้อนหินทองคำบนยอดเขา",
+        "author": "Philip Nalangan",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kyaiktiyo_Pagoda_1.jpg"
+      }
+    ],
+    "notes": [
+      "ตำนานพระเกศาธาตุ การปิดทองโดยผู้ชาย และข้อห้ามผู้หญิงแตะก้อนหิน จาก en.wikipedia",
+      "ความเชื่อไหว้ครบ 3 ครั้งแล้วรุ่งเรืองมีกินมีใช้ อ่านผ่านผลค้นหาจาก trueplookpanya (บันทึกเที่ยวพม่า) จึงใส่ goals = money",
+      "ควรเช็กสถานการณ์ความปลอดภัยในเมียนมาก่อนเผยแพร่และก่อนแนะนำการเดินทาง",
+      "พิกัดจาก en.wikipedia (Kyaiktiyo Pagoda)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kyaiktiyo_Pagoda",
+      "https://www.trueplookpanya.com/blogdiary/25239"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "เจดีย์โบตะทาวน์ และเทพทันใจโบโบยี (Botataung Pagoda)",
+    "nameEn": "Botataung Pagoda",
+    "slug": "botataung-pagoda",
+    "type": "temple",
+    "deities": [
+      "พระเกศาธาตุ",
+      "โบโบยี (เทพทันใจ)"
+    ],
+    "goals": [
+      "money"
+    ],
+    "country": "MM",
+    "city": "ย่างกุ้ง",
+    "coords": "16.76845, 96.17197",
+    "description": "เจดีย์ริมแม่น้ำย่างกุ้ง ภายในกลวงเดินเข้าไปได้ เชื่อว่าบรรจุพระเกศาธาตุ ด้านหน้ามีศาลโบโบยีหรือเทพทันใจ ที่สายมูไทยนิยมไปขอพรเรื่องเงินทองและให้สมหวังเร็ว",
+    "howToPray": [
+      "ต่อแถวถวายเครื่องบูชาที่ศาลโบโบยี",
+      "ใช้หน้าผากแตะนิ้วของเทพทันใจ แล้วตั้งจิตอธิษฐาน"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/2016_Rangun%2C_Pagoda_Botahtaung_%2852%29.jpg/1280px-2016_Rangun%2C_Pagoda_Botahtaung_%2852%29.jpg",
+        "alt": "เจดีย์โบตะทาวน์ ย่างกุ้ง",
+        "author": "Marcin Konsek",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Rangun,_Pagoda_Botahtaung_(52).jpg"
+      }
+    ],
+    "notes": [
+      "เจดีย์กลวงบรรจุพระเกศาธาตุ ถูกทำลายช่วงสงครามโลกครั้งที่ 2 และสร้างใหม่ จาก en.wikipedia",
+      "โบโบยีขอพรเรื่องเงินทอง จาก KTC (สายมูเอเชีย)",
+      "ศาลอยู่หน้าเจดีย์ และการแตะหน้าผากกับนิ้วเทพทันใจ อ่านผ่านผลค้นหาจาก silpa-mag (เว็บบล็อกการดึงหน้า)",
+      "ไม่ใส่ของไหว้ เพราะแหล่งที่อ่านได้ไม่ได้ระบุชนิดของไหว้",
+      "ควรเช็กสถานการณ์ความปลอดภัยในเมียนมาก่อนเผยแพร่และก่อนแนะนำการเดินทาง",
+      "พิกัดจาก en.wikipedia (Botataung Pagoda) ตรงกับ OSM way 314136068"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Botataung_Pagoda",
+      "https://www.ktc.co.th/article/travel-guide/asia/must-visit-spiritual-destinations-asia",
+      "https://www.silpa-mag.com/history/article_47174"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "พระธาตุหลวง เวียงจันทน์ (Pha That Luang)",
+    "nameEn": "Pha That Luang",
+    "slug": "pha-that-luang",
+    "type": "temple",
+    "deities": [
+      "พระธาตุหลวง (พระบรมสารีริกธาตุ)"
+    ],
+    "goals": [
+      "career"
+    ],
+    "country": "LA",
+    "city": "เวียงจันทน์",
+    "coords": "17.97617, 102.63425",
+    "description": "มหาเจดีย์สีทองกลางนครเวียงจันทน์ พระเจ้าไชยเชษฐาธิราชให้สร้างเมื่อปี 1566 หลังย้ายเมืองหลวงจากหลวงพระบาง เชื่อว่าบรรจุพระบรมสารีริกธาตุ คนไทยนิยมมาไหว้เพื่อความเป็นสิริมงคลและความก้าวหน้าในชีวิต",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Pha_That_Luang%2C_July_2023.jpg/1280px-Pha_That_Luang%2C_July_2023.jpg",
+        "alt": "พระธาตุหลวง เวียงจันทน์",
+        "author": "Coalfruit1012",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pha_That_Luang,_July_2023.jpg"
+      }
+    ],
+    "notes": [
+      "ประวัติจาก en.wikipedia",
+      "goals = career จาก Trip.com ภาษาไทย (รวม 15 วัดในลาว) ที่ระบุว่าไหว้เพื่อสิริมงคลและความก้าวหน้าในชีวิต",
+      "ไม่ใส่เวลาเปิด",
+      "พิกัดจาก en.wikipedia (Pha That Luang)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pha_That_Luang",
+      "https://th.trip.com/guide/attraction/temples-in-laos.html",
+      "https://www.ktc.co.th/article/travel-guide/asia/9-must-see-places-in-vientiane"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดสีเมือง เวียงจันทน์ (Wat Si Muang)",
+    "nameEn": "Wat Si Muang",
+    "slug": "wat-si-muang",
+    "type": "temple",
+    "deities": [
+      "เสาหลักเมืองเวียงจันทน์",
+      "เจ้าแม่สีเมือง"
+    ],
+    "goals": [
+      "money",
+      "protection"
+    ],
+    "country": "LA",
+    "city": "เวียงจันทน์",
+    "coords": "17.95796, 102.61711",
+    "description": "วัดที่ตั้งเสาหลักเมืองเวียงจันทน์ สร้างปี 1563 สมัยอาณาจักรล้านช้าง ชาวลาวเคารพเจ้าแม่สีเมืองมาก คนไทยนิยมมาขอพรเรื่องโชคลาภ การเงิน และความปลอดภัยในการเดินทาง ห้องหน้ามักมีพระคอยให้พรผู้มาไหว้",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Wat_Si_Muang_2020_-_2.jpg/1280px-Wat_Si_Muang_2020_-_2.jpg",
+        "alt": "วัดสีเมือง เวียงจันทน์",
+        "author": "Mx. Granger",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Si_Muang_2020_-_2.jpg"
+      }
+    ],
+    "notes": [
+      "ปีที่สร้าง และพระให้พรในห้องหน้า จาก en.wikipedia",
+      "goals: โชคลาภ การเงิน จาก Trip.com ภาษาไทย (รวม 15 วัดในลาว) และความปลอดภัยในการเดินทาง อ่านผ่านผลค้นหาจาก TrueID",
+      "Trip.com กล่าวถึงพิธีผูกแขนเรียกขวัญ แต่ไม่มีขั้นตอน จึงยังไม่ใส่ howToPray",
+      "พิกัดจาก en.wikipedia ตรงกับ OSM way 42389632 (ใช้ทศนิยมจาก OSM)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wat_Si_Muang",
+      "https://th.trip.com/guide/attraction/temples-in-laos.html",
+      "https://travel.trueid.net/detail/1Vw0Pmm9PnOR",
+      "https://www.openstreetmap.org/way/42389632"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดลามะ ยงเหอกง ปักกิ่ง (Yonghe Temple)",
+    "nameEn": "Yonghe Temple (Lama Temple)",
+    "slug": "yonghe-temple-lama-temple",
+    "type": "temple",
+    "deities": [
+      "พระศรีอริยเมตไตรย (ไม้จันทน์ในหอว่านฝู)",
+      "พระพุทธรูปและพระโพธิสัตว์ในแต่ละวิหาร"
+    ],
+    "goals": [
+      "career",
+      "health",
+      "study",
+      "money"
+    ],
+    "country": "CN",
+    "city": "ปักกิ่ง",
+    "district": "ตงเฉิง",
+    "coords": "39.94694, 116.41111",
+    "description": "วัดพุทธทิเบตนิกายเกลุกใจกลางปักกิ่ง เริ่มสร้างปี 1694 สมัยราชวงศ์ชิง สายมูไทยนิยมไหว้ไล่ตามวิหาร แต่ละหลังขอพรคนละเรื่อง ทั้งการงาน สุขภาพ การเรียน และโชคลาภที่หอว่านฝูซึ่งมีพระศรีอริยเมตไตรยแกะจากไม้จันทน์องค์ใหญ่",
+    "howToPray": [
+      "รับธูปฟรีของวัด ใช้จุดละ 3 ดอก",
+      "ประตูยงเหอ บอกกล่าวและขอพรให้สงบสุข",
+      "วิหารยงเหอ ขอพรเรื่องการงานและบารมี",
+      "วิหารยงโย่ว ขอพรเรื่องสุขภาพ",
+      "วิหารฝ่าหลุน ขอพรเรื่องปัญญา การเรียน การเจรจา",
+      "หอว่านฝู ขอพรเรื่องโชคลาภ เงินทอง และความสำเร็จ",
+      "แต่ละจุดขอข้อเดียวให้ชัดเจน"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/65618-Beijing-Lama-Temple_%2828098480603%29.jpg/1280px-65618-Beijing-Lama-Temple_%2828098480603%29.jpg",
+        "alt": "วัดลามะ ยงเหอกง ปักกิ่ง",
+        "author": "xiquinhosilva",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:65618-Beijing-Lama-Temple_(28098480603).jpg"
+      }
+    ],
+    "notes": [
+      "นิกายและปีที่สร้างจาก en.wikipedia",
+      "ลำดับวิหาร เรื่องที่ขอในแต่ละจุด ธูปฟรี 3 ดอก จาก AIS blog (ตามไปมูวัดลามะ) อ่านเนื้อหาส่วนท้ายของหน้า",
+      "ไม่ใส่เวลาเปิดและค่าเข้า",
+      "พิกัดจาก en.wikipedia (Yonghe Temple)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Yonghe_Temple",
+      "https://www.ais.th/consumers/lifestyle/blog/beijing-lama-temple-esim-china"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดผู่จี้ เกาะผู่โถวซาน (Puji Temple)",
+    "nameEn": "Puji Temple, Mount Putuo",
+    "slug": "puji-temple-putuoshan",
+    "type": "temple",
+    "deities": [
+      "เจ้าแม่กวนอิม"
+    ],
+    "goals": [
+      "family"
+    ],
+    "country": "CN",
+    "city": "โจวซาน",
+    "district": "เกาะผู่โถวซาน มณฑลเจ้อเจียง",
+    "coords": "29.98777, 122.38243",
+    "description": "วัดหลักบนเกาะผู่โถวซาน 1 ใน 4 ภูเขาศักดิ์สิทธิ์ของพุทธศาสนาจีน และเป็นศูนย์กลางการบูชาเจ้าแม่กวนอิม ประวัติย้อนไปถึงปี 916 คนไทยเชื้อสายจีนนิยมเดินทางมาไหว้ และหลายคนมาขอบุตรกับเจ้าแม่กวนอิมที่นี่",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Puji_Temple%2C_Putuo%2C_2019-05-11_01.jpg/1280px-Puji_Temple%2C_Putuo%2C_2019-05-11_01.jpg",
+        "alt": "วัดผู่จี้ เกาะผู่โถวซาน",
+        "author": "Siyuwj",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Puji_Temple,_Putuo,_2019-05-11_01.jpg"
+      }
+    ],
+    "notes": [
+      "ตำนานปี 916 และที่ตั้งจาก en.wikipedia (Puji Temple)",
+      "คนไทยไปขอบุตรที่ผู่โถวซาน และเป็น 1 ใน 4 แหล่งที่ชาวไทยเชื้อสายจีนนิยม อ่านผ่านผลค้นหาจาก ผู้จัดการออนไลน์ (mgronline china)",
+      "พิกัด en.wikipedia (29.9974, 122.3749) ห่างจากตัววัดราว 1 กม. จึงใช้ OpenStreetMap node 4519392716 (普济寺) แทน",
+      "ไม่ใส่เวลาเปิด การเดินทางต้องนั่งเรือ ควรเช็กก่อน"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Puji_Temple",
+      "https://mgronline.com/china/detail/9510000137195",
+      "https://www.openstreetmap.org/node/4519392716"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดบงอึนซา (Bongeunsa)",
+    "nameEn": "Bongeunsa",
+    "slug": "bongeunsa",
+    "type": "temple",
+    "deities": [
+      "พระพุทธเจ้า (วิหารแดอุงจอน)"
+    ],
+    "goals": [
+      "study"
+    ],
+    "country": "KR",
+    "city": "โซล",
+    "district": "กังนัม (ตรงข้าม COEX)",
+    "coords": "37.51556, 127.05722",
+    "description": "วัดเก่าแก่กลางย่านกังนัม ก่อตั้งปี 794 อยู่ตรงข้ามห้าง COEX ช่วงสอบเข้ามหาวิทยาลัย พ่อแม่ชาวเกาหลีมาสวดและกราบ 108 ครั้งขอให้ลูกสอบผ่าน ผู้มาเยือนจุดเทียนขอพรได้ มีป้ายอธิบายชนิดเทียนและขั้นตอน",
+    "howToPray": [
+      "เลือกเทียนตามป้ายของวัด เขียนคำอธิษฐาน",
+      "จุดไฟที่ไส้เทียน วางบนแท่น แล้วพนมมืออธิษฐานในใจ"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bongeunsa_Seoul_8.jpg/1280px-Bongeunsa_Seoul_8.jpg",
+        "alt": "วิหารแดอุงจอน วัดบงอึนซา โซล",
+        "author": "kallerna",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bongeunsa_Seoul_8.jpg"
+      }
+    ],
+    "notes": [
+      "ปีที่ก่อตั้งและที่ตั้งจาก en.wikipedia",
+      "การสวดขอพรช่วงสอบ Suneung อ่านผ่านผลค้นหาจากข่าว AFP (เช่น Khaleej Times, Korea Times) ไม่ได้เปิดหน้าข่าวเต็ม",
+      "การจุดเทียนขอพรอ่านผ่านผลค้นหาจาก trvlogue.com ภาษาไทย (เว็บบล็อกการดึงหน้า)",
+      "เวลา 05:00-22:00 พบในผลค้นหาเท่านั้น จึงไม่ใส่",
+      "พิกัดจาก en.wikipedia (Bongeunsa)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bongeunsa",
+      "https://www.trvlogue.com/th/bongwonsa-wish-candle-guide",
+      "https://www.koreatimes.co.kr/photos/photonews/20211118/suneung-day-for-students-and-parents-photos"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดโชเกซา (Jogyesa)",
+    "nameEn": "Jogyesa",
+    "slug": "jogyesa",
+    "type": "temple",
+    "deities": [
+      "พระพุทธเจ้า"
+    ],
+    "goals": [
+      "study"
+    ],
+    "country": "KR",
+    "city": "โซล",
+    "district": "จงโน (ใกล้อินซาดง)",
+    "coords": "37.57391, 126.98190",
+    "description": "วัดหลักของนิกายโชเกในพุทธศาสนาเกาหลี อยู่กลางกรุงโซล ใกล้ย่านอินซาดงและพระราชวังคย็องบก ช่วงสอบเข้ามหาวิทยาลัยวัดจัดพิธีสวดขอพรให้ผู้เข้าสอบ",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Jogyesa_Temple_%281509839597%29.jpg/1280px-Jogyesa_Temple_%281509839597%29.jpg",
+        "alt": "วัดโชเกซา โซล",
+        "author": "Francisco Anzola",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jogyesa_Temple_(1509839597).jpg"
+      }
+    ],
+    "notes": [
+      "สถานะวัดหลักของนิกายโชเกและที่ตั้งจาก en.wikipedia",
+      "การสวดขอพรช่วงสอบ Suneung อ่านผ่านผลค้นหาจากข่าว AFP (เช่น Khaleej Times, Korea Times) ไม่ได้เปิดหน้าข่าวเต็ม (โชเกซาจัดพิธีสวดให้ผู้สอบในปี 2021 และ 2024)",
+      "มีข่าวเพลิงไหม้หออนุสรณ์ในบริเวณวัด (Line Today) ไม่ทราบปี ควรเช็กก่อนเผยแพร่",
+      "ไม่ใส่เวลาเปิดและวิธีไหว้",
+      "พิกัดจาก en.wikipedia (Jogyesa)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jogyesa",
+      "https://www.koreatimes.co.kr/photos/photonews/20211118/suneung-day-for-students-and-parents-photos"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดแฮดงยงกุงซา ปูซาน (Haedong Yonggungsa)",
+    "nameEn": "Haedong Yonggungsa",
+    "slug": "haedong-yonggungsa",
+    "type": "temple",
+    "deities": [
+      "เจ้าแม่กวนอิมแห่งท้องทะเล (แฮซูกวานึมแดบุล)",
+      "โพแดฮวาซัง (ปางหนึ่งของพระศรีอริยเมตไตรย)"
+    ],
+    "goals": [
+      "family"
+    ],
+    "country": "KR",
+    "city": "ปูซาน",
+    "district": "กีจัง",
+    "coords": "35.18833, 129.22333",
+    "description": "หนึ่งในไม่กี่วัดของเกาหลีที่ตั้งอยู่ริมทะเล บูชาเจ้าแม่กวนอิมแห่งท้องทะเล เชื่อกันว่าอธิษฐานอย่างจริงใจจะสมหวัง 1 ข้อ ในวัดมีรูปปั้นโพแดฮวาซังที่ผู้หญิงนิยมลูบท้องหรือจมูกเพื่อขอลูก และมีสะพานให้โยนเหรียญเสี่ยงโชค",
+    "howToPray": [
+      "อธิษฐานกับเจ้าแม่กวนอิมอย่างจริงใจ",
+      "ถ้าขอลูก ให้ลูบท้องหรือจมูกรูปปั้นโพแดฮวาซัง"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Haedong_yonggungsa_temple_1.jpg/1280px-Haedong_yonggungsa_temple_1.jpg",
+        "alt": "วัดแฮดงยงกุงซา ริมทะเลปูซาน",
+        "author": "Sgroey",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haedong_yonggungsa_temple_1.jpg"
+      }
+    ],
+    "notes": [
+      "ที่ตั้งริมทะเลและเทพประธาน Haesu Gwaneum Daebul จาก en.wikipedia",
+      "ความเชื่อสมหวัง 1 ข้อ และการโยนเหรียญใต้สะพาน อ่านผ่านผลค้นหาจากเว็บท่องเที่ยว (busannavi, Trip.com)",
+      "รูปโพแดฮวาซังขอลูก (ลูบท้องหรือจมูก) อ่านผ่านผลค้นหาจาก koreantempleguide.com จึงใส่ goals = family",
+      "TrueID ระบุเวลา 05:00 ถึงพระอาทิตย์ตก ยังไม่ได้ตรวจกับวัด จึงไม่ใส่",
+      "พิกัดจาก en.wikipedia ตรงกับ OSM way 382701819"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Haedong_Yonggungsa",
+      "https://koreantempleguide.com/?p=545",
+      "https://en.busannavi.net/area/spot/431",
+      "https://creatrip.com/th/blog/5057"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "ถ้ำบาตู (Batu Caves)",
+    "nameEn": "Batu Caves",
+    "slug": "batu-caves",
+    "type": "devalai",
+    "deities": [
+      "พระขันธกุมาร (พระมุรุกัน)",
+      "พระศิวะ"
+    ],
+    "goals": [
+      "career",
+      "family",
+      "health"
+    ],
+    "country": "MY",
+    "city": "สลังงอร์ (ใกล้กัวลาลัมเปอร์)",
+    "district": "กอมบัก",
+    "coords": "3.23745, 101.68366",
+    "description": "กลุ่มถ้ำหินปูนห่างจากกัวลาลัมเปอร์ราว 13 กม. มีเทวาลัยฮินดูหลายแห่ง ที่โดดเด่นคือเทวาลัยพระขันธกุมาร (มุรุกัน) และรูปปั้นสีทองสูง 43 เมตร คนนิยมมาขอพรเรื่องชัยชนะในการงาน การมีบุตร และสุขภาพ เป็นศูนย์กลางเทศกาลไทปูซัมของมาเลเซีย",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Batu_Caves_stairs_2022-05.jpg/1280px-Batu_Caves_stairs_2022-05.jpg",
+        "alt": "บันไดหลากสีและรูปปั้นพระมุรุกัน ถ้ำบาตู",
+        "author": "Chainwit.",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Batu_Caves_stairs_2022-05.jpg"
+      }
+    ],
+    "notes": [
+      "ระยะทาง รูปปั้น 43 เมตร และเทศกาลไทปูซัมจาก en.wikipedia",
+      "goals (ชัยชนะ การมีบุตร สุขภาพ) อ่านผ่านผลค้นหาจาก TrueID ท่องเที่ยว",
+      "ไม่ใส่ของไหว้และวิธีไหว้",
+      "พิกัดจาก OpenStreetMap way 287519972 (Sri Subramaniar Swamy Temple) ใกล้กับพิกัด en.wikipedia (3.2374, 101.6839)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Batu_Caves",
+      "https://travel.trueid.net/detail/q5azZy2R71BY",
+      "https://www.openstreetmap.org/way/287519972"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "name": "วัดเทียนโหว กัวลาลัมเปอร์ (Thean Hou Temple)",
+    "nameEn": "Thean Hou Temple",
+    "slug": "thean-hou-temple-kuala-lumpur",
+    "type": "chinese-shrine",
+    "deities": [
+      "เจ้าแม่ทับทิม (หม่าจู่)",
+      "เจ้าแม่กวนอิม",
+      "เทพเยว่เหล่า"
+    ],
+    "goals": [
+      "love"
+    ],
+    "country": "MY",
+    "city": "กัวลาลัมเปอร์",
+    "coords": "3.12167, 101.68778",
+    "description": "วัดเจ้าแม่หม่าจู่ 6 ชั้นบนเนินเขาในกัวลาลัมเปอร์ หนึ่งในวัดจีนที่ใหญ่ที่สุดในเอเชียตะวันออกเฉียงใต้ สร้างเสร็จปี 1987 ในวัดมีรูปเทพเยว่เหล่า คนจึงมาขอพรเรื่องคู่ครองและการแต่งงาน และมีบริการดูดวงด้วย",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Thean_Hou_Temple%2C_Kuala_Lumpur-1.jpg/1280px-Thean_Hou_Temple%2C_Kuala_Lumpur-1.jpg",
+        "alt": "วัดเทียนโหว กัวลาลัมเปอร์",
+        "author": "Alexey Komarov",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thean_Hou_Temple,_Kuala_Lumpur-1.jpg"
+      }
+    ],
+    "notes": [
+      "เทพประธาน ปีที่สร้าง รูปเยว่เหล่าและผู้มาขอพรเรื่องคู่ครอง/แต่งงาน บริการดูดวงและจดทะเบียนสมรส จาก en.wikipedia",
+      "ยังไม่พบแหล่งภาษาไทยที่ยืนยันว่าคนไทยนิยมมาที่นี่ ควรเช็กเพิ่ม",
+      "ไม่ใส่เวลาเปิดและวิธีไหว้",
+      "พิกัดจาก en.wikipedia (Thean Hou Temple)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Thean_Hou_Temple"
+    ],
+    "published": false,
+    "checkedAt": "2026-10-19"
+  }
+]
