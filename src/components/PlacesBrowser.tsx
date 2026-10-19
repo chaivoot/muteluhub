@@ -70,15 +70,21 @@ export function PlacesBrowser({
 
   const provinces = useMemo(() => provincesWithPlaces(places), [places]);
   const cities = useMemo(() => [...new Set(places.map((p) => p.city).filter((c): c is string => !!c))], [places]);
+  const scope = {
+    goal,
+    province: groupBy === 'province' ? (fixedProvince ?? (province || null)) : null,
+  };
+  const inCity = (p: Place) => groupBy !== 'city' || !province || p.city === province;
+  // ตัวเลขในรายการองค์เทพต้องนับจากเป้าหมาย/จังหวัดที่เลือกอยู่ ให้ตรงกับผลที่ได้จริง
+  const deityScope = filterPlaces(scope, places).filter(inCity);
   const results = filterPlaces(
     {
-      goal,
+      ...scope,
       deity: deity?.kind === 'group' ? deity.slug : null,
       deityText: deity?.kind === 'text' ? deity.text : null,
-      province: groupBy === 'province' ? (fixedProvince ?? (province || null)) : null,
     },
     places,
-  ).filter((p) => groupBy !== 'city' || !province || p.city === province);
+  ).filter(inCity);
   const sorted = here ? sortByDistance(results, here) : null;
   const nearby = sorted?.filter((r) => r.km != null && r.km <= NEAR_ME_RADIUS_KM) ?? [];
   // ไม่มีที่ไหนในรัศมี: แสดง 3 แห่งที่ใกล้ที่สุดแทนหน้าว่าง
@@ -120,7 +126,7 @@ export function PlacesBrowser({
           )}
         </div>
         <div className="filter-bar__selects">
-          <DeityCombobox places={places} value={deity} onChange={setDeity} />
+          <DeityCombobox places={deityScope} value={deity} onChange={setDeity} />
           {!fixedProvince && groupBy === 'province' && (
             <label className="select-wrap">
               <span className="visually-hidden">จังหวัด</span>
