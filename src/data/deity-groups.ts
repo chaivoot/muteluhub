@@ -10,6 +10,8 @@ export interface DeityGroup {
   label: string;
   match: RegExp;
   family: DeityFamilySlug;
+  /** สถานที่ที่นับเข้ากลุ่มแม้ชื่อองค์เทพในข้อมูลไม่ตรง pattern (ข้อมูลใน DB ที่นำเข้าแล้วไม่ถูกเขียนทับ) */
+  slugs?: string[];
 }
 
 /**
@@ -83,7 +85,32 @@ export const DEITY_GROUPS: DeityGroup[] = [
   { slug: 'wenchang', label: 'เทพเจ้าบุ๋นเชียง', match: /บุ๋นเชียง|เหวินชาง/, family: 'chinese' },
   { slug: 'tai-hong', label: 'หลวงปู่ไต้ฮง', match: /ไต้ฮง/, family: 'chinese' },
   { slug: 'tua-lao-ia', label: 'เจ้าพ่อเสือ', match: /เจ้าพ่อเสือ/, family: 'chinese' },
-  { slug: 'tai-sui', label: 'ไท้ส่วยเอี๊ย (แก้ชง)', match: /ไท้ส่วย|ไท่ส่วย|ไท่ซุ่ย|ไท้ซุ่ย/, family: 'chinese' },
+  {
+    slug: 'tai-sui',
+    label: 'ไท้ส่วยเอี๊ย / ที่แก้ชง',
+    match: /ไท้ส่วย|ไท่ส่วย|ไท่ซุ่ย|ไท้ซุ่ย/,
+    family: 'chinese',
+    // มีแหล่งยืนยันว่ามีไท้ส่วยเอี๊ยหรือคนนิยมไปแก้ชง (ตรวจ 2026-10-20) แต่ข้อมูลไม่ได้ใส่ชื่อองค์ไว้
+    slugs: [
+      'chao-pho-suea-shrine',
+      'guan-yu-shrine-khlong-san',
+      'wat-kalayanamit-bangkok',
+      'lak-mueang-suphanburi',
+      'wat-bhoman-khunaram-bangkok',
+      'wat-thep-phuttharam-chonburi',
+      'wat-mangkorn-buppharam-chanthaburi',
+      'wat-chin-pracha-samoson-chachoengsao',
+      'chee-tek-lim-nakhon-nayok',
+      'pung-thao-kong-shrine-chiang-mai',
+      'pueng-thao-kong-ma-shrine-khon-kaen',
+      'wat-thipphayawari-bangkok',
+      'leng-buai-ia-shrine',
+      'wat-hua-lamphong-bangkok',
+      'wat-phanan-choeng-ayutthaya',
+      'put-jor-shrine-phuket',
+      'chao-pho-thepharak-chao-mae-thapthim-paknampho',
+    ],
+  },
   {
     slug: 'nine-emperor-gods',
     label: 'กิ๋วอ๋องไต่เต่ (เก้าอ๋อง)',
@@ -136,8 +163,9 @@ export const DEITY_GROUPS: DeityGroup[] = [
 
 export const deityGroup = (slug: string) => DEITY_GROUPS.find((g) => g.slug === slug);
 
-/** องค์เทพของสถานที่อยู่ในกลุ่มนี้ไหม */
-export const inDeityGroup = (group: DeityGroup, deities: string[]) => deities.some((d) => group.match.test(d));
+/** สถานที่อยู่ในกลุ่มนี้ไหม (ชื่อองค์เทพตรง pattern หรืออยู่ในรายการ slugs ของกลุ่ม) */
+export const inDeityGroup = (group: DeityGroup, place: { deities: string[]; slug?: string }) =>
+  place.deities.some((d) => group.match.test(d)) || (place.slug != null && (group.slugs?.includes(place.slug) ?? false));
 
 export const deityFamily = (slug: string) => DEITY_FAMILIES.find((f) => f.slug === slug);
 
@@ -151,6 +179,6 @@ export function familiesForQuery(query: string): DeityFamily[] {
 }
 
 /** สถานที่อยู่ในหมวดนี้ไหม (มีเทพในหมวด หรือเป็นประเภทสถานที่ของหมวด เช่น ศาลเจ้าจีน เทวาลัย) */
-export const inDeityFamily = (family: DeityFamily, place: { deities: string[]; type: string }) =>
+export const inDeityFamily = (family: DeityFamily, place: { deities: string[]; type: string; slug?: string }) =>
   family.types.includes(place.type) ||
-  DEITY_GROUPS.some((g) => g.family === family.slug && inDeityGroup(g, place.deities));
+  DEITY_GROUPS.some((g) => g.family === family.slug && inDeityGroup(g, place));

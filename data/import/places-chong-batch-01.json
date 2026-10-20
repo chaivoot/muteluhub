@@ -1,0 +1,396 @@
+[
+  {
+    "name": "วัดโพธิ์แมนคุณาราม (วัดโพวมิ้งปออึงยี่)",
+    "nameEn": "Wat Bhoman Khunaram",
+    "slug": "wat-bhoman-khunaram-bangkok",
+    "type": "temple",
+    "deities": [
+      "พระอวโลกิเตศวรโพธิสัตว์ (เจ้าแม่กวนอิม)",
+      "พระกษิติครรภโพธิสัตว์"
+    ],
+    "goals": [
+      "protection",
+      "health",
+      "family"
+    ],
+    "province": "กรุงเทพมหานคร",
+    "district": "ยานนาวา",
+    "coords": "13.7005205, 100.5395042",
+    "description": "วัดจีนฝ่ายมหายานย่านสาธุประดิษฐ์ สร้างปี 2502 ตามหลักฮวงจุ้ย สถาปัตยกรรมผสมไทย จีน และทิเบต ช่วงปีใหม่และตรุษจีนคนนิยมมาทำบุญไหว้แก้ชง ขอให้ปีนี้แคล้วคลาดปลอดภัย",
+    "howToPray": [
+      "ไหว้ตามจุดที่วัดจัดไว้ เริ่มจากด้านหน้าแล้วเข้าไปยังวิหารหลัก"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B9%8C%E0%B9%81%E0%B8%A1%E0%B8%99%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E6%99%AE%E9%96%80%E5%A0%B1%E6%81%A9%E5%AF%BA_Wat_Bhoman_Khunaram_in_September_2021_temple.jpg/1280px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B9%8C%E0%B9%81%E0%B8%A1%E0%B8%99%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E6%99%AE%E9%96%80%E5%A0%B1%E6%81%A9%E5%AF%BA_Wat_Bhoman_Khunaram_in_September_2021_temple.jpg",
+        "alt": "อาคารวิหารวัดโพธิ์แมนคุณาราม",
+        "author": "Chainwit.",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B9%8C%E0%B9%81%E0%B8%A1%E0%B8%99%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E6%99%AE%E9%96%80%E5%A0%B1%E6%81%A9%E5%AF%BA_Wat_Bhoman_Khunaram_in_September_2021_temple.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM way 320617683 'วัดโพธิ์แมนคุณาราม' (13.7005205, 100.5395042) ตรงกับ GPS ภาพ Commons (13.700419, 100.539314)",
+      "internal: แก้ชงจาก KTC (ผู้คนนิยมไปไหว้แก้ชง) + Kapook + Bangkok Airways blog แหล่งไม่ได้ระบุว่ามีองค์ไท้ส่วยเอี๊ยะ จึงไม่ใส่ใน deities",
+      "internal: เวลาเปิดไม่ตรงกัน (KTC 07.00-19.00, Bangkok Airways 09.00-17.00) จึงไม่ใส่ ควรเช็กกับวัด",
+      "internal: photo = Commons File:วัดโพธิ์แมนคุณาราม 普門報恩寺 Wat Bhoman Khunaram in September 2021 temple.jpg (CC BY-SA 4.0, Chainwit.) license เช็กผ่าน Commons API 2026-10-20"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B9%8C%E0%B9%81%E0%B8%A1%E0%B8%99%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1",
+      "https://www.ktc.co.th/article/travel-stories/thailand/th/chinese-temple",
+      "https://travel.kapook.com/view251062.html",
+      "https://blog.bangkokair.com/temple-to-fix-cursed-year/"
+    ],
+    "offerings": [],
+    "howToRepayVow": [],
+    "published": false,
+    "checkedAt": "2026-10-20"
+  },
+  {
+    "name": "วิหารเทพสถิตพระกิติเฉลิม (ศาลเจ้าหน่าจาซาไท้จื้อ อ่างศิลา)",
+    "nameEn": "Nezha Shrine, Ang Sila",
+    "slug": "nezha-shrine-ang-sila-chonburi",
+    "type": "chinese-shrine",
+    "deities": [
+      "หน่าจาซาไท้จื้อ (เทพนาจา)",
+      "ไท้ส่วยเอี๊ยะ"
+    ],
+    "goals": [
+      "protection",
+      "career",
+      "money"
+    ],
+    "province": "ชลบุรี",
+    "district": "เมืองชลบุรี",
+    "coords": "13.3289127, 100.9231748",
+    "description": "ศาลเจ้าจีน 4 ชั้นย่านอ่างศิลา ประดิษฐานองค์หน่าจาซาไท้จื้อ จุดเด่นคือมีไท้ส่วยเอี๊ยะครบ 60 องค์ตามปีเกิดและธาตุ ไหว้องค์ประจำปีเกิดตัวเองได้ มีเจ้าหน้าที่คอยแนะนำขั้นตอน เป็นที่แก้ชงยอดนิยมของคนภาคตะวันออก",
+    "hours": "09.00-17.00 น.",
+    "howToPray": [
+      "หาองค์ไท้ส่วยเอี๊ยะประจำปีเกิดของตัวเองจาก 60 องค์",
+      "ทำตามขั้นตอนที่เจ้าหน้าที่แนะนำ"
+    ],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%88%E0%B8%B2%E0%B8%8B%E0%B8%B2%E0%B9%84%E0%B8%97%E0%B9%89%E0%B8%88%E0%B8%B7%E0%B9%89%E0%B8%AD.JPG/1280px-%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%88%E0%B8%B2%E0%B8%8B%E0%B8%B2%E0%B9%84%E0%B8%97%E0%B9%89%E0%B8%88%E0%B8%B7%E0%B9%89%E0%B8%AD.JPG",
+        "alt": "อาคารศาลเจ้าหน่าจาซาไท้จื้อ อ่างศิลา",
+        "author": "Sanchai Wadwiang",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%88%E0%B8%B2%E0%B8%8B%E0%B8%B2%E0%B9%84%E0%B8%97%E0%B9%89%E0%B8%88%E0%B8%B7%E0%B9%89%E0%B8%AD.JPG"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM way 479830775 'ศาลเจ้าหน่าจาซาไท้จื้อ' (13.3289127, 100.9231748) ตรงกับ GPS ภาพ Commons (13.328833, 100.923)",
+      "internal: ไท้ส่วยเอี๊ยะ 60 องค์ + อาคาร 4 ชั้น จาก Bangkok Airways blog และ Kapook (view251062) ทั้งสองแหล่งระบุว่าวิหารเทพสถิตพระกิติเฉลิม = ศาลเจ้าหน่าจาซาไท้จื้อ ที่อยู่ การเคหะฯ 1 ซอย 13 ต.อ่างศิลา",
+      "internal: เวลาเปิดจาก Bangkok Airways blog",
+      "internal: photo = Commons File:ศาลเจ้าหน่าจาซาไท้จื้อ.JPG (PD-self, Sanchai Wadwiang) license เช็กผ่าน Commons API 2026-10-20"
+    ],
+    "sources": [
+      "https://blog.bangkokair.com/temple-to-fix-cursed-year/",
+      "https://travel.kapook.com/view251062.html",
+      "https://www.silkspan.com/article/news/cursed-year-fix-places/"
+    ],
+    "offerings": [],
+    "howToRepayVow": [],
+    "published": false,
+    "checkedAt": "2026-10-20"
+  },
+  {
+    "name": "วัดเทพพุทธาราม (วัดเซียนฮุดยี่)",
+    "nameEn": "Wat Thep Phuttharam",
+    "slug": "wat-thep-phuttharam-chonburi",
+    "type": "temple",
+    "deities": [
+      "พระพุทธรูปและพระโพธิสัตว์ฝ่ายมหายาน"
+    ],
+    "goals": [
+      "protection",
+      "health"
+    ],
+    "province": "ชลบุรี",
+    "district": "เมืองชลบุรี",
+    "coords": "13.369398, 100.993122",
+    "description": "วัดจีนนิกายมหายานแห่งแรกของชลบุรี ริมถนนสุขุมวิทในตัวเมือง ชาวจีนเรียกวัดเซียนฮุดยี่ ช่วงตรุษจีนคนชลบุรีนิยมมาไหว้พระและทำพิธีแก้ชง",
+    "hours": "08.00-18.00 น.",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Wat_Thep_Phuttharam.jpg/1280px-Wat_Thep_Phuttharam.jpg",
+        "alt": "วัดเทพพุทธาราม ชลบุรี",
+        "author": "Aveaoz",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Thep_Phuttharam.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = Wikidata Q16004178 P625 (13.369398, 100.993122) ค่าเดียวกับ GPS ภาพ Commons ไม่พบใน OSM ด้วยชื่อนี้ ควรเช็กหมุดอีกครั้ง",
+      "internal: deities เขียนกว้าง ๆ เพราะแหล่งไม่ได้ระบุชื่อองค์ ควรเช็กหน้างาน",
+      "internal: แก้ชงจาก Kapook (view262450) ที่อยู่ 686 ถ.สุขุมวิท โทร 0-3828-2940 เวลาเปิด 08.00-18.00 น. แหล่งไม่ได้ระบุองค์ไท้ส่วยเอี๊ยะ",
+      "internal: photo = Commons File:Wat Thep Phuttharam.jpg (CC BY-SA 3.0, Aveaoz) = ภาพ P18 ของ Wikidata license เช็กผ่าน Commons API 2026-10-20"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1",
+      "https://travel.kapook.com/view262450.html",
+      "https://www.wikidata.org/wiki/Q16004178"
+    ],
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "published": false,
+    "checkedAt": "2026-10-20"
+  },
+  {
+    "name": "วัดมังกรบุปผาราม (วัดเล่งฮัวยี่)",
+    "nameEn": "Wat Mangkorn Buppharam",
+    "slug": "wat-mangkorn-buppharam-chanthaburi",
+    "type": "temple",
+    "deities": [
+      "พระโพธิสัตว์ฝ่ายมหายาน"
+    ],
+    "goals": [
+      "protection",
+      "health"
+    ],
+    "province": "จันทบุรี",
+    "district": "แหลมสิงห์",
+    "coords": "12.5209633, 102.1646680",
+    "description": "วัดจีนนิกายมหายานริมถนนสุขุมวิทสายจันทบุรี-ขลุง สร้างปี 2520 คนจันท์และนักท่องเที่ยวนิยมแวะกราบพระโพธิสัตว์และทำบุญแก้ชงช่วงต้นปี",
+    "hours": "06.00-18.00 น.",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Wat_Mangkorn_Buppharam%2CChantaburi_%2832%29.jpg/1280px-Wat_Mangkorn_Buppharam%2CChantaburi_%2832%29.jpg",
+        "alt": "วัดมังกรบุปผาราม จันทบุรี",
+        "author": "กสิณธร ราชโอรส",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Mangkorn_Buppharam%2CChantaburi_%2832%29.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM node 4425021494 'วัดมังกรบุปผาราม' (12.5209633, 102.164668) ใกล้ Wikidata Q130298967 (12.52117, 102.16444)",
+      "internal: แก้ชงและเวลาเปิดจาก PPTV แหล่งไม่ได้ระบุองค์ไท้ส่วยเอี๊ยะ deities เขียนตาม PPTV (กราบพระโพธิสัตว์) ไม่ได้ระบุชื่อองค์",
+      "internal: photo = Commons File:Wat Mangkorn Buppharam,Chantaburi (32).jpg (CC BY-SA 4.0, กสิณธร ราชโอรส, Wiki Loves Monuments TH) = ภาพ P18 ของ Wikidata license เช็กผ่าน Commons API 2026-10-20"
+    ],
+    "sources": [
+      "https://www.pptvhd36.com/travel/thailand/213592",
+      "https://www.wikidata.org/wiki/Q130298967"
+    ],
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "published": false,
+    "checkedAt": "2026-10-20"
+  },
+  {
+    "name": "วัดจีนประชาสโมสร (วัดเล่งฮกยี่)",
+    "nameEn": "Wat Chin Pracha Samoson (Leng Hok Yi)",
+    "slug": "wat-chin-pracha-samoson-chachoengsao",
+    "type": "temple",
+    "deities": [
+      "ไฉ่ซิ้งเอี๊ยะ (เทพเจ้าแห่งโชคลาภ)",
+      "เจ้าแม่กวนอิม",
+      "พระพุทธรูปกระดาษ 3 องค์ (พระยูไล พระออนีทอฮุก พระเอี๊ยะซือฮุก)"
+    ],
+    "goals": [
+      "protection",
+      "money",
+      "health"
+    ],
+    "province": "ฉะเชิงเทรา",
+    "district": "เมืองฉะเชิงเทรา",
+    "coords": "13.7004095, 101.0903296",
+    "description": "วัดจีนเก่าแก่ที่ขยายมาจากวัดเล่งเน่ยยี่ เริ่มสร้างปี 2449 สมัยรัชกาลที่ 5 มีพระพุทธรูปหล่อด้วยกระดาษ และสรีระอดีตเจ้าอาวาส 2 รูปที่ไม่เน่าเปื่อย ช่วงต้นปีมีพิธีไหว้แก้ชง มีเจ้าหน้าที่แนะนำขั้นตอน",
+    "notes": [
+      "internal: coords = OSM way 1134534838 'วัดจีนประชาสโมสร(เล่งฮกยี่)' (13.7004095, 101.0903296) ใกล้ Wikidata Q13020652 (13.70017, 101.09123)",
+      "internal: แก้ชง/เจ้าหน้าที่แนะนำ/พระ 3 องค์ จาก Kapook (view251062) ประวัติจาก Thai Wikipedia ไม่ระบุว่ามีองค์ไท้ส่วยเอี๊ยะ",
+      "internal: ไม่พบภาพ Commons ที่แน่ใจ"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%B5%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B9%82%E0%B8%A1%E0%B8%AA%E0%B8%A3",
+      "https://travel.kapook.com/view251062.html"
+    ],
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [],
+    "published": false,
+    "checkedAt": "2026-10-20"
+  },
+  {
+    "name": "วัดเมตตาธรรมโพธิญาณ",
+    "nameEn": "Wat Metta Tham Phothiyan",
+    "slug": "wat-metta-tham-phothiyan-kanchanaburi",
+    "type": "temple",
+    "deities": [
+      "เจ้าแม่กวนอิม (ไม้แกะสลักสูง 12 เมตร)",
+      "ไท้ส่วยเอี๊ยะ"
+    ],
+    "goals": [
+      "protection",
+      "health",
+      "family"
+    ],
+    "province": "กาญจนบุรี",
+    "district": "เมืองกาญจนบุรี",
+    "coords": "13.9868354, 99.3912651",
+    "description": "วัดจีนในตัวเมืองกาญจนบุรี มีเจ้าแม่กวนอิมไม้แกะสลักสูง 12 เมตร และมีองค์ไท้ส่วยเอี๊ยะให้ไหว้ ทางวัดมีพิธีแก้ปีชงและต่อดวง เป็นที่แก้ชงหลักของคนฝั่งตะวันตก",
+    "hours": "07.00-18.00 น.",
+    "notes": [
+      "internal: coords = OSM node 3065457154 'วัดเมตตาธรรมโพธิญาณ' (13.9868354, 99.3912651)",
+      "internal: ไท้ส่วยเอี๊ยะ/พิธีแก้ปีชงและต่อดวง/กวนอิม 12 ม./เวลาเปิด จาก Kapook (view262450) ที่อยู่ 99/10 หมู่ 7",
+      "internal: ไม่พบภาพ Commons"
+    ],
+    "sources": [
+      "https://travel.kapook.com/view262450.html"
+    ],
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [],
+    "published": false,
+    "checkedAt": "2026-10-20"
+  },
+  {
+    "name": "พุทธสถานจีเต็กลิ้ม",
+    "nameEn": "Chee Tek Lim Buddhist Sanctuary",
+    "slug": "chee-tek-lim-nakhon-nayok",
+    "type": "chinese-shrine",
+    "deities": [
+      "ไฉ่ซิ้งเอี๊ยะ (เทพเจ้าแห่งโชคลาภ)",
+      "เจ้าแม่กวนอิม",
+      "พระศรีอริยเมตไตรย",
+      "เทพเจ้ากวนอู"
+    ],
+    "goals": [
+      "protection",
+      "money",
+      "business"
+    ],
+    "province": "นครนายก",
+    "district": "เมืองนครนายก",
+    "coords": "14.0271958, 101.1762891",
+    "description": "พุทธสถานจีนที่ตำบลศรีจุฬา องค์หลักคือไฉ่ซิ้งเอี๊ยะ เทพเจ้าแห่งโชคลาภ มีเจ้าแม่กวนอิม พระศรีอริยเมตไตรย และเทพเจ้ากวนอู ช่วงต้นปีมีพิธีสำหรับคนปีชง ไหว้แก้ชงพร้อมขอโชคลาภในที่เดียว",
+    "notes": [
+      "internal: coords = OSM way 1561294269 'พุทธสถาน จีเต็กลิ้ม ไหว้ขอเงินทอง' (14.0271958, 101.1762891)",
+      "internal: องค์เทพและพิธีปีชงจาก Kapook (view251062) โทร 08-1815-1745 แหล่งไม่ได้ระบุองค์ไท้ส่วยเอี๊ยะ",
+      "internal: ไม่พบภาพ Commons"
+    ],
+    "sources": [
+      "https://travel.kapook.com/view251062.html"
+    ],
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [],
+    "published": false,
+    "checkedAt": "2026-10-20"
+  },
+  {
+    "name": "ศาลเจ้าปุงเถ่ากง เชียงใหม่",
+    "nameEn": "Pung Thao Kong Shrine, Chiang Mai",
+    "slug": "pung-thao-kong-shrine-chiang-mai",
+    "type": "chinese-shrine",
+    "deities": [
+      "ปุงเถ่ากง (เทพเจ้าที่)"
+    ],
+    "goals": [
+      "protection",
+      "money",
+      "business"
+    ],
+    "province": "เชียงใหม่",
+    "district": "เมืองเชียงใหม่",
+    "coords": "18.7898095, 99.0019130",
+    "description": "ศาลเจ้าจีนบนถนนไปรษณีย์ ย่านกาดหลวง ช่วงตรุษจีนคนเชียงใหม่มาไหว้แก้ชงกันมาก ที่ศาลมีชุดเซ่นไหว้จำหน่าย และมีป้ายแนะนำจุดไหว้กว่า 15 จุด",
+    "hours": "08.00-17.00 น.",
+    "notes": [
+      "internal: coords = OSM way 255987533 'ศาลเจ้าปุงเถ่ากง' ถนนไปรษณีย์ ต.ช้างม่อย (18.7898095, 99.001913)",
+      "internal: ชุดเซ่นไหว้จำหน่าย/จุดไหว้ 15 จุด/เวลาเปิด จาก Bangkok Airways blog ที่อยู่ 45 ถ.ไปรษณีย์ แหล่งไม่ได้ระบุองค์ไท้ส่วยเอี๊ยะ",
+      "internal: ไม่พบภาพ Commons ที่แน่ใจว่าเป็นศาลนี้"
+    ],
+    "sources": [
+      "https://blog.bangkokair.com/temple-to-fix-cursed-year/"
+    ],
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [],
+    "published": false,
+    "checkedAt": "2026-10-20"
+  },
+  {
+    "name": "ศาลเจ้าปึงเถ่ากงม่า ขอนแก่น",
+    "nameEn": "Pueng Thao Kong Ma Shrine, Khon Kaen",
+    "slug": "pueng-thao-kong-ma-shrine-khon-kaen",
+    "type": "chinese-shrine",
+    "deities": [
+      "ปึงเถ่ากง ปึงเถ่าม่า"
+    ],
+    "goals": [
+      "protection",
+      "money",
+      "family"
+    ],
+    "province": "ขอนแก่น",
+    "district": "เมืองขอนแก่น",
+    "coords": "16.4199610, 102.8402705",
+    "description": "ศาลเจ้าจีนหลักของชาวขอนแก่น ริมถนนรอบบึงแก่นนคร เป็นจุดสิ้นสุดขบวนแห่งานปึงเถ่ากงม่าประจำปี ช่วงต้นปีคนอีสานนิยมมาไหว้แก้ชงและขอพรให้ครอบครัว",
+    "hours": "08.00-17.00 น.",
+    "notes": [
+      "internal: coords = OSM node 1196796973 'ศาลเจ้าปึงเถ่ากงม่า' ถนนรอบบึง (16.419961, 102.8402705)",
+      "internal: แก้ชงจาก Kapook (view262450, ที่อยู่ 51/24 หมู่ 1 ถ.รอบบึง โทร 0-4322-3437 เวลาเปิด 08.00-17.00 น.) และ Silkspan แหล่งไม่ได้ระบุองค์ไท้ส่วยเอี๊ยะ",
+      "internal: งานแห่ปึงเถ่ากงม่าจาก Naewna",
+      "internal: ไม่พบภาพ Commons"
+    ],
+    "sources": [
+      "https://travel.kapook.com/view262450.html",
+      "https://www.silkspan.com/article/news/cursed-year-fix-places/",
+      "https://www.naewna.com/entertain/929950"
+    ],
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "images": [],
+    "published": false,
+    "checkedAt": "2026-10-20"
+  },
+  {
+    "name": "วัดฉื่อฉาง",
+    "nameEn": "Wat Chue Chang",
+    "slug": "wat-chue-chang-hat-yai",
+    "type": "temple",
+    "deities": [
+      "ไท้ส่วยเอี๊ยะ"
+    ],
+    "goals": [
+      "protection",
+      "health",
+      "career"
+    ],
+    "province": "สงขลา",
+    "district": "หาดใหญ่",
+    "coords": "7.0086758, 100.4721180",
+    "description": "วัดจีนนิกายมหายานกลางเมืองหาดใหญ่ หัวมุมถนนศุภสารรังสรรค์ ห่างตลาดกิมหยงราว 290 เมตร มีไท้ส่วยเอี๊ยะครบ 60 องค์ ซึ่งหาได้ยากในภาคใต้ คนปีชงไหว้องค์ประจำปีเกิดได้",
+    "hours": "07.00-19.00 น.",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Wat_Chue_Chang_%28I%29.jpg/1280px-Wat_Chue_Chang_%28I%29.jpg",
+        "alt": "วัดฉื่อฉาง หาดใหญ่",
+        "author": "Supanut Arunoprayote",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Chue_Chang_%28I%29.jpg"
+      }
+    ],
+    "notes": [
+      "internal: coords = OSM way 384529939 'วัดฉื่อฉาง' (7.0086758, 100.472118) ตรงกับ GPS ภาพ Commons (7.008277, 100.47216)",
+      "internal: ไท้ส่วยเอี๊ยะ 60 องค์ (บทความว่าหนึ่งเดียวในภาคใต้) + เวลาเปิด จาก Bangkok Airways blog ที่อยู่ 118 ถ.ศุภสารรังสรรค์",
+      "internal: photo = Commons File:Wat Chue Chang (I).jpg (CC BY 4.0, Supanut Arunoprayote) license เช็กผ่าน Commons API 2026-10-20"
+    ],
+    "sources": [
+      "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%89%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%89%E0%B8%B2%E0%B8%87",
+      "https://blog.bangkokair.com/temple-to-fix-cursed-year/"
+    ],
+    "offerings": [],
+    "howToPray": [],
+    "howToRepayVow": [],
+    "published": false,
+    "checkedAt": "2026-10-20"
+  }
+]

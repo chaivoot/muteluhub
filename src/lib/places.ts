@@ -36,7 +36,7 @@ function matchesDeity(slug: string, p: Place): boolean {
     return family != null && inDeityFamily(family, p);
   }
   const group = deityGroup(slug);
-  return group != null && inDeityGroup(group, p.deities);
+  return group != null && inDeityGroup(group, p);
 }
 
 export function filterPlaces(filter: PlaceFilter, places: Place[]): Place[] {
@@ -109,7 +109,7 @@ export function deitySuggestions(places: Place[], query: string, limit = 12): De
 
 /** กลุ่มองค์เทพที่มีสถานที่อย่างน้อย 1 แห่ง เรียงตามจำนวน (มากก่อน) */
 export function deitiesOf(places: Place[]): (DeityGroup & { count: number })[] {
-  return DEITY_GROUPS.map((g) => ({ ...g, count: places.filter((p) => inDeityGroup(g, p.deities)).length }))
+  return DEITY_GROUPS.map((g) => ({ ...g, count: places.filter((p) => inDeityGroup(g, p)).length }))
     .filter((g) => g.count > 0)
     .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'th'));
 }
