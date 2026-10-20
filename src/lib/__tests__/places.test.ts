@@ -42,6 +42,13 @@ describe('deity groups', () => {
     expect(deitiesOf(variants)).toEqual([expect.objectContaining({ slug: 'guan-yu', count: 3 })]);
   });
 
+  it('counts a place in a group by deity name or by the group slug list', () => {
+    const named: Place = { ...b, slug: 'named', deities: ['ไท้ส่วยเอี๊ยะ'] };
+    const listed: Place = { ...b, slug: 'chao-pho-suea-shrine', deities: ['เจ้าพ่อเสือ'] };
+    expect(filterPlaces({ deity: 'tai-sui' }, [...list, named, listed]).map((p) => p.slug)).toEqual(['named', 'chao-pho-suea-shrine']);
+    expect(deitySuggestions([named, listed], 'ไท้ส่วย')).toEqual([expect.objectContaining({ kind: 'group', slug: 'tai-sui', count: 2 })]);
+  });
+
   it('suggests groups and loose deity names for typed text', () => {
     const d: Place = { ...b, slug: 'd', deities: ['เจ้าพ่อพระกาฬ', 'เทพเจ้ากวนอู'] };
     expect(deitySuggestions([...list, d], '').map((s) => s.label)).toContain('เทพเจ้ากวนอู');
