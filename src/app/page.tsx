@@ -20,7 +20,7 @@ import { PlaceImageBox } from '@/components/PlaceCard';
 import { listPublishedPlaces } from '@/lib/places-repo';
 import { listShirtOffers } from '@/lib/products-repo';
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site';
-import { bangkokDay, formatThaiFullDate, formatThaiRange } from '@/lib/thai-date';
+import { addDays, bangkokDay, formatThaiFullDate, formatThaiRange } from '@/lib/thai-date';
 
 // วันที่ สีเสื้อ และเทศกาลขึ้นกับวัน จึงสร้างหน้าใหม่ทุก 10 นาที
 export const revalidate = 600;
@@ -48,8 +48,12 @@ export default async function HomePage() {
   // หน้าแรกแสดงไม่เกิน 3 ใบ (ใกล้สุดก่อน) ที่เหลือดูได้ที่ /festival
   const festivals = upcoming.slice(0, 3);
   const readings = festivalArticles(articles, upcoming);
-  // ดาวย้ายราศีที่กำลังเกิด/จะเกิดใน 14 วัน ขึ้นเป็นการ์ดเล็กใต้เทศกาล
-  const transits = upcomingTransits(today.iso, 14).slice(0, 2);
+  // ดาวย้ายราศีที่กำลังเกิด/จะเกิดใน 14 วัน ขึ้นเป็นการ์ดเล็กใต้เทศกาล (เกตุย้ายทุกราว 56 วัน คนไม่ค่อยติดตาม ไม่ขึ้นหน้าแรก)
+  // ช่วงพักร์ยาวหลายเดือนไม่ค้างหน้าแรก: เอาเฉพาะที่เริ่มไม่เกิน 3 วันก่อน หรือกำลังจะเริ่ม
+  const recent = addDays(today.iso, -3);
+  const transits = upcomingTransits(today.iso, 14)
+    .filter((t) => t.planet !== 'ketu' && t.date >= recent)
+    .slice(0, 2);
   const festivalName = new Map(upcoming.map((o) => [o.festival.slug, o.festival.name]));
   const places = thaiPlaces(allPlaces);
   // ต่างประเทศ: เลือกเฉพาะที่มีภาพ ปักหมุด/ยอดนิยมก่อน

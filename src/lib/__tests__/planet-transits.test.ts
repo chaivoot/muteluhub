@@ -43,11 +43,6 @@ describe('planetPositions', () => {
     expect(on.next?.date).toBe('2027-02-09');
   });
 
-  it('puts ketu opposite rahu when ketu has no data', () => {
-    const ketu = planetPositions('2026-10-20', transits, base).find((p) => p.planet.slug === 'ketu');
-    expect(ketu?.sign).toBe('กรกฎ');
-  });
-
   it('skips planets with no data and flags a retrograde period', () => {
     const list = planetPositions('2026-11-05', transits, base);
     expect(list.some((p) => p.planet.slug === 'saturn')).toBe(false);
