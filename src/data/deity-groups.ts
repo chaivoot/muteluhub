@@ -83,6 +83,7 @@ export const DEITY_GROUPS: DeityGroup[] = [
   { slug: 'wenchang', label: 'เทพเจ้าบุ๋นเชียง', match: /บุ๋นเชียง|เหวินชาง/, family: 'chinese' },
   { slug: 'tai-hong', label: 'หลวงปู่ไต้ฮง', match: /ไต้ฮง/, family: 'chinese' },
   { slug: 'tua-lao-ia', label: 'เจ้าพ่อเสือ', match: /เจ้าพ่อเสือ/, family: 'chinese' },
+  { slug: 'tai-sui', label: 'ไท้ส่วยเอี๊ย (แก้ชง)', match: /ไท้ส่วย|ไท่ส่วย|ไท่ซุ่ย|ไท้ซุ่ย/, family: 'chinese' },
   {
     slug: 'nine-emperor-gods',
     label: 'กิ๋วอ๋องไต่เต่ (เก้าอ๋อง)',
