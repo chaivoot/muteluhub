@@ -10,6 +10,7 @@ import { SectionHeader } from '@/components/SectionHeader';
 import { ShirtColorCard } from '@/components/ShirtColorCard';
 import { SiteHeader } from '@/components/SiteHeader';
 import { festivalArticles, upcomingFestivals, withCover } from '@/lib/festivals';
+import { thaiDigits, transitTitle, upcomingTransits } from '@/lib/planet-transits';
 import { FESTIVALS } from '@/data/festivals';
 import { getFestivalCovers, listPublishedArticles } from '@/lib/articles-repo';
 import { abroadPlaces, featuredPlaces, thaiPlaces } from '@/lib/places';
@@ -19,7 +20,7 @@ import { PlaceImageBox } from '@/components/PlaceCard';
 import { listPublishedPlaces } from '@/lib/places-repo';
 import { listShirtOffers } from '@/lib/products-repo';
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site';
-import { bangkokDay, formatThaiFullDate } from '@/lib/thai-date';
+import { bangkokDay, formatThaiFullDate, formatThaiRange } from '@/lib/thai-date';
 
 // วันที่ สีเสื้อ และเทศกาลขึ้นกับวัน จึงสร้างหน้าใหม่ทุก 10 นาที
 export const revalidate = 600;
@@ -47,6 +48,8 @@ export default async function HomePage() {
   // หน้าแรกแสดงไม่เกิน 3 ใบ (ใกล้สุดก่อน) ที่เหลือดูได้ที่ /festival
   const festivals = upcoming.slice(0, 3);
   const readings = festivalArticles(articles, upcoming);
+  // ดาวย้ายราศีที่กำลังเกิด/จะเกิดใน 14 วัน ขึ้นเป็นการ์ดเล็กใต้เทศกาล
+  const transits = upcomingTransits(today.iso, 14).slice(0, 2);
   const festivalName = new Map(upcoming.map((o) => [o.festival.slug, o.festival.name]));
   const places = thaiPlaces(allPlaces);
   // ต่างประเทศ: เลือกเฉพาะที่มีภาพ ปักหมุด/ยอดนิยมก่อน
@@ -87,14 +90,36 @@ export default async function HomePage() {
           <PhoneNumberShortcut />
           <LicensePlateShortcut />
         </div>
-        {festivals.length > 0 && (
+        {(festivals.length > 0 || transits.length > 0) && (
           <div>
-            <SectionHeader title="เทศกาลที่กำลังจะมา" href="/festival" />
-            <div className="stack">
-              {festivals.map((o) => (
-                <FestivalCard key={`${o.festival.slug}-${o.date.year}`} occurrence={o} />
-              ))}
-            </div>
+            {festivals.length > 0 && (
+              <>
+                <SectionHeader title="เทศกาลที่กำลังจะมา" href="/festival" />
+                <div className="stack">
+                  {festivals.map((o) => (
+                    <FestivalCard key={`${o.festival.slug}-${o.date.year}`} occurrence={o} />
+                  ))}
+                </div>
+              </>
+            )}
+            {transits.length > 0 && (
+              <div className="home-reads">
+                <h3 className="home-reads__title">ดาวย้ายราศี</h3>
+                <ul className="home-reads__list">
+                  {transits.map((t) => (
+                    <li key={`${t.planet}-${t.date}`}>
+                      <Link href="/planet-transits" className="home-reads__item">
+                        <span className="home-reads__name">{transitTitle(t)}</span>
+                        <span className="home-reads__meta">
+                          {thaiDigits(formatThaiRange(t.date, t.end ?? t.date, true))}
+                          {t.date <= today.iso && (t.end ?? t.date) >= today.iso ? (t.end ? ' · ช่วงนี้' : ' · วันนี้') : ''}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
             {readings.length > 0 && (
               <div className="home-reads">
                 <h3 className="home-reads__title">อ่านรับเทศกาล</h3>

@@ -16,5 +16,6 @@ export const NAV_ITEMS: NavItem[] = [
   { href: '/abroad', label: 'มูต่างประเทศ', icon: 'abroad' },
   { href: '/calendar', label: 'ปฏิทินมงคล', icon: 'calendar' },
   { href: '/festival', label: 'เทศกาลและบทความ', icon: 'calendar' },
+  { href: '/planet-transits', label: 'ดาวย้ายราศี', icon: 'sparkle' },
   { href: '/ai-prompts', label: 'ดูดวงด้วย AI', icon: 'sparkle' },
 ];
