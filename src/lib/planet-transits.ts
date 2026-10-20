@@ -2,7 +2,6 @@ import {
   PLANET_BASELINES,
   PLANET_TRANSITS,
   PLANETS,
-  ZODIAC_SIGNS,
   type PlanetInfo,
   type PlanetTransit,
   type ZodiacSign,
@@ -13,8 +12,6 @@ const THAI_DIGITS = '๐๑๒๓๔๕๖๗๘๙';
 
 /** เนื้อหาโหราศาสตร์ไทยใช้เลขไทย */
 export const thaiDigits = (s: string | number) => String(s).replace(/[0-9]/g, (d) => THAI_DIGITS[Number(d)]);
-
-const opposite = (sign: ZodiacSign): ZodiacSign => ZODIAC_SIGNS[(ZODIAC_SIGNS.indexOf(sign) + 6) % 12];
 
 export interface PlanetPosition {
   planet: PlanetInfo;
@@ -29,7 +26,7 @@ export interface PlanetPosition {
 
 const byDate = (a: PlanetTransit, b: PlanetTransit) => a.date.localeCompare(b.date);
 
-/** ดาวแต่ละดวงอยู่ราศีไหนในวันที่ระบุ (เฉพาะดวงที่มีข้อมูล) เกตุอยู่ตรงข้ามราหูเสมอ */
+/** ดาวแต่ละดวงอยู่ราศีไหนในวันที่ระบุ (เฉพาะดวงที่มีข้อมูล) */
 export function planetPositions(todayIso: string, transits = PLANET_TRANSITS, baselines = PLANET_BASELINES): PlanetPosition[] {
   const result: PlanetPosition[] = [];
   for (const planet of PLANETS) {
@@ -37,15 +34,8 @@ export function planetPositions(todayIso: string, transits = PLANET_TRANSITS, ba
     const ingresses = own.filter((t) => t.kind === 'ingress' && t.to);
     const last = [...ingresses].reverse().find((t) => t.date <= todayIso);
     const base = baselines.find((b) => b.planet === planet.slug && b.asOf <= todayIso);
-    let sign: ZodiacSign | null = last?.to ?? base?.sign ?? null;
-    let since = last?.date ?? null;
-    if (!sign && planet.slug === 'ketu') {
-      const rahu = result.find((p) => p.planet.slug === 'rahu');
-      if (rahu) {
-        sign = opposite(rahu.sign);
-        since = rahu.since;
-      }
-    }
+    const sign: ZodiacSign | null = last?.to ?? base?.sign ?? null;
+    const since = last?.date ?? base?.asOf ?? null;
     if (!sign) continue;
     const retrograde = own.find((t) => t.kind === 'retrograde-period' && t.date <= todayIso && (t.end ?? t.date) >= todayIso) ?? null;
     result.push({ planet, sign, since, next: ingresses.find((t) => t.date > todayIso) ?? null, retrograde });
