@@ -22,6 +22,8 @@ export interface PlaceFilter {
   /** ข้อความที่ผู้ใช้พิมพ์เอง หาในชื่อองค์เทพแบบบางส่วน (ใช้เมื่อไม่ได้เลือกกลุ่ม) */
   deityText?: string | null;
   province?: string | null;
+  /** คำค้นอิสระ หาในชื่อไทย/อังกฤษ องค์เทพ อำเภอ จังหวัด และเมือง */
+  q?: string | null;
 }
 
 /** สถานที่ในไทย / ต่างประเทศ */
@@ -43,6 +45,7 @@ export function filterPlaces(filter: PlaceFilter, places: Place[]): Place[] {
   const text = normalizeDeity(filter.deityText ?? '');
   // พิมพ์คำกว้าง ๆ อย่าง เทพจีน / เทพพราหมณ์ แล้วกด Enter โดยไม่เลือก: นับทั้งหมวดด้วย
   const textFamilies = text ? familiesForQuery(text) : [];
+  const q = (filter.q ?? '').trim();
   return places.filter(
     (p) =>
       (!filter.goal || p.goals.includes(filter.goal)) &&
@@ -50,8 +53,17 @@ export function filterPlaces(filter: PlaceFilter, places: Place[]): Place[] {
       (!text ||
         p.deities.some((d) => normalizeDeity(d).includes(text)) ||
         textFamilies.some((f) => inDeityFamily(f, p))) &&
-      (!filter.province || p.provinceSlug === filter.province),
+      (!filter.province || p.provinceSlug === filter.province) &&
+      (!q || matchesQuery(p, q)),
   );
+}
+
+/** คำค้นหลายคำ (เว้นวรรค) ต้องเจอทุกคำ เช่น วัด เชียงใหม่ */
+function matchesQuery(p: Place, q: string): boolean {
+  const hay = normalizeDeity(
+    [p.name, p.nameEn ?? '', p.district ?? '', p.city ?? '', p.provinceSlug ? (PROVINCES[p.provinceSlug] ?? '') : '', p.provinceSlug ? provinceShortName(p.provinceSlug) : '', ...p.deities].join('|'),
+  );
+  return q.split(/\s+/).filter(Boolean).every((w) => hay.includes(normalizeDeity(w)));
 }
 
 export const getPlace = (slug: string, places: Place[]) => places.find((p) => p.slug === slug);

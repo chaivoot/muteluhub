@@ -27,6 +27,7 @@ export function PlacesBrowser({
 }) {
   const [goal, setGoal] = useState<GoalSlug | null>(null);
   const [deity, setDeity] = useState<DeityValue>(null);
+  const [q, setQ] = useState('');
   // ลิงก์ที่ส่งตัวกรองมาด้วย เช่น /places?deity=family:chinese จากหน้าตรุษจีน
   // อ่านหลัง mount (ไม่ใช้ useSearchParams) เพื่อให้ HTML ของหน้ายังมีรายการสถานที่ครบสำหรับ SEO
   useEffect(() => {
@@ -35,6 +36,8 @@ export function PlacesBrowser({
     if (isGoalSlug(g)) setGoal(g);
     const d = deityFromQuery(params.get('deity'));
     if (d) setDeity(d);
+    const text = params.get('q');
+    if (text) setQ(text);
   }, []);
   const [province, setProvince] = useState('');
   const [here, setHere] = useState<LatLng | null>(null);
@@ -72,6 +75,7 @@ export function PlacesBrowser({
   const cities = useMemo(() => [...new Set(places.map((p) => p.city).filter((c): c is string => !!c))], [places]);
   const scope = {
     goal,
+    q,
     province: groupBy === 'province' ? (fixedProvince ?? (province || null)) : null,
   };
   const inCity = (p: Place) => groupBy !== 'city' || !province || p.city === province;
@@ -122,6 +126,27 @@ export function PlacesBrowser({
             >
               <UiIcon name="locate" size={16} strokeWidth={2} />
               {geo === 'locating' ? 'กำลังหาตำแหน่ง' : 'ใกล้ฉัน'}
+            </button>
+          )}
+        </div>
+        <div className="search-box">
+          <UiIcon name="search" size={18} strokeWidth={2} />
+          <label htmlFor="place-search" className="visually-hidden">
+            ค้นหาสถานที่
+          </label>
+          <input
+            id="place-search"
+            className="search-box__input"
+            type="search"
+            enterKeyHint="search"
+            autoComplete="off"
+            placeholder={groupBy === 'city' ? 'ค้นหาชื่อสถานที่ เมือง องค์เทพ' : 'ค้นหาชื่อวัด ศาลเจ้า อำเภอ จังหวัด'}
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+          />
+          {q && (
+            <button type="button" className="search-box__clear" aria-label="ล้างคำค้น" onClick={() => setQ('')}>
+              <UiIcon name="close" size={16} />
             </button>
           )}
         </div>
@@ -176,7 +201,7 @@ export function PlacesBrowser({
       </div>
       {results.length === 0 && (
         <p className="container note">
-          {places.length === 0 ? 'กำลังรวบรวมข้อมูลสถานที่' : 'ยังไม่มีสถานที่ตามตัวกรองนี้ ลองเลือกเป้าหมายอื่น'}
+          {places.length === 0 ? 'กำลังรวบรวมข้อมูลสถานที่' : q.trim() ? `ไม่เจอสถานที่ที่ตรงกับ ${q.trim()} ลองพิมพ์คำอื่น หรือล้างตัวกรอง` : 'ยังไม่มีสถานที่ตามตัวกรองนี้ ลองเลือกเป้าหมายอื่น'}
         </p>
       )}
     </>

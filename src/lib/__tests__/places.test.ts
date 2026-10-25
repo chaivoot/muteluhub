@@ -35,6 +35,17 @@ describe('filterPlaces', () => {
   });
 });
 
+describe('text search', () => {
+  it('matches name, deity and province, every word must hit', () => {
+    const d: Place = { ...c, slug: 'd', name: 'วัดพระธาตุดอยสุเทพ', nameEn: 'Wat Phra That Doi Suthep' };
+    expect(filterPlaces({ q: 'ดอยสุเทพ' }, [...list, d]).map((p) => p.slug)).toEqual(['d']);
+    expect(filterPlaces({ q: 'doi suthep' }, [...list, d]).map((p) => p.slug)).toEqual(['d']);
+    expect(filterPlaces({ q: 'เจ้าพ่อเสือ' }, list).map((p) => p.slug)).toEqual(['b']);
+    expect(filterPlaces({ q: 'วัด เชียงใหม่' }, [...list, d]).map((p) => p.slug)).toEqual(['d']);
+    expect(filterPlaces({ q: 'วัด ภูเก็ต' }, [...list, d])).toEqual([]);
+  });
+});
+
 describe('deity groups', () => {
   it('groups spelling variants of the same deity', () => {
     const variants = ['กวนอู', 'เทพเจ้ากวนอู', 'เจ้าพ่อกวนอู'].map((d, i) => ({ ...b, slug: `g${i}`, deities: [d] }));
