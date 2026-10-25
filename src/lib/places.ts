@@ -46,6 +46,7 @@ export function filterPlaces(filter: PlaceFilter, places: Place[]): Place[] {
   // พิมพ์คำกว้าง ๆ อย่าง เทพจีน / เทพพราหมณ์ แล้วกด Enter โดยไม่เลือก: นับทั้งหมวดด้วย
   const textFamilies = text ? familiesForQuery(text) : [];
   const q = (filter.q ?? '').trim();
+  const qFamilies = q ? familiesForQuery(q) : [];
   return places.filter(
     (p) =>
       (!filter.goal || p.goals.includes(filter.goal)) &&
@@ -54,7 +55,7 @@ export function filterPlaces(filter: PlaceFilter, places: Place[]): Place[] {
         p.deities.some((d) => normalizeDeity(d).includes(text)) ||
         textFamilies.some((f) => inDeityFamily(f, p))) &&
       (!filter.province || p.provinceSlug === filter.province) &&
-      (!q || matchesQuery(p, q)),
+      (!q || matchesQuery(p, q) || qFamilies.some((f) => inDeityFamily(f, p))),
   );
 }
 
