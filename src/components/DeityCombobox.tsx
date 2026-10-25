@@ -65,7 +65,7 @@ export function DeityCombobox({
         aria-expanded={open}
         aria-controls={listId}
         aria-activedescendant={open && active >= 0 ? `${listId}-${active}` : undefined}
-        placeholder="ทุกองค์เทพ"
+        placeholder="องค์เทพ"
         autoComplete="off"
         enterKeyHint="search"
         value={text}
