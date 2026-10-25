@@ -140,7 +140,7 @@ export function PlacesBrowser({
             type="search"
             enterKeyHint="search"
             autoComplete="off"
-            placeholder={groupBy === 'city' ? 'ค้นหาชื่อสถานที่ เมือง องค์เทพ' : 'ค้นหาชื่อวัด ศาลเจ้า อำเภอ จังหวัด'}
+            placeholder={groupBy === 'city' ? 'ชื่อสถานที่ หรือเมือง' : 'ชื่อวัด ศาลเจ้า หรืออำเภอ'}
             value={q}
             onChange={(e) => setQ(e.target.value)}
           />
