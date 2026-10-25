@@ -3,6 +3,7 @@
 import { useId, useMemo, useState } from 'react';
 import type { Place } from '@/data/places';
 import { deitySuggestions, type DeitySuggestion } from '@/lib/places';
+import { UiIcon } from './icons';
 
 export type DeityValue = { kind: 'group'; slug: string; label: string } | { kind: 'text'; text: string } | null;
 
@@ -54,8 +55,11 @@ export function DeityCombobox({
   return (
     <div className="combo">
       <label htmlFor={id} className="visually-hidden">
-        องค์เทพ / สิ่งศักดิ์สิทธิ์
+        ค้นหาสถานที่ หรือองค์เทพ
       </label>
+      <span className="combo__icon" aria-hidden="true">
+        <UiIcon name="search" size={18} strokeWidth={2} />
+      </span>
       <input
         id={id}
         className="select combo__input"
@@ -65,7 +69,7 @@ export function DeityCombobox({
         aria-expanded={open}
         aria-controls={listId}
         aria-activedescendant={open && active >= 0 ? `${listId}-${active}` : undefined}
-        placeholder="องค์เทพ"
+        placeholder="ค้นหา"
         autoComplete="off"
         enterKeyHint="search"
         value={text}
@@ -86,7 +90,7 @@ export function DeityCombobox({
         <button
           type="button"
           className="combo__btn"
-          aria-label="ล้างองค์เทพ"
+          aria-label="ล้างคำค้น"
           onMouseDown={(e) => e.preventDefault()}
           onClick={() => {
             onChange(null);
@@ -98,12 +102,9 @@ export function DeityCombobox({
       ) : (
         <span className="combo__chevron" aria-hidden="true" />
       )}
-      {open && (
+      {open && options.length > 0 && (
         <ul id={listId} role="listbox" className="combo__list" aria-label="องค์เทพ">
-          {options.length === 0 ? (
-            <li className="combo__empty">ไม่พบองค์เทพนี้</li>
-          ) : (
-            options.map((o, i) => (
+          {options.map((o, i) => (
               <li
                 key={`${o.kind}-${o.label}`}
                 id={`${listId}-${i}`}
@@ -120,8 +121,7 @@ export function DeityCombobox({
                 <span>{o.label}</span>
                 <span className="combo__count">{o.count}</span>
               </li>
-            ))
-          )}
+          ))}
         </ul>
       )}
     </div>
