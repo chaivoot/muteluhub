@@ -32,6 +32,9 @@ export default async function PlacesPage() {
       <PageHeader title="สถานที่เสริมดวงในไทย" />
       <div className="prose intro">
         <p>วัด ศาลเจ้า เทวาลัย ทั่วไทย เลือกเรื่องที่อยากขอพร แล้วดูว่าควรไปไหว้ที่ไหน ต้องเตรียมอะไร</p>
+        <p>
+          <Link href="/places/city-pillar-shrines">ดูศาลหลักเมืองทั่วไทยแยกตามจังหวัด</Link>
+        </p>
       </div>
       <PlacesBrowser places={places} />
       {provinces.length > 0 && (

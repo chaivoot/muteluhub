@@ -14,7 +14,7 @@ import { agodaLink, agodaNearPlace } from '@/lib/agoda';
 import { LodgingBlock } from '@/components/LodgingBlock';
 import { getGoal } from '@/lib/goals';
 import { countryByCode } from '@/data/countries';
-import { filterPlaces, mapLink, placeLocation, provincesWithPlaces, relatedPlaces, thaiPlaces } from '@/lib/places';
+import { filterPlaces, isCityPillarShrine, mapLink, placeLocation, provincesWithPlaces, relatedPlaces, thaiPlaces } from '@/lib/places';
 import { listPublishedPlaces } from '@/lib/places-repo';
 import { SITE_URL } from '@/lib/site';
 import { parseIsoDay, TH_MONTHS, toBuddhistYear } from '@/lib/thai-date';
@@ -39,7 +39,15 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     return {
       alternates: { canonical: `/places/${slug}` },
       title: `${place.name} ขอพรเรื่องอะไร ไหว้อย่างไร`,
-      description: `${place.summary} ขอพรเด่นเรื่อง${goals}`.slice(0, 160),
+      // ผลค้นหาส่วนใหญ่ถาม ขอพรเรื่องอะไร ขึ้นต้นด้วยคำตอบก่อน ตามด้วยของไหว้และคำอธิบาย
+      description: [
+        goals ? `ขอพรเด่นเรื่อง${goals}` : null,
+        place.offerings.length > 0 ? `ของไหว้ ${place.offerings.slice(0, 3).join(' ')}` : null,
+        place.summary,
+      ]
+        .filter(Boolean)
+        .join(' · ')
+        .slice(0, 160),
       openGraph: place.images[0] ? { images: [{ url: place.images[0].src, alt: place.images[0].alt }] } : undefined,
     };
   }
@@ -68,6 +76,11 @@ export default async function PlaceOrProvincePage({ params }: { params: Params }
           <p>สถานที่เสริมดวงใน{PROVINCES[slug]}</p>
         </div>
         <PlacesBrowser places={inProvince} fixedProvince={slug} />
+        {inProvince.some(isCityPillarShrine) && (
+          <p className="container note">
+            <Link href={`/places/city-pillar-shrines#${slug}`}>ดูศาลหลักเมืองจังหวัดอื่น ๆ ทั่วไทย</Link>
+          </p>
+        )}
         {provinceAgoda && (
           <div className="container">
             <LodgingBlock
@@ -279,6 +292,13 @@ function PlaceDetail({ place, places }: { place: Place; places: Place[] }) {
             </p>
           )}
         </section>
+        {isCityPillarShrine(place) && (
+          <p className="note">
+            <Link href={`/places/city-pillar-shrines${place.provinceSlug ? `#${place.provinceSlug}` : ''}`}>
+              ดูศาลหลักเมืองทุกจังหวัดทั่วไทย
+            </Link>
+          </p>
+        )}
       </div>
 
       {related.length > 0 && (

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Place } from '@/data/places';
 import { agodaLink } from '@/lib/agoda';
-import { deitiesOf, deitySuggestions, featuredPlaces, filterPlaces, mapLink, provincesWithPlaces, relatedPlaces } from '@/lib/places';
+import { cityPillarsByProvince, deitiesOf, deitySuggestions, featuredPlaces, filterPlaces, mapLink, provincesWithPlaces, relatedPlaces } from '@/lib/places';
 
 const base: Omit<Place, 'slug' | 'provinceSlug' | 'goals' | 'deities'> = {
   name: 'x',
@@ -146,5 +146,20 @@ describe('featuredPlaces', () => {
   it('ไม่เอาที่ไม่มีภาพ ปักหมุดหน้าแรกก่อน แล้วยอดนิยม แล้วที่เหลือตามลำดับเดิม', () => {
     const list = [mk('zzz', true), mk('erawan-shrine', true), mk('no-photo', false), mk('wat-khaek-silom', true), mk('mine', true, ['home'])];
     expect(featuredPlaces(list).map((p) => p.slug)).toEqual(['mine', 'erawan-shrine', 'wat-khaek-silom', 'zzz']);
+  });
+});
+
+describe('city pillar shrines hub', () => {
+  it('groups by province, Bangkok first, provincial seat first', () => {
+    const mk = (slug: string, name: string, provinceSlug: string, district: string): Place => ({ ...a, slug, name, provinceSlug, district });
+    const groups = cityPillarsByProvince([
+      mk('x1', 'ศาลหลักเมืองกันทรลักษ์', 'si-sa-ket', 'กันทรลักษ์'),
+      mk('x2', 'ศาลหลักเมืองศรีสะเกษ', 'si-sa-ket', 'เมืองศรีสะเกษ'),
+      mk('x3', 'ศาลหลักเมืองกรุงเทพมหานคร', 'bangkok', 'เขตพระนคร'),
+      mk('x4', 'วัดพระแก้ว', 'bangkok', 'เขตพระนคร'),
+    ]);
+    expect(groups.map((g) => g.slug)).toEqual(['bangkok', 'si-sa-ket']);
+    expect(groups[0].places.map((p) => p.slug)).toEqual(['x3']);
+    expect(groups[1].places.map((p) => p.slug)).toEqual(['x2', 'x1']);
   });
 });
