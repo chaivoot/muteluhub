@@ -893,3 +893,11 @@ input::placeholder, textarea::placeholder { color: var(--color-text-subtle); opa
 }
 .pillar-list__name { font-size: calc(18px * var(--fs)); font-weight: 600; line-height: 1.5; }
 .pillar-list__meta { font-size: calc(16px * var(--fs)); color: var(--color-text-soft); }
+
+/* ---------- footer + หน้าข้อมูลเว็บ ---------- */
+.site-footer { margin-top: 40px; padding: 24px 20px 32px; border-top: 1px solid var(--color-divider); color: var(--color-text-muted); font-size: calc(16px * var(--fs)); }
+.site-footer__links { list-style: none; margin: 0 0 12px; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.site-footer__links a { color: var(--color-text-soft); }
+.site-footer__note { margin: 0 0 8px; line-height: 1.6; }
+.site-footer__copy { margin: 0; color: var(--color-text-subtle); }
+.info-page { padding-bottom: 8px; }

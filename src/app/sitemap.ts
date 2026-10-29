@@ -52,6 +52,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...articles.map((a) => page(`/articles/${a.slug}`, 'monthly', 0.7, a.updatedAt)),
 
     page('/places', 'weekly', 0.8),
+    page('/about', 'monthly', 0.3),
+    page('/contact', 'monthly', 0.3),
+    page('/terms', 'yearly', 0.2),
+    page('/privacy', 'yearly', 0.2),
     page('/places/city-pillar-shrines', 'weekly', 0.7),
     ...provincesWithPlaces(thai).map((p) => page(`/places/${p.slug}`, 'weekly', 0.6)),
     ...places.map((p) => page(`/places/${p.slug}`, 'monthly', 0.7, p.checkedAt)),

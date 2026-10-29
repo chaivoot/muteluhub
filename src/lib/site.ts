@@ -1,5 +1,8 @@
 export const SITE_NAME = 'MuteluHub';
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://muteluhub.com';
+/** อีเมลติดต่อที่แสดงในหน้าติดต่อเรา นโยบายความเป็นส่วนตัว และข้อกำหนด (ต้องตั้งรับเมลที่โดเมนก่อนใช้งาน) */
+export const CONTACT_EMAIL = 'contact@muteluhub.com';
+
 export const SITE_DESCRIPTION =
   'รวมทุกเรื่องสายมูในที่เดียว เริ่มจากเรื่องที่อยากเสริม สีเสื้อมงคลวันนี้ เลขมงคล หมอดู สถานที่เสริมดวง และเทศกาล';
 
