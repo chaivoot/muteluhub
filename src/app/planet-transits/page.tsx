@@ -2,7 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { PageHeader } from '@/components/ComingSoon';
 import { SectionHeader } from '@/components/SectionHeader';
+import type { Eclipse } from '@/data/eclipses';
 import { PLANET_TRANSITS, PLANETS, type PlanetTransit } from '@/data/planet-transits';
+import { eclipseEndDate, eclipseTitle, pastEclipses, upcomingEclipses } from '@/lib/eclipses';
 import { listPublishedArticles } from '@/lib/articles-repo';
 import { planetPositions, thaiDigits, transitTitle } from '@/lib/planet-transits';
 import { bangkokDay, formatThaiRange, parseIsoDay, TH_MONTHS, toBuddhistYear } from '@/lib/thai-date';
@@ -11,9 +13,9 @@ export const revalidate = 3600;
 
 export const metadata: Metadata = {
   alternates: { canonical: '/planet-transits' },
-  title: 'ดาวย้ายราศี 2569-2570 ตอนนี้ดาวอยู่ราศีไหน ย้ายวันไหน',
+  title: 'ดาวย้ายราศี 2569-2570 ตอนนี้ดาวอยู่ราศีไหน ย้ายวันไหน + สุริยุปราคา จันทรุปราคา',
   description:
-    'ปฏิทินดาวย้ายราศีตามโหราศาสตร์ไทย พฤหัสบดี เสาร์ ราหู เกตุ มฤตยู และช่วงพุธพักร์ ตอนนี้ดาวอยู่ราศีไหน ย้ายครั้งถัดไปวันไหน พร้อมแหล่งอ้างอิง',
+    'ปฏิทินดาวย้ายราศีตามโหราศาสตร์ไทย พฤหัสบดี เสาร์ ราหู เกตุ มฤตยู และช่วงพุธพักร์ ตอนนี้ดาวอยู่ราศีไหน ย้ายครั้งถัดไปวันไหน และสุริยุปราคา จันทรุปราคาที่เห็นในไทย พร้อมแหล่งอ้างอิง',
 };
 
 const date = (iso: string) => thaiDigits(formatThaiRange(iso, iso, true));
@@ -32,6 +34,8 @@ export default async function PlanetTransitsPage() {
   const upcoming = sorted.filter((t) => (t.end ?? t.date) >= today);
   const past = sorted.filter((t) => (t.end ?? t.date) < today).reverse();
   const months = [...new Set(upcoming.map((t) => monthKey(t.date)))];
+  const eclipses = upcomingEclipses(today);
+  const eclipsesPast = pastEclipses(today);
 
   return (
     <main>
@@ -86,6 +90,26 @@ export default async function PlanetTransitsPage() {
         </div>
       )}
 
+      <SectionHeader title="สุริยุปราคา จันทรุปราคา" />
+      <div className="container transit-list" id="eclipses">
+        <ul className="transit-list__items">
+          {eclipses.map((e) => (
+            <EclipseItem key={e.date} e={e} today={today} />
+          ))}
+        </ul>
+        <div className="method-box">
+          <p>
+            <strong>ราหูอม ตามความเชื่อไทย</strong>
+          </p>
+          <p>
+            คนไทยโบราณเรียกอุปราคาว่า ราหูอมจันทร์ และราหูอมอาทิตย์ ถือเป็นช่วงที่ดวงชะตาแปรปรวน หลายคนสวดมนต์ ทำบุญ หรือ
+            <Link href="/places?deity=rahu">ไหว้พระราหู</Link> เพื่อเสริมดวงและให้เรื่องร้ายผ่านพ้น และนิยมเลี่ยงฤกษ์งานมงคลตรงวันอุปราคา
+          </p>
+          <p>ดูสุริยุปราคาต้องใช้แว่นกรองแสงสำหรับดูดวงอาทิตย์ ห้ามมองด้วยตาเปล่า แว่นกันแดด หรือฟิล์มเอกซเรย์ ส่วนจันทรุปราคาดูด้วยตาเปล่าได้</p>
+          <p className="note">แสดงเฉพาะอุปราคาที่เห็นได้ในไทย ไม่รวมจันทรุปราคาเงามัวซึ่งดูด้วยตาแทบไม่ออก เวลาเป็นเวลาประเทศไทย</p>
+        </div>
+      </div>
+
       <SectionHeader title="ดาวแต่ละดวงหมายถึงอะไร" />
       <dl className="container planet-meanings">
         {PLANETS.map((p) => (
@@ -100,10 +124,13 @@ export default async function PlanetTransitsPage() {
         ))}
       </dl>
 
-      {past.length > 0 && (
+      {past.length + eclipsesPast.length > 0 && (
         <details className="container transit-past">
-          <summary>ดาวย้ายที่ผ่านมา ({thaiDigits(past.length)})</summary>
+          <summary>ดาวย้ายและอุปราคาที่ผ่านมา ({thaiDigits(past.length + eclipsesPast.length)})</summary>
           <ul className="transit-list__items">
+            {eclipsesPast.map((e) => (
+              <EclipseItem key={e.date} e={e} today={today} />
+            ))}
             {past.map((t) => (
               <TransitItem key={`${t.planet}-${t.kind}-${t.date}`} t={t} today={today} article={t.article && published.has(t.article) ? t.article : null} />
             ))}
@@ -141,6 +168,33 @@ function TransitItem({ t, today, article }: { t: PlanetTransit; today: string; a
       <span className="transit-item__links">
         {article && <Link href={`/articles/${article}`}>อ่านว่าส่งผลอย่างไร</Link>}
         {t.sources.map((s, i) => (
+          <a key={s} href={s} target="_blank" rel="noopener noreferrer">
+            แหล่ง {thaiDigits(i + 1)}
+          </a>
+        ))}
+      </span>
+    </li>
+  );
+}
+
+function EclipseItem({ e, today }: { e: Eclipse; today: string }) {
+  const end = eclipseEndDate(e);
+  const now = e.date <= today && end >= today;
+  return (
+    <li className={`transit-item${now ? ' transit-item--now' : ''}`}>
+      <span className="transit-item__date">
+        {date(e.date)} เวลา {thaiDigits(e.start)}-{thaiDigits(e.end)} น.{end !== e.date && ' (ข้ามคืน)'}
+        {now && <span className="tag transit-item__tag">วันนี้</span>}
+      </span>
+      <span className="transit-item__title">{eclipseTitle(e)}</span>
+      <span className="transit-item__note">
+        {e.totality
+          ? `เต็มดวง ${thaiDigits(e.totality.start)}-${thaiDigits(e.totality.end)} น. `
+          : `บังมากที่สุด ${thaiDigits(e.max)} น. `}
+        {thaiDigits(e.note)}
+      </span>
+      <span className="transit-item__links">
+        {e.sources.map((s, i) => (
           <a key={s} href={s} target="_blank" rel="noopener noreferrer">
             แหล่ง {thaiDigits(i + 1)}
           </a>
