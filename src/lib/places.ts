@@ -170,3 +170,24 @@ export function featuredPlaces(places: Place[]): Place[] {
     .sort((a, b) => a.r - b.r || a.i - b.i)
     .map((x) => x.p);
 }
+
+/** ศาลหลักเมือง / เสาอินทขิล (ดูจากชื่อหรือ slug) ใช้ในหน้ารวมศาลหลักเมือง */
+export const isCityPillarShrine = (p: Place) =>
+  p.country === 'TH' && (/หลักเมือง|อินทขิล/.test(p.name) || p.slug.startsWith('lak-mueang'));
+
+/** ศาลหลักเมืองแยกตามจังหวัด กรุงเทพฯ ก่อน ที่เหลือเรียงชื่อจังหวัด ในจังหวัดเอาศาลประจำจังหวัด (อำเภอเมือง) ก่อน */
+export function cityPillarsByProvince(places: Place[]): { slug: string; name: string; places: Place[] }[] {
+  const groups = new Map<string, Place[]>();
+  for (const p of places.filter(isCityPillarShrine)) {
+    if (!p.provinceSlug) continue;
+    groups.set(p.provinceSlug, [...(groups.get(p.provinceSlug) ?? []), p]);
+  }
+  const main = (p: Place) => Number(!/^เมือง|^เขตพระนคร/.test(p.district ?? ''));
+  return [...groups]
+    .map(([slug, list]) => ({
+      slug,
+      name: PROVINCES[slug] ?? slug,
+      places: list.sort((a, b) => main(a) - main(b) || a.name.localeCompare(b.name, 'th')),
+    }))
+    .sort((a, b) => Number(b.slug === 'bangkok') - Number(a.slug === 'bangkok') || a.name.localeCompare(b.name, 'th'));
+}

@@ -879,3 +879,17 @@ input::placeholder, textarea::placeholder { color: var(--color-text-subtle); opa
 .combo__icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); display: flex; color: var(--color-text-soft); pointer-events: none; }
 
 .fest-stale { margin: 14px 0 0; padding: 12px 14px; border-radius: var(--radius-md); border: 1px solid var(--color-gold); background: rgba(214, 176, 100, 0.08); color: var(--color-text-soft); font-size: calc(17px * var(--fs)); line-height: 1.6; }
+
+/* ---------- หน้ารวมศาลหลักเมือง ---------- */
+.pillar-jump { margin-bottom: 8px; }
+.pillar-list { display: grid; gap: 22px; padding-bottom: 32px; }
+.pillar-list__group { scroll-margin-top: 80px; }
+.pillar-list__province { font-size: var(--text-lg); margin-bottom: 8px; }
+.pillar-list__province a { color: var(--color-gold); text-decoration: none; }
+.pillar-list__items { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.pillar-list__item {
+  display: grid; gap: 2px; padding: 12px 14px; border-radius: var(--radius-lg);
+  background: var(--color-surface-raised); color: var(--color-text); text-decoration: none;
+}
+.pillar-list__name { font-size: calc(18px * var(--fs)); font-weight: 600; line-height: 1.5; }
+.pillar-list__meta { font-size: calc(16px * var(--fs)); color: var(--color-text-soft); }
