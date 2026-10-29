@@ -6,7 +6,7 @@ import { Fragment, type ReactNode } from 'react';
  * ![คำอธิบาย](/media/xxx "เครดิต") รูปทั้งบรรทัด, **ตัวหนา**, [ลิงก์](https://...)
  */
 
-const SAFE_URL = /^(https?:\/\/|\/)[^\s]*$/;
+const SAFE_URL = /^(https?:\/\/|\/|mailto:)[^\s]*$/;
 
 export function renderInline(text: string, keyPrefix = 'i'): ReactNode[] {
   const out: ReactNode[] = [];
