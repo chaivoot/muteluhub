@@ -111,6 +111,12 @@ export default async function FestivalPage({ params }: { params: Params }) {
         <div className="container place__body">
           <Breadcrumbs items={[{ href: '/festival', label: 'เทศกาลและบทความ' }]} />
           <p className="place__summary">{c.intro}</p>
+          {c.year && date && date.year > c.year && (
+            <p className="fest-stale" role="note">
+              วันที่ด้านบนเป็นของปี {toBuddhistYear(date.year)} แล้ว ส่วนกำหนดการ งานตามสถานที่ และรายละเอียดบางส่วนในหน้านี้ยังเป็นข้อมูลปี{' '}
+              {toBuddhistYear(c.year)} ใช้ดูคร่าว ๆ ได้ เราจะอัปเดตเมื่อมีประกาศของปี {toBuddhistYear(date.year)}
+            </p>
+          )}
           <div className="tag-row">
             {festival.goals.map((g) => (
               <GoalTag key={g} goal={getGoal(g)} />
