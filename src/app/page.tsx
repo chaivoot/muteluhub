@@ -10,6 +10,7 @@ import { SectionHeader } from '@/components/SectionHeader';
 import { ShirtColorCard } from '@/components/ShirtColorCard';
 import { SiteHeader } from '@/components/SiteHeader';
 import { festivalArticles, upcomingFestivals, withCover } from '@/lib/festivals';
+import { eclipseTitle, upcomingEclipses } from '@/lib/eclipses';
 import { thaiDigits, transitTitle, upcomingTransits } from '@/lib/planet-transits';
 import { FESTIVALS } from '@/data/festivals';
 import { getFestivalCovers, listPublishedArticles } from '@/lib/articles-repo';
@@ -54,6 +55,8 @@ export default async function HomePage() {
   const transits = upcomingTransits(today.iso, 14)
     .filter((t) => t.planet !== 'ketu' && t.date >= recent)
     .slice(0, 2);
+  // อุปราคาที่เห็นในไทยนาน ๆ ครั้ง ขึ้นล่วงหน้า 30 วัน
+  const eclipses = upcomingEclipses(today.iso, 30).slice(0, 1);
   const festivalName = new Map(upcoming.map((o) => [o.festival.slug, o.festival.name]));
   const places = thaiPlaces(allPlaces);
   // ต่างประเทศ: เลือกเฉพาะที่มีภาพ ปักหมุด/ยอดนิยมก่อน
@@ -94,7 +97,7 @@ export default async function HomePage() {
           <PhoneNumberShortcut />
           <LicensePlateShortcut />
         </div>
-        {(festivals.length > 0 || transits.length > 0) && (
+        {(festivals.length > 0 || transits.length > 0 || eclipses.length > 0) && (
           <div>
             {festivals.length > 0 && (
               <>
@@ -106,10 +109,21 @@ export default async function HomePage() {
                 </div>
               </>
             )}
-            {transits.length > 0 && (
+            {(transits.length > 0 || eclipses.length > 0) && (
               <div className="home-reads">
                 <h3 className="home-reads__title">ดาวย้ายราศี</h3>
                 <ul className="home-reads__list">
+                  {eclipses.map((e) => (
+                    <li key={e.date}>
+                      <Link href="/planet-transits#eclipses" className="home-reads__item">
+                        <span className="home-reads__name">{eclipseTitle(e)}</span>
+                        <span className="home-reads__meta">
+                          {thaiDigits(formatThaiRange(e.date, e.date, true))} เวลา {thaiDigits(e.start)} น.
+                          {e.date === today.iso ? ' · วันนี้' : ''}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
                   {transits.map((t) => (
                     <li key={`${t.planet}-${t.date}`}>
                       <Link href="/planet-transits" className="home-reads__item">
