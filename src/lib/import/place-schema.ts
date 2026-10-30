@@ -51,6 +51,12 @@ export const placeImportSchema = z
     howToPray: stringList,
     howToRepayVow: stringList,
     images: z.array(imageSchema).default([]),
+    travelokaUrl: z
+      .string()
+      .url()
+      .refine((u) => /^https:\/\/www\.traveloka\.com\//.test(u) && !/hotel\/detail/.test(u), 'ต้องเป็นหน้า www.traveloka.com ที่ไม่ใช่ hotel/detail (มีวันเข้าพักฝัง)')
+      .optional(),
+    // ข้อมูลเดิมยังมีช่องนี้ รับไว้แต่ไม่ใช้ (เลิกใช้ Agoda 2026-10-29)
     agodaLinkOverride: z.string().url().optional(),
     published: z.boolean().default(false),
     checkedAt: isoDate,
@@ -112,7 +118,7 @@ export function toPlace(v: z.output<typeof placeImportSchema>): Place {
     howToRepayVow: v.howToRepayVow,
     images: v.images,
     sources: v.sources,
-    agodaLinkOverride: v.agodaLinkOverride,
+    travelokaUrl: v.travelokaUrl?.split('?')[0],
     mapsUrl: v.mapsUrl,
     checkedAt: v.checkedAt,
     published: v.published,

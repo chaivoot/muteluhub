@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import type { Place } from '@/data/places';
-import { agodaLink } from '@/lib/agoda';
+import { bookingLink, lodgingLink } from '@/lib/booking';
+import { TRAVELOKA_ABROAD_CITY, TRAVELOKA_PLACE, TRAVELOKA_PROVINCE } from '@/data/traveloka-urls';
+import { PROVINCES } from '@/data/provinces';
 import { cityPillarsByProvince, deitiesOf, deitySuggestions, featuredPlaces, filterPlaces, mapLink, provincesWithPlaces, relatedPlaces } from '@/lib/places';
 
 const base: Omit<Place, 'slug' | 'provinceSlug' | 'goals' | 'deities'> = {
@@ -113,24 +115,26 @@ describe('helpers', () => {
     expect(mapLink({ ...a, mapsUrl: 'https://maps.example/x' })).toBe('https://maps.example/x');
   });
 
-  it('builds Agoda partner links from env CID, poi or province city', () => {
-    expect(agodaLink(c, undefined)).toBeNull();
-    expect(agodaLink({ ...c, agodaLinkOverride: 'https://example.com' }, undefined)).toBe('https://example.com');
-    // ไม่มี poi: ค้นทั้งจังหวัด
-    const city = new URL(agodaLink(c, '123')!);
-    expect(city.origin + city.pathname).toBe('https://www.agoda.com/partners/partnersearch.aspx');
-    expect(city.searchParams.get('cid')).toBe('123');
-    expect(city.searchParams.get('city')).toBe('7401');
-    expect(city.searchParams.get('poi')).toBeNull();
-    // มี poi: ที่พักรอบสถานที่ ใช้ city ของ poi
-    const near = new URL(agodaLink({ ...c, slug: 'chao-mae-soi-dok-mak-ayutthaya' }, '123')!);
-    expect(near.searchParams.get('poi')).toBe('57001');
-    expect(near.searchParams.get('city')).toBe('17704');
-    expect(agodaLink(a, '1')).toContain('city=9395');
-    expect(agodaLink({ ...c, country: 'JP', provinceSlug: undefined, city: 'เกียวโต' }, '1')).toContain('city=1784');
+  it('builds Traveloka deeplinks through the Involve Asia base link', () => {
+    const page = 'https://www.traveloka.com/th-th/hotel/thailand/landmark/wat-arun-123';
+    const base = 'https://invl.me/abc';
+    expect(bookingLink(page, null)).toBeNull();
+    expect(bookingLink('https://example.com/x', base)).toBeNull();
+    expect(bookingLink(page, base)).toBe(`${base}?url=${encodeURIComponent(page)}`);
+    expect(lodgingLink({ ...c, travelokaUrl: page }, base)).toEqual({ href: `${base}?url=${encodeURIComponent(page)}`, near: true });
+    expect(lodgingLink({ ...c, slug: 'no-such-place', provinceSlug: 'no-such-province' }, base)).toBeNull();
   });
 });
 
+
+describe('traveloka pages', () => {
+  it('has a clean th-th page for every province and place entry', () => {
+    const ok = /^https:\/\/www\.traveloka\.com\/th-th\/hotel\/[a-z-]+\/(landmark|area|city|region)\/[a-z0-9-]+-\d+$/;
+    for (const p of [...Object.values(TRAVELOKA_PROVINCE), ...Object.values(TRAVELOKA_PLACE), ...Object.values(TRAVELOKA_ABROAD_CITY)])
+      expect(p.url).toMatch(ok);
+    expect(Object.keys(PROVINCES).filter((s) => !TRAVELOKA_PROVINCE[s])).toEqual([]);
+  });
+});
 
 describe('featuredPlaces', () => {
   const img = [{ src: '/x.webp', alt: '', author: 'a', license: 'CC BY', sourceUrl: '' }];

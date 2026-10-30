@@ -2,8 +2,10 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
 import { PageHeader } from '@/components/ComingSoon';
+import { LodgingBlock } from '@/components/LodgingBlock';
 import { PlacesBrowser } from '@/components/PlacesBrowser';
 import { COUNTRIES, getCountry } from '@/data/countries';
+import { lodgingLink } from '@/lib/booking';
 import { abroadPlaces } from '@/lib/places';
 import { listPublishedPlaces } from '@/lib/places-repo';
 
@@ -33,6 +35,11 @@ export default async function CountryPage({ params }: { params: Params }) {
   if (!c) notFound();
   const places = abroadPlaces(await listPublishedPlaces(), c.code);
   if (places.length === 0) notFound();
+  // ที่พักแยกตามเมืองที่มีสถานที่ (เมืองที่ Traveloka ไม่มีหน้าไม่แสดง)
+  const cities = [...new Set(places.map((p) => p.city).filter((x): x is string => !!x))];
+  const stays = cities
+    .map((city) => ({ city, link: lodgingLink({ country: c.code, city }) }))
+    .filter((x): x is { city: string; link: NonNullable<ReturnType<typeof lodgingLink>> } => x.link != null);
 
   return (
     <main>
@@ -43,6 +50,16 @@ export default async function CountryPage({ params }: { params: Params }) {
       <Suspense>
         <PlacesBrowser places={places} groupBy="city" />
       </Suspense>
+      {stays.map(({ city, link }) => (
+        <div key={city} className="container">
+          <LodgingBlock
+            href={link.href}
+            slug={`abroad-${country}`}
+            title={`ที่พักใน${city}`}
+            note={`วางแผนทริปมู${c.name} เทียบราคาโรงแรมใน${city}ได้บน Traveloka`}
+          />
+        </div>
+      ))}
       <p className="container note abroad-note">
         เวลาเปิด ค่าเข้า และกฎการถ่ายรูปของแต่ละแห่งเปลี่ยนได้ ควรเช็กเว็บไซต์ทางการก่อนเดินทาง
       </p>

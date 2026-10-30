@@ -5,7 +5,7 @@
  */
 import posthog from 'posthog-js';
 
-export type AnalyticsEvent = 'copy_prompt' | 'open_followup' | 'click_to_fortune_teller' | 'click_affiliate';
+export type AnalyticsEvent = 'copy_prompt' | 'open_followup' | 'click_to_fortune_teller' | 'click_affiliate' | 'booking_click';
 
 export interface AnalyticsProps {
   slug?: string;
