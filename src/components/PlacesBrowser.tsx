@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { DEITY_FAMILIES, deityGroup, FAMILY_PREFIX } from '@/data/deity-groups';
 import { isGoalSlug } from '@/lib/goals';
@@ -151,6 +152,11 @@ export function PlacesBrowser({
           )}
         </div>
       </div>
+      {deity?.kind === 'group' && deity.slug === 'city-pillar' && !fixedProvince && groupBy === 'province' && (
+        <p className="container note">
+          <Link href="/places/city-pillar-shrines">ดูศาลหลักเมืองทั่วไทยแยกตามจังหวัด</Link>
+        </p>
+      )}
       {(geo === 'denied' || geo === 'unavailable') && (
         <p className="container note" role="status">
           {geo === 'denied'

@@ -12,6 +12,8 @@ export interface DeityGroup {
   family: DeityFamilySlug;
   /** สถานที่ที่นับเข้ากลุ่มแม้ชื่อองค์เทพในข้อมูลไม่ตรง pattern (ข้อมูลใน DB ที่นำเข้าแล้วไม่ถูกเขียนทับ) */
   slugs?: string[];
+  /** นับสถานที่เข้ากลุ่มจากชื่อสถานที่ด้วย (เช่น ศาลหลักเมือง ที่ข้อมูลไม่ได้ใส่ชื่อองค์) */
+  nameMatch?: RegExp;
 }
 
 /**
@@ -129,8 +131,9 @@ export const DEITY_GROUPS: DeityGroup[] = [
   },
   {
     slug: 'city-pillar',
-    label: 'เจ้าพ่อหลักเมือง / เสาหลักเมือง',
+    label: 'ศาลหลักเมือง / เจ้าพ่อหลักเมือง',
     match: /หลักเมือง|อินทขิล|เฉิงหวง|เสื้อเมือง|ทรงเมือง/,
+    nameMatch: /หลักเมือง|อินทขิล/,
     family: 'thai',
   },
   {
@@ -168,8 +171,10 @@ export const DEITY_GROUPS: DeityGroup[] = [
 export const deityGroup = (slug: string) => DEITY_GROUPS.find((g) => g.slug === slug);
 
 /** สถานที่อยู่ในกลุ่มนี้ไหม (ชื่อองค์เทพตรง pattern หรืออยู่ในรายการ slugs ของกลุ่ม) */
-export const inDeityGroup = (group: DeityGroup, place: { deities: string[]; slug?: string }) =>
-  place.deities.some((d) => group.match.test(d)) || (place.slug != null && (group.slugs?.includes(place.slug) ?? false));
+export const inDeityGroup = (group: DeityGroup, place: { deities: string[]; slug?: string; name?: string }) =>
+  place.deities.some((d) => group.match.test(d)) ||
+  (place.slug != null && (group.slugs?.includes(place.slug) ?? false)) ||
+  (group.nameMatch != null && place.name != null && group.nameMatch.test(place.name));
 
 export const deityFamily = (slug: string) => DEITY_FAMILIES.find((f) => f.slug === slug);
 

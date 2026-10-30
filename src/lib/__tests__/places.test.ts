@@ -178,3 +178,11 @@ describe('placesByGoal', () => {
     expect(placeShortName(wts)).toBe('วัดหวังต้าเซียน');
   });
 });
+
+describe('city pillar group', () => {
+  it('finds city pillar shrines by place name and by typing ศาลหลักเมือง', () => {
+    const lak: Place = { ...a, slug: 'lak-x', name: 'ศาลหลักเมืองอ่างทอง', deities: ['เทพารักษ์'] };
+    expect(filterPlaces({ deity: 'city-pillar' }, [...list, lak]).map((p) => p.slug)).toEqual(['lak-x']);
+    expect(deitySuggestions([...list, lak], 'ศาลหลักเมือง')[0]).toMatchObject({ kind: 'group', slug: 'city-pillar', count: 1 });
+  });
+});
