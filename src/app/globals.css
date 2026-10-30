@@ -909,3 +909,7 @@ input::placeholder, textarea::placeholder { color: var(--color-text-subtle); opa
 .goal-picks__list > div { display: grid; grid-template-columns: 5.5em 1fr; gap: 8px; align-items: baseline; }
 .goal-picks__list dt { color: var(--color-gold); font-weight: 600; font-size: var(--text-sm); }
 .goal-picks__list dd { margin: 0; font-size: var(--text-sm); line-height: 1.7; }
+
+/* ช่องเลือกจังหวัด/เมือง พิมพ์กรองได้ */
+.combo--pick .combo__input.select { padding-left: 16px; }
+.combo__list--end { left: auto; right: 0; }
