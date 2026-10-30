@@ -4,8 +4,8 @@ import { track } from '@/lib/analytics';
 import { UiIcon } from './icons';
 
 /**
- * บล็อกที่พัก Agoda ในเนื้อหา (ไม่ใช่แบนเนอร์) พร้อมป้าย ลิงก์ affiliate
- * near = ลิงก์พาไปที่พักรอบสถานที่ (มี poi) ไม่งั้นเป็นที่พักทั้งเมือง/จังหวัด
+ * บล็อกที่พัก Traveloka (ผ่าน Involve Asia) ในเนื้อหา ไม่ใช่แบนเนอร์ พร้อมป้าย ลิงก์ affiliate
+ * href มาจาก lodgingLink() ใน src/lib/booking.ts
  */
 export function LodgingBlock({
   href,
@@ -33,14 +33,15 @@ export function LodgingBlock({
         <a
           href={href}
           target="_blank"
-          rel="sponsored nofollow noopener noreferrer"
+          rel="sponsored noopener noreferrer"
           className="btn btn--gold btn--sm"
-          onClick={() => track('click_affiliate', { slug })}
+          onClick={() => track('booking_click', { slug })}
         >
-          ดูที่พักบน Agoda
+          ค้นหาที่พักใกล้ ๆ บน Traveloka
         </a>
         <span className="affiliate-label">ลิงก์ affiliate</span>
       </div>
+      <p className="lodging__disclosure">เว็บได้ค่าคอมมิชชันเมื่อจองผ่านลิงก์นี้ ราคาที่คุณจ่ายเท่าเดิม</p>
     </section>
   );
 }

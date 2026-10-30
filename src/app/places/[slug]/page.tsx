@@ -10,7 +10,7 @@ import { PlaceCard } from '@/components/PlaceCard';
 import { PlacesBrowser } from '@/components/PlacesBrowser';
 import { PLACE_TYPE_LABEL, type Place } from '@/data/places';
 import { PROVINCES, provinceShortName } from '@/data/provinces';
-import { agodaLink, agodaNearPlace } from '@/lib/agoda';
+import { lodgingLink } from '@/lib/booking';
 import { LodgingBlock } from '@/components/LodgingBlock';
 import { getGoal } from '@/lib/goals';
 import { countryByCode } from '@/data/countries';
@@ -68,7 +68,7 @@ export default async function PlaceOrProvincePage({ params }: { params: Params }
   if (place) return <PlaceDetail place={place} places={places} />;
   const inProvince = filterPlaces({ province: slug }, thaiPlaces(places));
   if (PROVINCES[slug] && inProvince.length > 0) {
-    const provinceAgoda = agodaLink({ country: 'TH', provinceSlug: slug });
+    const provinceLodging = lodgingLink({ country: 'TH', provinceSlug: slug });
     return (
       <main>
         <PageHeader title={`มู${provinceShortName(slug)}`} backHref="/places" />
@@ -81,10 +81,10 @@ export default async function PlaceOrProvincePage({ params }: { params: Params }
             <Link href={`/places/city-pillar-shrines#${slug}`}>ดูศาลหลักเมืองจังหวัดอื่น ๆ ทั่วไทย</Link>
           </p>
         )}
-        {provinceAgoda && (
+        {provinceLodging && (
           <div className="container">
             <LodgingBlock
-              href={provinceAgoda}
+              href={provinceLodging.href}
               slug={slug}
               title={`ที่พักใน${provinceShortName(slug)}`}
               note="สายมูที่ต้องเดินทางไกล หาที่พักไว้ก่อน ไหว้ได้หลายที่ไม่ต้องรีบ"
@@ -105,7 +105,7 @@ function formatCheckedAt(iso: string) {
 function PlaceDetail({ place, places }: { place: Place; places: Place[] }) {
   const image = place.images[0];
   const map = mapLink(place);
-  const agoda = agodaLink(place);
+  const lodging = lodgingLink(place);
   const related = relatedPlaces(place, 4, places);
   const country = countryByCode(place.country);
   const crumbs =
@@ -249,15 +249,15 @@ function PlaceDetail({ place, places }: { place: Place; places: Place[] }) {
           </section>
         )}
 
-        {agoda && (
+        {lodging && (
           <LodgingBlock
-            href={agoda}
+            href={lodging.href}
             slug={place.slug}
             title={`ที่พักใกล้${place.name}`}
             note={
-              agodaNearPlace(place.slug)
-                ? 'มาไหว้แล้วค้างต่อ เทียบราคาโรงแรมและที่พักรอบ ๆ ได้บน Agoda'
-                : `เทียบราคาที่พักใน${placeLocation(place, false)}บน Agoda`
+              lodging.near
+                ? 'มาไหว้แล้วค้างต่อ เทียบราคาโรงแรมและที่พักรอบ ๆ ได้บน Traveloka'
+                : `เทียบราคาที่พักใน${placeLocation(place, false)}บน Traveloka`
             }
           />
         )}

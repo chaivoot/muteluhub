@@ -429,7 +429,8 @@ ul { list-style: none; margin: 0; padding: 0; }
 .lodging__icon { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 12px; background: rgba(214, 176, 100, 0.14); color: var(--color-gold-bright); }
 .lodging__title { margin: 0; font-family: var(--font-display); font-size: var(--text-lg); font-weight: 600; line-height: 1.4; }
 .lodging__note { margin: 2px 0 0; font-size: var(--text-sm); color: var(--color-text-soft); }
-.lodging__row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.lodging__row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.lodging__disclosure { margin: 0; font-size: var(--text-xs); color: var(--color-text-muted); }
 .affiliate-label { flex: none; font-size: var(--text-xs); color: var(--color-text-muted); border: 1px solid #3A4775; border-radius: var(--radius-pill); padding: 0 8px; }
 .place__sources { font-size: var(--text-sm); color: var(--color-text-muted); display: flex; flex-direction: column; gap: 6px; border-top: 1px solid var(--color-divider); padding-top: 14px; }
 .place__sources summary { cursor: pointer; min-height: 32px; }

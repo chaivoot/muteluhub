@@ -45,8 +45,8 @@ export interface Place {
   /** เฉพาะรูปที่อัปโหลดจากหลังบ้าน (ไม่มาจากไฟล์นำเข้า) ใช้ให้หลังบ้านลบได้ */
   uploadedImages?: PlaceImage[];
   sources: string[];
-  /** ลิงก์ Agoda ที่ใส่เอง ใช้แทนลิงก์ที่ประกอบอัตโนมัติ */
-  agodaLinkOverride?: string;
+  /** หน้า Traveloka (URL ดิบ ไม่ใช่ลิงก์ affiliate) ที่ใส่เอง ใช้ก่อนรายการใน src/data/traveloka-urls.ts */
+  travelokaUrl?: string;
   mapsUrl?: string;
   /** วันที่ตรวจข้อมูลล่าสุด YYYY-MM-DD */
   checkedAt: string;

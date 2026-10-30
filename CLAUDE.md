@@ -24,14 +24,14 @@
 - สีเสื้อ: เจ้าของยืนยันแล้ว (2026-10-11) ใช้ **ทักษา ตารางคงที่ตามวัน** และจับคู่เป้าหมาย: การเงิน/ความรัก = ศรี, การงาน = เดช, สุขภาพ = อายุ, ค้าขาย = มูละ, การเรียน = อุตสาหะ, ครอบครัว = บริวาร, แคล้วคลาด = มนตรี, สีที่ควรเลี่ยง = กาลกิณี (ข้อมูลอยู่ที่ `src/data/daily-colors.ts`) ห้ามเปลี่ยนหลักโดยไม่ถามเจ้าของ
 - ไม่มีแบนเนอร์ ไม่มี pop-up
 - ห้ามดึงรูปจาก Google Maps
-- CID ของ Agoda อยู่ใน env var เท่านั้น ห้าม hardcode
+- ห้ามใส่ secret/API key ในโค้ด (ลิงก์ฐาน invl.me ของ Traveloka เป็นลิงก์สาธารณะ ใส่ในโค้ดได้)
 
 ## เรื่องที่ยังไม่ตัดสินใจ (ถามเจ้าของก่อนทำส่วนที่เกี่ยวข้อง)
 ดู spec ข้อ 8: ชื่อแบรนด์/โดเมน, หลักคำนวณเลขมงคล, หลักสีเสื้อ, แหล่งข้อมูลปฏิทินมงคล, เงื่อนไข Shopee, slug ไทยหรืออังกฤษ
 ทำโครงให้เปลี่ยนค่าเหล่านี้ได้ง่าย (เช่น daily_colors มีคอลัมน์ source, ฟังก์ชันคำนวณเลขมงคลแยกเป็น module เดียวและแสดงชื่อหลักคำนวณบนหน้า)
 
 ## Stack
-spec ไม่ได้กำหนด framework ระบุแค่ว่า deploy บน Vercel (มี env var ของ Agoda)
+spec ไม่ได้กำหนด framework ระบุแค่ว่า deploy บน Vercel (เดิมมี env var ของ Agoda ตอนนี้ไม่ใช้แล้ว)
 ถ้ามี repo อยู่แล้วให้ใช้ stack เดิม แล้วแปลง `design/tokens.css` เข้าไป (CSS variables หรือ theme ของ Tailwind)
 ถ้าเริ่มใหม่ เสนอ stack ให้เจ้าของเลือกก่อนลงมือ
 
@@ -58,7 +58,7 @@ spec ไม่ได้กำหนด framework ระบุแค่ว่า 
 - ชื่อแบรนด์/โดเมน: **MuteluHub / muteluhub.com** (เจ้าของยืนยันแล้ว)
 - Stack: Next.js 15 (App Router) + TypeScript + CSS ธรรมดา (`design/tokens.css` import ตรงใน `src/app/layout.tsx`), deploy Vercel
 - ข้อมูล: taxonomy/เทศกาล/prompt อยู่ในไฟล์ (`data/*.json`, `src/data/*.ts`) ส่วน **สถานที่และหมอดูอยู่ใน Neon Postgres (สิงคโปร์)** นำเข้าผ่าน `/admin/import` (รูปแบบ: `docs/import-format.md`) ฟังก์ชัน Vercel ตั้ง region `sin1` ใน `vercel.json` ให้ตรงกับฐานข้อมูล และปิด preview deploy ของ branch อื่น (deploy เฉพาะ `main` ประหยัด Deployment Storage ของแผนฟรี 10 GB เจ้าของไม่ดู preview อยู่แล้ว)
-- env: `DATABASE_URL` (Neon), `ADMIN_PASSWORD` (หลังบ้าน), `NEXT_PUBLIC_SITE_URL`, `AGODA_CID`, `NEXT_PUBLIC_POSTHOG_KEY` (+ `NEXT_PUBLIC_POSTHOG_HOST` ถ้าใช้ EU)
+- env: `DATABASE_URL` (Neon), `ADMIN_PASSWORD` (หลังบ้าน), `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_POSTHOG_KEY` (+ `NEXT_PUBLIC_POSTHOG_HOST` ถ้าใช้ EU)
 - ข้อควรระวัง: route ที่อ่านข้อมูลจาก DB ห้ามตั้ง `dynamicParams = false` (หลัง revalidateTag Next 15 จะตอบ 404) ให้ใช้ notFound() แทน
 - เสร็จแล้ว: ข้อ 1 ในลำดับการทำ (ระบบดีไซน์ layout มือถือ หน้าแรก) + addendum 01 AI prompt (คลัง, หน้า prompt เดี่ยว, generator) + เครื่องคำนวณเลขมงคล `/tools/lucky-number` + สถานที่ในไทย + หมอดู (รายการ ตัวกรอง bottom sheet โปรไฟล์ หน้าตามศาสตร์ OG image) + สีเสื้อมงคลวันนี้ `/color-today` (การ์ดแชร์ 1080x1350 / 1080x1920) หน้าอื่นเป็นโครงรอ
 - ภาพหมอดู: ภาพ SVG ตามศาสตร์ 3 แบบ (`src/lib/art/discipline-art.ts`, เสิร์ฟที่ `/art/[slug]-[n].svg`) เป็นชุดชั่วคราวจนกว่าจะมีภาพวาดจริงความละเอียดสูง
@@ -91,7 +91,7 @@ spec ไม่ได้กำหนด framework ระบุแค่ว่า 
 - ใกล้ฉัน: `src/lib/geo.ts` + ปุ่มใน `PlacesBrowser` ตำแหน่งใช้ในเบราว์เซอร์เท่านั้น พิกัดสถานที่บังคับตอนนำเข้า
 - ภาพ hero หน้าแรก `public/images/hero/` เป็นภาพ AI ที่เจ้าของให้มา ใช้เป็นภาพบรรยากาศได้ แต่ห้ามนำภาพ AI ไปใช้เป็นภาพสถานที่จริง
 - สินค้า affiliate (Shopee): ตาราง `products` นำเข้าที่ `/admin/import?kind=products` (`src/lib/import/product-schema.ts` รับเฉพาะลิงก์ affiliate `s.shopee.co.th` / `shope.ee`) ตอนนี้ใช้กับเสื้อสีมงคล: `listShirtOffers()` สีละ 1 ตัว แสดงรูปแทนไอคอนใน `/color-today` และการ์ดหน้าแรก + ลิงก์ rel="sponsored" ป้าย ลิงก์ affiliate (การ์ดแชร์ PNG ยังใช้ไอคอน) รูปสินค้าเก็บที่ `public/images/shirts/`
-- ที่พัก Agoda: `src/lib/agoda.ts` ลิงก์ `partners/partnersearch.aspx?pcs=1&cid=&city=&poi=` (ทดสอบแล้ว 2026-10-12 cid คงอยู่หลัง redirect) รหัส city/poi อยู่ที่ `src/data/agoda-ids.ts` (มี poi = ที่พักรอบสถานที่ ไม่มี = ทั้งจังหวัด) แสดงทุกสถานที่รวม กทม. (เจ้าของขอ 2026-10-12) + หน้าจังหวัด ผ่าน `LodgingBlock` ไม่มี AGODA_CID = ไม่แสดง
+- ที่พัก Traveloka ผ่าน Involve Asia (แทน Agoda ตั้งแต่ 2026-10-30): `src/lib/booking.ts` deeplink = `TRAVELOKA_AFFILIATE_BASE` (`https://invl.me/clo6ja5`) + `?url=` หน้า Traveloka ที่ encode ตอน render ข้อมูลหน้า Traveloka (th-th ไม่มี query ห้ามใช้ hotel/detail?spec=) อยู่ที่ `src/data/traveloka-urls.ts` เลือกหน้าที่แคบสุด landmark > area > จังหวัด/เมือง หรือ `travelokaUrl` ตอนนำเข้า แสดงผ่าน `LodgingBlock` (สถานที่ หน้าจังหวัด เมืองใน `/abroad/[country]`) rel sponsored ป้าย ลิงก์ affiliate event `booking_click`
 - ปักหมุดหมอดู: คอลัมน์ `pinned_in text[]` (แยกจาก data นำเข้าซ้ำไม่ล้าง) ตั้งที่ `/admin` แท็บหมอดู ค่า = slug ศาสตร์ หรือ `all` (หน้ารวม) `sortPinned()` ใน `src/lib/tellers.ts` ป้าย `PINNED_LABEL` = ผู้สนับสนุน (เจ้าของเปลี่ยน 2026-10-12)
 - บทความ: เขียนที่ `/admin/articles` (ตาราง `articles`, ตรวจด้วย `src/lib/import/article-schema.ts`) เนื้อหาเป็น markdown แบบย่อ render ด้วย `src/lib/markdown.tsx` (ไม่รับ HTML ดิบ) หน้าเว็บ `/articles/[slug]` + รายการใน `/festival` + "อ่านต่อ" ในหน้าเทศกาลที่ผูกไว้ รูปอัปโหลดเก็บในตาราง `media` (เบราว์เซอร์ย่อเป็น webp ≤1600px ก่อนส่ง, POST `/admin/media` เฉพาะแอดมิน, เสิร์ฟ `/media/[id]` cache immutable) รูปปกหน้าเทศกาลแทนรูปในโค้ดได้ (ตาราง `festival_covers`, `withCover()` ใน `src/lib/festivals.ts`) บทความตั้งต้นใน `data/articles/*.json` ลงทะเบียนที่ `src/lib/starter-articles.ts` เจ้าของกดนำเข้าเป็นฉบับร่างที่ `/admin/articles`
 - หน้าแรก เทศกาล: ขึ้นล่วงหน้า 45 วัน (ตั้งรายเทศกาลด้วย `featureDays`) แสดงไม่เกิน 3 ใบ + บทความที่ผูกกับเทศกาลที่กำลังจะมา (`festivalArticles()`) ขึ้นและหายเองตามช่วงเทศกาล หน้าเทศกาลมี section style `checklist`/`steps` และ `placeFilter` สำหรับ ไหว้ที่ไหนดี `content.year` = ปีที่เนื้อหาเขียนไว้ ถ้าวันที่ที่แสดงเลยไปปีถัดไป หน้าขึ้นป้ายว่ากำหนดการยังเป็นของปีก่อน (หลังเทศกาลผ่านไป ควรอัปเดตเนื้อหาแล้วเปลี่ยน year)
