@@ -41,7 +41,6 @@ export function LodgingBlock({
         </a>
         <span className="affiliate-label">ลิงก์ affiliate</span>
       </div>
-      <p className="lodging__disclosure">เว็บได้ค่าคอมมิชชันเมื่อจองผ่านลิงก์นี้ ราคาที่คุณจ่ายเท่าเดิม</p>
     </section>
   );
 }
