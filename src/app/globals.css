@@ -901,3 +901,11 @@ input::placeholder, textarea::placeholder { color: var(--color-text-subtle); opa
 .site-footer__note { margin: 0 0 8px; line-height: 1.6; }
 .site-footer__copy { margin: 0; color: var(--color-text-subtle); }
 .info-page { padding-bottom: 8px; }
+
+/* หน้าประเทศ: ขอพรเรื่องไหน ไปที่ไหน */
+.goal-picks { margin: 4px 0 20px; padding: 16px; border-radius: 18px; background: var(--color-surface-sunken); border: 1px solid #3A4775; }
+.goal-picks__title { margin: 0 0 10px; font-family: var(--font-display); font-size: var(--text-lg); font-weight: 600; }
+.goal-picks__list { margin: 0; display: grid; gap: 10px; }
+.goal-picks__list > div { display: grid; grid-template-columns: 5.5em 1fr; gap: 8px; align-items: baseline; }
+.goal-picks__list dt { color: var(--color-gold); font-weight: 600; font-size: var(--text-sm); }
+.goal-picks__list dd { margin: 0; font-size: var(--text-sm); line-height: 1.7; }
