@@ -1,0 +1,46 @@
+[
+  {
+    "name": "เจ้าแม่กวนอิม รีพลัสเบย์ (Kwun Yam Shrine, Repulse Bay)",
+    "nameEn": "Kwun Yam Shrine, Repulse Bay",
+    "slug": "kwun-yam-shrine-repulse-bay",
+    "type": "chinese-shrine",
+    "deities": ["เจ้าแม่กวนอิม", "เจ้าแม่ทับทิม (เทียนโหว)", "ไฉ่ซิงเอี๊ย (เทพเจ้าแห่งโชคลาภ)"],
+    "goals": ["money", "health", "protection"],
+    "country": "HK",
+    "city": "ฮ่องกง",
+    "district": "รีพลัสเบย์ (เกาะฮ่องกงฝั่งใต้)",
+    "coords": "22.23435, 114.19837",
+    "description": "ลานเทพริมทะเลปลายหาดรีพลัสเบย์ มีองค์เจ้าแม่กวนอิมและเจ้าแม่ทับทิมขนาดใหญ่สูงกว่า 10 เมตรหันหน้าออกทะเล รายล้อมด้วยเทพเจ้าแห่งโชคลาภและรูปปั้นมงคลอีกหลายองค์ ไฮไลต์คือสะพานอายุยืน (สะพานแดง) ที่เชื่อกันว่าเดินข้ามแล้วอายุยืนขึ้น เป็นจุดที่สายมูไทยนิยมแวะขอพรเรื่องโชคลาภและความปลอดภัย",
+    "offerings": ["ธูป"],
+    "howToPray": [
+      "ไหว้องค์เจ้าแม่กวนอิมและเจ้าแม่ทับทิมริมทะเล แล้วอธิษฐานขอพร",
+      "แวะไหว้เทพเจ้าแห่งโชคลาภเพื่อขอโชคลาภการเงิน",
+      "เดินข้ามสะพานอายุยืน (สะพานแดง) เชื่อกันว่าข้ามหนึ่งครั้งอายุยืนขึ้น 3 วัน"
+    ],
+    "howToRepayVow": ["เมื่อสมหวังแล้ว กลับมาไหว้ขอบคุณ หรือหยอดตู้บริจาคบำรุงสถานที่"],
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Kwun_Yam_Shrine_201501.jpg/1280px-Kwun_Yam_Shrine_201501.jpg",
+        "alt": "องค์เจ้าแม่กวนอิมและเจ้าแม่ทับทิมริมหาดรีพลัสเบย์ ฮ่องกง",
+        "author": "Wing1990hk",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kwun_Yam_Shrine_201501.jpg"
+      }
+    ],
+    "published": false,
+    "checkedAt": "2026-10-30",
+    "notes": [
+      "สถานที่อยู่ในสวน 鎮海樓公園 ปลายหาดทางตะวันออกเฉียงใต้ รูปปั้นและอาคารเป็นของ Hong Kong Life Saving Society (เอกสารตอบสภาเขตใต้ 2024) องค์เจ้าแม่กวนอิมบูรณะเสร็จราว พ.ค. 2024",
+      "สะพานอายุยืน: Lonely Planet ว่า 3 วันต่อการข้าม 1 ครั้ง ผู้ใช้ trip.com บางคนว่า 3 ปีหรือ 7 ปี ใช้ 3 วันตามแหล่งที่น่าเชื่อกว่า",
+      "การเดินทาง: รถเมล์ 6, 6X, 260 จากเซ็นทรัล ลงป้ายหาดรีพลัสเบย์ เดินไปปลายหาด 5-10 นาที (discoverhongkong) ไม่ใส่เวลาเปิดเพราะไม่มีแหล่งทางการ (เป็นลานกลางแจ้ง)",
+      "ภาพถ่ายปี 2015 ก่อนบูรณะ ไฟล์อัปโหลดโดยบัญชี Wpcpey ภายใต้ template ของ Wing1990hk",
+      "ไม่ใส่เทพเยว่เหล่าหรือกังหัน เพราะไม่พบแหล่งยืนยัน"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kwun_Yam_Shrine",
+      "https://districtcouncils.gov.hk/south/doc/2024_2027/tc/committee_meetings_doc/DFWC/25585/DFWC_2024_7_TC_Annex_2.pdf",
+      "https://www.lonelyplanet.com/points-of-interest/kwun-yam-shrine/1492376",
+      "https://discoverhongkong.com/ca/explore/great-outdoor/wellness/repulse-bay.html"
+    ]
+  }
+]

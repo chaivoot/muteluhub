@@ -92,6 +92,10 @@ export const DEITY_GROUPS: DeityGroup[] = [
     family: 'chinese',
     // มีแหล่งยืนยันว่ามีไท้ส่วยเอี๊ยหรือคนนิยมไปแก้ชง (ตรวจ 2026-10-20) แต่ข้อมูลไม่ได้ใส่ชื่อองค์ไว้
     slugs: [
+      // ฮ่องกง: หวังต้าเซียนมีหอไท้ส่วยหยวนเฉิน หมั่นโหมวรับไหว้ไท้ส่วย ฮุงฮำประดิษฐานไท้ส่วย (HK01, 2026-10-30)
+      'wong-tai-sin-temple',
+      'man-mo-temple-hong-kong',
+      'hung-hom-kwun-yam-temple',
       'chao-pho-suea-shrine',
       'guan-yu-shrine-khlong-san',
       'wat-kalayanamit-bangkok',

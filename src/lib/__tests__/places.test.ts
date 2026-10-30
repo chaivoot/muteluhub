@@ -3,7 +3,7 @@ import type { Place } from '@/data/places';
 import { bookingLink, lodgingLink } from '@/lib/booking';
 import { TRAVELOKA_ABROAD_CITY, TRAVELOKA_PLACE, TRAVELOKA_PROVINCE } from '@/data/traveloka-urls';
 import { PROVINCES } from '@/data/provinces';
-import { cityPillarsByProvince, deitiesOf, deitySuggestions, featuredPlaces, filterPlaces, mapLink, provincesWithPlaces, relatedPlaces } from '@/lib/places';
+import { placesByGoal, placeShortName, cityPillarsByProvince, deitiesOf, deitySuggestions, featuredPlaces, filterPlaces, mapLink, provincesWithPlaces, relatedPlaces } from '@/lib/places';
 
 const base: Omit<Place, 'slug' | 'provinceSlug' | 'goals' | 'deities'> = {
   name: 'x',
@@ -165,5 +165,16 @@ describe('city pillar shrines hub', () => {
     expect(groups.map((g) => g.slug)).toEqual(['bangkok', 'si-sa-ket']);
     expect(groups[0].places.map((p) => p.slug)).toEqual(['x3']);
     expect(groups[1].places.map((p) => p.slug)).toEqual(['x2', 'x1']);
+  });
+});
+
+describe('placesByGoal', () => {
+  it('groups by goal in goal order, adds tai-sui row, drops empty goals', () => {
+    const wts: Place = { ...a, slug: 'w', name: 'วัดหวังต้าเซียน (Wong Tai Sin Temple)', goals: ['love', 'health'], deities: ['หวังต้าเซียน', 'ไท้ส่วยเอี๊ย'] };
+    const ck: Place = { ...a, slug: 'c', name: 'วัดแชกงหมิว', goals: ['money'], deities: ['แชกง'] };
+    const rows = placesByGoal([wts, ck]);
+    expect(rows.map((r) => r.key)).toEqual(['love', 'money', 'health', 'tai-sui']);
+    expect(rows.find((r) => r.key === 'tai-sui')!.places.map((p) => p.slug)).toEqual(['w']);
+    expect(placeShortName(wts)).toBe('วัดหวังต้าเซียน');
   });
 });

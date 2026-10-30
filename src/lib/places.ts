@@ -13,7 +13,7 @@ import {
   type DeityGroup,
 } from '@/data/deity-groups';
 import { PROVINCES, provinceShortName } from '@/data/provinces';
-import type { GoalSlug } from '@/lib/goals';
+import { GOALS, type GoalSlug } from '@/lib/goals';
 
 export interface PlaceFilter {
   goal?: GoalSlug | null;
@@ -190,4 +190,25 @@ export function cityPillarsByProvince(places: Place[]): { slug: string; name: st
       places: list.sort((a, b) => main(a) - main(b) || a.name.localeCompare(b.name, 'th')),
     }))
     .sort((a, b) => Number(b.slug === 'bangkok') - Number(a.slug === 'bangkok') || a.name.localeCompare(b.name, 'th'));
+}
+
+/** ชื่อสั้นสำหรับรายการ ตัดวงเล็บชื่ออังกฤษท้ายชื่อออก */
+export const placeShortName = (place: Pick<Place, 'name'>) => place.name.replace(/\s*\([^)]*\)\s*$/, '');
+
+export interface GoalPlaces {
+  key: string;
+  label: string;
+  places: Place[];
+}
+
+/** จัดสถานที่ตามเรื่องที่ขอพร (ตามลำดับ 8 เป้าหมาย) + แถวแก้ชง ใช้ตอบคำค้นแบบ "วัด... ความรัก" */
+export function placesByGoal(places: Place[]): GoalPlaces[] {
+  const rows: GoalPlaces[] = GOALS.map((g) => ({
+    key: g.slug,
+    label: g.short,
+    places: places.filter((p) => p.goals.includes(g.slug)),
+  }));
+  const taiSui = deityGroup('tai-sui');
+  if (taiSui) rows.push({ key: 'tai-sui', label: 'แก้ชง', places: places.filter((p) => inDeityGroup(taiSui, p)) });
+  return rows.filter((r) => r.places.length > 0);
 }

@@ -241,6 +241,7 @@ export const TRAVELOKA_PLACE: Record<string, TravelokaPage> = {
   "leng-buai-ia-shrine": { url: 'https://www.traveloka.com/th-th/hotel/thailand/area/chinatown-30009961', level: 'area' },
   "leng-chu-kiang-shrine-pattani": { url: 'https://www.traveloka.com/th-th/hotel/thailand/city/mueang-pattani-district-10000869', level: 'city' },
   "li-thi-miew-shrine": { url: 'https://www.traveloka.com/th-th/hotel/thailand/area/pom-prap-10002146', level: 'area' },
+  "kwun-yam-shrine-repulse-bay": { url: 'https://www.traveloka.com/th-th/hotel/hong-kong-sar/region/hong-kong-10011651', level: 'region' },
   "lovers-rock-bowen-road": { url: 'https://www.traveloka.com/th-th/hotel/hong-kong-sar/region/hong-kong-10011651', level: 'region' },
   "lungshan-temple-taipei": { url: 'https://www.traveloka.com/th-th/hotel/taiwan/landmark/longshan-temple-station-91576732914449', level: 'landmark' },
   "man-mo-temple-hong-kong": { url: 'https://www.traveloka.com/th-th/hotel/hong-kong-sar/region/hong-kong-10011651', level: 'region' },
