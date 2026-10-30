@@ -7,6 +7,7 @@ import type { Place } from '@/data/places';
 import type { GoalSlug } from '@/lib/goals';
 import { formatDistance, NEAR_ME_RADIUS_KM, sortByDistance, type LatLng } from '@/lib/geo';
 import { filterPlaces, provincesWithPlaces } from '@/lib/places';
+import { PickCombobox } from './PickCombobox';
 import { DeityCombobox, type DeityValue } from './DeityCombobox';
 import { GoalChips } from './GoalChips';
 import { UiIcon } from './icons';
@@ -131,30 +132,22 @@ export function PlacesBrowser({
         <div className="filter-bar__selects">
           <DeityCombobox places={deityScope} value={deity} onChange={setDeity} />
           {!fixedProvince && groupBy === 'province' && (
-            <label className="select-wrap">
-              <span className="visually-hidden">จังหวัด</span>
-              <select className="select" value={province} onChange={(e) => setProvince(e.target.value)}>
-                <option value="">ทุกจังหวัด</option>
-                {provinces.map((p) => (
-                  <option key={p.slug} value={p.slug}>
-                    {p.name}
-                  </option>
-                ))}
-              </select>
-            </label>
+            <PickCombobox
+              label="จังหวัด"
+              allLabel="ทุกจังหวัด"
+              value={province}
+              onChange={setProvince}
+              options={provinces.map((p) => ({ value: p.slug, label: p.name, count: p.count }))}
+            />
           )}
           {groupBy === 'city' && cities.length > 1 && (
-            <label className="select-wrap">
-              <span className="visually-hidden">เมือง</span>
-              <select className="select" value={province} onChange={(e) => setProvince(e.target.value)}>
-                <option value="">ทุกเมือง</option>
-                {cities.map((c) => (
-                  <option key={c} value={c}>
-                    {c}
-                  </option>
-                ))}
-              </select>
-            </label>
+            <PickCombobox
+              label="เมือง"
+              allLabel="ทุกเมือง"
+              value={province}
+              onChange={setProvince}
+              options={cities.map((c) => ({ value: c, label: c }))}
+            />
           )}
         </div>
       </div>
