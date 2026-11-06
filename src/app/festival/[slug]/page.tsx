@@ -65,8 +65,13 @@ export default async function FestivalPage({ params }: { params: Params }) {
   const festival = withCover(base, covers);
   const related = articles.filter((a) => a.festival === slug);
   const pf = festival.placeFilter;
+  const allPlaces = await listPublishedPlaces();
+  // ลิงก์ชื่อหัวข้อไปหน้าสถานที่เฉพาะที่เผยแพร่แล้ว (สถานที่ที่ยังไม่นำเข้าแสดงเป็นข้อความธรรมดา)
+  const placeSlugs = new Set(allPlaces.map((p) => p.slug));
+  const itemName = (it: { name: string; place?: string }) =>
+    it.place && placeSlugs.has(it.place) ? <Link href={`/places/${it.place}`}>{it.name}</Link> : it.name;
   const wherePlaces = pf
-    ? filterPlaces({ deity: pf.deity ?? null, goal: pf.goal ?? null }, thaiPlaces(await listPublishedPlaces()))
+    ? filterPlaces({ deity: pf.deity ?? null, goal: pf.goal ?? null }, thaiPlaces(allPlaces))
         .sort((a, b) => Number(b.images.length > 0) - Number(a.images.length > 0))
         .slice(0, 8)
     : [];
@@ -177,7 +182,7 @@ export default async function FestivalPage({ params }: { params: Params }) {
                       <label>
                         <input type="checkbox" />
                         <span>
-                          <strong>{it.name}</strong> {it.text}
+                          <strong>{itemName(it)}</strong> {it.text}
                         </span>
                       </label>
                     </li>
@@ -187,7 +192,7 @@ export default async function FestivalPage({ params }: { params: Params }) {
                 <ol className="fest-steps">
                   {sec.items.map((it) => (
                     <li key={it.name}>
-                      <div className="venue__name">{it.name}</div>
+                      <div className="venue__name">{itemName(it)}</div>
                       <p className="venue__desc">{it.text}</p>
                     </li>
                   ))}
@@ -196,7 +201,7 @@ export default async function FestivalPage({ params }: { params: Params }) {
                 <div className="venue-list">
                   {sec.items.map((it) => (
                     <div key={it.name} className="venue">
-                      <div className="venue__name">{it.name}</div>
+                      <div className="venue__name">{itemName(it)}</div>
                       <p className="venue__desc">{it.text}</p>
                     </div>
                   ))}

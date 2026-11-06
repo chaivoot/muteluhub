@@ -193,6 +193,7 @@ export const PLANET_TRANSITS: PlanetTransit[] = [
     to: "มังกร",
     date: "2026-11-22",
     time: "05.05",
+    article: "rahu-capricorn-2569",
     note: "อยู่ราศีมังกรราว 1 ปีครึ่ง ถึง 10 มิ.ย. 2571",
     sources: [
       "https://myhora.com/calendar/astro-suriyayas-22-11-2569.aspx",

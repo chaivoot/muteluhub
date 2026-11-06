@@ -42,7 +42,8 @@ export interface FestivalSection {
   /** cards = การ์ด (ค่าเริ่มต้น), checklist = รายการของไหว้ติ๊กได้, steps = ขั้นตอนเรียงเลข */
   style?: 'cards' | 'checklist' | 'steps';
   intro?: string;
-  items: { name: string; text: string; source?: string }[];
+  /** place = slug สถานที่ในเว็บ ชื่อหัวข้อจะเป็นลิงก์ไปหน้าสถานที่ */
+  items: { name: string; text: string; source?: string; place?: string }[];
 }
 
 /** เนื้อหาหน้าเทศกาล อัปเดตทุกปี (URL ไม่มีปี) ทุกข้อเท็จจริงต้องมีแหล่งอ้างอิง */
@@ -344,6 +345,85 @@ export const FESTIVALS: Festival[] = [
         'https://mgronline.com/travel/detail/9690000097949',
         'https://mgronline.com/travel/detail/9690000098872',
         'https://th.wikipedia.org/wiki/เทศกาลกินเจ',
+      ],
+    },
+  },
+  {
+    slug: 'new-year',
+    name: 'ปีใหม่',
+    tagline: 'ไหว้พระ 9 วัด สวดมนต์ข้ามปี และเคล็ดเสริมดวงรับปีใหม่',
+    seoTitle: 'ไหว้พระ 9 วัด กรุงเทพ สวดมนต์ข้ามปี เคล็ดเสริมดวงรับปีใหม่',
+    goals: ['career', 'money', 'protection'],
+    dates: [
+      // year = ปีใหม่ที่ต้อนรับ (ชื่อหน้าแสดง ปีใหม่ 2570)
+      { year: 2027, start: '2026-12-31', end: '2027-01-01' },
+      { year: 2028, start: '2027-12-31', end: '2028-01-01' },
+    ],
+    content: {
+      year: 2027,
+      checkedAt: '2026-11-06',
+      intro:
+        'คืนข้ามปี 31 ธ.ค. 2569 ต่อวันที่ 1 ม.ค. 2570 ตรงกับคืนวันพฤหัสบดีต่อวันศุกร์ คนไทยนิยมเริ่มปีใหม่ด้วยการสวดมนต์ข้ามปี ทำบุญตักบาตรเช้าวันที่ 1 และไหว้พระ 9 วัดเพื่อเป็นสิริมงคล หน้านี้รวมเส้นทางไหว้พระ 9 วัดกรุงเทพฯ ว่าแต่ละวัดขอพรเรื่องอะไร สวดมนต์ข้ามปี และเคล็ดรับปีใหม่ตามความเชื่อ',
+      rulesTitle: 'เคล็ดรับปีใหม่ตามความเชื่อ',
+      rules: [
+        { text: 'ทำความสะอาดบ้านครั้งใหญ่ก่อนสิ้นปี เชื่อว่าปัดเป่าเรื่องไม่ดีของปีเก่าออกไป', source: 'https://www.thairath.co.th/lifestyle/life/2905131' },
+        { text: 'ใส่เสื้อผ้าใหม่สีมงคลวันแรกของปี 1 ม.ค. 2570 ตรงกับวันศุกร์ ดูสีตามเรื่องที่อยากเสริมได้ที่หน้าสีเสื้อมงคลวันนี้', source: 'https://www.sanook.com/women/185877/' },
+        { text: 'วันแรกของปีหลีกเลี่ยงการทะเลาะเบาะแว้งและคำพูดไม่ดี', source: 'https://www.amarintv.com/news/social/200957' },
+        { text: 'คนปีชง 2570 (ฉลู มะแม จอ ชวด) นิยมทำบุญแก้ชงช่วงต้นปี', source: 'https://www.thansettakij.com/lifestyle/horoscope/647445' },
+      ],
+      sections: [
+        {
+          title: 'ไหว้พระ 9 วัด กรุงเทพฯ ขอพรเรื่องอะไร',
+          intro: 'เส้นทางยอดนิยมบนเกาะรัตนโกสินทร์และฝั่งธนฯ ไปต่อกันได้ในวันเดียวด้วยรถหรือเรือข้ามฟาก แตะชื่อวัดเพื่อดูวิธีไหว้และพิกัด',
+          items: [
+            { name: 'วัดพระแก้ว', text: 'ขอให้การงานก้าวหน้า มีสติปัญญา และผ่านพ้นอุปสรรค', source: 'https://www.thansettakij.com/business/economy/614632', place: 'wat-phra-kaew-bangkok' },
+            { name: 'วัดโพธิ์', text: 'ขอให้ชีวิตสงบร่มเย็น โชคดี และความรักราบรื่น กราบพระพุทธไสยาสน์และมงคล 108 ประการที่ฝ่าพระบาท', source: 'https://www.thansettakij.com/business/economy/614632', place: 'wat-pho-bangkok' },
+            { name: 'วัดสุทัศน์', text: 'ขอให้มีวิสัยทัศน์กว้างไกลและได้บุญกุศล', source: 'https://www.thansettakij.com/business/economy/614632', place: 'wat-suthat-bangkok' },
+            { name: 'วัดสระเกศ (ภูเขาทอง)', text: 'ขอให้ประสบความสำเร็จ จิตใจแจ่มใส มีปัญญา', source: 'https://www.thansettakij.com/business/economy/614632', place: 'wat-saket-golden-mount' },
+            { name: 'วัดบวรนิเวศ', text: 'ขอให้พบแต่สิ่งดีงาม ชีวิตรุ่งเรือง', source: 'https://www.thansettakij.com/business/economy/614632', place: 'wat-bowonniwet-bangkok' },
+            { name: 'วัดชนะสงคราม', text: 'ขอให้ชนะอุปสรรคและแคล้วคลาดปลอดภัย', source: 'https://www.thansettakij.com/business/economy/614632', place: 'wat-chana-songkhram-bangkok' },
+            { name: 'วัดระฆัง', text: 'ขอให้มีชื่อเสียงและการงานรุ่งเรือง', source: 'https://www.thansettakij.com/business/economy/614632', place: 'wat-rakhang' },
+            { name: 'วัดอรุณ', text: 'ขอให้ชีวิตสดใสรุ่งโรจน์เหมือนแสงอรุณ', source: 'https://www.thansettakij.com/business/economy/614632', place: 'wat-arun-bangkok' },
+            { name: 'วัดกัลยาณมิตร', text: 'ขอให้มีมิตรแท้ ค้าขายดี และเดินทางปลอดภัย', source: 'https://www.thansettakij.com/business/economy/614632', place: 'wat-kalayanamit-bangkok' },
+            { name: 'แวะเพิ่ม: ศาลหลักเมือง', text: 'หลายคนเริ่มหรือปิดทริปที่ศาลหลักเมืองกรุงเทพฯ เพื่อขอพรให้ปีใหม่ราบรื่น', source: 'https://www.thansettakij.com/business/economy/614632', place: 'lak-mueang-bangkok' },
+          ],
+        },
+        {
+          title: 'สวดมนต์ข้ามปี',
+          items: [
+            { name: 'ใครจัด', text: 'กรมการศาสนา กระทรวงวัฒนธรรม จัดโครงการสวดมนต์ข้ามปีทุกปีตั้งแต่ปี 2548 ทั้งที่วัดทั่วประเทศและออนไลน์', source: 'https://www.dailynews.co.th/news/5462948/' },
+            { name: 'ปีที่แล้ว', text: 'คืน 31 ธ.ค. 2568 ต่อ 1 ม.ค. 2569 จัดทั่ว 76 จังหวัด จุดหลักที่วัดสระเกศ วัดอรุณ และวัดโพธิ์ มีผู้ร่วมทั้งที่วัดและออนไลน์กว่า 12 ล้านครั้ง', source: 'https://www.dailynews.co.th/news/5462948/' },
+            { name: 'เวลา', text: 'ส่วนใหญ่เริ่มราว 23.30 น. ของคืน 31 ธ.ค. สวดต่อเนื่องข้ามเที่ยงคืน', source: 'https://www.thairath.co.th/lifestyle/life/2905131' },
+            { name: 'ปี 2570', text: 'ยังไม่ประกาศรายชื่อวัดและกำหนดการ (ตรวจ 6 พ.ย. 2569) ปกติประกาศช่วงปลายเดือนธันวาคม เช็กวัดใกล้บ้านหรือประกาศกรมการศาสนาอีกครั้ง', source: 'https://www.dailynews.co.th/news/5462948/' },
+          ],
+        },
+        {
+          title: '6 อย่างทำบุญรับปีใหม่',
+          style: 'steps',
+          items: [
+            { name: 'สวดมนต์ข้ามปี', text: 'เริ่มปีใหม่ด้วยจิตใจสงบ', source: 'https://www.thansettakij.com/lifestyle/horoscope/647445' },
+            { name: 'ตักบาตรเช้า 1 ม.ค.', text: 'อุทิศส่วนกุศลให้บรรพบุรุษและเจ้ากรรมนายเวร', source: 'https://www.thansettakij.com/lifestyle/horoscope/647445' },
+            { name: 'ขอพรพ่อแม่และผู้ใหญ่', text: 'กราบขอขมาและขอพรคนในบ้าน', source: 'https://www.thansettakij.com/lifestyle/horoscope/647445' },
+            { name: 'ไหว้พระ 9 วัด', text: 'ตามเส้นทางด้านบน หรือวัดใกล้บ้านที่สะดวก', source: 'https://www.thansettakij.com/lifestyle/horoscope/647445' },
+            { name: 'แก้ชง', text: 'สำหรับคนปีชง ไปไหว้ไท้ส่วยเอี๊ยที่วัดจีนหรือศาลเจ้า', source: 'https://www.thansettakij.com/lifestyle/horoscope/647445' },
+            { name: 'ร่วมทำบุญสร้างพระหรือสิ่งปลูกสร้างในวัด', text: 'ทำบุญใหญ่ต้อนรับปีใหม่ตามกำลังทรัพย์', source: 'https://www.thansettakij.com/lifestyle/horoscope/647445' },
+          ],
+        },
+      ],
+      venues: [],
+      faq: [
+        { q: 'ไหว้พระ 9 วัด กรุงเทพ มีวัดอะไรบ้าง', a: 'เส้นทางยอดนิยมคือ วัดพระแก้ว วัดโพธิ์ วัดสุทัศน์ วัดสระเกศ (ภูเขาทอง) วัดบวรนิเวศ วัดชนะสงคราม วัดระฆัง วัดอรุณ และวัดกัลยาณมิตร หลายคนแวะศาลหลักเมืองเพิ่ม', source: 'https://www.thansettakij.com/business/economy/614632' },
+        { q: 'สวดมนต์ข้ามปี 2570 ที่ไหน', a: 'กรมการศาสนาจัดทุกปีที่วัดทั่วประเทศ ปีที่แล้วจุดหลักคือวัดสระเกศ วัดอรุณ และวัดโพธิ์ กำหนดการปี 2570 ยังไม่ประกาศ', source: 'https://www.dailynews.co.th/news/5462948/' },
+        { q: 'วันปีใหม่ 1 ม.ค. 2570 ใส่เสื้อสีอะไร', a: '1 ม.ค. 2570 ตรงกับวันศุกร์ เลือกสีมงคลวันศุกร์ตามเรื่องที่อยากเสริม เช่น การเงิน การงาน หรือความรัก ได้ที่หน้าสีเสื้อมงคลวันนี้' },
+      ],
+      sources: [
+        'https://www.thansettakij.com/business/economy/614632',
+        'https://www.bangkokbiznews.com/lifestyle/980364',
+        'https://www.dailynews.co.th/news/5462948/',
+        'https://www.thansettakij.com/lifestyle/horoscope/647445',
+        'https://www.thairath.co.th/lifestyle/life/2905131',
+        'https://www.sanook.com/women/185877/',
+        'https://www.amarintv.com/news/social/200957',
       ],
     },
   },
