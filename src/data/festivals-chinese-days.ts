@@ -357,6 +357,7 @@ export const CHINESE_DAY_FESTIVALS: Festival[] = [
     goals: ["family", "love"],
     placeFilter: { deity: "tua-lao-ia" },
     featureDays: 30,
+    related: ["chinese-new-year"],
     dates: [
       {
         year: 2027,
@@ -920,6 +921,7 @@ export const CHINESE_DAY_FESTIVALS: Festival[] = [
     goals: ["family", "protection", "money"],
     placeFilter: { deity: "family:chinese" },
     featureDays: 30,
+    related: ["chinese-new-year"],
     dates: [
       {
         year: 2027,

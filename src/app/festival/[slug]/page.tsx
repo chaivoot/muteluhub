@@ -34,10 +34,13 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   // URL ไม่มีปี แต่ใส่ปีใน title ได้ (spec ข้อ 3.7)
   const year = date ? ` ${toBuddhistYear(date.year)}` : '';
   const when = date ? ` ${formatThaiRange(date.start, date.end, true)}` : '';
+  // ภาพแชร์ = รูปปกจากหลังบ้าน หรือรูปในโค้ด (ไม่มี = ภาพแชร์เริ่มต้นของเว็บ)
+  const image = withCover(festival, await getFestivalCovers()).image;
   return {
     alternates: { canonical: `/festival/${slug}` },
     title: `${festival.name}${year} ${festival.seoTitle ?? 'วันไหน ข้อควรรู้ และงานทั่วไทย'}`,
-    description: `${festival.name}${year}${when} ${festival.content?.intro ?? festival.tagline}`.slice(0, 160),
+    description: (festival.seoDescription ?? `${festival.name}${year}${when} ${festival.content?.intro ?? festival.tagline}`).slice(0, 160),
+    openGraph: image ? { images: [{ url: image.src, alt: image.alt }] } : undefined,
   };
 }
 
@@ -64,6 +67,10 @@ export default async function FestivalPage({ params }: { params: Params }) {
   const [covers, articles] = await Promise.all([getFestivalCovers(), listPublishedArticles()]);
   const festival = withCover(base, covers);
   const related = articles.filter((a) => a.festival === slug);
+  const relatedFestivals = (festival.related ?? [])
+    .map((s) => getFestival(s))
+    .filter((f): f is Festival => f != null)
+    .map((f) => ({ f, d: currentFestivalDate(f, bangkokDay().iso) }));
   const pf = festival.placeFilter;
   const allPlaces = await listPublishedPlaces();
   // ลิงก์ชื่อหัวข้อไปหน้าสถานที่เฉพาะที่เผยแพร่แล้ว (สถานที่ที่ยังไม่นำเข้าแสดงเป็นข้อความธรรมดา)
@@ -241,7 +248,7 @@ export default async function FestivalPage({ params }: { params: Params }) {
 
           {c.venues.length > 0 && (
             <section>
-              <h2 className="place__h2">งานกินเจทั่วไทย</h2>
+              <h2 className="place__h2">{c.venuesTitle ?? `งาน${festival.name.replace(/\s*\(.*\)/, '')}ทั่วไทย`}</h2>
               <ul className="venue-list">
                 {c.venues.map((v) => (
                   <li key={v.name} className="venue">
@@ -263,6 +270,25 @@ export default async function FestivalPage({ params }: { params: Params }) {
                 <span className="shortcut-card__title">ดูแลสุขภาพช่วงกินเจ</span>
                 <span className="shortcut-card__sub">{c.healthNote}</span>
               </span>
+            </section>
+          )}
+
+          {relatedFestivals.length > 0 && (
+            <section>
+              <h2 className="place__h2">วันสำคัญช่วงเดียวกัน</h2>
+              <ul className="home-reads__list">
+                {relatedFestivals.map(({ f, d }) => (
+                  <li key={f.slug}>
+                    <Link href={`/festival/${f.slug}`} className="home-reads__item">
+                      <span className="home-reads__name">
+                        {f.name}
+                        {d ? ` ${toBuddhistYear(d.year)}` : ''}
+                      </span>
+                      {d && <span className="home-reads__meta">{formatThaiRange(d.start, d.end, true)}</span>}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </section>
           )}
 
@@ -330,6 +356,8 @@ function FestivalJsonLd({ festival, date }: { festival: Festival; date?: Festiva
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
       location: { '@type': 'Place', name: 'ประเทศไทย', address: { '@type': 'PostalAddress', addressCountry: 'TH' } },
       description: festival.content?.intro ?? festival.tagline,
+      eventStatus: 'https://schema.org/EventScheduled',
+      image: festival.image ? [festival.image.src.startsWith('http') ? festival.image.src : `${SITE_URL}${festival.image.src}`] : undefined,
       url: `${SITE_URL}/festival/${festival.slug}`,
     });
   }
