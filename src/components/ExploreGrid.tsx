@@ -5,6 +5,7 @@ import { UiIcon } from './icons';
 const DESCRIPTIONS: Record<string, string> = {
   '/fortune-tellers': 'แยกตามศาสตร์และเรื่องที่ถนัด',
   '/places': 'วัด ศาลเจ้า เทวาลัย ทั่วไทย',
+  '/trips': 'เส้นทางพร้อมความหมายแต่ละวัด',
   '/abroad': 'คู่มือทริปสายมู',
   '/calendar': 'ฤกษ์ดีตามประเภทงาน',
   '/ai-prompts': 'prompt พร้อมใช้กับ ChatGPT Claude Gemini',

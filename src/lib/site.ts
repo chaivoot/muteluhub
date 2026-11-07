@@ -16,6 +16,7 @@ export const NAV_ITEMS: NavItem[] = [
   { href: '/color-today', label: 'สีเสื้อมงคลวันนี้', icon: 'shirt' },
   { href: '/fortune-tellers', label: 'หมอดู', icon: 'fortune-tellers' },
   { href: '/places', label: 'สถานที่เสริมดวงในไทย', icon: 'places' },
+  { href: '/trips', label: 'ทริปไหว้พระ 9 วัด', icon: 'places' },
   { href: '/abroad', label: 'มูต่างประเทศ', icon: 'abroad' },
   { href: '/calendar', label: 'ปฏิทินมงคล', icon: 'calendar' },
   { href: '/festival', label: 'เทศกาลและบทความ', icon: 'calendar' },
