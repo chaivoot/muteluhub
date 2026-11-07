@@ -12,6 +12,7 @@ import { PLACE_TYPE_LABEL, type Place } from '@/data/places';
 import { PROVINCES, provinceShortName } from '@/data/provinces';
 import { lodgingLink } from '@/lib/booking';
 import { LodgingBlock } from '@/components/LodgingBlock';
+import { tripsForProvince } from '@/data/temple-trips';
 import { getGoal } from '@/lib/goals';
 import { countryByCode } from '@/data/countries';
 import { filterPlaces, isCityPillarShrine, mapLink, placeLocation, provincesWithPlaces, relatedPlaces, thaiPlaces } from '@/lib/places';
@@ -76,6 +77,13 @@ export default async function PlaceOrProvincePage({ params }: { params: Params }
           <p>สถานที่เสริมดวงใน{PROVINCES[slug]}</p>
         </div>
         <PlacesBrowser places={inProvince} fixedProvince={slug} />
+        {tripsForProvince(slug).map((t) => (
+          <p key={t.slug} className="container note">
+            <Link href={`/trips/${t.slug}`}>
+              ทริป{t.name} เรียงเส้นทาง {t.stops.length} จุด พร้อมความหมายแต่ละวัด
+            </Link>
+          </p>
+        ))}
         {inProvince.some(isCityPillarShrine) && (
           <p className="container note">
             <Link href={`/places/city-pillar-shrines#${slug}`}>ดูศาลหลักเมืองจังหวัดอื่น ๆ ทั่วไทย</Link>

@@ -6,6 +6,7 @@ import { SiteHeader } from '@/components/SiteHeader';
 import { CreditBadge } from '@/components/CreditBadge';
 import { GoalTag } from '@/components/GoalTag';
 import { FESTIVALS, type Festival, type FestivalDate } from '@/data/festivals';
+import { getTrip, type TempleTrip } from '@/data/temple-trips';
 import { currentFestivalDate, festivalPhase, getFestival, withCover } from '@/lib/festivals';
 import { getFestivalCovers, listPublishedArticles } from '@/lib/articles-repo';
 import { ArticleCard } from '@/components/ArticleCard';
@@ -67,6 +68,7 @@ export default async function FestivalPage({ params }: { params: Params }) {
   const [covers, articles] = await Promise.all([getFestivalCovers(), listPublishedArticles()]);
   const festival = withCover(base, covers);
   const related = articles.filter((a) => a.festival === slug);
+  const trips = (festival.trips ?? []).map((s) => getTrip(s)).filter((t): t is TempleTrip => t != null);
   const relatedFestivals = (festival.related ?? [])
     .map((s) => getFestival(s))
     .filter((f): f is Festival => f != null)
@@ -270,6 +272,24 @@ export default async function FestivalPage({ params }: { params: Params }) {
                 <span className="shortcut-card__title">ดูแลสุขภาพช่วงกินเจ</span>
                 <span className="shortcut-card__sub">{c.healthNote}</span>
               </span>
+            </section>
+          )}
+
+          {trips.length > 0 && (
+            <section>
+              <h2 className="place__h2">ทริปไหว้พระ</h2>
+              <ul className="home-reads__list">
+                {trips.map((t) => (
+                  <li key={t.slug}>
+                    <Link href={`/trips/${t.slug}`} className="home-reads__item">
+                      <span className="home-reads__name">{t.name}</span>
+                      <span className="home-reads__meta">
+                        {t.duration} · {t.stops.length} จุด เรียงเส้นทางพร้อมความหมายแต่ละวัด
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </section>
           )}
 

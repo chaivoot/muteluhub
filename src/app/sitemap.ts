@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import { COUNTRIES } from '@/data/countries';
 import { EVENT_TYPES } from '@/data/auspicious';
 import { FESTIVALS } from '@/data/festivals';
+import { TEMPLE_TRIPS } from '@/data/temple-trips';
 import { PROMPT_TEMPLATES } from '@/data/prompt-templates';
 import { GOALS } from '@/lib/goals';
 import { abroadPlaces, provincesWithPlaces, thaiPlaces } from '@/lib/places';
@@ -52,6 +53,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...articles.map((a) => page(`/articles/${a.slug}`, 'monthly', 0.7, a.updatedAt)),
 
     page('/places', 'weekly', 0.8),
+    page('/trips', 'weekly', 0.7),
+    ...TEMPLE_TRIPS.map((t) => page(`/trips/${t.slug}`, 'monthly', 0.7, t.checkedAt)),
     page('/about', 'monthly', 0.3),
     page('/contact', 'monthly', 0.3),
     page('/terms', 'yearly', 0.2),

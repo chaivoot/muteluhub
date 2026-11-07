@@ -88,6 +88,8 @@ export interface Festival {
   seoDescription?: string;
   /** slug เทศกาลที่เกี่ยวข้อง แสดงในหัวข้อ วันสำคัญช่วงเดียวกัน */
   related?: string[];
+  /** slug ทริปไหว้พระ (src/data/temple-trips.ts) แสดงในหัวข้อ ทริปไหว้พระ */
+  trips?: string[];
   /** สถานที่ในเว็บที่แสดงในหัวข้อ ไหว้ที่ไหนดี (deity = กลุ่ม/หมวดเทพ เช่น family:chinese) */
   placeFilter?: { deity?: string; goal?: GoalSlug } | null;
   content?: FestivalContent;
@@ -360,6 +362,7 @@ export const FESTIVALS: Festival[] = [
     name: 'ปีใหม่',
     tagline: 'ไหว้พระ 9 วัด สวดมนต์ข้ามปี และเคล็ดเสริมดวงรับปีใหม่',
     seoTitle: 'ไหว้พระ 9 วัด กรุงเทพ สวดมนต์ข้ามปี เคล็ดเสริมดวงรับปีใหม่',
+    trips: ['bangkok-9-temples', 'ayutthaya-9-temples', 'chiang-mai-9-temples'],
     goals: ['career', 'money', 'protection'],
     dates: [
       // year = ปีใหม่ที่ต้อนรับ (ชื่อหน้าแสดง ปีใหม่ 2570)

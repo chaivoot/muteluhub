@@ -7,6 +7,7 @@ const PARENT_LABELS: Record<string, string> = {
   '/places': 'สถานที่เสริมดวง',
   '/fortune-tellers': 'หมอดู',
   '/abroad': 'มูต่างประเทศ',
+  '/trips': 'ทริปไหว้พระ',
   '/ai-prompts': 'ดูดวงด้วย AI',
 };
 
