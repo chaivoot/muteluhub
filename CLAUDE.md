@@ -14,7 +14,7 @@
 ## สิ่งที่ล็อกแล้ว
 - หลักการ 4 ข้อใน spec ข้อ 1
 - taxonomy เป้าหมาย 8 อย่าง (slug ใน `data/goals.json` ตรงกับ spec) และศาสตร์ 2 ชั้น (`data/disciplines.json`)
-- direction ดีไซน์ C2: พื้นคราม `#172038`, ทอง `#D6B064`, ฟอนต์ **Kanit** ทั้งหัวข้อและเนื้อหา (เจ้าของเปลี่ยนจาก Trirong + Noto Sans Thai 2026-10-14, โฮสต์เองใน `public/fonts` + `src/app/fonts.css`; ภาพแชร์ OG ยังใช้ Trirong/Noto ใน `src/assets/og`), mobile-first
+- direction ดีไซน์ C2: พื้นคราม `#172038`, ทอง `#D6B064`, ฟอนต์ **Prompt** (หัวข้อ `--font-display`) + **Anuphan** (เนื้อหา `--font-body`) จาก Cadson Demak (เจ้าของเปลี่ยนจาก Kanit 2026-11-09 ก่อนหน้านั้น Trirong + Noto Sans Thai, โฮสต์เองใน `public/fonts` + `src/app/fonts.css` จาก @fontsource; ภาพแชร์ OG ยังใช้ Trirong/Noto ใน `src/assets/og`), mobile-first
 - affiliate อยู่ในเนื้อหาเท่านั้น 3 ถึง 4 ชิ้นต่อบล็อก มีป้าย "ลิงก์ affiliate" ทุกบล็อก
 
 ## ข้อห้ามสำคัญ
