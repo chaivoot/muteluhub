@@ -139,7 +139,9 @@ export default async function FestivalPage({ params }: { params: Params }) {
 
           {date && (
             <section>
-              <h2 className="place__h2">วันสำคัญ</h2>
+              <h2 className="place__h2">
+                {festival.datesTitle ?? `${festival.name.replace(/\s*\(.*\)/, '')} ${toBuddhistYear(date.year)} วันที่เท่าไหร่`}
+              </h2>
               <dl className="info-list">
                 {date.prep && (
                   <div>
