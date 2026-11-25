@@ -1,0 +1,1672 @@
+[
+ {
+  "name": "วัดป่าเลไลยก์วรวิหาร (หลวงพ่อโต)",
+  "nameEn": "Wat Pa Lelai Worawihan",
+  "slug": "wat-pa-lelai-suphanburi",
+  "type": "temple",
+  "deities": [
+   "หลวงพ่อโต (พระพุทธรูปองค์ใหญ่ในวิหาร)"
+  ],
+  "goals": [
+   "money",
+   "career"
+  ],
+  "province": "สุพรรณบุรี",
+  "district": "เมืองสุพรรณบุรี",
+  "coords": "14.474586, 100.094108",
+  "description": "วัดเก่าแก่คู่เมืองสุพรรณบุรี มีหลวงพ่อโตพระพุทธรูปองค์ใหญ่ประดิษฐานในวิหาร คนนิยมมากราบขอพรเรื่องโชคลาภและความก้าวหน้าในหน้าที่การงาน ตามความเชื่อของผู้ศรัทธา",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B9%82%E0%B8%95_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B9%84%E0%B8%A5%E0%B8%A2%E0%B8%81%E0%B9%8C%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3.jpg/1280px-%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B9%82%E0%B8%95_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B9%84%E0%B8%A5%E0%B8%A2%E0%B8%81%E0%B9%8C%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3.jpg",
+    "alt": "หลวงพ่อโต วัดป่าเลไลยก์วรวิหาร",
+    "author": "Mastertongapollo",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B9%82%E0%B8%95_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B9%84%E0%B8%A5%E0%B8%A2%E0%B8%81%E0%B9%8C%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3.jpg"
+   }
+  ],
+  "notes": [
+   "internal: coords = Wikidata Q2552305 (P625 14.474586, 100.094108)",
+   "internal: goals money/career จากบทความ LG Thailand (วัดป่าเลไลยก์: ขอโชคลาภและความก้าวหน้าในการงาน) ยังไม่มีแหล่งไทยกระแสหลักแห่งที่ 2 ยืนยัน",
+   "internal: ไม่ใส่เวลาเปิด ไม่พบแหล่งที่ระบุ",
+   "internal: photo = Commons File:หลวงพ่อโต วัดป่าเลไลยก์วรวิหาร.jpg (CC BY-SA 4.0, Mastertongapollo) เช็กผ่าน Commons API 2026-11-25"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B9%84%E0%B8%A5%E0%B8%A2%E0%B8%81%E0%B9%8C%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3",
+   "https://www.wikidata.org/wiki/Q2552305",
+   "https://www.lg.com/th/blog-list/place-to-pray-for-work-and-luck/"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดพังม่วง (ท้าวเวสสุวรรณ)",
+  "nameEn": "Wat Phang Muang",
+  "slug": "wat-phang-muang-suphanburi",
+  "type": "temple",
+  "deities": [
+   "ท้าวเวสสุวรรณ (องค์ทองเหลืองใหญ่ที่สุดในจังหวัดสุพรรณบุรี)"
+  ],
+  "goals": [
+   "money"
+  ],
+  "province": "สุพรรณบุรี",
+  "district": "ศรีประจันต์",
+  "coords": "14.6556336, 100.1379362",
+  "description": "วัดริมทางหลวง 340 ที่ศรีประจันต์ มีท้าวเวสสุวรรณองค์ทองเหลืองสูงราว 3.4 เมตร หนักราว 1 ตัน ใหญ่ที่สุดในสุพรรณบุรี คนนิยมมาขอโชคลาภ และกลับมาแก้บนเมื่อสมหวัง ในวัดมีจุดจุดประทัดและเซียมซีองค์ใหญ่ด้วย",
+  "hours": "08.00-18.00 น.",
+  "offerings": [
+   "กุหลาบแดง",
+   "ดอกไม้",
+   "ธูปเทียน"
+  ],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OSM node 952440083 'Wat Phang Muang' (14.6556336, 100.1379362) OSM ระบุตำบลวังน้ำซับ ส่วน TrueID ระบุ ต.ศรีประจันต์ ควรเช็กตำบล",
+   "internal: ข้อมูลองค์ท้าวเวสสุวรรณ เวลาเปิด ของไหว้ goals money จาก TrueID (ขอโชคลาภ โดยเฉพาะก่อนหวยออก)",
+   "internal: ไม่พบภาพใน Commons"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/416Eg6o30B6Q",
+   "https://travel.trueid.net/detail/ANbZqwZr8JdN",
+   "https://www.openstreetmap.org/node/952440083"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดไผ่เงินโชตนาราม (ท้าวเวสสุวรรณ)",
+  "nameEn": "Wat Phai Ngoen Chotanaram",
+  "slug": "wat-phai-ngoen-chotanaram-bangkok",
+  "type": "temple",
+  "deities": [
+   "ท้าวเวสสุวรรณ"
+  ],
+  "goals": [
+   "money",
+   "protection"
+  ],
+  "province": "กรุงเทพมหานคร",
+  "district": "บางคอแหลม",
+  "coords": "13.701111, 100.523889",
+  "description": "วัดในเขตบางคอแหลมที่สายมูรู้จักจากองค์ท้าวเวสสุวรรณ คนนิยมมาขอพรเรื่องโชคลาภ และขอให้ปัดเป่าปัญหาอุปสรรคในชีวิต ตามความเชื่อเรื่องท้าวเวสสุวรรณผู้เป็นใหญ่ในทรัพย์และปกป้องภัย",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%9C%E0%B9%88%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%82%E0%B8%8A%E0%B8%95%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%AD%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2811%29.jpg/1280px-%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%9C%E0%B9%88%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%82%E0%B8%8A%E0%B8%95%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%AD%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2811%29.jpg",
+    "alt": "วัดไผ่เงินโชตนาราม เขตบางคอแหลม",
+    "author": "กสิณธร ราชโอรส",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%282023%29_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%9C%E0%B9%88%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%82%E0%B8%8A%E0%B8%95%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%AD%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%2811%29.jpg"
+   }
+  ],
+  "notes": [
+   "internal: coords = Wikidata Q13020940 (13.701111, 100.523889) ตรงกับ OSM way 342513647 (13.7005726, 100.5239229)",
+   "internal: goals จาก TrueID รวมที่ไหว้ท้าวเวสสุวรรณ ('ขอพรโชคลาภ ขจัดปัญหาอุปสรรค') ตีความขจัดอุปสรรคเป็น protection ควรทบทวน",
+   "internal: photo = Commons File:(2023) วัดไผ่เงินโชตนาราม เขตบางคอแหลม กรุงเทพมหานคร (11).jpg (CC BY-SA 4.0, กสิณธร ราชโอรส) ภาพบรรยากาศวัด ไม่ได้ยืนยันว่าเห็นองค์ท้าวเวสสุวรรณ"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/ANbZqwZr8JdN",
+   "https://www.wikidata.org/wiki/Q13020940",
+   "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%9C%E0%B9%88%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%82%E0%B8%8A%E0%B8%95%E0%B8%99%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "ศาลเจ้ากวนอู เกาะสมุย (ศาลเจ้าหน้าค่าย)",
+  "nameEn": "Guan Yu Shrine, Ko Samui",
+  "slug": "guan-yu-shrine-ko-samui",
+  "type": "chinese-shrine",
+  "deities": [
+   "เทพเจ้ากวนอู (รูปหล่อสำริดสูง 16 เมตร)"
+  ],
+  "goals": [
+   "career",
+   "business",
+   "money"
+  ],
+  "province": "สุราษฎร์ธานี",
+  "district": "เกาะสมุย",
+  "coords": "9.4453464, 100.0244782",
+  "description": "ศาลเจ้ากวนอูริมถนนรอบเกาะช่วงหน้าค่าย-หัวถนน ชุมชนหัวถนน เดิมเรียกศาลเจ้าหน้าค่าย จุดเด่นคือรูปหล่อเทพเจ้ากวนอูสำริดสูง 16 เมตร PPTV เรียกว่าองค์ใหญ่ที่สุดในไทย คนนิยมมาขอพรเรื่องการงาน ธุรกิจ การเงิน และโชคลาภ โดยเฉพาะช่วงตรุษจีน",
+  "hours": "08.00-18.00 น.",
+  "offerings": [],
+  "howToPray": [
+   "แต่งกายสุภาพ"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Guan_Yu_statue_at_Guan_Yu_Koh_Samui_Shrine.jpg/1280px-Guan_Yu_statue_at_Guan_Yu_Koh_Samui_Shrine.jpg",
+    "alt": "รูปหล่อเทพเจ้ากวนอู ศาลเจ้ากวนอู เกาะสมุย",
+    "author": "Superraptor123",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guan_Yu_statue_at_Guan_Yu_Koh_Samui_Shrine.jpg"
+   }
+  ],
+  "notes": [
+   "internal: coords = OSM way 528366621 'Guan Yu shrine koh samui' (9.4453464, 100.0244782) ใกล้ OSM way 545195351 memorial 'Guān Yǔ' (9.4454119, 100.0243963)",
+   "internal: ความสูง 16 เมตร เวลาเปิด 08.00-18.00 เข้าฟรี goals จาก PPTV ข้อความว่าองค์ใหญ่ที่สุดในไทยเป็นคำของ PPTV ยังไม่มีแหล่งทางการ",
+   "internal: PPTV ระบุ ต.มะเร็ต แต่ OSM อยู่ในเขตเทศบาลนครเกาะสมุย ควรเช็กตำบล",
+   "internal: photo = Commons File:Guan Yu statue at Guan Yu Koh Samui Shrine.jpg (CC BY-SA 4.0, Superraptor123) เช็กผ่าน Commons API 2026-11-25"
+  ],
+  "sources": [
+   "https://www.pptvhd36.com/travel/thailand/267316",
+   "https://www.openstreetmap.org/way/528366621"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดสามพราน (วัดมังกร)",
+  "nameEn": "Wat Sam Phran",
+  "slug": "wat-sam-phran-nakhon-pathom",
+  "type": "temple",
+  "deities": [
+   "พระพุทธรูปองค์ใหญ่ภายในอาคาร",
+   "พระพุทธรูปประจำวันเกิด 7 องค์"
+  ],
+  "goals": [
+   "money"
+  ],
+  "province": "นครปฐม",
+  "district": "สามพราน",
+  "coords": "13.7361135, 100.2147757",
+  "description": "วัดที่คนเรียกกันว่าวัดมังกร จุดเด่นคืออาคารทรงกระบอกสีชมพู 17 ชั้น สูง 80 เมตร มีมังกรแดงเขียวพันรอบตั้งแต่ฐานถึงยอด เชื่อกันว่าอธิษฐานก่อนเดินขึ้นไปตามทางในท้องมังกรจะนำโชคดีมาให้ ที่ฐานอาคารมีพระพุทธรูปประจำวันเกิด 7 องค์ให้ไหว้",
+  "hours": "06.00-18.00 น.",
+  "offerings": [],
+  "howToPray": [
+   "ไหว้พระประจำวันเกิดที่ฐานอาคาร",
+   "อธิษฐานก่อนเดินขึ้นตึกผ่านท้องมังกร"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%99.jpg/1280px-%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%99.jpg",
+    "alt": "อาคารที่มีมังกรพันรอบ วัดสามพราน",
+    "author": "Bankthongluan789",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%99.jpg"
+   }
+  ],
+  "notes": [
+   "internal: coords = OSM way 1552071022 'วัดสามพราน' (13.7361135, 100.2147757) ใกล้ Wikidata Q23296514 (13.735, 100.215 ความละเอียดต่ำ)",
+   "internal: ข้อมูลอาคาร เวลาเปิด และความเชื่ออธิษฐานก่อนขึ้นท้องมังกร จาก English Wikipedia (ระบุค่าบำรุง 80 บาท) goals money ตีความจาก 'good fortune'",
+   "internal: ผลค้นหาจาก TrueID บอกว่ามีบ่อมังกรโยนเหรียญเสี่ยงทายเรื่องการงาน การเงิน ความรัก และชาวพม่ามาขอโชคลาภการงาน แต่เปิดหน้า TrueID อ่านเนื้อหาไม่ได้ จึงยังไม่ใส่ career/love",
+   "internal: Wikipedia มีหัวข้อข้อขัดแย้งเรื่องอดีตพระในวัด ควรให้เจ้าของพิจารณาก่อนเผยแพร่",
+   "internal: photo = Commons File:มังกรวัดสามพราน.jpg (CC BY-SA 4.0, Bankthongluan789) เช็กผ่าน Commons API 2026-11-25"
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Wat_Samphran",
+   "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%99",
+   "https://www.openstreetmap.org/way/1552071022"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดม่วง (หลวงพ่อใหญ่)",
+  "nameEn": "Wat Muang",
+  "slug": "wat-muang-ang-thong",
+  "type": "temple",
+  "deities": [
+   "พระพุทธมหานวมินทร์ศากยมุนีศรีวิเศษชัยชาญ (หลวงพ่อใหญ่)"
+  ],
+  "goals": [
+   "career"
+  ],
+  "province": "อ่างทอง",
+  "district": "วิเศษชัยชาญ",
+  "coords": "14.593644, 100.380364",
+  "description": "วัดที่วิเศษชัยชาญซึ่งมีหลวงพ่อใหญ่ พระพุทธรูปปางมารวิชัยสีทององค์มหึมากลางแจ้ง หน้าตักกว้างกว่า 60 เมตร สูงกว่า 90 เมตร ในวัดยังมีแดนนรกสวรรค์และวังมัจฉา มีความเชื่อว่าใช้สองมือสัมผัสปลายนิ้วหลวงพ่อใหญ่แล้วอธิษฐาน จะสมหวังเรื่องหน้าที่การงาน",
+  "hours": "06.00-18.00 น.",
+  "offerings": [],
+  "howToPray": [
+   "ใช้สองมือสัมผัสปลายนิ้วองค์หลวงพ่อใหญ่แล้วอธิษฐาน (ตามความเชื่อ)"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Ang_Thong_%282024%29_Wat_Muang_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B9%88%E0%B8%A7%E0%B8%87.jpg/1280px-Ang_Thong_%282024%29_Wat_Muang_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B9%88%E0%B8%A7%E0%B8%87.jpg",
+    "alt": "หลวงพ่อใหญ่ วัดม่วง อ่างทอง",
+    "author": "Chainwit.",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ang_Thong_%282024%29_Wat_Muang_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B9%88%E0%B8%A7%E0%B8%87.jpg"
+   }
+  ],
+  "notes": [
+   "internal: coords = Wikidata Q1403433 (14.593644, 100.380364) (thwiki ไม่มีพิกัด)",
+   "internal: ขนาดองค์พระแหล่งไม่ตรงกัน thwiki 63x95 เมตร TrueID 62x93 เมตร จึงเขียนว่ากว่า 60/90 เมตร",
+   "internal: เวลาเปิด 06.00-18.00 จาก TrueID (10 วัดสวย พระใหญ่)",
+   "internal: ความเชื่อสัมผัสปลายนิ้วเรื่องการงาน (goal career) มาจากสรุปผลค้นหา TrueID/Thairath แต่เปิดหน้าเต็มไม่ได้ (Thairath 403, TrueID เนื้อหาไม่โหลด) ต้องเช็กก่อนเผยแพร่",
+   "internal: photo = Commons File:Ang Thong (2024) Wat Muang วัดม่วง.jpg (CC BY 4.0, Chainwit.)"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B9%88%E0%B8%A7%E0%B8%87_(%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87)",
+   "https://travel.trueid.net/detail/nAnggPzR9wYB",
+   "https://www.thairath.co.th/lifestyle/travel/2716064",
+   "https://www.wikidata.org/wiki/Q1403433"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดภูเขาทอง (อยุธยา)",
+  "nameEn": "Wat Phu Khao Thong, Ayutthaya",
+  "slug": "wat-phu-khao-thong-ayutthaya",
+  "type": "temple",
+  "deities": [
+   "ท้าวเวสสุวรรณ (บนลานชั้นบนของเจดีย์)",
+   "เจดีย์ภูเขาทอง"
+  ],
+  "goals": [
+   "money"
+  ],
+  "province": "พระนครศรีอยุธยา",
+  "district": "พระนครศรีอยุธยา",
+  "coords": "14.369083, 100.539751",
+  "description": "วัดโบราณนอกเกาะเมืองอยุธยา มีเจดีย์ภูเขาทองสีขาวสูงราว 90 เมตร ตั้งเด่นกลางทุ่ง เดินขึ้นบันไดไปถึงลานด้านบนที่ประดิษฐานท้าวเวสสุวรรณให้ไหว้ขอพร ซึ่งคนนับถือกันในฐานะผู้เป็นใหญ่ด้านทรัพย์และโชคลาภ ด้านหน้าวัดมีพระบรมราชานุสาวรีย์สมเด็จพระนเรศวรทรงม้า",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Wat_Phu_Khao_Thong-016.jpg/1280px-Wat_Phu_Khao_Thong-016.jpg",
+    "alt": "เจดีย์ภูเขาทอง วัดภูเขาทอง อยุธยา",
+    "author": "Ddalbiez",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Phu_Khao_Thong-016.jpg"
+   }
+  ],
+  "notes": [
+   "internal: coords = Thai Wikipedia (14.369083, 100.539751) ตรงกับ Wikidata Q1471396 (14.36888889, 100.53972222)",
+   "internal: KTC (9 วัดดังอยุธยา) ระบุว่าไหว้ขอพรท้าวเวสสุวรรณบนชั้นบนของเจดีย์ แต่ไม่ได้ระบุเรื่องที่ขอ goal money อิงความเชื่อทั่วไปเรื่องท้าวเวสสุวรรณจาก TrueID/Krungsri ควรทบทวน",
+   "internal: ไม่ใส่เวลาเปิด ไม่พบแหล่งที่ระบุ",
+   "internal: photo = Commons File:Wat Phu Khao Thong-016.jpg (CC BY 3.0, Ddalbiez)"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%97%E0%B8%AD%E0%B8%87_(%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%AD%E0%B8%A2%E0%B8%B8%E0%B8%98%E0%B8%A2%E0%B8%B2)",
+   "https://www.ktc.co.th/article/travel-guide/ayutthaya-auspicious-temples-start-a-new-year",
+   "https://travel.trueid.net/detail/ANbZqwZr8JdN",
+   "https://www.krungsri.com/th/plearn-plearn/thao-wessuwan-worship-guide"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดไท่ฮัว ฝอกวงซัน (วัดโฝวกวงซัน)",
+  "nameEn": "Fo Guang Shan Thaihua Temple",
+  "slug": "fo-guang-shan-thaihua-temple-bangkok",
+  "type": "temple",
+  "deities": [
+   "พระโพธิสัตว์กวนอิมองค์ใหญ่สีทอง",
+   "พระโพธิสัตว์กวนอิม 4 ปาง (ใต้ฐานองค์ใหญ่)"
+  ],
+  "goals": [
+   "family",
+   "money"
+  ],
+  "province": "กรุงเทพมหานคร",
+  "district": "คลองสามวา",
+  "coords": "13.8568971, 100.6773419",
+  "description": "วัดจีนนิกายมหายานบนถนนคู้บอน มีพระโพธิสัตว์กวนอิมองค์ใหญ่สีทองยืนเด่น ใต้ฐานเป็นอาคารที่ประดิษฐานเจ้าแม่กวนอิม 4 องค์ 4 ปาง คนนิยมเลือกไหว้ตามปางเพื่อขอบุตร ขอพร ขอความมั่งคั่งและโชคลาภ",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OSM way 998986399 'วัดไท่ฮัว ฝอกวงซัน' ถนนคู้บอน แขวงบางชัน (13.8568971, 100.6773419)",
+   "internal: ข้อมูลองค์กวนอิมและ goals (ขอบุตร = family, ความมั่งคั่ง โชคลาภ = money) จาก PPTV รวมที่ไหว้พระโพธิสัตว์กวนอิม PPTV ใช้ชื่อวัดโฝวกวงซัน ถ.คู้บอน รามอินทรา",
+   "internal: ไม่ใส่เวลาเปิด ไม่พบแหล่งที่ระบุ ไม่พบภาพใน Commons"
+  ],
+  "sources": [
+   "https://www.pptvhd36.com/travel/thailand/218714",
+   "https://www.openstreetmap.org/way/998986399"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดหนองจับเต่า (องค์เต่ายักษ์)",
+  "nameEn": "Wat Nong Chap Tao",
+  "slug": "wat-nong-chap-tao-chonburi",
+  "type": "temple",
+  "deities": [
+   "รูปปั้นเต่าองค์ใหญ่"
+  ],
+  "goals": [
+   "career",
+   "money",
+   "love"
+  ],
+  "province": "ชลบุรี",
+  "district": "สัตหีบ",
+  "coords": "12.7902905, 100.9294774",
+  "description": "วัดในอำเภอสัตหีบที่สายมูรู้จักจากรูปปั้นเต่าองค์ใหญ่ คนมาขอพรให้ประสบความสำเร็จเรื่องการงาน การเงิน ความรัก และเชื่อกันว่าการลอดใต้องค์เต่าช่วยเสริมโชค",
+  "hours": "08.00-18.00 น.",
+  "offerings": [],
+  "howToPray": [
+   "ขอพรกับองค์เต่า",
+   "ลอดใต้องค์เต่าเพื่อเสริมโชค (ตามความเชื่อ)"
+  ],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OSM way 732707413 'วัดหนองจับเต่า' ต.เขาชีจรรย์ (12.7902905, 100.9294774) Wikidata Q114413992 ไม่มีพิกัด",
+   "internal: goals เวลาเปิด และความเชื่อลอดใต้เต่า จาก TrueID (ไหว้พระ 9 วัด ชลบุรี) แหล่งเดียว ควรหาแหล่งที่ 2 และชื่อเรียกองค์เต่าที่ถูกต้อง",
+   "internal: ไม่พบภาพใน Commons"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/9P8jgX8KvRYW",
+   "https://www.openstreetmap.org/way/732707413"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดห้วยใหญ่ (พัทยา)",
+  "nameEn": "Wat Huai Yai",
+  "slug": "wat-huai-yai-chonburi",
+  "type": "temple",
+  "deities": [
+   "พระพุทธรูปในพระอุโบสถ"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "ชลบุรี",
+  "district": "บางละมุง",
+  "coords": "12.8611927, 100.9497565",
+  "description": "วัดในตำบลห้วยใหญ่ ไม่ไกลจากพัทยา ที่คนนิยมมาร่วมพิธีสวดสะเดาะเคราะห์และรับน้ำมนต์ เชื่อกันว่าช่วยปัดเป่าเคราะห์ เสริมดวง และเป็นสิริมงคลกับชีวิต",
+  "hours": "08.00-15.30 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OSM node 2075726890 'วัดห้วยใหญ่' ถนนห้วยใหญ่ (12.8611927, 100.9497565) Wikidata Q18745029 ไม่มีพิกัด",
+   "internal: พิธีสะเดาะเคราะห์/น้ำมนต์และเวลาเปิดจาก TrueID (ไหว้พระ 9 วัด ชลบุรี) แหล่งเดียว ไม่ได้ระบุว่าจัดพิธีทุกวันหรือไม่",
+   "internal: ภาพ Commons ชุด 'DFC ... Huai Yai' เป็นวัดจีนในห้วยใหญ่ ไม่ยืนยันว่าเป็นวัดนี้ จึงไม่ใส่"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/9P8jgX8KvRYW",
+   "https://www.openstreetmap.org/node/2075726890"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดบัวขวัญ",
+  "nameEn": "Wat Bua Khwan",
+  "slug": "wat-bua-khwan-nonthaburi",
+  "type": "temple",
+  "deities": [
+   "พระพุทธเมตตา (จำลองจากพุทธคยา) พระประธานในพระอุโบสถจตุรมุข"
+  ],
+  "goals": [
+   "health",
+   "protection"
+  ],
+  "province": "นนทบุรี",
+  "district": "เมืองนนทบุรี",
+  "coords": "13.8692332, 100.5350904",
+  "description": "พระอารามหลวงชั้นตรีย่านบางกระสอ เด่นที่พระอุโบสถจตุรมุข ข้างในประดิษฐานพระพุทธเมตตาที่จำลองจากพุทธคยา คนนิยมมาไหว้ขอพรเรื่องสุขภาพและให้ชีวิตราบรื่น หลายคนมาทำบุญวันเกิด ทำบุญต่ออายุ และสะเดาะเคราะห์ที่นี่",
+  "hours": "08.30-17.30 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Wat_Bua_Khwan_Phra_Aram_Luang%2C_Nonthaburi_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B1%E0%B8%A7%E0%B8%82%E0%B8%A7%E0%B8%B1%E0%B8%8D_%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87_%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_-_img_01.jpg/1280px-Wat_Bua_Khwan_Phra_Aram_Luang%2C_Nonthaburi_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B1%E0%B8%A7%E0%B8%82%E0%B8%A7%E0%B8%B1%E0%B8%8D_%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87_%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_-_img_01.jpg",
+    "alt": "วัดบัวขวัญ นนทบุรี",
+    "author": "Chainwit.",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Bua_Khwan_Phra_Aram_Luang,_Nonthaburi_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B1%E0%B8%A7%E0%B8%82%E0%B8%A7%E0%B8%B1%E0%B8%8D_%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87_%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_-_img_01.jpg"
+   }
+  ],
+  "notes": [
+   "internal: coords = OpenStreetMap way 170218847 'วัดบัวขวัญ' (ต.บางกระสอ อ.เมืองนนทบุรี) ผ่าน Nominatim; Wikipedia/Wikidata (Q139565613) ไม่มีพิกัด",
+   "internal: goals health/protection จาก Trip.com (ขอพรเรื่องสุขภาพและความราบรื่นในชีวิต ทำบุญวันเกิด สะเดาะเคราะห์) + TrueID (ทำบุญต่ออายุ เสริมดวง) เป็นบทความท่องเที่ยว ไม่ใช่สื่อหลักมาก ควรหาแหล่งเพิ่ม",
+   "internal: พระพุทธเมตตาและเวลาเปิด 08.30-17.30 น. จาก TrueID (12 วัดสวย นนทบุรี)",
+   "internal: photo = Commons File:Wat_Bua_Khwan_Phra_Aram_Luang,_Nonthaburi_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B1%E0%B8%A7%E0%B8%82%E0%B8%A7%E0%B8%B1%E0%B8%8D_%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87_%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5_-_img_01.jpg (CC BY-SA 4.0, Chainwit.) license เช็กผ่าน Commons API 2026-11-25, 1280px thumb ตอบ 200"
+  ],
+  "sources": [
+   "https://th.trip.com/guide/attraction/temples-in-nonthaburi.html",
+   "https://travel.trueid.net/detail/L9XXbxPdK2O9",
+   "https://www.openstreetmap.org/way/170218847"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดตะเคียน (ลอดโบสถ์ปากเสือ ออกปากมังกร)",
+  "nameEn": "Wat Takhian",
+  "slug": "wat-takhian-bang-kruai-nonthaburi",
+  "type": "temple",
+  "deities": [
+   "พระประจำวันเกิดใต้โบสถ์",
+   "โบสถ์หัวเสือ หัวมังกร"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "นนทบุรี",
+  "district": "บางกรวย",
+  "coords": "13.8280226, 100.4225271",
+  "description": "วัดใน ต.บางคูเวียง ที่ขึ้นชื่อเรื่องโบสถ์หัวเสือหัวมังกร คนมาลอดใต้โบสถ์โดยเข้าทางปากเสือแล้วออกทางปากมังกร เชื่อกันว่าช่วยปัดเป่าสิ่งไม่ดีออกจากชีวิตและเสริมสิริมงคล ใต้โบสถ์มีพระประจำวันเกิดให้ไหว้ และมีพิธีสะเดาะเคราะห์ต่อชะตาด้วย",
+  "offerings": [],
+  "howToPray": [
+   "ลอดใต้โบสถ์ เข้าทางปากเสือ ออกทางปากมังกร",
+   "ไหว้พระประจำวันเกิดใต้โบสถ์"
+  ],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap way 377879325 'วัดตะเคียน' ต.บางคูเวียง อ.บางกรวย ผ่าน Nominatim (ตรงกับตำบลในแหล่งข่าว)",
+   "internal: ความเชื่อลอดโบสถ์ปากเสือออกปากมังกร ปัดเป่าสิ่งไม่ดี เสริมสิริมงคล + พิธีสะเดาะเคราะห์ต่อชะตา (นอนโลง ลอยเทียน) จาก TrueID / กรุงเทพธุรกิจ ตามผลค้นหา ยังไม่ได้เปิดอ่านเต็มทั้ง 2 หน้า ควรเช็กอีกรอบ",
+   "internal: ตลาดน้ำวัดตะเคียนเปิดเสาร์-อาทิตย์ตามแหล่งข่าว ไม่ได้ใส่ hours เพราะไม่มีเวลาเปิดวัดที่ยืนยันได้",
+   "internal: goals มีแค่ protection ตามแหล่ง",
+   "internal: ไม่พบภาพ Commons ที่ใช้ได้ตอนค้น 2026-11-25 (API โดน rate limit บางคำค้น ควรค้นซ้ำ)"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/GD6gNPZWzZvl",
+   "https://www.bangkokbiznews.com/news/751557",
+   "https://www.openstreetmap.org/way/377879325"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดกิ่งแก้ว (หลวงปู่เผือก)",
+  "nameEn": "Wat King Kaeo",
+  "slug": "wat-king-kaeo-bang-phli",
+  "type": "temple",
+  "deities": [
+   "สรีระสังขารหลวงปู่เผือก"
+  ],
+  "goals": [
+   "money",
+   "career"
+  ],
+  "province": "สมุทรปราการ",
+  "district": "บางพลี",
+  "coords": "13.676482, 100.7188036",
+  "description": "วัดใน ต.ราชาเทวะ ใกล้สนามบินสุวรรณภูมิ เป็นที่ประดิษฐานสรีระสังขารหลวงปู่เผือก คนนิยมมากราบขอพรเรื่องเมตตามหานิยม ความสำเร็จ และโชคลาภ ในวัดมีจิตรกรรมฝาผนังพุทธประวัติให้ชมด้วย",
+  "hours": "08.00-18.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap node 686818122 'วัดกิ่งแก้ว' ต.ราชาเทวะ อ.บางพลี ผ่าน Nominatim",
+   "internal: goals และเวลาเปิดจาก Trip.com แหล่งเดียว (ขอพรหลวงปู่เผือก เมตตามหานิยม ความสำเร็จ และโชคลาภ) แปลเป็น money/career; เมตตามหานิยมไม่ได้ใส่ love ควรหาแหล่งสื่อหลักยืนยันก่อนเผยแพร่",
+   "internal: ไม่พบภาพ Commons ที่ใช้ได้ตอนค้น 2026-11-25 (API โดน rate limit บางคำค้น ควรค้นซ้ำ)"
+  ],
+  "sources": [
+   "https://th.trip.com/guide/activity/temples-in-samut-prakan.html",
+   "https://www.openstreetmap.org/node/686818122"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดพระสมุทรเจดีย์ (เจดีย์กลางน้ำ)",
+  "nameEn": "Wat Phra Samut Chedi",
+  "slug": "wat-phra-samut-chedi",
+  "type": "temple",
+  "deities": [
+   "องค์พระสมุทรเจดีย์ (บรรจุพระบรมสารีริกธาตุ)"
+  ],
+  "goals": [
+   "career"
+  ],
+  "province": "สมุทรปราการ",
+  "district": "พระสมุทรเจดีย์",
+  "coords": "13.600165, 100.58678",
+  "description": "องค์พระสมุทรเจดีย์หรือเจดีย์กลางน้ำ เป็นสิ่งศักดิ์สิทธิ์คู่เมืองปากน้ำ เดิมสร้างบนเกาะกลางแม่น้ำเจ้าพระยาสมัยรัชกาลที่ 2 ถึง 3 คนมาเดินเวียนขวา 3 รอบ เชื่อกันว่าจะประสบความสำเร็จตามที่หวัง ทุกปีมีงานนมัสการและพิธีห่มผ้าแดงองค์เจดีย์",
+  "hours": "07.00-20.00 น.",
+  "offerings": [],
+  "howToPray": [
+   "เดินเวียนขวารอบองค์เจดีย์ 3 รอบ ตั้งจิตอธิษฐาน"
+  ],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = Wikidata Q13017757 (13.600165, 100.58678) ใกล้กับ OSM way 1354127906 'วัดพระสมุทรเจดีย์' (13.59997, 100.58485)",
+   "internal: goals career ตีความจาก 'ประสบความสำเร็จตามที่หวัง' (TrueID) และ 'ความเจริญรุ่งเรือง' (Trip.com) ค่อนข้างกว้าง ควรเช็ก",
+   "internal: ปีที่สร้าง แหล่งต่างกัน (เริ่ม ร.2 เสร็จ พ.ศ. 2371 สมัย ร.3) เลยเขียนว่ารัชกาลที่ 2 ถึง 3; งานนมัสการจัดราวเดือนตุลาคมทุกปี",
+   "internal: เวลาเปิด 07.00-20.00 น. จาก Trip.com",
+   "internal: ไม่พบภาพ Commons ที่ใช้ได้ตอนค้น 2026-11-25 (API โดน rate limit บางคำค้น ควรค้นซ้ำ)"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/2YvxyjnWJdGz",
+   "https://travel.trueid.net/detail/NQZxR5544blX",
+   "https://th.trip.com/guide/activity/temples-in-samut-prakan.html",
+   "https://www.wikidata.org/wiki/Q13017757"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดทับกระดาน (หุ่นพุ่มพวง ดวงจันทร์)",
+  "nameEn": "Wat Thap Kradan",
+  "slug": "wat-thap-kradan-suphanburi",
+  "type": "temple",
+  "deities": [
+   "หุ่นพุ่มพวง ดวงจันทร์ (แม่ผึ้ง)"
+  ],
+  "goals": [
+   "money"
+  ],
+  "province": "สุพรรณบุรี",
+  "district": "สองพี่น้อง",
+  "coords": "14.1415936, 99.9134602",
+  "description": "วัดบ้านเกิดของราชินีลูกทุ่งพุ่มพวง ดวงจันทร์ ใน อ.สองพี่น้อง มีหุ่นและของที่ระลึกของแม่ผึ้งให้แฟนเพลงมากราบไหว้ คอหวยและนักเสี่ยงโชคนิยมมาบนบานขอโชคลาภ ขอเลขกับแม่ผึ้ง ช่วงวันหยุดคนแน่นเป็นพิเศษ",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap way 579471389 'วัดทับกระดาน' ต.ทุ่งคอก อ.สองพี่น้อง ผ่าน Nominatim",
+   "internal: goals money จาก Kapook (บนบานเรื่องโชคลาภ ขอหวย ขอเลข) + Sanook (คอหวยมาไหว้พุ่มพวง) เนื้อหาเชิงหวย ควรเขียนแบบความเชื่อ",
+   "internal: ไม่พบขั้นตอนแก้บนที่ยืนยันได้ เลยไม่ใส่ howToRepayVow",
+   "internal: ไม่พบภาพ Commons ที่ใช้ได้ตอนค้น 2026-11-25 (API โดน rate limit บางคำค้น ควรค้นซ้ำ)"
+  ],
+  "sources": [
+   "https://travel.kapook.com/view251282.html",
+   "https://www.sanook.com/news/8231690/",
+   "https://www.openstreetmap.org/way/579471389"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดธรรมามูลวรวิหาร (หลวงพ่อธรรมจักร)",
+  "nameEn": "Wat Thammamun Worawihan",
+  "slug": "wat-thammamun-chai-nat",
+  "type": "temple",
+  "deities": [
+   "หลวงพ่อธรรมจักร พระพุทธรูปยืนปางห้ามญาติ"
+  ],
+  "goals": [
+   "money",
+   "health"
+  ],
+  "province": "ชัยนาท",
+  "district": "เมืองชัยนาท",
+  "coords": "15.248611, 100.084167",
+  "description": "วัดริมเจ้าพระยาที่ประดิษฐานหลวงพ่อธรรมจักร พระพุทธรูปยืนปางห้ามญาติคู่เมืองชัยนาท ตำนานเล่าว่าชาวบ้านพบองค์พระลอยวนมาตามแม่น้ำ คนมาปิดทองแล้วเอาศีรษะแตะพระหัตถ์ขวาที่ยกขึ้น อธิษฐานขอเรื่องโชคลาภและสุขภาพ",
+  "offerings": [],
+  "howToPray": [
+   "ปิดทององค์หลวงพ่อ บูชาด้วยดอกไม้",
+   "นำศีรษะแตะพระหัตถ์ขวาของหลวงพ่อ แล้วอธิษฐาน"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Wat_Thamma_Mun_Worawihan.jpg/1280px-Wat_Thamma_Mun_Worawihan.jpg",
+    "alt": "วัดธรรมามูลวรวิหาร ชัยนาท",
+    "author": "KOSIN SUKHUM",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Thamma_Mun_Worawihan.jpg"
+   }
+  ],
+  "notes": [
+   "internal: coords = Wikidata Q13020700 (15.248611, 100.084167)",
+   "internal: วิธีไหว้ (เอาศีรษะแตะพระหัตถ์) และ goals โชคลาภ/สุขภาพ จาก ไทยรัฐ/ข่าวสด ตามผลค้นหา; ตำนานและปางจาก โพสต์ทูเดย์",
+   "internal: ยังไม่ได้เปิดอ่านหน้าไทยรัฐเต็ม (ไทยรัฐบล็อกการดึงหน้า) ควรเช็ก",
+   "internal: photo = Commons File:Wat_Thamma_Mun_Worawihan.jpg (CC BY-SA 4.0, KOSIN SUKHUM) license เช็กผ่าน Commons API 2026-11-25, 1280px thumb ตอบ 200"
+  ],
+  "sources": [
+   "https://www.posttoday.com/dhamma/582795",
+   "https://www.thairath.co.th/lifestyle/travel/thaitravel/2784663",
+   "https://www.wikidata.org/wiki/Q13020700"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดกลางบางพระ (หลวงพ่อสมหวัง)",
+  "nameEn": "Wat Klang Bang Phra",
+  "slug": "wat-klang-bang-phra-nakhon-pathom",
+  "type": "temple",
+  "deities": [
+   "หลวงพ่อสมหวัง (หลวงพ่อใหญ่) พระพุทธรูปปางมารวิชัย สูง 30 เมตร",
+   "หลวงพ่อพัฒ"
+  ],
+  "goals": [
+   "love",
+   "family",
+   "career",
+   "money"
+  ],
+  "province": "นครปฐม",
+  "district": "นครชัยศรี",
+  "coords": "13.8921318, 100.2004821",
+  "description": "วัดใน ต.บางพระ อ.นครชัยศรี มีหลวงพ่อสมหวัง พระพุทธรูปปางมารวิชัยสูง 30 เมตร ชื่อท่านก็บอกอยู่แล้วว่าคนมาขอให้สมหวัง ทั้งขอให้ครอบครัวมั่นคง คนโสดขอให้มีคู่ รวมถึงเรื่องการงานและโชคลาภ เชื่อกันว่าหลวงพ่อชอบหัวหมู ข้าวสาร และไข่ไก่สด",
+  "offerings": [
+   "หัวหมู",
+   "ข้าวสาร",
+   "ไข่ไก่สด"
+  ],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Luang_Phor_Somwang_Wat_Klang_Bang_Phra-01.jpg/1280px-Luang_Phor_Somwang_Wat_Klang_Bang_Phra-01.jpg",
+    "alt": "หลวงพ่อสมหวัง วัดกลางบางพระ",
+    "author": "Wittyoil",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Luang_Phor_Somwang_Wat_Klang_Bang_Phra-01.jpg"
+   }
+  ],
+  "notes": [
+   "internal: coords = OpenStreetMap relation 20039613 'วัดกลางบางพระ' อ.นครชัยศรี ผ่าน Nominatim (Nominatim ระบุตำบลศีรษะทอง ส่วนข่าวระบุ ต.บางพระ ควรเช็ก)",
+   "internal: goals love/family/career/money จาก Kapook (ขอให้ครอบครัวมีความมั่นคง คนโสดก็ขอให้มีคู่) + ไทยรัฐ (คอหวยมาขอพรหลวงพ่อสมหวัง)",
+   "internal: ของถวาย (หัวหมู ข้าวสาร ไข่ไก่สด) ตามผลค้นหาจาก Wongnai/ไทยรัฐ เป็นความเชื่อเล่าต่อ ควรเช็ก",
+   "internal: นครปฐมมีอยู่แล้ว 5 แห่ง ไม่ใช่จังหวัดที่ขาด",
+   "internal: photo = Commons File:Luang_Phor_Somwang_Wat_Klang_Bang_Phra-01.jpg (CC BY-SA 4.0, Wittyoil) license เช็กผ่าน Commons API 2026-11-25, 1280px thumb ตอบ 200"
+  ],
+  "sources": [
+   "https://travel.kapook.com/view251282.html",
+   "https://www.thairath.co.th/lottery/news/2498367",
+   "https://www.openstreetmap.org/relation/20039613"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดเขาวงพระจันทร์",
+  "nameEn": "Wat Khao Wong Phra Chan",
+  "slug": "wat-khao-wong-phra-chan-lopburi",
+  "type": "temple",
+  "deities": [
+   "รอยพระพุทธบาทบนยอดเขา"
+  ],
+  "goals": [
+   "family"
+  ],
+  "province": "ลพบุรี",
+  "district": "โคกสำโรง",
+  "coords": "14.9669191, 100.6974408",
+  "description": "วัดบนเขาวงพระจันทร์ที่ต้องเดินขึ้นบันไดราว 3,790 ขั้นไปนมัสการรอยพระพุทธบาทบนยอด เชื่อกันว่าใครได้ขึ้นไปกราบจะสุขสมหวัง และเป็นสิริมงคลกับตัวเองและครอบครัว ช่วงตรุษจีนและงานนมัสการราวปลาย ม.ค. ถึงต้น ก.พ. คนขึ้นเขากันเยอะมาก",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap node 6417210485 'วัดเขาวงพระจันทร์' อ.โคกสำโรง ผ่าน Nominatim (ระวัง OSM มีวัดชื่อซ้ำที่กาญจนบุรี)",
+   "internal: goals family ตีความจาก 'เสริมสิริมงคลให้ตนเองและครอบครัว' + 'ประสบความสุข สมหวัง' (ไทยรัฐ/TrueID ตามผลค้นหา) ค่อนข้างกว้าง ควรเช็ก",
+   "internal: จำนวนบันไดและช่วงงานนมัสการจาก Wongnai/ไทยรัฐ",
+   "internal: ไม่พบภาพ Commons ที่ใช้ได้ตอนค้น 2026-11-25 (API โดน rate limit บางคำค้น ควรค้นซ้ำ)"
+  ],
+  "sources": [
+   "https://www.wongnai.com/trips/attraction-khao-wongphrachan-lopburi",
+   "https://www.thairath.co.th/news/local/2837380",
+   "https://www.openstreetmap.org/node/6417210485"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดเขาตะเครา (หลวงพ่อทอง)",
+  "nameEn": "Wat Khao Takhrao",
+  "slug": "wat-khao-takhrao-phetchaburi",
+  "type": "temple",
+  "deities": [
+   "หลวงพ่อทอง (หนึ่งในพระห้าพี่น้องตามตำนาน)"
+  ],
+  "goals": [
+   "family"
+  ],
+  "province": "เพชรบุรี",
+  "district": "บ้านแหลม",
+  "coords": "13.218635, 99.936054",
+  "description": "วัดเก่าริมแม่น้ำเพชรบุรี อ.บ้านแหลม มีเรื่องเล่ามาตั้งแต่สมัยกรุงศรีอยุธยา ประดิษฐานหลวงพ่อทอง หนึ่งในพระพุทธรูปตามตำนานพระห้าพี่น้องที่ลอยน้ำมา คนแวะมาไหว้หลวงพ่อทองเพื่อเสริมสิริมงคลให้ตัวเองและครอบครัว",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = Wikidata Q119519060 (13.218635, 99.936054) ตรงกับ OSM node 3152883997 (13.2164, 99.93538)",
+   "internal: goals family ตีความจาก TrueID 'เสริมสิริมงคลให้ตนเองและครอบครัว' ไม่พบแหล่งที่ระบุเรื่องเฉพาะ ควรหาแหล่งเพิ่มก่อนเผยแพร่",
+   "internal: บางแหล่งเรียก วัดเขาจีนเครา ตำบลตามผลค้นหา = บางครก แต่ OSM ระบุบางตะบูน ไม่ได้ใส่ตำบล",
+   "internal: ไม่พบภาพ Commons ที่ใช้ได้ตอนค้น 2026-11-25 (API โดน rate limit บางคำค้น ควรค้นซ้ำ)"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/3adNN688DZqL",
+   "https://travel.trueid.net/detail/91J4eOj2658d",
+   "https://www.wikidata.org/wiki/Q119519060"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดเขมาภิรตารามราชวรวิหาร",
+  "nameEn": "Wat Khema Phirataram",
+  "slug": "wat-khema-phirataram-nonthaburi",
+  "type": "temple",
+  "deities": [
+   "พระประธานในพระอุโบสถ (พระพุทธรูปหล่อเก่าแก่ อัญเชิญมาจากพระราชวังจันทรเกษม อยุธยา)"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "นนทบุรี",
+  "district": "เมืองนนทบุรี",
+  "coords": "13.8214894, 100.5032436",
+  "description": "วัดโบราณริมเจ้าพระยาย่านสวนใหญ่ เดิมเรียกวัดเขมา คำว่าเขมาแปลว่าความเกษมสุข ปลอดจากความกังวล สมัยรัชกาลที่ 2 บูรณะเป็นวัดกฐินของสมเด็จพระศรีสุริเยนทราบรมราชินี และอัญเชิญพระพุทธรูปเก่าแก่จากพระราชวังจันทรเกษม อยุธยา มาเป็นพระประธาน เหมาะมาไหว้พระขอพรให้ชีวิตสงบร่มเย็น",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap way 376679542 'วัดเขมาภิรตารามราชวรวิหาร' (ต.สวนใหญ่ อ.เมืองนนทบุรี) ผ่าน Nominatim",
+   "internal: ประวัติจาก Thai Wikipedia (ดึงเนื้อหาไว้ก่อนหน้าในรอบนี้)",
+   "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
+   "internal: ไม่พบเวลาเปิดที่ยืนยันได้",
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%82%E0%B8%A1%E0%B8%B2%E0%B8%A0%E0%B8%B4%E0%B8%A3%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3",
+   "https://www.openstreetmap.org/way/376679542"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดปรมัยยิกาวาสวรวิหาร (วัดปากอ่าว เกาะเกร็ด)",
+  "nameEn": "Wat Paramai Yikawat",
+  "slug": "wat-paramai-yikawat-ko-kret",
+  "type": "temple",
+  "deities": [
+   "พระนนทมุนินท์ พระพุทธรูปประจำเมืองนนทบุรี",
+   "พระเจดีย์มุเตา (เจดีย์มอญเอียง)"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "นนทบุรี",
+  "district": "ปากเกร็ด",
+  "coords": "13.9128363, 100.490092",
+  "description": "วัดมอญเก่าแก่บนเกาะเกร็ด ชาวเรือเคยเรียกวัดปากอ่าว รัชกาลที่ 5 โปรดให้บูรณะทั้งวัดโดยคงรูปแบบมอญไว้ จุดเด่นคือพระเจดีย์มุเตาทรงมอญที่เอนอยู่ริมเจ้าพระยา และพระนนทมุนินท์ พระพุทธรูปประจำเมืองนนทบุรี มาเที่ยวเกาะเกร็ดแล้วแวะไหว้พระขอพรได้ในทริปเดียว",
+  "hours": "จันทร์-ศุกร์ 13.00-17.00 น., เสาร์-อาทิตย์ 09.00-17.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap way 194521680 'วัดปรมัยยิกาวาส' บ้านโอ่งอ่าง ต.เกาะเกร็ด ผ่าน Nominatim",
+   "internal: พระนนทมุนินท์ เจดีย์มุเตา และเวลาเปิดจาก TrueID (ไหว้พระ 9 วัดสวย นนทบุรี); ประวัติวัดปากอ่าว + ร.5 บูรณะจาก Thai Wikipedia",
+   "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/oP72137pMj9y",
+   "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%A1%E0%B8%B1%E0%B8%A2%E0%B8%A2%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A7%E0%B8%B2%E0%B8%AA"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดเจดีย์หอย",
+  "nameEn": "Wat Chedi Hoi",
+  "slug": "wat-chedi-hoi-pathum-thani",
+  "type": "temple",
+  "deities": [
+   "เจดีย์หอยนางรมยักษ์โบราณ",
+   "รูปหล่อหลวงพ่อทองกลึง สุนทโร ผู้สร้างวัด"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "ปทุมธานี",
+  "district": "ลาดหลุมแก้ว",
+  "coords": "14.1146254, 100.385088",
+  "description": "วัดที่ ต.บ่อเงิน อ.ลาดหลุมแก้ว ขึ้นชื่อเรื่องเจดีย์ที่ก่อจากซากหอยนางรมยักษ์อายุนับล้านปีที่ขุดพบในพื้นที่ สร้างโดยหลวงพ่อทองกลึง สุนทโร วัดนี้ดังเรื่องวัตถุมงคล มีคนมาไหว้ขอพรกันมาก ในพิพิธภัณฑ์มีเปลือกหอยยักษ์และฆ้องขอพรให้ชม",
+  "hours": "08.00-16.30 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap way 544982380 'วัดเจดีย์หอย' ต.บ่อเงิน อ.ลาดหลุมแก้ว ผ่าน Nominatim",
+   "internal: ประวัติเจดีย์หอย + หลวงพ่อทองกลึงจาก Thai Wikipedia; เวลาเปิด พิพิธภัณฑ์ ฆ้องขอพร จาก TrueID (ไหว้พระ 9 วัด ปทุมธานี); ดังเรื่องวัตถุมงคล มีคนมาขอพรมาก จากผลค้นหา TrueID",
+   "internal: goals protection ตั้งจากความเชื่อทั่วไปเรื่องวัตถุมงคล/ขอพรให้คุ้มครอง ไม่มีแหล่งระบุเรื่องเฉพาะ",
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/EqlBDgP7VlRp",
+   "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%AB%E0%B8%AD%E0%B8%A2"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดอโศการาม (พระธุตังคเจดีย์)",
+  "nameEn": "Wat Asokaram",
+  "slug": "wat-asokaram-samut-prakan",
+  "type": "temple",
+  "deities": [
+   "พระธุตังคเจดีย์ (บรรจุพระบรมสารีริกธาตุและพระธาตุพระเกจิ)",
+   "รูปหล่อหลวงพ่อลี ธมฺมธโร ผู้ก่อตั้งวัด"
+  ],
+  "goals": [
+   "health"
+  ],
+  "province": "สมุทรปราการ",
+  "district": "เมืองสมุทรปราการ",
+  "coords": "13.5474649, 100.6079739",
+  "description": "วัดสายปฏิบัติย่านบางปู ก่อตั้งโดยหลวงพ่อลี ชื่อวัดตั้งเพื่อระลึกถึงพระเจ้าอโศกมหาราช ไฮไลต์คือพระธุตังคเจดีย์ หมู่เจดีย์สีขาวที่บรรจุพระบรมสารีริกธาตุและพระธาตุพระเกจิ คนนิยมมาขอพรเรื่องความสงบใจและสุขภาพ และมาปฏิบัติธรรม",
+  "offerings": [],
+  "howToPray": [
+   "มาช่วงเช้าวันธรรมดา คนน้อย บรรยากาศสงบ"
+  ],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap node 1669111106 'วัดอโศการาม' ซ.เทศบาลบางปู 60 ต.ท้ายบ้าน ผ่าน Nominatim",
+   "internal: goals health จาก Trip.com ('ขอพรความสงบ สุขภาพดี และการปฏิบัติธรรม') แหล่งเดียว; หลวงพ่อลีและที่มาชื่อวัดจาก mgronline/ผลค้นหา",
+   "internal: Trip.com เรียกเจดีย์หมู่สีขาว 13 องค์ อีกแหล่งว่าเจดีย์ 9 ชั้น ตัวเลขไม่ตรงกัน เลยไม่ใส่ตัวเลข; ไม่พบเวลาเปิด",
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+  ],
+  "sources": [
+   "https://th.trip.com/guide/activity/temples-in-samut-prakan.html",
+   "https://mgronline.com/qol/detail/9690000077679",
+   "https://www.openstreetmap.org/node/1669111106"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดศรีโคมคำ (พระเจ้าตนหลวง)",
+  "nameEn": "Wat Si Khom Kham",
+  "slug": "wat-si-khom-kham-phayao",
+  "type": "temple",
+  "deities": [
+   "พระเจ้าตนหลวง พระพุทธรูปศิลปะเชียงแสนที่ใหญ่ที่สุดในล้านนา"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "พะเยา",
+  "district": "เมืองพะเยา",
+  "coords": "19.1765031, 99.8893094",
+  "description": "พระอารามหลวงริมกว๊านพะเยา ประดิษฐานพระเจ้าตนหลวง พระพุทธรูปศิลปะเชียงแสนที่ใหญ่ที่สุดในล้านนาและเป็นพระคู่บ้านคู่เมืองพะเยา สร้างในสมัยพญายอดเชียงราย ทุกปีช่วงวิสาขบูชามีประเพณีแปดเป็ง ไหว้สาพระเจ้าตนหลวง คนพะเยาและนักท่องเที่ยวมากราบขอพรเป็นสิริมงคล",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap way 210167222 'วัดศรีโคมคำ' ต.เวียง อ.เมืองพะเยา ผ่าน Nominatim",
+   "internal: พระเจ้าตนหลวงใหญ่สุดในล้านนา + พระคู่บ้านคู่เมือง จากผลค้นหา (mgronline/TrueID); สมัยพญายอดเชียงราย + แปดเป็ง จาก Thai Wikipedia",
+   "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B9%82%E0%B8%84%E0%B8%A1%E0%B8%84%E0%B8%B3",
+   "https://mgronline.com/travel/detail/9520000100305",
+   "https://www.openstreetmap.org/way/210167222"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดศรีอุบลรัตนาราม (พระแก้วบุษราคัม)",
+  "nameEn": "Wat Si Ubon Rattanaram",
+  "slug": "wat-si-ubon-rattanaram",
+  "type": "temple",
+  "deities": [
+   "พระแก้วบุษราคัม พระพุทธรูปปางมารวิชัยศิลปะเชียงแสน แกะจากแก้วบุษราคัม"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "อุบลราชธานี",
+  "district": "เมืองอุบลราชธานี",
+  "coords": "15.2275807, 104.8558496",
+  "description": "พระอารามหลวงกลางเมืองอุบลฯ หรือวัดศรีทอง ประดิษฐานพระแก้วบุษราคัม พระพุทธรูปเก่าแก่คู่เมืองอุบลที่แกะจากแก้วบุษราคัม ทุกปีช่วงสงกรานต์มีการอัญเชิญพระแก้วบุษราคัมแห่รอบเมืองให้คนได้สรงน้ำเพื่อความเป็นสิริมงคล",
+  "hours": "06.00-18.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap way 1562170553 'วัดศรีอุบลรัตนาราม' ถ.อุปราช ต.ในเมือง ผ่าน Nominatim",
+   "internal: เวลาเปิด 06.00-18.00 น. จาก TrueID (ไหว้พระ 9 วัด อุบลราชธานี) อีกแหล่ง (lovethailand) บอก 04.30-22.00 น. ควรเช็ก",
+   "internal: ประวัติพระแก้วบุษราคัม + แห่สงกรานต์ จากผลค้นหา (gotoknow, ศิลปวัฒนธรรม)",
+   "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/BkLbrZr0rBZ3",
+   "https://www.silpa-mag.com/?p=57459",
+   "https://www.openstreetmap.org/way/1562170553"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดชลอ (โบสถ์เรือสุพรรณหงส์)",
+  "nameEn": "Wat Chalo",
+  "slug": "wat-chalo-bang-kruai-nonthaburi",
+  "type": "temple",
+  "deities": [
+   "หลวงพ่อดำ พระประธานในอุโบสถเรือสุพรรณหงส์",
+   "พระพุทธรูปในอุโบสถหลังเก่ารูปเรือสำเภา"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "นนทบุรี",
+  "district": "บางกรวย",
+  "coords": "13.8063891, 100.4764485",
+  "description": "วัดเก่าแก่ตั้งแต่สมัยอยุธยาริมถนนบางกรวย-ไทรน้อย ตำนานเล่าว่าบริเวณนี้เคยมีเรือสำเภาจีนล่ม สร้างวัดแล้วติดขัด จึงสร้างโบสถ์เป็นรูปเรือสำเภาเพื่อแก้เคล็ด ปัจจุบันเด่นที่อุโบสถเรือสุพรรณหงส์ลำใหญ่ เดินเข้าไปกราบหลวงพ่อดำกลางลำเรือได้ และไหว้พระในโบสถ์เก่าเพื่อเป็นสิริมงคล",
+  "hours": "08.00-18.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap way 376311203 'วัดชลอ' ถ.บางกรวย-ไทรน้อย ต.วัดชลอ ผ่าน Nominatim",
+   "internal: ตำนานเรือสำเภาล่ม/โบสถ์แก้เคล็ด จาก Thai Wikipedia; อุโบสถเรือสุพรรณหงส์ (เริ่มสร้าง 2526) + หลวงพ่อดำ + ไหว้เพื่อสิริมงคล จาก The Bangkok Insight; เวลาเปิด 08.00-18.00 น. จาก TrueID",
+   "internal: ผลค้นหาบางแหล่งบอกว่ามีท้าวเวสสุวรรณในวัดด้วย แต่ยังไม่ได้ยืนยันจากหน้าจริง เลยไม่ใส่",
+   "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+  ],
+  "sources": [
+   "https://www.thebangkokinsight.com/news/lifestyle/1332038/",
+   "https://travel.trueid.net/detail/oP72137pMj9y",
+   "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B8%A5%E0%B8%AD"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดบูรพาราม (หลวงพ่อพระชีว์)",
+  "nameEn": "Wat Burapharam",
+  "slug": "wat-burapharam-surin",
+  "type": "temple",
+  "deities": [
+   "หลวงพ่อพระชีว์ พระพุทธรูปปางมารวิชัยดินเผา พระประธานในพระวิหาร"
+  ],
+  "goals": [
+   "career"
+  ],
+  "province": "สุรินทร์",
+  "district": "เมืองสุรินทร์",
+  "coords": "14.8843856, 103.4931511",
+  "description": "พระอารามหลวงกลางเมืองสุรินทร์ ถนนจิตรบำรุง เชื่อกันว่าสร้างโดยเจ้าเมืองสุรินทร์คนแรกเมื่อกว่า 200 ปีก่อน ในพระวิหารประดิษฐานหลวงพ่อพระชีว์ พระพุทธรูปดินเผาคล้ายศิลปะเขมร สมัยก่อนข้าราชการต้องมาถือน้ำพิพัฒน์สัตยาต่อหน้าองค์พระ ปัจจุบันคนนิยมมาขอพรให้ประสบความสำเร็จ วัดนี้ยังเป็นที่จำพรรษาของหลวงปู่ดุลย์ อตุโล",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap node 4759247929 'วัดบูรพาราม' ถ.จิตรบำรุง ต.ในเมือง ผ่าน Nominatim",
+   "internal: goals career จาก tripniceday ('ที่พึ่งของผู้คนที่ขอพรให้ประสบความสำเร็จ') เว็บท่องเที่ยว ไม่ใช่สื่อหลัก ควรหาแหล่งเพิ่ม",
+   "internal: ปีสร้าง/ผู้สร้างแหล่งไม่ตรงกัน (สมัยธนบุรีหรือต้นรัตนโกสินทร์ โดยพระยาสุรินทรภักดีศรีณรงค์จางวาง (ปุ้ม)) เลยเขียนกว้าง ๆ; ไม่พบเวลาเปิด",
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+  ],
+  "sources": [
+   "https://www.tripniceday.com/en/place/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%9E%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1-1680074152157",
+   "https://www.wongnai.com/attractions/341031po-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%9E%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1",
+   "https://www.openstreetmap.org/node/4759247929"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "พระสุภัทรบพิตร ยอดเขากระโดง",
+  "nameEn": "Phra Suphatthrabophit, Khao Kradong",
+  "slug": "phra-suphatthrabophit-khao-kradong-buriram",
+  "type": "temple",
+  "deities": [
+   "พระสุภัทรบพิตร พระพุทธรูปองค์ใหญ่คู่บ้านคู่เมืองบุรีรัมย์"
+  ],
+  "goals": [
+   "family",
+   "protection"
+  ],
+  "province": "บุรีรัมย์",
+  "district": "เมืองบุรีรัมย์",
+  "coords": "14.940546, 103.0934783",
+  "description": "พระพุทธรูปองค์ใหญ่บนขอบปากปล่องภูเขาไฟกระโดง ต.เสม็ด หันหน้าเข้าเมืองบุรีรัมย์ ถือเป็นพระคู่บ้านคู่เมือง คนนิยมขึ้นบันไดนาคราชไปกราบขอพรให้ตัวเองและครอบครัวโชคดี โดยเฉพาะช่วงปีใหม่ ช่วงสงกรานต์มีงานแห่ผ้าขึ้นภูเขาไฟ เปลี่ยนผ้าห่มองค์พระ",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap node 12712925875 (tourism=artwork 'Buddha, Nakkharat Staircase') ผ่าน Nominatim พิกัดโดยประมาณ ไม่แน่ใจว่าจุดนี้คือองค์พระสุภัทรบพิตรพอดีหรือรูปปั้นบริเวณบันได ควรเช็ก",
+   "internal: goals family/protection จากไทยโพสต์ (ขอพรให้ตัวเองและครอบครัวโชคดี + ขอให้ชายแดนสงบ ทหารปลอดภัย); แห่ผ้าขึ้นภูเขาไฟช่วงสงกรานต์จาก mgronline ตามผลค้นหา",
+   "internal: type ใส่ temple เพราะไม่มีประเภทพระพุทธรูปกลางแจ้ง จุดนี้อยู่ในวนอุทยานเขากระโดง ใกล้วัดเขากระโดง; ไม่พบเวลาเปิด",
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+  ],
+  "sources": [
+   "https://www.thaipost.net/district-news/924876/",
+   "https://mgronline.com/local/detail/9650000035662",
+   "https://www.openstreetmap.org/node/12712925875"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดหนองหอย (หลวงพ่อใหญ่ เขาแร้ง)",
+  "nameEn": "Wat Nong Hoi",
+  "slug": "wat-nong-hoi-ratchaburi",
+  "type": "temple",
+  "deities": [
+   "หลวงพ่อใหญ่ (พระพุทธรัตนโกสินทร์มหามุณี) บนยอดเขาน้อยสัปปายะ",
+   "พระอวโลกิเตศวรโพธิสัตว์ (เจ้าแม่กวนอิม) ในวิหารบนยอดเขาแร้ง"
+  ],
+  "goals": [
+   "protection",
+   "health"
+  ],
+  "province": "ราชบุรี",
+  "district": "เมืองราชบุรี",
+  "coords": "13.60954, 99.7652286",
+  "description": "พระอารามหลวงบนเขาแร้งใกล้ตัวเมืองราชบุรี บนยอดเขาประดิษฐานหลวงพ่อใหญ่ ที่คนราชบุรีถือเป็นพระคุ้มเมือง เชื่อกันว่าถ้ามาขอพรหลวงพ่อใหญ่จะสมปรารถนาในสิ่งที่ตั้งใจ อีกยอดเขามีวิหารเจ้าแม่กวนอิมองค์ใหญ่ และเป็นจุดชมพระอาทิตย์ตกด้วย",
+  "hours": "08.00-18.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap node 1157700224 'วัดหนองหอย พระอารามหลวง' ผ่าน Nominatim (OSM ระบุตำบลหลุมดิน TrueID ระบุ ต.เขาแร้ง ไม่ได้ใส่ตำบล)",
+   "internal: หลวงพ่อใหญ่ พระคุ้มเมือง 'หากมาขอพรหลวงพ่อใหญ่จะสมปรารถนาในทุกสิ่งที่ตั้งใจไว้' และเวลาเปิดจาก TrueID (ไหว้พระ 9 วัดดัง ราชบุรี)",
+   "internal: แหล่งบอกแค่สมปรารถนาทุกเรื่อง goals ตั้งจากความเชื่อทั่วไปขององค์หลัก (พระพุทธรูปคุ้มเมือง = คุ้มครอง, เจ้าแม่กวนอิม = เมตตา สุขภาพ) ไม่ใช่แหล่งเฉพาะ",
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/MkmObOMNN70A",
+   "https://th.trip.com/guide/activity/temples-in-ratchaburi.html",
+   "https://www.openstreetmap.org/node/1157700224"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดพระบรมธาตุสวี",
+  "nameEn": "Wat Phra That Sawi",
+  "slug": "wat-phra-that-sawi-chumphon",
+  "type": "temple",
+  "deities": [
+   "พระบรมธาตุสวี (เจดีย์ทรงระฆังแบบพระบรมธาตุนครศรีธรรมราช)",
+   "เจ้าพ่อเสื้อเมือง ผู้เฝ้าพระบรมธาตุตามตำนาน"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "ชุมพร",
+  "district": "สวี",
+  "coords": "10.2311236, 99.0916648",
+  "description": "วัดเก่าแก่ริมแม่น้ำสวี องค์พระบรมธาตุเลียนแบบพระบรมธาตุเจดีย์นครศรีธรรมราช ตำนานเล่าว่าพระเจ้าศรีธรรมโศกราชยกทัพมาพบฝูงกาเกาะกองอิฐ จึงพบฐานเจดีย์และผอบพระธาตุ แล้วสร้างเจดีย์ใหม่ขึ้น ข้างกันมีศาลพระเสื้อเมืองที่เชื่อกันว่าเฝ้าดูแลพระบรมธาตุ คนท้องถิ่นนิยมมาไหว้ทั้งสองจุด",
+  "hours": "08.00-18.00 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap node 6290646985 'Wat Phra That Sawi' ผ่าน Nominatim (OSM ระบุ ต.นาโพธิ์ TrueID ระบุ ต.สวี ไม่ได้ใส่ตำบล)",
+   "internal: ตำนาน ศาลพระเสื้อเมือง และเวลาเปิด 08.00-18.00 น. จาก TrueID; รูปแบบเจดีย์ + บูรณะโดยกรมศิลปากร 2539 จาก gotoknow (พิพิธภัณฑสถานแห่งชาติ ชุมพร)",
+   "internal: ผลค้นหาบางแหล่งบอกว่าคนขอพรศาลพระเสื้อเมืองเรื่องครอบครัวและค้าขาย แต่หน้า TrueID ที่เปิดอ่านไม่ได้ระบุ เลยไม่ใส่",
+   "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/o4RlrywWB7j9",
+   "https://www.gotoknow.org/posts/4836",
+   "https://www.openstreetmap.org/node/6290646985"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดมหาธาตุ ยโสธร (พระธาตุอานนท์)",
+  "nameEn": "Wat Maha That Yasothon",
+  "slug": "wat-maha-that-yasothon",
+  "type": "temple",
+  "deities": [
+   "พระธาตุอานนท์ (พระธาตุยโสธร)",
+   "พระพุทธบุษยรัตน์ (พระแก้วบุษยรัตน์) พระคู่บ้านคู่เมือง"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "ยโสธร",
+  "district": "เมืองยโสธร",
+  "coords": "15.79423, 104.1421618",
+  "description": "พระอารามหลวงกลางเมืองยโสธร หน้าพระอุโบสถคือพระธาตุอานนท์ สูง 25.30 เมตร เชื่อกันว่าบรรจุอัฐิธาตุพระอานนท์ คนยโสธรเคารพนับถือมาก ในวัดยังมีพระพุทธบุษยรัตน์ พระแก้วองค์เล็กที่รัชกาลที่ 3 พระราชทานแก่เจ้าเมืองคนแรก ถือเป็นพระคู่บ้านคู่เมือง และหอไตรกลางสระน้ำ",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap way 1309209374 'วัดมหาธาตุ พระอารามหลวง' ถ.แจ้งสนิท ผ่าน Nominatim",
+   "internal: ความสูงพระธาตุ อัฐิธาตุพระอานนท์ พระพุทธบุษยรัตน์ (ร.3 พระราชทาน) หอไตร จาก Sanook Travel",
+   "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
+   "internal: ไม่พบเวลาเปิด",
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+  ],
+  "sources": [
+   "https://www.sanook.com/travel/921337/",
+   "https://www.silpa-mag.com/?p=57459",
+   "https://www.openstreetmap.org/way/1309209374"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดพระยืน (ลำพูน)",
+  "nameEn": "Wat Phra Yuen",
+  "slug": "wat-phra-yuen-lamphun",
+  "type": "temple",
+  "deities": [
+   "พระยืน พระพุทธรูปยืน 4 องค์ในซุ้มเจดีย์ 4 ทิศ"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "ลำพูน",
+  "district": "เมืองลำพูน",
+  "coords": "18.5761684, 99.0200098",
+  "description": "วัดโบราณฝั่งตะวันออกของเมืองลำพูนเก่า ตามประวัติพระนางจามเทวีสร้างไว้ในชื่อวัดอรัญญิการาม ต่อมามีการสร้างเจดีย์ประดิษฐานพระพุทธรูปยืน และเพิ่มพระยืนอีก 3 องค์ให้ครบ 4 ทิศ จึงเรียกกันว่าวัดพระยืน เป็นหนึ่งในวัดสำคัญคู่เมืองหริภุญชัย มาลำพูนแล้วแวะไหว้พระยืนต่อจากพระธาตุหริภุญชัยได้",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap node 1628628252 'วัดพระยืน' ถ.ช่างฆ้อง ผ่าน Nominatim",
+   "internal: ประวัติ (จามเทวีสร้าง พ.ศ. 1213 ชื่อวัดอรัญญิการาม, พระยืน 4 องค์) จาก TrueID; ปีสร้างแหล่งต่างกัน (en.wikipedia บอกนักประวัติศาสตร์บางท่านว่าสร้างภายหลัง) เลยไม่ใส่ปีในคำอธิบาย",
+   "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
+   "internal: TrueID บอกเปิดทุกวัน ไม่ระบุเวลา",
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/5axvGmeoqBVZ",
+   "https://en.wikipedia.org/wiki/Wat_Phra_Yuen",
+   "https://www.openstreetmap.org/node/1628628252"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดสิงห์ (หลวงพ่อโต สามโคก)",
+  "nameEn": "Wat Sing",
+  "slug": "wat-sing-sam-khok-pathum-thani",
+  "type": "temple",
+  "deities": [
+   "หลวงพ่อโต พระพุทธรูปเก่าแก่อายุกว่า 320 ปี"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "ปทุมธานี",
+  "district": "สามโคก",
+  "coords": "14.0541672, 100.5404831",
+  "description": "วัดเก่าแก่ริมเจ้าพระยาที่บ้านสามโคก ประดิษฐานหลวงพ่อโต พระพุทธรูปที่มีอายุกว่า 320 ปี คนในพื้นที่นับถือมาก ในวัดยังมีพิพิธภัณฑ์จัดแสดงโอ่งสามโคก เครื่องปั้นดินเผาขึ้นชื่อของปทุมธานี มาไหว้พระแล้วเที่ยวชมของเก่าได้ด้วย",
+  "hours": "08.30-16.30 น.",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap way 225697159 'วัดสิงห์' หมู่ 2 บ้านสามโคก ต.สามโคก ผ่าน Nominatim",
+   "internal: หลวงพ่อโตอายุกว่า 320 ปี พิพิธภัณฑ์โอ่งสามโคก เวลาเปิด จาก TrueID (ไหว้พระ 9 วัด ปทุมธานี)",
+   "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+  ],
+  "sources": [
+   "https://travel.trueid.net/detail/EqlBDgP7VlRp",
+   "https://www.openstreetmap.org/way/225697159"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "พระมหาเจดีย์ชัยมงคล (วัดผาน้ำทิพย์เทพประสิทธิ์วนาราม)",
+  "nameEn": "Phra Maha Chedi Chai Mongkhon",
+  "slug": "phra-maha-chedi-chai-mongkhon-roi-et",
+  "type": "temple",
+  "deities": [
+   "พระบรมสารีริกธาตุ ประดิษฐานชั้น 6 ของพระมหาเจดีย์"
+  ],
+  "goals": [
+   "protection"
+  ],
+  "province": "ร้อยเอ็ด",
+  "district": "หนองพอก",
+  "coords": "16.3312673, 104.3200324",
+  "description": "พระมหาเจดีย์สีขาวทองใน อ.หนองพอก สูง 109 เมตร ฐานกว้างยาวด้านละ 101 เมตร ชั้นบนสุดประดิษฐานพระบรมสารีริกธาตุ อีกชั้นเป็นพิพิธภัณฑ์อัฐิธาตุพระสายกัมมัฏฐานศิษย์หลวงปู่มั่น สร้างตามดำริของหลวงปู่ศรี มหาวีโร คนนิยมมากราบพระธาตุขอพรเป็นสิริมงคล",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OpenStreetMap node 7660431724 'วัดถ้ำผาน้ำทิพย์' (อ.หนองพอก) ผ่าน Nominatim พิกัดโดยประมาณ ชื่อใน OSM ต่างจากชื่อทางการ และ OSM ระบุ ต.ท่าสีดา ส่วน mgronline ระบุ ต.ผาน้ำย้อย ควรเช็กว่าเป็นจุดเดียวกับองค์เจดีย์",
+   "internal: ความสูง 109 ม. ฐาน 101 ม. พระบรมสารีริกธาตุชั้น 6 พิพิธภัณฑ์ชั้น 5 จาก mgronline; ดำริหลวงปู่ศรี มหาวีโร จากผลค้นหา (mgronline/TrueID)",
+   "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
+   "internal: ไม่พบเวลาเปิด",
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+  ],
+  "sources": [
+   "https://mgronline.com/travel/detail/9660000020267",
+   "https://www.openstreetmap.org/node/7660431724"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วิหารอริยะเจ้ากวนอู (บางบัวทอง)",
+  "nameEn": "Ariya Chao Guan Yu Shrine, Bang Bua Thong",
+  "slug": "ariya-chao-guan-yu-wihan-nonthaburi",
+  "type": "chinese-shrine",
+  "deities": [
+   "องค์อริยะเจ้ากวนอู (องค์ทองเหลืองสูงราว 6 เมตร)",
+   "เจ้าแม่กวนอิม",
+   "พระพุทธเมตตา"
+  ],
+  "goals": [
+   "career",
+   "money",
+   "health"
+  ],
+  "province": "นนทบุรี",
+  "district": "บางบัวทอง",
+  "coords": "13.9550628, 100.3722857",
+  "description": "วิหารของมูลนิธิวิหารอริยะเจ้ากวนอู บนที่ดินราว 1 ไร่ในย่านบางบัวทอง มีองค์กวนอูทองเหลืองสูงราว 6 เมตรตั้งอยู่บนอาคาร ด้านในมีศาลเจ้าแม่กวนอิมและวิหารพระพุทธเมตตา คนนิยมมาขอพรเรื่องการงาน การเงิน และสุขภาพ และมีความเชื่อว่าเมื่อสมหวังให้กลับมาแก้บนด้วยบรั่นดี",
+  "offerings": [
+   "บรั่นดี (สำหรับแก้บน ตามความเชื่อของผู้ศรัทธา)"
+  ],
+  "howToPray": [
+   "ขอพรในสิ่งที่อยู่ในกำลังของตัวเอง ตามที่ทางวิหารบอกไว้"
+  ],
+  "howToRepayVow": [
+   "เมื่อสมหวังแล้ว ผู้ศรัทธานิยมนำบรั่นดีมาแก้บน (ทางวิหารบอกว่าเหล้าที่ได้รับไม่นำไปขายต่อ)"
+  ],
+  "images": [],
+  "notes": [
+   "internal: พิกัดเป็นค่าประมาณมาก = จุดกึ่งกลางตำบลบางบัวทองจาก OSM Nominatim (relation 12039344) เพราะ Nominatim/Photon หา ซ.ราษฎร์ทูลเกล้า และชื่อวิหารไม่เจอ อาจคลาดหลายกิโลเมตร ต้องเช็กพิกัดจริงก่อนเผยแพร่",
+   "internal: ที่อยู่ตาม naewna = 86 ม.5 ซ.ราษฎร์ทูลเกล้า ต.บางบัวทอง อ.บางบัวทอง นนทบุรี",
+   "internal: goals career/money/health จาก naewna และ sanook (ขอเรื่องการงาน การเงิน สุขภาพ) ไม่มีเวลาเปิดในแหล่งข้อมูล",
+   "internal: แหล่งข่าวระบุว่าไม่มีการทรงเจ้า ไม่ดูดวง; ไม่ใส่ชื่อยี่ห้อบรั่นดี"
+  ],
+  "sources": [
+   "https://www.naewna.com/likesara/803675",
+   "https://www.sanook.com/news/9371730/",
+   "https://www.openstreetmap.org/relation/12039344"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดเทพพิทักษ์ปุณณาราม (หลวงพ่อขาว)",
+  "nameEn": "Wat Thep Phithak Punnaram",
+  "slug": "wat-thep-phithak-punnaram-nakhon-ratchasima",
+  "type": "temple",
+  "deities": [
+   "พระพุทธสกลสีมามงคล (หลวงพ่อขาว) พระพุทธรูปปางประทานพรสีขาว สูง 45 เมตร"
+  ],
+  "goals": [
+   "protection",
+   "health"
+  ],
+  "province": "นครราชสีมา",
+  "district": "ปากช่อง",
+  "coords": "14.617047, 101.265417",
+  "description": "วัดเชิงเขาในตำบลกลางดง ปากช่อง เด่นที่พระพุทธสกลสีมามงคลหรือหลวงพ่อขาว พระพุทธรูปปางประทานพรสีขาวหน้าตักกว้าง 27.25 เมตร สูง 45 เมตร ประดิษฐานบนยอดเขาสูงจากพื้นราว 112 เมตร มองเห็นได้จากถนนมิตรภาพ ใครอยากขึ้นไปกราบใกล้ ๆ ต้องเดินขึ้นบันได 1,250 ขั้น",
+  "offerings": [],
+  "howToPray": [
+   "เดินขึ้นบันได 1,250 ขั้นไปกราบหลวงพ่อขาวบนยอดเขา (ตัวเลขตามวิกิพีเดีย หมายถึงพระอรหันต์ 1,250 รูปในวันมาฆบูชา)"
+  ],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Wat_Thep_Phithak_Punnaram-03.JPG/1280px-Wat_Thep_Phithak_Punnaram-03.JPG",
+    "alt": "หลวงพ่อขาว พระพุทธรูปสีขาวองค์ใหญ่บนเขา วัดเทพพิทักษ์ปุณณาราม",
+    "author": "Wayne77",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Thep_Phithak_Punnaram-03.JPG"
+   }
+  ],
+  "notes": [
+   "internal: coords = Wikidata Q15918298 (14.617047, 101.265417) ตรงกับ OSM way 1413265593 (14.61731, 101.26583)",
+   "internal: goals ตั้งตามความเชื่อทั่วไปขององค์พระ/เทพหลัก (แหล่งข้อมูลไม่ระบุเรื่องที่ขอเฉพาะของที่นี่) พระพุทธรูปองค์ใหญ่ = protection/health",
+   "internal: photo = Commons File:Wat Thep Phithak Punnaram-03.JPG (CC BY-SA 3.0, Wayne77) เช็ก API + thumb 1280px = 200 วันที่ 2026-11-25; ไม่มีเวลาเปิดในแหล่งข้อมูล"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%9E%E0%B8%B4%E0%B8%97%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B9%8C%E0%B8%9B%E0%B8%B8%E0%B8%93%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1",
+   "https://www.wikidata.org/wiki/Q15918298",
+   "https://www.openstreetmap.org/way/1413265593"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "พระพุทธมิ่งมงคลเอกนาคคีรี (พระใหญ่ภูเก็ต)",
+  "nameEn": "Phuket Big Buddha",
+  "slug": "phuket-big-buddha",
+  "type": "temple",
+  "deities": [
+   "พระพุทธมิ่งมงคลเอกนาคคีรี พระพุทธรูปปางมารวิชัยหินอ่อนขาว สูง 45 เมตร"
+  ],
+  "goals": [
+   "protection",
+   "health"
+  ],
+  "province": "ภูเก็ต",
+  "district": "เมืองภูเก็ต",
+  "coords": "7.8276806, 98.3129",
+  "description": "พระพุทธรูปปางมารวิชัยองค์ใหญ่บนยอดเขานาคเกิด ตำบลกะรน หน้าตักกว้าง 25.45 เมตร สูง 45 เมตร ผิวนอกบุหินอ่อนสีขาว พระพักตร์หันไปทางอ่าวฉลอง สร้างจากเงินบริจาคของประชาชนตั้งแต่ปี 2545 คนนิยมขึ้นมากราบขอพรพร้อมชมวิวทะเลภูเก็ต",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Phuket_Thailand_Big-Buddha-of-Phuket-05.jpg/1280px-Phuket_Thailand_Big-Buddha-of-Phuket-05.jpg",
+    "alt": "พระพุทธมิ่งมงคลเอกนาคคีรี พระใหญ่หินอ่อนขาวบนเขานาคเกิด ภูเก็ต",
+    "author": "CEphoto, Uwe Aranas",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phuket_Thailand_Big-Buddha-of-Phuket-05.jpg"
+   }
+  ],
+  "notes": [
+   "internal: coords = Wikidata Q1548655 (7.82768, 98.3129) ใกล้กับพิกัดวิกิพีเดียไทย (7.8275, 98.31361)",
+   "internal: goals ตั้งตามความเชื่อทั่วไปขององค์พระ/เทพหลัก (แหล่งข้อมูลไม่ระบุเรื่องที่ขอเฉพาะของที่นี่) พระพุทธรูปองค์ใหญ่ = protection/health",
+   "internal: เวลาเปิด 06.00-18.00 จาก TrueID ควรเช็กล่าสุด; วิกิพีเดียบอกว่าเป็นพระประธานของวัดกิตติสังฆาราม (วัดกะตะ)",
+   "internal: photo = Commons File:Phuket Thailand Big-Buddha-of-Phuket-05.jpg (CC BY-SA 4.0, CEphoto, Uwe Aranas) thumb 1280px = 200 วันที่ 2026-11-25"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%A1%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%A1%E0%B8%87%E0%B8%84%E0%B8%A5%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%84%E0%B8%B5%E0%B8%A3%E0%B8%B5",
+   "https://travel.trueid.net/detail/nAnggPzR9wYB",
+   "https://www.wikidata.org/wiki/Q1548655"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25",
+  "hours": "06.00-18.00 น."
+ },
+ {
+  "name": "วัดพระใหญ่ พัทยา (เขาพระตำหนัก)",
+  "nameEn": "Wat Phra Yai (Big Buddha Hill), Pattaya",
+  "slug": "wat-phra-yai-pattaya-chonburi",
+  "type": "temple",
+  "deities": [
+   "หลวงพ่อพระใหญ่ พระพุทธรูปปางมารวิชัยสีทอง",
+   "พระพุทธสุโขทัยวลัยชลธาร"
+  ],
+  "goals": [
+   "protection",
+   "health"
+  ],
+  "province": "ชลบุรี",
+  "district": "บางละมุง",
+  "coords": "12.9140721, 100.8686871",
+  "description": "วัดบนยอดเขาพระตำหนักระหว่างหาดพัทยากับหาดจอมเทียน เด่นที่หลวงพ่อพระใหญ่ พระพุทธรูปสีทององค์ใหญ่ที่มองเห็นได้แต่ไกล คนพัทยาและนักท่องเที่ยวนิยมขึ้นมากราบขอพร ทำบุญ แล้วชมวิวอ่าวพัทยาและพระอาทิตย์ตก",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Big_Buddha_in_Pattaya.jpg/1280px-Big_Buddha_in_Pattaya.jpg",
+    "alt": "หลวงพ่อพระใหญ่สีทอง วัดพระใหญ่ เขาพระตำหนัก พัทยา",
+    "author": "Milei.vencel",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Big_Buddha_in_Pattaya.jpg"
+   }
+  ],
+  "notes": [
+   "internal: coords = OSM way 322626265 'Wat Phra Yai' ถนนพระตำหนัก (คนละวัดกับวัดเขาพระบาท OSM way 242627924 ที่อยู่ห่างไปราว 700 เมตร)",
+   "internal: goals ตั้งตามความเชื่อทั่วไปขององค์พระ/เทพหลัก (แหล่งข้อมูลไม่ระบุเรื่องที่ขอเฉพาะของที่นี่) พระพุทธรูปองค์ใหญ่ = protection/health",
+   "internal: ความสูงองค์พระแหล่งข้อมูลไม่ตรงกัน (TrueID ว่าสูงกว่า 300 ฟุต บางแหล่งว่า 18 เมตร) เลยไม่ใส่ตัวเลข; เวลาเปิด 07.00-19.00 จาก TrueID",
+   "internal: photo = Commons File:Big Buddha in Pattaya.jpg (CC BY-SA 3.0, Milei.vencel) คำบรรยายใน Commons เขียนว่า Wat Khao Phra Bat ซึ่งเป็นชื่อที่ใช้ปนกัน ควรดูภาพยืนยันว่าเป็นองค์พระใหญ่เขาพระตำหนัก thumb 1280px = 200"
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Khao_Phra_Tamnak",
+   "https://travel.trueid.net/detail/rplDl73XJPgp",
+   "https://travel.trueid.net/detail/nAnggPzR9wYB",
+   "https://www.openstreetmap.org/way/322626265"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25",
+  "hours": "07.00-19.00 น."
+ },
+ {
+  "name": "วัดกษัตราธิราชวรวิหาร",
+  "nameEn": "Wat Kasattrathirat Worawihan",
+  "slug": "wat-kasattrathirat-ayutthaya",
+  "type": "temple",
+  "deities": [
+   "พระพุทธกษัตราธิราช (พระประธานในพระอุโบสถ ปางมารวิชัย)",
+   "รูปหล่อสมเด็จพระพนรัต",
+   "หลวงปู่เทียม สิริปัญโญ (พระเกจิของวัด)"
+  ],
+  "goals": [
+   "protection",
+   "health"
+  ],
+  "province": "พระนครศรีอยุธยา",
+  "district": "พระนครศรีอยุธยา",
+  "coords": "14.3517, 100.5447",
+  "description": "พระอารามหลวงเก่าแก่สมัยอยุธยา ริมแม่น้ำเจ้าพระยาฝั่งตะวันตกนอกเกาะเมือง มองเห็นเจดีย์พระศรีสุริโยทัยได้ชัด มีพระปรางค์เป็นประธาน พระประธานในพระอุโบสถคือพระพุทธกษัตราธิราช ปางมารวิชัยลงรักปิดทอง และเป็นวัดของหลวงปู่เทียม พระเกจิที่ชาวกรุงเก่าเคารพนับถือ",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B8%E0%B9%82%E0%B8%9A%E0%B8%AA%E0%B8%96%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%A9%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%98%E0%B8%B4%E0%B8%A3%E0%B8%B2%E0%B8%8A.jpg/1280px-%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B8%E0%B9%82%E0%B8%9A%E0%B8%AA%E0%B8%96%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%A9%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%98%E0%B8%B4%E0%B8%A3%E0%B8%B2%E0%B8%8A.jpg",
+    "alt": "พระอุโบสถและวิหารวัดกษัตราธิราชวรวิหาร อยุธยา",
+    "author": "Mastertongapollo",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B8%E0%B9%82%E0%B8%9A%E0%B8%AA%E0%B8%96%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%A9%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%98%E0%B8%B4%E0%B8%A3%E0%B8%B2%E0%B8%8A.jpg"
+   }
+  ],
+  "notes": [
+   "internal: coords = วิกิพีเดียไทย/Wikidata Q13020628 (14.3517, 100.5447) ทศนิยม 4 ตำแหน่ง ยังไม่ได้เทียบ OSM",
+   "internal: goals ตั้งตามความเชื่อทั่วไปขององค์พระ/เทพหลัก (แหล่งข้อมูลไม่ระบุเรื่องที่ขอเฉพาะของที่นี่) (พระประธาน/พระพุทธรูป = protection/health) KTC บอกแค่ว่าเป็นสิ่งศักดิ์สิทธิ์ของวัด",
+   "internal: ไม่มีเวลาเปิดในแหล่งข้อมูล",
+   "internal: photo = Commons File:พระอุโบสถและวิหารวัดกษัตราธิราช.jpg (CC BY-SA 4.0, Mastertongapollo) thumb 1280px = 200 วันที่ 2026-11-25"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%A9%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%98%E0%B8%B4%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3",
+   "https://www.ktc.co.th/article/travel-guide/ayutthaya-auspicious-temples-start-a-new-year",
+   "https://www.wikidata.org/wiki/Q13020628"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดถ้ำผาแด่น",
+  "nameEn": "Wat Tham Pha Daen",
+  "slug": "wat-tham-pha-daen-sakon-nakhon",
+  "type": "temple",
+  "deities": [
+   "หลวงปู่ทวดองค์ใหญ่ แกะสลักจากหินทรายทั้งก้อน",
+   "ภาพแกะสลักพระพุทธสีหไสยาสน์และพุทธประวัติบนหินทราย",
+   "พญาครุฑ ท้าวเวสสุวรรณ"
+  ],
+  "goals": [
+   "protection",
+   "health"
+  ],
+  "province": "สกลนคร",
+  "district": "เมืองสกลนคร",
+  "coords": "17.0312017, 104.0739044",
+  "description": "วัดบนเทือกเขาภูพาน เชื่อกันว่าหลวงปู่มั่นและครูบาอาจารย์สายวัดป่าเคยธุดงค์มาปักกลดที่นี่ ทั้งวัดเต็มไปด้วยงานแกะสลักหินทรายขนาดใหญ่ เช่น พระพุทธสีหไสยาสน์ พุทธประวัติ และหลวงปู่ทวดองค์ใหญ่ที่เป็นองค์ประธานให้กราบไหว้ ด้านบนมีลานชมวิวเห็นตัวเมืองสกลนครและหนองหาน",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = Wikidata Q125594940 (17.03120, 104.07390) ตรงกับ OSM way 1393090603 (17.03107, 104.07343); วิกิพีเดียว่าอยู่ ต.ดงมะไฟ แต่ OSM ระบุ ธาตุนาเวง",
+   "internal: goals ตั้งตามความเชื่อทั่วไปขององค์พระ/เทพหลัก (แหล่งข้อมูลไม่ระบุเรื่องที่ขอเฉพาะของที่นี่) (หลวงปู่ทวด = แคล้วคลาด/protection, พระพุทธรูป = health)",
+   "internal: ภาพ Commons 'Pha dan.jpg' (Kimmie023, CC BY-SA 4.0) คำบรรยายแค่ Tham pha dan ยืนยันไม่ได้ว่าเป็นวัดนี้ จึงไม่ใส่; ไม่มีเวลาเปิด"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%96%E0%B9%89%E0%B8%B3%E0%B8%9C%E0%B8%B2%E0%B9%81%E0%B8%94%E0%B9%88%E0%B8%99",
+   "https://www.wikidata.org/wiki/Q125594940",
+   "https://www.openstreetmap.org/way/1393090603"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วิหารอี่ทงเทียนไท้ (เจ้าแม่กวนอิมหยกขาว)",
+  "nameEn": "Yi Thong Thian Thai Guanyin Hall, Kabin Buri",
+  "slug": "yi-thong-thian-thai-guanyin-prachinburi",
+  "type": "chinese-shrine",
+  "deities": [
+   "พระโพธิสัตว์กวนอิม แกะจากหยกขาวชิ้นเดียว สูง 2.62 เมตร บนฐานดอกบัวและมังกร"
+  ],
+  "goals": [
+   "money",
+   "career",
+   "family",
+   "health"
+  ],
+  "province": "ปราจีนบุรี",
+  "district": "กบินทร์บุรี",
+  "coords": "14.0293, 101.7070",
+  "description": "วิหารเจ้าแม่กวนอิมหน้าสวนอุตสาหกรรมเครือสหพัฒน์ กบินทร์บุรี ริมถนนหมายเลข 33 องค์กวนอิมแกะจากหยกขาวชิ้นเดียวจากเมียนมา สูง 2.62 เมตร หนัก 2.8 ตัน ประทับบนฐานดอกบัวและมังกร มีความเชื่อว่าแตะแต่ละส่วนขอพรได้ต่างกัน ทั้งโชคลาภ การงาน ครอบครัว และสุขภาพ",
+  "offerings": [
+   "น้ำสะอาดใส่ภาชนะใหม่",
+   "ดอกบัวชมพูหรือขาว หรือดอกมะลิ",
+   "ผลไม้",
+   "ธูป 5 ดอก"
+  ],
+  "howToPray": [
+   "ขอโชคลาภ ให้แตะที่มังกรแล้วอธิษฐาน (ตามความเชื่อที่สื่อเผยแพร่)",
+   "ขอเรื่องการงานและครอบครัว ให้แตะที่ฐานดอกบัว",
+   "ขอเรื่องสุขภาพ อธิษฐานขอให้น้ำทิพย์จากแจกันของเจ้าแม่ไหลเข้าสู่ร่างกาย"
+  ],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: พิกัดเป็นค่าประมาณ (อาจคลาดราว 1 กม.) = ขอบด้านเหนือของ OSM way 544906950 สวนอุตสาหกรรมเครือสหพัฒน์กบินทร์บุรี (ค้นผ่าน Nominatim) เพราะ OSM ยังไม่มีจุดของวิหาร ต้องเช็กก่อนเผยแพร่",
+   "internal: goals จาก Bangkokbiznews (โชคลาภ การงาน ครอบครัว สุขภาพ) โชคลาภ = money",
+   "internal: เวลาเปิด 07.00-19.00 ใน Bangkokbiznews เป็นช่วงงานตรุษจีน 2567 จึงไม่ใส่ hours; วันสมโภชประจำปี 25 ธ.ค. (ข่าวปี 2566); หมอช้างแนะว่าควรขอพร ไม่บนบาน จึงไม่ใส่วิธีแก้บน"
+  ],
+  "sources": [
+   "https://www.bangkokbiznews.com/lifestyle/travel/1112553",
+   "https://www.thairath.co.th/horoscope/belief/2769623",
+   "https://www.openstreetmap.org/way/544906950"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "วัดไผ่โรงวัว",
+  "nameEn": "Wat Phai Rong Wua",
+  "slug": "wat-phai-rong-wua-suphanburi",
+  "type": "temple",
+  "deities": [
+   "พระพุทธโคดม พระพุทธรูปสำริดองค์ใหญ่",
+   "พระกกุสันโธ พระพุทธรูปปางมารวิชัยสีขาวกลางแจ้ง"
+  ],
+  "goals": [
+   "protection",
+   "health"
+  ],
+  "province": "สุพรรณบุรี",
+  "district": "สองพี่น้อง",
+  "coords": "14.1616694, 100.1603311",
+  "description": "วัดดังของสุพรรณบุรีบนพื้นที่ 248 ไร่ หลวงพ่อขอมสร้างพระพุทธโคดม พระพุทธรูปสำริดองค์ใหญ่ที่ใช้เวลาสร้างถึง 17 ปี และพระกกุสันโธองค์สีขาวประดิษฐานกลางแจ้งมองเห็นแต่ไกล ในวัดยังมีเจดีย์ร้อยยอด สังเวชนียสถานจำลอง และเมืองนรกจำลองที่คนรู้จักกันดี",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OSM way 580076851 (14.16167, 100.16033) ตรงกับ Wikidata Q56006939 (14.16, 100.16028)",
+   "internal: goals ตั้งตามความเชื่อทั่วไปขององค์พระ/เทพหลัก (แหล่งข้อมูลไม่ระบุเรื่องที่ขอเฉพาะของที่นี่) พระพุทธรูปองค์ใหญ่ = protection/health",
+   "internal: เวลาเปิด 08.00-17.00 จาก TrueID ควรเช็กล่าสุด",
+   "internal: ภาพ Commons 'วัดไผ่โรงวัว (สุพรรณบุรี) 02.jpg' (CC BY-SA 4.0, Piyawat Chongkaichak) ตอนเช็กโดน 429 ยืนยัน 200 ไม่ได้ จึงยังไม่ใส่"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%9C%E0%B9%88%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%A7",
+   "https://travel.trueid.net/detail/nAnggPzR9wYB",
+   "https://www.openstreetmap.org/way/580076851"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25",
+  "hours": "08.00-17.00 น."
+ },
+ {
+  "name": "วัดเขาทำเทียม (หลวงพ่ออู่ทอง)",
+  "nameEn": "Wat Khao Tham Thiam",
+  "slug": "wat-khao-tham-thiam-suphanburi",
+  "type": "temple",
+  "deities": [
+   "พระพุทธปุษยคีรีศรีสุวรรณภูมิ (หลวงพ่ออู่ทอง) พระพุทธรูปแกะสลักบนหน้าผา ปางโปรดพุทธมารดา"
+  ],
+  "goals": [
+   "protection",
+   "family"
+  ],
+  "province": "สุพรรณบุรี",
+  "district": "อู่ทอง",
+  "coords": "14.3721209, 99.872576",
+  "description": "วัดเก่าบนเขาทำเทียมทางตะวันตกของเมืองโบราณอู่ทอง นักวิชาการส่วนใหญ่ตีความว่าคือ ปุษยคีรี ในจารึกโบราณ จุดเด่นคือพระพุทธปุษยคีรีศรีสุวรรณภูมิหรือหลวงพ่ออู่ทอง พระพุทธรูปแกะสลักบนหน้าผาที่ใหญ่ที่สุดในไทย ปางโปรดพุทธมารดาหรือปางกตัญญูกตเวที หน้าตักกว้าง 25 เมตร สูง 35 เมตร",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OSM node 13954049637 (14.37212, 99.87258) ตรงกับ Wikidata Q108486223 (14.3725, 99.87278)",
+   "internal: goals ตั้งตามความเชื่อทั่วไปขององค์พระ/เทพหลัก (แหล่งข้อมูลไม่ระบุเรื่องที่ขอเฉพาะของที่นี่) (พระพุทธรูปองค์ใหญ่ = protection; family เพราะเป็นปางกตัญญูกตเวที โปรดพุทธมารดา เป็นการตีความของเรา ลบได้)",
+   "internal: ขนาดองค์พระ: วิกิพีเดียว่าหน้าตัก 25 ม. สูง 35 ม. แต่ TrueID ว่าสูง 108 ม. ใช้ตามวิกิพีเดีย; เวลาเปิด 07.00-18.00 จาก TrueID",
+   "internal: ไม่พบภาพใน Commons"
+  ],
+  "sources": [
+   "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%97%E0%B8%B3%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B8%A2%E0%B8%A1",
+   "https://travel.trueid.net/detail/nAnggPzR9wYB",
+   "https://www.openstreetmap.org/node/13954049637"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25",
+  "hours": "07.00-18.00 น."
+ },
+ {
+  "name": "เจ้าแม่กวนอิมองค์ใหญ่ มูลนิธิซำปอกง (หลวงพ่อโต) ทุ่งสง",
+  "nameEn": "Sam Po Kong Foundation Guanyin, Thung Song",
+  "slug": "sam-po-kong-guanyin-thung-song",
+  "type": "chinese-shrine",
+  "deities": [
+   "พระโพธิสัตว์กวนอิมองค์ใหญ่ ปูนปั้นสูง 19 เมตร",
+   "ซำปอกง (หลวงพ่อโต)",
+   "หลวงปู่ทวด"
+  ],
+  "goals": [
+   "health",
+   "family",
+   "career",
+   "business",
+   "protection"
+  ],
+  "province": "นครศรีธรรมราช",
+  "district": "ทุ่งสง",
+  "coords": "8.1648127, 99.6894855",
+  "description": "ศาลเจ้าของมูลนิธิซำปอกง (หลวงพ่อโต) ทุ่งสง มีพระโพธิสัตว์กวนอิมปูนปั้นสูง 19 เมตรยืนกลางสระน้ำล้อมด้วยน้ำพุ ว่ากันว่าเป็นองค์ใหญ่ที่สุดในไทย นอกจากนี้ยังมีซำปอกงเป็นองค์ประธาน และหลวงปู่ทวด คนนิยมมาขอพรเรื่องสุขภาพ ครอบครัว การงาน การค้า และให้ผ่านพ้นอุปสรรค",
+  "offerings": [],
+  "howToPray": [],
+  "howToRepayVow": [],
+  "images": [],
+  "notes": [
+   "internal: coords = OSM node 7222478549 'มูลนิธิซำปอกง(หลวงพ่อโต) ทุ่งสง' ถนนเสริมชาติ; lovethailand ให้ GPS 8.155278, 99.686222 และที่อยู่ 41 ถ.พัฒนา ต.ปากแพรก ห่างจากจุด OSM ราว 1.1 กม. ต้องเช็กว่าจุดไหนถูก",
+   "internal: goals จาก lovethailand (สุขภาพ ครอบครัว การงาน ธุรกิจ ผ่านพ้นอุปสรรค) ข้อความ ใหญ่ที่สุดในไทย เป็นคำอ้างของแหล่งข้อมูล; เวลาเปิด 08.00-17.00 ไม่เสียค่าเข้า",
+   "internal: ไม่พบภาพใน Commons (ไม่ได้ค้นละเอียด)"
+  ],
+  "sources": [
+   "https://www.lovethailand.org/travel/t/65-%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A/7557-%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%81%E0%B8%A7%E0%B8%99%E0%B8%AD%E0%B8%B4%E0%B8%A1%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B9%83%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2.html",
+   "https://www.openstreetmap.org/node/7222478549"
+  ],
+  "published": false,
+  "checkedAt": "2026-11-25",
+  "hours": "08.00-17.00 น."
+ }
+]
