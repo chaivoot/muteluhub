@@ -112,6 +112,23 @@ export function createDirectoryRepo<T extends Entry>(kind: DirectoryKind) {
       return summary;
     },
 
+    /** เติมรูปจากชุดข้อมูลให้รายการที่มีอยู่แล้วแต่ยังไม่มีรูปในข้อมูลนำเข้า (ไม่แตะรูปที่อัปโหลดจากหลังบ้าน ไม่ทับรูปเดิม) */
+    async fillMissingImages(images: Record<string, unknown[]>): Promise<string[]> {
+      await ensureSchema();
+      const sql = getSql();
+      const filled: string[] = [];
+      for (const [slug, imgs] of Object.entries(images)) {
+        if (imgs.length === 0) continue;
+        const rows = await sql`
+          update ${sql(kind)} set data = jsonb_set(data, '{images}', ${sql.json(imgs as never)}), updated_at = now()
+          where slug = ${slug} and coalesce(jsonb_array_length(data->'images'), 0) = 0
+          returning slug`;
+        if (rows.length) filled.push(slug);
+      }
+      if (filled.length) revalidateTag(tag);
+      return filled;
+    },
+
     async setPins(slug: string, pins: string[]): Promise<void> {
       await ensureSchema();
       const sql = getSql();

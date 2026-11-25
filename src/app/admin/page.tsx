@@ -220,7 +220,7 @@ export default async function AdminPage({
           {SEED_BATCHES.filter((b) => b.kind === kind).map((b) => (
             <SeedButton key={b.id} batch={b.id} label={`${b.label} (${b.data.length} รายการ)`} />
           ))}
-          <p className="note">นำเข้าเฉพาะรายการที่ยังไม่มี ไม่เขียนทับของเดิม สถานะเผยแพร่ตามที่ตั้งไว้ในชุดข้อมูล</p>
+          <p className="note">นำเข้าเฉพาะรายการที่ยังไม่มี ไม่เขียนทับของเดิม สถานะเผยแพร่ตามที่ตั้งไว้ในชุดข้อมูล สถานที่ที่มีอยู่แล้วแต่ยังไม่มีรูป จะได้รูปจากชุดข้อมูลเพิ่ม (กดนำเข้าซ้ำได้)</p>
         </details>
       )}
 

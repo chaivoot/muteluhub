@@ -128,6 +128,8 @@ export interface SeedResult {
   error?: string;
   created?: string[];
   skipped?: string[];
+  /** สถานที่ที่มีอยู่แล้วและได้รูปจากชุดข้อมูลรอบนี้ */
+  imagesFilled?: string[];
 }
 
 /** นำเข้าชุดเริ่มต้นจาก repo เฉพาะ slug ที่ยังไม่มี (ไม่เขียนทับสถานะเผยแพร่ที่ตั้งไว้แล้ว) */
@@ -137,7 +139,18 @@ export async function seedAction(_: unknown, form: FormData): Promise<SeedResult
   if (!batch) return { error: 'ไม่พบชุดข้อมูล' };
   const text = JSON.stringify(batch.data);
   try {
-    if (batch.kind === 'places') return await seedWith(parsePlaceImport(text), placesRepo, batch.data);
+    if (batch.kind === 'places') {
+      const result = await seedWith(parsePlaceImport(text), placesRepo, batch.data);
+      if (result.error || !result.skipped?.length) return result;
+      // สถานที่ที่นำเข้าไปแล้วก่อนชุดข้อมูลมีรูป: เติมรูปให้เฉพาะที่ยังไม่มีรูป
+      const skipped = new Set(result.skipped);
+      const images = Object.fromEntries(
+        (batch.data as { slug?: string; images?: unknown[] }[])
+          .filter((r) => r.slug && skipped.has(r.slug) && r.images?.length)
+          .map((r) => [r.slug as string, r.images as unknown[]]),
+      );
+      return { ...result, imagesFilled: await placesRepo.fillMissingImages(images) };
+    }
     if (batch.kind === 'products') return await seedWith(parseProductImport(text), productsRepo, batch.data);
     return await seedWith(parseTellerImport(text), tellersRepo, batch.data);
   } catch (err) {

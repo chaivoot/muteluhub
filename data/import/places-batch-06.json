@@ -537,13 +537,22 @@
    "เดินเวียนขวารอบองค์เจดีย์ 3 รอบ ตั้งจิตอธิษฐาน"
   ],
   "howToRepayVow": [],
-  "images": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Phra_Samut_Chedi_Muang_Samut_Prakan.jpg/1280px-Phra_Samut_Chedi_Muang_Samut_Prakan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "alt": "วัดพระสมุทรเจดีย์",
+    "author": "Preecha.MJ",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phra_Samut_Chedi_Muang_Samut_Prakan.jpg"
+   }
+  ],
   "notes": [
    "internal: coords = Wikidata Q13017757 (13.600165, 100.58678) ใกล้กับ OSM way 1354127906 'วัดพระสมุทรเจดีย์' (13.59997, 100.58485)",
    "internal: goals career ตีความจาก 'ประสบความสำเร็จตามที่หวัง' (TrueID) และ 'ความเจริญรุ่งเรือง' (Trip.com) ค่อนข้างกว้าง ควรเช็ก",
    "internal: ปีที่สร้าง แหล่งต่างกัน (เริ่ม ร.2 เสร็จ พ.ศ. 2371 สมัย ร.3) เลยเขียนว่ารัชกาลที่ 2 ถึง 3; งานนมัสการจัดราวเดือนตุลาคมทุกปี",
    "internal: เวลาเปิด 07.00-20.00 น. จาก Trip.com",
-   "internal: ไม่พบภาพ Commons ที่ใช้ได้ตอนค้น 2026-11-25 (API โดน rate limit บางคำค้น ควรค้นซ้ำ)"
+   "internal: ไม่พบภาพ Commons ที่ใช้ได้ตอนค้น 2026-11-25 (API โดน rate limit บางคำค้น ควรค้นซ้ำ)",
+   "รูปเพิ่มจาก Wikimedia Commons 2026-11-25 ตรวจชื่อไฟล์/คำอธิบายว่าเป็นสถานที่นี้ และผู้ถ่าย/สัญญาอนุญาตผ่าน Commons API"
   ],
   "sources": [
    "https://travel.trueid.net/detail/2YvxyjnWJdGz",
@@ -766,13 +775,22 @@
   "offerings": [],
   "howToPray": [],
   "howToRepayVow": [],
-  "images": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%82%E0%B8%A1%E0%B8%B2%E0%B8%A0%E0%B8%B4%E0%B8%A3%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B8%AD.%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%88.%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg/1280px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%82%E0%B8%A1%E0%B8%B2%E0%B8%A0%E0%B8%B4%E0%B8%A3%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B8%AD.%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%88.%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "alt": "วัดเขมาภิรตารามราชวรวิหาร",
+    "author": "กสิณธร ราชโอรส",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%82%E0%B8%A1%E0%B8%B2%E0%B8%A0%E0%B8%B4%E0%B8%A3%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3_%E0%B8%AD.%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%88.%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg"
+   }
+  ],
   "notes": [
    "internal: coords = OpenStreetMap way 376679542 'วัดเขมาภิรตารามราชวรวิหาร' (ต.สวนใหญ่ อ.เมืองนนทบุรี) ผ่าน Nominatim",
    "internal: ประวัติจาก Thai Wikipedia (ดึงเนื้อหาไว้ก่อนหน้าในรอบนี้)",
    "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
    "internal: ไม่พบเวลาเปิดที่ยืนยันได้",
-   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง",
+   "รูปเพิ่มจาก Wikimedia Commons 2026-11-25 ตรวจชื่อไฟล์/คำอธิบายว่าเป็นสถานที่นี้ และผู้ถ่าย/สัญญาอนุญาตผ่าน Commons API"
   ],
   "sources": [
    "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%82%E0%B8%A1%E0%B8%B2%E0%B8%A0%E0%B8%B4%E0%B8%A3%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3",
@@ -801,12 +819,21 @@
   "offerings": [],
   "howToPray": [],
   "howToRepayVow": [],
-  "images": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Wat_Poramaiyikawas_Worawihan.jpg/1280px-Wat_Poramaiyikawas_Worawihan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "alt": "วัดปรมัยยิกาวาสวรวิหาร",
+    "author": "Preecha.MJ",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Poramaiyikawas_Worawihan.jpg"
+   }
+  ],
   "notes": [
    "internal: coords = OpenStreetMap way 194521680 'วัดปรมัยยิกาวาส' บ้านโอ่งอ่าง ต.เกาะเกร็ด ผ่าน Nominatim",
    "internal: พระนนทมุนินท์ เจดีย์มุเตา และเวลาเปิดจาก TrueID (ไหว้พระ 9 วัดสวย นนทบุรี); ประวัติวัดปากอ่าว + ร.5 บูรณะจาก Thai Wikipedia",
    "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
-   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง",
+   "รูปเพิ่มจาก Wikimedia Commons 2026-11-25 ตรวจชื่อไฟล์/คำอธิบายว่าเป็นสถานที่นี้ และผู้ถ่าย/สัญญาอนุญาตผ่าน Commons API"
   ],
   "sources": [
    "https://travel.trueid.net/detail/oP72137pMj9y",
@@ -835,12 +862,21 @@
   "offerings": [],
   "howToPray": [],
   "howToRepayVow": [],
-  "images": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%AB%E0%B8%AD%E0%B8%A2_%E0%B8%AD.%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%AB%E0%B8%A5%E0%B8%B8%E0%B8%A1%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B8%88.%E0%B8%9B%E0%B8%97%E0%B8%B8%E0%B8%A1%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5.jpg/1280px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%AB%E0%B8%AD%E0%B8%A2_%E0%B8%AD.%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%AB%E0%B8%A5%E0%B8%B8%E0%B8%A1%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B8%88.%E0%B8%9B%E0%B8%97%E0%B8%B8%E0%B8%A1%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "alt": "วัดเจดีย์หอย",
+    "author": "กสิณธร ราชโอรส",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%AB%E0%B8%AD%E0%B8%A2_%E0%B8%AD.%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%AB%E0%B8%A5%E0%B8%B8%E0%B8%A1%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B8%88.%E0%B8%9B%E0%B8%97%E0%B8%B8%E0%B8%A1%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5.jpg"
+   }
+  ],
   "notes": [
    "internal: coords = OpenStreetMap way 544982380 'วัดเจดีย์หอย' ต.บ่อเงิน อ.ลาดหลุมแก้ว ผ่าน Nominatim",
    "internal: ประวัติเจดีย์หอย + หลวงพ่อทองกลึงจาก Thai Wikipedia; เวลาเปิด พิพิธภัณฑ์ ฆ้องขอพร จาก TrueID (ไหว้พระ 9 วัด ปทุมธานี); ดังเรื่องวัตถุมงคล มีคนมาขอพรมาก จากผลค้นหา TrueID",
    "internal: goals protection ตั้งจากความเชื่อทั่วไปเรื่องวัตถุมงคล/ขอพรให้คุ้มครอง ไม่มีแหล่งระบุเรื่องเฉพาะ",
-   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง",
+   "รูปเพิ่มจาก Wikimedia Commons 2026-11-25 ตรวจชื่อไฟล์/คำอธิบายว่าเป็นสถานที่นี้ และผู้ถ่าย/สัญญาอนุญาตผ่าน Commons API"
   ],
   "sources": [
    "https://travel.trueid.net/detail/EqlBDgP7VlRp",
@@ -903,12 +939,21 @@
   "offerings": [],
   "howToPray": [],
   "howToRepayVow": [],
-  "images": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Phayao_-_Ubosot_%28ordination_hall%29_at_Wat_Si_Khom_Kham_Jan_2024.jpg/1280px-Phayao_-_Ubosot_%28ordination_hall%29_at_Wat_Si_Khom_Kham_Jan_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "alt": "วัดศรีโคมคำ",
+    "author": "Dominic Nelson",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phayao_-_Ubosot_(ordination_hall)_at_Wat_Si_Khom_Kham_Jan_2024.jpg"
+   }
+  ],
   "notes": [
    "internal: coords = OpenStreetMap way 210167222 'วัดศรีโคมคำ' ต.เวียง อ.เมืองพะเยา ผ่าน Nominatim",
    "internal: พระเจ้าตนหลวงใหญ่สุดในล้านนา + พระคู่บ้านคู่เมือง จากผลค้นหา (mgronline/TrueID); สมัยพญายอดเชียงราย + แปดเป็ง จาก Thai Wikipedia",
    "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
-   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง",
+   "รูปเพิ่มจาก Wikimedia Commons 2026-11-25 ตรวจชื่อไฟล์/คำอธิบายว่าเป็นสถานที่นี้ และผู้ถ่าย/สัญญาอนุญาตผ่าน Commons API"
   ],
   "sources": [
    "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B9%82%E0%B8%84%E0%B8%A1%E0%B8%84%E0%B8%B3",
@@ -937,13 +982,22 @@
   "offerings": [],
   "howToPray": [],
   "howToRepayVow": [],
-  "images": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Wat_Sri_Ubon_Rattanaram.jpg/1280px-Wat_Sri_Ubon_Rattanaram.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "alt": "วัดศรีอุบลรัตนาราม",
+    "author": "Christophe95",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Sri_Ubon_Rattanaram.jpg"
+   }
+  ],
   "notes": [
    "internal: coords = OpenStreetMap way 1562170553 'วัดศรีอุบลรัตนาราม' ถ.อุปราช ต.ในเมือง ผ่าน Nominatim",
    "internal: เวลาเปิด 06.00-18.00 น. จาก TrueID (ไหว้พระ 9 วัด อุบลราชธานี) อีกแหล่ง (lovethailand) บอก 04.30-22.00 น. ควรเช็ก",
    "internal: ประวัติพระแก้วบุษราคัม + แห่สงกรานต์ จากผลค้นหา (gotoknow, ศิลปวัฒนธรรม)",
    "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
-   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง",
+   "รูปเพิ่มจาก Wikimedia Commons 2026-11-25 ตรวจชื่อไฟล์/คำอธิบายว่าเป็นสถานที่นี้ และผู้ถ่าย/สัญญาอนุญาตผ่าน Commons API"
   ],
   "sources": [
    "https://travel.trueid.net/detail/BkLbrZr0rBZ3",
@@ -1007,12 +1061,21 @@
   "offerings": [],
   "howToPray": [],
   "howToRepayVow": [],
-  "images": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Wat_Burapharam_-_Surin.jpg/1280px-Wat_Burapharam_-_Surin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "alt": "วัดบูรพาราม",
+    "author": "JJ Harrison",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Burapharam_-_Surin.jpg"
+   }
+  ],
   "notes": [
    "internal: coords = OpenStreetMap node 4759247929 'วัดบูรพาราม' ถ.จิตรบำรุง ต.ในเมือง ผ่าน Nominatim",
    "internal: goals career จาก tripniceday ('ที่พึ่งของผู้คนที่ขอพรให้ประสบความสำเร็จ') เว็บท่องเที่ยว ไม่ใช่สื่อหลัก ควรหาแหล่งเพิ่ม",
    "internal: ปีสร้าง/ผู้สร้างแหล่งไม่ตรงกัน (สมัยธนบุรีหรือต้นรัตนโกสินทร์ โดยพระยาสุรินทรภักดีศรีณรงค์จางวาง (ปุ้ม)) เลยเขียนกว้าง ๆ; ไม่พบเวลาเปิด",
-   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง",
+   "รูปเพิ่มจาก Wikimedia Commons 2026-11-25 ตรวจชื่อไฟล์/คำอธิบายว่าเป็นสถานที่นี้ และผู้ถ่าย/สัญญาอนุญาตผ่าน Commons API"
   ],
   "sources": [
    "https://www.tripniceday.com/en/place/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%9E%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1-1680074152157",
@@ -1112,13 +1175,22 @@
   "offerings": [],
   "howToPray": [],
   "howToRepayVow": [],
-  "images": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%AA%E0%B8%A7%E0%B8%B5%28%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%A7%E0%B8%B5%29_%E0%B8%8A%E0%B8%B8%E0%B8%A1%E0%B8%9E%E0%B8%A3.jpg/1280px-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%AA%E0%B8%A7%E0%B8%B5%28%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%A7%E0%B8%B5%29_%E0%B8%8A%E0%B8%B8%E0%B8%A1%E0%B8%9E%E0%B8%A3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "alt": "วัดพระบรมธาตุสวี",
+    "author": "KOSIN SUKHUM",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%AA%E0%B8%A7%E0%B8%B5(%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%A7%E0%B8%B5)_%E0%B8%8A%E0%B8%B8%E0%B8%A1%E0%B8%9E%E0%B8%A3.jpg"
+   }
+  ],
   "notes": [
    "internal: coords = OpenStreetMap node 6290646985 'Wat Phra That Sawi' ผ่าน Nominatim (OSM ระบุ ต.นาโพธิ์ TrueID ระบุ ต.สวี ไม่ได้ใส่ตำบล)",
    "internal: ตำนาน ศาลพระเสื้อเมือง และเวลาเปิด 08.00-18.00 น. จาก TrueID; รูปแบบเจดีย์ + บูรณะโดยกรมศิลปากร 2539 จาก gotoknow (พิพิธภัณฑสถานแห่งชาติ ชุมพร)",
    "internal: ผลค้นหาบางแหล่งบอกว่าคนขอพรศาลพระเสื้อเมืองเรื่องครอบครัวและค้าขาย แต่หน้า TrueID ที่เปิดอ่านไม่ได้ระบุ เลยไม่ใส่",
    "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
-   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง",
+   "รูปเพิ่มจาก Wikimedia Commons 2026-11-25 ตรวจชื่อไฟล์/คำอธิบายว่าเป็นสถานที่นี้ และผู้ถ่าย/สัญญาอนุญาตผ่าน Commons API"
   ],
   "sources": [
    "https://travel.trueid.net/detail/o4RlrywWB7j9",
@@ -1147,13 +1219,22 @@
   "offerings": [],
   "howToPray": [],
   "howToRepayVow": [],
-  "images": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Wat_Mahathat%2C_Yasothon_%28I%29.jpg/1280px-Wat_Mahathat%2C_Yasothon_%28I%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "alt": "วัดมหาธาตุ ยโสธร",
+    "author": "Supanut Arunoprayote",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Mahathat,_Yasothon_(I).jpg"
+   }
+  ],
   "notes": [
    "internal: coords = OpenStreetMap way 1309209374 'วัดมหาธาตุ พระอารามหลวง' ถ.แจ้งสนิท ผ่าน Nominatim",
    "internal: ความสูงพระธาตุ อัฐิธาตุพระอานนท์ พระพุทธบุษยรัตน์ (ร.3 พระราชทาน) หอไตร จาก Sanook Travel",
    "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
    "internal: ไม่พบเวลาเปิด",
-   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง",
+   "รูปเพิ่มจาก Wikimedia Commons 2026-11-25 ตรวจชื่อไฟล์/คำอธิบายว่าเป็นสถานที่นี้ และผู้ถ่าย/สัญญาอนุญาตผ่าน Commons API"
   ],
   "sources": [
    "https://www.sanook.com/travel/921337/",
@@ -1181,13 +1262,22 @@
   "offerings": [],
   "howToPray": [],
   "howToRepayVow": [],
-  "images": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Lamphun_-_Wat_Phra_Yuen_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B7%E0%B8%99_%E0%B8%A5%E0%B8%B3%E0%B8%9E%E0%B8%B9%E0%B8%99_%282026%29_-_IMG_02.jpg/1280px-Lamphun_-_Wat_Phra_Yuen_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B7%E0%B8%99_%E0%B8%A5%E0%B8%B3%E0%B8%9E%E0%B8%B9%E0%B8%99_%282026%29_-_IMG_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "alt": "วัดพระยืน",
+    "author": "Chainwit.",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamphun_-_Wat_Phra_Yuen_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B7%E0%B8%99_%E0%B8%A5%E0%B8%B3%E0%B8%9E%E0%B8%B9%E0%B8%99_(2026)_-_IMG_02.jpg"
+   }
+  ],
   "notes": [
    "internal: coords = OpenStreetMap node 1628628252 'วัดพระยืน' ถ.ช่างฆ้อง ผ่าน Nominatim",
    "internal: ประวัติ (จามเทวีสร้าง พ.ศ. 1213 ชื่อวัดอรัญญิการาม, พระยืน 4 องค์) จาก TrueID; ปีสร้างแหล่งต่างกัน (en.wikipedia บอกนักประวัติศาสตร์บางท่านว่าสร้างภายหลัง) เลยไม่ใส่ปีในคำอธิบาย",
    "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
    "internal: TrueID บอกเปิดทุกวัน ไม่ระบุเวลา",
-   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง",
+   "รูปเพิ่มจาก Wikimedia Commons 2026-11-25 ตรวจชื่อไฟล์/คำอธิบายว่าเป็นสถานที่นี้ และผู้ถ่าย/สัญญาอนุญาตผ่าน Commons API"
   ],
   "sources": [
    "https://travel.trueid.net/detail/5axvGmeoqBVZ",
@@ -1248,13 +1338,22 @@
   "offerings": [],
   "howToPray": [],
   "howToRepayVow": [],
-  "images": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Phra_Maha_Chedi_Chai_Mongkol.JPG/1280px-Phra_Maha_Chedi_Chai_Mongkol.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "alt": "พระมหาเจดีย์ชัยมงคล",
+    "author": "Pawyilee",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phra_Maha_Chedi_Chai_Mongkol.JPG"
+   }
+  ],
   "notes": [
    "internal: coords = OpenStreetMap node 7660431724 'วัดถ้ำผาน้ำทิพย์' (อ.หนองพอก) ผ่าน Nominatim พิกัดโดยประมาณ ชื่อใน OSM ต่างจากชื่อทางการ และ OSM ระบุ ต.ท่าสีดา ส่วน mgronline ระบุ ต.ผาน้ำย้อย ควรเช็กว่าเป็นจุดเดียวกับองค์เจดีย์",
    "internal: ความสูง 109 ม. ฐาน 101 ม. พระบรมสารีริกธาตุชั้น 6 พิพิธภัณฑ์ชั้น 5 จาก mgronline; ดำริหลวงปู่ศรี มหาวีโร จากผลค้นหา (mgronline/TrueID)",
    "internal: แหล่งที่พบบอกแค่ไหว้ขอพร/สิริมงคลทั่วไป goals ตั้งตามความเชื่อทั่วไปของสิ่งศักดิ์สิทธิ์หลัก (พระพุทธรูป/พระธาตุสำคัญ = แคล้วคลาดคุ้มครอง) ไม่ใช่แหล่งที่ระบุเฉพาะสถานที่นี้",
    "internal: ไม่พบเวลาเปิด",
-   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง"
+   "internal: images ว่างไว้ ช่วงที่ทำข้อมูล Wikimedia API ตอบ 429 (rate limit) ตรวจภาพ Commons ไม่ได้ ควรหาภาพจริงพร้อมเครดิตภายหลัง",
+   "รูปเพิ่มจาก Wikimedia Commons 2026-11-25 ตรวจชื่อไฟล์/คำอธิบายว่าเป็นสถานที่นี้ และผู้ถ่าย/สัญญาอนุญาตผ่าน Commons API"
   ],
   "sources": [
    "https://mgronline.com/travel/detail/9660000020267",
@@ -1580,12 +1679,21 @@
   "offerings": [],
   "howToPray": [],
   "howToRepayVow": [],
-  "images": [],
+  "images": [
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%9C%E0%B9%88%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%A7_%28%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "alt": "วัดไผ่โรงวัว",
+    "author": "Piyawat Chongkaichak",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%9C%E0%B9%88%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%A7_(%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5)_02.jpg"
+   }
+  ],
   "notes": [
    "internal: coords = OSM way 580076851 (14.16167, 100.16033) ตรงกับ Wikidata Q56006939 (14.16, 100.16028)",
    "internal: goals ตั้งตามความเชื่อทั่วไปขององค์พระ/เทพหลัก (แหล่งข้อมูลไม่ระบุเรื่องที่ขอเฉพาะของที่นี่) พระพุทธรูปองค์ใหญ่ = protection/health",
    "internal: เวลาเปิด 08.00-17.00 จาก TrueID ควรเช็กล่าสุด",
-   "internal: ภาพ Commons 'วัดไผ่โรงวัว (สุพรรณบุรี) 02.jpg' (CC BY-SA 4.0, Piyawat Chongkaichak) ตอนเช็กโดน 429 ยืนยัน 200 ไม่ได้ จึงยังไม่ใส่"
+   "internal: ภาพ Commons 'วัดไผ่โรงวัว (สุพรรณบุรี) 02.jpg' (CC BY-SA 4.0, Piyawat Chongkaichak) ตอนเช็กโดน 429 ยืนยัน 200 ไม่ได้ จึงยังไม่ใส่",
+   "รูปเพิ่มจาก Wikimedia Commons 2026-11-25 ตรวจชื่อไฟล์/คำอธิบายว่าเป็นสถานที่นี้ และผู้ถ่าย/สัญญาอนุญาตผ่าน Commons API"
   ],
   "sources": [
    "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%9C%E0%B9%88%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%A7",
