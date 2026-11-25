@@ -16,6 +16,7 @@ export function SeedButton({ batch, label }: { batch: string; label: string }) {
       {state.created && (
         <span className="note">
           เพิ่มใหม่ {state.created.length} · มีอยู่แล้ว (ข้าม) {state.skipped?.length ?? 0}
+          {state.imagesFilled?.length ? ` · เติมรูปให้ ${state.imagesFilled.length} แห่ง` : ''}
         </span>
       )}
     </form>
